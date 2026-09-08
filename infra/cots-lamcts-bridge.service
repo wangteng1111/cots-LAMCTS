@@ -5,9 +5,11 @@ Wants=network-online.target
 
 [Service]
 Type=simple
-User=%i
+User=cotslamcts
+Group=cotslamcts
 WorkingDirectory=/opt/cots-lamcts
 EnvironmentFile=/etc/cots-lamcts/bridge.env
+Environment=COTS_BRIDGE_ROOT=/var/lib/cots-lamcts
 ExecStart=/usr/bin/python3 /opt/cots-lamcts/infra/cots_workstation_bridge.py
 Restart=always
 RestartSec=10
@@ -15,9 +17,9 @@ KillSignal=SIGTERM
 TimeoutStopSec=30
 NoNewPrivileges=true
 PrivateTmp=true
-ProtectSystem=full
-ProtectHome=read-only
-ReadWritePaths=/root/.cots_lamcts_bridge /home /opt/cots-lamcts /tmp
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/cots-lamcts
 
 [Install]
 WantedBy=multi-user.target
