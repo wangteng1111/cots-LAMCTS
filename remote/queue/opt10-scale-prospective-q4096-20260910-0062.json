@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "job_id": "opt10-scale-prospective-q4096-20260910-0062",
+  "code_commit": "10c4e47ad773ca0f1eb15321252ed0b6bf60b565",
+  "entrypoint": "validation/opt10_scale_prospective_q4096.py",
+  "args": [],
+  "env": {"OMP_NUM_THREADS":"1","MKL_NUM_THREADS":"1","OPENBLAS_NUM_THREADS":"1","NUMBA_NUM_THREADS":"1","PYTHONHASHSEED":"0"},
+  "timeout_sec": 7200,
+  "memory_gb": 0
+}
