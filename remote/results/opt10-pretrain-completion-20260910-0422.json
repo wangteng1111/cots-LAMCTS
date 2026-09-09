@@ -11,10 +11,13 @@
   },
   "hostname": "aipss-Rack-Server",
   "job_id": "opt10-pretrain-completion-20260910-0422",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 998340,
   "request_sha256": "ed3135e0b0091e3e1c08508e99cac8721df63f22603f82ff5e42a8d04c55a04a",
   "schema": 1,
   "started_at": 1788985848.325775,
   "state": "running",
-  "timeout_sec": 172800
+  "timeout_sec": 172800,
+  "updated_at": 1788985850.4322915
 }
