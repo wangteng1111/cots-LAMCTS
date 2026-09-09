@@ -13,10 +13,13 @@
   },
   "hostname": "aipss-Rack-Server",
   "job_id": "opt10-meta-20260910-0048",
+  "log_tail": "patched goptical focal-length parser in detached worktree",
   "memory_gb": 0,
+  "pid": 980665,
   "request_sha256": "0ee9f411bba12f6786e510bc3b0c0cc4b0dce571c1689889f880ab0ce693bac9",
   "schema": 1,
   "started_at": 1788972406.1921878,
   "state": "running",
-  "timeout_sec": 21600
+  "timeout_sec": 21600,
+  "updated_at": 1788972408.32792
 }
