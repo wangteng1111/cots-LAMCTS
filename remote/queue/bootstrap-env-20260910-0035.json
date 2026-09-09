@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "job_id": "bootstrap-env-20260910-0035",
+  "code_commit": "cd83a1b8ff5eafc52bb3baabb29169b913b37505",
+  "entrypoint": "scripts/bootstrap_workstation_env.py",
+  "args": [],
+  "env": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "NUMBA_NUM_THREADS": "1"
+  },
+  "timeout_sec": 7200,
+  "memory_gb": 0
+}
