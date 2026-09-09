@@ -1,0 +1,12 @@
+{
+  "root_exists": true,
+  "data_exists": true,
+  "n_txt": 22,
+  "sample_paths": [
+    "data/canon-rf-50mmf1.2/canon-rf-50mmf1.2.txt",
+    "data/cosina-35mm-f1.2/JP2004-101880_Example02P.txt",
+    "data/leica-sl-90-280/JP2016-139125_Example01P.txt",
+    "data/leitz-r-summicron-50mmf2/leitz-r-summicron-50mmf2.txt",
+    "data/leitz-r-summilux-50mmf1.4/leitz-r-summilux-50mmf1.4.txt"
+  ]
+}
