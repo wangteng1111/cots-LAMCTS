@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "job_id": "probe-20260910-0031",
+  "code_commit": "a0803ae9884cb6d537e2db7d4b89ad08e806c1e0",
+  "entrypoint": "scripts/workstation_probe.py",
+  "args": [],
+  "env": {
+    "NUMBA_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "timeout_sec": 600,
+  "memory_gb": 0
+}
