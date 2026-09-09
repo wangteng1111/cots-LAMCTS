@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "job_id": "inspect-opticalbench-link-20260910-0056",
+  "code_commit": "36dd1906f177ef97122dd68a4a35be3faa5899ce",
+  "entrypoint": "scripts/inspect_opticalbench_link_logic.py",
+  "args": [],
+  "env": {"OMP_NUM_THREADS":"1","MKL_NUM_THREADS":"1","OPENBLAS_NUM_THREADS":"1"},
+  "timeout_sec": 600,
+  "memory_gb": 0
+}
