@@ -1,0 +1,19 @@
+{
+  "args": [],
+  "code_commit": "cd83a1b8ff5eafc52bb3baabb29169b913b37505",
+  "entrypoint": "scripts/bootstrap_workstation_env.py",
+  "env": {
+    "MKL_NUM_THREADS": "1",
+    "NUMBA_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "bootstrap-env-20260910-0035",
+  "memory_gb": 0,
+  "request_sha256": "50033b01c981cb28fc9179a8728ebbfe3a3ed98a2af5a1a9a13cc4b7ddd3b3d5",
+  "schema": 1,
+  "started_at": 1788971783.4213402,
+  "state": "running",
+  "timeout_sec": 7200
+}
