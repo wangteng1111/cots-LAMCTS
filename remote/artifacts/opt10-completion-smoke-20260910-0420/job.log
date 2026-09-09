@@ -1,0 +1,10 @@
+/var/lib/cots-lamcts/jobs/opt10-completion-smoke-20260910-0420/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+PRE mlm_multi_base 17 gpu 0 ep 0 loss 0.6171639326715121
+PRE mlm_multi_base 17 gpu 0 ep 50 loss 0.15783731856920424
+PRE mlm_multi_base 17 gpu 0 ep 100 loss 0.12142855374917497
+PRE mlm_multi_base 17 gpu 0 ep 150 loss 0.10208852328088162
+PRE mlm_multi_base 17 gpu 0 ep 200 loss 0.10182784829479065
+PRE mlm_multi_base 17 gpu 0 ep 250 loss 0.08947224474518839
+PRE mlm_multi_base 17 gpu 0 ep 299 loss 0.0870412155224459
+{"variant": "mlm_multi_base", "seed": 17, "gpu": 0, "corpus": "multi", "corpus_n": 2192, "best_loss": 0.08456461066312164, "final_loss": 0.0870412155224459, "epochs": 300, "views": 24}
