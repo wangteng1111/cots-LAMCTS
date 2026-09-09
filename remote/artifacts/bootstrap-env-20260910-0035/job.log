@@ -1,0 +1,19 @@
++ /usr/bin/python3 -m venv /var/lib/cots-lamcts/venv
+The virtual environment was not created successfully because ensurepip is not
+available.  On Debian/Ubuntu systems, you need to install the python3-venv
+package using the following command.
+
+    apt install python3.12-venv
+
+You may need to use sudo with that command.  After installing the python3-venv
+package, recreate your virtual environment.
+
+Failing command: /var/lib/cots-lamcts/venv/bin/python3
+
+
+Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/bootstrap-env-20260910-0035/src/scripts/bootstrap_workstation_env.py", line 49, in <module>
+    run([sys.executable, '-m', 'venv', str(VENV)], timeout=300)
+  File "/var/lib/cots-lamcts/jobs/bootstrap-env-20260910-0035/src/scripts/bootstrap_workstation_env.py", line 35, in run
+    raise RuntimeError(f'command failed {p.returncode}: {cmd}')
+RuntimeError: command failed 1: ['/usr/bin/python3', '-m', 'venv', '/var/lib/cots-lamcts/venv']
