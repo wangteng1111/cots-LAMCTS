@@ -1,0 +1,20 @@
+{
+  "args": [
+    "scripts/goptical_corpus_probe.py"
+  ],
+  "code_commit": "70fa86753a47fde7c746f8635cab57880aa6664b",
+  "entrypoint": "scripts/run_with_workstation_venv.py",
+  "env": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "goptical-probe-20260910-0045",
+  "memory_gb": 0,
+  "request_sha256": "a9c510bb5fce4eb4332fe104fe7722dce6c93a3868f9dceb1e5a6ed1d70c215f",
+  "schema": 1,
+  "started_at": 1788972325.833286,
+  "state": "running",
+  "timeout_sec": 600
+}
