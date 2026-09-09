@@ -8,6 +8,7 @@
     "0"
   ],
   "code_commit": "59cf96f257dcb5aefb223acf5c21c40207e54974",
+  "elapsed_sec": 543.7763488292694,
   "entrypoint": "validation/opt10_pretrain_completion_run.py",
   "env": {
     "MKL_NUM_THREADS": "1",
@@ -16,15 +17,18 @@
     "OPENBLAS_NUM_THREADS": "1",
     "PYTHONHASHSEED": "0"
   },
+  "finished_at": 1788985829.0007198,
   "hostname": "aipss-Rack-Server",
   "job_id": "opt10-completion-smoke-20260910-0420",
-  "log_tail": "/var/lib/cots-lamcts/jobs/opt10-completion-smoke-20260910-0420/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True\n  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)\nPRE mlm_multi_base 17 gpu 0 ep 0 loss 0.6171639326715121\nPRE mlm_multi_base 17 gpu 0 ep 50 loss 0.15783731856920424\nPRE mlm_multi_base 17 gpu 0 ep 100 loss 0.12142855374917497\nPRE mlm_multi_base 17 gpu 0 ep 150 loss 0.10208852328088162\nPRE mlm_multi_base 17 gpu 0 ep 200 loss 0.10182784829479065",
+  "log_tail": "/var/lib/cots-lamcts/jobs/opt10-completion-smoke-20260910-0420/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True\n  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)\nPRE mlm_multi_base 17 gpu 0 ep 0 loss 0.6171639326715121\nPRE mlm_multi_base 17 gpu 0 ep 50 loss 0.15783731856920424\nPRE mlm_multi_base 17 gpu 0 ep 100 loss 0.12142855374917497\nPRE mlm_multi_base 17 gpu 0 ep 150 loss 0.10208852328088162\nPRE mlm_multi_base 17 gpu 0 ep 200 loss 0.10182784829479065\nPRE mlm_multi_base 17 gpu 0 ep 250 loss 0.08947224474518839\nPRE mlm_multi_base 17 gpu 0 ep 299 loss 0.0870412155224459\n{\"variant\": \"mlm_multi_base\", \"seed\": 17, \"gpu\": 0, \"corpus\": \"multi\", \"corpus_n\": 2192, \"best_loss\": 0.08456461066312164, \"final_loss\": 0.0870412155224459, \"epochs\": 300, \"views\": 24}",
   "memory_gb": 0,
   "pid": 997933,
   "request_sha256": "eb1222951eaa5540693add36bd27f63278bd4b30bac1597a1f3dbfac28e08e69",
+  "returncode": 0,
   "schema": 1,
   "started_at": 1788985285.224371,
-  "state": "running",
+  "state": "finished",
   "timeout_sec": 43200,
-  "updated_at": 1788985649.7290835
+  "updated_at": 1788985649.7290835,
+  "uploaded_artifacts": []
 }
