@@ -10,7 +10,7 @@
   },
   "hostname": "aipss-Rack-Server",
   "job_id": "bootstrap-env-20260910-0036",
-  "log_tail": "+ /var/lib/cots-lamcts/venv/bin/python -m pip --version\n/var/lib/cots-lamcts/venv/bin/python: No module named pip\n\n+ download https://bootstrap.pypa.io/get-pip.py",
+  "log_tail": "+ /var/lib/cots-lamcts/venv/bin/python -m pip --version\n/var/lib/cots-lamcts/venv/bin/python: No module named pip\n\n+ download https://bootstrap.pypa.io/get-pip.py\n+ /var/lib/cots-lamcts/venv/bin/python /var/lib/cots-lamcts/get-pip.py\nWARNING: The directory '/mnt/data/cotslamcts/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.\nCollecting pip\n  Downloading pip-26.2.1-py3-none-any.whl.metadata (4.6 kB)\nDownloading pip-26.2.1-py3-none-any.whl (1.8 MB)\n   \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 1.8/1.8 MB 4.0 MB/s  0:00:00\nInstalling collected packages: pip\nSuccessfully installed pip-26.2.1\n\n+ /var/lib/cots-lamcts/venv/bin/python -m pip install --upgrade pip>=24.0 setuptools>=70 wheel>=0.43 numpy>=1.26,<2.3 scipy>=1.11,<1.16 numba>=0.61,<0.63 scikit-learn>=1.4,<1.8 torch",
   "memory_gb": 0,
   "pid": 979995,
   "request_sha256": "850721baee2898f02b55dc7a3e6c07d33207ec9006cde623eda16ba4f2071c29",
@@ -18,5 +18,5 @@
   "started_at": 1788971856.0585155,
   "state": "running",
   "timeout_sec": 7200,
-  "updated_at": 1788971858.2827263
+  "updated_at": 1788972040.0968037
 }
