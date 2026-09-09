@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "job_id": "opt10-meta-20260910-0042",
+  "code_commit": "72a62ee19441a3d1b041cfdab69659b8a2386002",
+  "entrypoint": "scripts/run_with_workstation_venv.py",
+  "args": ["validation/opt10_workstation_meta.py"],
+  "env": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "NUMBA_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0"
+  },
+  "timeout_sec": 21600,
+  "memory_gb": 0
+}
