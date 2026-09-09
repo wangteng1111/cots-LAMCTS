@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "job_id": "opt10-completion-smoke-20260910-0420",
+  "code_commit": "59cf96f257dcb5aefb223acf5c21c40207e54974",
+  "entrypoint": "validation/opt10_pretrain_completion_run.py",
+  "args": ["--pretrain-one","mlm_multi_base","--seed","17","--gpu","0"],
+  "env": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "NUMBA_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0"
+  },
+  "timeout_sec": 43200,
+  "memory_gb": 0
+}
