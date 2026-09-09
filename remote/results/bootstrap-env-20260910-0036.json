@@ -10,10 +10,13 @@
   },
   "hostname": "aipss-Rack-Server",
   "job_id": "bootstrap-env-20260910-0036",
+  "log_tail": "+ /var/lib/cots-lamcts/venv/bin/python -m pip --version\n/var/lib/cots-lamcts/venv/bin/python: No module named pip\n\n+ download https://bootstrap.pypa.io/get-pip.py",
   "memory_gb": 0,
+  "pid": 979995,
   "request_sha256": "850721baee2898f02b55dc7a3e6c07d33207ec9006cde623eda16ba4f2071c29",
   "schema": 1,
   "started_at": 1788971856.0585155,
   "state": "running",
-  "timeout_sec": 7200
+  "timeout_sec": 7200,
+  "updated_at": 1788971858.2827263
 }
