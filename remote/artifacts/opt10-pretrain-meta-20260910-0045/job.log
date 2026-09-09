@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0045/src/validation/opt10_workstation_pretrain_meta.py", line 111, in <module>
+    from core import mandler_benchmark_core as M
+ModuleNotFoundError: No module named 'core'
