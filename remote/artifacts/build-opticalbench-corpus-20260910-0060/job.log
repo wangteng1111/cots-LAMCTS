@@ -1,0 +1,22 @@
+fetched 100 / 1280
+fetched 200 / 1280
+fetched 300 / 1280
+fetched 400 / 1280
+fetched 500 / 1280
+fetched 600 / 1280
+fetched 700 / 1280
+fetched 800 / 1280
+fetched 900 / 1280
+fetched 1000 / 1280
+fetched 1100 / 1280
+fetched 1200 / 1280
+{
+  "schema": "opticalbench-corpus-v1",
+  "hub_entries": 1280,
+  "parsed": 1234,
+  "unique_prescriptions": 1233,
+  "duplicates_removed": 1,
+  "failed": 46,
+  "elapsed_sec": 129.22834134101868,
+  "persistent_path": "/var/lib/cots-lamcts/corpora/opticalbench_hub/parsed_lenses.json.gz"
+}
