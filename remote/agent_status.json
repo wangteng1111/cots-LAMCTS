@@ -20,15 +20,15 @@
   ],
   "hostname": "aipss-Rack-Server",
   "loadavg": [
-    0.90576171875,
-    0.578125,
-    0.52490234375
+    0.70458984375,
+    0.54931640625,
+    0.51611328125
   ],
   "python": "/usr/bin/python3",
   "python_version": "3.12.3",
   "repo": "wangteng1111/cots-LAMCTS",
   "results_branch": "workstation-results",
-  "running_job": null,
+  "running_job": "inspect-opticalbench-20260910-0055",
   "schema": 1,
-  "timestamp": 1788974770.448042
+  "timestamp": 1788974782.7179914
 }
