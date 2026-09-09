@@ -1,0 +1,18 @@
+{
+  "args": [],
+  "code_commit": "6302f39eb8972407ac91a018d43945f25297e374",
+  "entrypoint": "scripts/fetch_opticalbench_sample.py",
+  "env": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "fetch-opticalbench-sample-20260910-0057",
+  "memory_gb": 0,
+  "request_sha256": "9c5acb35f1327a5fb126c261f03973c8b415097c0ac1526841124e38a8b34b7d",
+  "schema": 1,
+  "started_at": 1788974959.6229315,
+  "state": "running",
+  "timeout_sec": 600
+}
