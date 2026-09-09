@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "job_id": "opt10-prospective-q4096-20260910-0050",
+  "code_commit": "9732611d5c8c2956ade0a5999d2760f4a1a9d251",
+  "entrypoint": "validation/opt10_prospective_q4096_fixed.py",
+  "args": [],
+  "env": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "NUMBA_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0"
+  },
+  "timeout_sec": 7200,
+  "memory_gb": 0
+}
