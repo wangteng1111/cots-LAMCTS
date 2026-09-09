@@ -8,6 +8,7 @@ import shutil
 import subprocess
 import sys
 import time
+import urllib.request
 from pathlib import Path
 
 ROOT = Path('/var/lib/cots-lamcts')
@@ -45,15 +46,27 @@ summary = {
 }
 
 ROOT.mkdir(parents=True, exist_ok=True)
-if not (VENV / 'bin' / 'python').exists():
-    run([sys.executable, '-m', 'venv', str(VENV)], timeout=300)
-py = str(VENV / 'bin' / 'python')
+py = VENV / 'bin' / 'python'
 
-run([py, '-m', 'pip', 'install', '--upgrade', *PACKAGES], timeout=7200)
+# Ubuntu may omit python3-venv/ensurepip.  A no-pip venv still works, and we can
+# bootstrap pip inside it without root privileges using PyPA's official helper.
+if not py.exists():
+    if VENV.exists():
+        shutil.rmtree(VENV)
+    run([sys.executable, '-m', 'venv', '--without-pip', str(VENV)], timeout=300)
+
+pip_check = run([str(py), '-m', 'pip', '--version'], timeout=60, check=False)
+if pip_check.returncode != 0:
+    get_pip = ROOT / 'get-pip.py'
+    print('+ download https://bootstrap.pypa.io/get-pip.py', flush=True)
+    urllib.request.urlretrieve('https://bootstrap.pypa.io/get-pip.py', get_pip)
+    run([str(py), str(get_pip)], timeout=900)
+
+run([str(py), '-m', 'pip', 'install', '--upgrade', *PACKAGES], timeout=7200)
 
 # Verify the scientific and CUDA stack from inside the persistent environment.
 verify = r'''
-import json, os, platform, sys
+import json, platform, sys
 out = {'python': sys.version, 'executable': sys.executable, 'platform': platform.platform()}
 import numpy, scipy, numba, sklearn
 out.update(numpy=numpy.__version__, scipy=scipy.__version__, numba=numba.__version__, sklearn=sklearn.__version__)
@@ -73,7 +86,7 @@ if torch.cuda.is_available():
     out['cuda_smoke_mean'] = float(y.mean().cpu())
 print(json.dumps(out, indent=2, sort_keys=True))
 '''
-p = run([py, '-c', verify], timeout=600)
+p = run([str(py), '-c', verify], timeout=600)
 try:
     verification = json.loads(p.stdout[p.stdout.find('{'):])
 except Exception:
