@@ -11,10 +11,13 @@
   },
   "hostname": "aipss-Rack-Server",
   "job_id": "goptical-probe-20260910-0045",
+  "log_tail": "{\n  \"root_exists\": true,\n  \"data_exists\": true,\n  \"n_txt\": 22,\n  \"sample_paths\": [\n    \"data/canon-rf-50mmf1.2/canon-rf-50mmf1.2.txt\",\n    \"data/cosina-35mm-f1.2/JP2004-101880_Example02P.txt\",\n    \"data/leica-sl-90-280/JP2016-139125_Example01P.txt\",\n    \"data/leitz-r-summicron-50mmf2/leitz-r-summicron-50mmf2.txt\",\n    \"data/leitz-r-summilux-50mmf1.4/leitz-r-summilux-50mmf1.4.txt\"\n  ]\n}",
   "memory_gb": 0,
+  "pid": 980547,
   "request_sha256": "a9c510bb5fce4eb4332fe104fe7722dce6c93a3868f9dceb1e5a6ed1d70c215f",
   "schema": 1,
   "started_at": 1788972325.833286,
   "state": "running",
-  "timeout_sec": 600
+  "timeout_sec": 600,
+  "updated_at": 1788972328.467021
 }
