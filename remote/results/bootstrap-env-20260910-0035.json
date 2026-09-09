@@ -1,6 +1,7 @@
 {
   "args": [],
   "code_commit": "cd83a1b8ff5eafc52bb3baabb29169b913b37505",
+  "elapsed_sec": 11.012478590011597,
   "entrypoint": "scripts/bootstrap_workstation_env.py",
   "env": {
     "MKL_NUM_THREADS": "1",
@@ -8,15 +9,18 @@
     "OMP_NUM_THREADS": "1",
     "OPENBLAS_NUM_THREADS": "1"
   },
+  "finished_at": 1788971794.4338188,
   "hostname": "aipss-Rack-Server",
   "job_id": "bootstrap-env-20260910-0035",
   "log_tail": "+ /usr/bin/python3 -m venv /var/lib/cots-lamcts/venv\nThe virtual environment was not created successfully because ensurepip is not\navailable.  On Debian/Ubuntu systems, you need to install the python3-venv\npackage using the following command.\n\n    apt install python3.12-venv\n\nYou may need to use sudo with that command.  After installing the python3-venv\npackage, recreate your virtual environment.\n\nFailing command: /var/lib/cots-lamcts/venv/bin/python3\n\n\nTraceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/bootstrap-env-20260910-0035/src/scripts/bootstrap_workstation_env.py\", line 49, in <module>\n    run([sys.executable, '-m', 'venv', str(VENV)], timeout=300)\n  File \"/var/lib/cots-lamcts/jobs/bootstrap-env-20260910-0035/src/scripts/bootstrap_workstation_env.py\", line 35, in run\n    raise RuntimeError(f'command failed {p.returncode}: {cmd}')\nRuntimeError: command failed 1: ['/usr/bin/python3', '-m', 'venv', '/var/lib/cots-lamcts/venv']",
   "memory_gb": 0,
   "pid": 979889,
   "request_sha256": "50033b01c981cb28fc9179a8728ebbfe3a3ed98a2af5a1a9a13cc4b7ddd3b3d5",
+  "returncode": 1,
   "schema": 1,
   "started_at": 1788971783.4213402,
-  "state": "running",
+  "state": "failed",
   "timeout_sec": 7200,
-  "updated_at": 1788971785.859995
+  "updated_at": 1788971785.859995,
+  "uploaded_artifacts": []
 }
