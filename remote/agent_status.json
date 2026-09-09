@@ -21,14 +21,14 @@
   "hostname": "aipss-Rack-Server",
   "loadavg": [
     0.0,
-    0.19677734375,
-    0.36376953125
+    0.1865234375,
+    0.357421875
   ],
   "python": "/usr/bin/python3",
   "python_version": "3.12.3",
   "repo": "wangteng1111/cots-LAMCTS",
   "results_branch": "workstation-results",
-  "running_job": null,
+  "running_job": "opt10-pretrain-meta-20260910-0045",
   "schema": 1,
-  "timestamp": 1788973287.7261436
+  "timestamp": 1788973302.1575203
 }
