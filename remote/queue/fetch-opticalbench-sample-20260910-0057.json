@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "job_id": "fetch-opticalbench-sample-20260910-0057",
+  "code_commit": "6302f39eb8972407ac91a018d43945f25297e374",
+  "entrypoint": "scripts/fetch_opticalbench_sample.py",
+  "args": [],
+  "env": {"OMP_NUM_THREADS":"1","MKL_NUM_THREADS":"1","OPENBLAS_NUM_THREADS":"1"},
+  "timeout_sec": 600,
+  "memory_gb": 0
+}
