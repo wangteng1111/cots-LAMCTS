@@ -1,0 +1,18 @@
+{
+  "args": [],
+  "code_commit": "deaf97ac050e95b86c8e54fed8b650f0d31fe70e",
+  "entrypoint": "scripts/build_opticalbench_corpus.py",
+  "env": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "build-opticalbench-corpus-20260910-0060",
+  "memory_gb": 0,
+  "request_sha256": "04e46a28d5016c0ed98151964ab870eaf8bafee9c692361992d73f9483042613",
+  "schema": 1,
+  "started_at": 1788975141.4483564,
+  "state": "running",
+  "timeout_sec": 7200
+}
