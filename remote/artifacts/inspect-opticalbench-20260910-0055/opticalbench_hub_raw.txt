@@ -1,0 +1,1624 @@
+<!DOCTYPE HTML>
+<!-- (C)opyright 2017-2026 William J. Claff. -->
+<!--           All Rights Reserved.          -->
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <META HTTP-EQUIV="Keywords" CONTENT="Claff">
+  <META HTTP-EQUIV="Reply-to" CONTENT="bclaff@comcast.net (Bill Claff)">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Optical Bench Hub</title>
+  <style type="text/css">
+   .hc-title { font-family: "Lucida Grande","Lucida Sans Unicode",Verdana,Arial,Helvetica,sans-serif; font-size: 16px; color: rgb(62, 87, 111); fill: rgb(62, 87, 111); }
+   .hc-subtitle { font-family: "Lucida Grande","Lucida Sans Unicode",Verdana,Arial,Helvetica,sans-serif; font-size: 12px; color: rgb(109, 134, 159); fill: rgb(109, 134, 159); }
+
+   #resizableT { border: 1px solid silver }
+   #resizableT-frame { padding: 10px; }
+   .sortable td
+   {
+    border: 1px solid transparent;
+   }
+   .sortable thead
+   {
+    text-align: left;
+    border-bottom: 1px solid silver;
+   }
+   .sortable th
+   {
+    border: 1px solid transparent;
+   }
+
+   .scrollingTable
+   {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+   }
+   div.scrollingTable div
+   {
+    border-top: 30px solid transparent; /* positive */
+    overflow-y: auto;
+   }
+   .scrollingTable div table
+   {
+    border: 0px solid black;
+    border-spacing: 0px;
+   }
+   .scrollingTable div table thead
+   {
+    line-height: 0px;
+    margin-top: -30px; /* negative */
+    margin-right: 16px; /* the scroll bar is 16px wide, only iff scroll bar is showing */
+    position: absolute;
+   }
+   .scrollingTable div table thead th
+   {
+    line-height: 14px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    vertical-align: bottom;
+   }
+  </style>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../../../js/sorttable.js"></script>
+
+  <script type="text/javascript">
+
+   var modeldata = [
+{ PatentID: 'CN216526482', ExampleID: 'Example01P', TaleID: '', Description: '7Artisans APS-C 25mm F0.95' },
+{ PatentID: 'CN216526483', ExampleID: 'Example01P', TaleID: '', Description: '7Artisans APS-C 50mm F0.95' },
+{ PatentID: 'US002819651', ExampleID: 'Example01P', TaleID: '', Description: 'Agfa Color Telinear 90mm F4' },
+{ PatentID: 'GB0775944', ExampleID: 'Example01P', TaleID: '', Description: 'Agfa Color-Magnolar II 100mm F4.5' },
+{ PatentID: 'US002745315', ExampleID: 'Example01P', TaleID: '', Description: 'Agfa Solagon 50mm F2' },
+{ PatentID: 'GB0720808', ExampleID: 'Example01P', TaleID: '', Description: 'Angenieux 28mm f3.5 R11' },
+{ PatentID: 'GB0673358', ExampleID: 'Example01P', TaleID: '', Description: 'Angenieux 35mm f2.5 R1' },
+{ PatentID: 'US004726669', ExampleID: 'Example01P', TaleID: '', Description: 'Angenieux DEM 180mm F2.3 APO' },
+{ PatentID: 'US20070236805', ExampleID: 'Example04P', TaleID: '', Description: 'Arri Zeiss Master Prime T1.3 100mm' },
+{ PatentID: 'DE102005025204', ExampleID: 'Example01P', TaleID: '', Description: 'Arri Zeiss Master Prime T1.3 50mm' },
+{ PatentID: 'US004089591', ExampleID: 'Example05P', TaleID: '', Description: 'Arriflex Distagon 35mm f1.2 T1.3' },
+{ PatentID: 'CN221175107', ExampleID: 'Example01P', TaleID: '', Description: 'AstrHori 40mm F5.6 Full Frame' },
+{ PatentID: 'US20150219882', ExampleID: 'Example02P', TaleID: '', Description: 'Canon 12.5-62.5mm f2.0-3.9 IS [PowerShot G1X2]' },
+{ PatentID: 'US20130176385', ExampleID: 'Example04P', TaleID: '', Description: 'Canon 15.1-60.4mm f2.8-5.8 [PowerShot G1X]' },
+{ PatentID: 'JP2018-106021', ExampleID: 'Example01P', TaleID: '', Description: 'Canon 15-45mm f2.8-5.6 (PowerShot G1 X Mark III)' },
+{ PatentID: 'JP1995-318801', ExampleID: 'Example01', TaleID: '', Description: 'Canon 250D (52mm)' },
+{ PatentID: 'JP1995-318801', ExampleID: 'Example02', TaleID: '', Description: 'Canon 250D (58mm)' },
+{ PatentID: 'JP1995-318801', ExampleID: 'Example03', TaleID: '', Description: 'Canon 250D (72mm)' },
+{ PatentID: 'JP1995-318801', ExampleID: 'Example04', TaleID: '', Description: 'Canon 250D (77mm)' },
+{ PatentID: 'US002779239', ExampleID: 'Example01P', TaleID: '', Description: 'Canon 28mm f2.8' },
+{ PatentID: 'US002854890', ExampleID: 'Example01P', TaleID: '', Description: 'Canon 35mm f1.8' },
+{ PatentID: 'JP1995-318802', ExampleID: 'Example01', TaleID: '', Description: 'Canon 500D (52mm)' },
+{ PatentID: 'JP1995-318802', ExampleID: 'Example02', TaleID: '', Description: 'Canon 500D (58mm)' },
+{ PatentID: 'JP1995-318802', ExampleID: 'Example03', TaleID: '', Description: 'Canon 500D (72mm)' },
+{ PatentID: 'JP1995-318802', ExampleID: 'Example04', TaleID: '', Description: 'Canon 500D (77mm)' },
+{ PatentID: 'US002836102', ExampleID: 'Example02P', TaleID: '', Description: 'Canon 50mm f1.2' },
+{ PatentID: 'US002838978', ExampleID: 'Example01P', TaleID: '', Description: 'Canon 50mm f2.8' },
+{ PatentID: 'US20160062096', ExampleID: 'Example01P', TaleID: '', Description: 'Canon 8.8-36.8mm f1.8-2.8[PowerShot G7X]' },
+{ PatentID: 'JP2016-148731', ExampleID: 'Example06P', TaleID: '', Description: 'Canon 8.8-220mm f2.8-5.6{PowerShot G3X]' },
+{ PatentID: 'JP1952-005233', ExampleID: 'Example01P', TaleID: '', Description: 'Canon 85mm f1.5' },
+{ PatentID: 'US007158320', ExampleID: 'Example03P', TaleID: '', Description: 'Canon EF100-300mm f4.5-5.6 USM' },
+{ PatentID: 'JP1986-077818', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF100-300mm f5.6' },
+{ PatentID: 'US20150146044', ExampleID: 'Example02P', TaleID: '', Description: 'Canon EF100-400mm f4.5-5.6L IS II USM' },
+{ PatentID: 'JP2000-047107', ExampleID: 'Example02P', TaleID: '', Description: 'Canon EF100-400mm f4.5-5.6L IS USM' },
+{ PatentID: 'JP1991-141313', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF100mm f2.8 Macro' },
+{ PatentID: 'US007864451', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF100mm f2.8L Macro IS USM' },
+{ PatentID: 'US20150146085', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF11-24mm f4L USM' },
+{ PatentID: 'US004826301', ExampleID: 'Example04P', TaleID: '', Description: 'Canon EF135mm f2.8 Soft Focus' },
+{ PatentID: 'JP2018-049102', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF135mm f2L USM' },
+{ PatentID: 'JP1993-034592', ExampleID: 'Example02P', TaleID: '', Description: 'Canon EF14mm f2.8L USM' },
+{ PatentID: 'JP1988-017421', ExampleID: 'Example03P', TaleID: '', Description: 'Canon EF15mm f2.8 Fisheye' },
+{ PatentID: 'JP2014-041222', ExampleID: 'Example02P', TaleID: '', Description: 'Canon EF16-35mm f2.8L II USM' },
+{ PatentID: 'JP2018-013685', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF16-35mm f2.8L III USM' },
+{ PatentID: 'JP2002-287031', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF16-35mm f2.8L USM' },
+{ PatentID: 'US010247926', ExampleID: 'Example06P', TaleID: '', Description: 'Canon EF16-35mm f4L IS USM' },
+{ PatentID: 'US005710669', ExampleID: 'Example11P', TaleID: '', Description: 'Canon EF17-35mm f2.8L USM' },
+{ PatentID: 'JP2020-190696', ExampleID: 'Example01MLP', TaleID: '', Description: 'Canon EF17-40mm f4L USM' },
+{ PatentID: 'JP1997-211319', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF180mm f3.5L Macro USM' },
+{ PatentID: 'EP2664955', ExampleID: 'Example01BP', TaleID: '', Description: 'Canon EF200-400mm f4L IS USM Extender 1.4x' },
+{ PatentID: 'EP2664955', ExampleID: 'Example01AP', TaleID: '', Description: 'Canon EF200-400mm f4L IS USM Extender 1x' },
+{ PatentID: 'JP1989-102413', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF200mm f1.8L USM' },
+{ PatentID: 'JP1993-027163', ExampleID: 'Example02P', TaleID: '', Description: 'Canon EF200mm f2.8L II USM' },
+{ PatentID: 'JP2008-145584', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF200mm f2L IS USM' },
+{ PatentID: 'US005000550', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF20-35mm f2.8L' },
+{ PatentID: 'JP1994-230281', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF20-35mm f3.5-4.5 USM' },
+{ PatentID: 'JP1996-110467', ExampleID: 'Example02P', TaleID: '', Description: 'Canon EF20mm f2.8 USM' },
+{ PatentID: 'US20170374291', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF24-105mm f4L IS II USM' },
+{ PatentID: 'JP2020-118775', ExampleID: 'ExampleMLP', TaleID: '', Description: 'Canon EF24-105mm F4L IS USM' },
+{ PatentID: 'US008736971', ExampleID: 'Example03P', TaleID: '', Description: 'Canon EF24-70mm f2.8L II USM' },
+{ PatentID: 'JP2014-041222', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF24-70mm f2.8L USM' },
+{ PatentID: 'JP1997-304697', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF24-85mm f3.5-4.5 USM' },
+{ PatentID: 'US20100033848', ExampleID: 'Example03P', TaleID: '', Description: 'Canon EF24mm f1.4L II USM' },
+{ PatentID: 'JP1999-030743', ExampleID: 'Example06P', TaleID: '', Description: 'Canon EF24mm f1.4L USM' },
+{ PatentID: 'JP2020-190696', ExampleID: 'Example03MLP', TaleID: '', Description: 'Canon EF24mm f2.8 IS USM' },
+{ PatentID: 'JP2002-365547', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF28-105mm f3.5-4.5 II USM' },
+{ PatentID: 'JP1994-230285', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF28-105mm f3.5-4.5 USM' },
+{ PatentID: 'US20040223070', ExampleID: 'Example04P', TaleID: '', Description: 'Canon EF28-105mm f4-5.6' },
+{ PatentID: 'US006061180', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF28-135mm f3.5-5.6 IS USM' },
+{ PatentID: 'JP2001-350095', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF28-200mm f3.5-5.6 USM' },
+{ PatentID: 'JP1989-189622', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF28-70mm f3.5-4.5 II' },
+{ PatentID: 'US005899585', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF28-80mm f3.5-5.6 II' },
+{ PatentID: 'JP2009-282554', ExampleID: 'Example06P', TaleID: '', Description: 'Canon EF28-90mm f4-5.6 II USM' },
+{ PatentID: 'JP1987-078520', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF28mm f2.8' },
+{ PatentID: 'JP2013-054269', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF28mm f2.8 IS USM' },
+{ PatentID: 'US006288845', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF300mm f2.8L USM' },
+{ PatentID: 'US006115188', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF300mm f2.8L IS USM' },
+{ PatentID: 'US006618197', ExampleID: 'Example02P', TaleID: '', Description: 'Canon EF300mm f4L IS USM' },
+{ PatentID: 'US004690513', ExampleID: 'Example04P', TaleID: '', Description: 'Canon EF35-135mm f3.5-4.5' },
+{ PatentID: 'US005144488', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF35-135mm f4-5.6 USM' },
+{ PatentID: 'US005189557', ExampleID: 'Example07P', TaleID: '', Description: 'Canon EF35-350mm f3.5-5.6L USM' },
+{ PatentID: 'JP1987-124516', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF35-70mm f3.5-4.5' },
+{ PatentID: 'JP1992-019706', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF35-80mm f4-5.6 III' },
+{ PatentID: 'JP1999-211978', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF35mm f1.4L USM' },
+{ PatentID: 'JP1992-015611', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF35mm f2' },
+{ PatentID: 'US20150205081', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF35mm f2 IS USM' },
+{ PatentID: 'US20180095255', ExampleID: 'MLP', TaleID: '', Description: 'Canon EF400mm f2.8L IS II USM' },
+{ PatentID: 'US006115188', ExampleID: 'Example25P', TaleID: '', Description: 'Canon EF400mm f2.8L IS USM' },
+{ PatentID: 'JP2018-180209', ExampleID: 'Example01AP', TaleID: '', Description: 'Canon EF400mm f5.6L USM' },
+{ PatentID: 'US008970966', ExampleID: 'Example02P', TaleID: '', Description: 'Canon EF40mm f2.8 STM' },
+{ PatentID: 'US006115188', ExampleID: 'Example24P', TaleID: '', Description: 'Canon EF500mm f4L IS USM' },
+{ PatentID: 'US004717245', ExampleID: 'Example02P', TaleID: '', Description: 'Canon EF50mm f/1.0L USM' },
+{ PatentID: 'JP1994-242370', ExampleID: 'Example02P', TaleID: '', Description: 'Canon EF50mm F1.4 USM' },
+{ PatentID: 'JP1987-087922', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF50mm f1.8' },
+{ PatentID: 'JP1988-179308', ExampleID: 'Example02P', TaleID: '', Description: 'Canon EF50mm f2.5 Compact Macro' },
+{ PatentID: 'JP1999-133304', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF55-200mm f4.5-5.6 USM' },
+{ PatentID: 'US006115188', ExampleID: 'Example22P', TaleID: '', Description: 'Canon EF600mm f4L IS USM' },
+{ PatentID: 'US20090296231', ExampleID: 'Example02P', TaleID: '', Description: 'Canon EF70-200mm f2.8L IS II USM' },
+{ PatentID: 'US005537259', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF70-200mm f2.8L USM' },
+{ PatentID: 'JP2008-070450', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF70-200mm f4L IS USM' },
+{ PatentID: 'JP2000-284174', ExampleID: 'Example02P', TaleID: '', Description: 'Canon EF70-200mm f4L USM' },
+{ PatentID: 'US20170003486', ExampleID: 'Example05P', TaleID: '', Description: 'Canon EF70-300mm f4-5.6 IS II USM' },
+{ PatentID: 'JP2007-003600', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF70-300mm f4-5.6 IS USM' },
+{ PatentID: 'JP2013-140404', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF70-300mm f4-5.6L IS USM' },
+{ PatentID: 'US20120013996', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF8-15mm f4L Fisheye USM' },
+{ PatentID: 'JP1993-157964', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF85mm f1.8 USM' },
+{ PatentID: 'US20140098253', ExampleID: 'Example03P', TaleID: '', Description: 'Canon EF-M11-22mm f4-5.6 IS STM' },
+{ PatentID: 'JP2016-118658', ExampleID: 'Example08P', TaleID: '', Description: 'Canon EF-M15-45mm f3.5-6.3 IS STM' },
+{ PatentID: 'US20180074300', ExampleID: 'Example02P', TaleID: '', Description: 'Canon EF-M18-150mm f3.5-6.3 IS STM' },
+{ PatentID: 'US20130335830', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF-M18-55mm f3.5-5.6 IS STM' },
+{ PatentID: 'US008854747', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF-M22mm f2 STM' },
+{ PatentID: 'US20160313535', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF-M28mm f3.5 Macro IS STM' },
+{ PatentID: 'JP2018-180366', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF-M32mm f1.4 STM' },
+{ PatentID: 'JP2017-161933', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF-M55-200mm f4.5-6.3 IS STM' },
+{ PatentID: 'JP2015-031869', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF-S10-18mm f4.5-5.6 IS STM' },
+{ PatentID: 'US20050286139', ExampleID: 'Example05P', TaleID: '', Description: 'Canon EF-S10-22mm f3.5-4.5 USM' },
+{ PatentID: 'US20100302648', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF-S15-85mm f3.5-5.6 IS USM' },
+{ PatentID: 'JP2007-108398', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF-S17-55mm f2.8 IS USM' },
+{ PatentID: 'US20060023317', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF-S17-85mm f4-5.6 IS USM' },
+{ PatentID: 'JP2010-237453', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF-S18-135mm f3.5-5.6 IS' },
+{ PatentID: 'US20130088622', ExampleID: 'Example04P', TaleID: '', Description: 'Canon EF-S18-135mm f3.5-5.6 IS STM' },
+{ PatentID: 'US20070058265', ExampleID: 'Example02P', TaleID: '', Description: 'Canon EF-S18-55mm f3.5-5.6' },
+{ PatentID: 'JP2009-175324', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF-S18-200mm f3.5-5.6 IS' },
+{ PatentID: 'JP2015-111192', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF-S24mm f2.8 STM' },
+{ PatentID: 'US20180074300', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF-S35mm f2.8 Macro IS STM' },
+{ PatentID: 'US007471462', ExampleID: 'Example02P', TaleID: '', Description: 'Canon EF-S55-250mm f4-5.6 IS' },
+{ PatentID: 'US20140211029', ExampleID: 'Example03P', TaleID: '', Description: 'Canon EF-S55-250mm f4-5.6 IS STM' },
+{ PatentID: 'JP2006-153942', ExampleID: 'Example01P', TaleID: '', Description: 'Canon EF-S60mm f2.8 Macro USM' },
+{ PatentID: 'JP1988-147127', ExampleID: 'Example01P', TaleID: '', Description: 'Canon Extender EF1.4X' },
+{ PatentID: 'US20180095255', ExampleID: 'Example02P', TaleID: '', Description: 'Canon Extender EF1.4X III' },
+{ PatentID: 'JP1988-106715', ExampleID: 'Example02P', TaleID: '', Description: 'Canon Extender EF2X' },
+{ PatentID: 'US20180095255', ExampleID: 'Example05P', TaleID: '', Description: 'Canon Extender EF2X III' },
+{ PatentID: 'JP1986-014492', ExampleID: 'Example01P', TaleID: '', Description: 'Canon Extender FD 1.4X-A' },
+{ PatentID: 'US004129359', ExampleID: 'Example01P', TaleID: '', Description: 'Canon Extender FD 2X-A' },
+{ PatentID: 'US004340279', ExampleID: 'Example01P', TaleID: '', Description: 'Canon Extender FD 2X-B' },
+{ PatentID: 'US20200271904', ExampleID: 'Example03P', TaleID: '', Description: 'Canon Extender RF1.4X' },
+{ PatentID: 'US20200271904', ExampleID: 'Example06P', TaleID: '', Description: 'Canon Extender RF2X' },
+{ PatentID: 'US004110006', ExampleID: 'Example04P', TaleID: '', Description: 'Canon FD150-600mm f5.6L' },
+{ PatentID: 'US003748021', ExampleID: 'Example01P', TaleID: '', Description: 'Canon FD17mm f4' },
+{ PatentID: 'US004477153', ExampleID: 'Example01P', TaleID: '', Description: 'Canon FD20-35mm f3.5L Aspherical' },
+{ PatentID: 'US003992085', ExampleID: 'Example01P', TaleID: '', Description: 'Canon FD24mm f1.4 SSC Aspherical' },
+{ PatentID: 'US003748021', ExampleID: 'Example02P', TaleID: '', Description: 'Canon FD24mm f2.8' },
+{ PatentID: 'US004046459', ExampleID: 'Example02P', TaleID: '', Description: 'Canon FD28mm f2.8 SC' },
+{ PatentID: 'US003868174', ExampleID: 'Example01P', TaleID: '', Description: 'Canon FD300mm f2.8 SSC Fluorite' },
+{ PatentID: 'US004251133', ExampleID: 'Example03P', TaleID: '', Description: 'Canon FD300mm f4L' },
+{ PatentID: 'JP1972-008749', ExampleID: 'Example03P', TaleID: '', Description: 'Canon FD300mm f5.6' },
+{ PatentID: 'US004324458', ExampleID: 'Example03P', TaleID: '', Description: 'Canon FD300mm f5.6 SSC' },
+{ PatentID: 'US003848969', ExampleID: 'Example01P', TaleID: '', Description: 'Canon FD35-70mm f2.8-3.5 SSC' },
+{ PatentID: 'US003748022', ExampleID: 'Example01P', TaleID: '', Description: 'Canon FD35mm f2' },
+{ PatentID: 'US004045128', ExampleID: 'Example01P', TaleID: '', Description: 'Canon FD400mm f4.5 SSC' },
+{ PatentID: 'US004241983', ExampleID: 'Example01P', TaleID: '', Description: 'Canon FD500mm f4.5L' },
+{ PatentID: 'US004364644', ExampleID: 'Example01P', TaleID: '', Description: 'Canon FD50mm f/1.2L' },
+{ PatentID: 'JP1988-081312', ExampleID: 'ExampleMLP', TaleID: '', Description: 'Canon FD50mm f1.8 SC' },
+{ PatentID: 'GB1418386', ExampleID: 'Example01P', TaleID: '', Description: 'Canon FD85-300mm f4.5 SSC' },
+{ PatentID: 'JP1954-005476', ExampleID: 'Example01P', TaleID: '', Description: 'Canon FL100mm F3.5' },
+{ PatentID: 'JP1952-005234', ExampleID: 'Example01P', TaleID: '', Description: 'Canon FL200mm F3.5' },
+{ PatentID: 'JP1972-008749', ExampleID: 'Example02P', TaleID: '', Description: 'Canon FL300mm f5.6 Fluorite' },
+{ PatentID: 'JP1972-008109', ExampleID: 'Example01P', TaleID: '', Description: 'Canon FL500mm f5.6 Fluorite' },
+{ PatentID: 'JP1999-281892', ExampleID: 'Example06P', TaleID: '', Description: 'Canon MP-E65mm f2.8 1-5X Macro Photo' },
+{ PatentID: 'JP1978-133028', ExampleID: 'Example01P', TaleID: '', Description: 'Canon New FD100mm f2' },
+{ PatentID: 'JP1982-064716', ExampleID: 'Example01P', TaleID: '', Description: 'Canon New FD14mm f2.8L' },
+{ PatentID: 'US004176914', ExampleID: 'Example01P', TaleID: '', Description: 'Canon New FD28mm f2.8' },
+{ PatentID: 'JP1981-159613', ExampleID: 'Example01P', TaleID: '', Description: 'Canon New FD300mm f2.8L' },
+{ PatentID: 'JP1986-212814', ExampleID: 'Example03P', TaleID: '', Description: 'Canon New FD35-105mm f3.5-4.5' },
+{ PatentID: 'JP1986-014492', ExampleID: 'ExampleMLP', TaleID: '', Description: 'Canon New FD 400mm f2.8L' },
+{ PatentID: 'US004165151', ExampleID: 'Example01P', TaleID: '', Description: 'Canon New FD 500mm f8 Mirror' },
+{ PatentID: 'JP1980-121418', ExampleID: 'Example01P', TaleID: '', Description: 'Canon New FD50-135mm f3.5' },
+{ PatentID: 'US004398808', ExampleID: 'Example02P', TaleID: '', Description: 'Canon New FD50-300mm f4.5L' },
+{ PatentID: 'US004364643', ExampleID: 'Example03P', TaleID: '', Description: 'Canon New FD50mm F1.2' },
+{ PatentID: 'JP1995-151965', ExampleID: 'ExampleMLP', TaleID: '', Description: 'Canon New FD50mm f1.4' },
+{ PatentID: 'US004380377', ExampleID: 'Example01P', TaleID: '', Description: 'Canon New FD70-210mm f4' },
+{ PatentID: 'JP1985-088917', ExampleID: 'Example01P', TaleID: '', Description: 'Canon New FD75-200mm f4.5' },
+{ PatentID: 'JP1980-100519', ExampleID: 'Example01P', TaleID: '', Description: 'Canon New FD800mm f5.6L' },
+{ PatentID: 'US20260009984', ExampleID: 'Example04P', TaleID: '', Description: 'Canon RF100-300mm F2.8L IS USM' },
+{ PatentID: 'US20220214530', ExampleID: 'Example01P', TaleID: '', Description: 'Canon RF100-400mm F5.6-8 IS USM' },
+{ PatentID: 'US20210003832', ExampleID: 'Example02P', TaleID: '', Description: 'Canon RF100-500mm F4.5-7.1 L IS USM' },
+{ PatentID: 'JP2021-047297', ExampleID: 'Example01P', TaleID: '', Description: 'Canon RF100mm F2.8 L Macro IS USM' },
+{ PatentID: 'US20240045184', ExampleID: 'Example01P', TaleID: '', Description: 'Canon RF10-20mm F4 L IS STM' },
+{ PatentID: 'US20230213745', ExampleID: 'Example04P', TaleID: '', Description: 'Canon RF135mm F1.8L IS USM' },
+{ PatentID: 'US20220171174', ExampleID: 'Example03P', TaleID: '', Description: 'Canon RF14-35mm F4 L IS USM' },
+{ PatentID: 'EP4174551', ExampleID: 'Example02P', TaleID: '', Description: 'Canon RF15-30mm F4.5-6.3 IS STM' },
+{ PatentID: 'US20200257181', ExampleID: 'Example01P', TaleID: '', Description: 'Canon RF15-35mm F2.8 L IS USM' },
+{ PatentID: 'JP2022-085382', ExampleID: 'Example03P', TaleID: '', Description: 'Canon RF16mm F2.8 STM' },
+{ PatentID: 'US20240134166', ExampleID: 'Example01P', TaleID: '', Description: 'Canon RF200-800mm F6.3-9 IS USM' },
+{ PatentID: 'US20260029629', ExampleID: 'Example06P', TaleID: '', Description: 'Canon RF20-50mm F4.0 L IS USM PZ' },
+{ PatentID: 'US20250389929', ExampleID: 'Example02P', TaleID: '', Description: 'Canon RF20mm F1.4L VCM' },
+{ PatentID: 'US20240192474', ExampleID: 'Example04P', TaleID: '', Description: 'Canon RF24-105mm F2.8 L IS USM Z' },
+{ PatentID: 'US20190278068', ExampleID: 'Example02P', TaleID: '', Description: 'Canon RF24-105mm F4 L IS USM' },
+{ PatentID: 'US20210003831', ExampleID: 'Example01P', TaleID: '', Description: 'Canon RF24-105mm F4-7.1 IS STM' },
+{ PatentID: 'US20200142167', ExampleID: 'Example01P', TaleID: '', Description: 'Canon RF24-240mm F4-6.3 IS USM' },
+{ PatentID: 'US20230213739', ExampleID: 'Example01P', TaleID: '', Description: 'Canon RF24-50mm F4.5-6.3 IS STM' },
+{ PatentID: 'US20190278068', ExampleID: 'Example05P', TaleID: '', Description: 'Canon RF24-70mm F2.8 L IS USM' },
+{ PatentID: 'US20220019061', ExampleID: 'Example03P', TaleID: '', Description: 'Canon RF24mm F1.8 Macro IS STM' },
+{ PatentID: 'JP2020-118807', ExampleID: 'ExampleMLAP', TaleID: '', Description: 'Canon RF28-70mm F2 L USM' },
+{ PatentID: 'US20240329367', ExampleID: 'Example01P', TaleID: '', Description: 'Canon RF28-70mm F2.8 IS STM' },
+{ PatentID: 'US20190113711', ExampleID: 'Example01P', TaleID: '', Description: 'Canon RF35mm F1.8 Macro IS STM' },
+{ PatentID: 'US20260194735', ExampleID: 'Example01P', TaleID: '', Description: 'Canon RF45mm F1.2 STM' },
+{ PatentID: 'US20220221688', ExampleID: 'Example02P', TaleID: '', Description: 'Canon RF5.2mm F2.8 L Dual Fisheye' },
+{ PatentID: 'US20190265441', ExampleID: 'Example02P', TaleID: '', Description: 'Canon RF50mm F1.2 L USM' },
+{ PatentID: 'US20250251576', ExampleID: 'Example01P', TaleID: '', Description: 'Canon RF50mm F1.4L VCM' },
+{ PatentID: 'US20210263286', ExampleID: 'Example01P', TaleID: '', Description: 'Canon RF50mm F1.8 STM' },
+{ PatentID: 'JP2021-056407', ExampleID: 'Example03P', TaleID: '', Description: 'Canon RF70-200mm F2.8 L IS USM' },
+{ PatentID: 'US20250155694', ExampleID: 'Example01P', TaleID: '', Description: 'Canon RF70-200mm F2.8 L IS USM Z' },
+{ PatentID: 'US20210033835', ExampleID: 'Example01P', TaleID: '', Description: 'Canon RF70-200mm F4 L IS USM' },
+{ PatentID: 'EP4215968', ExampleID: 'Example04P', TaleID: '', Description: 'Canon RF800mm F5.6 L IS USM' },
+{ PatentID: 'US20200012073', ExampleID: 'Example01P', TaleID: '', Description: 'Canon RF85mm F1.2 L USM (DS)' },
+{ PatentID: 'US20210072505', ExampleID: 'Example01P', TaleID: '', Description: 'Canon RF85mm F2 Macro IS STM' },
+{ PatentID: 'JP2024-007656', ExampleID: 'Example01P', TaleID: '', Description: 'Canon RF-S10-18mm F4.5-6.3 IS STM' },
+{ PatentID: 'JP2025-050505', ExampleID: 'Example05P', TaleID: '', Description: 'Canon RF-S14-30mm F4-6.3 IS STM PZ' },
+{ PatentID: 'US20240241345', ExampleID: 'Example02P', TaleID: '', Description: 'Canon RF-S3.9mm F3.5 STM Dual Fisheye' },
+{ PatentID: 'DE102023104719', ExampleID: 'Example01P', TaleID: '', Description: 'Canon RF-S55-210mm F5.0-7.1 IS STM' },
+{ PatentID: 'US20250093761', ExampleID: 'Example02P', TaleID: '', Description: 'Canon RF-S7.8mm F4 STM Dual Fisheye' },
+{ PatentID: 'DE01022027', ExampleID: 'Example01P', TaleID: '', Description: 'Canon Serenar 100mm f3.5' },
+{ PatentID: 'US002645974', ExampleID: 'Example01P', TaleID: '', Description: 'Canon Serenar 28mm f3.5' },
+{ PatentID: 'US002645975', ExampleID: 'Example01P', TaleID: '', Description: 'Canon Serenar 35mm f3.2' },
+{ PatentID: 'US002681594', ExampleID: 'Example01P', TaleID: '', Description: 'Canon Serenar 50mm f1.8' },
+{ PatentID: 'US002645973', ExampleID: 'Example01P', TaleID: '', Description: 'Canon Serenar 85mm f1.5' },
+{ PatentID: 'JP2018-132674', ExampleID: 'Example01P', TaleID: '', Description: 'Canon TS-E135mm f4L Macro' },
+{ PatentID: 'US010571651', ExampleID: 'Example01P', TaleID: '', Description: 'Canon TS-E50mm f2.8L Macro' },
+{ PatentID: 'JP2018-205474', ExampleID: 'Example01P', TaleID: '', Description: 'Canon TS-E90mm f2.8L Macro' },
+{ PatentID: 'JP2026-121744', ExampleID: 'Example03P', TaleID: '', Description: 'Cosina Color Skopar 35mm F3.5 Aspherical' },
+{ PatentID: 'JP2025-058577', ExampleID: 'Example01P', TaleID: '', Description: 'Cosina Nokton 50mm F1.2' },
+{ PatentID: 'JP1999-326756', ExampleID: 'Example03P', TaleID: '', Description: 'Cosina Super Wide-Heliar 15mm F4.5 Aspherical SL' },
+{ PatentID: 'DE00444150', ExampleID: 'Example02P', TaleID: '', Description: 'Cosina Voigtlander Cine-Tele-Anastigmat 100mm F4.5' },
+{ PatentID: 'US000765006', ExampleID: 'Example01P', TaleID: '', Description: 'Cosina Voigtlander Dynar 100mm F6' },
+{ PatentID: 'GB190213441', ExampleID: 'Example01P', TaleID: '', Description: 'Cosina Voigtlander Heliar 100mm F4.5' },
+{ PatentID: 'US002645154', ExampleID: 'Example01P', TaleID: '', Description: 'Cosina Voigtlander Heliar 210mm F4.5' },
+{ PatentID: 'JP2026-120386', ExampleID: 'Example01P', TaleID: '', Description: 'Cosina Voigtlander Heliar 50mm F2' },
+{ PatentID: 'JP2026-120386', ExampleID: 'Example02P', TaleID: '', Description: 'Cosina Voigtlander Heliar 75mm F1.8 VM' },
+{ PatentID: 'JP2004-101880', ExampleID: 'Example02P', TaleID: '', Description: 'Cosina Voigtlander Nokton 35mm F1.2 Aspherical' },
+{ PatentID: 'JP2023-063766', ExampleID: 'Example01P', TaleID: '', Description: 'Cosina Voigtlander Nokton 50mm F1.0 Aspherical' },
+{ PatentID: 'US002927506', ExampleID: 'Example01P', TaleID: '', Description: 'Cosina Voigtlander Skoparex 35mm f3.4 (Bessamatic)' },
+{ PatentID: 'DE00444150', ExampleID: 'Example01P', TaleID: '', Description: 'Cosina Voigtlander Tele-Dynar 100mm f6.3' },
+{ PatentID: 'FR1045076', ExampleID: 'Example01P', TaleID: '', Description: 'Cosina Voigtlander Telomar 180mm f5.5' },
+{ PatentID: 'US002627204', ExampleID: 'Example02P', TaleID: '', Description: 'Cosina Voigtlander Ultron 50mm f2' },
+{ PatentID: 'JP2022-100641', ExampleID: 'Example01P', TaleID: '', Description: 'Cosina Voigtlander Ultron Vintage Line 28mm F2 Aspherical' },
+{ PatentID: 'CN105807400', ExampleID: 'Example01P', TaleID: '', Description: 'DZOptics Kerlee 35mm F1.2 SLR' },
+{ PatentID: 'DE01228820', ExampleID: 'Example01P', TaleID: '', Description: 'Enna Munchen Lithagon 24mm F4' },
+{ PatentID: 'US002821112', ExampleID: 'Example01P', TaleID: '', Description: 'Enna Munchen Lithagon 35mm F3.5 C' },
+{ PatentID: 'US002907248', ExampleID: 'Example01P', TaleID: '', Description: 'Enna Munchen Tele-Ennalyt 135mm F2.8' },
+{ PatentID: 'US002959100', ExampleID: 'Example01P', TaleID: '', Description: 'Enna Munchen Ultra-Lithagon 28mm F3.5' },
+{ PatentID: 'US002846923', ExampleID: 'Example02P', TaleID: '', Description: 'Farrand Super-Farron 76mm f0.87' },
+{ PatentID: 'US20150226942', ExampleID: 'Example01FCLP', TaleID: '', Description: 'Fujifilm TCL-X100' },
+{ PatentID: 'US20150226942', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm TCL-X100 with Fujifilm Fujinon 23mm F2' },
+{ PatentID: 'JP1954-002685', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinar 210mm f4.5' },
+{ PatentID: 'US20170075089', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon 18.5mm F2.8 (X70)' },
+{ PatentID: 'US20200333569', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon 23mm F2.0 II Super EBC (X100V)' },
+{ PatentID: 'US20120069456', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon 23mm F2.0 Super EBC (X100F)' },
+{ PatentID: 'US20250362482', ExampleID: 'Example05P', TaleID: '', Description: 'Fujifilm Fujinon 35mm F4 Super EBC Aspherical(GFX100RF)' },
+{ PatentID: 'US005621575', ExampleID: 'Example06P', TaleID: '', Description: 'Fujifilm Fujinon 45mm F4 Super EBC (GA645 Wide Professional)' },
+{ PatentID: 'US005548447', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon 60mm F4 Super EBC (GA645 Professional)' },
+{ PatentID: 'US005548447', ExampleID: 'Example06P', TaleID: '', Description: 'Fujifilm Fujinon 60mm F4 Super EBC (GS645S Professional)' },
+{ PatentID: 'US20140133036', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon 7.1-28.4mm F2.0-2.8 Super EBC (X10)' },
+{ PatentID: 'JP1980-000560', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon 85mm F4.0 SF EBC' },
+{ PatentID: 'US20190086645', ExampleID: 'Example01TCP', TaleID: '', Description: 'Fujifilm Fujinon GF1.4X TC WR' },
+{ PatentID: 'US20190361195', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon GF100-200mm F5.6 R LM OIS WR' },
+{ PatentID: 'US20180100988', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon GF110mm F2 R LM WR' },
+{ PatentID: 'US20180059384', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon GF120mm F4 R LM OIS WR Macro' },
+{ PatentID: 'US20220236544', ExampleID: 'Example10P', TaleID: '', Description: 'Fujifilm Fujinon GF20-35mm F4 R WR' },
+{ PatentID: 'US20180210178', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon GF23mm F4 R LM WR' },
+{ PatentID: 'US20190094496', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon GF250mm F4 R LM OIS WR' },
+{ PatentID: 'US20190086645', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon GF250mm F4 R LM OIS WR with Fujifilm Fujinon GF1.4X TC WR' },
+{ PatentID: 'US20210231930', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon GF30mm F3.5 R WR' },
+{ PatentID: 'WO2024-195273', ExampleID: 'Example04P', TaleID: '', Description: 'Fujifilm Fujinon GF30mm F5.6 T&S' },
+{ PatentID: 'US010191246', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon GF32-64mm F4 R LM WR' },
+{ PatentID: 'US20260147192', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon GF32-90mm T3.5 PZ OIS WR' },
+{ PatentID: 'US20220236544', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon GF35-70mm F4.5-5.6 WR' },
+{ PatentID: 'US20200379223', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon GF45-100mm F4 R LM OIS WR' },
+{ PatentID: 'US20200174231', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon GF45mm F2.8 R WR' },
+{ PatentID: 'WO2025-013477', ExampleID: 'Example07P', TaleID: '', Description: 'Fujifilm Fujinon GF500mm F5.6 R LM OIS WR' },
+{ PatentID: 'US20200166730', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon GF50mm F3.5 R LM WR' },
+{ PatentID: 'US20230341664', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon GF55mm F1.7 R WR' },
+{ PatentID: 'US20170242219', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon GF63mm F2.8 R WR' },
+{ PatentID: 'US20210294073', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon GF80mm F1.7 R WR' },
+{ PatentID: 'US20260202648', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon XC13-33mm F3.5-6.3 OIS' },
+{ PatentID: 'JP2021-015312', ExampleID: 'Example03P', TaleID: '', Description: 'Fujifilm Fujinon XC15-45mm F3.5-5.6 OIS PZ' },
+{ PatentID: 'US20140368925', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon XC16-50mm F3.5-5.6 OIS II' },
+{ PatentID: 'US20200018936', ExampleID: 'Example01TCP', TaleID: '', Description: 'Fujifilm Fujinon XF1.4X TC F2 WR' },
+{ PatentID: 'US20170090163', ExampleID: 'Example01TCP', TaleID: '', Description: 'Fujifilm Fujinon XF1.4X TC WR' },
+{ PatentID: 'US20170090170', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon XF100-400mm F4.5-5.6 R LM OIS WR' },
+{ PatentID: 'US20150131163', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon XF10-24mm F4 R OIS' },
+{ PatentID: 'US20150168694', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon XF14mm F2.8 R' },
+{ PatentID: 'DE102022118285', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon XF150-600mm F5.6-8 R LM OIS WR' },
+{ PatentID: 'WO2024-057734', ExampleID: 'Example17P', TaleID: '', Description: 'Fujifilm Fujinon XF16-50mm F2.8-4.8 R LM WR' },
+{ PatentID: 'US20160154221', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon XF16-55mm F2.8 R LM WR' },
+{ PatentID: 'US20250234079', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon XF16-55mm F2.8 R LM WR II' },
+{ PatentID: 'US20200166735', ExampleID: 'Example11P', TaleID: '', Description: 'Fujifilm Fujinon XF16-80mm F4 R OIS WR' },
+{ PatentID: 'US20160282590', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon XF16mm F1.4 R WR' },
+{ PatentID: 'US20200073096', ExampleID: 'Example03P', TaleID: '', Description: 'Fujifilm Fujinon XF16mm F2.8 R WR' },
+{ PatentID: 'JP2023-033114', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon XF18-120mm F4.0 LM PZ WR' },
+{ PatentID: 'US009651761', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon XF18-135mm F3.5-5.6 R LM OIS WR' },
+{ PatentID: 'US20150177500', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon XF18-55mm F2.8-4 R LM OIS' },
+{ PatentID: 'US20220011542', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon XF18mm F1.4 R LM WR' },
+{ PatentID: 'US20140240851', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon XF18mm F2 R' },
+{ PatentID: 'US20190265504', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon XF200mm F2 R LM OIS WR' },
+{ PatentID: 'US20200018936', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon XF200mm F2 R LM OIS WR with Fujifilm Fujinon XF1.4X TC F2 WR' },
+{ PatentID: 'US20140368926', ExampleID: 'Example04P', TaleID: '', Description: 'Fujifilm Fujinon XF23mm F1.4 R' },
+{ PatentID: 'US20220276464', ExampleID: 'Example07P', TaleID: '', Description: 'Fujifilm Fujinon XF23mm F1.4 R LM WR' },
+{ PatentID: 'US20170351051', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon XF23mm F2 R WR' },
+{ PatentID: 'US20260118637', ExampleID: 'Example04P', TaleID: '', Description: 'Fujifilm Fujinon XF23mm F2.8 R WR' },
+{ PatentID: 'US20160011404', ExampleID: 'Example05P', TaleID: '', Description: 'Fujifilm Fujinon XF27mm F2.8' },
+{ PatentID: 'US010197893', ExampleID: 'Example01TCP', TaleID: '', Description: 'Fujifilm Fujinon XF2X TC WR' },
+{ PatentID: 'CN116500768', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon XF30mm F2.8 R LM WR Macro' },
+{ PatentID: 'US20220276464', ExampleID: 'Example03P', TaleID: '', Description: 'Fujifilm Fujinon XF33 F1.4 R LM WR' },
+{ PatentID: 'US20140285903', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon XF35mm F1.4 R' },
+{ PatentID: 'US20170010441', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon XF35mm F2 R WR' },
+{ PatentID: 'US20170090163', ExampleID: 'Example01MLP', TaleID: '', Description: 'Fujifilm Fujinon XF50-140mm F2.8 R LM OIS WR' },
+{ PatentID: 'US20170090163', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon XF50-140mm F2.8 R LM OIS WR with Fujifilm Fujinon XF1.4X TC WR' },
+{ PatentID: 'US010197893', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon XF50-140mm F2.8 R LM OIS WR with Fujifilm Fujinon XF2X TC WR' },
+{ PatentID: 'US20210231927', ExampleID: 'Example03P', TaleID: '', Description: 'Fujifilm Fujinon XF50mm F1.0 R WR' },
+{ PatentID: 'US010168507', ExampleID: 'Example04P', TaleID: '', Description: 'Fujifilm Fujinon XF50mm F2 R WR' },
+{ PatentID: 'DE112013006887', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon XF55-200mm F3.5-4.8 R LM OIS' },
+{ PatentID: 'US20150212302', ExampleID: 'Example03P', TaleID: '', Description: 'Fujifilm Fujinon XF56mm F1.2 R' },
+{ PatentID: 'JP2023-029039', ExampleID: 'Example02P', TaleID: '', Description: 'Fujifilm Fujinon XF56mm F1.2 R WR' },
+{ PatentID: 'US20140247506', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon XF60mm F2.4 R Macro' },
+{ PatentID: 'US20210286156', ExampleID: 'Example06P', TaleID: '', Description: 'Fujifilm Fujinon XF70-300mm F4-5.6 R LM OIS WR' },
+{ PatentID: 'US20180246292', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon XF80mm F2.8 R LM OIS WR Macro' },
+{ PatentID: 'US20190302431', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon XF8-16mm F2.8 R LM WR' },
+{ PatentID: 'JP2023-001878', ExampleID: 'Example07P', TaleID: '', Description: 'Fujifilm Fujinon XF8mm F3.5 R WR' },
+{ PatentID: 'US20160274335', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon XF90mm F2 R LM WR' },
+{ PatentID: 'JP1981-140311', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon-SW 65mm F5.6' },
+{ PatentID: 'US004018512', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm Fujinon-W 35mm f1.9 EBC' },
+{ PatentID: 'US004195912', ExampleID: 'Example02P', TaleID: '', Description: 'Fujifilm Fujinon-Z 43-75mm F3.5-4.5' },
+{ PatentID: 'US004158482', ExampleID: 'Example01P', TaleID: '', Description: 'Fujifilm X-Fujinon-SW 24mm f2.8 DM EBC' },
+{ PatentID: 'DE00074437', ExampleID: 'Example01P', TaleID: '', Description: 'Goerz Dagor Anastigmat 240mm F6.8' },
+{ PatentID: 'US20010050819', ExampleID: 'Example03P', TaleID: '', Description: 'Hasselblad HC 2.8 80 (Fujinon)' },
+{ PatentID: 'US20020075570', ExampleID: 'Example01P', TaleID: '', Description: 'Hasselblad HC 3.2 150 (Fujinon)' },
+{ PatentID: 'US20040136095', ExampleID: 'Example01P', TaleID: '', Description: 'Hasselblad HC 3.5 35 (Fujinon)' },
+{ PatentID: 'US20030011895', ExampleID: 'Example04P', TaleID: '', Description: 'Hasselblad HC 3.5 50 (Fujinon)' },
+{ PatentID: 'US20120063011', ExampleID: 'Example01P', TaleID: '', Description: 'Hasselblad HC 3.5 50-II' },
+{ PatentID: 'JP2004-302170', ExampleID: 'Example04P', TaleID: '', Description: 'Hasselblad HC 4 120 Macro (Fujinon)' },
+{ PatentID: 'US006445511', ExampleID: 'Example03P', TaleID: '', Description: 'Hasselblad HC 4 210 (Fujinon)' },
+{ PatentID: 'US20060209426', ExampleID: 'Example01P', TaleID: '', Description: 'Hasselblad HC 4.5 300 (Fujinon)' },
+{ PatentID: 'US20020191303', ExampleID: 'Example01P', TaleID: '', Description: 'Hasselblad HC TC 1.7x (Fujinon)' },
+{ PatentID: 'JP2022-099402', ExampleID: 'Example01P', TaleID: '', Description: 'Hasselblad XCD 2.5 90V' },
+{ PatentID: 'US20200319427', ExampleID: 'Example01P', TaleID: '', Description: 'Hasselblad XCD 2.8 65' },
+{ PatentID: 'US20200192060', ExampleID: 'Example02P', TaleID: '', Description: 'Hasselblad XCD 3.5 120 Macro' },
+{ PatentID: 'WO2018-052113', ExampleID: 'Example01P', TaleID: '', Description: 'Hasselblad XCD 3.5 30' },
+{ PatentID: 'WO2017-221949', ExampleID: 'Example01P', TaleID: '', Description: 'Hasselblad XCD 3.5 45' },
+{ PatentID: 'GB0870189', ExampleID: 'Example02P', TaleID: '', Description: 'Isco 135mm F2.8' },
+{ PatentID: 'CH352160', ExampleID: 'Example01P', TaleID: '', Description: 'Isco Westrogon 24mm F4' },
+{ PatentID: 'FR1218166', ExampleID: 'Example01P', TaleID: '', Description: 'Isco-Gottingen Tele-Westanar 135mm F3.5' },
+{ PatentID: 'US002012822', ExampleID: 'Example01P', TaleID: '', Description: 'Kapella 100mm F1' },
+{ PatentID: 'JP1986-067815', ExampleID: 'Example01P', TaleID: '', Description: 'Kino Precision Kiron 105mm F2.8 MC Macro' },
+{ PatentID: 'US003037426', ExampleID: 'Example03P', TaleID: '', Description: 'Kinoptik Super-Tegea 1.9mm f/1.9 Fisheye' },
+{ PatentID: 'US003037426', ExampleID: 'Example01P', TaleID: '', Description: 'Kinoptik Tegea 5.7mm f/1.8' },
+{ PatentID: 'US003037426', ExampleID: 'Example02P', TaleID: '', Description: 'Kinoptik Tegea 9.8mm f/1.8' },
+{ PatentID: 'US002983193', ExampleID: 'Example01P', TaleID: '', Description: 'Kodak Aero Ektar 153mm F3.5' },
+{ PatentID: 'US002279384', ExampleID: 'Example06P', TaleID: '', Description: 'Kodak Ektar 100mm F4.5' },
+{ PatentID: 'US002518719', ExampleID: 'Example02P', TaleID: '', Description: 'Kodak Ektar 100mm F6.3' },
+{ PatentID: 'US002165328', ExampleID: 'Example02P', TaleID: '', Description: 'Kodak Ektar 50mm F3.5' },
+{ PatentID: 'US002397565', ExampleID: 'Example01P', TaleID: '', Description: 'Kodak Ektar 52mm F1.5' },
+{ PatentID: 'JP1963-011590', ExampleID: 'Example02P', TaleID: '', Description: 'Konica Minolta 100mm F2 Auto Tele Rokkor' },
+{ PatentID: 'US004214816', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta 135mm F2.8 MD' },
+{ PatentID: 'JP1976-062037', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta 135mm F2.8 MD Tele Rokkor' },
+{ PatentID: 'JP1999-231209', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta 135mm F2.8 T4.5 STF' },
+{ PatentID: 'JP1981-158314', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta 24-35mm F3.5 MD Zoom' },
+{ PatentID: 'US004147410', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta 24-50mm F4 MD Zoom' },
+{ PatentID: 'US004264136', ExampleID: 'Example02P', TaleID: '', Description: 'Konica Minolta 250mm F5.6 RF' },
+{ PatentID: 'JP1989-193709', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta 28-85mm F3.5-4.5 MD Zoom' },
+{ PatentID: 'US003973832', ExampleID: 'Example02P', TaleID: '', Description: 'Konica Minolta 28mm F2.8 MD' },
+{ PatentID: 'US004493536', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta 28mm F2.8 MD v2' },
+{ PatentID: 'JP1969-025743', ExampleID: 'Example02P', TaleID: '', Description: 'Konica Minolta 28mm F3.5 MC W Rokkor v2' },
+{ PatentID: 'US005249079', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta 35-135mm F3.5-4.5 MD Zoom' },
+{ PatentID: 'US003936153', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta 35mm F2.8 MD' },
+{ PatentID: 'US004277149', ExampleID: 'Example07P', TaleID: '', Description: 'Konica Minolta 45mm F2 MD Rokkor' },
+{ PatentID: 'US004192577', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta 50-135mm F3.5 MD Zoom' },
+{ PatentID: 'US004182550', ExampleID: 'Example02P', TaleID: '', Description: 'Konica Minolta 50mm F1.4 MD' },
+{ PatentID: 'JP1985-111215', ExampleID: 'ExampleMLP', TaleID: '', Description: 'Konica Minolta 50mm F1.7 MD' },
+{ PatentID: 'US004444473', ExampleID: 'Example05P', TaleID: '', Description: 'Konica Minolta 50mm F2.0 MD' },
+{ PatentID: 'US004126378', ExampleID: 'Example03P', TaleID: '', Description: 'Konica Minolta 600mm F6.3 MD Apo-Tele' },
+{ PatentID: 'JP1981-150717', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta 75-150mm F4.0 MD Zoom' },
+{ PatentID: 'US004124276', ExampleID: 'Example03P', TaleID: '', Description: 'Konica Minolta 85mm F2.8 VariSoft' },
+{ PatentID: 'US004673258', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta AF 100-200mm F4.5' },
+{ PatentID: 'US005633759', ExampleID: 'Example02P', TaleID: '', Description: 'Konica Minolta AF 100-400mm F4.5-6.7 APO' },
+{ PatentID: 'JP1987-244010', ExampleID: 'Example02P', TaleID: '', Description: 'Konica Minolta AF 100mm F2' },
+{ PatentID: 'US004764000', ExampleID: 'Example08P', TaleID: '', Description: 'Konica Minolta AF 100mm F2.8 Macro' },
+{ PatentID: 'US003589798', ExampleID: 'Example02P', TaleID: '', Description: 'Konica Minolta AF 16mm F2.8 FishEye' },
+{ PatentID: 'US004786152', ExampleID: 'Example03P', TaleID: '', Description: 'Konica Minolta AF 200mm F2.8 APO' },
+{ PatentID: 'JP1987-249119', ExampleID: 'Example04P', TaleID: '', Description: 'Konica Minolta AF 20mm F2.8' },
+{ PatentID: 'JP2000-187161', ExampleID: 'Example03P', TaleID: '', Description: 'Konica Minolta AF 24-105mm F3.5-4.5 D' },
+{ PatentID: 'US005528423', ExampleID: 'Example02P', TaleID: '', Description: 'Konica Minolta AF 24-85mm F3.5-4.5 RS' },
+{ PatentID: 'JP1985-039613', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta AF 28-135mm F4-4.5' },
+{ PatentID: 'JP1994-082698', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta AF 28-70mm F2.8 G' },
+{ PatentID: 'JP2004-101739', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta AF 28-75mm F2.8 D' },
+{ PatentID: 'US004258985', ExampleID: 'Example04P', TaleID: '', Description: 'Konica Minolta AF 28mm F2' },
+{ PatentID: 'US004518229', ExampleID: 'Example08P', TaleID: '', Description: 'Konica Minolta AF 300mm F2.8 APO' },
+{ PatentID: 'US004871239', ExampleID: 'Example03P', TaleID: '', Description: 'Konica Minolta AF 35-105mm F3.5-4.5 v2' },
+{ PatentID: 'US004560253', ExampleID: 'Example02P', TaleID: '', Description: 'Konica Minolta AF 35-70mm F4' },
+{ PatentID: 'JP1989-284819', ExampleID: 'Example04P', TaleID: '', Description: 'Konica Minolta AF 35-80mm F4-5.6' },
+{ PatentID: 'US004806003', ExampleID: 'Example02P', TaleID: '', Description: 'Konica Minolta AF 35mm F1.4' },
+{ PatentID: 'JP1988-201614', ExampleID: 'Example04P', TaleID: '', Description: 'Konica Minolta AF 35mm F2' },
+{ PatentID: 'JP1988-070818', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta AF 3x-1x 1.7-2.8 Macro' },
+{ PatentID: 'JP1996-327896', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta AF 400mm F4.5 HS APO G' },
+{ PatentID: 'JP1984-228220', ExampleID: 'Example03P', TaleID: '', Description: 'Konica Minolta AF 50mm F2.8 Macro' },
+{ PatentID: 'JP2004-109559', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta AF 70-200mm F2.8 APO G D SSM' },
+{ PatentID: 'JP1989-223409', ExampleID: 'Example07P', TaleID: '', Description: 'Konica Minolta AF 70-210mm F3.5-4.5' },
+{ PatentID: 'JP1983-001118', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta AF 70-210mm F4' },
+{ PatentID: 'JP1986-133916', ExampleID: 'Example04P', TaleID: '', Description: 'Konica Minolta AF 75-300mm F4.5-5.6' },
+{ PatentID: 'US005633759', ExampleID: 'Example06P', TaleID: '', Description: 'Konica Minolta AF 75-300mm F4.5-5.6 D' },
+{ PatentID: 'JP1989-039542', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta AF 80-200mm F2.8 APO' },
+{ PatentID: 'JP1989-223410', ExampleID: 'Example05P', TaleID: '', Description: 'Konica Minolta AF 80-200mm F4.5-5.6' },
+{ PatentID: 'JP1987-244010', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta AF 85mm F1.4' },
+{ PatentID: 'US004951078', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta AF Reflex 500mm F8' },
+{ PatentID: 'JP1988-200113', ExampleID: 'Example02P', TaleID: '', Description: 'Konica Minolta APO Tele Converter 1.4x' },
+{ PatentID: 'JP1974-023892', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta FL-Hexanon AR 300mm F6.3' },
+{ PatentID: 'JP1979-055424', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta Hexanon 200mm F4' },
+{ PatentID: 'JP1980-017129', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta Hexanon 21mm F2.8' },
+{ PatentID: 'JP1980-087117', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta Hexanon 24mm F2.8' },
+{ PatentID: 'US004170403', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta Hexanon 35mm F2.8' },
+{ PatentID: 'JP1979-030821', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta Hexanon 40mm F1.8' },
+{ PatentID: 'JP1982-108817', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta Hexanon 50mm F1.8' },
+{ PatentID: 'JP1999-160615', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta Hexanon 60mm F1.2 (1999)' },
+{ PatentID: 'JP1979-055423', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta Hexanon AR 135mm F3.5' },
+{ PatentID: 'JP1955-009472', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta Hexanon AR 135mm F3.5 (1955)' },
+{ PatentID: 'JP1993-164961', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta Hexar 35mm F2.0' },
+{ PatentID: 'US003615126', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta Hexar 38mm F2.8' },
+{ PatentID: 'JP1976-026535', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta UC Hexanon AR 28mm F1.8' },
+{ PatentID: 'JP1976-037247', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta UC Hexanon AR 80-200mm F4' },
+{ PatentID: 'JP1976-034741', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta UC Zoom-Hexanon AR 45-100mm F3.5' },
+{ PatentID: 'US003584935', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta Varifocal Hexanon AR 35-100mm F2.8' },
+{ PatentID: 'JP1980-021005', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta Zoom-Hexanon AR 35-70mm F3.5' },
+{ PatentID: 'JP1982-019708', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta Zoom-Hexanon AR 35-70mm F4' },
+{ PatentID: 'JP1983-149014', ExampleID: 'Example03P', TaleID: '', Description: 'Konica Minolta Zoom-Hexanon AR 65-135mm F4' },
+{ PatentID: 'JP1983-137812', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta Zoom-Hexanon AR 70-150mm F4' },
+{ PatentID: 'US004231636', ExampleID: 'Example01P', TaleID: '', Description: 'Konica Minolta Zoom-Rokkor 40-80mm f2.8 MC' },
+{ PatentID: 'JP2016-090725', ExampleID: 'Example09P', TaleID: '', Description: 'Leica APO-Macro-Elmarit-TL 60mm F2.8' },
+{ PatentID: 'US20240241349', ExampleID: 'Example01P', TaleID: '', Description: 'Leica APO-Summicron 43mm F2.0 Asph (Q3 43)' },
+{ PatentID: 'US20220066176', ExampleID: 'Example01P', TaleID: '', Description: 'Leica APO-Summicron-M 35mm f/2 Asph' },
+{ PatentID: 'US005388006', ExampleID: 'ExampleFR1F01P', TaleID: '', Description: 'Leica APO-Telyt-R 280mm F2.8' },
+{ PatentID: 'JP2016-139125', ExampleID: 'Example01P', TaleID: '', Description: 'Leica APO-Vario-Elmarit-SL 90-280mm f/2.8-4' },
+{ PatentID: 'US003076383', ExampleID: 'Example01P', TaleID: '', Description: 'Leica Colorplan 90mm F2.5' },
+{ PatentID: 'US20150103211', ExampleID: 'Example01P', TaleID: '', Description: 'Leica DC Vario-Elmarit 4.5-108mm F2.8 (Panasonic FZ300)' },
+{ PatentID: 'US20180081156', ExampleID: 'Example01P', TaleID: '', Description: 'Leica DC Vario-Elmarit 8.8-176mm F2.8-4.5 ASPH (Panasonic FZ2500,FZ2000,FZH1)' },
+{ PatentID: 'US20160054550', ExampleID: 'Example01P', TaleID: '', Description: 'Leica DC Vario-Summilux 10.9-34mm F1.7-2.8 ASPH (Panasonic LX100M2)' },
+{ PatentID: 'US20150124127', ExampleID: 'Example01P', TaleID: '', Description: 'Leica DC Vario-Summilux 4.7-17.7mm F1.4-2.3 (Panasonic LX7)' },
+{ PatentID: 'US003649104', ExampleID: 'Example03P', TaleID: '', Description: 'Leica Elcan 50mm F2' },
+{ PatentID: 'US003591257', ExampleID: 'Example03P', TaleID: '', Description: 'Leica Elmarit 28mm f2.8' },
+{ PatentID: 'US002995980', ExampleID: 'Example01P', TaleID: '', Description: 'Leica Elmarit 90mm F2.8' },
+{ PatentID: 'US003108152', ExampleID: 'Example02P', TaleID: '', Description: 'Leica Elmarit-M 135mm F2.8' },
+{ PatentID: 'US003740120', ExampleID: 'Example03P', TaleID: '', Description: 'Leica Elmarit-R 28mm F2.8' },
+{ PatentID: 'FR1471493', ExampleID: 'Example01P', TaleID: '', Description: 'Leica Elmarit-R 35mm F2.8' },
+{ PatentID: 'US20200341238', ExampleID: 'Example03P', TaleID: '', Description: 'Leica Elmarit-TL 18mm F2.8 Asph' },
+{ PatentID: 'DE01183707', ExampleID: 'Example01P', TaleID: '', Description: 'Leica Elmar-M 135mm F4' },
+{ PatentID: 'US003552833', ExampleID: 'Example01P', TaleID: '', Description: 'Leica Macro-Elmarit-R 60mm F2.8' },
+{ PatentID: 'DE02246966', ExampleID: 'Example01P', TaleID: '', Description: 'Leica Macro-Elmar-M 90mm F4' },
+{ PatentID: 'US003410632', ExampleID: 'Example02P', TaleID: '', Description: 'Leica PA-Curtagon-R 35mm F4' },
+{ PatentID: 'US004123144', ExampleID: 'Example08P', TaleID: '', Description: 'Leica Summicron R 50mm f/2' },
+{ PatentID: 'DE02222892', ExampleID: 'Example03P', TaleID: '', Description: 'Leica Summicron-C 40mm F2' },
+{ PatentID: 'US002975673', ExampleID: 'Example01P', TaleID: '', Description: 'Leica Summicron-M 35mm F1.4' },
+{ PatentID: 'US004123144', ExampleID: 'Example09P', TaleID: '', Description: 'Leica Summicron-M 50mm F2 v5' },
+{ PatentID: 'US20160266350', ExampleID: 'Example01P', TaleID: '', Description: 'Leica Summilux 28mm f1.7 Asph (Leica Q2)' },
+{ PatentID: 'FR1233449', ExampleID: 'Example01P', TaleID: '', Description: 'Leica Summilux 35mm F1.4' },
+{ PatentID: 'US003291553', ExampleID: 'Example01P', TaleID: '', Description: 'Leica Summilux 50mm F1.4' },
+{ PatentID: 'US008508864', ExampleID: 'Example03P', TaleID: '', Description: 'Leica Summilux C 100mm T1.4' },
+{ PatentID: 'US008508864', ExampleID: 'Example02P', TaleID: '', Description: 'Leica Summilux C 40mm T1.4' },
+{ PatentID: 'US20160070086', ExampleID: 'Example01P', TaleID: '', Description: 'Leica Summilux-M 28mm F1.4 Asph' },
+{ PatentID: 'US005161060', ExampleID: 'Example01P', TaleID: '', Description: 'Leica Summilux-M 35mm F1.4 Asph v1' },
+{ PatentID: 'DE01045120', ExampleID: 'Example01P', TaleID: '', Description: 'Leica Summilux-M 50mm F1.4' },
+{ PatentID: 'EP3136147', ExampleID: 'Example01P', TaleID: '', Description: 'Leica Summilux-SL 50 f/1.4 ASPH' },
+{ PatentID: 'EP3029504', ExampleID: 'Example04P', TaleID: '', Description: 'Leica Summilux-TL 35mm F1.4 Asph' },
+{ PatentID: 'US003512874', ExampleID: 'Example03P', TaleID: '', Description: 'Leica Super-Angulon-R 21mm F4' },
+{ PatentID: 'JP2018-087903', ExampleID: 'Example01P', TaleID: '', Description: 'Leica Super-Vario-Elmar-SL 16-35mm f/3.5-4.5 Asph' },
+{ PatentID: 'JP2016-133764', ExampleID: 'Example06P', TaleID: '', Description: 'Leica Super-Vario-Elmar-TL 11-23mm F3.5-4.5 Asph' },
+{ PatentID: 'DE01096057', ExampleID: 'Example01P', TaleID: '', Description: 'Leica Telyt 200mm F4' },
+{ PatentID: 'DE01018236', ExampleID: 'Example01P', TaleID: '', Description: 'Leica Telyt 400mm F5 (Wetzlar 1957)' },
+{ PatentID: 'US003536379', ExampleID: 'Example01P', TaleID: '', Description: 'Leica Telyt-S 800mm f/6.3' },
+{ PatentID: 'JP1977-141223', ExampleID: 'Example01P', TaleID: '', Description: 'Mamiya 150mm f/4 Soft' },
+{ PatentID: 'JP2000-028919', ExampleID: 'Example01P', TaleID: '', Description: 'Mamiya 210mm f8' },
+{ PatentID: 'JP1979-107336', ExampleID: 'Example01P', TaleID: '', Description: 'Mamiya 55mm f2.8N' },
+{ PatentID: 'JP1998-206729', ExampleID: 'Example01P', TaleID: '', Description: 'Mamiya AF APO 300mm f4.5 IF' },
+{ PatentID: 'JP1999-052234', ExampleID: 'ExampleMLP', TaleID: '', Description: 'Mamiya RZ67 250mm f4.5 APO' },
+{ PatentID: 'JP2001-183581', ExampleID: 'Example01P', TaleID: '', Description: 'Mamiya Sekor D AF 150mm f2.8' },
+{ PatentID: 'JP1978-066222', ExampleID: 'Example01P', TaleID: '', Description: 'Mamiya-Sekor CS 35mm f2.8' },
+{ PatentID: 'JP1978-087728', ExampleID: 'Example01P', TaleID: '', Description: 'Mamiya-Sekor Macro C 80mm f4' },
+{ PatentID: 'JP1981-119109', ExampleID: 'Example01P', TaleID: '', Description: 'Mamiya-Sekor Zoom E 28-50mm f3.5-4.5' },
+{ PatentID: 'CN216748240', ExampleID: 'Example01P', TaleID: '', Description: 'Meike Auto Focus 0.71x Speedbooster[MK-EFTR-071XL]' },
+{ PatentID: 'US008879901', ExampleID: 'Example03P', TaleID: '', Description: 'Metabones Canon EF Lens to Sony E Mount T Speed Booster Ultra 0.71x' },
+{ PatentID: 'US008879901', ExampleID: 'Example04P', TaleID: '', Description: 'Metabones M43 Speed Booster 0.71x' },
+{ PatentID: 'US008903232', ExampleID: 'Example11P', TaleID: '', Description: 'Metabones Speed Booster Ultra-m43 0.71x' },
+{ PatentID: 'DE00401630', ExampleID: 'Example03P', TaleID: '', Description: 'Meyer Optik Gorlitz 100mm F2 Kino Plasmat' },
+{ PatentID: 'DE01282311', ExampleID: 'Example01P', TaleID: '', Description: 'Meyer Optik Gorlitz 135mm F2.8 Orestor' },
+{ PatentID: 'GB0135853', ExampleID: 'Example02P', TaleID: '', Description: 'Meyer Optik Gorlitz 135mm f4.5 Double Plasmat' },
+{ PatentID: 'DE01794971', ExampleID: 'Example01P', TaleID: '', Description: 'Meyer Optik Gorlitz 30mm F3.5 Lydith' },
+{ PatentID: 'DE01749770', ExampleID: 'Example01P', TaleID: '', Description: 'Meyer Optik Gorlitz 35mm F4.5 Primagon' },
+{ PatentID: 'DE01980417', ExampleID: 'Example01P', TaleID: '', Description: 'Meyer Optik Gorlitz 500mm F5.6 Orestegor' },
+{ PatentID: 'US003634001', ExampleID: 'Example01P', TaleID: '', Description: 'Miranda Auto E 50mm F1.4' },
+{ PatentID: 'JP1976-074627', ExampleID: 'Example01P', TaleID: '', Description: 'Miranda Auto EC 135mm F2.8' },
+{ PatentID: 'JP1976-114926', ExampleID: 'Example01P', TaleID: '', Description: 'Miranda Auto EC 200mm F3.5' },
+{ PatentID: 'JP1976-053823', ExampleID: 'Example01P', TaleID: '', Description: 'Miranda Auto EC 35mm F2.8' },
+{ PatentID: 'US004457596', ExampleID: 'Example01', TaleID: 'Tale33', Description: 'Nikon "Pikaichi" L35AF 35mm f/2.8' },
+{ PatentID: 'JP2011-248340', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon 1 Nikkor 10mm f/2.8' },
+{ PatentID: 'US20150153549', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon 1 Nikkor 11-27.5mm f/3.5-5.6' },
+{ PatentID: 'WO2014-061226', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon 1 Nikkor 32mm f/1.2' },
+{ PatentID: 'US20200348497', ExampleID: 'Example08P', TaleID: '', Description: 'Nikon 1 Nikkor VR 10-100mm f4-5.6' },
+{ PatentID: 'US20120019926', ExampleID: 'Example04P', TaleID: '', Description: 'Nikon 1 Nikkor VR 10-30mm f/3.5-5.6' },
+{ PatentID: 'US20180196240', ExampleID: 'Example11P', TaleID: '', Description: 'Nikon 1 Nikkor VR 10-30mm f/3.5-5.6 PD-Zoom' },
+{ PatentID: 'US005764425', ExampleID: 'Example04', TaleID: 'Tale52', Description: 'Nikon 120mm f/4.5 Gugutto Macro' },
+{ PatentID: 'US005949588', ExampleID: 'Example08', TaleID: 'Tale54', Description: 'Nikon 20mm f/8 Gyogyotto Fisheye' },
+{ PatentID: 'JP1994-235857', ExampleID: 'Example02', TaleID: 'Tale94', Description: 'Nikon 28mm f/3.5 Macro(AF600QD)' },
+{ PatentID: 'JP1997-105860', ExampleID: 'Example01', TaleID: 'Tale54', Description: 'Nikon 400mm f/8 Dodotto Tele' },
+{ PatentID: 'US005796530', ExampleID: 'Example04SF2', TaleID: 'Tale52', Description: 'Nikon 90mm f/4.8 Fuwatto Soft' },
+{ PatentID: 'US007161746', ExampleID: 'Example09P', TaleID: '', Description: 'Nikon AF Fisheye-Nikkor 10.5mm f/2.8G ED' },
+{ PatentID: 'US005751485', ExampleID: 'Example09P', TaleID: '', Description: 'Nikon AF Micro-Nikkor 200mm f4D IF-ED' },
+{ PatentID: 'US005751485', ExampleID: 'Example01', TaleID: 'Tale74', Description: 'Nikon AF Micro-Nikkor 60mm f/2.8D' },
+{ PatentID: 'WO2021-039813', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF Nikkor 18mm f/2.8D' },
+{ PatentID: 'US005666230', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF Nikkor 20-35mm F/2.8D IF' },
+{ PatentID: 'US004690517', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF Nikkor 20mm f/2.8D' },
+{ PatentID: 'US005557473', ExampleID: 'Example03P', TaleID: '', Description: 'Nikon AF Nikkor 28mm f/2.8D' },
+{ PatentID: 'JP2021-036283', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF Nikkor 35mm f/2D' },
+{ PatentID: 'US005438455', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF Nikkor 400mm f/2.8D IF-ED' },
+{ PatentID: 'US005640277', ExampleID: 'Example01', TaleID: 'Tale41', Description: 'Nikon AF Nikkor 85mm f/1.4D IF' },
+{ PatentID: 'JP1995-209571', ExampleID: 'Example02P', TaleID: '', Description: 'Nikon AF Nikkor 85mm f/1.8D' },
+{ PatentID: 'US005717527', ExampleID: 'Example05', TaleID: 'Tale18', Description: 'Nikon AF Zoom-Micro-Nikkor 70-180mm f/4.5-5.6D ED' },
+{ PatentID: 'US20010030812', ExampleID: 'Example02P', TaleID: '', Description: 'Nikon AF Zoom-Nikkor 18-35mm f/3.5-4.5D IF-ED' },
+{ PatentID: 'JP2000-321497', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF Zoom-Nikkor 24-85mm f/2.8-4D IF' },
+{ PatentID: 'JP1999-142740', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF Zoom-Nikkor 28-105mm f/3.5-4.5D IF' },
+{ PatentID: 'US006621643', ExampleID: 'Example01', TaleID: 'Tale65', Description: 'Nikon AF Zoom-Nikkor 28-200mm f/3.5-5.6G IF-ED' },
+{ PatentID: 'US005485314', ExampleID: 'Example04', TaleID: 'Tale63', Description: 'Nikon AF Zoom-Nikkor 28-80mm f/3.3-5.6G' },
+{ PatentID: 'JP1999-030748', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF Zoom-Nikkor 28-80mm f3.5-5.6D' },
+{ PatentID: 'US004806000', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF Zoom-Nikkor 28-85mm f/3.5-4.5' },
+{ PatentID: 'JP1992-293008', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF Zoom-Nikkor 35-105mm f/3.5-4.5D' },
+{ PatentID: 'US006320698', ExampleID: 'Example03P', TaleID: '', Description: 'Nikon AF Zoom-Nikkor 35-70mm f/2.8D' },
+{ PatentID: 'US004770509', ExampleID: 'Example04P', TaleID: '', Description: 'Nikon AF Zoom-Nikkor 35-70mm f/3.3-4.5' },
+{ PatentID: 'JP1996-005914', ExampleID: 'Example03P', TaleID: '', Description: 'Nikon AF Zoom-Nikkor 35-80mm f/4.0-5.6D II' },
+{ PatentID: 'JP1988-118116', ExampleID: 'Example03P', TaleID: '', Description: 'Nikon AF Zoom-Nikkor 70-210mm f/4-5.6' },
+{ PatentID: 'JP1987-108218', ExampleID: 'Example03P', TaleID: '', Description: 'Nikon AF Zoom-Nikkor 80-200mm f/2.8D ED' },
+{ PatentID: 'US005323270', ExampleID: 'Example08P', TaleID: '', Description: 'Nikon AF-I Nikkor 300mm f/2.8D ED-IF' },
+{ PatentID: 'JP1992-238311', ExampleID: 'Example05P', TaleID: '', Description: 'Nikon AF-I Nikkor 600mm f/4D IF-ED' },
+{ PatentID: 'US005253112', ExampleID: 'RCL01P', TaleID: '', Description: 'Nikon AF-I Teleconverter TC-20E' },
+{ PatentID: 'WO2021-039813', ExampleID: 'Example02', TaleID: 'Tale90', Description: 'Nikon AF-P DX Nikkor 10-20mm f/4.5-5.6G VR' },
+{ PatentID: 'US010690896', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF-P DX Nikkor 18-55mm f/3.5-5.6G VR' },
+{ PatentID: 'US20210026133', ExampleID: 'Example04P', TaleID: '', Description: 'Nikon AF-P DX Nikkor 70-300mm f4.5-6.3G ED (VR)' },
+{ PatentID: 'US20190353880', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF-P Nikkor 70-300mm f/4.5-5.6E ED VR' },
+{ PatentID: 'US20110176215', ExampleID: 'Example01', TaleID: 'Tale88', Description: 'Nikon AF-S DX Micro Nikkor 40mm f/2.8G' },
+{ PatentID: 'US20090190220', ExampleID: 'Example05P', TaleID: '', Description: 'Nikon AF-S DX Micro Nikkor 85mm f/3.5G ED VR' },
+{ PatentID: 'US008169718', ExampleID: 'Example04P', TaleID: '', Description: 'Nikon AF-S DX Nikkor 10-24mm f/3.5-4.5G ED' },
+{ PatentID: 'US20180252903', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF-S DX Nikkor 16-80mm f/2.8-4E ED VR' },
+{ PatentID: 'US20080019018', ExampleID: 'Example07P', TaleID: '', Description: 'Nikon AF-S DX Nikkor 16-85mm f3.5-5.6G ED VR' },
+{ PatentID: 'WO2021-039812', ExampleID: 'Example08P', TaleID: '', Description: 'Nikon AF-S DX Nikkor 18-105mm f/3.5-5.6G ED VR' },
+{ PatentID: 'US20100220400', ExampleID: 'Example04', TaleID: 'Tale82', Description: 'Nikon AF-S DX Nikkor 18-200mm f/3.5-5.6G ED VR II' },
+{ PatentID: 'US20210103133', ExampleID: 'Example07P', TaleID: '', Description: 'Nikon AF-S DX Nikkor 18-300mm f/3.5-5.6G ED VR' },
+{ PatentID: 'US20090034100', ExampleID: 'Example04P', TaleID: '', Description: 'Nikon AF-S DX Nikkor 18-55mm f/3.5-5.6G VR' },
+{ PatentID: 'US20150185495', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF-S DX Nikkor 18-55mm f/3.5-5.6G VR II' },
+{ PatentID: 'WO2015-141574', ExampleID: 'Example02P', TaleID: '', Description: 'Nikon AF-S DX Nikkor 55-200mm f/4-5.6G ED VR II' },
+{ PatentID: 'US20110102905', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF-S DX Nikkor 55-300mm f/4.5-5.6G ED VR' },
+{ PatentID: 'US006940655', ExampleID: 'Example01', TaleID: 'Tale68', Description: 'Nikon AF-S DX Zoom-Nikkor 12-24mm f/4G IF-ED' },
+{ PatentID: 'US20050013015', ExampleID: 'Example05P', TaleID: '', Description: 'Nikon AF-S DX Zoom-Nikkor 17-55mm f/2.8G IF-ED' },
+{ PatentID: 'US20070070521', ExampleID: 'Example06P', TaleID: '', Description: 'Nikon AF-S DX Zoom-Nikkor 18-135mm f/3.5-5.6G IF-ED' },
+{ PatentID: 'US20060007559', ExampleID: 'Example04P', TaleID: '', Description: 'Nikon AF-S DX Zoom-Nikkor 18-55mm f/3.5-5.6G ED' },
+{ PatentID: 'US20050068636', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF-S DX Zoom-Nikkor 18-70mm f/3.5-4.5G IF-ED' },
+{ PatentID: 'US20060245079', ExampleID: 'Example05P', TaleID: '', Description: 'Nikon AF-S DX Zoom-Nikkor 55-200mm f/4-5.6G ED' },
+{ PatentID: 'US20070183042', ExampleID: 'Example02P', TaleID: '', Description: 'Nikon AF-S DX Zoom-Nikkor 55-200mm f/4-5.6G IF-ED VR' },
+{ PatentID: 'US007218457', ExampleID: 'Example03P', TaleID: '', Description: 'Nikon AF-S Micro-Nikkor 105mm f/2.8G VR' },
+{ PatentID: 'US007898744', ExampleID: 'Example02P', TaleID: '', Description: 'Nikon AF-S Micro-Nikkor 60mm f/2.8G ED' },
+{ PatentID: 'WO2019-116563', ExampleID: 'Example03P', TaleID: '', Description: 'Nikon AF-S Nikkor 105mm f/1.4E ED' },
+{ PatentID: 'JP2020-177057', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF-S Nikkor 120-300mm f/2.8E FL ED SR VR' },
+{ PatentID: 'US007359125', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF-S Nikkor 14-24mm f/2.8G ED' },
+{ PatentID: 'US20100238560', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF-S Nikkor 16-35mm f4G ED VR' },
+{ PatentID: 'US009256059', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF-S Nikkor 18-35mm f/3.5-4.5G ED' },
+{ PatentID: 'JP2014-209144', ExampleID: 'Example02P', TaleID: '', Description: 'Nikon AF-S Nikkor 200-500mm f/5.6E ED VR' },
+{ PatentID: 'JP2016-021011', ExampleID: 'Example04P', TaleID: '', Description: 'Nikon AF-S Nikkor 20mm f/1.8G ED' },
+{ PatentID: 'US20100220400', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF-S Nikkor 24-120mm f/4G ED VR' },
+{ PatentID: 'US20200142168', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF-S Nikkor 24-70mm f/2.8E ED VR' },
+{ PatentID: 'US007508592', ExampleID: 'Example02P', TaleID: '', Description: 'Nikon AF-S Nikkor 24-70mm f/2.8G ED' },
+{ PatentID: 'JP2011-221421', ExampleID: 'Example04P', TaleID: '', Description: 'Nikon AF-S Nikkor 24-85mm f/3.5-4.5G ED VR' },
+{ PatentID: 'US008416512', ExampleID: 'Example03P', TaleID: '', Description: 'Nikon AF-S Nikkor 24mm f/1.4G ED' },
+{ PatentID: 'JP2017-003807', ExampleID: 'Example04P', TaleID: '', Description: 'Nikon AF-S Nikkor 24mm f/1.8G ED' },
+{ PatentID: 'US20100220400', ExampleID: 'Example02P', TaleID: '', Description: 'Nikon AF-S Nikkor 28-300mm f/3.5-5.6G ED VR' },
+{ PatentID: 'JP2017-227799', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF-S Nikkor 28mm f/1.4E ED' },
+{ PatentID: 'US005745306', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF-S Nikkor 300mm f/2.8D IF-ED II' },
+{ PatentID: 'JP2019-152887', ExampleID: 'Example03P', TaleID: '', Description: 'Nikon AF-S Nikkor 400mm f/2.8 E FL ED VR' },
+{ PatentID: 'US006239919', ExampleID: 'Example04P', TaleID: '', Description: 'Nikon AF-S Nikkor 400mm f/2.8D IF-ED II' },
+{ PatentID: 'US20080158694', ExampleID: 'Example05P', TaleID: '', Description: 'Nikon AF-S Nikkor 400mm f/2.8G ED VR' },
+{ PatentID: 'US005745306', ExampleID: 'Example02P', TaleID: '', Description: 'Nikon AF-S Nikkor 500mm f/4D IF-ED II' },
+{ PatentID: 'JP2015-215560', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF-S Nikkor 500mm f/4E FL ED VR' },
+{ PatentID: 'US20090190239', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF-S Nikkor 500mm f/4G ED VR' },
+{ PatentID: 'JP2015-041003', ExampleID: 'Example01MLP', TaleID: '', Description: 'Nikon AF-S Nikkor 50mm f/1.4G' },
+{ PatentID: 'US005745306', ExampleID: 'Example03P', TaleID: '', Description: 'Nikon AF-S Nikkor 600mm f/4D IF-ED II' },
+{ PatentID: 'US20180031811', ExampleID: 'Example04P', TaleID: '', Description: 'Nikon AF-S Nikkor 600mm f/4E FL ED VR' },
+{ PatentID: 'WO2019-097669', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF-S Nikkor 70-200mm f/2.8 E FL ED VR' },
+{ PatentID: 'US008416506', ExampleID: 'Example06P', TaleID: '', Description: 'Nikon AF-S Nikkor 70-200mm f/2.8G ED VR II' },
+{ PatentID: 'US20170315337', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF-S Nikkor 70-200mm f/4G ED VR' },
+{ PatentID: 'JP2013-250293', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF-S Nikkor 800mm f/5.6E FL ED VR' },
+{ PatentID: 'US20200049962', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF-S Nikkor 80-400mm f/4.5-5.6G ED VR' },
+{ PatentID: 'US008767319', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF-S Nikkor 85mm f/1.4G' },
+{ PatentID: 'JP2015-102734', ExampleID: 'Example01TCP', TaleID: '', Description: 'Nikon AF-S Teleconverter TC-14E III' },
+{ PatentID: 'JP2005-107261', ExampleID: 'Example05P', TaleID: '', Description: 'Nikon AF-S Teleconverter TC-17E II' },
+{ PatentID: 'JP2010-191211', ExampleID: 'Example02TCP', TaleID: '', Description: 'Nikon AF-S Teleconverter TC-20E III Aspherical' },
+{ PatentID: 'JP2013-250290', ExampleID: 'Example01TCP', TaleID: '', Description: 'Nikon AF-S Teleconverter TC800-1.25E ED' },
+{ PatentID: 'JP2001-083421', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF-S Zoom-Nikkor 17-35mm f/2.8D IF-ED' },
+{ PatentID: 'WO2019-131992', ExampleID: 'Example01TCP', TaleID: '', Description: 'Nikon AF-S Zoom-Nikkor 180-400mm f/4E TC1.4 FL ED VR with TC' },
+{ PatentID: 'WO2019-131992', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF-S Zoom-Nikkor 180-400mm f/4E TC1.4 FL ED VR without TC' },
+{ PatentID: 'US20050157403', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF-S Zoom-Nikkor 200-400mm f4G IF-ED VR' },
+{ PatentID: 'US20040218274', ExampleID: 'Example03P', TaleID: '', Description: 'Nikon AF-S Zoom-Nikkor 24-120mm f/3.5-5.6G IF-ED VR' },
+{ PatentID: 'JP2003-241093', ExampleID: 'Example02P', TaleID: '', Description: 'Nikon AF-S Zoom-Nikkor 24-85mm f/3.5-4.5G IF-ED' },
+{ PatentID: 'JP2000-221399', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF-S Zoom-Nikkor 28-70mm f/2.8D IF-ED' },
+{ PatentID: 'US006693750', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AF-S Zoom-Nikkor 70-200mm f/2.8G IF-ED VR' },
+{ PatentID: 'US20050219708', ExampleID: 'Example04P', TaleID: '', Description: 'Nikon AF-S Zoom-Nikkor 70-300mm f/4.5-5.6G IF-ED VR' },
+{ PatentID: 'US004908639', ExampleID: 'Example02', TaleID: 'Tale32', Description: 'Nikon AI AF DC Nikkor 135mm F2S' },
+{ PatentID: 'US005434713', ExampleID: 'Example02', TaleID: 'Tale53', Description: 'Nikon AI AF Fisheye-Nikkor 16mm f/2.8D' },
+{ PatentID: 'US004986643', ExampleID: 'Example05', TaleID: 'Tale72', Description: 'Nikon AI AF Micro-Nikkor 105mm f/2.8S' },
+{ PatentID: 'US005734508', ExampleID: 'Example01', TaleID: 'Tale58', Description: 'Nikon AI AF Nikkor 24-120mm f/3.5-5.6D' },
+{ PatentID: 'JP2000-019398', ExampleID: 'Example01', TaleID: 'Tale67', Description: 'Nikon AI AF-S Zoom-Nikkor 80-200mm f/2.8D IF-ED' },
+{ PatentID: 'JP1984-121015', ExampleID: 'Example04', TaleID: 'Tale59', Description: 'Nikon AI Nikkor 105mm f/1.8S' },
+{ PatentID: 'US004392724', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AI Micro-Nikkor 105mm f/2.8S' },
+{ PatentID: 'US004260223', ExampleID: 'Example01', TaleID: 'Tale26', Description: 'Nikon AI Micro-Nikkor 55mm f/2.8' },
+{ PatentID: 'US004057330', ExampleID: 'Example02P', TaleID: '', Description: 'Nikon AI Nikkor 135mm f/2.8S' },
+{ PatentID: 'US004062630', ExampleID: 'Example05', TaleID: 'Tale30', Description: 'Nikon AI Nikkor 135mm F2' },
+{ PatentID: 'US004338001', ExampleID: 'Example02', TaleID: 'Tale10', Description: 'Nikon AI Nikkor 180mm f/2.8 ED' },
+{ PatentID: 'US004452513', ExampleID: 'Example03P', TaleID: '', Description: 'Nikon AI Nikkor 200-400mm f/4S' },
+{ PatentID: 'US004176913', ExampleID: 'Example02', TaleID: 'Tale31', Description: 'Nikon AI Nikkor 200mm f/2S IF-ED' },
+{ PatentID: 'US004163603', ExampleID: 'Example03', TaleID: 'Tale98', Description: 'Nikon AI Nikkor 24mm f/2' },
+{ PatentID: 'US005315441', ExampleID: 'Example01', TaleID: 'Tale28', Description: 'Nikon AI Nikkor 28mm f/1.4D' },
+{ PatentID: 'US005917663', ExampleID: 'Example02', TaleID: 'Tale57', Description: 'Nikon AI Nikkor 28mm f/2.8S' },
+{ PatentID: 'US003576360', ExampleID: 'Example01', TaleID: 'Tale27', Description: 'Nikon AI Nikkor 35mm f/1.4S' },
+{ PatentID: 'US003507558', ExampleID: 'Example01', TaleID: 'Tale84', Description: 'Nikon AI Nikkor 35mm f/2S' },
+{ PatentID: 'JP2003-005030', ExampleID: 'Example06', TaleID: 'Tale78', Description: 'Nikon AI Nikkor 45mm f/2.8P ' },
+{ PatentID: 'US004621909', ExampleID: 'Example03', TaleID: 'Tale16', Description: 'Nikon AI Nikkor 50mm f/1.2S' },
+{ PatentID: 'US008879901', ExampleID: 'Example04PP', TaleID: '', Description: 'Nikon AI Nikkor 50mm f/1.2S with Metabones M43 Speed Booster 0.71x' },
+{ PatentID: 'US004514051', ExampleID: 'ExampleML02P', TaleID: '', Description: 'Nikon AI Nikkor 50mm f/1.8' },
+{ PatentID: 'US004234242', ExampleID: 'Example03', TaleID: 'Tale60', Description: 'Nikon AI Nikkor 50mm f/1.8S' },
+{ PatentID: 'JP1981-035116', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AI Nikkor 600mm f/5.6 IF-ED' },
+{ PatentID: 'US004223981', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AI Nikkor 80-200mm f/4.5' },
+{ PatentID: 'US004452513', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AI Nikkor 80-200mm f/4S' },
+{ PatentID: 'US004396256', ExampleID: 'Example01', TaleID: 'Tale89', Description: 'Nikon AI Nikkor 85mm f/1.4S' },
+{ PatentID: 'US003507556', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AI Reflex-Nikkor 1000mm f/11' },
+{ PatentID: 'US004189212', ExampleID: 'Example08', TaleID: 'Tale46', Description: 'Nikon AI Zoom-Nikkor 25-50mm f/4' },
+{ PatentID: 'US004699475', ExampleID: 'Example07', TaleID: 'Tale71', Description: 'Nikon AI Zoom-Nikkor 35-105mm f/3.5-4.5S' },
+{ PatentID: 'US004770511', ExampleID: 'Example02', TaleID: 'Tale47', Description: 'Nikon AI Zoom-Nikkor 35-200mm f/3.5-4.5S' },
+{ PatentID: 'US004266860', ExampleID: 'Example02P', TaleID: '', Description: 'Nikon AI Zoom-Nikkor 35-70mm f/3.5' },
+{ PatentID: 'US003743384', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AI Zoom-Nikkor 360-1200mm f/11 ED' },
+{ PatentID: 'US004497547', ExampleID: 'Example01', TaleID: 'Tale61', Description: 'Nikon AI Zoom-Nikkor 50-135mm f/3.5S' },
+{ PatentID: 'US004189213', ExampleID: 'Example03', TaleID: 'Tale92', Description: 'Nikon AI Zoom-Nikkor 50-300mm f/4.5 ED' },
+{ PatentID: 'US004812027', ExampleID: 'Example01', TaleID: 'Tale32', Description: 'Nikon AI-S AF Nikkor 85mm f/1.8' },
+{ PatentID: 'JP1989-078210', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AI-S AF Zoom-Nikkor 75-300mm f/4.5-5.6' },
+{ PatentID: 'JP1986-169808', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon AI-S Zoom-Nikkor 35-135mm f/3.5-4.5' },
+{ PatentID: 'US003615125', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon Auto Zoom-Nikkor 80-200mm f/4.5' },
+{ PatentID: 'JP1981-119110', ExampleID: 'Example01', TaleID: 'Tale42', Description: 'Nikon E 75-150mm f/3.5' },
+{ PatentID: 'JP1999-305119', ExampleID: 'Example06', TaleID: 'Tale24', Description: 'Nikon FC-E8' },
+{ PatentID: 'US003737214', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon Fisheye-Nikkor 6mm f/2.8' },
+{ PatentID: 'US003524697', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon Fisheye-Nikkor 6mm f/5.6' },
+{ PatentID: 'JP1998-206733', ExampleID: 'Example05', TaleID: 'Tale83', Description: 'Nikon IX-Nikkor 30-60mm f/4-5.6' },
+{ PatentID: 'US004203653', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon LW-Nikkor 28mm f/2.8' },
+{ PatentID: 'US004437734', ExampleID: 'Example01', TaleID: 'Tale69', Description: 'Nikon Medical-Nikkor 120mm f/4 IF' },
+{ PatentID: 'US005751485', ExampleID: 'Example03P', TaleID: '', Description: 'Nikon Micro-Nikkor 105mm f/2.8' },
+{ PatentID: 'US004260223', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon Micro-Nikkor 55mm f/2.8' },
+{ PatentID: 'JP1976-043920', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon Nikkor 1200mm F/11 ED' },
+{ PatentID: 'JP1973-071634', ExampleID: 'Example02P', TaleID: '', Description: 'Nikon Nikkor 15mm f/5.6' },
+{ PatentID: 'US004514051', ExampleID: 'ExampleML01P', TaleID: '', Description: 'Nikon Nikkor 180mm f/2.8 ED' },
+{ PatentID: 'US004206971', ExampleID: 'ExampleMLP', TaleID: '', Description: 'Nikon Nikkor 200mm f/2 IF-ED' },
+{ PatentID: 'US003549241', ExampleID: 'Example02P', TaleID: '', Description: 'Nikon Nikkor 20mm f/4' },
+{ PatentID: 'US005528428', ExampleID: 'Example03P', TaleID: '', Description: 'Nikon Nikkor 28mm f/2.8 (28ti)' },
+{ PatentID: 'US004099850', ExampleID: 'Example05P', TaleID: '', Description: 'Nikon Nikkor 28mm f/3.5' },
+{ PatentID: 'JP1976-043917', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon Nikkor 300mm ED f/4.5' },
+{ PatentID: 'JP1980-166613', ExampleID: 'Example02P', TaleID: '', Description: 'Nikon Nikkor 300mm ED f/4.5 with Nikon TC-301' },
+{ PatentID: 'US004732459', ExampleID: 'Example04P', TaleID: '', Description: 'Nikon Nikkor 300mm f/2 ED-IF' },
+{ PatentID: 'US003874770', ExampleID: 'Example01', TaleID: 'Tale38', Description: 'Nikon Nikkor 35mm f/2.8' },
+{ PatentID: 'US005243468', ExampleID: 'Example05P', TaleID: '', Description: 'Nikon Nikkor 35mm f2.8 (35ti)' },
+{ PatentID: 'US003738736', ExampleID: 'Example03P', TaleID: '', Description: 'Nikon Nikkor 50mm f/1.2' },
+{ PatentID: 'US004448497', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon Nikkor 50mm f/1.4' },
+{ PatentID: 'JP1967-018597', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon Nikkor 50mm f/1.4S' },
+{ PatentID: 'JP1976-043918', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon Nikkor 600mm F/5.6 ED' },
+{ PatentID: 'JP2022-092388', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon Nikkor Z 100-400mm f/4.5-5.6 VR S' },
+{ PatentID: 'WO2024-147268', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon Nikkor Z 135mm F1.8 S Plena' },
+{ PatentID: 'WO2021-117563', ExampleID: 'Example04P', TaleID: '', Description: 'Nikon Nikkor Z 14-24mm f/2.8 S' },
+{ PatentID: 'JP2019-008031', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon Nikkor Z 14-30mm f/4 S' },
+{ PatentID: 'WO2022-259649', ExampleID: 'Example05P', TaleID: '', Description: 'Nikon Nikkor Z 24-120mm f/4 S' },
+{ PatentID: 'WO2020-157904', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon Nikkor Z 24-200mm f/4-6.3 VR' },
+{ PatentID: 'JP2021-189377', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon Nikkor Z 24-50mm f/4-6.3' },
+{ PatentID: 'WO2020-136749', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon Nikkor Z 24-70mm f/2.8 S' },
+{ PatentID: 'WO2019-049372', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon Nikkor Z 24-70mm f/4 S' },
+{ PatentID: 'WO2023-190222', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon Nikkor Z 26mm F/2.8' },
+{ PatentID: 'WO2022-071249', ExampleID: 'Example02P', TaleID: '', Description: 'Nikon Nikkor Z 28mm f/2.8' },
+{ PatentID: 'JP2025-052870', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon Nikkor Z 35mm f/1.2 S' },
+{ PatentID: 'JP2019-090947', ExampleID: 'Example04P', TaleID: '', Description: 'Nikon Nikkor Z 35mm f/1.8 S' },
+{ PatentID: 'JP2021-189351', ExampleID: 'Example04P', TaleID: '', Description: 'Nikon Nikkor Z 40mm f/2' },
+{ PatentID: 'WO2021-241230', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon Nikkor Z 50mm f/1.2 S' },
+{ PatentID: 'WO2019-220618', ExampleID: 'Example09P', TaleID: '', Description: 'Nikon Nikkor Z 50mm f/1.8 S' },
+{ PatentID: 'WO2019-229849', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon Nikkor Z 58mm f/0.95 S Noct' },
+{ PatentID: 'WO2020-105104', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon Nikkor Z 70-200mm f/2.8 VR S' },
+{ PatentID: 'WO2026-172598', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon Nikkor Z 70-200mm f/2.8 VR S II' },
+{ PatentID: 'JP2020-173366', ExampleID: 'Example03P', TaleID: '', Description: 'Nikon Nikkor Z 85mm f/1.8 S' },
+{ PatentID: 'WO2024-053269', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon Nikkor Z DX 12-28mm f/3.5-5.6 PZ VR' },
+{ PatentID: 'WO2020-012638', ExampleID: 'Example08P', TaleID: '', Description: 'Nikon Nikkor Z DX 16-50mm f/3.5-6.3 VR' },
+{ PatentID: 'WO2022-264542', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon Nikkor Z DX 18-140mm f/3.5-6.3 VR' },
+{ PatentID: 'WO2020-105107', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon Nikkor Z DX 50-250mm f/4.5-6.3 VR' },
+{ PatentID: 'WO2022-097401', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon Nikkor Z MC 105mm f/2.8 VR S' },
+{ PatentID: 'JP2021-189311', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon Nikkor Z TC-1.4x' },
+{ PatentID: 'JP2021-189311', ExampleID: 'Example08P', TaleID: '', Description: 'Nikon Nikkor Z TC-2.0x' },
+{ PatentID: 'JP1963-026133', ExampleID: 'Example01', TaleID: 'Tale12', Description: 'Nikon Nikkor-H 2.8cm f/3.5' },
+{ PatentID: 'US002828671', ExampleID: 'Example01', TaleID: 'Tale07', Description: 'Nikon Nikkor-N 5cm f/1.1' },
+{ PatentID: 'US003622227', ExampleID: 'Example01', TaleID: 'Tale14', Description: 'Nikon Nikkor-N Auto 24mm f/2.8' },
+{ PatentID: 'US003736049', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon Nikkor-N Auto 28mm f/2' },
+{ PatentID: 'JP1968-030782', ExampleID: 'Example02', TaleID: 'Tale01', Description: 'Nikon Nikkor-O 2.1cm f/4' },
+{ PatentID: 'GB1238668', ExampleID: 'Example02P', TaleID: '', Description: 'Nikon Nikkor-O Auto 35mm f/2' },
+{ PatentID: 'US003663095', ExampleID: 'Example02P', TaleID: '', Description: 'Nikon Nikkor-PD Auto 15mm f/5.6' },
+{ PatentID: 'US003560079', ExampleID: 'Example01', TaleID: 'Tale44', Description: 'Nikon Nikkor-S Auto 50mm f/1.4' },
+{ PatentID: 'JP1964-025754', ExampleID: 'Example01', TaleID: 'Tale02', Description: 'Nikon Nikkor-S Auto 50mm f/2' },
+{ PatentID: 'US004176915', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon Nikkor-SW 90mm f/4.5' },
+{ PatentID: 'JP1966-017177', ExampleID: 'Example01', TaleID: 'Tale40', Description: 'Nikon Nikkor-S Auto 58mm f/1.4' },
+{ PatentID: 'JP2017-161685', ExampleID: 'Example02P', TaleID: '', Description: 'Nikon PC Nikkor 19mm f/4E ED' },
+{ PatentID: 'US007656591', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon PC-E Micro-Nikkor 45mm f/2.8D ED' },
+{ PatentID: 'JP2000-292689', ExampleID: 'Example02P', TaleID: '', Description: 'Nikon PC-E Micro-Nikkor 85mm f/2.8D' },
+{ PatentID: 'JP2008-151949', ExampleID: 'Example02P', TaleID: '', Description: 'Nikon PC-E Nikkor 24mm f/3.5D ED' },
+{ PatentID: 'US003774991', ExampleID: 'Example03P', TaleID: '', Description: 'Nikon pre-AI 800mm f/8 ED' },
+{ PatentID: 'JP1964-018719', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon Reflex-Nikkor 500mm f/5' },
+{ PatentID: 'US004666259', ExampleID: 'Example01', TaleID: 'Tale13', Description: 'Nikon Reflex-Nikkor 500mm f/8(new)' },
+{ PatentID: 'US003632190', ExampleID: 'Example02P', TaleID: '', Description: 'Nikon Reflex-Nikkor-C 500mm F/8' },
+{ PatentID: 'US005579169', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon R-UW AF Fisheye-Nikkor 13mm f/2.8' },
+{ PatentID: 'US005257137', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon R-UW AF Micro-Nikkor 50mm f/2.8' },
+{ PatentID: 'JP1989-031113', ExampleID: 'Example05P', TaleID: '', Description: 'Nikon R-UW AF Nikkor 28mm f/2.8' },
+{ PatentID: 'US005490012', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon R-UW AF Zoom-Nikkor 20-35mm f/2.8' },
+{ PatentID: 'US004303314', ExampleID: 'Example01', TaleID: 'Tale80', Description: 'Nikon Series E 100mm f/2.8' },
+{ PatentID: 'US004303314', ExampleID: 'Example03', TaleID: 'Tale76', Description: 'Nikon Series E 135mm f/2.8' },
+{ PatentID: 'US004380375', ExampleID: 'Example01', TaleID: 'Tale91', Description: 'Nikon Series E Zoom 36-72mm f/3.5' },
+{ PatentID: 'US004154508', ExampleID: 'Example11', TaleID: 'Tale73', Description: 'Nikon TC-1' },
+{ PatentID: 'US004206971', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon TC-14' },
+{ PatentID: 'US004514051', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon TC-14A' },
+{ PatentID: 'JP1983-129411', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon TC-16A' },
+{ PatentID: 'JP1980-166613', ExampleID: 'ExampleRCL2P', TaleID: '', Description: 'Nikon TC-301' },
+{ PatentID: 'JP2000-275517', ExampleID: 'Example01', TaleID: 'Tale24', Description: 'Nikon TC-E2' },
+{ PatentID: 'JP2001-174702', ExampleID: 'Example01', TaleID: 'Tale24', Description: 'Nikon TC-E3ED' },
+{ PatentID: 'US004437733', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon TV-Nikkor 11.5-69mm f/1.2(Nikon S-100)' },
+{ PatentID: 'GB1050055', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon Ultra-Micro-Nikkor 29.5mm f/1.2' },
+{ PatentID: 'JP1986-090115', ExampleID: 'Example04P', TaleID: '', Description: 'Nikon UV-Micro-Nikkor 105mm f/4.5' },
+{ PatentID: 'JP1967-009417', ExampleID: 'Example01P', TaleID: '', Description: 'Nikon UV-Nikkor 55mm F4' },
+{ PatentID: 'US20010040736', ExampleID: 'Example02', TaleID: 'Tale24', Description: 'Nikon WC-E 63' },
+{ PatentID: 'US002896506', ExampleID: 'Example01', TaleID: 'Tale03', Description: 'Nikon W-Nikkor 3.5cm f/1.8' },
+{ PatentID: 'US003771853', ExampleID: 'Example03', TaleID: 'Tale15', Description: 'Nikon Zoom Nikkor 28-45mm f/4.5' },
+{ PatentID: 'US20030072085', ExampleID: 'Example01', TaleID: 'Tale22', Description: 'Nikon Zoom-Nikkor 5.6-16.8mm f/2.7-4.8 (Coolpix SQ)' },
+{ PatentID: 'US006141156', ExampleID: 'Example04', TaleID: 'Tale35', Description: 'Nikon Zoom Nikkor 80-400mm f/4.5-5.6D ED VR' },
+{ PatentID: 'US004468097', ExampleID: 'Example02P', TaleID: '', Description: 'Nikon Zoom-Nikkor 80-200mm f/2.8 ED-IF' },
+{ PatentID: 'JP2003-177313', ExampleID: 'Example01', TaleID: 'Tale22', Description: 'Nikon Zoom-Nikkor 8-24mm f2.8-4.9 (Coolpix 4300)' },
+{ PatentID: 'DE02206106', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus 1000mm f11 E Zuiko Auto-T' },
+{ PatentID: 'US003838911', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus 135mm f3.5 E Zuiko Auto-T' },
+{ PatentID: 'US003850509', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus 16mm f3.5 Zuiko Auto-Fisheye' },
+{ PatentID: 'US004029397', ExampleID: 'Example02P', TaleID: '', Description: 'Olympus 18mm f3.5 Zuiko MC Auto-W' },
+{ PatentID: 'US003884556', ExampleID: 'Example03P', TaleID: '', Description: 'Olympus 21mm f3.5 G Zuiko Auto-W' },
+{ PatentID: 'US003830559', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus 24mm f2 J Zuiko Auto-W' },
+{ PatentID: 'US003884556', ExampleID: 'Example04P', TaleID: '', Description: 'Olympus 24mm f2.8 I Zuiko Auto-W' },
+{ PatentID: 'US003994574', ExampleID: 'Example02P', TaleID: '', Description: 'Olympus 24mm F2.8 Zuiko Auto-W' },
+{ PatentID: 'US003862794', ExampleID: 'Example02P', TaleID: '', Description: 'Olympus 28mm f2 I Zuiko Auto-W' },
+{ PatentID: 'DE02205380', ExampleID: 'Example03P', TaleID: '', Description: 'Olympus 28mm f3.5 G Zuiko Auto-W' },
+{ PatentID: 'US003819253', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus 300mm f4.5 F Zuiko Auto-T' },
+{ PatentID: 'US004153338', ExampleID: 'Example03P', TaleID: '', Description: 'Olympus 35-70mm F3.6 Zuiko Auto-Zoom' },
+{ PatentID: 'US003844640', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus 35mm f2 H Zuiko Auto-W' },
+{ PatentID: 'US003864027', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus 400mm f6.3 E Zuiko Auto-T' },
+{ PatentID: 'US004188091', ExampleID: 'Example02P', TaleID: '', Description: 'Olympus 500mm f8.0 Zuiko Reflex' },
+{ PatentID: 'US003884557', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus 50mm f3.5 Zuiko Auto-Macro' },
+{ PatentID: 'US003827781', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus 600mm f6.5 F Zuiko Auto-T' },
+{ PatentID: 'US003796481', ExampleID: 'Example04P', TaleID: '', Description: 'Olympus 75-150mm f4 Zuiko Auto-Zoom' },
+{ PatentID: 'DE02157160', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus 8mm f2.8 Zuiko Auto-Fisheye' },
+{ PatentID: 'US20030072086', ExampleID: 'Example07P', TaleID: '', Description: 'Olympus 9-36mm f2-2.4 AF (E-10)' },
+{ PatentID: 'JP1950-003066', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus E.Zuiko 45mm F2.8 (Ace-E)' },
+{ PatentID: 'US004235521', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus F.Zuiko 35mm f2.8 (XA)' },
+{ PatentID: 'US003848972', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus F.Zuiko Auto-T 85mm F2' },
+{ PatentID: 'US008248716', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus M.Zuiko 12mm F2.0' },
+{ PatentID: 'US008994842', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus M.Zuiko 14-42mm F3.5-5.6 II R' },
+{ PatentID: 'JP2013-186458', ExampleID: 'Example03P', TaleID: '', Description: 'Olympus M.Zuiko 17mm F1.8' },
+{ PatentID: 'US008755132', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus M.Zuiko 17mm F2.8' },
+{ PatentID: 'JP2015-075501', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus M.Zuiko 25mm F1.8' },
+{ PatentID: 'JP2021-096331', ExampleID: 'Example06P', TaleID: '', Description: 'Olympus M.Zuiko Digital ED 150-400mm F4.5 TC1.25x IS Pro with TC' },
+{ PatentID: 'JP2021-096331', ExampleID: 'Example05P', TaleID: '', Description: 'Olympus M.Zuiko Digital ED 150-400mm F4.5 TC1.25x IS Pro without TC' },
+{ PatentID: 'JP2023-032222', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus M.Zuiko Digital ED 20mm F1.4 Pro' },
+{ PatentID: 'JP2023-005568', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus M.Zuiko Digital ED 40-150mm F4.0 Pro' },
+{ PatentID: 'JP2013-161076', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus M.Zuiko Digital ED 75mm F1.8' },
+{ PatentID: 'WO2022-137385', ExampleID: 'Example02P', TaleID: '', Description: 'Olympus M.Zuiko Digital ED 8-25mm F4.0 Pro' },
+{ PatentID: 'JP2017-090535', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus M.Zuiko ED 12-100mm f4.0 IS Pro' },
+{ PatentID: 'JP2020-154139', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus M.Zuiko ED 12-200mm F3.5-6.3' },
+{ PatentID: 'US20140139720', ExampleID: 'Example05P', TaleID: '', Description: 'Olympus M.Zuiko ED 12-40mm f2.8 Pro' },
+{ PatentID: 'WO2021-070285', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus M.Zuiko ED 12-45mm F4.0 Pro' },
+{ PatentID: 'US20150370053', ExampleID: 'Example02P', TaleID: '', Description: 'Olympus M.Zuiko ED 12-50mm F3.5-6.3 EZ' },
+{ PatentID: 'US009151939', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus M.Zuiko ED 14-150mm F4.0-5.6 II' },
+{ PatentID: 'US20140354858', ExampleID: 'Example04P', TaleID: '', Description: 'Olympus M.Zuiko ED 14-42mm F3.5-5.6 EZ' },
+{ PatentID: 'US010073255', ExampleID: 'Example04P', TaleID: '', Description: 'Olympus M.Zuiko ED 17mm F1.2 Pro' },
+{ PatentID: 'US010107992', ExampleID: 'Example04P', TaleID: '', Description: 'Olympus M.Zuiko ED 300mm F4.0 IS Pro' },
+{ PatentID: 'JP2016-099362', ExampleID: 'Example06P', TaleID: '', Description: 'Olympus M.Zuiko ED 30mm F3.5 Macro' },
+{ PatentID: 'US20150168697', ExampleID: 'Example04P', TaleID: '', Description: 'Olympus M.Zuiko ED 40-150mm F2.8 Pro' },
+{ PatentID: 'US008767310', ExampleID: 'Example02P', TaleID: '', Description: 'Olympus M.Zuiko ED 40-150mm F4.0-5.6 R' },
+{ PatentID: 'JP2019-023693', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus M.Zuiko ED 45mm F1.2 Pro' },
+{ PatentID: 'US010048474', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus M.Zuiko ED 60mm F2.8 Macro' },
+{ PatentID: 'JP2016-184136', ExampleID: 'Example07P', TaleID: '', Description: 'Olympus M.Zuiko ED 8mm F1.8 Fisheye' },
+{ PatentID: 'US20090262236', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus M.Zuiko ED 9-18mm F4.0-5.6 MFT' },
+{ PatentID: 'US20150226943', ExampleID: 'Example01TCP', TaleID: '', Description: 'Olympus MC-14 M.Zuiko Digital 1.4X Teleconverter' },
+{ PatentID: 'US20180136439', ExampleID: 'Example03P', TaleID: '', Description: 'Olympus MC-20 M.Zuiko Digital 2x Teleconverter' },
+{ PatentID: 'JP2024-066164', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus OM M. Zuiko Digital ED 90mm F3.5 Macro IS Pro' },
+{ PatentID: 'US003741630', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus OM Zuiko 8mm f2.8 Circular Fisheye' },
+{ PatentID: 'US004431274', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus Zuiko Auto-Macro 20mm F2' },
+{ PatentID: 'US004377326', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus Zuiko Auto-Macro 38mm f2.8' },
+{ PatentID: 'US004708445', ExampleID: 'Example06P', TaleID: '', Description: 'Olympus Zuiko Auto-Macro 50mm F2' },
+{ PatentID: 'US004792219', ExampleID: 'Example03P', TaleID: '', Description: 'Olympus Zuiko Auto-Macro 90mm F2' },
+{ PatentID: 'US004099843', ExampleID: 'Example06P', TaleID: '', Description: 'Olympus Zuiko Auto-S 50mm F1.2' },
+{ PatentID: 'US004094588', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus Zuiko Auto-S 50mm F1.4' },
+{ PatentID: 'US004728179', ExampleID: 'ExampleMLP', TaleID: '', Description: 'Olympus Zuiko Auto-S 50mm F1.8' },
+{ PatentID: 'US003743387', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus Zuiko Auto-S 55mm f1.2 G' },
+{ PatentID: 'US004435049', ExampleID: 'Example05P', TaleID: '', Description: 'Olympus Zuiko Auto-T 100mm F2' },
+{ PatentID: 'US003749478', ExampleID: 'Example02P', TaleID: '', Description: 'Olympus Zuiko Auto-T 100mm F2.8' },
+{ PatentID: 'JP1984-176717', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus Zuiko Auto-T 180mm F2' },
+{ PatentID: 'JP1986-112115', ExampleID: 'ExampleML2P', TaleID: '', Description: 'Olympus Zuiko Auto-T 180mm F2.8' },
+{ PatentID: 'US003804494', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus Zuiko Auto-T 200mm F5' },
+{ PatentID: 'JP1983-014810', ExampleID: 'Example03P', TaleID: '', Description: 'Olympus Zuiko Auto-T 350mm F2.8' },
+{ PatentID: 'US004063802', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus Zuiko Auto-T 85mm F2' },
+{ PatentID: 'US004210388', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus Zuiko Auto-W 21mm F2' },
+{ PatentID: 'JP1982-197509', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus Zuiko Auto-Zoom 35-70mm F4 AF' },
+{ PatentID: 'US004568150', ExampleID: 'Example04P', TaleID: '', Description: 'Olympus Zuiko Auto-Zoom 65-200mm F4' },
+{ PatentID: 'US004025167', ExampleID: 'Example02P', TaleID: '', Description: 'Olympus Zuiko Auto-Zoom 85-250mm F5' },
+{ PatentID: 'US007706085', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus Zuiko Digital 25mm F2.8' },
+{ PatentID: 'US007583450', ExampleID: 'Example04P', TaleID: '', Description: 'Olympus Zuiko Digital ED 12-60mm F2.8-4.0 SWD' },
+{ PatentID: 'US008081392', ExampleID: 'Example03P', TaleID: '', Description: 'Olympus Zuiko Digital ED 14-35mm F2.0 SWD' },
+{ PatentID: 'US20090002845', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus Zuiko Digital ED 14-42mm F3.5-5.6' },
+{ PatentID: 'US007408719', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus Zuiko Digital ED 150mm F2.0' },
+{ PatentID: 'US20040017605', ExampleID: 'Example03P', TaleID: '', Description: 'Olympus Zuiko Digital ED 300mm F2.8' },
+{ PatentID: 'US20080062534', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus Zuiko Digital ED 40-150mm F4.0-5.6' },
+{ PatentID: 'US20040042087', ExampleID: 'Example03P', TaleID: '', Description: 'Olympus Zuiko Digital ED 50-200mm F2.8-3.5 SWD' },
+{ PatentID: 'US007280284', ExampleID: 'Example03P', TaleID: '', Description: 'Olympus Zuiko Digital ED 7-14mm F4.0' },
+{ PatentID: 'JP2006-201524', ExampleID: 'Example01P', TaleID: '', Description: 'Olympus Zuiko Digital ED 90-250mm F2.8' },
+{ PatentID: 'JP2011-048232', ExampleID: 'Example03P', TaleID: '', Description: 'Panasonic Leica DG Macro-Elmarit 45mm F2.8 Asph Mega OIS' },
+{ PatentID: 'US20150192839', ExampleID: 'Example05P', TaleID: '', Description: 'Panasonic Leica DG Nocticron 42.5mm F1.2 Asph Power OIS' },
+{ PatentID: 'JP2017-167327', ExampleID: 'Example01P', TaleID: '', Description: 'Panasonic Leica DG Summilux 12mm F1.4 Asph' },
+{ PatentID: 'US20150268449', ExampleID: 'Example02P', TaleID: '', Description: 'Panasonic Leica DG Summilux 15mm F1.7 Asph' },
+{ PatentID: 'JP2013-003324', ExampleID: 'Example02P', TaleID: '', Description: 'Panasonic Leica DG Summilux 25mm F1.4 II Asph' },
+{ PatentID: 'US20230367186', ExampleID: 'Example01P', TaleID: '', Description: 'Panasonic Leica DG Summilux 9mm F1.7 Asph' },
+{ PatentID: 'US20180284478', ExampleID: 'Example01P', TaleID: '', Description: 'Panasonic Leica DG Vario-Elmar 100-400mm F4.0-6.3 Asph Power OIS' },
+{ PatentID: 'US20190312999', ExampleID: 'Example01P', TaleID: '', Description: 'Panasonic Leica DG Vario-Elmarit 12-60mm F2.8-4.0 Asph Power OIS' },
+{ PatentID: 'JP2018-180348', ExampleID: 'Example01P', TaleID: '', Description: 'Panasonic Leica DG Vario-Elmarit 8-18mm F2.8-4.0 Asph' },
+{ PatentID: 'US20200371325', ExampleID: 'Example02P', TaleID: '', Description: 'Panasonic Leica DG Vario-Summilux 10-25mm F1.7 Asph' },
+{ PatentID: 'US20220365327', ExampleID: 'Example03P', TaleID: '', Description: 'Panasonic Leica DG Vario-Summilux 25-50mm F1.7 Asph' },
+{ PatentID: 'US20130148006', ExampleID: 'Example01P', TaleID: '', Description: 'Panasonic Lumix G 14mm F2.5 II Asph' },
+{ PatentID: 'US20170059832', ExampleID: 'Example04P', TaleID: '', Description: 'Panasonic Lumix G 25mm F1.7 Asph' },
+{ PatentID: 'US20120147254', ExampleID: 'Example04P', TaleID: '', Description: 'Panasonic Lumix G Fisheye 8mm F3.5' },
+{ PatentID: 'US20120013991', ExampleID: 'Example01P', TaleID: '', Description: 'Panasonic Lumix G Vario 100-300mm F4.0-5.6 II Power OIS' },
+{ PatentID: 'US20150097989', ExampleID: 'Example02P', TaleID: '', Description: 'Panasonic Lumix G Vario 12-32mm F3.5-5.6 Asph Mega OIS' },
+{ PatentID: 'US20170242227', ExampleID: 'Example02P', TaleID: '', Description: 'Panasonic Lumix G Vario 12-60mm F3.5-5.6 Asph Power OIS' },
+{ PatentID: 'US20150281588', ExampleID: 'Example01P', TaleID: '', Description: 'Panasonic Lumix G Vario 14-42mm F3.5-5.6 II Asph Mega OIS' },
+{ PatentID: 'US20130335617', ExampleID: 'Example04P', TaleID: '', Description: 'Panasonic Lumix G Vario 45-150mm F4.0-5.6 Asph Mega OIS' },
+{ PatentID: 'US20100194930', ExampleID: 'Example02P', TaleID: '', Description: 'Panasonic Lumix G Vario 7-14mm F4.0 Asph' },
+{ PatentID: 'US20140132830', ExampleID: 'Example01P', TaleID: '', Description: 'Panasonic Lumix G X Vario PZ 45-175mm F4.0-5.6 Asph Power OIS' },
+{ PatentID: 'US20240192475', ExampleID: 'Example01P', TaleID: '', Description: 'Panasonic Lumix S 14-28mm F4-5.6 Macro' },
+{ PatentID: 'JP2021-179551', ExampleID: 'Example02P', TaleID: '', Description: 'Panasonic Lumix S 20-60mm F3.5-5.6' },
+{ PatentID: 'JP2020-118738', ExampleID: 'Example01P', TaleID: '', Description: 'Panasonic Lumix S 24-105mm F4 Macro OIS' },
+{ PatentID: 'CN216772097', ExampleID: 'Example01P', TaleID: '', Description: 'Panasonic Lumix S 35mm F1.8' },
+{ PatentID: 'JP2022-125453', ExampleID: 'Example01P', TaleID: '', Description: 'Panasonic Lumix S 70-300mm F4.5-5.6 Macro OIS' },
+{ PatentID: 'JP2021-076829', ExampleID: 'Example01P', TaleID: '', Description: 'Panasonic Lumix S Pro 16-35mm F4' },
+{ PatentID: 'US20210055531', ExampleID: 'Example01P', TaleID: '', Description: 'Panasonic Lumix S Pro 24-70mm F2.8' },
+{ PatentID: 'WO2020-158622', ExampleID: 'Example03P', TaleID: '', Description: 'Panasonic Lumix S Pro 50mm F1.4' },
+{ PatentID: 'US20210132345', ExampleID: 'Example03P', TaleID: '', Description: 'Panasonic Lumix S Pro 70-200mm F2.8 OIS' },
+{ PatentID: 'JP2020-086133', ExampleID: 'Example06P', TaleID: '', Description: 'Panasonic Lumix S Pro 70-200mm F4 OIS' },
+{ PatentID: 'JP1997-297263', ExampleID: 'Example01P', TaleID: '', Description: 'Phase One Mamiya AF 55mm f2.8' },
+{ PatentID: 'JP2003-185916', ExampleID: 'Example01P', TaleID: '', Description: 'Phase One Schneider Kreuznach 120mm LS f4 Macro' },
+{ PatentID: 'JP2006-300972', ExampleID: 'Example03P', TaleID: '', Description: 'Phase One Schneider Kreuznach 28mm LS f4.5' },
+{ PatentID: 'US001479251', ExampleID: 'Example01P', TaleID: '', Description: 'Projection Optics Super-Lite' },
+{ PatentID: 'JP2012-003015', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh 18.3mm F2.5 (A12)' },
+{ PatentID: 'US20130321936', ExampleID: 'Example03P', TaleID: '', Description: 'Ricoh 18.3mm F2.8 (GR II)' },
+{ PatentID: 'US20190154946', ExampleID: 'Example05P', TaleID: '', Description: 'Ricoh 18.3mm F2.8 (GR3)' },
+{ PatentID: 'JP2025-069516', ExampleID: 'Example02P', TaleID: '', Description: 'Ricoh 18.3mm F2.8 (GR IV)' },
+{ PatentID: 'US20220026670', ExampleID: 'Example03P', TaleID: '', Description: 'Ricoh 26.1mm F2.8 (GR3x)' },
+{ PatentID: 'US005760973', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh 28mm F2.8 (GR-1)' },
+{ PatentID: 'JP2010-164839', ExampleID: 'Example04P', TaleID: '', Description: 'Ricoh 6.0mm F1.9 VC (GR)' },
+{ PatentID: 'JP2022-117775', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh HD Pentax-D FA 21mmF2.4ED Limited DC WR' },
+{ PatentID: 'US20170068075', ExampleID: 'Example02P', TaleID: '', Description: 'Ricoh HD Pentax-D FA 28-105mm F3.5-5.6ED DC WR' },
+{ PatentID: 'US20190250367', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh HD Pentax-D FA 50mm F1.4 SDM AW' },
+{ PatentID: 'US20160103303', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh HD Pentax-D FA 70-200mm F2.8ED DC AW' },
+{ PatentID: 'US20200301101', ExampleID: 'Example03P', TaleID: '', Description: 'Ricoh HD Pentax-D FA 85mm F1.4ED SDM AW' },
+{ PatentID: 'US20010007512', ExampleID: 'Example04P', TaleID: '', Description: 'Ricoh HD Pentax-D FA645 35mm F3.5AL[IF]' },
+{ PatentID: 'US20130222925', ExampleID: 'Example04P', TaleID: '', Description: 'Ricoh HD Pentax-D FA645 90mm F2.8 ED AW SR Macro' },
+{ PatentID: 'US20180164556', ExampleID: 'Example03P', TaleID: '', Description: 'Ricoh HD Pentax-DA 11-18mm F2.8ED DC AW' },
+{ PatentID: 'JP2021-192088', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh HD Pentax-DA 16-50mm F2.8 ED PLM AW' },
+{ PatentID: 'JP2016-114800', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh HD Pentax-DA 16-85mm F3.5-5.6ED DC WR' },
+{ PatentID: 'JP2016-006455', ExampleID: 'Example02P', TaleID: '', Description: 'Ricoh HD Pentax-DA 18-50mm F4.0-5.6 DC WR RE' },
+{ PatentID: 'US20160154223', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh HD Pentax-DA 20-40mm F2.8-4ED Limited DC WR' },
+{ PatentID: 'US007411746', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh HD Pentax-DA 21mm F3.2 Limited' },
+{ PatentID: 'US007715118', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh HD Pentax-DA 35mm F2.8 Macro Limited' },
+{ PatentID: 'US20170329112', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh HD Pentax-DA 55-300mm F4.5-6.3ED PLM WR RE' },
+{ PatentID: 'US007542219', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh HD Pentax-DA 70mm F2.4 Limited' },
+{ PatentID: 'US20030197949', ExampleID: 'Example06P', TaleID: '', Description: 'Ricoh Pentax 5.8-17.4mm F2.6-4.8[Pentax Optio S]' },
+{ PatentID: 'US003459469', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh Pentax Super-Takumar 135mm f2.5' },
+{ PatentID: 'US003506339', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh Pentax Super-Takumar 28mm f3.5' },
+{ PatentID: 'US003502394', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh Pentax Super-Takumar 300mm f4' },
+{ PatentID: 'US003506336', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh Pentax Super-Takumar 35mm f2' },
+{ PatentID: 'US003490825', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh Pentax Ultra-Achromatic-Takumar 85mm F4.5' },
+{ PatentID: 'US004412725', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh Pentax-110 20-40mm F2.8' },
+{ PatentID: 'US004223982', ExampleID: 'Example02P', TaleID: '', Description: 'Ricoh Pentax-110 24mm F2.8' },
+{ PatentID: 'US004289385', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh Pentax-110 50mm F2.8' },
+{ PatentID: 'US003515462', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax 17mm F4 Fish-Eye' },
+{ PatentID: 'US003938883', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax 24mm F2.8' },
+{ PatentID: 'US003545845', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax 24mm F3.5' },
+{ PatentID: 'US004487485', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh SMC Pentax 645 A 45mm f2.8' },
+{ PatentID: 'US006154324', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh SMC Pentax 645 FA 120mm f4.0 Macro' },
+{ PatentID: 'US004948236', ExampleID: 'Example03P', TaleID: '', Description: 'Ricoh smc Pentax 6x7 120mm f3.5 Soft' },
+{ PatentID: 'JP1986-051117', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax 6x7 300mm f4 ED [IF]' },
+{ PatentID: 'JP1986-051117', ExampleID: 'Example02P', TaleID: '', Description: 'Ricoh smc Pentax 6x7 400mm f4 ED [IF]' },
+{ PatentID: 'US004660940', ExampleID: 'Example03P', TaleID: '', Description: 'Ricoh smc Pentax 6x7 55mm f4' },
+{ PatentID: 'US003502393', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh SMC Pentax 6x7 600mm f4' },
+{ PatentID: 'JP1979-099427', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax 6x7 75mm f4.5 Shift' },
+{ PatentID: 'JP1984-088715', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax 6x7 800mm f6.7' },
+{ PatentID: 'US006002533', ExampleID: 'MLP', TaleID: '', Description: 'Ricoh smc Pentax 6x7 Macro 100mm f4.0' },
+{ PatentID: 'US006002533', ExampleID: 'Example03P', TaleID: '', Description: 'Ricoh smc Pentax 6x7 Macro 100mm f4.0 with Life Size Converter' },
+{ PatentID: 'US003506337', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax 85-210mm F4.5' },
+{ PatentID: 'US006002533', ExampleID: 'AL03P', TaleID: '', Description: 'Ricoh smc Pentax Life Size Converter 6x7 for smc 6x7 Macro 100mm f4.0' },
+{ PatentID: 'US004443068', ExampleID: 'Example03P', TaleID: '', Description: 'Ricoh smc Pentax Reflex 400-600mm F8-12' },
+{ PatentID: 'US004447137', ExampleID: 'Example02P', TaleID: '', Description: 'Ricoh smc Pentax-A 135mm F1.8' },
+{ PatentID: 'US003864026', ExampleID: 'Example04P', TaleID: '', Description: 'Ricoh smc Pentax-A 15mm F3.5' },
+{ PatentID: 'US004550987', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax-A 200mm F4' },
+{ PatentID: 'US004666260', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax-A 200mm F4 Macro ED' },
+{ PatentID: 'US004523814', ExampleID: 'Example05P', TaleID: '', Description: 'Ricoh smc Pentax-A 28-135mm F4' },
+{ PatentID: 'US004576443', ExampleID: 'Example05P', TaleID: '', Description: 'Ricoh smc Pentax-A 35-105mm F3.5' },
+{ PatentID: 'US004812022', ExampleID: 'Example03P', TaleID: '', Description: 'Ricoh smc Pentax-A 35-70mm F4' },
+{ PatentID: 'US003963325', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax-A 35mm F2.8' },
+{ PatentID: 'US004545654', ExampleID: 'Example05P', TaleID: '', Description: 'Ricoh smc Pentax-A 400mm F2.8 ED [IF]' },
+{ PatentID: 'US004468098', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax-A 70-210mm F4.0' },
+{ PatentID: 'JP1986-285417', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax-A 645 35mm f3.5' },
+{ PatentID: 'US004508434', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax-A 85mm F1.4' },
+{ PatentID: 'US004923292', ExampleID: 'Example02P', TaleID: '', Description: 'Ricoh smc Pentax-D FA Macro 50mm F2.8' },
+{ PatentID: 'US20050237627', ExampleID: 'Example04P', TaleID: '', Description: 'Ricoh smc Pentax-DA 14mm F2.8ED[IF]' },
+{ PatentID: 'US007301711', ExampleID: 'Example06P', TaleID: '', Description: 'Ricoh smc Pentax-DA 16-50mm F2.8ED AL[IF] SD' },
+{ PatentID: 'US007804652', ExampleID: 'Example04P', TaleID: '', Description: 'Ricoh smc Pentax-DA 17-70mm F4AL[IF] SDM' },
+{ PatentID: 'US20120002298', ExampleID: 'Example06P', TaleID: '', Description: 'Ricoh smc Pentax-DA 18-135mm F3.5-5.6ED AL[IF] DC WR' },
+{ PatentID: 'US005325234', ExampleID: 'Example03P', TaleID: '', Description: 'Ricoh smc Pentax-DA 200mm F2.8 ED[IF] SDM' },
+{ PatentID: 'US007715116', ExampleID: 'Example07P', TaleID: '', Description: 'Ricoh smc Pentax-DA 300mm F4 ED[IF] SDM' },
+{ PatentID: 'US007289274', ExampleID: 'Example05P', TaleID: '', Description: 'Ricoh smc Pentax-DA 50-135mm F2.8ED[IF] SDM' },
+{ PatentID: 'JP2014-026184', ExampleID: 'Example04P', TaleID: '', Description: 'Ricoh smc Pentax-DA 50mm F1.8' },
+{ PatentID: 'US20100073777', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax-DA 55mm F1.4 SDM' },
+{ PatentID: 'US007489452', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax-DA 60-250mm F4 ED[IF] SDM' },
+{ PatentID: 'US007317581', ExampleID: 'Example09P', TaleID: '', Description: 'Ricoh smc Pentax-DA Fish-eye 10-17mm F3.5-4.5ED[IF]' },
+{ PatentID: 'US004770516', ExampleID: 'Example05P', TaleID: '', Description: 'Ricoh smc Pentax-F 100mm F2.8 Macro' },
+{ PatentID: 'US004793698', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax-F 135mm F2.8 [IF]' },
+{ PatentID: 'US005724193', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax-F 17-28mm F3.5-4.5 Fish-Eye' },
+{ PatentID: 'US004848883', ExampleID: 'Example04P', TaleID: '', Description: 'Ricoh smc Pentax-F 250-600mm F5.6 ED [IF]' },
+{ PatentID: 'US004468100', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax-F 28mm F2.8' },
+{ PatentID: 'US004812026', ExampleID: 'Example02P', TaleID: '', Description: 'Ricoh smc Pentax-F 300mm F4.5 ED [IF]' },
+{ PatentID: 'US005546232', ExampleID: 'Example03P', TaleID: '', Description: 'Ricoh smc Pentax-F 35-80mm F4-5.6' },
+{ PatentID: 'US004871241', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax-F 70-210mm F4-5.6 ED' },
+{ PatentID: 'US005267086', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax-F 85mm F2.8 Soft' },
+{ PatentID: 'US20010006433', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax-FA 100-300mm F4.7-5.8' },
+{ PatentID: 'US005347399', ExampleID: 'Example07P', TaleID: '', Description: 'Ricoh smc Pentax-FA 100-300mm F4-5.6' },
+{ PatentID: 'US006359739', ExampleID: 'Example05P', TaleID: '', Description: 'Ricoh smc Pentax-FA 200mm F4 Macro ED [IF]' },
+{ PatentID: 'US006327098', ExampleID: 'Example05P', TaleID: '', Description: 'Ricoh smc Pentax-FA 20-35mm F4AL' },
+{ PatentID: 'US006128140', ExampleID: 'Example04P', TaleID: '', Description: 'Ricoh smc Pentax-FA 24-90mm F3.5-4.5 AL [IF]' },
+{ PatentID: 'US004934797', ExampleID: 'Example03P', TaleID: '', Description: 'Ricoh smc Pentax-FA 24mm F2 AL [IF]' },
+{ PatentID: 'US005264965', ExampleID: 'Example04P', TaleID: '', Description: 'Ricoh smc Pentax-FA 28-105mm F4-5.6' },
+{ PatentID: 'US005568323', ExampleID: 'Example05P', TaleID: '', Description: 'Ricoh smc Pentax-FA 28-70mm F2.8 AL' },
+{ PatentID: 'US005786942', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax-FA 28-70mm F4 AL' },
+{ PatentID: 'US006078435', ExampleID: 'Example02P', TaleID: '', Description: 'Ricoh smc Pentax-FA 28-80mm F3.5-4.7' },
+{ PatentID: 'US005233474', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax-FA 28mm F2.8 AL' },
+{ PatentID: 'US005822132', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax-FA 28mm F2.8 Soft' },
+{ PatentID: 'US006560042', ExampleID: 'Example03P', TaleID: '', Description: 'Ricoh smc Pentax-FA 31mm F1.8 AL Limited' },
+{ PatentID: 'US006384987', ExampleID: 'Example05P', TaleID: '', Description: 'Ricoh smc Pentax-FA 35mm F2 AL' },
+{ PatentID: 'US004904070', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax-FA 600mm F4ED[IF]' },
+{ PatentID: 'US005061053', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax-FA 70-200mm F4-5.6' },
+{ PatentID: 'US005572276', ExampleID: 'Example05P', TaleID: '', Description: 'Ricoh smc Pentax-FA 80-200mm F2.8 ED [IF]' },
+{ PatentID: 'US006052235', ExampleID: 'Example06P', TaleID: '', Description: 'Ricoh smc Pentax-FA 80-320mm F4-5.6' },
+{ PatentID: 'US20030218799', ExampleID: 'Example02P', TaleID: '', Description: 'Ricoh smc Pentax-FA J 28-80mm F3.5-5.6 AL' },
+{ PatentID: 'US20030223122', ExampleID: 'Example04P', TaleID: '', Description: 'Ricoh smc Pentax-FA J 75-300mm F4.5-5.8 AL' },
+{ PatentID: 'US004134645', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax-M 120mm F2.8' },
+{ PatentID: 'US004134645', ExampleID: 'Example02P', TaleID: '', Description: 'Ricoh smc Pentax-M 135mm F3.5' },
+{ PatentID: 'US004134645', ExampleID: 'Example03P', TaleID: '', Description: 'Ricoh smc Pentax-M 150mm F3.5' },
+{ PatentID: 'US004139264', ExampleID: 'Example02P', TaleID: '', Description: 'Ricoh smc Pentax-M 200mm F4.0' },
+{ PatentID: 'US004062622', ExampleID: 'Example02P', TaleID: '', Description: 'Ricoh smc Pentax-M 20mm F4.0' },
+{ PatentID: 'US004143945', ExampleID: 'Example03P', TaleID: '', Description: 'Ricoh smc Pentax-M 28mm F2.8' },
+{ PatentID: 'US003955883', ExampleID: 'Example02P', TaleID: '', Description: 'Ricoh smc Pentax-M 28mm F3.5' },
+{ PatentID: 'US004293197', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax-M 300mm F4' },
+{ PatentID: 'US004074931', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax-M 35-70mm F2.8-3.5' },
+{ PatentID: 'US004143944', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax-M 35mm F1.4' },
+{ PatentID: 'US004154509', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax-M 40mm F2.8' },
+{ PatentID: 'US003817603', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax-M 50mm F1.7' },
+{ PatentID: 'US004331389', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax-M 75-150mm F4' },
+{ PatentID: 'US20150241657', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh smc Pentax-Q 06 Telephoto Zoom 15-45mm F2.8' },
+{ PatentID: 'US003467462', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh SMCT Pentax 6x7 300mm f4' },
+{ PatentID: 'JP1981-012612', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh XR Rikenon 28mm F2.8' },
+{ PatentID: 'JP1978-131034', ExampleID: 'Example01P', TaleID: '', Description: 'Ricoh XR Rikenon 50mm F2.0' },
+{ PatentID: 'CN221175109', ExampleID: 'Example01P', TaleID: '', Description: 'Rockstar 10mm F8 Fisheye' },
+{ PatentID: 'DE03907928', ExampleID: 'Example05P', TaleID: '', Description: 'Rodenstock Apo-Sironar-W 150mm f5.6' },
+{ PatentID: 'DE02818394', ExampleID: 'Example01P', TaleID: '', Description: 'Rodenstock Geronar 210mm f6.8' },
+{ PatentID: 'DE03026282', ExampleID: 'Example01P', TaleID: '', Description: 'Rodenstock Geronar-WA 90mm f8' },
+{ PatentID: 'DE02444954', ExampleID: 'Example04P', TaleID: '', Description: 'Rodenstock Grandagon-N 65mm f5.6' },
+{ PatentID: 'DE02444954', ExampleID: 'Example03P', TaleID: '', Description: 'Rodenstock Grandagon-N 75mm f5.6' },
+{ PatentID: 'DE02635415', ExampleID: 'Example01P', TaleID: '', Description: 'Rodenstock Grandagon-N 75mm f6.8' },
+{ PatentID: 'DE02444954', ExampleID: 'Example02P', TaleID: '', Description: 'Rodenstock Grandagon-N 90mm f5.6' },
+{ PatentID: 'DE02818435', ExampleID: 'Example01P', TaleID: '', Description: 'Rodenstock Rodagon-WA 80mm F4.0' },
+{ PatentID: 'DE02706498', ExampleID: 'Example01P', TaleID: '', Description: 'Rodenstock Rogonar 50mm F2.8' },
+{ PatentID: 'DE01089991', ExampleID: 'Example01P', TaleID: '', Description: 'Rodenstock Rogonar-S 50mm F2.8' },
+{ PatentID: 'DE02729831', ExampleID: 'Example01P', TaleID: '', Description: 'Rodenstock Sironar-N 100mm f/5.6' },
+{ PatentID: 'US001073950', ExampleID: 'Example01P', TaleID: '', Description: 'Ross Telecentric 305mm f6.8' },
+{ PatentID: 'US20130235467', ExampleID: 'Example01P', TaleID: '', Description: 'Samsung 10mm F3.5 Fisheye' },
+{ PatentID: 'US20130235465', ExampleID: 'Example05P', TaleID: '', Description: 'Samsung 12-24mm F4-5.6 ED' },
+{ PatentID: 'US20130057972', ExampleID: 'Example03P', TaleID: '', Description: 'Samsung 16mm F2.4' },
+{ PatentID: 'US20120154913', ExampleID: 'Example02P', TaleID: '', Description: 'Samsung 18-200mm F3.5-6.3 ED OIS' },
+{ PatentID: 'US20110149118', ExampleID: 'Example01P', TaleID: '', Description: 'Samsung 18-55mm F3.5-5.6 OIS III' },
+{ PatentID: 'US20120057246', ExampleID: 'Example06P', TaleID: '', Description: 'Samsung 20-50mm F3.5-5.6 ED II' },
+{ PatentID: 'US20120056976', ExampleID: 'Example01P', TaleID: '', Description: 'Samsung 20mm F2.8' },
+{ PatentID: 'US20100149663', ExampleID: 'Example01P', TaleID: '', Description: 'Samsung 30mm F2' },
+{ PatentID: 'US20130314588', ExampleID: 'Example01P', TaleID: '', Description: 'Samsung 45mm F1.8' },
+{ PatentID: 'US20110157719', ExampleID: 'Example04P', TaleID: '', Description: 'Samsung 50-200mm F4-5.6 ED OIS III' },
+{ PatentID: 'US008203795', ExampleID: 'Example05P', TaleID: '', Description: 'Samsung 60mm F2.8 Macro ED SSA OIS' },
+{ PatentID: 'KR1020150182611', ExampleID: 'Example01P', TaleID: '', Description: 'Samyang 100mm F2.8 ED UMC Macro' },
+{ PatentID: 'KR1020150155317', ExampleID: 'Example01P', TaleID: '', Description: 'Samyang 135mm F2.0 ED UMC' },
+{ PatentID: 'KR1020140184971', ExampleID: 'Example01P', TaleID: '', Description: 'Samyang 50mm F1.4 AS UMC' },
+{ PatentID: 'KR1020170053557', ExampleID: 'Example01P', TaleID: '', Description: 'Samyang AF 14mm F2.8 FE/RF' },
+{ PatentID: 'WO2021-246545', ExampleID: 'Example01P', TaleID: '', Description: 'Samyang AF 18mm F2.8 FE' },
+{ PatentID: 'US20240151940', ExampleID: 'Example01P', TaleID: '', Description: 'Samyang AF 24mm F1.8 FE' },
+{ PatentID: 'WO2020-230915', ExampleID: 'Example01P', TaleID: '', Description: 'Samyang AF 24mm F2.8 FE' },
+{ PatentID: 'US20250231383', ExampleID: 'Example03P', TaleID: '', Description: 'Samyang AF 35-150mm F2-2.8 L' },
+{ PatentID: 'KR1020180065114', ExampleID: 'Example04P', TaleID: '', Description: 'Samyang AF 35mm F2.8 FE' },
+{ PatentID: 'KR1020150147546', ExampleID: 'Example01P', TaleID: '', Description: 'Samyang AF 50mm F1.4 FE' },
+{ PatentID: 'KR1020200129711', ExampleID: 'Example02P', TaleID: '', Description: 'Samyang AF 85mm F1.4 EF' },
+{ PatentID: 'WO2021-085655', ExampleID: 'Example03P', TaleID: '', Description: 'Samyang AF 85mm F1.4 FE/F/RF' },
+{ PatentID: 'KR1020180084767', ExampleID: 'Example03P', TaleID: '', Description: 'Samyang XP 35mm F1.2' },
+{ PatentID: 'CH479879', ExampleID: 'Example01P', TaleID: '', Description: 'Schacht S-Travenar 135mm F2.8' },
+{ PatentID: 'DE00843305', ExampleID: 'Example02P', TaleID: '', Description: 'Schacht Travenar 135mm F3.5' },
+{ PatentID: 'US002721501', ExampleID: 'Example01P', TaleID: '', Description: 'Schacht Travenar 90mm F2.8' },
+{ PatentID: 'US006028720', ExampleID: 'Example02P', TaleID: '', Description: 'Schneider APO-Symmar 5.6 / 100' },
+{ PatentID: 'US003038379', ExampleID: 'Example01P', TaleID: '', Description: 'Schneider Cinegon 1.8 / 10' },
+{ PatentID: 'DE00927540', ExampleID: 'Example01P', TaleID: '', Description: 'Schneider Cinegon 1.9 / 6.5' },
+{ PatentID: 'US003005379', ExampleID: 'Example01P', TaleID: '', Description: 'Schneider Cine-Xenon 1.4 / 25' },
+{ PatentID: 'US003318653', ExampleID: 'Example01P', TaleID: '', Description: 'Schneider Curtagon 2.8 / 35 gen 2' },
+{ PatentID: 'US002824495', ExampleID: 'Example01P', TaleID: '', Description: 'Schneider Curtagon 4 / 28' },
+{ PatentID: 'US003376091', ExampleID: 'Example01P', TaleID: '', Description: 'Schneider Super-Angulon 5.6 / 75' },
+{ PatentID: 'DE00975637', ExampleID: 'Example01P', TaleID: '', Description: 'Schneider Super-Angulon 8 / 90' },
+{ PatentID: 'US004773745', ExampleID: 'Example01P', TaleID: '', Description: 'Schneider Super-Symmar HM 5.6 / 120' },
+{ PatentID: 'US005870234', ExampleID: 'Example02P', TaleID: '', Description: 'Schneider Super-Symmar XL 5.6 / 110 Asph' },
+{ PatentID: 'JP1967-023896', ExampleID: 'Example01P', TaleID: '', Description: 'Schneider Technika Super Angulon 8 / 75' },
+{ PatentID: 'US003336094', ExampleID: 'Example02P', TaleID: '', Description: 'Schneider Tele-Variogon 4.0 / 80-240' },
+{ PatentID: 'DE00471565', ExampleID: 'Example01P', TaleID: '', Description: 'Schneider Tele-Xenar 180mm f4.5' },
+{ PatentID: 'US003912373', ExampleID: 'Example01P', TaleID: '', Description: 'Schneider TV-Variogon 2.1-6.6 / 20-600' },
+{ PatentID: 'US003442573', ExampleID: 'Example01P', TaleID: '', Description: 'Schneider Variogon 1.8 / 8-40' },
+{ PatentID: 'US003057257', ExampleID: 'Example01P', TaleID: '', Description: 'Schneider Variogon 2.8 / 10-40' },
+{ PatentID: 'US003482900', ExampleID: 'Example01P', TaleID: '', Description: 'Schneider Variogon 2.8 / 45-100' },
+{ PatentID: 'DE102012014955', ExampleID: 'Example01P', TaleID: '', Description: 'Schneider Video-Xenon T2.1 / 75' },
+{ PatentID: 'DE00753329', ExampleID: 'Example01P', TaleID: '', Description: 'Schneider Xenar 2.8 / 50' },
+{ PatentID: 'CH346706', ExampleID: 'Example01P', TaleID: '', Description: 'Schneider Xenon 1.9 / 50' },
+{ PatentID: 'CH352844', ExampleID: 'Example01P', TaleID: '', Description: 'Schneider Xenon 2 / 50' },
+{ PatentID: 'JP2021-092636', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 100-400mm F5-6.3 DG DN OS C' },
+{ PatentID: 'JP2017-223778', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 100-400mm F5-6.3 DG OS HSM C' },
+{ PatentID: 'JP2024-104911', ExampleID: 'Example02P', TaleID: '', Description: 'Sigma 10-18mm F2.8 DC DN C' },
+{ PatentID: 'JP2010-243737', ExampleID: 'Example04P', TaleID: '', Description: 'Sigma 10-20mm F3.5 EX DC HSM' },
+{ PatentID: 'JP2019-144477', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 105mm F1.4 DG HSM Art' },
+{ PatentID: 'JP2012-027217', ExampleID: 'Example05P', TaleID: '', Description: 'Sigma 120-300mm F2.8 DG OS HSM Sport' },
+{ PatentID: 'JP2018-045097', ExampleID: 'Example02P', TaleID: '', Description: 'Sigma 12-24mm F4 DG HSM A' },
+{ PatentID: 'JP2005-106878', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 12-24mm F4.5-5.6 EX DG Ashperical HSM' },
+{ PatentID: 'JP2020-042221', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 14-24mm F2.8 DG DN A' },
+{ PatentID: 'JP2018-189733', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 14-24mm F2.8 DG HSM Art' },
+{ PatentID: 'JP2016-139087', ExampleID: 'Example02P', TaleID: '', Description: 'Sigma 14mm F4 (dp0 Quattro)' },
+{ PatentID: 'JP2016-080825', ExampleID: 'Example02P', TaleID: '', Description: 'Sigma 150-600mm F5-6.3 DG OS HSM C' },
+{ PatentID: 'JP2015-203827', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 150-600mm F5-6.3 DG OS HSM Sport' },
+{ PatentID: 'JP1990-248910', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 15mm F2.8 EX DG Diagonal Fisheye' },
+{ PatentID: 'JP2008-040033', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 16.6mm F4 (dp1x)' },
+{ PatentID: 'JP2018-205527', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 16mm F1.4 DC DN Contemporary' },
+{ PatentID: 'CN121454749', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 17-40mm F1.8 DC A' },
+{ PatentID: 'JP2011-128361', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 17-70mm F2.8-4 DC Macro OS HSM' },
+{ PatentID: 'JP2014-048480', ExampleID: 'Example02P', TaleID: '', Description: 'Sigma 17-70mm F2.8-4 DC Macro OS HSM C' },
+{ PatentID: 'JP2024-062005', ExampleID: 'Example02P', TaleID: '', Description: 'Sigma 17mm F4.0 DG DN C' },
+{ PatentID: 'JP2005-331697', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 18-125mm F3.5-5.6 DC' },
+{ PatentID: 'JP2006-259016', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 18-200mm F3.5-6.3 DC' },
+{ PatentID: 'JP2013-257508', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 18-250mm F3.5-6.3 DC Macro OS HSM' },
+{ PatentID: 'JP2022-138408', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 18-50mm F2.8 DC DN C' },
+{ PatentID: 'JP2010-211056', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 18-50mm F2.8-4.5 DC OS HSM' },
+{ PatentID: 'JP2019-117419', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 20mm F1.4 DG HSM Art' },
+{ PatentID: 'JP2024-035865', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 23mm F1.4 DC DN C' },
+{ PatentID: 'JP2010-101979', ExampleID: 'Example05P', TaleID: '', Description: 'Sigma 24.2mm F2.8 (dp2x)' },
+{ PatentID: 'JP2017-156719', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 24-70mm F2.8 DG OS HSM A' },
+{ PatentID: 'JP2023-074094', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 24mm F1.4 DG DN A' },
+{ PatentID: 'JP2016-012034', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 24mm F1.4 DG HSM Art' },
+{ PatentID: 'JP2001-330771', ExampleID: 'Example02P', TaleID: '', Description: 'Sigma 24mm F1.8 EX DG Aspherical Macro' },
+{ PatentID: 'CN120386081', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 28-45mm F1.8 DG DN A' },
+{ PatentID: 'JP2001-350089', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 28-80mm F3.5-5.6 Aspherical Macro HF' },
+{ PatentID: 'JP2019-219472', ExampleID: 'Example06P', TaleID: '', Description: 'Sigma 28mm F1.4 DG HSM A' },
+{ PatentID: 'JP2001-330771', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 28mm F1.8 EX DG Aspherical Macro' },
+{ PatentID: 'JP2014-142520', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 30mm F1.4 DC HSM Art' },
+{ PatentID: 'JP2013-156459', ExampleID: 'Example04P', TaleID: '', Description: 'Sigma 30mm F2.8 (dp2 Merrill/Quattro)' },
+{ PatentID: 'JP2012-234169', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 30mm F2.8 DN A' },
+{ PatentID: 'JP2022-033487', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 35mm F1.4 DG DN Art' },
+{ PatentID: 'JP2014-048488', ExampleID: 'Example03P', TaleID: '', Description: 'Sigma 35mm F1.4 DG HSM Art' },
+{ PatentID: 'JP2019-211703', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 45mm F2.8 DG DN C' },
+{ PatentID: 'JP2010-152247', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 50-200mm F4-5.6 DC OS HSM' },
+{ PatentID: 'JP2023-183894', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 50mm F1.4 DG DN A' },
+{ PatentID: 'JP2015-114366', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 50mm F1.4 DG HSM Art' },
+{ PatentID: 'JP2014-126652', ExampleID: 'Example03P', TaleID: '', Description: 'Sigma 50mm F2.8 (dp3 Merrill/Quattro)' },
+{ PatentID: 'JP2020-030383', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 56mm F1.4 DC DN C' },
+{ PatentID: 'JP1987-184425', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 600mm F8 Mirror MF ZEN' },
+{ PatentID: 'JP2023-180574', ExampleID: 'Example05P', TaleID: '', Description: 'Sigma 60-600mm F4.5-6.3 DG DN OS S' },
+{ PatentID: 'JP2020-020948', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 60-600mm F4.5-6.3 DG OS HSM S' },
+{ PatentID: 'JP2014-145954', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 60mm F2.8 DN A' },
+{ PatentID: 'US20250093627', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 70-200mm F2.8 DG DN OS S' },
+{ PatentID: 'JP2010-217838', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 70-300mm F4-5.6 DG OS' },
+{ PatentID: 'JP2019-144441', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 70mm F2.8 DG Macro Art' },
+{ PatentID: 'JP2011-227124', ExampleID: 'Example04P', TaleID: '', Description: 'Sigma 8-16mm F4.5-5.6 DC HSM' },
+{ PatentID: 'JP2021-085935', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 85mm F1.4 DG DN A' },
+{ PatentID: 'JP2018-005099', ExampleID: 'Example04P', TaleID: '', Description: 'Sigma 85mm F1.4 DG HSM A' },
+{ PatentID: 'JP2011-170128', ExampleID: 'Example05P', TaleID: '', Description: 'Sigma 85mm F1.4 EX DG HSM' },
+{ PatentID: 'JP2008-003108', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma 8mm F3.5 EX DG Circular Fisheye' },
+{ PatentID: 'JP1998-039215', ExampleID: 'Example02P', TaleID: '', Description: 'Sigma APO 135-400mm F4.5-5.6 RF ZEN' },
+{ PatentID: 'JP2004-085846', ExampleID: 'Example02P', TaleID: '', Description: 'Sigma APO 300-800mm F5.6 EX DG HSM' },
+{ PatentID: 'JP2011-039260', ExampleID: 'Example02P', TaleID: '', Description: 'Sigma APO 50-500mm F4.5-6.3 DG OS HSM' },
+{ PatentID: 'JP2001-108902', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma APO 50-500mm F4-6.3 EX DG HSM' },
+{ PatentID: 'JP2012-063403', ExampleID: 'Example02P', TaleID: '', Description: 'Sigma APO Macro 150mm F2.8 EX DG OS HSM' },
+{ PatentID: 'JP1991-278012', ExampleID: 'Example02P', TaleID: '', Description: 'Sigma APO Macro 180mm F2.8' },
+{ PatentID: 'JP2013-104994', ExampleID: 'Example02P', TaleID: '', Description: 'Sigma APO Macro 180mm F2.8 EX DG OS HSM' },
+{ PatentID: 'JP2001-033704', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma APO Macro 180mm F3.5 EX DG IF HSM' },
+{ PatentID: 'JP1992-110811', ExampleID: 'Example03P', TaleID: '', Description: 'Sigma APO Macro 180mm F5.6 UC' },
+{ PatentID: 'JP1994-051202', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma APO Zoom 70-210mm F2.8' },
+{ PatentID: 'JP2012-058682', ExampleID: 'Example04P', TaleID: '', Description: 'Sigma Macro 105mm F2.8 EX DG OS HSM' },
+{ PatentID: 'JP2008-020656', ExampleID: 'Example01P', TaleID: '', Description: 'Sigma Macro 70mm F2.8 EX DG' },
+{ PatentID: 'JP1989-316714', ExampleID: 'Example03P', TaleID: '', Description: 'Sigma Macro 90mm F2.8' },
+{ PatentID: 'CN120491279', ExampleID: 'Example01P', TaleID: '', Description: 'SongRaw 50mm F1.2' },
+{ PatentID: 'WO2017-134928', ExampleID: 'Example06P', TaleID: '', Description: 'Sony 1.4x Teleconverter Lens (SEL)' },
+{ PatentID: 'WO2017-134928', ExampleID: 'Example03P', TaleID: '', Description: 'Sony 2x Teleconverter Lens (SEL)' },
+{ PatentID: 'US008049968', ExampleID: 'Example05P', TaleID: '', Description: 'Sony 70-400mm F4-5.6 G SSM II' },
+{ PatentID: 'US20120307129', ExampleID: 'Example01P', TaleID: '', Description: 'Sony DT 16-50mm F2.8 SSM' },
+{ PatentID: 'US20130155294', ExampleID: 'Example01P', TaleID: '', Description: 'Sony DT 18-135mm F3.5-5.6 SAM' },
+{ PatentID: 'US20080158689', ExampleID: 'Example01P', TaleID: '', Description: 'Sony DT 18-200mm F3.5-6.3' },
+{ PatentID: 'US20070297067', ExampleID: 'Example02P', TaleID: '', Description: 'Sony DT 18-250 mm F3.5-6.3' },
+{ PatentID: 'US20090290227', ExampleID: 'Example01P', TaleID: '', Description: 'Sony DT 18-55mm F3.5-5.6 SAM II' },
+{ PatentID: 'WO2014-007298', ExampleID: 'Example02P', TaleID: '', Description: 'Sony E 10-18 mm F4 OSS' },
+{ PatentID: 'US008553339', ExampleID: 'Example01P', TaleID: '', Description: 'Sony E 18-200mm F3.5-6.3 OSS' },
+{ PatentID: 'US20110273780', ExampleID: 'Example01P', TaleID: '', Description: 'Sony E 18-55 mm F3.5-5.6 OSS' },
+{ PatentID: 'US20140204265', ExampleID: 'Example04P', TaleID: '', Description: 'Sony E 20mm F2.8' },
+{ PatentID: 'JP2012-159613', ExampleID: 'Example01P', TaleID: '', Description: 'Sony E 30mm F3.5 Macro' },
+{ PatentID: 'JP2014-089352', ExampleID: 'Example01P', TaleID: '', Description: 'Sony E 35mm F1.8 OSS' },
+{ PatentID: 'JP2012-242690', ExampleID: 'Example02P', TaleID: '', Description: 'Sony E 50mm F1.8 OSS' },
+{ PatentID: 'US20150316753', ExampleID: 'Example01P', TaleID: '', Description: 'Sony E PZ 16-50mm F3.5-5.6 OSS' },
+{ PatentID: 'WO2021-200206', ExampleID: 'Example02P', TaleID: '', Description: 'Sony FE 12-24mm F2.8 GM' },
+{ PatentID: 'WO2019-187633', ExampleID: 'Example01P', TaleID: '', Description: 'Sony FE 135mm F1.8 GM' },
+{ PatentID: 'WO2021-199923', ExampleID: 'Example01P', TaleID: '', Description: 'Sony FE 14mm F1.8 GM' },
+{ PatentID: 'WO2024-135126', ExampleID: 'Example01P', TaleID: '', Description: 'Sony FE 16-35mm F2.8 GM II' },
+{ PatentID: 'WO2023-153076', ExampleID: 'Example08P', TaleID: '', Description: 'Sony FE 20-70mm F4.0 G' },
+{ PatentID: 'WO2020-213337', ExampleID: 'Example02P', TaleID: '', Description: 'Sony FE 20mm F1.8 G' },
+{ PatentID: 'WO2023-181666', ExampleID: 'Example04P', TaleID: '', Description: 'Sony FE 24-70mm F2.8 GM II' },
+{ PatentID: 'WO2019-073744', ExampleID: 'Example01P', TaleID: '', Description: 'Sony FE 24mm F1.4 GM' },
+{ PatentID: 'JP2022-030896', ExampleID: 'Example01P', TaleID: '', Description: 'Sony FE 24mm F2.8 G' },
+{ PatentID: 'WO2025-263124', ExampleID: 'Example01P', TaleID: '', Description: 'Sony FE 28-70mm F2 GM' },
+{ PatentID: 'US20150077859', ExampleID: 'Example04P', TaleID: '', Description: 'Sony FE 28-70mm F3.5-5.6 OSS' },
+{ PatentID: 'US010191254', ExampleID: 'Example10P', TaleID: '', Description: 'Sony FE 28mm F2' },
+{ PatentID: 'US20190018229', ExampleID: 'Example01P', TaleID: '', Description: 'Sony FE 70-200 mm F2.8 GM OSS' },
+{ PatentID: 'JP2023-039817', ExampleID: 'Example02P', TaleID: '', Description: 'Sony FE 70-200mm F2.8 GM OSS II' },
+{ PatentID: 'US20150226945', ExampleID: 'Example01P', TaleID: '', Description: 'Sony FE 70-200mm F4 G OSS' },
+{ PatentID: 'WO2025-239028', ExampleID: 'Example02P', TaleID: '', Description: 'Sony FE 85 mm F1.4 GM II' },
+{ PatentID: 'WO2016-136352', ExampleID: 'Example02P', TaleID: '', Description: 'Sony FE 90mm F2.8 Macro G OSS' },
+{ PatentID: 'US20190369371', ExampleID: 'Example04P', TaleID: '', Description: 'Sony FE C 16-35mm T3.1' },
+{ PatentID: 'JP2023-044106', ExampleID: 'Example05P', TaleID: '', Description: 'Sony FE PZ 16-35mm F4 G' },
+{ PatentID: 'US20100202053', ExampleID: 'Example01P', TaleID: '', Description: 'Sony G 5.7-62.7mm F1.8-3.5 OS[Sony HandyCam]' },
+{ PatentID: 'US20140071331', ExampleID: 'Example04P', TaleID: '', Description: 'Sony Planar T* 50mm F1.4 ZA SSM' },
+{ PatentID: 'WO2017-138250', ExampleID: 'Example02P', TaleID: '', Description: 'Sony Planar T* FE 50mm F1.4 ZA' },
+{ PatentID: 'US20130033768', ExampleID: 'Example02P', TaleID: '', Description: 'Sony Sonnar T* E 24mm F1.8 ZA' },
+{ PatentID: 'JP2015-041012', ExampleID: 'Example01P', TaleID: '', Description: 'Sony Sonnar T* FE 35mm F2.8 ZA' },
+{ PatentID: 'US20150092100', ExampleID: 'Example01P', TaleID: '', Description: 'Sony Sonnar T* FE 55 mm F1.8 ZA' },
+{ PatentID: 'US20080198475', ExampleID: 'Example03P', TaleID: '', Description: 'Sony Vario-Sonnar T 24-70mm F2.8 ZA SSM' },
+{ PatentID: 'US20070229969', ExampleID: 'Example01P', TaleID: '', Description: 'Sony Vario-Sonnar T DT 16-80mm F3.5-4.5 ZA' },
+{ PatentID: 'JP2015-166834', ExampleID: 'Example01P', TaleID: '', Description: 'Sony Vario-Tessar T FE 16-35mm F4 ZA OSS' },
+{ PatentID: 'US009538088', ExampleID: 'Example01P', TaleID: '', Description: 'Sony Vario-Tessar T* E 16-70mm F4 ZA OSS' },
+{ PatentID: 'DE00434759', ExampleID: 'Example01P', TaleID: '', Description: 'Steinheil 50mm F3.5 Triple-Anastigmat Cassar Series 0' },
+{ PatentID: 'US20140347522', ExampleID: 'Example03P', TaleID: '', Description: 'Tamron 14-150mm F/3.5-5.8 Di III' },
+{ PatentID: 'WO2014-126145', ExampleID: 'Example09P', TaleID: '', Description: 'Tamron 18-200mm F/3.5-6.3 Di II VC' },
+{ PatentID: 'JP2012-181525', ExampleID: 'Example01P', TaleID: '', Description: 'Tamron 18-200mm F/3.5-6.3 Di III VC' },
+{ PatentID: 'JP2017-116646', ExampleID: 'Example01P', TaleID: '', Description: 'Tamron 18-400mm F/3.5-6.3 Di II VC HLD' },
+{ PatentID: 'JP2013-254160', ExampleID: 'Example07P', TaleID: '', Description: 'Tamron 28-300mm F3.5-6.3 Di VC PZD' },
+{ PatentID: 'US20240295723', ExampleID: 'Example01P', TaleID: '', Description: 'Tamron 50-300mm F4.5-6.3 Di III VC VXD' },
+{ PatentID: 'JP2021-043375', ExampleID: 'Example01P', TaleID: '', Description: 'Tamron 70-180mm F/2.8 Di III VXD' },
+{ PatentID: 'US006437923', ExampleID: 'Example01P', TaleID: '', Description: 'Tamron AF 28-200mm F3.8-5.6 Aspherical 71D' },
+{ PatentID: 'US20030156333', ExampleID: 'Example01P', TaleID: '', Description: 'Tamron AF 28-300mm F3.5-6.3 XR Di LD Aspherical [IF] Macro A061' },
+{ PatentID: 'US010545321', ExampleID: 'Example04P', TaleID: '', Description: 'Tamron SP 150-600mm F/5-6.3 Di VC USD' },
+{ PatentID: 'US008810918', ExampleID: 'Example04P', TaleID: '', Description: 'Tamron SP 24-70mm F/2.8 Di VC USD' },
+{ PatentID: 'US008867144', ExampleID: 'Example01P', TaleID: '', Description: 'Tamron SP 70-200mm F/2.8 Di VC USD' },
+{ PatentID: 'US008228605', ExampleID: 'Example02P', TaleID: '', Description: 'Tamron SP 70-300mm F/4-5.6 Di VC USD' },
+{ PatentID: 'US009063253', ExampleID: 'Example01P', TaleID: '', Description: 'Tamron SP 90mm F/2.8 Di Macro 1:1 VC USD' },
+{ PatentID: 'JP2007-133138', ExampleID: 'Example02P', TaleID: '', Description: 'Tamron SP AF 17-50mm F2.8 XR Di II LD Aspherical [IF] A16 A16N II' },
+{ PatentID: 'JP2003-329924', ExampleID: 'Example02P', TaleID: '', Description: 'Tamron SP AF 180mm F3.5 Di LD [IF] Macro B01' },
+{ PatentID: 'JP2003-344768', ExampleID: 'Example01P', TaleID: '', Description: 'Tamron SP AF 200-500mm F5.0-6.3 Di LD [IF] A08' },
+{ PatentID: 'US007075731', ExampleID: 'Example01P', TaleID: '', Description: 'Tamron SP AF28-75mm F/2.8 XR Di LD Aspherical (Model A09)' },
+{ PatentID: 'US20110286116', ExampleID: 'Example01P', TaleID: '', Description: 'Tamron SP AF60mm F/2 Di II LD [IF] Macro 1:1' },
+{ PatentID: 'US20080212200', ExampleID: 'Example01P', TaleID: '', Description: 'Tamron SP AF70-200mm F2.8 Di' },
+{ PatentID: 'US20190086648', ExampleID: 'Example02P', TaleID: '', Description: 'TH Swiss Irix 11mm f/4.0' },
+{ PatentID: 'WO2020-119907', ExampleID: 'Example01P', TaleID: '', Description: 'TH Swiss Irix 150mm f/2.8 Macro' },
+{ PatentID: 'JP1986-215513', ExampleID: 'Example01P', TaleID: '', Description: 'Tokina AT-X 300mm f2.8 AF' },
+{ PatentID: 'JP1982-161804', ExampleID: 'Example01P', TaleID: '', Description: 'Tokina AT-X 35-200mm F3.5-4.5 (AT-X352)' },
+{ PatentID: 'JP1979-080143', ExampleID: 'Example01P', TaleID: '', Description: 'Topcon 35-100mm F3.5-4.3' },
+{ PatentID: 'CN108535851', ExampleID: 'Example01P', TaleID: '', Description: 'Venus Laowa 10-18mm f4.5-5.6 Zoom' },
+{ PatentID: 'CN205720849', ExampleID: 'Example02P', TaleID: '', Description: 'Venus Laowa 12mm f2.8 Zero-D' },
+{ PatentID: 'US20180149842', ExampleID: 'Example01P', TaleID: '', Description: 'Venus Laowa 15mm f2 Zero-D' },
+{ PatentID: 'CN205427291', ExampleID: 'Example02P', TaleID: '', Description: 'Venus Laowa 15mm f4 Wide Angle Macro' },
+{ PatentID: 'CN210573001', ExampleID: 'Example01P', TaleID: '', Description: 'Venus Laowa 24mm f14 2X Macro Probe' },
+{ PatentID: 'CN116520542', ExampleID: 'Example02P', TaleID: '', Description: 'Venus Laowa 58mm f2.8 2X Ultra-Macro APO' },
+{ PatentID: 'CN110161666', ExampleID: 'Example02P', TaleID: '', Description: 'Venus Laowa 65mm f2.8 2x Ultra Macro APO' },
+{ PatentID: 'CN119805722', ExampleID: 'Example01P', TaleID: '', Description: 'Venus Laowa 8-15mm f2.8 FF Zoom Fisheye' },
+{ PatentID: 'US20180164584', ExampleID: 'ExampleRCL1P', TaleID: '', Description: 'Venus Laowa MSC' },
+{ PatentID: 'CN121091494', ExampleID: 'Example01P', TaleID: '', Description: 'Viltrox AF 14mm F4 Air' },
+{ PatentID: 'CN211826700', ExampleID: 'Example01P', TaleID: '', Description: 'Viltrox AF 23mm F1.4 E' },
+{ PatentID: 'CN115840281', ExampleID: 'Example04P', TaleID: '', Description: 'Viltrox AF 27mm f1.2 XF' },
+{ PatentID: 'CN211826699', ExampleID: 'Example01P', TaleID: '', Description: 'Viltrox AF 33mm F1.4 E' },
+{ PatentID: 'CN211955963', ExampleID: 'Example01P', TaleID: '', Description: 'Viltrox AF 35mm F1.8 FE' },
+{ PatentID: 'CN211955966', ExampleID: 'Example01P', TaleID: '', Description: 'Viltrox AF 50mm F1.8 FE' },
+{ PatentID: 'CN211955965', ExampleID: 'Example01P', TaleID: '', Description: 'Viltrox AF 56mm F1.4 E' },
+{ PatentID: 'CN114755806', ExampleID: 'Example01P', TaleID: '', Description: 'Viltrox AF 75mm F1.2 STM ED IF' },
+{ PatentID: 'CN209606699', ExampleID: 'Example01P', TaleID: '', Description: 'Viltrox MF 20mm F1.8 FE' },
+{ PatentID: 'US004258980', ExampleID: 'Example02P', TaleID: '', Description: 'Vivitar 28mm f2' },
+{ PatentID: 'GB1383783', ExampleID: 'Example01P', TaleID: '', Description: 'Vivitar 75-205mm f3.8' },
+{ PatentID: 'US004333714', ExampleID: 'Example01P', TaleID: '', Description: 'Vivitar MC 28mm f2.8' },
+{ PatentID: 'GB1408910', ExampleID: 'Example02P', TaleID: '', Description: 'Vivitar Series 1 135mm f2.3' },
+{ PatentID: 'US003942876', ExampleID: 'Example04P', TaleID: '', Description: 'Vivitar Series 1 200mm f/3' },
+{ PatentID: 'US003975089', ExampleID: 'Example01P', TaleID: '', Description: 'Vivitar Series 1 35-85mm f2.8' },
+{ PatentID: 'US004523816', ExampleID: 'Example04P', TaleID: '', Description: 'Vivitar Series 1 450mm F4.5 Solid Mirror' },
+{ PatentID: 'US004758073', ExampleID: 'Example04P', TaleID: '', Description: 'Vivitar Series 1 70-210mm f2.8-4 Macro' },
+{ PatentID: 'JP1976-063635', ExampleID: 'Example01P', TaleID: '', Description: 'Vivitar Series 1 70-210mm F3.5 Macro' },
+{ PatentID: 'GB0575076', ExampleID: 'Example02P', TaleID: '', Description: 'Wray 50mm F2 Unilite' },
+{ PatentID: 'GB0696902', ExampleID: 'Example01P', TaleID: '', Description: 'Wray 64mm F0.7' },
+{ PatentID: 'US003856386', ExampleID: 'Example01P', TaleID: '', Description: 'Yashica Auto Yashinon-DS 20mm F3.3' },
+{ PatentID: 'JP1975-110330', ExampleID: 'Example01P', TaleID: '', Description: 'Yashica ML 24mm F2.8' },
+{ PatentID: 'JP1978-129629', ExampleID: 'Example02P', TaleID: '', Description: 'Yashica ML 300mm F5.6' },
+{ PatentID: 'JP1969-024068', ExampleID: 'Example01P', TaleID: '', Description: 'Yashica Yashinon-DX 21mm F3.3' },
+{ PatentID: 'CN219085216', ExampleID: 'Example01P', TaleID: '', Description: 'Yongnuo YN11mm F1.8 DA DSM WL' },
+{ PatentID: 'CN206074892', ExampleID: 'Example01P', TaleID: '', Description: 'Yongnuo YN100mm F2N' },
+{ PatentID: 'CN214795390', ExampleID: 'Example01P', TaleID: '', Description: 'Yongnuo YN16mm F1.8S' },
+{ PatentID: 'CN220137479', ExampleID: 'Example01P', TaleID: '', Description: 'Yongnuo YN33mm F1.4Z DA DSM WL Pro' },
+{ PatentID: 'CN207216120', ExampleID: 'Example01P', TaleID: '', Description: 'Yongnuo YN40mm F2.8N' },
+{ PatentID: 'CN106249387', ExampleID: 'Example02P', TaleID: '', Description: 'Yongnuo YN50mm f/1.4' },
+{ PatentID: 'CN204883027', ExampleID: 'Example01P', TaleID: '', Description: 'Yongnuo YN50mm f1.8' },
+{ PatentID: 'CN223389969', ExampleID: 'Example01P', TaleID: '', Description: 'Yongnuo YN50mm F1.8 RF' },
+{ PatentID: 'CN110261999', ExampleID: 'Example01P', TaleID: '', Description: 'Yongnuo YN50mm F1.8S DA DSM' },
+{ PatentID: 'CN220171327', ExampleID: 'Example01P', TaleID: '', Description: 'Yongnuo YN56mm F1.4Z DA DSM WL Pro' },
+{ PatentID: 'GB0993360', ExampleID: 'Example02P', TaleID: '', Description: 'Zeiss Apo-Germinar 375mm F9' },
+{ PatentID: 'JP2015-096915', ExampleID: 'Example02P', TaleID: '', Description: 'Zeiss Batis 1.8 / 85' },
+{ PatentID: 'JP2016-188967', ExampleID: 'Example01P', TaleID: '', Description: 'Zeiss Batis 2.8 / 18' },
+{ PatentID: 'US002721499', ExampleID: 'Example02', TaleID: 'Tale01', Description: 'Zeiss Biogon 2.1cm f/4.5' },
+{ PatentID: 'US002084309', ExampleID: 'Example01P', TaleID: '', Description: 'Zeiss Biogon 35mm F2.8 [pre-war]' },
+{ PatentID: 'JP1955-004837', ExampleID: 'Example01P', TaleID: '', Description: 'Zeiss Biogon 35mm F2.8 Contax Opton' },
+{ PatentID: 'US001786916', ExampleID: 'Example02P', TaleID: '', Description: 'Zeiss Biotar 50mm f/1.4' },
+{ PatentID: 'US002968221', ExampleID: 'Example02P', TaleID: '', Description: 'Zeiss Biometar 120mm f2.8' },
+{ PatentID: 'US002968221', ExampleID: 'Example01P', TaleID: '', Description: 'Zeiss Biometar 80mm f2.8' },
+{ PatentID: 'US20030189767', ExampleID: 'Example01P', TaleID: '', Description: 'Zeiss DigiPrime Distagon T1.6 40mm' },
+{ PatentID: 'US20030189767', ExampleID: 'Example05P', TaleID: '', Description: 'Zeiss DigiPrime T1.6 7mm' },
+{ PatentID: 'US003038380', ExampleID: 'Example01P', TaleID: '', Description: 'Zeiss Distagon 4/35' },
+{ PatentID: 'CH321571', ExampleID: 'Example01P', TaleID: '', Description: 'Zeiss Distagon 60mm F5.6' },
+{ PatentID: 'US003915558', ExampleID: 'Example08P', TaleID: '', Description: 'Zeiss Distagon T f1.4 35mm Contax' },
+{ PatentID: 'DE02359156', ExampleID: 'Example12P', TaleID: '', Description: 'Zeiss Distagon T f2 28mm Contax' },
+{ PatentID: 'US20180180842', ExampleID: 'Example01P', TaleID: '', Description: 'Zeiss Distagon T 35mm F2(ZX1)' },
+{ PatentID: 'DE01250153', ExampleID: 'Example02P', TaleID: '', Description: 'Zeiss Distagon T f2.8 25mm Contax' },
+{ PatentID: 'GB0978797', ExampleID: 'Example01P', TaleID: '', Description: 'Zeiss Flektogon 20mm F4' },
+{ PatentID: 'DE01157000', ExampleID: 'Example01P', TaleID: '', Description: 'Zeiss Flektogon 50mm F4' },
+{ PatentID: 'FR1191673', ExampleID: 'Example01P', TaleID: '', Description: 'Zeiss Flexon 50mm F2' },
+{ PatentID: 'DE01241637', ExampleID: 'Example01P', TaleID: '', Description: 'Zeiss Hologon f8 15mm' },
+{ PatentID: 'GB0975446', ExampleID: 'Example01P', TaleID: '', Description: 'Zeiss Mirotar f4.5 500mm' },
+{ PatentID: 'DE01268404', ExampleID: 'Example02P', TaleID: '', Description: 'Zeiss Olympia-Sonnar 180mm F2.8 Contarex' },
+{ PatentID: 'GB0850117', ExampleID: 'Example01P', TaleID: '', Description: 'Zeiss Pancolar 50mm F2' },
+{ PatentID: 'US002724994', ExampleID: 'Example02P', TaleID: '', Description: 'Zeiss Planar 2.8/80' },
+{ PatentID: 'GB2066504', ExampleID: 'Example04P', TaleID: '', Description: 'Zeiss Planar 50mm F1.4 (Praktica)' },
+{ PatentID: 'US002799207', ExampleID: 'Example01P', TaleID: '', Description: 'Zeiss Planar 80mm f2.8 (Graflex XL)' },
+{ PatentID: 'DE01170157', ExampleID: 'Example01P', TaleID: '', Description: 'Zeiss Planar f1.4 55mm' },
+{ PatentID: 'US003874771', ExampleID: 'Example05P', TaleID: '', Description: 'Zeiss Planar T f1.4 50mm' },
+{ PatentID: 'DE01089183', ExampleID: 'Example01P', TaleID: '', Description: 'Zeiss Pro-Tessar 35mm f3.2' },
+{ PatentID: 'DE01180159', ExampleID: 'Example01P', TaleID: '', Description: 'Zeiss Rollei-Mutar 0.7' },
+{ PatentID: 'DE01180158', ExampleID: 'Example02P', TaleID: '', Description: 'Zeiss Rollei-Mutar 1.5' },
+{ PatentID: 'US003997247', ExampleID: 'Example11P', TaleID: '', Description: 'Zeiss S-Biogon f5.6 40mm' },
+{ PatentID: 'US20140071333', ExampleID: 'Example04P', TaleID: '', Description: 'Zeiss Sonnar 35mm F2 (Sony DSC-RX1RM2)' },
+{ PatentID: 'JP2014-055992', ExampleID: 'Example04P', TaleID: '', Description: 'Zeiss Sonnar 35mm F2 (Sony DSC-RX1RM3)' },
+{ PatentID: 'US003994576', ExampleID: 'Example01P', TaleID: '', Description: 'Zeiss Sonnar 40mm F2.8 Rollei' },
+{ PatentID: 'US002186621', ExampleID: 'Example01P', TaleID: '', Description: 'Zeiss Sonnar 50mm F1.5 Opton Contax' },
+{ PatentID: 'US003883229', ExampleID: 'Example02P', TaleID: '', Description: 'Zeiss Sonnar Superachromat f5.6 250mm CFE' },
+{ PatentID: 'US002720140', ExampleID: 'Example03P', TaleID: '', Description: 'Zeiss Sonnar T f4 150mm' },
+{ PatentID: 'DE00347838', ExampleID: 'Example01P', TaleID: '', Description: 'Zeiss Tele-Tessar 120mm F6.3' },
+{ PatentID: 'DE01447294', ExampleID: 'Example01P', TaleID: '', Description: 'Zeiss Tele-Tessar 200mm F4' },
+{ PatentID: 'CH314381', ExampleID: 'Example01P', TaleID: '', Description: 'Zeiss Tessar 50mm F3.5' },
+{ PatentID: 'FR1066698', ExampleID: 'Example01P', TaleID: '', Description: 'Zeiss Tessar f2.8 50mm' },
+{ PatentID: 'JP2015-161792', ExampleID: 'Example01P', TaleID: '', Description: 'Zeiss Touit 2.8 50M' },
+{ PatentID: 'US20170307860', ExampleID: 'Example01P', TaleID: '', Description: 'Zeiss Ultra Prime Sonnar T 135mm T1.9' },
+{ PatentID: 'DE03602859', ExampleID: 'Example01P', TaleID: '', Description: 'Zeiss Vario-Prakticar 35-70mm f2.7-3.5' },
+{ PatentID: 'GB1167114', ExampleID: 'Example01P', TaleID: '', Description: 'Zeiss Vario-Sonnar 10-100mm F2.8' },
+{ PatentID: 'GB0933844', ExampleID: 'Example01P', TaleID: '', Description: 'Zeiss Vario-Sonnar 7.5-30mm F1.9' },
+{ PatentID: 'DE01447293', ExampleID: 'Example01P', TaleID: '', Description: 'Zeiss Vario-Sonnar 85-250mm F4' },
+{ PatentID: 'US20130314585', ExampleID: 'Example03P', TaleID: '', Description: 'Zeiss Vario-Sonnar T 10.4-37.1mm F1.8-4.9 (Sony DSC-RX100M1-2)' },
+{ PatentID: 'US20080218875', ExampleID: 'Example01P', TaleID: '', Description: 'Zeiss Vario-Sonnar T 14.3-71.5mm F2.8-4.8 (Sony DCS-R1)' },
+{ PatentID: 'US004303312', ExampleID: 'Example01P', TaleID: '', Description: 'Zeiss Vario-Sonnar T 3.5/70-210' },
+{ PatentID: 'US20140354857', ExampleID: 'Example07P', TaleID: '', Description: 'Zeiss Vario-Sonnar T 8.8-73.3mm F2.8 (Sony DSC-RX10M1-2)' },
+{ PatentID: 'WO2019-188070', ExampleID: 'Example03P', TaleID: '', Description: 'Zeiss Vario-Sonnar T 9.0-72mm F2.8-4.5 (Sony DSC-RX100M6-7)' },
+{ PatentID: 'CN110501809', ExampleID: 'Example01P', TaleID: '', Description: 'Zhong Yi 85mm f2.8 1-5X Super Macro' },
+{ PatentID: 'CN218886280', ExampleID: 'Example01P', TaleID: '', Description: 'Zhong Yi Creator 28mm f5.6' },
+{ PatentID: 'CN104101985', ExampleID: 'Example01P', TaleID: '', Description: 'Zhong Yi Creator 35mm F2' },
+{ PatentID: 'CN107272156', ExampleID: 'Example01P', TaleID: '', Description: 'Zhong Yi SpeedMaster 35mm F0.95 II' },
+{ PatentID: 'CN107255857', ExampleID: 'Example01P', TaleID: '', Description: 'Zhong Yi SpeedMaster 135mm F1.4' },
+{ PatentID: 'CN107272157', ExampleID: 'Example01P', TaleID: '', Description: 'Zhong Yi SpeedMaster 25mm F0.95' },
+{ PatentID: 'CN111965793', ExampleID: 'Example01P', TaleID: '', Description: 'Zhong Yi SpeedMaster 50mm F0.95 M' },
+{ PatentID: 'CN110596863', ExampleID: 'Example01P', TaleID: '', Description: 'Zhong Yi SpeedMaster 65mm F1.4' },
+   ];
+   $(window).resize(
+    function() {
+     $(function () {
+      var resizableTFrame=document.getElementById('resizableT');
+      var newWidth = (window.innerWidth - 20); // CONST 20
+      if (resizableTFrame.offsetWidth > newWidth) {
+       resizableTFrame.style.setProperty('width', newWidth + 'px');
+       scrollingTablesFix();
+      }
+      return;    });
+   });   var link;
+   $(document).ready(
+    function() {
+     $("#resizableT").resizable(
+      {
+       resize: function(event, ui) {
+        resize(ui.size.height);
+        return;
+       }
+      }
+     );
+     $(function () {
+
+     /*
+      * modal dialog box for chart URL
+      */
+     var $dialog = $('<div></div>')
+     .dialog({
+       autoOpen: false,
+       modal: true
+     });
+     /*
+      * link function to launch modal dialog box
+      */
+     link = function link() {
+      var link = location.href;
+      var at = link.lastIndexOf('#');
+      if (at >= 0) link = link.substr(0, at);
+      link = link + '#';
+      link = link + 'mode=' + mode;
+      link = link + ',' + 'camera=' + selectedCamera;
+      link = link + ',' + 'suffix=' + selectedSuffix;
+      if (selectedCamera_C != '') {
+       link = link + ',' + 'cameraC=' + selectedCamera_C;
+       link = link + ',' + 'suffixC=' + selectedSuffix_C;
+      }
+      link = link.replace(/ /g,'%20');
+      if (link.startsWith('file:///W:/~NikonD70/')) {
+       link = link.replace('file:///W:/~NikonD70/','www.photonstophotos.net/');
+       link = document.title + '<br/>' + link;
+      } else if (link.startsWith('http://localhost:8000/')) {
+       link = link.replace('http://localhost:8000/','www.photonstophotos.net/');
+       link = document.title + '<br/>' + link;
+      }
+      $dialog.dialog('option', 'title', ' The following URL will return to this heatmap:');
+      $dialog.dialog('option', 'width', 1024);
+      $dialog.html(link);
+      $dialog.dialog('open');
+      return false;
+     }
+      /*
+       * Create the data table
+       * Including colgroup and col
+       */
+      var colChildren;
+      var thChildren;
+      var $dataTable = $('<table class="sortable hc-subtitle"">')
+      .appendTo('#containerT');
+      {
+       var colgroup = $('<colgroup>').appendTo($dataTable);
+       var thead = $('<thead>').appendTo($dataTable);
+       {
+        var tr = $('<tr>').css({ 'text-align': 'right', 'vertical-align': 'bottom', 'line-height': '100%' }).appendTo(thead);
+        $('<th>').css({ 'text-align': 'left' }).html('Description').appendTo(tr);
+        $('<th>').css({ 'text-align': 'left' }).html('Patent ID').appendTo(tr);
+        $('<th>').css({ 'text-align': 'left' }).html('Example').appendTo(tr);
+        $('<th>').css({ 'text-align': 'left' }).html('Tale').appendTo(tr);
+        {
+         thChildren = thead.children().children();
+         for (i = 0; i < thChildren.length; i++) {
+          var col = $('<col>').appendTo(colgroup);
+         }
+        }
+        colChildren = colgroup.children();
+       }
+       $('<tbody>').appendTo($dataTable);
+      }
+
+      /*
+       * Populate the data table and series list
+       */
+      var $dataRowLast;
+      $.each(
+       modeldata, function(i, series) {
+        /* data table */        var $dataRow = $('<tr>').css({ 'text-align': 'right' });
+        $('<td>').css({ 'text-align': 'left' }).html(series.Description).appendTo($dataRow);
+        $('<td>').css({ 'text-align': 'left' }).html(series.PatentID).appendTo($dataRow);
+        $('<td>').css({ 'text-align': 'left' }).html(series.ExampleID).appendTo($dataRow);
+        $('<td>').css({ 'text-align': 'left' }).html(series.TaleID).appendTo($dataRow);
+        $dataRow.appendTo($dataTable);
+        $dataRow.click(
+         function(e) {
+          var thisdata = modeldata[$dataRow.attr('data-index')];
+          var url = 'OpticalBench.htm';
+          url = url + '#';
+          url = url + 'Data/';
+          url = url + thisdata.PatentID;
+          url = url + '_';
+          url = url + thisdata.ExampleID;
+          if (thisdata.TaleID != '') {
+            url = url + '_';
+            url = url + thisdata.TaleID;
+          }
+          url = url + '.txt';
+          url = url + ',figureOpacity=0.25,AxisO,OffAxis';
+          window.open(url, '_blank');
+          return false;
+         }
+        );
+        $dataRow.attr('data-index', i);
+        $dataRowLast = $dataRow;
+       }      );
+
+      /*
+       * Set col width if necessary because th is wider than the data
+       */
+      var drChildren = $dataRowLast.children();
+      for (i = 0; i < thChildren.length; i++) {
+       if ((thChildren[i].offsetWidth) > (drChildren[i].offsetWidth-14)) {
+        colChildren[i].setAttribute('style', 'width: ' + (thChildren[i].offsetWidth+14) + 'px') // CONST 14 for up/down arrow
+       }
+      }
+
+     /*
+      * use hash to set initial values (future)
+      */
+     /*
+      * default filter (future)
+      */
+
+     resize(document.querySelector('#resizableT').offsetHeight + 8); // CONST 8 for 1 line?, -12 for 3 lines
+
+     return;    });
+   });
+
+   function resize(height) {
+     
+     var paddingBottom = parseInt(window.getComputedStyle(document.querySelector('#resizableT-frame'), null)["paddingBottom"]);
+     containerT.style.height = (height - (14 + paddingBottom + (containerT.offsetHeight - containerT.clientHeight))) + 'px'; // CONST 14
+     scrollingTablesFix();
+    return;
+   }   function scrollingTableFix(scrollingTable) {
+    do {
+     if (scrollingTable == null) break;
+
+     var containerTDiv = scrollingTable.querySelector('div');
+     if (containerTDiv == null) break;
+
+     var table = containerTDiv.querySelector('table');
+     if (table == null) break;
+
+     var thead = table.querySelector('thead');
+     if (thead == null) break;
+
+     var tr = thead.querySelector('tr');
+     if (tr == null) break;
+
+     var thList = tr.getElementsByTagName('th');
+     if (thList == null) break;
+
+     var tbody = table.querySelector('tbody');
+     if (tbody == null) break;
+
+     var tr = tbody.querySelector('tr');
+     if (tr == null) break;
+
+     var tdList = tr.getElementsByTagName('td');
+     if (tdList == null) break;
+
+     if (thList.length != tdList.length) break;
+
+     for(i = thList.length - 1; i >= 0; i--) {
+      if (thList[i].offsetWidth > tdList[i].offsetWidth) {
+       thList[i].style.setProperty('width', (tdList[i].offsetWidth-4) + 'px');
+      }
+     }
+     for(i = 0; i < thList.length; i++) {
+      if (thList[i].offsetWidth < tdList[i].offsetWidth) {
+       thList[i].style.setProperty('width', (tdList[i].offsetWidth-4) + 'px');
+      }
+     }
+     thead.style.setProperty('margin-right', (containerTDiv.offsetWidth - containerTDiv.clientWidth) + 'px');
+     var height = thList[0].offsetHeight;
+     thead.style.setProperty('margin-top', (-height) + 'px');
+     containerTDiv.style.setProperty('border-top', (height) + 'px' + ' solid transparent');
+    } while(false);
+    return;
+   }
+   function scrollingTablesFix() {
+    var scrollingTableList = document.getElementsByClassName('scrollingTable');
+    for (index = 0; index < scrollingTableList.length; index++) {
+     scrollingTableFix(scrollingTableList[index]);
+    }
+    return;
+   }
+
+  </script>
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1SECX1PG7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T1SECX1PG7');
+</script>
+</head>
+ <body>
+<!-- Header -->
+  <A href="../../../index.htm" style="text-decoration:none">
+   <div style="background-color: #6677BB; position: relative">
+    <div style="text-align: center">
+     <font style="font-family: Verdana, Geneva, sans-serif; font-size: 32px; color: white">Photons to Photos</font>
+    </div>
+    <div style="background-color: transparent; position: absolute; top: 0px; padding-top: 0px">
+     <div style="margin-left: 6px">
+      <img src="..\..\..\png\home.png" height=32 style='border:0px' />
+     </div>
+    </div>
+    <div style="background-color: transparent; position: absolute; top: 0px; padding-top: 14px">
+     <div style="margin-left: 44px">
+      <font style="font-size: 18px; color: white">Your trusted source for independent sensor data</font>
+     </div>
+    </div>
+    <div style="background-color: transparent; position: absolute; top: 0px; padding-top: 14px; width: 100%">
+     <div style="text-align: right; margin-right: 6px">
+      <font style="font-size: 16px; color: white">Last revised: 2026-08-22 16:00 GMT-5</font>
+     </div>
+    </div>
+   </div>
+  </A>
+<!-- End of Header -->  <center style='font-size:1.5em'>Optical Bench Hub</center>
+
+  <p class='hc-title' >
+   At this point there are about 10000 optical prescriptions available in the <A href="OpticalBench.htm" target="_blank" rel="noreferrer noopener">Optical Bench</A>.<br/>
+   (Some are only available if you know the exact patent and example that you desire.)
+   In the future you will be able to filter those optical prescriptions on this page using various criteria.<br/>
+   For the time being the table below is only populated with more than 1280 optical prescriptions for known lenses.<br/>
+   Naturally there is no guarantee that a production lens followed the patent optical prescription precisely.<br/>
+   And in some cases the patent optical prescription below doesn't line up perfectly with the production lens.<br/>
+   The table is resizable and sortable by clicking on the column headers.<br/>
+   If you click on an item that lens will open the Optical Bench in a separate window/tab.<br/>
+  </p>
+
+  <p/>
+  <div id="resizableT" style='width:800px;'>
+   <div id="resizableT-frame" style="height: 484px;">
+    <div class="scrollingTable">
+     <div id="containerT" class='hc-subtitle'>
+     </div>
+    </div>
+   </div>
+  </div>
+
+  <p class='hc-title' >
+   Further Reading:<br/>
+   <A HREF="../Optics_Primer/Optics_Primer.htm" target="_blank" rel="noreferrer noopener">Optics Primer</A><br/>  </p>  <p class='hc-subtitle' style='text-align: center; margin: 0;'>
+   <A HREF="mailto:bclaff@comcast.net">Contact me</A> if you have a patent reference you feel should be included, find an error, or have any other feedback.<br/>
+   (C)opyright 2017-2026 William J. Claff All Rights Reserved.<br/>
+  </p>
+
+ </body>
+</html>
