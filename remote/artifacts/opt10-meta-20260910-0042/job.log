@@ -1,0 +1,13 @@
+torch 2.14.0+cu130 cuda 13.0 devices 2
++ git clone --depth 1 https://github.com/dibyendumajumdar/goptical.git /var/lib/cots-lamcts/corpora/goptical
+Cloning into '/var/lib/cots-lamcts/corpora/goptical'...
+
+parsed human prescriptions 0
+Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/opt10-meta-20260910-0042/src/validation/opt10_workstation_meta.py", line 346, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "/var/lib/cots-lamcts/jobs/opt10-meta-20260910-0042/src/validation/opt10_workstation_meta.py", line 286, in main
+    if len(human)<10: raise RuntimeError('too few parsed human prescriptions')
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: too few parsed human prescriptions
