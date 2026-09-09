@@ -1,0 +1,26 @@
+/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0046/src/validation/opt10_workstation_pretrain_meta.py:143: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d)); self.recon=nn.Linear(d,FIELDS); self.reg=nn.Sequential(nn.Linear(d,48),nn.GELU(),nn.Linear(48,1))
+fit 48 scratch 17 {'spearman': 0.5097060833902939, 'kendall': 0.36103896103896105, 'top_quartile_precision': 0.42857142857142855, 'pred_top8_mean_J': 49.62234115600586, 'pred_top8_best_J': 42.53087615966797}
+/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0046/src/validation/opt10_workstation_pretrain_meta.py:143: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d)); self.recon=nn.Linear(d,FIELDS); self.reg=nn.Sequential(nn.Linear(d,48),nn.GELU(),nn.Linear(48,1))
+fit 48 scratch 43 {'spearman': 0.49801777170198225, 'kendall': 0.3584415584415585, 'top_quartile_precision': 0.42857142857142855, 'pred_top8_mean_J': 47.72991180419922, 'pred_top8_best_J': 42.57836151123047}
+fit 48 scratch 89 {'spearman': 0.469377990430622, 'kendall': 0.32207792207792213, 'top_quartile_precision': 0.35714285714285715, 'pred_top8_mean_J': 49.791927337646484, 'pred_top8_best_J': 42.57836151123047}
+fit 48 scratch 131 {'spearman': 0.5060833902939167, 'kendall': 0.3584415584415585, 'top_quartile_precision': 0.5, 'pred_top8_mean_J': 50.881805419921875, 'pred_top8_best_J': 43.66284942626953}
+fit 48 scratch 173 {'spearman': 0.38516746411483255, 'kendall': 0.2558441558441559, 'top_quartile_precision': 0.2857142857142857, 'pred_top8_mean_J': 54.10185623168945, 'pred_top8_best_J': 42.57836151123047}
+Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0046/src/validation/opt10_workstation_pretrain_meta_launcher.py", line 14, in <module>
+    runpy.run_path(str(target),run_name='__main__')
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0046/src/validation/opt10_workstation_pretrain_meta.py", line 294, in <module>
+    main()
+  File "/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0046/src/validation/opt10_workstation_pretrain_meta.py", line 263, in main
+    if kind=='pretrained': model,pl=pretrain(seed,HX,HM)
+                                    ^^^^^^^^^^^^^^^^^^^^
+  File "/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0046/src/validation/opt10_workstation_pretrain_meta.py", line 158, in pretrain
+    sel=rng.integers(0,len(hx),size=max(128,len(hx)*views)); tx=bx[sel]; tm=bm[sel]; xx=tx.clone()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "numpy/random/_generator.pyx", line 679, in numpy.random._generator.Generator.integers
+  File "numpy/random/_bounded_integers.pyx", line 1334, in numpy.random._bounded_integers._rand_int64
+ValueError: high <= 0
