@@ -1,0 +1,18 @@
+{
+  "args": [],
+  "code_commit": "36dd1906f177ef97122dd68a4a35be3faa5899ce",
+  "entrypoint": "scripts/inspect_opticalbench_link_logic.py",
+  "env": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "inspect-opticalbench-link-20260910-0056",
+  "memory_gb": 0,
+  "request_sha256": "225993a02bcc3f823ee035c41bc563c7c0ec6a48cf3f3b250aa1f80445c1d9bc",
+  "schema": 1,
+  "started_at": 1788974868.6734943,
+  "state": "running",
+  "timeout_sec": 600
+}
