@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "job_id": "goptical-probe-20260910-0045",
+  "code_commit": "70fa86753a47fde7c746f8635cab57880aa6664b",
+  "entrypoint": "scripts/run_with_workstation_venv.py",
+  "args": ["scripts/goptical_corpus_probe.py"],
+  "env": {"OMP_NUM_THREADS":"1","MKL_NUM_THREADS":"1","OPENBLAS_NUM_THREADS":"1"},
+  "timeout_sec": 600,
+  "memory_gb": 0
+}
