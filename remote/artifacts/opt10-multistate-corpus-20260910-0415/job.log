@@ -1,0 +1,13 @@
+{
+  "schema": "opticalbench-multistate-v1",
+  "raw_files": 1280,
+  "raw_configs": 2216,
+  "unique_configs": 2192,
+  "zoom_files": 742,
+  "files_with_configs": 1174,
+  "max_states_per_file": 9,
+  "mean_states_per_file": 1.867120954003407,
+  "failed_files": 0,
+  "elapsed_sec": 0.9424953460693359,
+  "persistent_path": "/var/lib/cots-lamcts/corpora/opticalbench_hub/parsed_multistate.json.gz"
+}
