@@ -1,0 +1,17 @@
+{
+  "args": [],
+  "code_commit": "a0803ae9884cb6d537e2db7d4b89ad08e806c1e0",
+  "entrypoint": "scripts/workstation_probe.py",
+  "env": {
+    "NUMBA_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "probe-20260910-0031",
+  "memory_gb": 0,
+  "request_sha256": "32af6335241707a47c14197c5e09d918cf15667b3e4d8341e28d7b39a85f32de",
+  "schema": 1,
+  "started_at": 1788971637.541931,
+  "state": "running",
+  "timeout_sec": 600
+}
