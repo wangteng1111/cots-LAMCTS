@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "job_id": "opt10-pretrain-scale-meta-20260910-0061",
+  "code_commit": "2cacff0efc4e5a6ab31f4a58886ec1eb00650cb5",
+  "entrypoint": "validation/opt10_pretrain_scale_meta.py",
+  "args": [],
+  "env": {"OMP_NUM_THREADS":"1","MKL_NUM_THREADS":"1","OPENBLAS_NUM_THREADS":"1","NUMBA_NUM_THREADS":"1","PYTHONHASHSEED":"0"},
+  "timeout_sec": 172800,
+  "memory_gb": 0
+}
