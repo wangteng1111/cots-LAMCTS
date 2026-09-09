@@ -1,0 +1,1312 @@
+{
+  "schema": "OPT1.0-workstation-pretrain-meta-v1",
+  "device": "cuda:0",
+  "torch": "2.14.0+cu130",
+  "human_corpus_count": 21,
+  "human_names": [
+    "canon-rf-50mmf1.2/canon-rf-50mmf1.2.txt",
+    "cosina-35mm-f1.2/JP2004-101880_Example02P.txt",
+    "leica-sl-90-280/JP2016-139125_Example01P.txt",
+    "leitz-r-summicron-50mmf2/leitz-r-summicron-50mmf2.txt",
+    "nikkor-120-300mm-f2.8/JP2020-177057_Example01P.txt",
+    "nikkor-200-500mm/JP2014-209144_Example02P.txt",
+    "nikkor-28mmf1.4-afs/nikkor-28mmf1.4-afs.txt",
+    "nikkor-300mm-f2.8-vrii/JP2015-102734_Example01MLP.txt",
+    "nikkor-300mm-f4.5-ed/US004154508_Example02.txt",
+    "nikkor-300mm-f4.5-ed-1970/US3774991_Example02.txt",
+    "nikkor-400mm-f2.8E/JP2019-152887_Example03P-Nikon-400mm-f2.8FL.txt",
+    "nikkor-50mm-f1.8ais/nikkor-50mm-f1.8ais.txt",
+    "nikkor-70-300mm/US20190353880_Example01P.txt",
+    "nikkor-80-400mm/US20200049962_Example01P.txt",
+    "nikkor-f-200mm-micro/nikkor-200mm-micro.txt",
+    "nikkor-f-58mmf1.4/nikkor-f-58mmf1.4-ex2.txt",
+    "nikkor-z-35mmf1.8/nikkor-z-35mmf1.8.txt",
+    "nikkor-z-50mmf1.8/nikkor-z-50mmf1.8.txt",
+    "nikkor-z-58mmf0.95/nikkor-z-58mmf0.95_ex1.txt",
+    "sigma-40mm-f1.4/Sigma-40mmf1.4.txt",
+    "sony-50mm-f1.4/WO2017-138250_Example02P.txt"
+  ],
+  "q4096_train": 192,
+  "external_test": 56,
+  "seeds": [
+    17,
+    43,
+    89,
+    131,
+    173
+  ],
+  "budgets": [
+    48,
+    96,
+    192
+  ],
+  "models": {
+    "48": {
+      "scratch": {
+        "ensemble": {
+          "spearman": 0.5194805194805195,
+          "kendall": 0.38051948051948054,
+          "top_quartile_precision": 0.5,
+          "pred_top8_mean_J": 47.60838317871094,
+          "pred_top8_best_J": 42.57836151123047
+        },
+        "individual": [
+          {
+            "spearman": 0.5417634996582366,
+            "kendall": 0.39090909090909093,
+            "top_quartile_precision": 0.35714285714285715,
+            "pred_top8_mean_J": 46.93026351928711,
+            "pred_top8_best_J": 42.53087615966797
+          },
+          {
+            "spearman": 0.3513328776486671,
+            "kendall": 0.24545454545454548,
+            "top_quartile_precision": 0.2857142857142857,
+            "pred_top8_mean_J": 49.08135223388672,
+            "pred_top8_best_J": 42.57836151123047
+          },
+          {
+            "spearman": 0.4706766917293233,
+            "kendall": 0.34025974025974026,
+            "top_quartile_precision": 0.42857142857142855,
+            "pred_top8_mean_J": 47.57001495361328,
+            "pred_top8_best_J": 42.53087615966797
+          },
+          {
+            "spearman": 0.47621326042378676,
+            "kendall": 0.3441558441558442,
+            "top_quartile_precision": 0.5,
+            "pred_top8_mean_J": 46.616455078125,
+            "pred_top8_best_J": 42.53087615966797
+          },
+          {
+            "spearman": 0.5350649350649351,
+            "kendall": 0.38441558441558443,
+            "top_quartile_precision": 0.42857142857142855,
+            "pred_top8_mean_J": 47.70246505737305,
+            "pred_top8_best_J": 42.57836151123047
+          }
+        ],
+        "training": [
+          {
+            "seed": 17,
+            "pretrain_loss": null,
+            "finetune": {
+              "val": 0.5266258120536804,
+              "epochs": 93,
+              "budget": 48
+            }
+          },
+          {
+            "seed": 43,
+            "pretrain_loss": null,
+            "finetune": {
+              "val": 0.43219172954559326,
+              "epochs": 112,
+              "budget": 48
+            }
+          },
+          {
+            "seed": 89,
+            "pretrain_loss": null,
+            "finetune": {
+              "val": 0.7263892889022827,
+              "epochs": 87,
+              "budget": 48
+            }
+          },
+          {
+            "seed": 131,
+            "pretrain_loss": null,
+            "finetune": {
+              "val": 0.5505582094192505,
+              "epochs": 81,
+              "budget": 48
+            }
+          },
+          {
+            "seed": 173,
+            "pretrain_loss": null,
+            "finetune": {
+              "val": 0.5165839195251465,
+              "epochs": 111,
+              "budget": 48
+            }
+          }
+        ],
+        "predictions": [
+          -5.185920238494873,
+          -4.320404052734375,
+          -4.9057722091674805,
+          -3.824819564819336,
+          -4.465922832489014,
+          -4.34555721282959,
+          -3.9674720764160156,
+          -3.9342408180236816,
+          -5.013118743896484,
+          -4.210448741912842,
+          -4.118638038635254,
+          -4.710539817810059,
+          -4.550243377685547,
+          -4.063362121582031,
+          -4.266895294189453,
+          -4.347360610961914,
+          -3.8610153198242188,
+          -4.1463470458984375,
+          -4.346607208251953,
+          -4.569137096405029,
+          -3.9462902545928955,
+          -4.354493141174316,
+          -4.804131507873535,
+          -4.8541154861450195,
+          -3.869732618331909,
+          -3.857504367828369,
+          -3.83808970451355,
+          -3.8681588172912598,
+          -3.942326307296753,
+          -3.9189400672912598,
+          -3.887289524078369,
+          -3.8180928230285645,
+          -4.693653106689453,
+          -4.767266750335693,
+          -4.3345046043396,
+          -3.8761048316955566,
+          -4.441156387329102,
+          -4.36904764175415,
+          -4.327692985534668,
+          -4.723426342010498,
+          -3.8989453315734863,
+          -3.904249668121338,
+          -3.8734500408172607,
+          -4.1280646324157715,
+          -3.9038913249969482,
+          -4.157309532165527,
+          -3.830590009689331,
+          -4.640701770782471,
+          -4.191410064697266,
+          -4.03684663772583,
+          -4.0782647132873535,
+          -5.060731410980225,
+          -5.250055313110352,
+          -5.1842474937438965,
+          -5.061347484588623,
+          -4.071875095367432
+        ]
+      },
+      "pretrained": {
+        "ensemble": {
+          "spearman": 0.5682843472317157,
+          "kendall": 0.4103896103896104,
+          "top_quartile_precision": 0.5714285714285714,
+          "pred_top8_mean_J": 46.91688919067383,
+          "pred_top8_best_J": 42.57836151123047
+        },
+        "individual": [
+          {
+            "spearman": 0.5367737525632262,
+            "kendall": 0.38701298701298703,
+            "top_quartile_precision": 0.42857142857142855,
+            "pred_top8_mean_J": 48.30834197998047,
+            "pred_top8_best_J": 40.69070053100586
+          },
+          {
+            "spearman": 0.4728639781271361,
+            "kendall": 0.31428571428571433,
+            "top_quartile_precision": 0.5,
+            "pred_top8_mean_J": 48.05547332763672,
+            "pred_top8_best_J": 43.66284942626953
+          },
+          {
+            "spearman": 0.42255639097744363,
+            "kendall": 0.31818181818181823,
+            "top_quartile_precision": 0.42857142857142855,
+            "pred_top8_mean_J": 61.208030700683594,
+            "pred_top8_best_J": 28.588382720947266
+          },
+          {
+            "spearman": 0.5574162679425837,
+            "kendall": 0.38961038961038963,
+            "top_quartile_precision": 0.5,
+            "pred_top8_mean_J": 46.177940368652344,
+            "pred_top8_best_J": 28.588382720947266
+          },
+          {
+            "spearman": 0.46028708133971297,
+            "kendall": 0.3233766233766234,
+            "top_quartile_precision": 0.42857142857142855,
+            "pred_top8_mean_J": 46.68541717529297,
+            "pred_top8_best_J": 42.57836151123047
+          }
+        ],
+        "training": [
+          {
+            "seed": 17,
+            "pretrain_loss": 0.1483815759420395,
+            "finetune": {
+              "val": 0.59268718957901,
+              "epochs": 66,
+              "budget": 48
+            }
+          },
+          {
+            "seed": 43,
+            "pretrain_loss": 0.15635164082050323,
+            "finetune": {
+              "val": 0.44501549005508423,
+              "epochs": 82,
+              "budget": 48
+            }
+          },
+          {
+            "seed": 89,
+            "pretrain_loss": 0.16481000185012817,
+            "finetune": {
+              "val": 0.5456470847129822,
+              "epochs": 66,
+              "budget": 48
+            }
+          },
+          {
+            "seed": 131,
+            "pretrain_loss": 0.16551029682159424,
+            "finetune": {
+              "val": 0.5308088660240173,
+              "epochs": 67,
+              "budget": 48
+            }
+          },
+          {
+            "seed": 173,
+            "pretrain_loss": 0.16491356492042542,
+            "finetune": {
+              "val": 0.5523718595504761,
+              "epochs": 98,
+              "budget": 48
+            }
+          }
+        ],
+        "predictions": [
+          -4.768553733825684,
+          -4.029553413391113,
+          -4.565313816070557,
+          -3.941218614578247,
+          -4.291079044342041,
+          -4.73038387298584,
+          -4.057391166687012,
+          -4.028850555419922,
+          -4.3329997062683105,
+          -4.179196834564209,
+          -4.019951820373535,
+          -4.369122505187988,
+          -4.771273136138916,
+          -4.058642387390137,
+          -4.2857160568237305,
+          -4.289469242095947,
+          -3.995461940765381,
+          -4.264535427093506,
+          -4.1384148597717285,
+          -4.310544013977051,
+          -4.201619625091553,
+          -4.308314323425293,
+          -4.765242099761963,
+          -4.614080429077148,
+          -3.9885547161102295,
+          -4.048242568969727,
+          -4.069096565246582,
+          -3.91509747505188,
+          -4.083130836486816,
+          -3.9409241676330566,
+          -4.072525978088379,
+          -3.8925557136535645,
+          -4.587445259094238,
+          -4.555026054382324,
+          -4.31696081161499,
+          -3.956570863723755,
+          -4.317525386810303,
+          -4.4105401039123535,
+          -4.453212261199951,
+          -4.3805036544799805,
+          -4.163456916809082,
+          -4.005969047546387,
+          -4.036759376525879,
+          -4.0418829917907715,
+          -4.231509685516357,
+          -4.480376243591309,
+          -3.9324417114257812,
+          -4.788928985595703,
+          -4.142776966094971,
+          -4.156292915344238,
+          -4.269743919372559,
+          -5.194655418395996,
+          -5.2264533042907715,
+          -5.11325740814209,
+          -4.451798439025879,
+          -4.177685737609863
+        ]
+      }
+    },
+    "96": {
+      "scratch": {
+        "ensemble": {
+          "spearman": 0.659125085440875,
+          "kendall": 0.46623376623376633,
+          "top_quartile_precision": 0.5714285714285714,
+          "pred_top8_mean_J": 47.642723083496094,
+          "pred_top8_best_J": 42.53087615966797
+        },
+        "individual": [
+          {
+            "spearman": 0.6242652084757347,
+            "kendall": 0.43766233766233764,
+            "top_quartile_precision": 0.42857142857142855,
+            "pred_top8_mean_J": 49.141754150390625,
+            "pred_top8_best_J": 43.25596618652344
+          },
+          {
+            "spearman": 0.6248803827751196,
+            "kendall": 0.46623376623376633,
+            "top_quartile_precision": 0.5714285714285714,
+            "pred_top8_mean_J": 50.980079650878906,
+            "pred_top8_best_J": 28.588382720947266
+          },
+          {
+            "spearman": 0.6564593301435406,
+            "kendall": 0.4636363636363637,
+            "top_quartile_precision": 0.2857142857142857,
+            "pred_top8_mean_J": 50.039337158203125,
+            "pred_top8_best_J": 42.53087615966797
+          },
+          {
+            "spearman": 0.5714969241285031,
+            "kendall": 0.4233766233766234,
+            "top_quartile_precision": 0.42857142857142855,
+            "pred_top8_mean_J": 59.23063659667969,
+            "pred_top8_best_J": 43.668678283691406
+          },
+          {
+            "spearman": 0.6148325358851675,
+            "kendall": 0.4272727272727273,
+            "top_quartile_precision": 0.5,
+            "pred_top8_mean_J": 48.82227325439453,
+            "pred_top8_best_J": 43.668678283691406
+          }
+        ],
+        "training": [
+          {
+            "seed": 17,
+            "pretrain_loss": null,
+            "finetune": {
+              "val": 0.3417249619960785,
+              "epochs": 79,
+              "budget": 96
+            }
+          },
+          {
+            "seed": 43,
+            "pretrain_loss": null,
+            "finetune": {
+              "val": 0.3760075569152832,
+              "epochs": 117,
+              "budget": 96
+            }
+          },
+          {
+            "seed": 89,
+            "pretrain_loss": null,
+            "finetune": {
+              "val": 0.36572858691215515,
+              "epochs": 123,
+              "budget": 96
+            }
+          },
+          {
+            "seed": 131,
+            "pretrain_loss": null,
+            "finetune": {
+              "val": 0.3326055407524109,
+              "epochs": 116,
+              "budget": 96
+            }
+          },
+          {
+            "seed": 173,
+            "pretrain_loss": null,
+            "finetune": {
+              "val": 0.3038909137248993,
+              "epochs": 181,
+              "budget": 96
+            }
+          }
+        ],
+        "predictions": [
+          -4.317540645599365,
+          -3.9307913780212402,
+          -4.040691375732422,
+          -3.8599750995635986,
+          -3.8436951637268066,
+          -5.218931674957275,
+          -4.131657600402832,
+          -4.135097026824951,
+          -3.9045639038085938,
+          -4.696176052093506,
+          -4.038883686065674,
+          -4.26186466217041,
+          -3.891932964324951,
+          -4.234978675842285,
+          -4.392081260681152,
+          -4.483904838562012,
+          -3.8571484088897705,
+          -4.192697048187256,
+          -4.135667324066162,
+          -3.8710029125213623,
+          -3.9639008045196533,
+          -5.168178081512451,
+          -4.612453460693359,
+          -5.729127883911133,
+          -3.858290910720825,
+          -3.8299765586853027,
+          -3.8447487354278564,
+          -3.855182647705078,
+          -3.8859500885009766,
+          -3.89880633354187,
+          -3.8403332233428955,
+          -3.8382434844970703,
+          -4.675346374511719,
+          -4.306527137756348,
+          -4.265955924987793,
+          -3.8902480602264404,
+          -4.793449401855469,
+          -5.164482116699219,
+          -5.137138366699219,
+          -3.9421634674072266,
+          -3.849134922027588,
+          -3.850912570953369,
+          -3.844033718109131,
+          -3.821519374847412,
+          -3.8514885902404785,
+          -3.89117693901062,
+          -3.8521347045898438,
+          -3.94014048576355,
+          -4.050209045410156,
+          -4.116410255432129,
+          -4.267852306365967,
+          -4.038684844970703,
+          -5.0272088050842285,
+          -5.206733226776123,
+          -3.8148460388183594,
+          -4.159558296203613
+        ]
+      },
+      "pretrained": {
+        "ensemble": {
+          "spearman": 0.5492822966507177,
+          "kendall": 0.41168831168831177,
+          "top_quartile_precision": 0.42857142857142855,
+          "pred_top8_mean_J": 48.61017608642578,
+          "pred_top8_best_J": 43.668678283691406
+        },
+        "individual": [
+          {
+            "spearman": 0.6498974709501026,
+            "kendall": 0.47662337662337667,
+            "top_quartile_precision": 0.6428571428571429,
+            "pred_top8_mean_J": 47.143524169921875,
+            "pred_top8_best_J": 42.53087615966797
+          },
+          {
+            "spearman": 0.4598086124401914,
+            "kendall": 0.32987012987012987,
+            "top_quartile_precision": 0.2857142857142857,
+            "pred_top8_mean_J": 52.225242614746094,
+            "pred_top8_best_J": 42.57836151123047
+          },
+          {
+            "spearman": 0.5558441558441559,
+            "kendall": 0.4038961038961039,
+            "top_quartile_precision": 0.42857142857142855,
+            "pred_top8_mean_J": 48.523658752441406,
+            "pred_top8_best_J": 43.668678283691406
+          },
+          {
+            "spearman": 0.49241285030758714,
+            "kendall": 0.364935064935065,
+            "top_quartile_precision": 0.5,
+            "pred_top8_mean_J": 58.35980224609375,
+            "pred_top8_best_J": 42.53087615966797
+          },
+          {
+            "spearman": 0.5374572795625427,
+            "kendall": 0.38441558441558443,
+            "top_quartile_precision": 0.5714285714285714,
+            "pred_top8_mean_J": 47.807674407958984,
+            "pred_top8_best_J": 43.66284942626953
+          }
+        ],
+        "training": [
+          {
+            "seed": 17,
+            "pretrain_loss": 0.1483815759420395,
+            "finetune": {
+              "val": 0.3997386395931244,
+              "epochs": 84,
+              "budget": 96
+            }
+          },
+          {
+            "seed": 43,
+            "pretrain_loss": 0.15635164082050323,
+            "finetune": {
+              "val": 0.3103526830673218,
+              "epochs": 135,
+              "budget": 96
+            }
+          },
+          {
+            "seed": 89,
+            "pretrain_loss": 0.16481000185012817,
+            "finetune": {
+              "val": 0.4963512420654297,
+              "epochs": 100,
+              "budget": 96
+            }
+          },
+          {
+            "seed": 131,
+            "pretrain_loss": 0.16551029682159424,
+            "finetune": {
+              "val": 0.43372485041618347,
+              "epochs": 78,
+              "budget": 96
+            }
+          },
+          {
+            "seed": 173,
+            "pretrain_loss": 0.16491356492042542,
+            "finetune": {
+              "val": 0.3745378851890564,
+              "epochs": 155,
+              "budget": 96
+            }
+          }
+        ],
+        "predictions": [
+          -4.425386905670166,
+          -4.0831522941589355,
+          -4.017695426940918,
+          -3.95628023147583,
+          -3.8670783042907715,
+          -5.149395942687988,
+          -4.183049201965332,
+          -4.310067653656006,
+          -3.918530225753784,
+          -4.580864906311035,
+          -4.023461818695068,
+          -4.164666175842285,
+          -4.063529014587402,
+          -4.217652797698975,
+          -4.216876983642578,
+          -4.475804328918457,
+          -3.989492416381836,
+          -4.4286298751831055,
+          -4.157866477966309,
+          -3.904636859893799,
+          -4.1237030029296875,
+          -5.097487926483154,
+          -5.057219505310059,
+          -5.657188892364502,
+          -3.8500258922576904,
+          -3.9319090843200684,
+          -4.0027241706848145,
+          -3.897282123565674,
+          -3.8903205394744873,
+          -3.9154555797576904,
+          -3.910318374633789,
+          -3.801114320755005,
+          -4.627961158752441,
+          -4.418610572814941,
+          -4.363405704498291,
+          -3.9238617420196533,
+          -4.324481964111328,
+          -5.309642791748047,
+          -4.982626914978027,
+          -3.9395947456359863,
+          -4.130795955657959,
+          -3.8966064453125,
+          -3.9522063732147217,
+          -3.867908000946045,
+          -4.112378120422363,
+          -4.17902135848999,
+          -3.907012462615967,
+          -4.490169525146484,
+          -4.352261543273926,
+          -4.275688648223877,
+          -4.286238670349121,
+          -4.2012038230896,
+          -5.146605968475342,
+          -5.415887355804443,
+          -3.858762264251709,
+          -4.0579142570495605
+        ]
+      }
+    },
+    "192": {
+      "scratch": {
+        "ensemble": {
+          "spearman": 0.7413533834586467,
+          "kendall": 0.5376623376623377,
+          "top_quartile_precision": 0.42857142857142855,
+          "pred_top8_mean_J": 46.689476013183594,
+          "pred_top8_best_J": 42.53087615966797
+        },
+        "individual": [
+          {
+            "spearman": 0.6416267942583732,
+            "kendall": 0.45454545454545453,
+            "top_quartile_precision": 0.5,
+            "pred_top8_mean_J": 49.21996307373047,
+            "pred_top8_best_J": 40.69070053100586
+          },
+          {
+            "spearman": 0.6632262474367737,
+            "kendall": 0.48051948051948057,
+            "top_quartile_precision": 0.5714285714285714,
+            "pred_top8_mean_J": 47.18342208862305,
+            "pred_top8_best_J": 42.57836151123047
+          },
+          {
+            "spearman": 0.6668489405331511,
+            "kendall": 0.4506493506493507,
+            "top_quartile_precision": 0.21428571428571427,
+            "pred_top8_mean_J": 52.04467010498047,
+            "pred_top8_best_J": 43.668678283691406
+          },
+          {
+            "spearman": 0.7071086807928915,
+            "kendall": 0.5000000000000001,
+            "top_quartile_precision": 0.42857142857142855,
+            "pred_top8_mean_J": 48.93402862548828,
+            "pred_top8_best_J": 43.66284942626953
+          },
+          {
+            "spearman": 0.6646616541353383,
+            "kendall": 0.49350649350649356,
+            "top_quartile_precision": 0.5714285714285714,
+            "pred_top8_mean_J": 50.066246032714844,
+            "pred_top8_best_J": 43.66284942626953
+          }
+        ],
+        "training": [
+          {
+            "seed": 17,
+            "pretrain_loss": null,
+            "finetune": {
+              "val": 0.2525057792663574,
+              "epochs": 65,
+              "budget": 192
+            }
+          },
+          {
+            "seed": 43,
+            "pretrain_loss": null,
+            "finetune": {
+              "val": 0.2867699861526489,
+              "epochs": 131,
+              "budget": 192
+            }
+          },
+          {
+            "seed": 89,
+            "pretrain_loss": null,
+            "finetune": {
+              "val": 0.2279883772134781,
+              "epochs": 139,
+              "budget": 192
+            }
+          },
+          {
+            "seed": 131,
+            "pretrain_loss": null,
+            "finetune": {
+              "val": 0.24809172749519348,
+              "epochs": 86,
+              "budget": 192
+            }
+          },
+          {
+            "seed": 173,
+            "pretrain_loss": null,
+            "finetune": {
+              "val": 0.2484412044286728,
+              "epochs": 69,
+              "budget": 192
+            }
+          }
+        ],
+        "predictions": [
+          -4.619719505310059,
+          -4.177868843078613,
+          -4.451090335845947,
+          -4.0237135887146,
+          -3.982992649078369,
+          -4.538762092590332,
+          -4.169886112213135,
+          -4.125413417816162,
+          -4.088924884796143,
+          -4.528014183044434,
+          -4.035301208496094,
+          -4.71297550201416,
+          -4.1480512619018555,
+          -4.309781551361084,
+          -4.279046535491943,
+          -4.3354973793029785,
+          -3.8933067321777344,
+          -4.076266288757324,
+          -4.2513108253479,
+          -4.1295881271362305,
+          -4.131181240081787,
+          -4.680170059204102,
+          -4.038614273071289,
+          -5.550065517425537,
+          -3.913200855255127,
+          -3.8618674278259277,
+          -3.9578323364257812,
+          -3.9071567058563232,
+          -3.9299018383026123,
+          -3.926105499267578,
+          -3.911057949066162,
+          -3.8769195079803467,
+          -4.653627395629883,
+          -4.2401933670043945,
+          -4.290537357330322,
+          -3.912888288497925,
+          -4.705039024353027,
+          -4.8891167640686035,
+          -4.946752548217773,
+          -4.231832504272461,
+          -3.948533296585083,
+          -3.953575849533081,
+          -3.905397415161133,
+          -4.189335823059082,
+          -4.014399528503418,
+          -4.347296714782715,
+          -3.9019100666046143,
+          -4.03257417678833,
+          -4.141294956207275,
+          -4.572457790374756,
+          -4.2191853523254395,
+          -4.510621070861816,
+          -4.985230445861816,
+          -5.336573123931885,
+          -3.997558116912842,
+          -4.251135349273682
+        ]
+      },
+      "pretrained": {
+        "ensemble": {
+          "spearman": 0.6907723855092277,
+          "kendall": 0.5064935064935066,
+          "top_quartile_precision": 0.5714285714285714,
+          "pred_top8_mean_J": 46.94252395629883,
+          "pred_top8_best_J": 42.53087615966797
+        },
+        "individual": [
+          {
+            "spearman": 0.495557074504443,
+            "kendall": 0.364935064935065,
+            "top_quartile_precision": 0.42857142857142855,
+            "pred_top8_mean_J": 63.30375671386719,
+            "pred_top8_best_J": 40.69070053100586
+          },
+          {
+            "spearman": 0.6369104579630895,
+            "kendall": 0.48571428571428577,
+            "top_quartile_precision": 0.5714285714285714,
+            "pred_top8_mean_J": 44.785911560058594,
+            "pred_top8_best_J": 28.588382720947266
+          },
+          {
+            "spearman": 0.5915242652084758,
+            "kendall": 0.4233766233766234,
+            "top_quartile_precision": 0.5,
+            "pred_top8_mean_J": 50.57293701171875,
+            "pred_top8_best_J": 42.53087615966797
+          },
+          {
+            "spearman": 0.6846206425153794,
+            "kendall": 0.503896103896104,
+            "top_quartile_precision": 0.5,
+            "pred_top8_mean_J": 46.58260726928711,
+            "pred_top8_best_J": 42.53087615966797
+          },
+          {
+            "spearman": 0.5972658920027342,
+            "kendall": 0.4428571428571429,
+            "top_quartile_precision": 0.5,
+            "pred_top8_mean_J": 47.1920166015625,
+            "pred_top8_best_J": 42.53087615966797
+          }
+        ],
+        "training": [
+          {
+            "seed": 17,
+            "pretrain_loss": 0.1483815759420395,
+            "finetune": {
+              "val": 0.2805885076522827,
+              "epochs": 61,
+              "budget": 192
+            }
+          },
+          {
+            "seed": 43,
+            "pretrain_loss": 0.15635164082050323,
+            "finetune": {
+              "val": 0.2724337577819824,
+              "epochs": 80,
+              "budget": 192
+            }
+          },
+          {
+            "seed": 89,
+            "pretrain_loss": 0.16481000185012817,
+            "finetune": {
+              "val": 0.22489440441131592,
+              "epochs": 65,
+              "budget": 192
+            }
+          },
+          {
+            "seed": 131,
+            "pretrain_loss": 0.16551029682159424,
+            "finetune": {
+              "val": 0.23083847761154175,
+              "epochs": 68,
+              "budget": 192
+            }
+          },
+          {
+            "seed": 173,
+            "pretrain_loss": 0.16491356492042542,
+            "finetune": {
+              "val": 0.26488107442855835,
+              "epochs": 73,
+              "budget": 192
+            }
+          }
+        ],
+        "predictions": [
+          -4.657391548156738,
+          -4.246699333190918,
+          -4.370293140411377,
+          -4.004502296447754,
+          -4.228133678436279,
+          -4.773867607116699,
+          -4.159668445587158,
+          -4.162148475646973,
+          -4.1235575675964355,
+          -4.632909774780273,
+          -4.073495864868164,
+          -4.659769535064697,
+          -4.215388298034668,
+          -4.088940620422363,
+          -4.375948429107666,
+          -4.479860782623291,
+          -3.9478096961975098,
+          -4.108146667480469,
+          -4.169345855712891,
+          -4.152435779571533,
+          -4.0796098709106445,
+          -4.814443111419678,
+          -4.230258941650391,
+          -4.903953552246094,
+          -3.931494951248169,
+          -4.119196891784668,
+          -3.992586851119995,
+          -3.999727725982666,
+          -3.9662296772003174,
+          -4.032717704772949,
+          -3.968045711517334,
+          -3.8927407264709473,
+          -4.636441230773926,
+          -4.325083255767822,
+          -4.602817535400391,
+          -3.965938091278076,
+          -4.614688873291016,
+          -4.858358860015869,
+          -4.914327144622803,
+          -4.316071033477783,
+          -4.141829490661621,
+          -3.906555652618408,
+          -4.001587867736816,
+          -4.044468879699707,
+          -4.395498275756836,
+          -4.496578693389893,
+          -3.957367420196533,
+          -4.033856391906738,
+          -4.16589879989624,
+          -4.678930282592773,
+          -4.172365665435791,
+          -4.520492076873779,
+          -5.213776588439941,
+          -5.268092632293701,
+          -4.367636203765869,
+          -4.049289703369141
+        ]
+      }
+    }
+  },
+  "paired_bootstrap_192": {
+    "mean_delta_spearman": -0.049687980642193805,
+    "q025": -0.16794493767422256,
+    "q975": 0.05131051338619093,
+    "p_delta_le_0": 0.8256
+  },
+  "prospective": {
+    "scratch": {
+      "stats": {
+        "n": 0,
+        "mean_J": null,
+        "median_J": null,
+        "best_J": null,
+        "worst_J": null
+      },
+      "rows": [
+        {
+          "state": [
+            28,
+            29,
+            16,
+            6,
+            2,
+            0,
+            4,
+            3
+          ],
+          "error": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py\", line 111, in <module>\n    from core import mandler_benchmark_core as M\nModuleNotFoundError: No module named 'core'\n"
+        },
+        {
+          "state": [
+            28,
+            53,
+            40,
+            6,
+            3,
+            2,
+            4,
+            3
+          ],
+          "error": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py\", line 111, in <module>\n    from core import mandler_benchmark_core as M\nModuleNotFoundError: No module named 'core'\n"
+        },
+        {
+          "state": [
+            44,
+            21,
+            15,
+            41,
+            1,
+            4,
+            4,
+            4
+          ],
+          "error": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py\", line 111, in <module>\n    from core import mandler_benchmark_core as M\nModuleNotFoundError: No module named 'core'\n"
+        },
+        {
+          "state": [
+            36,
+            29,
+            48,
+            6,
+            1,
+            1,
+            3,
+            0
+          ],
+          "error": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py\", line 111, in <module>\n    from core import mandler_benchmark_core as M\nModuleNotFoundError: No module named 'core'\n"
+        },
+        {
+          "state": [
+            52,
+            69,
+            62,
+            46,
+            1,
+            3,
+            4,
+            3
+          ],
+          "error": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py\", line 111, in <module>\n    from core import mandler_benchmark_core as M\nModuleNotFoundError: No module named 'core'\n"
+        },
+        {
+          "state": [
+            52,
+            5,
+            30,
+            15,
+            0,
+            2,
+            4,
+            4
+          ],
+          "error": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py\", line 111, in <module>\n    from core import mandler_benchmark_core as M\nModuleNotFoundError: No module named 'core'\n"
+        },
+        {
+          "state": [
+            52,
+            37,
+            71,
+            22,
+            4,
+            3,
+            3,
+            1
+          ],
+          "error": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py\", line 111, in <module>\n    from core import mandler_benchmark_core as M\nModuleNotFoundError: No module named 'core'\n"
+        },
+        {
+          "state": [
+            28,
+            53,
+            48,
+            1,
+            3,
+            0,
+            3,
+            0
+          ],
+          "error": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py\", line 111, in <module>\n    from core import mandler_benchmark_core as M\nModuleNotFoundError: No module named 'core'\n"
+        }
+      ]
+    },
+    "pretrained": {
+      "stats": {
+        "n": 0,
+        "mean_J": null,
+        "median_J": null,
+        "best_J": null,
+        "worst_J": null
+      },
+      "rows": [
+        {
+          "state": [
+            52,
+            61,
+            32,
+            54,
+            0,
+            3,
+            1,
+            1
+          ],
+          "error": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py\", line 111, in <module>\n    from core import mandler_benchmark_core as M\nModuleNotFoundError: No module named 'core'\n"
+        },
+        {
+          "state": [
+            4,
+            61,
+            33,
+            39,
+            0,
+            2,
+            1,
+            2
+          ],
+          "error": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py\", line 111, in <module>\n    from core import mandler_benchmark_core as M\nModuleNotFoundError: No module named 'core'\n"
+        },
+        {
+          "state": [
+            36,
+            53,
+            32,
+            38,
+            3,
+            3,
+            4,
+            4
+          ],
+          "error": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py\", line 111, in <module>\n    from core import mandler_benchmark_core as M\nModuleNotFoundError: No module named 'core'\n"
+        },
+        {
+          "state": [
+            28,
+            26,
+            62,
+            38,
+            0,
+            1,
+            1,
+            4
+          ],
+          "error": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py\", line 111, in <module>\n    from core import mandler_benchmark_core as M\nModuleNotFoundError: No module named 'core'\n"
+        },
+        {
+          "state": [
+            12,
+            10,
+            41,
+            38,
+            4,
+            3,
+            1,
+            2
+          ],
+          "error": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py\", line 111, in <module>\n    from core import mandler_benchmark_core as M\nModuleNotFoundError: No module named 'core'\n"
+        },
+        {
+          "state": [
+            20,
+            61,
+            63,
+            33,
+            0,
+            1,
+            0,
+            0
+          ],
+          "error": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py\", line 111, in <module>\n    from core import mandler_benchmark_core as M\nModuleNotFoundError: No module named 'core'\n"
+        },
+        {
+          "state": [
+            20,
+            53,
+            41,
+            56,
+            3,
+            0,
+            0,
+            3
+          ],
+          "error": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py\", line 111, in <module>\n    from core import mandler_benchmark_core as M\nModuleNotFoundError: No module named 'core'\n"
+        },
+        {
+          "state": [
+            60,
+            26,
+            30,
+            62,
+            4,
+            2,
+            1,
+            0
+          ],
+          "error": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py\", line 111, in <module>\n    from core import mandler_benchmark_core as M\nModuleNotFoundError: No module named 'core'\n"
+        }
+      ]
+    },
+    "random": {
+      "stats": {
+        "n": 0,
+        "mean_J": null,
+        "median_J": null,
+        "best_J": null,
+        "worst_J": null
+      },
+      "rows": [
+        {
+          "state": [
+            60,
+            37,
+            64,
+            9,
+            2,
+            3,
+            3,
+            1
+          ],
+          "error": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py\", line 111, in <module>\n    from core import mandler_benchmark_core as M\nModuleNotFoundError: No module named 'core'\n"
+        },
+        {
+          "state": [
+            38,
+            4,
+            40,
+            27,
+            4,
+            0,
+            3,
+            1
+          ],
+          "error": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py\", line 111, in <module>\n    from core import mandler_benchmark_core as M\nModuleNotFoundError: No module named 'core'\n"
+        },
+        {
+          "state": [
+            31,
+            38,
+            66,
+            26,
+            1,
+            3,
+            4,
+            4
+          ],
+          "error": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py\", line 111, in <module>\n    from core import mandler_benchmark_core as M\nModuleNotFoundError: No module named 'core'\n"
+        },
+        {
+          "state": [
+            14,
+            59,
+            1,
+            49,
+            4,
+            4,
+            1,
+            4
+          ],
+          "error": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py\", line 111, in <module>\n    from core import mandler_benchmark_core as M\nModuleNotFoundError: No module named 'core'\n"
+        },
+        {
+          "state": [
+            44,
+            38,
+            62,
+            15,
+            1,
+            3,
+            3,
+            4
+          ],
+          "error": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py\", line 111, in <module>\n    from core import mandler_benchmark_core as M\nModuleNotFoundError: No module named 'core'\n"
+        },
+        {
+          "state": [
+            71,
+            69,
+            27,
+            7,
+            0,
+            0,
+            3,
+            1
+          ],
+          "error": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py\", line 111, in <module>\n    from core import mandler_benchmark_core as M\nModuleNotFoundError: No module named 'core'\n"
+        },
+        {
+          "state": [
+            60,
+            54,
+            71,
+            26,
+            2,
+            2,
+            0,
+            3
+          ],
+          "error": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py\", line 111, in <module>\n    from core import mandler_benchmark_core as M\nModuleNotFoundError: No module named 'core'\n"
+        },
+        {
+          "state": [
+            54,
+            59,
+            57,
+            30,
+            3,
+            2,
+            0,
+            2
+          ],
+          "error": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py\", line 111, in <module>\n    from core import mandler_benchmark_core as M\nModuleNotFoundError: No module named 'core'\n"
+        }
+      ]
+    }
+  },
+  "elapsed_sec": 157.80077266693115,
+  "evaluator_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+}
