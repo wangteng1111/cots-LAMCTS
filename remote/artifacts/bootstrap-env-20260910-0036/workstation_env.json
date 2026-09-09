@@ -1,0 +1,40 @@
+{
+  "finished_at": 1788972133.9472961,
+  "host_python": "/usr/bin/python3",
+  "host_python_version": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "ok": true,
+  "platform": "Linux-6.14.0-37-generic-x86_64-with-glibc2.39",
+  "schema": 1,
+  "started_at": 1788971858.3483043,
+  "venv": "/var/lib/cots-lamcts/venv",
+  "verification": {
+    "cuda_available": true,
+    "cuda_device_count": 2,
+    "cuda_devices": [
+      {
+        "index": 0,
+        "major": 12,
+        "minor": 0,
+        "name": "NVIDIA GeForce RTX 5090",
+        "total_memory": 33670758400
+      },
+      {
+        "index": 1,
+        "major": 12,
+        "minor": 0,
+        "name": "NVIDIA GeForce RTX 5090",
+        "total_memory": 33670758400
+      }
+    ],
+    "cuda_smoke_mean": 0.02187245711684227,
+    "cuda_version": "13.0",
+    "executable": "/var/lib/cots-lamcts/venv/bin/python",
+    "numba": "0.62.1",
+    "numpy": "2.2.6",
+    "platform": "Linux-6.14.0-37-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+    "scipy": "1.15.3",
+    "sklearn": "1.7.2",
+    "torch": "2.14.0+cu130"
+  }
+}
