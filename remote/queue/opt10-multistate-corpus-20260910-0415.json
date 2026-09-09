@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "job_id": "opt10-multistate-corpus-20260910-0415",
+  "code_commit": "654e9049af3ebdab81c59175116a2b00a8e97337",
+  "entrypoint": "scripts/build_opticalbench_multistate_corpus.py",
+  "args": [],
+  "env": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0"
+  },
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
