@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "job_id": "build-opticalbench-corpus-20260910-0060",
+  "code_commit": "deaf97ac050e95b86c8e54fed8b650f0d31fe70e",
+  "entrypoint": "scripts/build_opticalbench_corpus.py",
+  "args": [],
+  "env": {"OMP_NUM_THREADS":"1","MKL_NUM_THREADS":"1","OPENBLAS_NUM_THREADS":"1"},
+  "timeout_sec": 7200,
+  "memory_gb": 0
+}
