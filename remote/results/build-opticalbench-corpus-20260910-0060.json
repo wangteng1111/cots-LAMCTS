@@ -9,10 +9,13 @@
   },
   "hostname": "aipss-Rack-Server",
   "job_id": "build-opticalbench-corpus-20260910-0060",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 984912,
   "request_sha256": "04e46a28d5016c0ed98151964ab870eaf8bafee9c692361992d73f9483042613",
   "schema": 1,
   "started_at": 1788975141.4483564,
   "state": "running",
-  "timeout_sec": 7200
+  "timeout_sec": 7200,
+  "updated_at": 1788975143.6412861
 }
