@@ -1,0 +1,19 @@
+{
+  "args": [],
+  "code_commit": "654e9049af3ebdab81c59175116a2b00a8e97337",
+  "entrypoint": "scripts/build_opticalbench_multistate_corpus.py",
+  "env": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "opt10-multistate-corpus-20260910-0415",
+  "memory_gb": 0,
+  "request_sha256": "f9ed48242cbca42ddeffd2d6cad20afa3679be1433cb938fabe444776f991bd2",
+  "schema": 1,
+  "started_at": 1788985119.4286711,
+  "state": "running",
+  "timeout_sec": 1800
+}
