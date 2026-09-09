@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "job_id": "opt10-pretrain-meta-20260910-0047",
+  "code_commit": "0bcef62351a89df703cd14bda9d0489c419d6253",
+  "entrypoint": "validation/opt10_workstation_pretrain_meta_fixed.py",
+  "args": [],
+  "env": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "NUMBA_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0"
+  },
+  "timeout_sec": 172800,
+  "memory_gb": 0
+}
