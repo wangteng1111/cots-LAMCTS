@@ -1,0 +1,20 @@
+{
+  "args": [],
+  "code_commit": "335ccbcb6489f64c909a90c93c5a1df430da9f3a",
+  "entrypoint": "validation/opt10_workstation_pretrain_meta_launcher.py",
+  "env": {
+    "MKL_NUM_THREADS": "1",
+    "NUMBA_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "opt10-pretrain-meta-20260910-0046",
+  "memory_gb": 0,
+  "request_sha256": "5c4356225a836b02827faf6b417dc9001968cedb3999f150481fa038c2b8e032",
+  "schema": 1,
+  "started_at": 1788973379.693527,
+  "state": "running",
+  "timeout_sec": 172800
+}
