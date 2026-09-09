@@ -1,0 +1,20 @@
+{
+  "args": [],
+  "code_commit": "9732611d5c8c2956ade0a5999d2760f4a1a9d251",
+  "entrypoint": "validation/opt10_prospective_q4096_fixed.py",
+  "env": {
+    "MKL_NUM_THREADS": "1",
+    "NUMBA_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "opt10-prospective-q4096-20260910-0050",
+  "memory_gb": 0,
+  "request_sha256": "f1c2f0a1c1fb8b37deb8faba93a642fc28c492513f9f3cbe66f3335f38d9f0eb",
+  "schema": 1,
+  "started_at": 1788973745.89798,
+  "state": "running",
+  "timeout_sec": 7200
+}
