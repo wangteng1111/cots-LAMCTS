@@ -1,0 +1,22 @@
+{
+  "args": [
+    "validation/opt10_workstation_meta.py"
+  ],
+  "code_commit": "72a62ee19441a3d1b041cfdab69659b8a2386002",
+  "entrypoint": "scripts/run_with_workstation_venv.py",
+  "env": {
+    "MKL_NUM_THREADS": "1",
+    "NUMBA_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "opt10-meta-20260910-0042",
+  "memory_gb": 0,
+  "request_sha256": "1e433291661c56818b0d5944289ab39d86827b86ff96909adf05612491fb2a34",
+  "schema": 1,
+  "started_at": 1788972250.429162,
+  "state": "running",
+  "timeout_sec": 21600
+}
