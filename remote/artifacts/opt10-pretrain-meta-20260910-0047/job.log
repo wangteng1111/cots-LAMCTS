@@ -1,0 +1,204 @@
+/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py:143: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d)); self.recon=nn.Linear(d,FIELDS); self.reg=nn.Sequential(nn.Linear(d,48),nn.GELU(),nn.Linear(48,1))
+fit 48 scratch 17 {'spearman': 0.5417634996582366, 'kendall': 0.39090909090909093, 'top_quartile_precision': 0.35714285714285715, 'pred_top8_mean_J': 46.93026351928711, 'pred_top8_best_J': 42.53087615966797}
+/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py:143: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d)); self.recon=nn.Linear(d,FIELDS); self.reg=nn.Sequential(nn.Linear(d,48),nn.GELU(),nn.Linear(48,1))
+fit 48 scratch 43 {'spearman': 0.3513328776486671, 'kendall': 0.24545454545454548, 'top_quartile_precision': 0.2857142857142857, 'pred_top8_mean_J': 49.08135223388672, 'pred_top8_best_J': 42.57836151123047}
+fit 48 scratch 89 {'spearman': 0.4706766917293233, 'kendall': 0.34025974025974026, 'top_quartile_precision': 0.42857142857142855, 'pred_top8_mean_J': 47.57001495361328, 'pred_top8_best_J': 42.53087615966797}
+fit 48 scratch 131 {'spearman': 0.47621326042378676, 'kendall': 0.3441558441558442, 'top_quartile_precision': 0.5, 'pred_top8_mean_J': 46.616455078125, 'pred_top8_best_J': 42.53087615966797}
+fit 48 scratch 173 {'spearman': 0.5350649350649351, 'kendall': 0.38441558441558443, 'top_quartile_precision': 0.42857142857142855, 'pred_top8_mean_J': 47.70246505737305, 'pred_top8_best_J': 42.57836151123047}
+fit 48 pretrained 17 {'spearman': 0.5367737525632262, 'kendall': 0.38701298701298703, 'top_quartile_precision': 0.42857142857142855, 'pred_top8_mean_J': 48.30834197998047, 'pred_top8_best_J': 40.69070053100586}
+fit 48 pretrained 43 {'spearman': 0.4728639781271361, 'kendall': 0.31428571428571433, 'top_quartile_precision': 0.5, 'pred_top8_mean_J': 48.05547332763672, 'pred_top8_best_J': 43.66284942626953}
+fit 48 pretrained 89 {'spearman': 0.42255639097744363, 'kendall': 0.31818181818181823, 'top_quartile_precision': 0.42857142857142855, 'pred_top8_mean_J': 61.208030700683594, 'pred_top8_best_J': 28.588382720947266}
+fit 48 pretrained 131 {'spearman': 0.5574162679425837, 'kendall': 0.38961038961038963, 'top_quartile_precision': 0.5, 'pred_top8_mean_J': 46.177940368652344, 'pred_top8_best_J': 28.588382720947266}
+fit 48 pretrained 173 {'spearman': 0.46028708133971297, 'kendall': 0.3233766233766234, 'top_quartile_precision': 0.42857142857142855, 'pred_top8_mean_J': 46.68541717529297, 'pred_top8_best_J': 42.57836151123047}
+fit 96 scratch 17 {'spearman': 0.6242652084757347, 'kendall': 0.43766233766233764, 'top_quartile_precision': 0.42857142857142855, 'pred_top8_mean_J': 49.141754150390625, 'pred_top8_best_J': 43.25596618652344}
+fit 96 scratch 43 {'spearman': 0.6248803827751196, 'kendall': 0.46623376623376633, 'top_quartile_precision': 0.5714285714285714, 'pred_top8_mean_J': 50.980079650878906, 'pred_top8_best_J': 28.588382720947266}
+fit 96 scratch 89 {'spearman': 0.6564593301435406, 'kendall': 0.4636363636363637, 'top_quartile_precision': 0.2857142857142857, 'pred_top8_mean_J': 50.039337158203125, 'pred_top8_best_J': 42.53087615966797}
+fit 96 scratch 131 {'spearman': 0.5714969241285031, 'kendall': 0.4233766233766234, 'top_quartile_precision': 0.42857142857142855, 'pred_top8_mean_J': 59.23063659667969, 'pred_top8_best_J': 43.668678283691406}
+fit 96 scratch 173 {'spearman': 0.6148325358851675, 'kendall': 0.4272727272727273, 'top_quartile_precision': 0.5, 'pred_top8_mean_J': 48.82227325439453, 'pred_top8_best_J': 43.668678283691406}
+fit 96 pretrained 17 {'spearman': 0.6498974709501026, 'kendall': 0.47662337662337667, 'top_quartile_precision': 0.6428571428571429, 'pred_top8_mean_J': 47.143524169921875, 'pred_top8_best_J': 42.53087615966797}
+fit 96 pretrained 43 {'spearman': 0.4598086124401914, 'kendall': 0.32987012987012987, 'top_quartile_precision': 0.2857142857142857, 'pred_top8_mean_J': 52.225242614746094, 'pred_top8_best_J': 42.57836151123047}
+fit 96 pretrained 89 {'spearman': 0.5558441558441559, 'kendall': 0.4038961038961039, 'top_quartile_precision': 0.42857142857142855, 'pred_top8_mean_J': 48.523658752441406, 'pred_top8_best_J': 43.668678283691406}
+fit 96 pretrained 131 {'spearman': 0.49241285030758714, 'kendall': 0.364935064935065, 'top_quartile_precision': 0.5, 'pred_top8_mean_J': 58.35980224609375, 'pred_top8_best_J': 42.53087615966797}
+fit 96 pretrained 173 {'spearman': 0.5374572795625427, 'kendall': 0.38441558441558443, 'top_quartile_precision': 0.5714285714285714, 'pred_top8_mean_J': 47.807674407958984, 'pred_top8_best_J': 43.66284942626953}
+fit 192 scratch 17 {'spearman': 0.6416267942583732, 'kendall': 0.45454545454545453, 'top_quartile_precision': 0.5, 'pred_top8_mean_J': 49.21996307373047, 'pred_top8_best_J': 40.69070053100586}
+fit 192 scratch 43 {'spearman': 0.6632262474367737, 'kendall': 0.48051948051948057, 'top_quartile_precision': 0.5714285714285714, 'pred_top8_mean_J': 47.18342208862305, 'pred_top8_best_J': 42.57836151123047}
+fit 192 scratch 89 {'spearman': 0.6668489405331511, 'kendall': 0.4506493506493507, 'top_quartile_precision': 0.21428571428571427, 'pred_top8_mean_J': 52.04467010498047, 'pred_top8_best_J': 43.668678283691406}
+fit 192 scratch 131 {'spearman': 0.7071086807928915, 'kendall': 0.5000000000000001, 'top_quartile_precision': 0.42857142857142855, 'pred_top8_mean_J': 48.93402862548828, 'pred_top8_best_J': 43.66284942626953}
+fit 192 scratch 173 {'spearman': 0.6646616541353383, 'kendall': 0.49350649350649356, 'top_quartile_precision': 0.5714285714285714, 'pred_top8_mean_J': 50.066246032714844, 'pred_top8_best_J': 43.66284942626953}
+fit 192 pretrained 17 {'spearman': 0.495557074504443, 'kendall': 0.364935064935065, 'top_quartile_precision': 0.42857142857142855, 'pred_top8_mean_J': 63.30375671386719, 'pred_top8_best_J': 40.69070053100586}
+fit 192 pretrained 43 {'spearman': 0.6369104579630895, 'kendall': 0.48571428571428577, 'top_quartile_precision': 0.5714285714285714, 'pred_top8_mean_J': 44.785911560058594, 'pred_top8_best_J': 28.588382720947266}
+fit 192 pretrained 89 {'spearman': 0.5915242652084758, 'kendall': 0.4233766233766234, 'top_quartile_precision': 0.5, 'pred_top8_mean_J': 50.57293701171875, 'pred_top8_best_J': 42.53087615966797}
+fit 192 pretrained 131 {'spearman': 0.6846206425153794, 'kendall': 0.503896103896104, 'top_quartile_precision': 0.5, 'pred_top8_mean_J': 46.58260726928711, 'pred_top8_best_J': 42.53087615966797}
+fit 192 pretrained 173 {'spearman': 0.5972658920027342, 'kendall': 0.4428571428571429, 'top_quartile_precision': 0.5, 'pred_top8_mean_J': 47.1920166015625, 'pred_top8_best_J': 42.53087615966797}
+pool generated 100000
+eval scratch 4 Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py", line 111, in <module>
+    from core import mandler_benchmark_core as M
+ModuleNotFoundError: No module named 'core'
+
+eval scratch 5 Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py", line 111, in <module>
+    from core import mandler_benchmark_core as M
+ModuleNotFoundError: No module named 'core'
+
+eval scratch 6 Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py", line 111, in <module>
+    from core import mandler_benchmark_core as M
+ModuleNotFoundError: No module named 'core'
+
+eval scratch 0 Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py", line 111, in <module>
+    from core import mandler_benchmark_core as M
+ModuleNotFoundError: No module named 'core'
+
+eval scratch 3 Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py", line 111, in <module>
+    from core import mandler_benchmark_core as M
+ModuleNotFoundError: No module named 'core'
+
+eval scratch 7 Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py", line 111, in <module>
+    from core import mandler_benchmark_core as M
+ModuleNotFoundError: No module named 'core'
+
+eval scratch 1 Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py", line 111, in <module>
+    from core import mandler_benchmark_core as M
+ModuleNotFoundError: No module named 'core'
+
+eval scratch 2 Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py", line 111, in <module>
+    from core import mandler_benchmark_core as M
+ModuleNotFoundError: No module named 'core'
+
+eval pretrained 0 Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py", line 111, in <module>
+    from core import mandler_benchmark_core as M
+ModuleNotFoundError: No module named 'core'
+
+eval pretrained 6 Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py", line 111, in <module>
+    from core import mandler_benchmark_core as M
+ModuleNotFoundError: No module named 'core'
+
+eval pretrained 3 Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py", line 111, in <module>
+    from core import mandler_benchmark_core as M
+ModuleNotFoundError: No module named 'core'
+
+eval pretrained 5 Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py", line 111, in <module>
+    from core import mandler_benchmark_core as M
+ModuleNotFoundError: No module named 'core'
+
+eval pretrained 2 Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py", line 111, in <module>
+    from core import mandler_benchmark_core as M
+ModuleNotFoundError: No module named 'core'
+
+eval pretrained 7 Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py", line 111, in <module>
+    from core import mandler_benchmark_core as M
+ModuleNotFoundError: No module named 'core'
+
+eval pretrained 4 Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py", line 111, in <module>
+    from core import mandler_benchmark_core as M
+ModuleNotFoundError: No module named 'core'
+
+eval pretrained 1 Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py", line 111, in <module>
+    from core import mandler_benchmark_core as M
+ModuleNotFoundError: No module named 'core'
+
+eval random 2 Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py", line 111, in <module>
+    from core import mandler_benchmark_core as M
+ModuleNotFoundError: No module named 'core'
+
+eval random 6 Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py", line 111, in <module>
+    from core import mandler_benchmark_core as M
+ModuleNotFoundError: No module named 'core'
+
+eval random 7 Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py", line 111, in <module>
+    from core import mandler_benchmark_core as M
+ModuleNotFoundError: No module named 'core'
+
+eval random 3 Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py", line 111, in <module>
+    from core import mandler_benchmark_core as M
+ModuleNotFoundError: No module named 'core'
+
+eval random 1 Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py", line 111, in <module>
+    from core import mandler_benchmark_core as M
+ModuleNotFoundError: No module named 'core'
+
+eval random 5 Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py", line 111, in <module>
+    from core import mandler_benchmark_core as M
+ModuleNotFoundError: No module named 'core'
+
+eval random 4 Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py", line 111, in <module>
+    from core import mandler_benchmark_core as M
+ModuleNotFoundError: No module named 'core'
+
+eval random 0 Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0047/src/validation/opt10_workstation_pretrain_meta.py", line 111, in <module>
+    from core import mandler_benchmark_core as M
+ModuleNotFoundError: No module named 'core'
+
+{
+  "human_corpus_count": 21,
+  "external_192": {
+    "scratch": {
+      "spearman": 0.7413533834586467,
+      "kendall": 0.5376623376623377,
+      "top_quartile_precision": 0.42857142857142855,
+      "pred_top8_mean_J": 46.689476013183594,
+      "pred_top8_best_J": 42.53087615966797
+    },
+    "pretrained": {
+      "spearman": 0.6907723855092277,
+      "kendall": 0.5064935064935066,
+      "top_quartile_precision": 0.5714285714285714,
+      "pred_top8_mean_J": 46.94252395629883,
+      "pred_top8_best_J": 42.53087615966797
+    }
+  },
+  "bootstrap": {
+    "mean_delta_spearman": -0.049687980642193805,
+    "q025": -0.16794493767422256,
+    "q975": 0.05131051338619093,
+    "p_delta_le_0": 0.8256
+  },
+  "prospective": {
+    "scratch": {
+      "n": 0,
+      "mean_J": null,
+      "median_J": null,
+      "best_J": null,
+      "worst_J": null
+    },
+    "pretrained": {
+      "n": 0,
+      "mean_J": null,
+      "median_J": null,
+      "best_J": null,
+      "worst_J": null
+    },
+    "random": {
+      "n": 0,
+      "mean_J": null,
+      "median_J": null,
+      "best_J": null,
+      "worst_J": null
+    }
+  },
+  "elapsed_sec": 157.80077266693115
+}
