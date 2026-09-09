@@ -1,31 +1,9 @@
 {
-  "args": [],
-  "code_commit": "6302f39eb8972407ac91a018d43945f25297e374",
-  "elapsed_sec": 10.003981351852417,
-  "entrypoint": "scripts/fetch_opticalbench_sample.py",
-  "env": {
-    "MKL_NUM_THREADS": "1",
-    "OMP_NUM_THREADS": "1",
-    "OPENBLAS_NUM_THREADS": "1"
-  },
-  "finished_at": 1788974969.6269128,
+  "error": "<urlopen error timed out>",
   "hostname": "aipss-Rack-Server",
   "job_id": "fetch-opticalbench-sample-20260910-0057",
-  "log_tail": "[descriptive data]\ntitle\tUS 8,736,971 Example 3 (Canon EF24-70mm f2.8L II USM)\n[constants]\n[variable distances]\nFocal Length\t24.70\t34.93\t67.88\nAngle of View\t82.44\t63.54\t35.36\nF-Number\t2.91\t2.91\t2.91\nImage Height\t43.28\t43.28\t43.28\nTotal Length\t154.56\t162.05\t185.77\nMagnification\t0\t0\t0\nd0\tInfinity\tInfinity\tInfinity\nd5\t2.75\t11.72\t30.30\nd15\t13.76\t7.73\t0.23\nd24\t8.79\t4.80\t0.74\nd33\t38.08\t46.62\t63.32\nBf\t38.08\t46.62\t63.32\nAperture Diameter\t18.596\t20.716\t25.645\n[lens data]\n1\t203.844\t2.10\t1.84666\t68.04\t23.9\n2\t72.022\t7.41\t1.77250\t64.08\t49.6\n3\t330.893\t0.15\t\t68.44\t\n4\t56.152\t6.73\t1.77250\t58.74\t49.6\n5\t146.214\td5\t\t56.98\t\n6\t108.833\t1.60\t1.88300\t33.62\t40.8\n7\t16.535\t7.96\t\t24.88\t\n8\t-46.335\t1.15\t1.59522\t23.66\t67.7\n9\t21.502\t4.18\t1.88300\t21.06\t40.8\n10\t66.987\t1.43\t\t23.80\t\n11\t126.217\t3.10\t1.59270\t21.60\t35.3\n12\t-49.936\t1.62\t\t21.60\t\n13\t-23.459\t1.15\t1.72916\t22.16\t54.7\n14\t432.841\t2.76\t1.84666\t24.76\t23.9\n15\t-57.478\td15\t\t24.76\t\n16\tAS\t1.90\t\t18.596\n17\tFS\t0.00\t\t27.00\n18\t27.563\t1.45\t1.88300\t30.08\t40.8\n19\t21.272\t11.03\t1.49700\t30.08\t81.5\n20\t-66.483\t0.20\t\t30.08\t\n21\t43.019\t2.70\t1.58313\t29.40\t59.4\n22\t63.198\t4.67\t\t29.40\t\n23\t-45.003\t1.40\t1.72047\t29.40\t34.7\n24\t-151.840\td24\t\t29.40\t\n25\t31.049\t6.94\t1.43875\t31.02\t94.9\n26\t-216.866\t0.20\t\t31.02\t\n27\t47.221\t5.86\t1.49700\t31.02\t81.5\n28\t-71.326\t1.90\t\t31.02\t\n29\t-208.068\t2.13\t1.85006\t29.26\t40.2\n30\t86.193\t2.76\t\t29.26\t\n31\t-613.677\t1.40\t1.83400\t29.48\t37.2\n32\t57.864\t5.29\t1.51633\t29.48\t64.1\n33\t-61.669\tBf\t\t29.48\t\n[aspherical data]\n6\t108.833\t0\t7.24687E-06\t-9.33789E-09\t2.38226E-11\t-5.23831E-14\t8.03521E-17\n22\t63.198\t0\t5.45182E-06\t4.70739E-09\t2.06430E-13\t7.16170E-14\t-2.30646E-17\n29\t-208.068\t0\t2.73159E-05\t-1.56554E-07\t4.00484E-10\t-7.50876E-13\t7.01430E-16\n30\t86.193\t0\t4.42990E-05\t-1.33910E-07\t3.22402E-10\t-4.40140E-13\t2.46872E-16\n[group data]\nL1\t1\t5\t105.87\nL2\t6\t15\t-16.39\nL3\t16\t24\t58.01\nL4\t25\t33\t-46.14\nlp\t11\t12\t60.64\n[figure]\nsource\tData/US008736971_Figure05.png\noriginX\t62.04\noriginY\t264.69\nppmm\t6.579\n[figure]\nsource\tData/US008736971_Figure05P.png\noriginX\t9.47\noriginY\t121.46\nppmm\t2.702\n[notes]\n",
-  "memory_gb": 0,
-  "pid": 984645,
-  "request_sha256": "9c5acb35f1327a5fb126c261f03973c8b415097c0ac1526841124e38a8b34b7d",
-  "returncode": 0,
+  "queue_path": "remote/queue/fetch-opticalbench-sample-20260910-0057.json",
   "schema": 1,
-  "started_at": 1788974959.6229315,
-  "state": "finished",
-  "timeout_sec": 600,
-  "updated_at": 1788974962.163631,
-  "uploaded_artifacts": [
-    {
-      "path": "sample_opticalbench.txt",
-      "size": 2079,
-      "uploaded": true
-    }
-  ]
+  "state": "rejected",
+  "timestamp": 1788984496.617384
 }
