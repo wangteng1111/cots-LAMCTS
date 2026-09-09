@@ -1,0 +1,54 @@
+scratch 7 50.824947696846
+scratch 3 45.96281114025097
+scratch 5 45.54768383743238
+scratch 0 42.89778400766771
+scratch 4 43.20120143497969
+scratch 1 42.935435175991095
+scratch 2 45.47556189443723
+scratch 6 51.40284064827779
+pretrained 0 39.712116470152395
+pretrained 2 43.567470348689525
+pretrained 3 48.182383866088315
+pretrained 4 48.07807504411941
+random 1 111.47081027445701
+pretrained 7 44.24829820737982
+pretrained 6 45.30974411564394
+pretrained 1 42.75231662108409
+pretrained 5 42.30032079354377
+random 0 50.14445203283381
+random 2 733.68695322203
+random 3 49.894566911961846
+random 5 37.50940725871602
+random 7 54.700748203836746
+random 4 65.10574723751142
+random 6 99.51902306425609
+{
+  "scratch": {
+    "n": 8,
+    "mean_J": 46.03103322948536,
+    "median_J": 45.511622865934804,
+    "best_J": 42.89778400766771,
+    "worst_J": 51.40284064827779
+  },
+  "pretrained": {
+    "n": 8,
+    "mean_J": 44.26884068333766,
+    "median_J": 43.90788427803467,
+    "best_J": 39.712116470152395,
+    "worst_J": 48.182383866088315
+  },
+  "random": {
+    "n": 8,
+    "mean_J": 150.25396352570039,
+    "median_J": 59.90324772067409,
+    "best_J": 37.50940725871602,
+    "worst_J": 733.68695322203
+  }
+}
+{
+  "pretrained_vs_scratch_mwu_less": 0.1393162393162393,
+  "pretrained_vs_random_mwu_less": 0.005205905205905206,
+  "scratch_vs_random_mwu_less": 0.018958818958818957,
+  "P_pretrained_better_scratch": 0.671875,
+  "P_pretrained_better_random": 0.875
+}
