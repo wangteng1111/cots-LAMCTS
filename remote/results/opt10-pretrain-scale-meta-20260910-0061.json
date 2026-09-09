@@ -1,0 +1,20 @@
+{
+  "args": [],
+  "code_commit": "2cacff0efc4e5a6ab31f4a58886ec1eb00650cb5",
+  "entrypoint": "validation/opt10_pretrain_scale_meta.py",
+  "env": {
+    "MKL_NUM_THREADS": "1",
+    "NUMBA_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "opt10-pretrain-scale-meta-20260910-0061",
+  "memory_gb": 0,
+  "request_sha256": "48a04c2b1195327bb1bc3f3f40b771d2c87c183054e6d3e339e5f511a0088353",
+  "schema": 1,
+  "started_at": 1788975296.1986911,
+  "state": "running",
+  "timeout_sec": 172800
+}
