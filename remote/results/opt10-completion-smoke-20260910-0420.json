@@ -1,0 +1,27 @@
+{
+  "args": [
+    "--pretrain-one",
+    "mlm_multi_base",
+    "--seed",
+    "17",
+    "--gpu",
+    "0"
+  ],
+  "code_commit": "59cf96f257dcb5aefb223acf5c21c40207e54974",
+  "entrypoint": "validation/opt10_pretrain_completion_run.py",
+  "env": {
+    "MKL_NUM_THREADS": "1",
+    "NUMBA_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "opt10-completion-smoke-20260910-0420",
+  "memory_gb": 0,
+  "request_sha256": "eb1222951eaa5540693add36bd27f63278bd4b30bac1597a1f3dbfac28e08e69",
+  "schema": 1,
+  "started_at": 1788985285.224371,
+  "state": "running",
+  "timeout_sec": 43200
+}
