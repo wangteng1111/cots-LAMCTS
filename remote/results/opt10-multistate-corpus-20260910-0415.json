@@ -1,6 +1,7 @@
 {
   "args": [],
   "code_commit": "654e9049af3ebdab81c59175116a2b00a8e97337",
+  "elapsed_sec": 10.563655614852905,
   "entrypoint": "scripts/build_opticalbench_multistate_corpus.py",
   "env": {
     "MKL_NUM_THREADS": "1",
@@ -8,15 +9,24 @@
     "OPENBLAS_NUM_THREADS": "1",
     "PYTHONHASHSEED": "0"
   },
+  "finished_at": 1788985129.9923267,
   "hostname": "aipss-Rack-Server",
   "job_id": "opt10-multistate-corpus-20260910-0415",
   "log_tail": "{\n  \"schema\": \"opticalbench-multistate-v1\",\n  \"raw_files\": 1280,\n  \"raw_configs\": 2216,\n  \"unique_configs\": 2192,\n  \"zoom_files\": 742,\n  \"files_with_configs\": 1174,\n  \"max_states_per_file\": 9,\n  \"mean_states_per_file\": 1.867120954003407,\n  \"failed_files\": 0,\n  \"elapsed_sec\": 0.9424953460693359,\n  \"persistent_path\": \"/var/lib/cots-lamcts/corpora/opticalbench_hub/parsed_multistate.json.gz\"\n}",
   "memory_gb": 0,
   "pid": 997675,
   "request_sha256": "f9ed48242cbca42ddeffd2d6cad20afa3679be1433cb938fabe444776f991bd2",
+  "returncode": 0,
   "schema": 1,
   "started_at": 1788985119.4286711,
-  "state": "running",
+  "state": "finished",
   "timeout_sec": 1800,
-  "updated_at": 1788985121.7036514
+  "updated_at": 1788985121.7036514,
+  "uploaded_artifacts": [
+    {
+      "path": "opticalbench_multistate_summary.json",
+      "size": 392,
+      "uploaded": true
+    }
+  ]
 }
