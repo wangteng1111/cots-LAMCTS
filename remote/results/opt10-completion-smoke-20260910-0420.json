@@ -18,10 +18,13 @@
   },
   "hostname": "aipss-Rack-Server",
   "job_id": "opt10-completion-smoke-20260910-0420",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 997933,
   "request_sha256": "eb1222951eaa5540693add36bd27f63278bd4b30bac1597a1f3dbfac28e08e69",
   "schema": 1,
   "started_at": 1788985285.224371,
   "state": "running",
-  "timeout_sec": 43200
+  "timeout_sec": 43200,
+  "updated_at": 1788985287.2099504
 }
