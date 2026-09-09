@@ -1,0 +1,20 @@
+{
+  "args": [],
+  "code_commit": "10c4e47ad773ca0f1eb15321252ed0b6bf60b565",
+  "entrypoint": "validation/opt10_scale_prospective_q4096.py",
+  "env": {
+    "MKL_NUM_THREADS": "1",
+    "NUMBA_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "opt10-scale-prospective-q4096-20260910-0062",
+  "memory_gb": 0,
+  "request_sha256": "778e0c463c6dd382b058ed83de3ca5a0de12c39e5417945cd5806f3975c070ec",
+  "schema": 1,
+  "started_at": 1788976657.852514,
+  "state": "running",
+  "timeout_sec": 7200
+}
