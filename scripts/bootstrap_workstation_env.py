@@ -48,8 +48,8 @@ summary = {
 ROOT.mkdir(parents=True, exist_ok=True)
 py = VENV / 'bin' / 'python'
 
-# Ubuntu may omit python3-venv/ensurepip.  A no-pip venv still works, and we can
-# bootstrap pip inside it without root privileges using PyPA's official helper.
+# Ubuntu may omit python3-venv/ensurepip. A no-pip venv still works, and pip can
+# be bootstrapped without root privileges using PyPA's official helper.
 if not py.exists():
     if VENV.exists():
         shutil.rmtree(VENV)
@@ -64,7 +64,6 @@ if pip_check.returncode != 0:
 
 run([str(py), '-m', 'pip', 'install', '--upgrade', *PACKAGES], timeout=7200)
 
-# Verify the scientific and CUDA stack from inside the persistent environment.
 verify = r'''
 import json, platform, sys
 out = {'python': sys.version, 'executable': sys.executable, 'platform': platform.platform()}
