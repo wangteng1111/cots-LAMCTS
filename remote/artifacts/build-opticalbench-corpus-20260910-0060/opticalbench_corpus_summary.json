@@ -1,0 +1,196 @@
+{
+  "schema": "opticalbench-corpus-v1",
+  "hub_entries": 1280,
+  "parsed": 1234,
+  "unique_prescriptions": 1233,
+  "duplicates_removed": 1,
+  "failed": 46,
+  "elapsed_sec": 129.22834134101868,
+  "persistent_path": "/var/lib/cots-lamcts/corpora/opticalbench_hub/parsed_lenses.json.gz",
+  "errors": [
+    {
+      "filename": "JP1995-318801_Example01.txt",
+      "error": null
+    },
+    {
+      "filename": "JP1995-318801_Example04.txt",
+      "error": null
+    },
+    {
+      "filename": "JP1995-318801_Example02.txt",
+      "error": null
+    },
+    {
+      "filename": "JP1995-318801_Example03.txt",
+      "error": null
+    },
+    {
+      "filename": "JP1995-318802_Example02.txt",
+      "error": null
+    },
+    {
+      "filename": "JP1995-318802_Example01.txt",
+      "error": null
+    },
+    {
+      "filename": "JP1995-318802_Example03.txt",
+      "error": null
+    },
+    {
+      "filename": "JP1995-318802_Example04.txt",
+      "error": null
+    },
+    {
+      "filename": "US20180095255_Example05P.txt",
+      "error": null
+    },
+    {
+      "filename": "JP1988-106715_Example02P.txt",
+      "error": null
+    },
+    {
+      "filename": "US20180095255_Example02P.txt",
+      "error": null
+    },
+    {
+      "filename": "JP1988-147127_Example01P.txt",
+      "error": null
+    },
+    {
+      "filename": "US20200271904_Example03P.txt",
+      "error": null
+    },
+    {
+      "filename": "JP1986-014492_Example01P.txt",
+      "error": null
+    },
+    {
+      "filename": "US004129359_Example01P.txt",
+      "error": null
+    },
+    {
+      "filename": "US004340279_Example01P.txt",
+      "error": null
+    },
+    {
+      "filename": "US20200271904_Example06P.txt",
+      "error": null
+    },
+    {
+      "filename": "US20150226942_Example01FCLP.txt",
+      "error": null
+    },
+    {
+      "filename": "US20150226942_Example01P.txt",
+      "error": null
+    },
+    {
+      "filename": "US20190086645_Example01TCP.txt",
+      "error": null
+    },
+    {
+      "filename": "US20200018936_Example01TCP.txt",
+      "error": null
+    },
+    {
+      "filename": "US20170090163_Example01TCP.txt",
+      "error": null
+    },
+    {
+      "filename": "US010197893_Example01TCP.txt",
+      "error": null
+    },
+    {
+      "filename": "US20020191303_Example01P.txt",
+      "error": null
+    },
+    {
+      "filename": "JP1988-200113_Example02P.txt",
+      "error": null
+    },
+    {
+      "filename": "US005796530_Example04SF2_Tale52.txt",
+      "error": null
+    },
+    {
+      "filename": "US005253112_RCL01P.txt",
+      "error": null
+    },
+    {
+      "filename": "JP2015-102734_Example01TCP.txt",
+      "error": null
+    },
+    {
+      "filename": "JP2005-107261_Example05P.txt",
+      "error": null
+    },
+    {
+      "filename": "JP2010-191211_Example02TCP.txt",
+      "error": null
+    },
+    {
+      "filename": "JP2013-250290_Example01TCP.txt",
+      "error": null
+    },
+    {
+      "filename": "JP2021-189311_Example01P.txt",
+      "error": null
+    },
+    {
+      "filename": "JP2021-189311_Example08P.txt",
+      "error": null
+    },
+    {
+      "filename": "US004154508_Example11_Tale73.txt",
+      "error": null
+    },
+    {
+      "filename": "US004206971_Example01P.txt",
+      "error": null
+    },
+    {
+      "filename": "US004514051_Example01P.txt",
+      "error": null
+    },
+    {
+      "filename": "JP1983-129411_Example01P.txt",
+      "error": null
+    },
+    {
+      "filename": "JP1980-166613_ExampleRCL2P.txt",
+      "error": null
+    },
+    {
+      "filename": "US20150226943_Example01TCP.txt",
+      "error": null
+    },
+    {
+      "filename": "US20180136439_Example03P.txt",
+      "error": null
+    },
+    {
+      "filename": "US006002533_Example03P.txt",
+      "error": null
+    },
+    {
+      "filename": "WO2017-134928_Example06P.txt",
+      "error": null
+    },
+    {
+      "filename": "WO2017-134928_Example03P.txt",
+      "error": null
+    },
+    {
+      "filename": "US20180164584_ExampleRCL1P.txt",
+      "error": null
+    },
+    {
+      "filename": "DE01180158_Example02P.txt",
+      "error": null
+    },
+    {
+      "filename": "DE01180159_Example01P.txt",
+      "error": null
+    }
+  ]
+}
