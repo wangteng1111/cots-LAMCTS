@@ -11,10 +11,13 @@
   },
   "hostname": "aipss-Rack-Server",
   "job_id": "opt10-prospective-q4096-20260910-0050",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 983067,
   "request_sha256": "f1c2f0a1c1fb8b37deb8faba93a642fc28c492513f9f3cbe66f3335f38d9f0eb",
   "schema": 1,
   "started_at": 1788973745.89798,
   "state": "running",
-  "timeout_sec": 7200
+  "timeout_sec": 7200,
+  "updated_at": 1788973748.2537014
 }
