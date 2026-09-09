@@ -7,6 +7,7 @@ ROOT=Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:sys.path.insert(0,str(ROOT))
 ART=Path(os.environ.get('COTS_JOB_ARTIFACT_DIR','artifacts'));ART.mkdir(parents=True,exist_ok=True)
 SOURCE=Path('/var/lib/cots-lamcts/jobs/opt10-pretrain-scale-meta-20260910-0061/artifacts/opt10_pretrain_scale_proposals.json')
+VENV_PY=Path('/var/lib/cots-lamcts/venv/bin/python')
 
 def decode(st):
     design=[(int(x)//2,bool(int(x)%2)) for x in st[:4]];gr=[(.20,.29,.38,.47,.56),(7.50,8.32,9.14,9.96,10.78),(11.,12.18,13.36,14.54,15.72),(.20,.29,.38,.47,.56)]
@@ -20,10 +21,11 @@ def main():
     ap=argparse.ArgumentParser();ap.add_argument('--state');ap.add_argument('--out');a=ap.parse_args()
     if a.state:return one(json.loads(a.state),a.out)
     if not SOURCE.exists():raise FileNotFoundError(SOURCE)
+    if not VENV_PY.exists():raise FileNotFoundError(VENV_PY)
     proposals=json.loads(SOURCE.read_text());tmp=ART/'eval';tmp.mkdir(exist_ok=True)
-    env=os.environ.copy();env.update({'OMP_NUM_THREADS':'1','MKL_NUM_THREADS':'1','OPENBLAS_NUM_THREADS':'1','NUMBA_NUM_THREADS':'1'})
+    env=os.environ.copy();env.update({'OMP_NUM_THREADS':'1','MKL_NUM_THREADS':'1','OPENBLAS_NUM_THREADS':'1','NUMBA_NUM_THREADS':'1','PYTHONPATH':str(ROOT)})
     def runone(group,i,st):
-        p=tmp/f'{group}_{i}.json';cmd=[sys.executable,'-u',str(Path(__file__).resolve()),'--state',json.dumps(st),'--out',str(p)]
+        p=tmp/f'{group}_{i}.json';cmd=[str(VENV_PY),'-u',str(Path(__file__).resolve()),'--state',json.dumps(st),'--out',str(p)]
         z=subprocess.run(cmd,cwd=str(ROOT),env=env,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True,timeout=900)
         if z.returncode!=0:return {'state':st,'error':z.stdout[-4000:]}
         return json.loads(p.read_text())
