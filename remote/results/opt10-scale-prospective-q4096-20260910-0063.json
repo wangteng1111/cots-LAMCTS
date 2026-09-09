@@ -1,6 +1,7 @@
 {
   "args": [],
   "code_commit": "057ee91d70b65295bbdbce7eb55f0f42b144fd31",
+  "elapsed_sec": 60.872063398361206,
   "entrypoint": "validation/opt10_scale_prospective_q4096.py",
   "env": {
     "MKL_NUM_THREADS": "1",
@@ -9,15 +10,224 @@
     "OPENBLAS_NUM_THREADS": "1",
     "PYTHONHASHSEED": "0"
   },
+  "finished_at": 1788978051.7371106,
   "hostname": "aipss-Rack-Server",
   "job_id": "opt10-scale-prospective-q4096-20260910-0063",
-  "log_tail": "",
+  "log_tail": "eval scratch 1 54.456796098115234\neval scratch 2 58.86998569658942\neval scratch 4 53.09343999040661\neval scratch 5 55.40498280049138\neval scratch 6 54.712343740879724\neval scratch 3 55.60786899567284\neval scratch 0 53.8793648029002\neval scratch 7 57.54091863897621\neval pretrain_21 5 44.296986711005395\neval pretrain_256 1 50.58367819835786\neval pretrain_21 3 44.9207656742399\neval pretrain_21 1 44.111213281414464\neval pretrain_256 3 58.359300230843196\neval pretrain_21 0 47.730618579657936\neval pretrain_21 2 56.409675867862504\neval pretrain_256 4 53.42005316390493\neval pretrain_21 6 45.32843053142001\neval pretrain_256 2 50.26536821348335\neval pretrain_256 0 44.818255636789694\neval pretrain_21 4 42.190417352264966\neval pretrain_21 7 51.56380789899141\neval pretrain_256 5 65.23036736845349\neval pretrain_1024 0 58.359300230843196\neval pretrain_1024 4 59.81754329430434\neval pretrain_256 7 51.17292794491577\neval random 1 111.47081027445701\neval pretrain_1024 1 43.56339921227023\neval pretrain_256 6 44.20823068978754\neval pretrain_1024 5 50.34635095245963\neval random 2 733.68695322203\neval pretrain_1024 7 42.555344158682026\neval pretrain_1024 3 41.13999318707703\neval random 0 50.14445203283381\neval pretrain_1024 2 45.40751453007295\neval pretrain_1024 6 39.41935564664354\neval random 3 49.894566911961846\neval random 5 37.50940725871602\neval random 4 65.10574723751142\neval random 7 54.700748203836746\neval random 6 99.51902306425609\n{\n  \"scratch\": {\n    \"n\": 8,\n    \"mean_J\": 55.44571259550395,\n    \"median_J\": 55.05866327068556,\n    \"best_J\": 53.09343999040661,\n    \"worst_J\": 58.86998569658942\n  },\n  \"pretrain_21\": {\n    \"n\": 8,\n    \"mean_J\": 47.068989487107075,\n    \"median_J\": 45.12459810282996,\n    \"best_J\": 42.190417352264966,\n    \"worst_J\": 56.409675867862504\n  },\n  \"pretrain_256\": {\n    \"n\": 8,\n    \"mean_J\": 52.25727268081698,\n    \"median_J\": 50.878303071636815,\n    \"best_J\": 44.20823068978754,\n    \"worst_J\": 65.23036736845349\n  },\n  \"pretrain_1024\": {\n    \"n\": 8,\n    \"mean_J\": 47.576100151544125,\n    \"median_J\": 44.48545687117159,\n    \"best_J\": 39.41935564664354,\n    \"worst_J\": 59.81754329430434\n  },\n  \"random\": {\n    \"n\": 8,\n    \"mean_J\": 150.25396352570039,\n    \"median_J\": 59.90324772067409,\n    \"best_J\": 37.50940725871602,\n    \"worst_J\": 733.68695322203\n  }\n}\n{\n  \"pretrain_21\": {\n    \"vs_scratch_mwu_less\": 0.002331002331002331,\n    \"vs_random_mwu_less\": 0.02494172494172494,\n    \"P_better_scratch\": 0.90625,\n    \"P_better_random\": 0.796875\n  },\n  \"pretrain_256\": {\n    \"vs_scratch_mwu_less\": 0.05244755244755244,\n    \"vs_random_mwu_less\": 0.1911421911421911,\n    \"P_better_scratch\": 0.75,\n    \"P_better_random\": 0.640625\n  },\n  \"pretrain_1024\": {\n    \"vs_scratch_mwu_less\": 0.041491841491841486,\n    \"vs_random_mwu_less\": 0.05244755244755244,\n    \"P_better_scratch\": 0.765625,\n    \"P_better_random\": 0.75\n  }\n}",
   "memory_gb": 0,
   "pid": 987887,
   "request_sha256": "4ca3f2e9e013eb955e88550c31283c79913cfe44bfdf0291bc27262e6c3cba29",
+  "returncode": 0,
   "schema": 1,
   "started_at": 1788977990.8650472,
-  "state": "running",
+  "state": "finished",
   "timeout_sec": 7200,
-  "updated_at": 1788977993.802235
+  "updated_at": 1788977993.802235,
+  "uploaded_artifacts": [
+    {
+      "path": "eval/pretrain_1024_0.json",
+      "size": 729,
+      "uploaded": true
+    },
+    {
+      "path": "eval/pretrain_1024_1.json",
+      "size": 718,
+      "uploaded": true
+    },
+    {
+      "path": "eval/pretrain_1024_2.json",
+      "size": 718,
+      "uploaded": true
+    },
+    {
+      "path": "eval/pretrain_1024_3.json",
+      "size": 721,
+      "uploaded": true
+    },
+    {
+      "path": "eval/pretrain_1024_4.json",
+      "size": 725,
+      "uploaded": true
+    },
+    {
+      "path": "eval/pretrain_1024_5.json",
+      "size": 722,
+      "uploaded": true
+    },
+    {
+      "path": "eval/pretrain_1024_6.json",
+      "size": 719,
+      "uploaded": true
+    },
+    {
+      "path": "eval/pretrain_1024_7.json",
+      "size": 720,
+      "uploaded": true
+    },
+    {
+      "path": "eval/pretrain_21_0.json",
+      "size": 723,
+      "uploaded": true
+    },
+    {
+      "path": "eval/pretrain_21_1.json",
+      "size": 721,
+      "uploaded": true
+    },
+    {
+      "path": "eval/pretrain_21_2.json",
+      "size": 721,
+      "uploaded": true
+    },
+    {
+      "path": "eval/pretrain_21_3.json",
+      "size": 719,
+      "uploaded": true
+    },
+    {
+      "path": "eval/pretrain_21_4.json",
+      "size": 725,
+      "uploaded": true
+    },
+    {
+      "path": "eval/pretrain_21_5.json",
+      "size": 725,
+      "uploaded": true
+    },
+    {
+      "path": "eval/pretrain_21_6.json",
+      "size": 724,
+      "uploaded": true
+    },
+    {
+      "path": "eval/pretrain_21_7.json",
+      "size": 720,
+      "uploaded": true
+    },
+    {
+      "path": "eval/pretrain_256_0.json",
+      "size": 728,
+      "uploaded": true
+    },
+    {
+      "path": "eval/pretrain_256_1.json",
+      "size": 722,
+      "uploaded": true
+    },
+    {
+      "path": "eval/pretrain_256_2.json",
+      "size": 723,
+      "uploaded": true
+    },
+    {
+      "path": "eval/pretrain_256_3.json",
+      "size": 729,
+      "uploaded": true
+    },
+    {
+      "path": "eval/pretrain_256_4.json",
+      "size": 727,
+      "uploaded": true
+    },
+    {
+      "path": "eval/pretrain_256_5.json",
+      "size": 722,
+      "uploaded": true
+    },
+    {
+      "path": "eval/pretrain_256_6.json",
+      "size": 748,
+      "uploaded": true
+    },
+    {
+      "path": "eval/pretrain_256_7.json",
+      "size": 725,
+      "uploaded": true
+    },
+    {
+      "path": "eval/random_0.json",
+      "size": 723,
+      "uploaded": true
+    },
+    {
+      "path": "eval/random_1.json",
+      "size": 725,
+      "uploaded": true
+    },
+    {
+      "path": "eval/random_2.json",
+      "size": 714,
+      "uploaded": true
+    },
+    {
+      "path": "eval/random_3.json",
+      "size": 753,
+      "uploaded": true
+    },
+    {
+      "path": "eval/random_4.json",
+      "size": 720,
+      "uploaded": true
+    },
+    {
+      "path": "eval/random_5.json",
+      "size": 723,
+      "uploaded": true
+    },
+    {
+      "path": "eval/random_6.json",
+      "size": 725,
+      "uploaded": true
+    },
+    {
+      "path": "eval/random_7.json",
+      "size": 753,
+      "uploaded": true
+    },
+    {
+      "path": "eval/scratch_0.json",
+      "size": 724,
+      "uploaded": true
+    },
+    {
+      "path": "eval/scratch_1.json",
+      "size": 725,
+      "uploaded": true
+    },
+    {
+      "path": "eval/scratch_2.json",
+      "size": 720,
+      "uploaded": true
+    },
+    {
+      "path": "eval/scratch_3.json",
+      "size": 721,
+      "uploaded": true
+    },
+    {
+      "path": "eval/scratch_4.json",
+      "size": 720,
+      "uploaded": true
+    },
+    {
+      "path": "eval/scratch_5.json",
+      "size": 721,
+      "uploaded": true
+    },
+    {
+      "path": "eval/scratch_6.json",
+      "size": 722,
+      "uploaded": true
+    },
+    {
+      "path": "eval/scratch_7.json",
+      "size": 722,
+      "uploaded": true
+    },
+    {
+      "path": "opt10_scale_prospective_q4096.json",
+      "size": 47198,
+      "uploaded": true
+    }
+  ]
 }
