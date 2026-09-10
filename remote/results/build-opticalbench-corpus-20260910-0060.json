@@ -1,36 +1,9 @@
 {
-  "args": [],
-  "code_commit": "deaf97ac050e95b86c8e54fed8b650f0d31fe70e",
-  "elapsed_sec": 132.28478860855103,
-  "entrypoint": "scripts/build_opticalbench_corpus.py",
-  "env": {
-    "MKL_NUM_THREADS": "1",
-    "OMP_NUM_THREADS": "1",
-    "OPENBLAS_NUM_THREADS": "1"
-  },
-  "finished_at": 1788975273.733145,
+  "error": "<urlopen error timed out>",
   "hostname": "aipss-Rack-Server",
   "job_id": "build-opticalbench-corpus-20260910-0060",
-  "log_tail": "fetched 100 / 1280\nfetched 200 / 1280\nfetched 300 / 1280\nfetched 400 / 1280\nfetched 500 / 1280\nfetched 600 / 1280\nfetched 700 / 1280\nfetched 800 / 1280\nfetched 900 / 1280\nfetched 1000 / 1280\nfetched 1100 / 1280\nfetched 1200 / 1280\n{\n  \"schema\": \"opticalbench-corpus-v1\",\n  \"hub_entries\": 1280,\n  \"parsed\": 1234,\n  \"unique_prescriptions\": 1233,\n  \"duplicates_removed\": 1,\n  \"failed\": 46,\n  \"elapsed_sec\": 129.22834134101868,\n  \"persistent_path\": \"/var/lib/cots-lamcts/corpora/opticalbench_hub/parsed_lenses.json.gz\"\n}",
-  "memory_gb": 0,
-  "pid": 984912,
-  "request_sha256": "04e46a28d5016c0ed98151964ab870eaf8bafee9c692361992d73f9483042613",
-  "returncode": 0,
+  "queue_path": "remote/queue/build-opticalbench-corpus-20260910-0060.json",
   "schema": 1,
-  "started_at": 1788975141.4483564,
-  "state": "finished",
-  "timeout_sec": 7200,
-  "updated_at": 1788975143.6412861,
-  "uploaded_artifacts": [
-    {
-      "path": "opticalbench_corpus_names.json",
-      "size": 195538,
-      "uploaded": true
-    },
-    {
-      "path": "opticalbench_corpus_summary.json",
-      "size": 4123,
-      "uploaded": true
-    }
-  ]
+  "state": "rejected",
+  "timestamp": 1789028454.3335376
 }
