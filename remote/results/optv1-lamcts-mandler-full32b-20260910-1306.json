@@ -26,10 +26,13 @@
   },
   "hostname": "aipss-Rack-Server",
   "job_id": "optv1-lamcts-mandler-full32b-20260910-1306",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 1032636,
   "request_sha256": "8eb61d6bf10f88796cc85e2c232b82d2079a7f535690e99ae977ce7f88b18c37",
   "schema": 1,
   "started_at": 1789016692.5545254,
   "state": "running",
-  "timeout_sec": 43200
+  "timeout_sec": 43200,
+  "updated_at": 1789016694.5361674
 }
