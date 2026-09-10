@@ -1,0 +1,34 @@
+{
+  "args": [
+    "--budget",
+    "48",
+    "--init",
+    "32",
+    "--batch",
+    "8",
+    "--pool",
+    "5000",
+    "--ensemble",
+    "1",
+    "--workers",
+    "8",
+    "--no-random"
+  ],
+  "code_commit": "49025222c5c6a5ec6432885409da75ab5f69790a",
+  "entrypoint": "validation/optv1_lamcts_mandler_meta.py",
+  "env": {
+    "MKL_NUM_THREADS": "1",
+    "NUMBA_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "optv1-lamcts-mandler-smoke-20260910-1247",
+  "memory_gb": 0,
+  "request_sha256": "f1ece5010f4ad36a4ae5cfe4f4a0405b7cf9797ad1df88fb9445435575ed7833",
+  "schema": 1,
+  "started_at": 1789015911.0967574,
+  "state": "running",
+  "timeout_sec": 10800
+}
