@@ -1,0 +1,35 @@
+{
+  "args": [
+    "--seed",
+    "17",
+    "--budget",
+    "600",
+    "--init",
+    "96",
+    "--batch",
+    "16",
+    "--pool",
+    "60000",
+    "--ensemble",
+    "3",
+    "--workers",
+    "32"
+  ],
+  "code_commit": "654ab2c2ffaeb775937205a3e8dca9a60bd892a8",
+  "entrypoint": "validation/optv1_lamcts_mandler_meta_runner.py",
+  "env": {
+    "MKL_NUM_THREADS": "1",
+    "NUMBA_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "optv1-lamcts-mandler-full32b-20260910-1306",
+  "memory_gb": 0,
+  "request_sha256": "8eb61d6bf10f88796cc85e2c232b82d2079a7f535690e99ae977ce7f88b18c37",
+  "schema": 1,
+  "started_at": 1789016692.5545254,
+  "state": "running",
+  "timeout_sec": 43200
+}
