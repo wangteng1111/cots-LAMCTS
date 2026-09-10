@@ -1,0 +1,7103 @@
+{
+  "schema": "OPT1.0-LAMCTS-Mandler-hidden-reference-v1",
+  "git_commit": "654ab2c2ffaeb775937205a3e8dca9a60bd892a8",
+  "evaluator_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da",
+  "benchmark": {
+    "search_space": "72^4 oriented component combinations, Example-1 gaps/scaffold fixed",
+    "space_n": 26873856,
+    "hidden_reference_state8": [
+      0,
+      2,
+      4,
+      6,
+      2,
+      2,
+      2,
+      2
+    ],
+    "hidden_reference_J": 11.906835229630682,
+    "hidden_reference_metrics": {
+      "efl": 99.99854885408179,
+      "fno": 1.9999709770816358,
+      "mtf_mean": 0.11977806498848051,
+      "mtf_geomean_reg": 0.07506996386763418,
+      "mtf_p10": 0.016392809852793355,
+      "onaxis_pupil_fill": 1.0,
+      "min_illum": 0.3902850571468484,
+      "dist_max": 0.9147771483662059,
+      "lca": 0.012875480053782695
+    },
+    "reference_used_by_search": false
+  },
+  "optv1_lamcts": {
+    "seed": 17,
+    "budget": 600,
+    "init_n": 96,
+    "batch_n": 16,
+    "pool_n": 60000,
+    "space_n": 26873856,
+    "pretrain_variant": "mlm_contrast_base",
+    "pretrain_seeds": [
+      17,
+      43,
+      89
+    ],
+    "leakage_audit": {
+      "exact_or_1e-4_matches": [],
+      "nearest": [
+        {
+          "distance": 0.13321964915677276,
+          "family": "US004123144_Example09P.txt",
+          "state": 0,
+          "surfaces": 11
+        },
+        {
+          "distance": 0.1516833243154173,
+          "family": "US002745315_Example01P.txt",
+          "state": 0,
+          "surfaces": 11
+        },
+        {
+          "distance": 0.21761212048089185,
+          "family": "CH352844_Example01P.txt",
+          "state": 0,
+          "surfaces": 11
+        },
+        {
+          "distance": 0.21767419139744287,
+          "family": "CH346706_Example01P.txt",
+          "state": 0,
+          "surfaces": 11
+        },
+        {
+          "distance": 0.22335417381356912,
+          "family": "JP1988-081312_ExampleMLP.txt",
+          "state": 0,
+          "surfaces": 11
+        },
+        {
+          "distance": 0.22824697807944802,
+          "family": "US004123144_Example08P.txt",
+          "state": 0,
+          "surfaces": 11
+        },
+        {
+          "distance": 0.23323525124585534,
+          "family": "US002645975_Example01P.txt",
+          "state": 0,
+          "surfaces": 11
+        },
+        {
+          "distance": 0.2490598974067268,
+          "family": "US004728179_ExampleMLP.txt",
+          "state": 0,
+          "surfaces": 11
+        },
+        {
+          "distance": 0.2547604137177165,
+          "family": "US004377326_Example01P.txt",
+          "state": 0,
+          "surfaces": 11
+        },
+        {
+          "distance": 0.2788474049927909,
+          "family": "US002645974_Example01P.txt",
+          "state": 0,
+          "surfaces": 11
+        },
+        {
+          "distance": 0.2851297651694216,
+          "family": "DE02222892_Example03P.txt",
+          "state": 0,
+          "surfaces": 11
+        },
+        {
+          "distance": 0.2889136102935156,
+          "family": "GB0850117_Example01P.txt",
+          "state": 0,
+          "surfaces": 11
+        }
+      ],
+      "valid_independent_pretrain": true
+    },
+    "best_state4": [
+      44,
+      63,
+      32,
+      21
+    ],
+    "best_state8": [
+      44,
+      63,
+      32,
+      21,
+      2,
+      2,
+      2,
+      2
+    ],
+    "best_J": 26.15077789702448,
+    "top20": [
+      {
+        "state": [
+          44,
+          63,
+          32,
+          21,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 26.15077789702448,
+        "score": -26.15077789702448,
+        "metrics": {
+          "efl": 81.78874476596818,
+          "fno": 2.7707873644216092,
+          "mtf_mean": 0.02356314443827335,
+          "mtf_geomean_reg": 0.01559950071316039,
+          "mtf_p10": 0.005820284086413769,
+          "onaxis_pupil_fill": 1.0,
+          "min_illum": 0.5928815435522196,
+          "dist_max": 1.7633155514575538,
+          "lca": 0.08696764711880434
+        },
+        "costs": {
+          "mtf_log_global": 11.623721923245704,
+          "mtf_log_lower_tail": 4.784212993996522,
+          "onaxis_pupil_fill": -0.0,
+          "relative_illumination": 0.3397497995626016,
+          "distortion_max": 0.4108545353156318,
+          "lateral_ca": 1.3847545092119393,
+          "efl": 4.391398883560899,
+          "fno": 3.2160852521311813
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          33,
+          9,
+          59,
+          33,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 28.39797593067819,
+        "score": -28.39797593067819,
+        "metrics": {
+          "efl": 80.60002102512512,
+          "fno": 2.255009350421589,
+          "mtf_mean": 0.012385393282819913,
+          "mtf_geomean_reg": 0.009797431268228617,
+          "mtf_p10": 0.003011403256109839,
+          "onaxis_pupil_fill": 1.0,
+          "min_illum": 0.40922777982482245,
+          "dist_max": 2.940861208652259,
+          "lca": 0.19077381746762967
+        },
+        "costs": {
+          "mtf_log_global": 12.911275196173225,
+          "mtf_log_lower_tail": 5.300889305126795,
+          "onaxis_pupil_fill": -0.0,
+          "relative_illumination": 0.5806703638051746,
+          "distortion_max": 0.8424919894184028,
+          "lateral_ca": 3.436386290830082,
+          "efl": 4.768876356986911,
+          "fno": 0.5573864283375989
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          32,
+          13,
+          28,
+          1,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 30.11769591745104,
+        "score": -30.11769591745104,
+        "metrics": {
+          "efl": 103.27466516363003,
+          "fno": 2.551686085295954,
+          "mtf_mean": 0.010259786611772653,
+          "mtf_geomean_reg": 0.00870040485217707,
+          "mtf_p10": 0.004656035578597771,
+          "onaxis_pupil_fill": 1.0,
+          "min_illum": 0.679037730501966,
+          "dist_max": 17.33307876758205,
+          "lca": 0.156888212236602
+        },
+        "costs": {
+          "mtf_log_global": 13.244247936304008,
+          "mtf_log_lower_tail": 5.049378411032439,
+          "onaxis_pupil_fill": -0.0,
+          "relative_illumination": 0.2515703604953995,
+          "distortion_max": 6.5447605523957835,
+          "lateral_ca": 2.7631573554786724,
+          "efl": 0.2784846800229146,
+          "fno": 1.9860966217218232
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          1,
+          45,
+          60,
+          0,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 31.36365530362526,
+        "score": -31.36365530362526,
+        "metrics": {
+          "efl": 72.16662315260194,
+          "fno": 1.827441296765471,
+          "mtf_mean": 0.011578506438651288,
+          "mtf_geomean_reg": 0.009188160283232476,
+          "mtf_p10": 0.003158155802367385,
+          "onaxis_pupil_fill": 0.9588966732831063,
+          "min_illum": 0.30428000865894017,
+          "dist_max": 11.283138743216087,
+          "lca": 0.029484404804730246
+        },
+        "costs": {
+          "mtf_log_global": 13.086012253983908,
+          "mtf_log_lower_tail": 5.264174983564277,
+          "onaxis_pupil_fill": 0.033574134438903495,
+          "relative_illumination": 0.7732259110732138,
+          "distortion_max": 4.130946389418686,
+          "lateral_ca": 0.312553191471121,
+          "efl": 7.490913003319861,
+          "fno": 0.2722554363552927
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          52,
+          6,
+          44,
+          25,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 32.44398713085256,
+        "score": -32.44398713085256,
+        "metrics": {
+          "efl": 63.83099438811474,
+          "fno": 2.085745571963635,
+          "mtf_mean": 0.04369477164992373,
+          "mtf_geomean_reg": 0.016842840529206392,
+          "mtf_p10": 0.00245043918203345,
+          "onaxis_pupil_fill": 1.0,
+          "min_illum": 0.5988380890386992,
+          "dist_max": 5.9011484937526175,
+          "lca": 0.16276950335613094
+        },
+        "costs": {
+          "mtf_log_global": 11.386765989364157,
+          "mtf_log_lower_tail": 5.558331611982438,
+          "onaxis_pupil_fill": -0.0,
+          "relative_illumination": 0.333253074964057,
+          "distortion_max": 1.9941112270007437,
+          "lateral_ca": 2.8798726330637616,
+          "efl": 10.221097272761046,
+          "fno": 0.07055532171635681
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          61,
+          53,
+          57,
+          63,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 32.839186490243634,
+        "score": -32.839186490243634,
+        "metrics": {
+          "efl": 81.48006124678663,
+          "fno": 2.097337350752229,
+          "mtf_mean": 0.020965847989048214,
+          "mtf_geomean_reg": 0.014761962716781075,
+          "mtf_p10": 0.005375792865562833,
+          "onaxis_pupil_fill": 0.2540611206088732,
+          "min_illum": 0.725116106195855,
+          "dist_max": 9.236461032788965,
+          "lca": 0.3698812445134436
+        },
+        "costs": {
+          "mtf_log_global": 11.776621379988352,
+          "mtf_log_lower_tail": 4.853464807513644,
+          "onaxis_pupil_fill": 1.0959094999698704,
+          "relative_illumination": 0.20890063092115543,
+          "distortion_max": 3.3161746441248745,
+          "lateral_ca": 7.008431279098534,
+          "efl": 4.489205835871464,
+          "fno": 0.09047841275573854
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          33,
+          35,
+          33,
+          38,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 33.70965115457955,
+        "score": -33.70965115457955,
+        "metrics": {
+          "efl": 52.01115059131778,
+          "fno": 2.017851452604528,
+          "mtf_mean": 0.13795251459645724,
+          "mtf_geomean_reg": 0.07837862878476265,
+          "mtf_p10": 0.018601692143324314,
+          "onaxis_pupil_fill": 0.19095348677058954,
+          "min_illum": 0.1820695181052967,
+          "dist_max": 5.532647262632437,
+          "lca": 0.2375016565066872
+        },
+        "costs": {
+          "mtf_log_global": 7.122345874777558,
+          "mtf_log_lower_tail": 3.8164675603662066,
+          "onaxis_pupil_fill": 1.3242414797522684,
+          "relative_illumination": 1.1068964414595361,
+          "distortion_max": 1.8489174545176779,
+          "lateral_ca": 4.366845365371964,
+          "efl": 14.120827341496877,
+          "fno": 0.003109636837455465
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          41,
+          37,
+          67,
+          25,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 34.378536116750425,
+        "score": -34.378536116750425,
+        "metrics": {
+          "efl": 92.49126897751736,
+          "fno": 2.118916186527048,
+          "mtf_mean": 0.010051085858467083,
+          "mtf_geomean_reg": 0.004107024762400624,
+          "mtf_p10": 0.0,
+          "onaxis_pupil_fill": 0.7989525694526338,
+          "min_illum": 0.0,
+          "dist_max": 4.269671027668817,
+          "lca": 0.11186024835974351
+        },
+        "costs": {
+          "mtf_log_global": 15.358575916346304,
+          "mtf_log_lower_tail": 8.289396330278864,
+          "onaxis_pupil_fill": 0.17954282905773172,
+          "relative_illumination": 5.9867862385347355,
+          "distortion_max": 1.354085091870494,
+          "lateral_ca": 1.8726825702771166,
+          "efl": 1.2038352289438135,
+          "fno": 0.1336319114413631
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          12,
+          55,
+          44,
+          33,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 34.68399959424162,
+        "score": -34.68399959424162,
+        "metrics": {
+          "efl": 77.3911355007923,
+          "fno": 2.4734557781844075,
+          "mtf_mean": 0.009672573888154078,
+          "mtf_geomean_reg": 0.008607895586376946,
+          "mtf_p10": 0.003991926996471415,
+          "onaxis_pupil_fill": 1.0,
+          "min_illum": 0.5777962394954071,
+          "dist_max": 14.803997114467194,
+          "lca": 0.17761277001988063
+        },
+        "costs": {
+          "mtf_log_global": 13.276520437686637,
+          "mtf_log_lower_tail": 4.97243367437227,
+          "onaxis_pupil_fill": -0.0,
+          "relative_illumination": 0.35649960961486993,
+          "distortion_max": 5.535093334600938,
+          "lateral_ca": 3.1747053626353607,
+          "efl": 5.797155848580902,
+          "fno": 1.571591326750644
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          8,
+          37,
+          11,
+          62,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 36.00763114679182,
+        "score": -36.00763114679182,
+        "metrics": {
+          "efl": 98.24213781779966,
+          "fno": 1.88868870654484,
+          "mtf_mean": 0.00887610604776541,
+          "mtf_geomean_reg": 0.00787915902302708,
+          "mtf_p10": 0.004315936397341147,
+          "onaxis_pupil_fill": 1.0,
+          "min_illum": 0.6612283140856088,
+          "dist_max": 22.219191575528043,
+          "lca": 0.44273119116186876
+        },
+        "costs": {
+          "mtf_log_global": 13.519031258586619,
+          "mtf_log_lower_tail": 5.057816778352089,
+          "onaxis_pupil_fill": -0.0,
+          "relative_illumination": 0.2688431618748565,
+          "distortion_max": 8.496673304286418,
+          "lateral_ca": 8.463654046218348,
+          "efl": 0.08406865560854682,
+          "fno": 0.11754394186494643
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          37,
+          48,
+          67,
+          6,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 36.064970328273695,
+        "score": -36.064970328273695,
+        "metrics": {
+          "efl": 82.25081784014638,
+          "fno": 1.9196015633315773,
+          "mtf_mean": 0.02322568697400429,
+          "mtf_geomean_reg": 0.005222491974825307,
+          "mtf_p10": 0.0,
+          "onaxis_pupil_fill": 0.12139693614489291,
+          "min_illum": 0.0,
+          "dist_max": 2.645382777150323,
+          "lca": 0.03480019214223873
+        },
+        "costs": {
+          "mtf_log_global": 14.660969316909666,
+          "mtf_log_lower_tail": 8.289396330278864,
+          "onaxis_pupil_fill": 1.6863729827474245,
+          "relative_illumination": 5.9867862385347355,
+          "distortion_max": 0.7312329583348289,
+          "lateral_ca": 0.40275858715724344,
+          "efl": 4.245295717077027,
+          "fno": 0.062158197233907586
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          6,
+          53,
+          3,
+          1,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 36.23452497038776,
+        "score": -36.23452497038776,
+        "metrics": {
+          "efl": 91.60802631777788,
+          "fno": 2.1329865610535137,
+          "mtf_mean": 0.013415218299293156,
+          "mtf_geomean_reg": 0.0047949296816513194,
+          "mtf_p10": 0.0,
+          "onaxis_pupil_fill": 0.636052555498765,
+          "min_illum": 0.0,
+          "dist_max": 7.426582602368103,
+          "lca": 0.14186106233637474
+        },
+        "costs": {
+          "mtf_log_global": 14.92910006830949,
+          "mtf_log_lower_tail": 8.289396330278864,
+          "onaxis_pupil_fill": 0.3619334978155578,
+          "relative_illumination": 5.9867862385347355,
+          "distortion_max": 2.5974423537355067,
+          "lateral_ca": 2.4652791143066537,
+          "efl": 1.4387533639566503,
+          "fno": 0.1658340034503012
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          27,
+          39,
+          64,
+          66,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 36.28658791502771,
+        "score": -36.28658791502771,
+        "metrics": {
+          "efl": 84.92057422794365,
+          "fno": 3.3201046083178913,
+          "mtf_mean": 0.008929501957342833,
+          "mtf_geomean_reg": 0.0075304894111158805,
+          "mtf_p10": 0.0035898631794858693,
+          "onaxis_pupil_fill": 1.0,
+          "min_illum": 0.6655963527741035,
+          "dist_max": 15.638729281831916,
+          "lca": 0.09018381948013499
+        },
+        "costs": {
+          "mtf_log_global": 13.644416238639264,
+          "mtf_log_lower_tail": 5.162488052688452,
+          "onaxis_pupil_fill": -0.0,
+          "relative_illumination": 0.2645640622130359,
+          "distortion_max": 5.868267429526944,
+          "lateral_ca": 1.447497907552328,
+          "efl": 3.4097554023054535,
+          "fno": 6.489598822102231
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          1,
+          21,
+          59,
+          62,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 36.78780041364352,
+        "score": -36.78780041364352,
+        "metrics": {
+          "efl": 106.9740797938426,
+          "fno": 2.7425475132512993,
+          "mtf_mean": 0.010516343687309292,
+          "mtf_geomean_reg": 0.008944384282197156,
+          "mtf_p10": 0.004347181361121594,
+          "onaxis_pupil_fill": 0.9780920937613082,
+          "min_illum": 0.3084690926536804,
+          "dist_max": 25.39380411160141,
+          "lca": 0.21360712314849195
+        },
+        "costs": {
+          "mtf_log_global": 13.166592620164844,
+          "mtf_log_lower_tail": 5.062769420834833,
+          "onaxis_pupil_fill": 0.017719366676534922,
+          "relative_illumination": 0.7643411701198259,
+          "distortion_max": 9.765394530530607,
+          "lateral_ca": 3.890827568652696,
+          "efl": 1.0666266115297827,
+          "fno": 3.053529125134393
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          34,
+          1,
+          53,
+          6,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 38.33620860438341,
+        "score": -38.33620860438341,
+        "metrics": {
+          "efl": 89.32157762423131,
+          "fno": 2.4583074326467043,
+          "mtf_mean": 0.030215690196153683,
+          "mtf_geomean_reg": 0.002455336618940005,
+          "mtf_p10": 0.0,
+          "onaxis_pupil_fill": 0.08113817074548253,
+          "min_illum": 0.0,
+          "dist_max": 2.5641933133180794,
+          "lca": 0.0647051924962625
+        },
+        "costs": {
+          "mtf_log_global": 16.819796010024533,
+          "mtf_log_lower_tail": 8.289396330278864,
+          "onaxis_pupil_fill": 2.0083760433574613,
+          "relative_illumination": 5.9867862385347355,
+          "distortion_max": 0.7009150628865172,
+          "lateral_ca": 0.9545127442705564,
+          "efl": 2.0828735038412107,
+          "fno": 1.493552671189533
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          11,
+          8,
+          47,
+          5,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 38.503599184655094,
+        "score": -38.503599184655094,
+        "metrics": {
+          "efl": 64.91649337142286,
+          "fno": 2.3122125406277,
+          "mtf_mean": 0.00920114690741447,
+          "mtf_geomean_reg": 0.00713899775201281,
+          "mtf_p10": 0.0026582007403662174,
+          "onaxis_pupil_fill": 1.0,
+          "min_illum": 0.5857922043805183,
+          "dist_max": 12.00488303130302,
+          "lca": 0.21037660443905537
+        },
+        "costs": {
+          "mtf_log_global": 13.784167371345447,
+          "mtf_log_lower_tail": 5.468263779292309,
+          "onaxis_pupil_fill": -0.0,
+          "relative_illumination": 0.3475676443822078,
+          "distortion_max": 4.418584299899998,
+          "lateral_ca": 3.8265028425546705,
+          "efl": 9.864290199105964,
+          "fno": 0.7942230480745005
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          45,
+          0,
+          34,
+          55,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 39.08506145550096,
+        "score": -39.08506145550096,
+        "metrics": {
+          "efl": 104.06200108342564,
+          "fno": 2.7171914708900213,
+          "mtf_mean": 0.020286347651591607,
+          "mtf_geomean_reg": 0.0022471353095542233,
+          "mtf_p10": 0.0,
+          "onaxis_pupil_fill": 0.13313137533173675,
+          "min_illum": 0.0,
+          "dist_max": 3.0267781367039066,
+          "lca": 0.1152256594317258
+        },
+        "costs": {
+          "mtf_log_global": 17.058597525100367,
+          "mtf_log_lower_tail": 8.289396330278864,
+          "onaxis_pupil_fill": 1.612614394460232,
+          "relative_illumination": 5.9867862385347355,
+          "distortion_max": 0.8750771514746094,
+          "lateral_ca": 1.938970080311081,
+          "efl": 0.41522607181446736,
+          "fno": 2.9083936635266063
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          19,
+          25,
+          61,
+          71,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 39.16483588653191,
+        "score": -39.16483588653191,
+        "metrics": {
+          "efl": 51.65034608264152,
+          "fno": 2.3103489128588883,
+          "mtf_mean": 0.03102332125688832,
+          "mtf_geomean_reg": 0.011283122604627336,
+          "mtf_p10": 0.003123324531784453,
+          "onaxis_pupil_fill": 0.2713133254794711,
+          "min_illum": 0.6520383724761054,
+          "dist_max": 6.710951376893833,
+          "lca": 0.15552533065950058
+        },
+        "costs": {
+          "mtf_log_global": 12.514634328418575,
+          "mtf_log_lower_tail": 5.252478530630703,
+          "onaxis_pupil_fill": 1.0433699429975716,
+          "relative_illumination": 0.27793902945175053,
+          "distortion_max": 2.314018964798389,
+          "lateral_ca": 2.736120436255406,
+          "efl": 14.240173213116837,
+          "fno": 0.7861014408626805
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          65,
+          63,
+          52,
+          67,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 39.58113994889701,
+        "score": -39.58113994889701,
+        "metrics": {
+          "efl": 104.84760408591133,
+          "fno": 2.6389060362242542,
+          "mtf_mean": 0.02261495868137662,
+          "mtf_geomean_reg": 0.0025767149919867943,
+          "mtf_p10": 0.0,
+          "onaxis_pupil_fill": 0.5447202336003063,
+          "min_illum": 0.0,
+          "dist_max": 2.9401043544616163,
+          "lca": 0.23240171186121117
+        },
+        "costs": {
+          "mtf_log_global": 16.674404653361915,
+          "mtf_log_lower_tail": 8.289396330278864,
+          "onaxis_pupil_fill": 0.48591950426842045,
+          "relative_illumination": 5.9867862385347355,
+          "distortion_max": 0.8422053688580908,
+          "lateral_ca": 4.265214064800089,
+          "efl": 0.5711922304587764,
+          "fno": 2.4660215583361182
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          14,
+          52,
+          14,
+          44,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 39.64915594377625,
+        "score": -39.64915594377625,
+        "metrics": {
+          "efl": 73.22727309847077,
+          "fno": 2.3052956819775736,
+          "mtf_mean": 0.028819572093674573,
+          "mtf_geomean_reg": 0.007578256956360835,
+          "mtf_p10": 0.0,
+          "onaxis_pupil_fill": 0.1491420417639363,
+          "min_illum": 0.0,
+          "dist_max": 3.95429313577346,
+          "lca": 0.06996778865995168
+        },
+        "costs": {
+          "mtf_log_global": 13.654418624283597,
+          "mtf_log_lower_tail": 8.289396330278864,
+          "onaxis_pupil_fill": 1.5218286757168529,
+          "relative_illumination": 5.9867862385347355,
+          "distortion_max": 1.2315114074317766,
+          "lateral_ca": 1.055402549120162,
+          "efl": 7.145605536989194,
+          "fno": 0.7642065814210692
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      }
+    ],
+    "trace": [
+      {
+        "round": 1,
+        "n": 112,
+        "best_J": 31.36365530362526,
+        "best_state4": [
+          1,
+          45,
+          60,
+          0
+        ],
+        "eligible_pool": 20599,
+        "pool_n": 60000,
+        "tree": {
+          "leaves": 4,
+          "selected_n": 22,
+          "selected_ucb": 0.9802548203077724
+        },
+        "pred_mu_max": -3.4481399059295654,
+        "pred_sigma_mean": 0.06954744458198547,
+        "train": [
+          {
+            "model": 0,
+            "epochs": 60,
+            "final_loss": 0.3624272495508194,
+            "mean_loss": 0.5521146568159262
+          },
+          {
+            "model": 1,
+            "epochs": 60,
+            "final_loss": 0.356200635433197,
+            "mean_loss": 0.4868243003884951
+          },
+          {
+            "model": 2,
+            "epochs": 60,
+            "final_loss": 0.36092397570610046,
+            "mean_loss": 0.5584186640878518
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "n": 128,
+        "best_J": 31.36365530362526,
+        "best_state4": [
+          1,
+          45,
+          60,
+          0
+        ],
+        "eligible_pool": 24238,
+        "pool_n": 60000,
+        "tree": {
+          "leaves": 4,
+          "selected_n": 29,
+          "selected_ucb": 0.9658031812333054
+        },
+        "pred_mu_max": -3.4731216430664062,
+        "pred_sigma_mean": 0.07925925403833389,
+        "train": [
+          {
+            "model": 0,
+            "epochs": 34,
+            "final_loss": 0.3687046319246292,
+            "mean_loss": 0.38444264671381784
+          },
+          {
+            "model": 1,
+            "epochs": 34,
+            "final_loss": 0.33652164041996,
+            "mean_loss": 0.3634144683532855
+          },
+          {
+            "model": 2,
+            "epochs": 34,
+            "final_loss": 0.3502403646707535,
+            "mean_loss": 0.38736792259356556
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "n": 144,
+        "best_J": 31.36365530362526,
+        "best_state4": [
+          1,
+          45,
+          60,
+          0
+        ],
+        "eligible_pool": 22327,
+        "pool_n": 60000,
+        "tree": {
+          "leaves": 4,
+          "selected_n": 32,
+          "selected_ucb": 0.9665604345144201
+        },
+        "pred_mu_max": -3.457188844680786,
+        "pred_sigma_mean": 0.07447433471679688,
+        "train": [
+          {
+            "model": 0,
+            "epochs": 34,
+            "final_loss": 0.30608849227428436,
+            "mean_loss": 0.32272526293116455
+          },
+          {
+            "model": 1,
+            "epochs": 34,
+            "final_loss": 0.2969682887196541,
+            "mean_loss": 0.30505309582633133
+          },
+          {
+            "model": 2,
+            "epochs": 34,
+            "final_loss": 0.3008487820625305,
+            "mean_loss": 0.31782080890501246
+          }
+        ]
+      },
+      {
+        "round": 4,
+        "n": 160,
+        "best_J": 31.36365530362526,
+        "best_state4": [
+          1,
+          45,
+          60,
+          0
+        ],
+        "eligible_pool": 15014,
+        "pool_n": 60000,
+        "tree": {
+          "leaves": 6,
+          "selected_n": 20,
+          "selected_ucb": 1.031608591248041
+        },
+        "pred_mu_max": -3.4225714206695557,
+        "pred_sigma_mean": 0.0817113146185875,
+        "train": [
+          {
+            "model": 0,
+            "epochs": 34,
+            "final_loss": 0.27187546094258624,
+            "mean_loss": 0.31430063250602464
+          },
+          {
+            "model": 1,
+            "epochs": 34,
+            "final_loss": 0.2660408616065979,
+            "mean_loss": 0.2999003520783256
+          },
+          {
+            "model": 2,
+            "epochs": 34,
+            "final_loss": 0.2599904288848241,
+            "mean_loss": 0.30688845877553905
+          }
+        ]
+      },
+      {
+        "round": 5,
+        "n": 176,
+        "best_J": 31.36365530362526,
+        "best_state4": [
+          1,
+          45,
+          60,
+          0
+        ],
+        "eligible_pool": 16132,
+        "pool_n": 60000,
+        "tree": {
+          "leaves": 6,
+          "selected_n": 24,
+          "selected_ucb": 1.0257890454427259
+        },
+        "pred_mu_max": -3.457883596420288,
+        "pred_sigma_mean": 0.08783403038978577,
+        "train": [
+          {
+            "model": 0,
+            "epochs": 34,
+            "final_loss": 0.2465501924355825,
+            "mean_loss": 0.2671411861391629
+          },
+          {
+            "model": 1,
+            "epochs": 34,
+            "final_loss": 0.2775459637244542,
+            "mean_loss": 0.26323842870838504
+          },
+          {
+            "model": 2,
+            "epochs": 34,
+            "final_loss": 0.246097465356191,
+            "mean_loss": 0.2568071243517539
+          }
+        ]
+      },
+      {
+        "round": 6,
+        "n": 192,
+        "best_J": 31.36365530362526,
+        "best_state4": [
+          1,
+          45,
+          60,
+          0
+        ],
+        "eligible_pool": 16555,
+        "pool_n": 60000,
+        "tree": {
+          "leaves": 8,
+          "selected_n": 27,
+          "selected_ucb": 1.0174640279108595
+        },
+        "pred_mu_max": -3.499933958053589,
+        "pred_sigma_mean": 0.0822891816496849,
+        "train": [
+          {
+            "model": 0,
+            "epochs": 34,
+            "final_loss": 0.2274098594983419,
+            "mean_loss": 0.23419623968063616
+          },
+          {
+            "model": 1,
+            "epochs": 34,
+            "final_loss": 0.21775996188322702,
+            "mean_loss": 0.24131123853080413
+          },
+          {
+            "model": 2,
+            "epochs": 34,
+            "final_loss": 0.20540019373099008,
+            "mean_loss": 0.22904228287584638
+          }
+        ]
+      },
+      {
+        "round": 7,
+        "n": 208,
+        "best_J": 26.15077789702448,
+        "best_state4": [
+          44,
+          63,
+          32,
+          21
+        ],
+        "eligible_pool": 14218,
+        "pool_n": 60000,
+        "tree": {
+          "leaves": 8,
+          "selected_n": 26,
+          "selected_ucb": 1.0300463835512579
+        },
+        "pred_mu_max": -3.5013620853424072,
+        "pred_sigma_mean": 0.0887208804488182,
+        "train": [
+          {
+            "model": 0,
+            "epochs": 34,
+            "final_loss": 0.2198621928691864,
+            "mean_loss": 0.2559300123476515
+          },
+          {
+            "model": 1,
+            "epochs": 34,
+            "final_loss": 0.23644637564818063,
+            "mean_loss": 0.26302177999533854
+          },
+          {
+            "model": 2,
+            "epochs": 34,
+            "final_loss": 0.2398203561703364,
+            "mean_loss": 0.24323931906153173
+          }
+        ]
+      },
+      {
+        "round": 8,
+        "n": 224,
+        "best_J": 26.15077789702448,
+        "best_state4": [
+          44,
+          63,
+          32,
+          21
+        ],
+        "eligible_pool": 15987,
+        "pool_n": 60000,
+        "tree": {
+          "leaves": 8,
+          "selected_n": 33,
+          "selected_ucb": 1.0109260136326959
+        },
+        "pred_mu_max": -3.4574317932128906,
+        "pred_sigma_mean": 0.09319045394659042,
+        "train": [
+          {
+            "model": 0,
+            "epochs": 34,
+            "final_loss": 0.22361281514167786,
+            "mean_loss": 0.25840106989969225
+          },
+          {
+            "model": 1,
+            "epochs": 34,
+            "final_loss": 0.2695927657186985,
+            "mean_loss": 0.26217641330817165
+          },
+          {
+            "model": 2,
+            "epochs": 34,
+            "final_loss": 0.2406543232500553,
+            "mean_loss": 0.2612156084574321
+          }
+        ]
+      },
+      {
+        "round": 9,
+        "n": 240,
+        "best_J": 26.15077789702448,
+        "best_state4": [
+          44,
+          63,
+          32,
+          21
+        ],
+        "eligible_pool": 14995,
+        "pool_n": 60000,
+        "tree": {
+          "leaves": 9,
+          "selected_n": 33,
+          "selected_ucb": 1.0193655641307178
+        },
+        "pred_mu_max": -3.4009039402008057,
+        "pred_sigma_mean": 0.10912469774484634,
+        "train": [
+          {
+            "model": 0,
+            "epochs": 34,
+            "final_loss": 0.22477038204669952,
+            "mean_loss": 0.23124516328029773
+          },
+          {
+            "model": 1,
+            "epochs": 34,
+            "final_loss": 0.21847189962863922,
+            "mean_loss": 0.24254302001174757
+          },
+          {
+            "model": 2,
+            "epochs": 34,
+            "final_loss": 0.22401099279522896,
+            "mean_loss": 0.23684399706475875
+          }
+        ]
+      },
+      {
+        "round": 10,
+        "n": 256,
+        "best_J": 26.15077789702448,
+        "best_state4": [
+          44,
+          63,
+          32,
+          21
+        ],
+        "eligible_pool": 6665,
+        "pool_n": 60000,
+        "tree": {
+          "leaves": 9,
+          "selected_n": 16,
+          "selected_ucb": 1.0997228808549828
+        },
+        "pred_mu_max": -3.43172550201416,
+        "pred_sigma_mean": 0.10086403042078018,
+        "train": [
+          {
+            "model": 0,
+            "epochs": 34,
+            "final_loss": 0.24465181306004524,
+            "mean_loss": 0.24165797803331823
+          },
+          {
+            "model": 1,
+            "epochs": 34,
+            "final_loss": 0.242304477840662,
+            "mean_loss": 0.25496769323945045
+          },
+          {
+            "model": 2,
+            "epochs": 34,
+            "final_loss": 0.24517696350812912,
+            "mean_loss": 0.2515851964845377
+          }
+        ]
+      },
+      {
+        "round": 11,
+        "n": 272,
+        "best_J": 26.15077789702448,
+        "best_state4": [
+          44,
+          63,
+          32,
+          21
+        ],
+        "eligible_pool": 7139,
+        "pool_n": 60000,
+        "tree": {
+          "leaves": 9,
+          "selected_n": 15,
+          "selected_ucb": 1.1080656522327739
+        },
+        "pred_mu_max": -3.347946882247925,
+        "pred_sigma_mean": 0.11034554243087769,
+        "train": [
+          {
+            "model": 0,
+            "epochs": 34,
+            "final_loss": 0.19802238047122955,
+            "mean_loss": 0.2299694583258208
+          },
+          {
+            "model": 1,
+            "epochs": 34,
+            "final_loss": 0.23194260150194168,
+            "mean_loss": 0.23911168546799352
+          },
+          {
+            "model": 2,
+            "epochs": 34,
+            "final_loss": 0.215610109269619,
+            "mean_loss": 0.23540479821317337
+          }
+        ]
+      },
+      {
+        "round": 12,
+        "n": 288,
+        "best_J": 26.15077789702448,
+        "best_state4": [
+          44,
+          63,
+          32,
+          21
+        ],
+        "eligible_pool": 6987,
+        "pool_n": 60000,
+        "tree": {
+          "leaves": 10,
+          "selected_n": 18,
+          "selected_ucb": 1.0886733129667756
+        },
+        "pred_mu_max": -3.169325828552246,
+        "pred_sigma_mean": 0.11353738605976105,
+        "train": [
+          {
+            "model": 0,
+            "epochs": 34,
+            "final_loss": 0.22931743860244752,
+            "mean_loss": 0.23646541176473393
+          },
+          {
+            "model": 1,
+            "epochs": 34,
+            "final_loss": 0.20567761063575746,
+            "mean_loss": 0.23510453258367145
+          },
+          {
+            "model": 2,
+            "epochs": 34,
+            "final_loss": 0.20731731951236726,
+            "mean_loss": 0.24116503675194345
+          }
+        ]
+      },
+      {
+        "round": 13,
+        "n": 304,
+        "best_J": 26.15077789702448,
+        "best_state4": [
+          44,
+          63,
+          32,
+          21
+        ],
+        "eligible_pool": 8468,
+        "pool_n": 60000,
+        "tree": {
+          "leaves": 11,
+          "selected_n": 20,
+          "selected_ucb": 1.0878515799222552
+        },
+        "pred_mu_max": -3.1179440021514893,
+        "pred_sigma_mean": 0.10837770253419876,
+        "train": [
+          {
+            "model": 0,
+            "epochs": 34,
+            "final_loss": 0.23353469371795654,
+            "mean_loss": 0.227519668025129
+          },
+          {
+            "model": 1,
+            "epochs": 34,
+            "final_loss": 0.21412451267242433,
+            "mean_loss": 0.223947330958703
+          },
+          {
+            "model": 2,
+            "epochs": 34,
+            "final_loss": 0.22930932343006133,
+            "mean_loss": 0.23239241093397142
+          }
+        ]
+      },
+      {
+        "round": 14,
+        "n": 320,
+        "best_J": 26.15077789702448,
+        "best_state4": [
+          44,
+          63,
+          32,
+          21
+        ],
+        "eligible_pool": 7139,
+        "pool_n": 60000,
+        "tree": {
+          "leaves": 13,
+          "selected_n": 18,
+          "selected_ucb": 1.103209421311983
+        },
+        "pred_mu_max": -3.202587127685547,
+        "pred_sigma_mean": 0.11528193205595016,
+        "train": [
+          {
+            "model": 0,
+            "epochs": 34,
+            "final_loss": 0.21011846959590913,
+            "mean_loss": 0.22542122418389599
+          },
+          {
+            "model": 1,
+            "epochs": 34,
+            "final_loss": 0.22138774394989014,
+            "mean_loss": 0.22421215803307643
+          },
+          {
+            "model": 2,
+            "epochs": 34,
+            "final_loss": 0.24251315295696257,
+            "mean_loss": 0.23207749172168618
+          }
+        ]
+      },
+      {
+        "round": 15,
+        "n": 336,
+        "best_J": 26.15077789702448,
+        "best_state4": [
+          44,
+          63,
+          32,
+          21
+        ],
+        "eligible_pool": 7558,
+        "pool_n": 60000,
+        "tree": {
+          "leaves": 13,
+          "selected_n": 18,
+          "selected_ucb": 1.08974810318671
+        },
+        "pred_mu_max": -3.1773481369018555,
+        "pred_sigma_mean": 0.11740299314260483,
+        "train": [
+          {
+            "model": 0,
+            "epochs": 34,
+            "final_loss": 0.20642672777175902,
+            "mean_loss": 0.21424092291032568
+          },
+          {
+            "model": 1,
+            "epochs": 34,
+            "final_loss": 0.21133330166339875,
+            "mean_loss": 0.2085305440951796
+          },
+          {
+            "model": 2,
+            "epochs": 34,
+            "final_loss": 0.20995642840862275,
+            "mean_loss": 0.2246505506774958
+          }
+        ]
+      },
+      {
+        "round": 16,
+        "n": 352,
+        "best_J": 26.15077789702448,
+        "best_state4": [
+          44,
+          63,
+          32,
+          21
+        ],
+        "eligible_pool": 7506,
+        "pool_n": 60000,
+        "tree": {
+          "leaves": 15,
+          "selected_n": 21,
+          "selected_ucb": 1.0873992460461246
+        },
+        "pred_mu_max": -3.169287919998169,
+        "pred_sigma_mean": 0.11669676750898361,
+        "train": [
+          {
+            "model": 0,
+            "epochs": 34,
+            "final_loss": 0.194171741604805,
+            "mean_loss": 0.21057814308533485
+          },
+          {
+            "model": 1,
+            "epochs": 34,
+            "final_loss": 0.2181771621108055,
+            "mean_loss": 0.20590460110528797
+          },
+          {
+            "model": 2,
+            "epochs": 34,
+            "final_loss": 0.18989957372347513,
+            "mean_loss": 0.2199132999076563
+          }
+        ]
+      },
+      {
+        "round": 17,
+        "n": 368,
+        "best_J": 26.15077789702448,
+        "best_state4": [
+          44,
+          63,
+          32,
+          21
+        ],
+        "eligible_pool": 7680,
+        "pool_n": 60000,
+        "tree": {
+          "leaves": 14,
+          "selected_n": 22,
+          "selected_ucb": 1.0727808180569043
+        },
+        "pred_mu_max": -3.2084057331085205,
+        "pred_sigma_mean": 0.11738967895507812,
+        "train": [
+          {
+            "model": 0,
+            "epochs": 34,
+            "final_loss": 0.1947148616115252,
+            "mean_loss": 0.19502562609519444
+          },
+          {
+            "model": 1,
+            "epochs": 34,
+            "final_loss": 0.18712066859006882,
+            "mean_loss": 0.1947843073410731
+          },
+          {
+            "model": 2,
+            "epochs": 34,
+            "final_loss": 0.19864060978094736,
+            "mean_loss": 0.21299009448757358
+          }
+        ]
+      },
+      {
+        "round": 18,
+        "n": 384,
+        "best_J": 26.15077789702448,
+        "best_state4": [
+          44,
+          63,
+          32,
+          21
+        ],
+        "eligible_pool": 7181,
+        "pool_n": 60000,
+        "tree": {
+          "leaves": 16,
+          "selected_n": 21,
+          "selected_ucb": 1.0759463404527367
+        },
+        "pred_mu_max": -3.2300500869750977,
+        "pred_sigma_mean": 0.11626312881708145,
+        "train": [
+          {
+            "model": 0,
+            "epochs": 34,
+            "final_loss": 0.1799488589167595,
+            "mean_loss": 0.1892290358595988
+          },
+          {
+            "model": 1,
+            "epochs": 34,
+            "final_loss": 0.1778705989321073,
+            "mean_loss": 0.18718007842407508
+          },
+          {
+            "model": 2,
+            "epochs": 34,
+            "final_loss": 0.1909511610865593,
+            "mean_loss": 0.2012581929710566
+          }
+        ]
+      },
+      {
+        "round": 19,
+        "n": 400,
+        "best_J": 26.15077789702448,
+        "best_state4": [
+          44,
+          63,
+          32,
+          21
+        ],
+        "eligible_pool": 7717,
+        "pool_n": 60000,
+        "tree": {
+          "leaves": 16,
+          "selected_n": 24,
+          "selected_ucb": 1.0650276024164025
+        },
+        "pred_mu_max": -3.173325300216675,
+        "pred_sigma_mean": 0.11592685431241989,
+        "train": [
+          {
+            "model": 0,
+            "epochs": 34,
+            "final_loss": 0.20633485168218613,
+            "mean_loss": 0.19222994897441537
+          },
+          {
+            "model": 1,
+            "epochs": 34,
+            "final_loss": 0.17077071716388068,
+            "mean_loss": 0.18299173081622405
+          },
+          {
+            "model": 2,
+            "epochs": 34,
+            "final_loss": 0.18175946176052094,
+            "mean_loss": 0.19254097123356428
+          }
+        ]
+      },
+      {
+        "round": 20,
+        "n": 416,
+        "best_J": 26.15077789702448,
+        "best_state4": [
+          44,
+          63,
+          32,
+          21
+        ],
+        "eligible_pool": 7935,
+        "pool_n": 60000,
+        "tree": {
+          "leaves": 17,
+          "selected_n": 24,
+          "selected_ucb": 1.0709629908847973
+        },
+        "pred_mu_max": -3.189234733581543,
+        "pred_sigma_mean": 0.11365314573049545,
+        "train": [
+          {
+            "model": 0,
+            "epochs": 34,
+            "final_loss": 0.1814260653087071,
+            "mean_loss": 0.18590981513261795
+          },
+          {
+            "model": 1,
+            "epochs": 34,
+            "final_loss": 0.15731174179485866,
+            "mean_loss": 0.1736900991126269
+          },
+          {
+            "model": 2,
+            "epochs": 34,
+            "final_loss": 0.19854659054960525,
+            "mean_loss": 0.18480532303327274
+          }
+        ]
+      },
+      {
+        "round": 21,
+        "n": 432,
+        "best_J": 26.15077789702448,
+        "best_state4": [
+          44,
+          63,
+          32,
+          21
+        ],
+        "eligible_pool": 8618,
+        "pool_n": 60000,
+        "tree": {
+          "leaves": 16,
+          "selected_n": 27,
+          "selected_ucb": 1.0616859900446176
+        },
+        "pred_mu_max": -3.1425793170928955,
+        "pred_sigma_mean": 0.11363077908754349,
+        "train": [
+          {
+            "model": 0,
+            "epochs": 34,
+            "final_loss": 0.18884807612214768,
+            "mean_loss": 0.18586200431865804
+          },
+          {
+            "model": 1,
+            "epochs": 34,
+            "final_loss": 0.1641472088439124,
+            "mean_loss": 0.17008839729202896
+          },
+          {
+            "model": 2,
+            "epochs": 34,
+            "final_loss": 0.16475853323936462,
+            "mean_loss": 0.1764786268482689
+          }
+        ]
+      },
+      {
+        "round": 22,
+        "n": 448,
+        "best_J": 26.15077789702448,
+        "best_state4": [
+          44,
+          63,
+          32,
+          21
+        ],
+        "eligible_pool": 8824,
+        "pool_n": 60000,
+        "tree": {
+          "leaves": 17,
+          "selected_n": 28,
+          "selected_ucb": 1.0602929947177564
+        },
+        "pred_mu_max": -3.1655962467193604,
+        "pred_sigma_mean": 0.11526228487491608,
+        "train": [
+          {
+            "model": 0,
+            "epochs": 34,
+            "final_loss": 0.1776753898177828,
+            "mean_loss": 0.17550472492555613
+          },
+          {
+            "model": 1,
+            "epochs": 34,
+            "final_loss": 0.16645477286406926,
+            "mean_loss": 0.16486790356766276
+          },
+          {
+            "model": 2,
+            "epochs": 34,
+            "final_loss": 0.17090126552752086,
+            "mean_loss": 0.17525713223995282
+          }
+        ]
+      },
+      {
+        "round": 23,
+        "n": 464,
+        "best_J": 26.15077789702448,
+        "best_state4": [
+          44,
+          63,
+          32,
+          21
+        ],
+        "eligible_pool": 8730,
+        "pool_n": 60000,
+        "tree": {
+          "leaves": 17,
+          "selected_n": 29,
+          "selected_ucb": 1.0708698189842807
+        },
+        "pred_mu_max": -3.1889312267303467,
+        "pred_sigma_mean": 0.11216501146554947,
+        "train": [
+          {
+            "model": 0,
+            "epochs": 34,
+            "final_loss": 0.16977866206850326,
+            "mean_loss": 0.16953217642021778
+          },
+          {
+            "model": 1,
+            "epochs": 34,
+            "final_loss": 0.16489650096212113,
+            "mean_loss": 0.1613409898298628
+          },
+          {
+            "model": 2,
+            "epochs": 34,
+            "final_loss": 0.16364250012806483,
+            "mean_loss": 0.16924105844452603
+          }
+        ]
+      },
+      {
+        "round": 24,
+        "n": 480,
+        "best_J": 26.15077789702448,
+        "best_state4": [
+          44,
+          63,
+          32,
+          21
+        ],
+        "eligible_pool": 8459,
+        "pool_n": 60000,
+        "tree": {
+          "leaves": 18,
+          "selected_n": 28,
+          "selected_ucb": 1.0753801216894099
+        },
+        "pred_mu_max": -3.1628334522247314,
+        "pred_sigma_mean": 0.11464861035346985,
+        "train": [
+          {
+            "model": 0,
+            "epochs": 34,
+            "final_loss": 0.16873759776353836,
+            "mean_loss": 0.17162200192208676
+          },
+          {
+            "model": 1,
+            "epochs": 34,
+            "final_loss": 0.149363586679101,
+            "mean_loss": 0.16327469333020203
+          },
+          {
+            "model": 2,
+            "epochs": 34,
+            "final_loss": 0.17904547043144703,
+            "mean_loss": 0.16747588749207995
+          }
+        ]
+      },
+      {
+        "round": 25,
+        "n": 496,
+        "best_J": 26.15077789702448,
+        "best_state4": [
+          44,
+          63,
+          32,
+          21
+        ],
+        "eligible_pool": 8722,
+        "pool_n": 60000,
+        "tree": {
+          "leaves": 19,
+          "selected_n": 26,
+          "selected_ucb": 1.080917071551331
+        },
+        "pred_mu_max": -3.138643264770508,
+        "pred_sigma_mean": 0.11813274770975113,
+        "train": [
+          {
+            "model": 0,
+            "epochs": 34,
+            "final_loss": 0.15002319402992725,
+            "mean_loss": 0.1643632128560806
+          },
+          {
+            "model": 1,
+            "epochs": 34,
+            "final_loss": 0.15246281027793884,
+            "mean_loss": 0.15638344017240932
+          },
+          {
+            "model": 2,
+            "epochs": 34,
+            "final_loss": 0.1585378646850586,
+            "mean_loss": 0.1597373143715017
+          }
+        ]
+      },
+      {
+        "round": 26,
+        "n": 512,
+        "best_J": 26.15077789702448,
+        "best_state4": [
+          44,
+          63,
+          32,
+          21
+        ],
+        "eligible_pool": 8391,
+        "pool_n": 60000,
+        "tree": {
+          "leaves": 19,
+          "selected_n": 29,
+          "selected_ucb": 1.0733602698163927
+        },
+        "pred_mu_max": -3.1014997959136963,
+        "pred_sigma_mean": 0.11735109239816666,
+        "train": [
+          {
+            "model": 0,
+            "epochs": 34,
+            "final_loss": 0.15678470395505428,
+            "mean_loss": 0.16586611428133705
+          },
+          {
+            "model": 1,
+            "epochs": 34,
+            "final_loss": 0.15201827883720398,
+            "mean_loss": 0.15676809981574907
+          },
+          {
+            "model": 2,
+            "epochs": 34,
+            "final_loss": 0.1548219984397292,
+            "mean_loss": 0.16259121283998385
+          }
+        ]
+      },
+      {
+        "round": 27,
+        "n": 528,
+        "best_J": 26.15077789702448,
+        "best_state4": [
+          44,
+          63,
+          32,
+          21
+        ],
+        "eligible_pool": 8193,
+        "pool_n": 60000,
+        "tree": {
+          "leaves": 18,
+          "selected_n": 31,
+          "selected_ucb": 1.0695504101105455
+        },
+        "pred_mu_max": -3.1710593700408936,
+        "pred_sigma_mean": 0.11314155161380768,
+        "train": [
+          {
+            "model": 0,
+            "epochs": 34,
+            "final_loss": 0.16364214103668928,
+            "mean_loss": 0.16607884517596924
+          },
+          {
+            "model": 1,
+            "epochs": 34,
+            "final_loss": 0.14887415152043104,
+            "mean_loss": 0.15468994125395136
+          },
+          {
+            "model": 2,
+            "epochs": 34,
+            "final_loss": 0.15793469920754433,
+            "mean_loss": 0.16038539049708667
+          }
+        ]
+      },
+      {
+        "round": 28,
+        "n": 544,
+        "best_J": 26.15077789702448,
+        "best_state4": [
+          44,
+          63,
+          32,
+          21
+        ],
+        "eligible_pool": 8073,
+        "pool_n": 60000,
+        "tree": {
+          "leaves": 20,
+          "selected_n": 28,
+          "selected_ucb": 1.0809826617582368
+        },
+        "pred_mu_max": -3.155611276626587,
+        "pred_sigma_mean": 0.1160726547241211,
+        "train": [
+          {
+            "model": 0,
+            "epochs": 34,
+            "final_loss": 0.15833077083031336,
+            "mean_loss": 0.16912108097298473
+          },
+          {
+            "model": 1,
+            "epochs": 34,
+            "final_loss": 0.1511195624868075,
+            "mean_loss": 0.16604016419329676
+          },
+          {
+            "model": 2,
+            "epochs": 34,
+            "final_loss": 0.16806988418102264,
+            "mean_loss": 0.1689511765695475
+          }
+        ]
+      },
+      {
+        "round": 29,
+        "n": 560,
+        "best_J": 26.15077789702448,
+        "best_state4": [
+          44,
+          63,
+          32,
+          21
+        ],
+        "eligible_pool": 8621,
+        "pool_n": 60000,
+        "tree": {
+          "leaves": 22,
+          "selected_n": 34,
+          "selected_ucb": 1.056138383243249
+        },
+        "pred_mu_max": -3.198850393295288,
+        "pred_sigma_mean": 0.12100405991077423,
+        "train": [
+          {
+            "model": 0,
+            "epochs": 34,
+            "final_loss": 0.15828441911273533,
+            "mean_loss": 0.16088409785156937
+          },
+          {
+            "model": 1,
+            "epochs": 34,
+            "final_loss": 0.1608913756079144,
+            "mean_loss": 0.1603346221343754
+          },
+          {
+            "model": 2,
+            "epochs": 34,
+            "final_loss": 0.1589096205102073,
+            "mean_loss": 0.16431418463003403
+          }
+        ]
+      },
+      {
+        "round": 30,
+        "n": 576,
+        "best_J": 26.15077789702448,
+        "best_state4": [
+          44,
+          63,
+          32,
+          21
+        ],
+        "eligible_pool": 8550,
+        "pool_n": 60000,
+        "tree": {
+          "leaves": 23,
+          "selected_n": 32,
+          "selected_ucb": 1.0719125105080103
+        },
+        "pred_mu_max": -3.1862270832061768,
+        "pred_sigma_mean": 0.11725027859210968,
+        "train": [
+          {
+            "model": 0,
+            "epochs": 34,
+            "final_loss": 0.15855037338203853,
+            "mean_loss": 0.15849704568097794
+          },
+          {
+            "model": 1,
+            "epochs": 34,
+            "final_loss": 0.15257061686780718,
+            "mean_loss": 0.15689436528904765
+          },
+          {
+            "model": 2,
+            "epochs": 34,
+            "final_loss": 0.1517936951584286,
+            "mean_loss": 0.16260239194615994
+          }
+        ]
+      },
+      {
+        "round": 31,
+        "n": 592,
+        "best_J": 26.15077789702448,
+        "best_state4": [
+          44,
+          63,
+          32,
+          21
+        ],
+        "eligible_pool": 7374,
+        "pool_n": 60000,
+        "tree": {
+          "leaves": 23,
+          "selected_n": 29,
+          "selected_ucb": 1.0714148102672532
+        },
+        "pred_mu_max": -3.1441714763641357,
+        "pred_sigma_mean": 0.11836840957403183,
+        "train": [
+          {
+            "model": 0,
+            "epochs": 34,
+            "final_loss": 0.1545346031586329,
+            "mean_loss": 0.15528395672152245
+          },
+          {
+            "model": 1,
+            "epochs": 34,
+            "final_loss": 0.15300408171282875,
+            "mean_loss": 0.15299627338262164
+          },
+          {
+            "model": 2,
+            "epochs": 34,
+            "final_loss": 0.1572098367744022,
+            "mean_loss": 0.15969198430870096
+          }
+        ]
+      },
+      {
+        "round": 32,
+        "n": 600,
+        "best_J": 26.15077789702448,
+        "best_state4": [
+          44,
+          63,
+          32,
+          21
+        ],
+        "eligible_pool": 7646,
+        "pool_n": 60000,
+        "tree": {
+          "leaves": 23,
+          "selected_n": 29,
+          "selected_ucb": 1.0759742167239839
+        },
+        "pred_mu_max": -3.1819839477539062,
+        "pred_sigma_mean": 0.11988583207130432,
+        "train": [
+          {
+            "model": 0,
+            "epochs": 34,
+            "final_loss": 0.14950900077819823,
+            "mean_loss": 0.15268239413990695
+          },
+          {
+            "model": 1,
+            "epochs": 34,
+            "final_loss": 0.14922920018434524,
+            "mean_loss": 0.14898768409210095
+          },
+          {
+            "model": 2,
+            "epochs": 34,
+            "final_loss": 0.14844572246074678,
+            "mean_loss": 0.15620791933992328
+          }
+        ]
+      }
+    ],
+    "evaluated_states4": [
+      [
+        53,
+        60,
+        7,
+        11
+      ],
+      [
+        32,
+        40,
+        54,
+        26
+      ],
+      [
+        2,
+        15,
+        32,
+        27
+      ],
+      [
+        65,
+        30,
+        45,
+        44
+      ],
+      [
+        6,
+        53,
+        3,
+        1
+      ],
+      [
+        42,
+        18,
+        26,
+        43
+      ],
+      [
+        11,
+        6,
+        50,
+        71
+      ],
+      [
+        49,
+        59,
+        29,
+        2
+      ],
+      [
+        46,
+        40,
+        53,
+        43
+      ],
+      [
+        35,
+        0,
+        50,
+        12
+      ],
+      [
+        34,
+        11,
+        41,
+        33
+      ],
+      [
+        29,
+        40,
+        10,
+        32
+      ],
+      [
+        51,
+        66,
+        15,
+        58
+      ],
+      [
+        24,
+        28,
+        58,
+        14
+      ],
+      [
+        17,
+        25,
+        46,
+        62
+      ],
+      [
+        19,
+        25,
+        61,
+        71
+      ],
+      [
+        56,
+        40,
+        58,
+        17
+      ],
+      [
+        11,
+        47,
+        17,
+        47
+      ],
+      [
+        16,
+        37,
+        59,
+        20
+      ],
+      [
+        40,
+        45,
+        15,
+        34
+      ],
+      [
+        53,
+        47,
+        48,
+        39
+      ],
+      [
+        66,
+        8,
+        36,
+        65
+      ],
+      [
+        30,
+        1,
+        70,
+        22
+      ],
+      [
+        3,
+        12,
+        68,
+        24
+      ],
+      [
+        0,
+        44,
+        3,
+        39
+      ],
+      [
+        44,
+        51,
+        7,
+        35
+      ],
+      [
+        37,
+        60,
+        0,
+        25
+      ],
+      [
+        29,
+        39,
+        56,
+        36
+      ],
+      [
+        54,
+        1,
+        21,
+        16
+      ],
+      [
+        42,
+        6,
+        25,
+        17
+      ],
+      [
+        67,
+        0,
+        47,
+        21
+      ],
+      [
+        62,
+        26,
+        0,
+        46
+      ],
+      [
+        12,
+        60,
+        61,
+        29
+      ],
+      [
+        32,
+        45,
+        17,
+        37
+      ],
+      [
+        71,
+        16,
+        40,
+        14
+      ],
+      [
+        57,
+        32,
+        55,
+        57
+      ],
+      [
+        65,
+        42,
+        37,
+        50
+      ],
+      [
+        14,
+        52,
+        14,
+        44
+      ],
+      [
+        52,
+        17,
+        19,
+        31
+      ],
+      [
+        7,
+        36,
+        14,
+        0
+      ],
+      [
+        6,
+        21,
+        40,
+        25
+      ],
+      [
+        15,
+        0,
+        31,
+        40
+      ],
+      [
+        47,
+        39,
+        21,
+        6
+      ],
+      [
+        41,
+        17,
+        3,
+        65
+      ],
+      [
+        37,
+        31,
+        14,
+        18
+      ],
+      [
+        37,
+        62,
+        2,
+        32
+      ],
+      [
+        2,
+        45,
+        66,
+        65
+      ],
+      [
+        38,
+        39,
+        32,
+        11
+      ],
+      [
+        2,
+        51,
+        3,
+        67
+      ],
+      [
+        55,
+        30,
+        65,
+        47
+      ],
+      [
+        36,
+        62,
+        23,
+        11
+      ],
+      [
+        28,
+        56,
+        43,
+        34
+      ],
+      [
+        27,
+        39,
+        64,
+        66
+      ],
+      [
+        23,
+        58,
+        70,
+        9
+      ],
+      [
+        22,
+        29,
+        31,
+        48
+      ],
+      [
+        8,
+        58,
+        30,
+        11
+      ],
+      [
+        13,
+        50,
+        58,
+        37
+      ],
+      [
+        27,
+        5,
+        45,
+        37
+      ],
+      [
+        2,
+        32,
+        17,
+        31
+      ],
+      [
+        32,
+        19,
+        34,
+        26
+      ],
+      [
+        53,
+        54,
+        30,
+        24
+      ],
+      [
+        1,
+        61,
+        27,
+        50
+      ],
+      [
+        18,
+        54,
+        35,
+        28
+      ],
+      [
+        48,
+        12,
+        48,
+        0
+      ],
+      [
+        69,
+        29,
+        67,
+        33
+      ],
+      [
+        29,
+        27,
+        18,
+        7
+      ],
+      [
+        7,
+        3,
+        47,
+        63
+      ],
+      [
+        2,
+        28,
+        58,
+        62
+      ],
+      [
+        30,
+        59,
+        43,
+        41
+      ],
+      [
+        24,
+        62,
+        16,
+        68
+      ],
+      [
+        1,
+        45,
+        60,
+        0
+      ],
+      [
+        58,
+        46,
+        11,
+        35
+      ],
+      [
+        15,
+        56,
+        45,
+        25
+      ],
+      [
+        43,
+        49,
+        48,
+        26
+      ],
+      [
+        58,
+        42,
+        1,
+        32
+      ],
+      [
+        28,
+        15,
+        60,
+        23
+      ],
+      [
+        2,
+        4,
+        15,
+        44
+      ],
+      [
+        16,
+        64,
+        7,
+        42
+      ],
+      [
+        69,
+        12,
+        70,
+        38
+      ],
+      [
+        44,
+        18,
+        44,
+        27
+      ],
+      [
+        22,
+        0,
+        26,
+        69
+      ],
+      [
+        43,
+        37,
+        45,
+        41
+      ],
+      [
+        11,
+        6,
+        67,
+        9
+      ],
+      [
+        50,
+        63,
+        27,
+        60
+      ],
+      [
+        59,
+        48,
+        46,
+        50
+      ],
+      [
+        44,
+        67,
+        50,
+        48
+      ],
+      [
+        46,
+        43,
+        28,
+        10
+      ],
+      [
+        45,
+        16,
+        42,
+        15
+      ],
+      [
+        35,
+        3,
+        39,
+        29
+      ],
+      [
+        8,
+        3,
+        62,
+        65
+      ],
+      [
+        5,
+        44,
+        47,
+        24
+      ],
+      [
+        29,
+        19,
+        40,
+        53
+      ],
+      [
+        71,
+        64,
+        50,
+        71
+      ],
+      [
+        4,
+        6,
+        11,
+        32
+      ],
+      [
+        35,
+        70,
+        7,
+        42
+      ],
+      [
+        34,
+        57,
+        41,
+        27
+      ],
+      [
+        23,
+        59,
+        4,
+        1
+      ],
+      [
+        26,
+        7,
+        31,
+        18
+      ],
+      [
+        3,
+        16,
+        52,
+        28
+      ],
+      [
+        37,
+        6,
+        64,
+        59
+      ],
+      [
+        17,
+        68,
+        45,
+        70
+      ],
+      [
+        9,
+        43,
+        14,
+        59
+      ],
+      [
+        38,
+        7,
+        58,
+        1
+      ],
+      [
+        8,
+        49,
+        59,
+        35
+      ],
+      [
+        29,
+        3,
+        51,
+        34
+      ],
+      [
+        43,
+        28,
+        37,
+        47
+      ],
+      [
+        48,
+        11,
+        10,
+        68
+      ],
+      [
+        62,
+        67,
+        25,
+        49
+      ],
+      [
+        11,
+        8,
+        47,
+        5
+      ],
+      [
+        18,
+        71,
+        65,
+        59
+      ],
+      [
+        24,
+        47,
+        35,
+        67
+      ],
+      [
+        20,
+        35,
+        65,
+        29
+      ],
+      [
+        31,
+        21,
+        4,
+        22
+      ],
+      [
+        49,
+        57,
+        29,
+        34
+      ],
+      [
+        58,
+        45,
+        33,
+        50
+      ],
+      [
+        64,
+        0,
+        39,
+        41
+      ],
+      [
+        3,
+        46,
+        62,
+        60
+      ],
+      [
+        24,
+        45,
+        30,
+        47
+      ],
+      [
+        0,
+        43,
+        19,
+        50
+      ],
+      [
+        3,
+        2,
+        47,
+        17
+      ],
+      [
+        23,
+        4,
+        2,
+        28
+      ],
+      [
+        27,
+        19,
+        62,
+        14
+      ],
+      [
+        27,
+        63,
+        4,
+        47
+      ],
+      [
+        5,
+        20,
+        58,
+        34
+      ],
+      [
+        47,
+        54,
+        67,
+        45
+      ],
+      [
+        58,
+        11,
+        31,
+        42
+      ],
+      [
+        53,
+        5,
+        50,
+        58
+      ],
+      [
+        68,
+        46,
+        70,
+        17
+      ],
+      [
+        29,
+        3,
+        49,
+        47
+      ],
+      [
+        69,
+        31,
+        31,
+        52
+      ],
+      [
+        58,
+        12,
+        62,
+        67
+      ],
+      [
+        37,
+        65,
+        6,
+        63
+      ],
+      [
+        36,
+        33,
+        2,
+        57
+      ],
+      [
+        20,
+        63,
+        2,
+        45
+      ],
+      [
+        57,
+        50,
+        14,
+        31
+      ],
+      [
+        61,
+        53,
+        57,
+        63
+      ],
+      [
+        14,
+        33,
+        50,
+        47
+      ],
+      [
+        11,
+        68,
+        10,
+        29
+      ],
+      [
+        19,
+        70,
+        9,
+        49
+      ],
+      [
+        53,
+        5,
+        27,
+        29
+      ],
+      [
+        54,
+        50,
+        48,
+        16
+      ],
+      [
+        43,
+        4,
+        51,
+        1
+      ],
+      [
+        15,
+        42,
+        58,
+        28
+      ],
+      [
+        2,
+        18,
+        62,
+        12
+      ],
+      [
+        31,
+        60,
+        17,
+        61
+      ],
+      [
+        19,
+        46,
+        53,
+        71
+      ],
+      [
+        53,
+        9,
+        54,
+        47
+      ],
+      [
+        8,
+        16,
+        13,
+        4
+      ],
+      [
+        39,
+        22,
+        52,
+        8
+      ],
+      [
+        50,
+        65,
+        38,
+        24
+      ],
+      [
+        18,
+        11,
+        70,
+        41
+      ],
+      [
+        21,
+        55,
+        1,
+        30
+      ],
+      [
+        54,
+        70,
+        27,
+        36
+      ],
+      [
+        44,
+        3,
+        67,
+        66
+      ],
+      [
+        57,
+        43,
+        11,
+        26
+      ],
+      [
+        11,
+        53,
+        71,
+        51
+      ],
+      [
+        46,
+        15,
+        55,
+        50
+      ],
+      [
+        35,
+        68,
+        50,
+        21
+      ],
+      [
+        11,
+        25,
+        46,
+        11
+      ],
+      [
+        53,
+        37,
+        54,
+        47
+      ],
+      [
+        11,
+        49,
+        45,
+        48
+      ],
+      [
+        54,
+        6,
+        13,
+        66
+      ],
+      [
+        24,
+        16,
+        43,
+        0
+      ],
+      [
+        3,
+        24,
+        12,
+        39
+      ],
+      [
+        6,
+        61,
+        51,
+        9
+      ],
+      [
+        5,
+        60,
+        49,
+        57
+      ],
+      [
+        68,
+        44,
+        42,
+        6
+      ],
+      [
+        69,
+        31,
+        33,
+        54
+      ],
+      [
+        33,
+        71,
+        1,
+        16
+      ],
+      [
+        4,
+        33,
+        4,
+        18
+      ],
+      [
+        3,
+        58,
+        45,
+        30
+      ],
+      [
+        22,
+        44,
+        5,
+        58
+      ],
+      [
+        53,
+        19,
+        48,
+        4
+      ],
+      [
+        42,
+        30,
+        32,
+        44
+      ],
+      [
+        68,
+        53,
+        6,
+        50
+      ],
+      [
+        10,
+        6,
+        28,
+        70
+      ],
+      [
+        42,
+        40,
+        18,
+        15
+      ],
+      [
+        3,
+        58,
+        35,
+        18
+      ],
+      [
+        61,
+        31,
+        28,
+        48
+      ],
+      [
+        16,
+        28,
+        26,
+        66
+      ],
+      [
+        65,
+        64,
+        12,
+        29
+      ],
+      [
+        25,
+        26,
+        23,
+        3
+      ],
+      [
+        0,
+        49,
+        25,
+        36
+      ],
+      [
+        13,
+        37,
+        29,
+        1
+      ],
+      [
+        31,
+        1,
+        3,
+        9
+      ],
+      [
+        46,
+        41,
+        0,
+        36
+      ],
+      [
+        34,
+        24,
+        68,
+        36
+      ],
+      [
+        47,
+        65,
+        54,
+        54
+      ],
+      [
+        0,
+        21,
+        48,
+        41
+      ],
+      [
+        0,
+        26,
+        54,
+        37
+      ],
+      [
+        22,
+        26,
+        37,
+        11
+      ],
+      [
+        18,
+        59,
+        44,
+        23
+      ],
+      [
+        44,
+        63,
+        32,
+        21
+      ],
+      [
+        19,
+        5,
+        60,
+        52
+      ],
+      [
+        42,
+        23,
+        56,
+        64
+      ],
+      [
+        64,
+        33,
+        21,
+        16
+      ],
+      [
+        42,
+        49,
+        3,
+        2
+      ],
+      [
+        20,
+        62,
+        48,
+        13
+      ],
+      [
+        32,
+        68,
+        18,
+        14
+      ],
+      [
+        71,
+        35,
+        62,
+        54
+      ],
+      [
+        65,
+        56,
+        43,
+        10
+      ],
+      [
+        5,
+        62,
+        3,
+        44
+      ],
+      [
+        37,
+        39,
+        68,
+        39
+      ],
+      [
+        69,
+        50,
+        70,
+        60
+      ],
+      [
+        59,
+        7,
+        18,
+        27
+      ],
+      [
+        36,
+        4,
+        29,
+        14
+      ],
+      [
+        7,
+        69,
+        62,
+        4
+      ],
+      [
+        11,
+        14,
+        67,
+        36
+      ],
+      [
+        52,
+        9,
+        65,
+        11
+      ],
+      [
+        13,
+        31,
+        57,
+        31
+      ],
+      [
+        37,
+        29,
+        62,
+        15
+      ],
+      [
+        29,
+        57,
+        48,
+        67
+      ],
+      [
+        71,
+        50,
+        3,
+        30
+      ],
+      [
+        47,
+        2,
+        63,
+        36
+      ],
+      [
+        21,
+        0,
+        50,
+        34
+      ],
+      [
+        22,
+        55,
+        60,
+        53
+      ],
+      [
+        8,
+        37,
+        11,
+        62
+      ],
+      [
+        15,
+        27,
+        51,
+        15
+      ],
+      [
+        13,
+        33,
+        50,
+        3
+      ],
+      [
+        62,
+        33,
+        57,
+        31
+      ],
+      [
+        58,
+        5,
+        60,
+        58
+      ],
+      [
+        32,
+        27,
+        68,
+        57
+      ],
+      [
+        53,
+        50,
+        5,
+        66
+      ],
+      [
+        62,
+        37,
+        57,
+        17
+      ],
+      [
+        46,
+        10,
+        12,
+        54
+      ],
+      [
+        3,
+        11,
+        27,
+        54
+      ],
+      [
+        39,
+        46,
+        65,
+        43
+      ],
+      [
+        35,
+        41,
+        11,
+        4
+      ],
+      [
+        12,
+        1,
+        59,
+        64
+      ],
+      [
+        5,
+        71,
+        33,
+        38
+      ],
+      [
+        37,
+        52,
+        35,
+        64
+      ],
+      [
+        59,
+        58,
+        36,
+        21
+      ],
+      [
+        33,
+        9,
+        59,
+        33
+      ],
+      [
+        35,
+        39,
+        23,
+        29
+      ],
+      [
+        65,
+        43,
+        23,
+        5
+      ],
+      [
+        1,
+        26,
+        34,
+        4
+      ],
+      [
+        28,
+        11,
+        31,
+        44
+      ],
+      [
+        55,
+        56,
+        43,
+        30
+      ],
+      [
+        66,
+        71,
+        1,
+        6
+      ],
+      [
+        45,
+        12,
+        1,
+        58
+      ],
+      [
+        60,
+        38,
+        25,
+        44
+      ],
+      [
+        40,
+        43,
+        71,
+        43
+      ],
+      [
+        68,
+        45,
+        17,
+        57
+      ],
+      [
+        41,
+        37,
+        62,
+        54
+      ],
+      [
+        37,
+        24,
+        48,
+        62
+      ],
+      [
+        22,
+        69,
+        36,
+        64
+      ],
+      [
+        57,
+        37,
+        47,
+        0
+      ],
+      [
+        56,
+        41,
+        40,
+        2
+      ],
+      [
+        12,
+        33,
+        21,
+        28
+      ],
+      [
+        25,
+        32,
+        54,
+        49
+      ],
+      [
+        18,
+        56,
+        44,
+        4
+      ],
+      [
+        14,
+        38,
+        45,
+        61
+      ],
+      [
+        56,
+        41,
+        50,
+        15
+      ],
+      [
+        57,
+        46,
+        67,
+        49
+      ],
+      [
+        36,
+        62,
+        9,
+        36
+      ],
+      [
+        35,
+        50,
+        46,
+        49
+      ],
+      [
+        33,
+        58,
+        13,
+        56
+      ],
+      [
+        1,
+        68,
+        71,
+        8
+      ],
+      [
+        2,
+        54,
+        27,
+        13
+      ],
+      [
+        20,
+        4,
+        71,
+        38
+      ],
+      [
+        12,
+        29,
+        3,
+        51
+      ],
+      [
+        45,
+        56,
+        48,
+        1
+      ],
+      [
+        54,
+        56,
+        63,
+        55
+      ],
+      [
+        55,
+        35,
+        69,
+        35
+      ],
+      [
+        32,
+        10,
+        40,
+        54
+      ],
+      [
+        65,
+        65,
+        47,
+        28
+      ],
+      [
+        48,
+        39,
+        0,
+        68
+      ],
+      [
+        40,
+        66,
+        26,
+        31
+      ],
+      [
+        65,
+        63,
+        52,
+        67
+      ],
+      [
+        1,
+        68,
+        8,
+        2
+      ],
+      [
+        10,
+        52,
+        27,
+        40
+      ],
+      [
+        33,
+        35,
+        33,
+        38
+      ],
+      [
+        32,
+        13,
+        28,
+        1
+      ],
+      [
+        68,
+        44,
+        7,
+        50
+      ],
+      [
+        5,
+        8,
+        49,
+        10
+      ],
+      [
+        8,
+        15,
+        9,
+        12
+      ],
+      [
+        62,
+        25,
+        21,
+        55
+      ],
+      [
+        17,
+        26,
+        13,
+        47
+      ],
+      [
+        24,
+        42,
+        6,
+        71
+      ],
+      [
+        46,
+        33,
+        51,
+        30
+      ],
+      [
+        6,
+        5,
+        36,
+        67
+      ],
+      [
+        9,
+        7,
+        55,
+        17
+      ],
+      [
+        68,
+        36,
+        10,
+        10
+      ],
+      [
+        48,
+        49,
+        42,
+        6
+      ],
+      [
+        19,
+        12,
+        24,
+        10
+      ],
+      [
+        54,
+        55,
+        17,
+        41
+      ],
+      [
+        11,
+        71,
+        19,
+        19
+      ],
+      [
+        33,
+        35,
+        55,
+        64
+      ],
+      [
+        66,
+        37,
+        57,
+        65
+      ],
+      [
+        59,
+        69,
+        9,
+        53
+      ],
+      [
+        12,
+        20,
+        68,
+        10
+      ],
+      [
+        24,
+        28,
+        33,
+        16
+      ],
+      [
+        48,
+        41,
+        1,
+        47
+      ],
+      [
+        10,
+        3,
+        50,
+        54
+      ],
+      [
+        24,
+        7,
+        50,
+        48
+      ],
+      [
+        70,
+        16,
+        10,
+        24
+      ],
+      [
+        10,
+        63,
+        37,
+        28
+      ],
+      [
+        54,
+        63,
+        59,
+        24
+      ],
+      [
+        1,
+        55,
+        38,
+        28
+      ],
+      [
+        40,
+        10,
+        54,
+        49
+      ],
+      [
+        41,
+        2,
+        15,
+        53
+      ],
+      [
+        28,
+        12,
+        51,
+        30
+      ],
+      [
+        50,
+        35,
+        55,
+        45
+      ],
+      [
+        42,
+        67,
+        44,
+        44
+      ],
+      [
+        17,
+        68,
+        48,
+        67
+      ],
+      [
+        11,
+        33,
+        70,
+        11
+      ],
+      [
+        14,
+        63,
+        6,
+        43
+      ],
+      [
+        18,
+        60,
+        33,
+        65
+      ],
+      [
+        54,
+        36,
+        24,
+        1
+      ],
+      [
+        68,
+        1,
+        58,
+        19
+      ],
+      [
+        16,
+        32,
+        33,
+        57
+      ],
+      [
+        12,
+        55,
+        44,
+        33
+      ],
+      [
+        10,
+        34,
+        33,
+        22
+      ],
+      [
+        49,
+        18,
+        49,
+        41
+      ],
+      [
+        41,
+        49,
+        1,
+        21
+      ],
+      [
+        26,
+        43,
+        68,
+        24
+      ],
+      [
+        33,
+        52,
+        56,
+        45
+      ],
+      [
+        59,
+        9,
+        52,
+        37
+      ],
+      [
+        35,
+        64,
+        66,
+        41
+      ],
+      [
+        67,
+        22,
+        56,
+        15
+      ],
+      [
+        0,
+        2,
+        45,
+        40
+      ],
+      [
+        26,
+        43,
+        17,
+        41
+      ],
+      [
+        51,
+        71,
+        1,
+        40
+      ],
+      [
+        49,
+        10,
+        3,
+        55
+      ],
+      [
+        46,
+        19,
+        42,
+        6
+      ],
+      [
+        49,
+        18,
+        4,
+        49
+      ],
+      [
+        54,
+        23,
+        26,
+        46
+      ],
+      [
+        24,
+        63,
+        50,
+        71
+      ],
+      [
+        58,
+        26,
+        45,
+        35
+      ],
+      [
+        30,
+        36,
+        10,
+        13
+      ],
+      [
+        5,
+        48,
+        13,
+        35
+      ],
+      [
+        7,
+        42,
+        27,
+        3
+      ],
+      [
+        9,
+        63,
+        66,
+        8
+      ],
+      [
+        12,
+        50,
+        6,
+        15
+      ],
+      [
+        26,
+        33,
+        66,
+        48
+      ],
+      [
+        60,
+        17,
+        24,
+        68
+      ],
+      [
+        3,
+        20,
+        0,
+        32
+      ],
+      [
+        58,
+        69,
+        1,
+        42
+      ],
+      [
+        2,
+        64,
+        7,
+        13
+      ],
+      [
+        61,
+        59,
+        13,
+        44
+      ],
+      [
+        65,
+        55,
+        32,
+        16
+      ],
+      [
+        55,
+        34,
+        9,
+        27
+      ],
+      [
+        38,
+        21,
+        7,
+        7
+      ],
+      [
+        33,
+        13,
+        15,
+        39
+      ],
+      [
+        60,
+        31,
+        30,
+        2
+      ],
+      [
+        50,
+        17,
+        29,
+        41
+      ],
+      [
+        37,
+        24,
+        34,
+        64
+      ],
+      [
+        35,
+        18,
+        65,
+        57
+      ],
+      [
+        46,
+        64,
+        27,
+        29
+      ],
+      [
+        24,
+        41,
+        38,
+        45
+      ],
+      [
+        6,
+        15,
+        70,
+        5
+      ],
+      [
+        52,
+        14,
+        0,
+        46
+      ],
+      [
+        43,
+        55,
+        36,
+        32
+      ],
+      [
+        45,
+        35,
+        38,
+        18
+      ],
+      [
+        17,
+        58,
+        42,
+        61
+      ],
+      [
+        0,
+        62,
+        65,
+        51
+      ],
+      [
+        19,
+        54,
+        52,
+        28
+      ],
+      [
+        23,
+        33,
+        54,
+        19
+      ],
+      [
+        56,
+        7,
+        49,
+        65
+      ],
+      [
+        61,
+        21,
+        51,
+        2
+      ],
+      [
+        49,
+        71,
+        40,
+        26
+      ],
+      [
+        62,
+        48,
+        63,
+        70
+      ],
+      [
+        55,
+        29,
+        8,
+        43
+      ],
+      [
+        20,
+        32,
+        25,
+        6
+      ],
+      [
+        48,
+        50,
+        69,
+        28
+      ],
+      [
+        31,
+        38,
+        36,
+        34
+      ],
+      [
+        45,
+        56,
+        18,
+        9
+      ],
+      [
+        27,
+        53,
+        54,
+        20
+      ],
+      [
+        71,
+        5,
+        17,
+        3
+      ],
+      [
+        68,
+        41,
+        44,
+        27
+      ],
+      [
+        43,
+        1,
+        42,
+        59
+      ],
+      [
+        16,
+        7,
+        33,
+        39
+      ],
+      [
+        7,
+        52,
+        59,
+        13
+      ],
+      [
+        41,
+        0,
+        0,
+        20
+      ],
+      [
+        39,
+        28,
+        56,
+        35
+      ],
+      [
+        59,
+        27,
+        3,
+        69
+      ],
+      [
+        34,
+        1,
+        53,
+        6
+      ],
+      [
+        48,
+        63,
+        39,
+        53
+      ],
+      [
+        70,
+        7,
+        54,
+        9
+      ],
+      [
+        53,
+        63,
+        57,
+        38
+      ],
+      [
+        4,
+        54,
+        15,
+        48
+      ],
+      [
+        62,
+        34,
+        22,
+        50
+      ],
+      [
+        63,
+        20,
+        67,
+        7
+      ],
+      [
+        52,
+        54,
+        14,
+        32
+      ],
+      [
+        1,
+        21,
+        59,
+        62
+      ],
+      [
+        61,
+        43,
+        62,
+        18
+      ],
+      [
+        39,
+        27,
+        26,
+        10
+      ],
+      [
+        1,
+        12,
+        48,
+        64
+      ],
+      [
+        8,
+        37,
+        31,
+        47
+      ],
+      [
+        13,
+        25,
+        34,
+        44
+      ],
+      [
+        41,
+        64,
+        5,
+        59
+      ],
+      [
+        8,
+        9,
+        45,
+        66
+      ],
+      [
+        51,
+        48,
+        12,
+        42
+      ],
+      [
+        2,
+        66,
+        34,
+        58
+      ],
+      [
+        0,
+        47,
+        3,
+        42
+      ],
+      [
+        65,
+        35,
+        36,
+        20
+      ],
+      [
+        60,
+        42,
+        19,
+        53
+      ],
+      [
+        32,
+        35,
+        32,
+        49
+      ],
+      [
+        60,
+        57,
+        41,
+        24
+      ],
+      [
+        5,
+        8,
+        57,
+        43
+      ],
+      [
+        9,
+        37,
+        12,
+        15
+      ],
+      [
+        35,
+        15,
+        11,
+        47
+      ],
+      [
+        24,
+        19,
+        46,
+        1
+      ],
+      [
+        52,
+        58,
+        64,
+        31
+      ],
+      [
+        41,
+        55,
+        43,
+        51
+      ],
+      [
+        24,
+        31,
+        6,
+        28
+      ],
+      [
+        11,
+        57,
+        34,
+        45
+      ],
+      [
+        61,
+        15,
+        64,
+        21
+      ],
+      [
+        63,
+        37,
+        35,
+        18
+      ],
+      [
+        5,
+        61,
+        67,
+        14
+      ],
+      [
+        13,
+        31,
+        1,
+        13
+      ],
+      [
+        56,
+        7,
+        26,
+        70
+      ],
+      [
+        18,
+        0,
+        10,
+        31
+      ],
+      [
+        68,
+        69,
+        69,
+        30
+      ],
+      [
+        2,
+        1,
+        4,
+        23
+      ],
+      [
+        2,
+        16,
+        11,
+        71
+      ],
+      [
+        58,
+        70,
+        68,
+        46
+      ],
+      [
+        63,
+        30,
+        31,
+        32
+      ],
+      [
+        52,
+        68,
+        11,
+        40
+      ],
+      [
+        8,
+        37,
+        18,
+        12
+      ],
+      [
+        59,
+        59,
+        51,
+        43
+      ],
+      [
+        54,
+        22,
+        6,
+        27
+      ],
+      [
+        13,
+        38,
+        36,
+        44
+      ],
+      [
+        56,
+        62,
+        55,
+        23
+      ],
+      [
+        20,
+        40,
+        25,
+        16
+      ],
+      [
+        44,
+        46,
+        64,
+        49
+      ],
+      [
+        45,
+        53,
+        3,
+        7
+      ],
+      [
+        35,
+        71,
+        70,
+        47
+      ],
+      [
+        62,
+        21,
+        41,
+        26
+      ],
+      [
+        66,
+        8,
+        17,
+        54
+      ],
+      [
+        23,
+        7,
+        26,
+        68
+      ],
+      [
+        2,
+        49,
+        38,
+        56
+      ],
+      [
+        34,
+        22,
+        31,
+        12
+      ],
+      [
+        29,
+        49,
+        55,
+        62
+      ],
+      [
+        55,
+        14,
+        60,
+        24
+      ],
+      [
+        52,
+        40,
+        51,
+        35
+      ],
+      [
+        20,
+        21,
+        51,
+        28
+      ],
+      [
+        37,
+        12,
+        50,
+        62
+      ],
+      [
+        1,
+        8,
+        2,
+        16
+      ],
+      [
+        6,
+        50,
+        45,
+        14
+      ],
+      [
+        47,
+        8,
+        16,
+        57
+      ],
+      [
+        39,
+        51,
+        61,
+        62
+      ],
+      [
+        29,
+        15,
+        18,
+        65
+      ],
+      [
+        15,
+        62,
+        32,
+        22
+      ],
+      [
+        6,
+        22,
+        46,
+        27
+      ],
+      [
+        37,
+        4,
+        34,
+        36
+      ],
+      [
+        21,
+        64,
+        66,
+        14
+      ],
+      [
+        9,
+        30,
+        23,
+        1
+      ],
+      [
+        17,
+        12,
+        54,
+        28
+      ],
+      [
+        24,
+        6,
+        6,
+        61
+      ],
+      [
+        15,
+        12,
+        0,
+        44
+      ],
+      [
+        11,
+        26,
+        57,
+        68
+      ],
+      [
+        8,
+        44,
+        12,
+        64
+      ],
+      [
+        35,
+        57,
+        50,
+        64
+      ],
+      [
+        33,
+        10,
+        49,
+        53
+      ],
+      [
+        46,
+        8,
+        60,
+        28
+      ],
+      [
+        18,
+        14,
+        4,
+        58
+      ],
+      [
+        11,
+        35,
+        41,
+        50
+      ],
+      [
+        24,
+        19,
+        65,
+        54
+      ],
+      [
+        33,
+        12,
+        23,
+        24
+      ],
+      [
+        23,
+        67,
+        18,
+        41
+      ],
+      [
+        22,
+        8,
+        27,
+        23
+      ],
+      [
+        44,
+        71,
+        29,
+        34
+      ],
+      [
+        61,
+        10,
+        49,
+        30
+      ],
+      [
+        44,
+        4,
+        33,
+        32
+      ],
+      [
+        30,
+        68,
+        59,
+        20
+      ],
+      [
+        12,
+        0,
+        33,
+        68
+      ],
+      [
+        32,
+        1,
+        39,
+        57
+      ],
+      [
+        24,
+        70,
+        25,
+        46
+      ],
+      [
+        71,
+        50,
+        47,
+        22
+      ],
+      [
+        25,
+        15,
+        69,
+        65
+      ],
+      [
+        41,
+        51,
+        56,
+        67
+      ],
+      [
+        45,
+        57,
+        70,
+        32
+      ],
+      [
+        43,
+        47,
+        46,
+        61
+      ],
+      [
+        71,
+        49,
+        6,
+        55
+      ],
+      [
+        17,
+        11,
+        13,
+        60
+      ],
+      [
+        66,
+        17,
+        6,
+        54
+      ],
+      [
+        16,
+        2,
+        15,
+        55
+      ],
+      [
+        49,
+        18,
+        17,
+        22
+      ],
+      [
+        27,
+        25,
+        23,
+        64
+      ],
+      [
+        18,
+        14,
+        11,
+        39
+      ],
+      [
+        33,
+        61,
+        18,
+        50
+      ],
+      [
+        9,
+        32,
+        10,
+        64
+      ],
+      [
+        52,
+        40,
+        17,
+        55
+      ],
+      [
+        57,
+        4,
+        9,
+        19
+      ],
+      [
+        45,
+        0,
+        34,
+        55
+      ],
+      [
+        2,
+        60,
+        59,
+        28
+      ],
+      [
+        8,
+        7,
+        39,
+        15
+      ],
+      [
+        32,
+        39,
+        56,
+        2
+      ],
+      [
+        52,
+        7,
+        38,
+        0
+      ],
+      [
+        57,
+        46,
+        24,
+        69
+      ],
+      [
+        17,
+        36,
+        55,
+        46
+      ],
+      [
+        59,
+        32,
+        43,
+        59
+      ],
+      [
+        9,
+        21,
+        57,
+        42
+      ],
+      [
+        59,
+        26,
+        68,
+        12
+      ],
+      [
+        19,
+        31,
+        39,
+        58
+      ],
+      [
+        9,
+        59,
+        33,
+        21
+      ],
+      [
+        4,
+        25,
+        32,
+        46
+      ],
+      [
+        0,
+        69,
+        67,
+        45
+      ],
+      [
+        21,
+        32,
+        48,
+        48
+      ],
+      [
+        67,
+        45,
+        68,
+        31
+      ],
+      [
+        53,
+        36,
+        61,
+        34
+      ],
+      [
+        28,
+        24,
+        68,
+        69
+      ],
+      [
+        1,
+        40,
+        71,
+        61
+      ],
+      [
+        68,
+        35,
+        41,
+        1
+      ],
+      [
+        50,
+        10,
+        29,
+        65
+      ],
+      [
+        37,
+        22,
+        46,
+        39
+      ],
+      [
+        58,
+        16,
+        58,
+        21
+      ],
+      [
+        59,
+        3,
+        69,
+        35
+      ],
+      [
+        71,
+        32,
+        36,
+        20
+      ],
+      [
+        15,
+        51,
+        7,
+        48
+      ],
+      [
+        19,
+        40,
+        42,
+        68
+      ],
+      [
+        8,
+        52,
+        71,
+        58
+      ],
+      [
+        40,
+        4,
+        66,
+        42
+      ],
+      [
+        43,
+        33,
+        35,
+        71
+      ],
+      [
+        46,
+        3,
+        37,
+        60
+      ],
+      [
+        62,
+        34,
+        38,
+        42
+      ],
+      [
+        37,
+        34,
+        34,
+        7
+      ],
+      [
+        34,
+        6,
+        58,
+        59
+      ],
+      [
+        5,
+        29,
+        32,
+        8
+      ],
+      [
+        20,
+        10,
+        16,
+        4
+      ],
+      [
+        4,
+        71,
+        70,
+        59
+      ],
+      [
+        16,
+        30,
+        21,
+        3
+      ],
+      [
+        2,
+        44,
+        22,
+        37
+      ],
+      [
+        20,
+        57,
+        36,
+        20
+      ],
+      [
+        45,
+        22,
+        53,
+        50
+      ],
+      [
+        39,
+        58,
+        30,
+        65
+      ],
+      [
+        2,
+        32,
+        8,
+        71
+      ],
+      [
+        41,
+        37,
+        67,
+        25
+      ],
+      [
+        21,
+        16,
+        45,
+        9
+      ],
+      [
+        3,
+        18,
+        50,
+        51
+      ],
+      [
+        55,
+        3,
+        56,
+        13
+      ],
+      [
+        63,
+        47,
+        69,
+        50
+      ],
+      [
+        56,
+        5,
+        23,
+        31
+      ],
+      [
+        11,
+        55,
+        27,
+        15
+      ],
+      [
+        70,
+        70,
+        71,
+        3
+      ],
+      [
+        50,
+        26,
+        33,
+        34
+      ],
+      [
+        20,
+        4,
+        33,
+        44
+      ],
+      [
+        52,
+        0,
+        61,
+        59
+      ],
+      [
+        4,
+        51,
+        43,
+        67
+      ],
+      [
+        13,
+        57,
+        49,
+        21
+      ],
+      [
+        35,
+        70,
+        14,
+        1
+      ],
+      [
+        37,
+        40,
+        37,
+        40
+      ],
+      [
+        46,
+        48,
+        19,
+        23
+      ],
+      [
+        37,
+        48,
+        67,
+        6
+      ],
+      [
+        56,
+        71,
+        14,
+        22
+      ],
+      [
+        5,
+        19,
+        61,
+        66
+      ],
+      [
+        24,
+        52,
+        49,
+        16
+      ],
+      [
+        1,
+        43,
+        3,
+        15
+      ],
+      [
+        58,
+        32,
+        62,
+        71
+      ],
+      [
+        66,
+        31,
+        1,
+        40
+      ],
+      [
+        69,
+        2,
+        6,
+        63
+      ],
+      [
+        0,
+        68,
+        0,
+        16
+      ],
+      [
+        60,
+        21,
+        65,
+        35
+      ],
+      [
+        13,
+        44,
+        48,
+        40
+      ],
+      [
+        45,
+        60,
+        67,
+        13
+      ],
+      [
+        51,
+        60,
+        24,
+        21
+      ],
+      [
+        21,
+        63,
+        49,
+        20
+      ],
+      [
+        36,
+        47,
+        8,
+        34
+      ],
+      [
+        56,
+        40,
+        29,
+        29
+      ],
+      [
+        2,
+        14,
+        52,
+        0
+      ],
+      [
+        18,
+        9,
+        1,
+        5
+      ],
+      [
+        52,
+        6,
+        44,
+        25
+      ],
+      [
+        42,
+        10,
+        50,
+        63
+      ],
+      [
+        64,
+        31,
+        5,
+        52
+      ],
+      [
+        59,
+        9,
+        26,
+        39
+      ],
+      [
+        8,
+        70,
+        31,
+        38
+      ],
+      [
+        8,
+        40,
+        30,
+        37
+      ],
+      [
+        31,
+        53,
+        47,
+        45
+      ],
+      [
+        58,
+        58,
+        14,
+        39
+      ],
+      [
+        56,
+        29,
+        58,
+        9
+      ],
+      [
+        42,
+        25,
+        44,
+        43
+      ],
+      [
+        69,
+        58,
+        46,
+        33
+      ],
+      [
+        5,
+        18,
+        41,
+        42
+      ],
+      [
+        20,
+        58,
+        11,
+        53
+      ],
+      [
+        44,
+        61,
+        35,
+        55
+      ],
+      [
+        66,
+        7,
+        56,
+        13
+      ],
+      [
+        52,
+        16,
+        49,
+        42
+      ],
+      [
+        53,
+        26,
+        30,
+        14
+      ],
+      [
+        38,
+        50,
+        32,
+        60
+      ],
+      [
+        45,
+        30,
+        27,
+        48
+      ],
+      [
+        54,
+        55,
+        10,
+        39
+      ],
+      [
+        47,
+        59,
+        58,
+        35
+      ],
+      [
+        48,
+        36,
+        9,
+        49
+      ],
+      [
+        7,
+        69,
+        36,
+        63
+      ],
+      [
+        5,
+        4,
+        19,
+        55
+      ],
+      [
+        33,
+        44,
+        29,
+        35
+      ],
+      [
+        12,
+        58,
+        8,
+        25
+      ],
+      [
+        31,
+        20,
+        0,
+        23
+      ],
+      [
+        56,
+        46,
+        44,
+        64
+      ],
+      [
+        40,
+        45,
+        14,
+        46
+      ],
+      [
+        61,
+        5,
+        25,
+        35
+      ],
+      [
+        62,
+        69,
+        37,
+        48
+      ],
+      [
+        63,
+        5,
+        0,
+        43
+      ],
+      [
+        26,
+        44,
+        5,
+        27
+      ],
+      [
+        69,
+        15,
+        21,
+        67
+      ],
+      [
+        7,
+        40,
+        65,
+        7
+      ],
+      [
+        26,
+        49,
+        41,
+        24
+      ],
+      [
+        55,
+        55,
+        30,
+        55
+      ],
+      [
+        59,
+        49,
+        57,
+        9
+      ]
+    ],
+    "evaluated_J": [
+      155.62744057006842,
+      163.30471620742955,
+      2391.8522247719043,
+      97.14363205201201,
+      36.23452497038776,
+      198.2346101031899,
+      42.7497238476047,
+      104.68014810785999,
+      116.60513415799379,
+      322.6326091465428,
+      60.37343003231818,
+      74.8787072914369,
+      108.97525436329202,
+      43.64706233648576,
+      84.73782064136219,
+      39.16483588653191,
+      103.65800211583569,
+      66.10315173739521,
+      131.37266054318187,
+      229.19553525117652,
+      79.69042640194384,
+      60.0101904711403,
+      96.68905728209786,
+      156.10170186265998,
+      76.27408426546016,
+      1745.8578636937568,
+      51.145393507191706,
+      41.73341873518222,
+      136.99068040534024,
+      53.058261761917926,
+      44.872344808827215,
+      65.34830322308629,
+      190.15421973813224,
+      45.285825068809736,
+      116.67018484098655,
+      76.23853709731206,
+      526.3250468348704,
+      39.64915594377625,
+      43.411108516617624,
+      90.06021633422661,
+      79.21545122299155,
+      134.94730144982222,
+      134.72574396976748,
+      49.74384464453187,
+      140.9919206267863,
+      46.32661422315007,
+      101.4354264615259,
+      78.82999053646724,
+      130.70566271045774,
+      105.94475489384702,
+      42.606041771452965,
+      102.17181920643502,
+      36.28658791502771,
+      70.15727912732675,
+      94.40209743549526,
+      60.408235145625,
+      160.11868026568644,
+      93.80554708937215,
+      49.8207624646379,
+      117.31930071550977,
+      80.63910462988761,
+      259.23637112087107,
+      186.5940475716605,
+      73.58868222244564,
+      297.8114346865592,
+      159.98367091336996,
+      73.35146030644914,
+      130.77057483607328,
+      68.92350551610774,
+      94.55897654111172,
+      31.36365530362526,
+      168.02398438008308,
+      109.14544954969956,
+      40.09380633914334,
+      136.7455920908039,
+      48.92542588317928,
+      917.5689935616708,
+      374.7434092673408,
+      53.37351642358012,
+      101.63899386964066,
+      337.5017497701153,
+      411.1893925449774,
+      49.279368850553155,
+      155.26981402045016,
+      41.49015605922069,
+      86.48212240024752,
+      106.39101213957866,
+      71.7634749307085,
+      1484.1125463987566,
+      50.78227761255484,
+      53.00667955979954,
+      425.8999588311438,
+      164.25648506977709,
+      42.17048474677831,
+      68.3574155426922,
+      334.37736418580744,
+      53.45377457460493,
+      53.98318784298334,
+      268.95014058470804,
+      46.860472413621366,
+      44.097559204029345,
+      172.87668226829825,
+      142.23331782005386,
+      62.75587143118195,
+      136.47896762066875,
+      76.46508042573386,
+      157.4782403757683,
+      52.36499732903921,
+      38.503599184655094,
+      232.94580859796045,
+      60.908687089936386,
+      299.60315398513075,
+      42.8685572625542,
+      191.39031157756799,
+      184.6806911762988,
+      100.77945023364323,
+      41.40381179733006,
+      68.44033086985452,
+      128.20182516380817,
+      55.01740679007001,
+      288.8876671194256,
+      51.78147037211429,
+      44.98461903786553,
+      148.83166751186246,
+      132.50528675573665,
+      200.95091131664225,
+      211.82324176735523,
+      66.35894088359039,
+      55.91056374230459,
+      52.75644329223432,
+      186.0367874830518,
+      81.45996226306383,
+      73.20668395743806,
+      522.783450351489,
+      52.03758843271273,
+      32.839186490243634,
+      121.81559526897318,
+      105.37675819304417,
+      47.04276848129203,
+      153.6392014658732,
+      80.9610166737211,
+      801.6564039659598,
+      123.60123079289693,
+      127.21573327850487,
+      76.01967842041823,
+      43.15495827959076,
+      78.59272848998881,
+      110.56375678063952,
+      97.91604870567225,
+      51.47583326385575,
+      56.07721786537263,
+      66.84970612938827,
+      73.37573951715116,
+      122.62298792645618,
+      116.75699535470643,
+      152.0291135449467,
+      461.493351310948,
+      128.6006477604701,
+      55.03458016325591,
+      61.86550569488246,
+      41.38388794196853,
+      306.4373413427836,
+      66.67023248015518,
+      49.38034836492263,
+      45.43343899408658,
+      52.13258732982191,
+      292.4528484022688,
+      69.9914451532806,
+      86.42359915315205,
+      98.70026616802824,
+      177.20967842330873,
+      171.41247743855158,
+      474.7335574480417,
+      142.94212954375172,
+      206.4722355922363,
+      43.948644944497644,
+      935.879254274739,
+      153.70072624152962,
+      53.62682727273258,
+      245.56840604674693,
+      112.48705012482415,
+      89.3310877858419,
+      74.4729299607349,
+      209.84314814058183,
+      57.40051865522174,
+      102.26662574789316,
+      675.7964273966162,
+      84.59310081924025,
+      68.95036384272034,
+      70.10994812309946,
+      53.27285790658857,
+      98.03367488675568,
+      26.15077789702448,
+      85.51077192010503,
+      51.177060673525304,
+      95.5401253786353,
+      136.9085063398697,
+      43.821614389482896,
+      98.2323634960919,
+      70.82036389471709,
+      213.83875875391283,
+      151.40762920463254,
+      39.90525578487684,
+      303.68442451693085,
+      2484.8703947206736,
+      88.98396179951574,
+      63.51554910455375,
+      14936.99201752591,
+      82.86210763286444,
+      75.0082029125301,
+      44.38217876515634,
+      118.90310358069723,
+      42.832698754990645,
+      58.33017567118995,
+      200.15495630693238,
+      163.0912226446699,
+      36.00763114679182,
+      63.62115821937061,
+      118.19090045698374,
+      81.54049087480608,
+      124.81910268598051,
+      120.44827934481619,
+      265.33682303809536,
+      70.77941889990127,
+      62.490831974421354,
+      104.48602300238538,
+      76.0095347380837,
+      162.0066653815674,
+      43.561496341378074,
+      60.19054045872996,
+      126.80012514880843,
+      87.26102315402794,
+      28.39797593067819,
+      55.91404307105075,
+      52.55919843741223,
+      3334.7321251173203,
+      226.1927192361421,
+      66.71258906400017,
+      62.130885814851894,
+      1468.7630956924866,
+      44.85689978029465,
+      322.10860248808456,
+      46.80865077042704,
+      82.96580790155345,
+      77.18808974449634,
+      63.87866678291617,
+      74.76108054156323,
+      179.75429412857133,
+      551.6572156399366,
+      74.21569577600376,
+      111.56526535440142,
+      172.78755423868216,
+      107.27339031513335,
+      54.481468275198594,
+      47.92873951682707,
+      52.94209193328406,
+      95.7977929112838,
+      64.43398310184764,
+      131.08003941356472,
+      43.07921650680172,
+      126.65481339788819,
+      53.33133831072611,
+      98.34122817071518,
+      867.8501519208028,
+      48.21752185283854,
+      82.76913808644831,
+      102.0763805307639,
+      50.196368958249586,
+      39.58113994889701,
+      45.582163163065296,
+      1379.3787821887922,
+      33.70965115457955,
+      30.11769591745104,
+      135.2948656865859,
+      54.21562892819891,
+      85.50293559881126,
+      108.70795959087027,
+      41.31654799040354,
+      63.636565327010686,
+      56.99173413874095,
+      117.85919175203266,
+      95.03381099198708,
+      115.31466823796782,
+      116.4546979381212,
+      201.08307745306706,
+      119.91250292829613,
+      98.92970189614721,
+      55.204177195767855,
+      66.1780253864143,
+      2820.09531530806,
+      87.80679235762318,
+      63.014021204351074,
+      94.57561412831119,
+      113.06097768597925,
+      175.2519365901991,
+      161.0558364267457,
+      5221.540249655529,
+      82.09278472918548,
+      105.52805159362205,
+      55.95993771442721,
+      132.4553506496546,
+      80.17387193869726,
+      435.3233774991148,
+      94.3325057306745,
+      84.37212339811481,
+      104.84733698757756,
+      93.15989520738717,
+      56.783571230932004,
+      66.48786599600768,
+      348.3540051503591,
+      77.56751745188987,
+      34.68399959424162,
+      55.45292538368428,
+      62.55107189165303,
+      127.40394177226668,
+      1770.331631330537,
+      42.333313605556334,
+      183.66771073777045,
+      68.5141113188056,
+      69.91783120350895,
+      49.8764392791097,
+      59.938598440547274,
+      60.3141815673224,
+      47.02763159296378,
+      109.252210869533,
+      52.5111439800524,
+      171.07239432905803,
+      131.96534923093992,
+      132.03245839642597,
+      66.52730987221713,
+      1636.1605024091568,
+      1179.3522874880325,
+      122.47309591351059,
+      45.60267516289787,
+      624.8188978109843,
+      49.983967849232435,
+      57.81152869907896,
+      176.12090713007152,
+      43.470437253383615,
+      104.3550828042666,
+      108.29092751447116,
+      45.50966940402814,
+      73.5095272889253,
+      61.437239028692815,
+      101.84997741703516,
+      108.80717536387252,
+      58.78353490918317,
+      71.41198033897925,
+      122.31948403492565,
+      141.54779445783507,
+      249.72141562723817,
+      70.02935388553385,
+      45.692555385783834,
+      216.47823827805152,
+      199.03383747020254,
+      63.55274470704417,
+      537.8661213565031,
+      74.60743999361323,
+      84.76650543342964,
+      169.22923875088216,
+      295.9757992312016,
+      95.39831221241545,
+      49.674321571597325,
+      51.11148090443712,
+      242.3363978159267,
+      204.9593885064303,
+      188.64675231337634,
+      1222.466702089552,
+      53.652987069990985,
+      211.7088582434005,
+      113.46357117782209,
+      106.59179164386363,
+      303.94585692166936,
+      103.95700268659381,
+      93.47161680590303,
+      99.99017783689146,
+      38.33620860438341,
+      158.50404193518978,
+      102.76063706690644,
+      60.234445741932525,
+      77.94862405979795,
+      142.91912782007367,
+      50.36776445145593,
+      72.7558994245439,
+      36.78780041364352,
+      240.7275398663191,
+      113.30252636429012,
+      59.627725535784684,
+      89.43037703936729,
+      779.4335323270398,
+      84.59764108696356,
+      176.35369124598859,
+      89.78227835749247,
+      248.0048601796448,
+      180.14390189265922,
+      271.4983067163535,
+      105.27529567473859,
+      43.82552348208273,
+      63.457318362423486,
+      622.9519380058834,
+      41.80297958298019,
+      41.49716008661539,
+      61.49813772893753,
+      45.49947216204005,
+      51.46044534122296,
+      111.45502769760242,
+      130.12584420433978,
+      98.57681761391193,
+      105.12990337624288,
+      105.06929084693788,
+      63.921942477038876,
+      126.12073657487923,
+      226.74226941169434,
+      143.71158136432712,
+      49.244840730888,
+      88.12544105717616,
+      42.77940079310465,
+      107.00174370294108,
+      201.45792234276095,
+      84.50547884961448,
+      117.91873084859797,
+      109.87018451879355,
+      291.5992327201765,
+      90.252351494481,
+      56.58687281320009,
+      63.72647981907393,
+      108.09789952544894,
+      73.21420430316493,
+      69.30721408707893,
+      55.55016074919707,
+      103.18443197184138,
+      47.44289404237676,
+      41.82896069845696,
+      74.96533316748055,
+      100.00118285644646,
+      158.92146018810922,
+      101.16707252943645,
+      269.0309704359148,
+      166.2715970799864,
+      66.3660572925931,
+      152.11493906542145,
+      62.0206818579179,
+      44.26513732656329,
+      96.34443494588493,
+      114.51609887844891,
+      140.05740412157317,
+      74.14785442753313,
+      90.03389575870268,
+      46.28905163495208,
+      159.68896025041522,
+      41.128045761563115,
+      117.94551701768327,
+      46.84744769938953,
+      234.7860256199471,
+      51.083081640499636,
+      117.67539128114278,
+      130.2648738217265,
+      146.2812362607775,
+      59.00105188190984,
+      73.19478118565902,
+      110.30171743641465,
+      115.61603044289714,
+      73.26617948533156,
+      47.33754687465038,
+      54.33731018004287,
+      292.92038149949485,
+      48.19068690797971,
+      75.68337968537715,
+      80.73716977678748,
+      101.0287623137175,
+      117.28671853634675,
+      373.9974713030474,
+      60.81855843425334,
+      61.58368695425551,
+      93.81924579498765,
+      642.328286818122,
+      68.62764273066945,
+      70.29547291791957,
+      66.80207834553448,
+      67.77340196400253,
+      99.77735916368745,
+      217.16615897563804,
+      97.15713431965969,
+      65.0792518698829,
+      2467.501024517749,
+      39.08506145550096,
+      91.64480606465983,
+      137.32953115614174,
+      215.74704527405345,
+      74.10223935088177,
+      217.90922262110846,
+      69.53191989903382,
+      76.79598572720917,
+      59.34707081326108,
+      82.3480088024664,
+      40.35626554200458,
+      109.88393163093991,
+      57.15092872763182,
+      622.0312569860567,
+      58.30398777563773,
+      102.25304468168984,
+      152.30820088213383,
+      198.60658558068397,
+      220.428898663611,
+      48.627644812123194,
+      107.09975076965694,
+      89.99361439278263,
+      158.88497462109407,
+      88.29114322102181,
+      65.01540357737787,
+      72.95418562320833,
+      165.5691049466927,
+      62.834935175309724,
+      158.95385614669684,
+      53.467819053221035,
+      201.94439520170377,
+      66.0598469880118,
+      656.0377844703488,
+      32977.14699379909,
+      66.99014696890484,
+      171.67470754187116,
+      45.699930053671224,
+      91.29397274438868,
+      71.66982918968466,
+      578.4925811688488,
+      105.9450624788426,
+      53.88616384415654,
+      45.26929803809037,
+      34.378536116750425,
+      64.0547390432176,
+      187.93544776472336,
+      62.517505321140625,
+      310.0979572586733,
+      66.45947204195575,
+      43.8064806850409,
+      103.5717518861477,
+      110.90850140205501,
+      246.82175885575944,
+      139.52903889492177,
+      106.53561028926285,
+      41.68161295223091,
+      67.25291782982632,
+      72.77125672127535,
+      76.10215480710245,
+      36.064970328273695,
+      85.3541236822776,
+      114.11534424943633,
+      68.68403959251292,
+      73.7302808526369,
+      57.591770903093824,
+      59.89223744178195,
+      47.90552964621692,
+      72.60297746973795,
+      773.9546897964236,
+      47.86431442498279,
+      94.72906309194583,
+      211.32134781767337,
+      63.913419493940374,
+      104.09686830948743,
+      137.43696780322642,
+      56.53853951079008,
+      80.87565292566723,
+      32.44398713085256,
+      125.72112628443669,
+      127.99322474268268,
+      81.56055130537219,
+      106.21899423882283,
+      147.66782111898897,
+      116.59226173713188,
+      53.16001064006164,
+      71.21201396289815,
+      98.71394778528881,
+      50.37749242433931,
+      100.86522328282345,
+      104.67802956584478,
+      55.344237388695085,
+      40.14639727551983,
+      42.94261650333725,
+      49.27738077650348,
+      66.21456584851941,
+      47.97745575305831,
+      180.53692179995178,
+      248.47056098979647,
+      59.187630376366336,
+      51.508345106323446,
+      125.51864647109501,
+      187.3472364681829,
+      51.56506668666811,
+      79.77652056952867,
+      71.82447453985927,
+      68.26632849934316,
+      2717.415626939895,
+      66.62581690009118,
+      76.53737425897185,
+      117.01635641025855,
+      336.2005428871534,
+      112.35340123284792,
+      58.97200414154415,
+      112.27817902167529,
+      44.51761153617703
+    ]
+  },
+  "random": {
+    "seed": 1000020,
+    "budget": 600,
+    "best_J": 24.863663104388618,
+    "best_state4": [
+      40,
+      21,
+      52,
+      38
+    ],
+    "best_state8": [
+      40,
+      21,
+      52,
+      38,
+      2,
+      2,
+      2,
+      2
+    ],
+    "median_J": 95.53413255768137,
+    "mean_J": 161.52962176472863,
+    "top20": [
+      {
+        "state": [
+          40,
+          21,
+          52,
+          38,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 24.863663104388618,
+        "score": -24.863663104388618,
+        "metrics": {
+          "efl": 89.62550174078503,
+          "fno": 2.075597145919246,
+          "mtf_mean": 0.00620338933701405,
+          "mtf_geomean_reg": 0.004980797695749976,
+          "mtf_p10": 0.0023582865347757053,
+          "onaxis_pupil_fill": 1.0,
+          "min_illum": 0.655160264780515,
+          "dist_max": 5.226843163916323,
+          "lca": 0.031372572838400004
+        },
+        "costs": {
+          "mtf_log_global": 14.768473873652848,
+          "mtf_log_lower_tail": 5.697677019380099,
+          "onaxis_pupil_fill": -0.0,
+          "relative_illumination": 0.2748347981991293,
+          "distortion_max": 1.7286573969590802,
+          "lateral_ca": 0.3441070693121289,
+          "efl": 1.9948607837021823,
+          "fno": 0.05505216318314954
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          0,
+          61,
+          43,
+          57,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 27.278461159140658,
+        "score": -27.278461159140658,
+        "metrics": {
+          "efl": 114.86582111206678,
+          "fno": 2.3466802043270745,
+          "mtf_mean": 0.015789780257597575,
+          "mtf_geomean_reg": 0.011127222122236234,
+          "mtf_p10": 0.005593585199082182,
+          "onaxis_pupil_fill": 1.0,
+          "min_illum": 0.6648029267577129,
+          "dist_max": 5.924022012498985,
+          "lca": 0.17829699661960774
+        },
+        "costs": {
+          "mtf_log_global": 12.557796150209676,
+          "mtf_log_lower_tail": 4.971529161758889,
+          "onaxis_pupil_fill": -0.0,
+          "relative_illumination": 0.26533924220856403,
+          "distortion_max": 2.003132515849179,
+          "lateral_ca": 3.188304279381693,
+          "efl": 3.34366330168495,
+          "fno": 0.9486965080477066
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          27,
+          30,
+          65,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 31.053303223005923,
+        "score": -31.053303223005923,
+        "metrics": {
+          "efl": 69.64998711265197,
+          "fno": 2.7814433983874807,
+          "mtf_mean": 0.02355948171046291,
+          "mtf_geomean_reg": 0.014464667295874945,
+          "mtf_p10": 0.00522779377564509,
+          "onaxis_pupil_fill": 1.0,
+          "min_illum": 0.6724020571219126,
+          "dist_max": 1.488395854245642,
+          "lca": 0.12860911234957584
+        },
+        "costs": {
+          "mtf_log_global": 11.832460323706684,
+          "mtf_log_lower_tail": 4.852412395966284,
+          "onaxis_pupil_fill": -0.0,
+          "relative_illumination": 0.2579525673359781,
+          "distortion_max": 0.31725278321502404,
+          "lateral_ca": 2.20309844449616,
+          "efl": 8.312469702378072,
+          "fno": 3.2776570059077192
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          40,
+          18,
+          52,
+          65,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 31.60649299394987,
+        "score": -31.60649299394987,
+        "metrics": {
+          "efl": 119.5292877110655,
+          "fno": 2.3849088655534376,
+          "mtf_mean": 0.008436032744355426,
+          "mtf_geomean_reg": 0.007091493058320034,
+          "mtf_p10": 0.003627978009425414,
+          "onaxis_pupil_fill": 1.0,
+          "min_illum": 0.45012157280128,
+          "dist_max": 10.695857934510043,
+          "lca": 0.1274415959208426
+        },
+        "costs": {
+          "mtf_log_global": 13.807939165995432,
+          "mtf_log_lower_tail": 5.2642170326725575,
+          "onaxis_pupil_fill": -0.0,
+          "relative_illumination": 0.5187750284577164,
+          "distortion_max": 3.8970013163641726,
+          "lateral_ca": 2.180027935573669,
+          "efl": 4.81006671937927,
+          "fno": 1.1284657955070552
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          8,
+          21,
+          60,
+          46,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 32.63319071763656,
+        "score": -32.63319071763656,
+        "metrics": {
+          "efl": 74.45941842837232,
+          "fno": 1.589097195119282,
+          "mtf_mean": 0.008642722964619426,
+          "mtf_geomean_reg": 0.007353290061025252,
+          "mtf_p10": 0.0029748873796082392,
+          "onaxis_pupil_fill": 1.0,
+          "min_illum": 0.55993393128579,
+          "dist_max": 13.952176267569804,
+          "lca": 0.009616048423517043
+        },
+        "costs": {
+          "mtf_log_global": 13.708579893006268,
+          "mtf_log_lower_tail": 5.308340188296606,
+          "onaxis_pupil_fill": -0.0,
+          "relative_illumination": 0.3769076353296171,
+          "distortion_max": 5.195186825854352,
+          "lateral_ca": 0.04383257531795684,
+          "efl": 6.745292746621322,
+          "fno": 1.2550508532104367
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          28,
+          56,
+          1,
+          26,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 34.20770428971819,
+        "score": -34.20770428971819,
+        "metrics": {
+          "efl": 91.76793240958087,
+          "fno": 3.1136345618382597,
+          "mtf_mean": 0.009051892887115432,
+          "mtf_geomean_reg": 0.007329959028697074,
+          "mtf_p10": 0.003394280224962969,
+          "onaxis_pupil_fill": 1.0,
+          "min_illum": 0.5882308424762166,
+          "dist_max": 13.104391153819615,
+          "lca": 0.18034069163915945
+        },
+        "costs": {
+          "mtf_log_global": 13.704510583540925,
+          "mtf_log_lower_tail": 5.435003130005558,
+          "onaxis_pupil_fill": -0.0,
+          "relative_illumination": 0.34486778757835207,
+          "distortion_max": 4.856996366935108,
+          "lateral_ca": 3.2289262908408816,
+          "efl": 1.3955352517555082,
+          "fno": 5.241864879061854
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          70,
+          21,
+          3,
+          31,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 34.27151779062293,
+        "score": -34.27151779062293,
+        "metrics": {
+          "efl": 87.96678122352581,
+          "fno": 2.0897000379003177,
+          "mtf_mean": 0.01040172601978046,
+          "mtf_geomean_reg": 0.0042846190695091475,
+          "mtf_p10": 0.0,
+          "onaxis_pupil_fill": 0.904493345531018,
+          "min_illum": 0.0,
+          "dist_max": 5.982810036573803,
+          "lca": 0.013906508843088972
+        },
+        "costs": {
+          "mtf_log_global": 15.242392114576125,
+          "mtf_log_lower_tail": 8.289396330278864,
+          "onaxis_pupil_fill": 0.08029581857725498,
+          "relative_illumination": 5.9867862385347355,
+          "distortion_max": 2.0263228452529805,
+          "lateral_ca": 0.08719235962929953,
+          "efl": 2.482042616219763,
+          "fno": 0.077089467553908
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          44,
+          48,
+          25,
+          18,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 34.60091142667723,
+        "score": -34.60091142667723,
+        "metrics": {
+          "efl": 77.07833449459486,
+          "fno": 2.5238504278816785,
+          "mtf_mean": 0.009054618728521865,
+          "mtf_geomean_reg": 0.007075481546649333,
+          "mtf_p10": 0.0031811457712724745,
+          "onaxis_pupil_fill": 1.0,
+          "min_illum": 0.561119936047176,
+          "dist_max": 15.2618955809059,
+          "lca": 0.09569369585873488
+        },
+        "costs": {
+          "mtf_log_global": 13.810537395651197,
+          "mtf_log_lower_tail": 5.407185434471944,
+          "onaxis_pupil_fill": -0.0,
+          "relative_illumination": 0.37553256157537723,
+          "distortion_max": 5.717848729381597,
+          "lateral_ca": 1.555227191617798,
+          "efl": 5.897979696252004,
+          "fno": 1.8366004177273108
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          32,
+          57,
+          67,
+          7,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 35.55630868238622,
+        "score": -35.55630868238622,
+        "metrics": {
+          "efl": 64.39454625573485,
+          "fno": 1.7039879842809782,
+          "mtf_mean": 0.012776574531804646,
+          "mtf_geomean_reg": 0.008938872958946593,
+          "mtf_p10": 0.0023037810443464987,
+          "onaxis_pupil_fill": 0.3736723598849408,
+          "min_illum": 0.4726738687391137,
+          "dist_max": 11.055012030016478,
+          "lca": 0.05202866267978834
+        },
+        "costs": {
+          "mtf_log_global": 13.157493674600964,
+          "mtf_log_lower_tail": 5.609282163698884,
+          "onaxis_pupil_fill": 0.7873666602303673,
+          "relative_illumination": 0.4870047510784883,
+          "distortion_max": 4.040059296609613,
+          "lateral_ca": 0.7148061248929699,
+          "efl": 10.035818470691764,
+          "fno": 0.7244775405831714
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          10,
+          15,
+          24,
+          5,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 36.167946802038955,
+        "score": -36.167946802038955,
+        "metrics": {
+          "efl": 104.84195836807629,
+          "fno": 2.774767572731324,
+          "mtf_mean": 0.03488402030612337,
+          "mtf_geomean_reg": 0.008202118724502317,
+          "mtf_p10": 0.0,
+          "onaxis_pupil_fill": 0.13219822423416985,
+          "min_illum": 0.0,
+          "dist_max": 6.108760961829962,
+          "lca": 0.06508718733802965
+        },
+        "costs": {
+          "mtf_log_global": 13.426606438118364,
+          "mtf_log_lower_tail": 8.289396330278864,
+          "onaxis_pupil_fill": 1.618237300174344,
+          "relative_illumination": 5.9867862385347355,
+          "distortion_max": 2.076027802389229,
+          "lateral_ca": 0.9618137839772025,
+          "efl": 0.5700099618956087,
+          "fno": 3.2390689466706064
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          68,
+          24,
+          68,
+          54,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 36.73648215634061,
+        "score": -36.73648215634061,
+        "metrics": {
+          "efl": 62.164663142156314,
+          "fno": 1.959633924249316,
+          "mtf_mean": 0.009993024450140758,
+          "mtf_geomean_reg": 0.0070561075541242975,
+          "mtf_p10": 0.0018493813625311618,
+          "onaxis_pupil_fill": 1.0,
+          "min_illum": 0.5648637302556008,
+          "dist_max": 8.080919262616124,
+          "lca": 0.16943570210267822
+        },
+        "costs": {
+          "mtf_log_global": 13.795382953564852,
+          "mtf_log_lower_tail": 5.915399092117529,
+          "onaxis_pupil_fill": -0.0,
+          "relative_illumination": 0.3712109304373876,
+          "distortion_max": 2.857023331299187,
+          "lateral_ca": 3.0122401525700107,
+          "efl": 10.769376192657639,
+          "fno": 0.01584950369400273
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          68,
+          31,
+          59,
+          57,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 37.698378650361,
+        "score": -37.698378650361,
+        "metrics": {
+          "efl": 92.665504157034,
+          "fno": 2.8928671067466274,
+          "mtf_mean": 0.00972485941347142,
+          "mtf_geomean_reg": 0.008376056444465756,
+          "mtf_p10": 0.003909454023941534,
+          "onaxis_pupil_fill": 1.0,
+          "min_illum": 0.5774562156886317,
+          "dist_max": 29.934650745943998,
+          "lca": 0.12905960963525587
+        },
+        "costs": {
+          "mtf_log_global": 13.350387956788293,
+          "mtf_log_lower_tail": 5.111904695576411,
+          "onaxis_pupil_fill": -0.0,
+          "relative_illumination": 0.3568821705411848,
+          "distortion_max": 11.580539655836182,
+          "lateral_ca": 2.212001748789968,
+          "efl": 1.1586711212590943,
+          "fno": 3.927991301569868
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          28,
+          39,
+          4,
+          16,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 37.74850798042559,
+        "score": -37.74850798042559,
+        "metrics": {
+          "efl": 77.72402119404514,
+          "fno": 2.5762540352578465,
+          "mtf_mean": 0.010122388098013127,
+          "mtf_geomean_reg": 0.008232024484378625,
+          "mtf_p10": 0.0030336508847674452,
+          "onaxis_pupil_fill": 1.0,
+          "min_illum": 0.5805187438372245,
+          "dist_max": 22.34753125684721,
+          "lca": 0.13666869114646119
+        },
+        "costs": {
+          "mtf_log_global": 13.394369024992393,
+          "mtf_log_lower_tail": 5.280651043493292,
+          "onaxis_pupil_fill": -0.0,
+          "relative_illumination": 0.3534446105769165,
+          "distortion_max": 8.547957561595947,
+          "lateral_ca": 2.362486643564946,
+          "efl": 5.689959050341413,
+          "fno": 2.1196400458606863
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          1,
+          61,
+          62,
+          43,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 38.222735947891124,
+        "score": -38.222735947891124,
+        "metrics": {
+          "efl": 108.12473571905281,
+          "fno": 2.4752024654822566,
+          "mtf_mean": 0.033451741731883686,
+          "mtf_geomean_reg": 0.0011393700329996597,
+          "mtf_p10": 0.0,
+          "onaxis_pupil_fill": 0.21131445021739054,
+          "min_illum": 0.0,
+          "dist_max": 0.18203344883837197,
+          "lca": 0.05531976864652499
+        },
+        "costs": {
+          "mtf_log_global": 18.972940083895537,
+          "mtf_log_lower_tail": 8.289396330278864,
+          "onaxis_pupil_fill": 1.2432278784179873,
+          "relative_illumination": 5.9867862385347355,
+          "distortion_max": 0.006573226171324187,
+          "lateral_ca": 0.7764823505867056,
+          "efl": 1.3666886221140953,
+          "fno": 1.580641217891877
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          61,
+          16,
+          3,
+          31,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 38.25363929654606,
+        "score": -38.25363929654606,
+        "metrics": {
+          "efl": 93.76729337364051,
+          "fno": 2.1933460279442127,
+          "mtf_mean": 0.018531728993334818,
+          "mtf_geomean_reg": 0.0070665985855821595,
+          "mtf_p10": 0.0,
+          "onaxis_pupil_fill": 0.1440892936028701,
+          "min_illum": 0.0,
+          "dist_max": 14.599860015939539,
+          "lca": 0.11322148653656328
+        },
+        "costs": {
+          "mtf_log_global": 13.854441571295242,
+          "mtf_log_lower_tail": 8.289396330278864,
+          "onaxis_pupil_fill": 1.5493826389979897,
+          "relative_illumination": 5.9867862385347355,
+          "distortion_max": 5.453626738835063,
+          "lateral_ca": 1.8994873353466577,
+          "efl": 0.883798264832635,
+          "fno": 0.336720178424875
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          49,
+          57,
+          20,
+          52,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 38.549330436121934,
+        "score": -38.549330436121934,
+        "metrics": {
+          "efl": 101.56921179129027,
+          "fno": 2.7348801700065546,
+          "mtf_mean": 0.01630260359293389,
+          "mtf_geomean_reg": 0.005651875028635176,
+          "mtf_p10": 0.0,
+          "onaxis_pupil_fill": 0.6382705178116098,
+          "min_illum": 0.0,
+          "dist_max": 3.5681944918342663,
+          "lca": 0.2834399897108213
+        },
+        "costs": {
+          "mtf_log_global": 14.472008795458336,
+          "mtf_log_lower_tail": 8.289396330278864,
+          "onaxis_pupil_fill": 0.35914912822884437,
+          "relative_illumination": 5.9867862385347355,
+          "distortion_max": 1.0822691756388323,
+          "lateral_ca": 5.282894606352311,
+          "efl": 0.06726941871328362,
+          "fno": 3.009556742916727
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          25,
+          68,
+          12,
+          64,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 38.645746048155516,
+        "score": -38.645746048155516,
+        "metrics": {
+          "efl": 82.77271334583745,
+          "fno": 2.8330806933005066,
+          "mtf_mean": 0.021771777933876725,
+          "mtf_geomean_reg": 0.019642416678534072,
+          "mtf_p10": 0.009592943365978178,
+          "onaxis_pupil_fill": 0.18372561255602549,
+          "min_illum": 0.7267463789305383,
+          "dist_max": 29.723849949027255,
+          "lca": 0.15356617595030997
+        },
+        "costs": {
+          "mtf_log_global": 10.988148304837459,
+          "mtf_log_lower_tail": 4.24312699459045,
+          "onaxis_pupil_fill": 1.355094178902093,
+          "relative_illumination": 0.20744108254269764,
+          "distortion_max": 11.496266680213841,
+          "lateral_ca": 2.6972613965244565,
+          "efl": 4.0807474455099975,
+          "fno": 3.577659965034524
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          5,
+          40,
+          69,
+          71,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 39.02248431545831,
+        "score": -39.02248431545831,
+        "metrics": {
+          "efl": 88.80963932363383,
+          "fno": 2.3574630890945527,
+          "mtf_mean": 0.012903816958929134,
+          "mtf_geomean_reg": 0.00222987029982921,
+          "mtf_p10": 0.0,
+          "onaxis_pupil_fill": 0.11867628167890752,
+          "min_illum": 0.0,
+          "dist_max": 7.35353656160428,
+          "lca": 0.019432363442604128
+        },
+        "costs": {
+          "mtf_log_global": 17.08457166370582,
+          "mtf_log_lower_tail": 8.289396330278864,
+          "onaxis_pupil_fill": 1.7044908289231353,
+          "relative_illumination": 5.9867862385347355,
+          "distortion_max": 2.5684878295280487,
+          "lateral_ca": 0.15771560816081076,
+          "efl": 2.2324693615372295,
+          "fno": 0.9985664547896631
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          9,
+          58,
+          23,
+          20,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 39.06548122736357,
+        "score": -39.06548122736357,
+        "metrics": {
+          "efl": 100.64372165293965,
+          "fno": 2.449134531537663,
+          "mtf_mean": 0.009919214305642408,
+          "mtf_geomean_reg": 0.0007729048485044045,
+          "mtf_p10": 0.0,
+          "onaxis_pupil_fill": 0.11479052076185559,
+          "min_illum": 0.0,
+          "dist_max": 4.752609292252632,
+          "lca": 0.0030219327352067893
+        },
+        "costs": {
+          "mtf_log_global": 20.05280762406018,
+          "mtf_log_lower_tail": 8.289396330278864,
+          "onaxis_pupil_fill": 1.731100473942306,
+          "relative_illumination": 5.9867862385347355,
+          "distortion_max": 1.5426701247429968,
+          "lateral_ca": 0.004540271150408159,
+          "efl": 0.011477554393600986,
+          "fno": 1.4467026102604805
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      },
+      {
+        "state": [
+          13,
+          9,
+          32,
+          34,
+          2,
+          2,
+          2,
+          2
+        ],
+        "J": 39.444331730756254,
+        "score": -39.444331730756254,
+        "metrics": {
+          "efl": 100.4661836553444,
+          "fno": 2.972841994946035,
+          "mtf_mean": 0.0244956429102337,
+          "mtf_geomean_reg": 0.002520665414990104,
+          "mtf_p10": 0.0,
+          "onaxis_pupil_fill": 0.07460997370621601,
+          "min_illum": 0.0,
+          "dist_max": 3.4531563393736806,
+          "lca": 0.06229129795255517
+        },
+        "costs": {
+          "mtf_log_global": 16.7394984267434,
+          "mtf_log_lower_tail": 8.289396330278864,
+          "onaxis_pupil_fill": 2.075393339151569,
+          "relative_illumination": 5.9867862385347355,
+          "distortion_max": 1.0380146705319324,
+          "lateral_ca": 0.9084656358672938,
+          "efl": 0.006027783138449649,
+          "fno": 4.400749306510008
+        },
+        "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+      }
+    ]
+  },
+  "success": {
+    "exact_reference_recovered": false,
+    "best_component_hamming_to_reference": 4,
+    "best_J_over_reference_J": 2.196282840292198,
+    "within_5pct_reference_J": false,
+    "within_10pct_reference_J": false,
+    "optv1_best_vs_random_best_ratio": 1.0517669012499078
+  },
+  "elapsed_sec": 2026.8462381362915
+}
