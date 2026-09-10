@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "job_id": "optv1-lamcts-mandler-smoke-20260910-1247",
+  "code_commit": "49025222c5c6a5ec6432885409da75ab5f69790a",
+  "entrypoint": "validation/optv1_lamcts_mandler_meta.py",
+  "args": ["--budget","48","--init","32","--batch","8","--pool","5000","--ensemble","1","--workers","8","--no-random"],
+  "env": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "NUMBA_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0"
+  },
+  "timeout_sec": 10800,
+  "memory_gb": 0
+}
