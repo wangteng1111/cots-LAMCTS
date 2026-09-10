@@ -1,0 +1,36 @@
+{
+  "args": [
+    "--seed",
+    "17",
+    "--budget",
+    "600",
+    "--init",
+    "96",
+    "--batch",
+    "16",
+    "--pool",
+    "60000",
+    "--ensemble",
+    "3",
+    "--workers",
+    "32",
+    "--no-random"
+  ],
+  "code_commit": "e62e570a3a9558f8e24330d33a3148083ef04515",
+  "entrypoint": "validation/optv1_transformer_only_lamcts_mandler_runner.py",
+  "env": {
+    "MKL_NUM_THREADS": "1",
+    "NUMBA_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "optv1-transformer-only-meta-rerun-20260910-1811",
+  "memory_gb": 0,
+  "request_sha256": "57c48e6287c764469876aea33f96c2b8dd9d1391e77c17693397a4b49cd7a656",
+  "schema": 1,
+  "started_at": 1789035263.0896869,
+  "state": "running",
+  "timeout_sec": 7200
+}
