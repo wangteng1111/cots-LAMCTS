@@ -1,0 +1,1392 @@
+Q reference-posthoc 0 (0, 2, 4, 6) 11.906835229630682
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+Q init-s17 2 (2, 15, 32, 27) 2391.8522247719043
+Q init-s17 25 (44, 51, 7, 35) 1745.8578636937568
+Q init-s17 16 (56, 40, 58, 17) 103.65800211583569
+Q init-s17 5 (42, 18, 26, 43) 198.2346101031899
+Q init-s17 11 (29, 40, 10, 32) 74.8787072914369
+Q init-s17 9 (35, 0, 50, 12) 322.6326091465428
+Q init-s17 29 (42, 6, 25, 17) 53.058261761917926
+Q init-s17 10 (34, 11, 41, 33) 60.37343003231818
+Q init-s17 18 (16, 37, 59, 20) 131.37266054318187
+Q init-s17 0 (53, 60, 7, 11) 155.62744057006842
+Q init-s17 27 (29, 39, 56, 36) 41.73341873518222
+Q init-s17 24 (0, 44, 3, 39) 76.27408426546016
+Q init-s17 26 (37, 60, 0, 25) 51.145393507191706
+Q init-s17 21 (66, 8, 36, 65) 60.0101904711403
+Q init-s17 1 (32, 40, 54, 26) 163.30471620742955
+Q init-s17 13 (24, 28, 58, 14) 43.64706233648576
+Q init-s17 20 (53, 47, 48, 39) 79.69042640194384
+Q init-s17 6 (11, 6, 50, 71) 42.7497238476047
+Q init-s17 7 (49, 59, 29, 2) 104.68014810785999
+Q init-s17 19 (40, 45, 15, 34) 229.19553525117652
+Q init-s17 8 (46, 40, 53, 43) 116.60513415799379
+Q init-s17 3 (65, 30, 45, 44) 97.14363205201201
+Q init-s17 42 (47, 39, 21, 6) 134.72574396976748
+Q init-s17 45 (37, 62, 2, 32) 46.32661422315007
+Q init-s17 23 (3, 12, 68, 24) 156.10170186265998
+Q init-s17 46 (2, 45, 66, 65) 101.4354264615259
+Q init-s17 17 (11, 47, 17, 47) 66.10315173739521
+Q init-s17 28 (54, 1, 21, 16) 136.99068040534024
+Q init-s17 39 (7, 36, 14, 0) 90.06021633422661
+Q init-s17 44 (37, 31, 14, 18) 140.9919206267863
+Q init-s17 33 (32, 45, 17, 37) 45.285825068809736
+Q init-s17 47 (38, 39, 32, 11) 78.82999053646724
+Q init-s17 48 (2, 51, 3, 67) 130.70566271045774
+Q init-s17 15 (19, 25, 61, 71) 39.16483588653191
+Q init-s17 37 (14, 52, 14, 44) 39.64915594377625
+Q init-s17 50 (36, 62, 23, 11) 42.606041771452965
+Q init-s17 32 (12, 60, 61, 29) 190.15421973813224
+Q init-s17 55 (8, 58, 30, 11) 60.408235145625
+Q init-s17 12 (51, 66, 15, 58) 108.97525436329202
+Q init-s17 34 (71, 16, 40, 14) 116.67018484098655
+Q init-s17 31 (62, 26, 0, 46) 65.34830322308629
+Q init-s17 30 (67, 0, 47, 21) 44.872344808827215
+Q init-s17 60 (53, 54, 30, 24) 80.63910462988761
+Q init-s17 56 (13, 50, 58, 37) 160.11868026568644
+Q init-s17 22 (30, 1, 70, 22) 96.68905728209786
+Q init-s17 38 (52, 17, 19, 31) 43.411108516617624
+Q init-s17 36 (65, 42, 37, 50) 526.3250468348704
+Q init-s17 59 (32, 19, 34, 26) 117.31930071550977
+Q init-s17 62 (18, 54, 35, 28) 186.5940475716605
+Q init-s17 58 (2, 32, 17, 31) 49.8207624646379
+Q init-s17 53 (23, 58, 70, 9) 70.15727912732675
+Q init-s17 65 (29, 27, 18, 7) 159.98367091336996
+Q init-s17 69 (24, 62, 16, 68) 94.55897654111172
+Q init-s17 63 (48, 12, 48, 0) 73.58868222244564
+Q init-s17 66 (7, 3, 47, 63) 73.35146030644914
+Q init-s17 67 (2, 28, 58, 62) 130.77057483607328
+Q init-s17 72 (15, 56, 45, 25) 109.14544954969956
+Q init-s17 71 (58, 46, 11, 35) 168.02398438008308
+Q init-s17 41 (15, 0, 31, 40) 134.94730144982222
+Q init-s17 76 (2, 4, 15, 44) 917.5689935616708
+Q init-s17 35 (57, 32, 55, 57) 76.23853709731206
+Q init-s17 40 (6, 21, 40, 25) 79.21545122299155
+Q init-s17 64 (69, 29, 67, 33) 297.8114346865592
+Q init-s17 78 (69, 12, 70, 38) 53.37351642358012
+Q init-s17 52 (27, 39, 64, 66) 36.28658791502771
+Q init-s17 4 (6, 53, 3, 1) 36.23452497038776
+Q init-s17 88 (35, 3, 39, 29) 1484.1125463987566
+Q init-s17 77 (16, 64, 7, 42) 374.7434092673408
+Q init-s17 87 (45, 16, 42, 15) 71.7634749307085
+Q init-s17 14 (17, 25, 46, 62) 84.73782064136219
+Q init-s17 68 (30, 59, 43, 41) 68.92350551610774
+Q init-s17 51 (28, 56, 43, 34) 102.17181920643502
+Q init-s17 83 (50, 63, 27, 60) 155.26981402045016
+Q init-s17 92 (71, 64, 50, 71) 164.25648506977709
+Q init-s17 57 (27, 5, 45, 37) 93.80554708937215
+Q init-s17 90 (5, 44, 47, 24) 53.00667955979954
+Q init-s17 91 (29, 19, 40, 53) 425.8999588311438
+Q init-s17 89 (8, 3, 62, 65) 50.78227761255484
+Q init-s17 86 (46, 43, 28, 10) 106.39101213957866
+Q init-s17 74 (58, 42, 1, 32) 136.7455920908039
+Q init-s17 95 (34, 57, 41, 27) 334.37736418580744
+Q init-s17 81 (43, 37, 45, 41) 411.1893925449774
+Q init-s17 73 (43, 49, 48, 26) 40.09380633914334
+Q init-s17 61 (1, 61, 27, 50) 259.23637112087107
+Q init-s17 43 (41, 17, 3, 65) 49.74384464453187
+Q init-s17 85 (44, 67, 50, 48) 86.48212240024752
+Q init-s17 49 (55, 30, 65, 47) 105.94475489384702
+Q init-s17 82 (11, 6, 67, 9) 49.279368850553155
+Q init-s17 84 (59, 48, 46, 50) 41.49015605922069
+Q init-s17 75 (28, 15, 60, 23) 48.92542588317928
+Q init-s17 94 (35, 70, 7, 42) 68.3574155426922
+Q init-s17 80 (22, 0, 26, 69) 337.5017497701153
+Q init-s17 54 (22, 29, 31, 48) 94.40209743549526
+Q init-s17 79 (44, 18, 44, 27) 101.63899386964066
+Q init-s17 93 (4, 6, 11, 32) 42.17048474677831
+Q init-s17 70 (1, 45, 60, 0) 31.36365530362526
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/_optv1_lamcts_mandler_meta_runtime.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round1-s17 10 (48, 11, 10, 68) 157.4782403757683
+Q round1-s17 14 (24, 47, 35, 67) 60.908687089936386
+Q round1-s17 3 (37, 6, 64, 59) 46.860472413621366
+Q round1-s17 13 (18, 71, 65, 59) 232.94580859796045
+Q round1-s17 7 (8, 49, 59, 35) 62.75587143118195
+Q round1-s17 8 (29, 3, 51, 34) 136.47896762066875
+Q round1-s17 0 (23, 59, 4, 1) 53.45377457460493
+Q round1-s17 6 (38, 7, 58, 1) 142.23331782005386
+Q round1-s17 4 (17, 68, 45, 70) 44.097559204029345
+Q round1-s17 1 (26, 7, 31, 18) 53.98318784298334
+Q round1-s17 11 (62, 67, 25, 49) 52.36499732903921
+Q round1-s17 5 (9, 43, 14, 59) 172.87668226829825
+Q round1-s17 15 (20, 35, 65, 29) 299.60315398513075
+Q round1-s17 9 (43, 28, 37, 47) 76.46508042573386
+Q round1-s17 12 (11, 8, 47, 5) 38.503599184655094
+Q round1-s17 2 (3, 16, 52, 28) 268.95014058470804
+ROUND 1 n 112 bestJ 31.36365530362526 best (1, 45, 60, 0) eligible 20599
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/_optv1_lamcts_mandler_meta_runtime.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round2-s17 8 (23, 4, 2, 28) 288.8876671194256
+Q round2-s17 11 (5, 20, 58, 34) 148.83166751186246
+Q round2-s17 13 (58, 11, 31, 42) 200.95091131664225
+Q round2-s17 6 (0, 43, 19, 50) 128.20182516380817
+Q round2-s17 14 (53, 5, 50, 58) 211.82324176735523
+Q round2-s17 3 (64, 0, 39, 41) 100.77945023364323
+Q round2-s17 5 (24, 45, 30, 47) 68.44033086985452
+Q round2-s17 15 (68, 46, 70, 17) 66.35894088359039
+Q round2-s17 9 (27, 19, 62, 14) 51.78147037211429
+Q round2-s17 0 (31, 21, 4, 22) 42.8685572625542
+Q round2-s17 2 (58, 45, 33, 50) 184.6806911762988
+Q round2-s17 4 (3, 46, 62, 60) 41.40381179733006
+Q round2-s17 10 (27, 63, 4, 47) 44.98461903786553
+Q round2-s17 12 (47, 54, 67, 45) 132.50528675573665
+Q round2-s17 1 (49, 57, 29, 34) 191.39031157756799
+Q round2-s17 7 (3, 2, 47, 17) 55.01740679007001
+ROUND 2 n 128 bestJ 31.36365530362526 best (1, 45, 60, 0) eligible 24238
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/_optv1_lamcts_mandler_meta_runtime.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round3-s17 14 (15, 42, 58, 28) 123.60123079289693
+Q round3-s17 1 (69, 31, 31, 52) 52.75644329223432
+Q round3-s17 3 (37, 65, 6, 63) 81.45996226306383
+Q round3-s17 4 (36, 33, 2, 57) 73.20668395743806
+Q round3-s17 2 (58, 12, 62, 67) 186.0367874830518
+Q round3-s17 0 (29, 3, 49, 47) 55.91056374230459
+Q round3-s17 15 (2, 18, 62, 12) 127.21573327850487
+Q round3-s17 13 (43, 4, 51, 1) 801.6564039659598
+Q round3-s17 5 (20, 63, 2, 45) 522.783450351489
+Q round3-s17 7 (61, 53, 57, 63) 32.839186490243634
+Q round3-s17 9 (11, 68, 10, 29) 105.37675819304417
+Q round3-s17 11 (53, 5, 27, 29) 153.6392014658732
+Q round3-s17 8 (14, 33, 50, 47) 121.81559526897318
+Q round3-s17 10 (19, 70, 9, 49) 47.04276848129203
+Q round3-s17 12 (54, 50, 48, 16) 80.9610166737211
+Q round3-s17 6 (57, 50, 14, 31) 52.03758843271273
+ROUND 3 n 144 bestJ 31.36365530362526 best (1, 45, 60, 0) eligible 22327
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/_optv1_lamcts_mandler_meta_runtime.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round4-s17 3 (8, 16, 13, 4) 110.56375678063952
+Q round4-s17 2 (53, 9, 54, 47) 78.59272848998881
+Q round4-s17 5 (50, 65, 38, 24) 51.47583326385575
+Q round4-s17 6 (18, 11, 70, 41) 56.07721786537263
+Q round4-s17 7 (21, 55, 1, 30) 66.84970612938827
+Q round4-s17 0 (31, 60, 17, 61) 76.01967842041823
+Q round4-s17 15 (53, 37, 54, 47) 61.86550569488246
+Q round4-s17 10 (57, 43, 11, 26) 116.75699535470643
+Q round4-s17 11 (11, 53, 71, 51) 152.0291135449467
+Q round4-s17 13 (35, 68, 50, 21) 128.6006477604701
+Q round4-s17 9 (44, 3, 67, 66) 122.62298792645618
+Q round4-s17 1 (19, 46, 53, 71) 43.15495827959076
+Q round4-s17 14 (11, 25, 46, 11) 55.03458016325591
+Q round4-s17 8 (54, 70, 27, 36) 73.37573951715116
+Q round4-s17 12 (46, 15, 55, 50) 461.493351310948
+Q round4-s17 4 (39, 22, 52, 8) 97.91604870567225
+ROUND 4 n 160 bestJ 31.36365530362526 best (1, 45, 60, 0) eligible 15014
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/_optv1_lamcts_mandler_meta_runtime.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round5-s17 12 (53, 19, 48, 4) 474.7335574480417
+Q round5-s17 13 (42, 30, 32, 44) 142.94212954375172
+Q round5-s17 5 (5, 60, 49, 57) 52.13258732982191
+Q round5-s17 6 (68, 44, 42, 6) 292.4528484022688
+Q round5-s17 15 (10, 6, 28, 70) 43.948644944497644
+Q round5-s17 7 (69, 31, 33, 54) 69.9914451532806
+Q round5-s17 2 (24, 16, 43, 0) 66.67023248015518
+Q round5-s17 11 (22, 44, 5, 58) 171.41247743855158
+Q round5-s17 0 (11, 49, 45, 48) 41.38388794196853
+Q round5-s17 10 (3, 58, 45, 30) 177.20967842330873
+Q round5-s17 14 (68, 53, 6, 50) 206.4722355922363
+Q round5-s17 9 (4, 33, 4, 18) 98.70026616802824
+Q round5-s17 1 (54, 6, 13, 66) 306.4373413427836
+Q round5-s17 8 (33, 71, 1, 16) 86.42359915315205
+Q round5-s17 4 (6, 61, 51, 9) 45.43343899408658
+Q round5-s17 3 (3, 24, 12, 39) 49.38034836492263
+ROUND 5 n 176 bestJ 31.36365530362526 best (1, 45, 60, 0) eligible 16132
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/_optv1_lamcts_mandler_meta_runtime.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round6-s17 0 (42, 40, 18, 15) 935.879254274739
+Q round6-s17 7 (13, 37, 29, 1) 209.84314814058183
+Q round6-s17 10 (34, 24, 68, 36) 675.7964273966162
+Q round6-s17 6 (0, 49, 25, 36) 74.4729299607349
+Q round6-s17 15 (18, 59, 44, 23) 98.03367488675568
+Q round6-s17 2 (61, 31, 28, 48) 53.62682727273258
+Q round6-s17 3 (16, 28, 26, 66) 245.56840604674693
+Q round6-s17 12 (0, 21, 48, 41) 68.95036384272034
+Q round6-s17 8 (31, 1, 3, 9) 57.40051865522174
+Q round6-s17 9 (46, 41, 0, 36) 102.26662574789316
+Q round6-s17 11 (47, 65, 54, 54) 84.59310081924025
+Q round6-s17 13 (0, 26, 54, 37) 70.10994812309946
+Q round6-s17 5 (25, 26, 23, 3) 89.3310877858419
+Q round6-s17 14 (22, 26, 37, 11) 53.27285790658857
+Q round6-s17 4 (65, 64, 12, 29) 112.48705012482415
+Q round6-s17 1 (3, 58, 35, 18) 153.70072624152962
+ROUND 6 n 192 bestJ 31.36365530362526 best (1, 45, 60, 0) eligible 16555
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/_optv1_lamcts_mandler_meta_runtime.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round7-s17 12 (59, 7, 18, 27) 2484.8703947206736
+Q round7-s17 15 (11, 14, 67, 36) 14936.99201752591
+Q round7-s17 14 (7, 69, 62, 4) 63.51554910455375
+Q round7-s17 6 (32, 68, 18, 14) 98.2323634960919
+Q round7-s17 9 (5, 62, 3, 44) 151.40762920463254
+Q round7-s17 7 (71, 35, 62, 54) 70.82036389471709
+Q round7-s17 4 (42, 49, 3, 2) 136.9085063398697
+Q round7-s17 3 (64, 33, 21, 16) 95.5401253786353
+Q round7-s17 10 (37, 39, 68, 39) 39.90525578487684
+Q round7-s17 2 (42, 23, 56, 64) 51.177060673525304
+Q round7-s17 13 (36, 4, 29, 14) 88.98396179951574
+Q round7-s17 11 (69, 50, 70, 60) 303.68442451693085
+Q round7-s17 5 (20, 62, 48, 13) 43.821614389482896
+Q round7-s17 0 (44, 63, 32, 21) 26.15077789702448
+Q round7-s17 1 (19, 5, 60, 52) 85.51077192010503
+Q round7-s17 8 (65, 56, 43, 10) 213.83875875391283
+ROUND 7 n 208 bestJ 26.15077789702448 best (44, 63, 32, 21) eligible 14218
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/_optv1_lamcts_mandler_meta_runtime.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round8-s17 10 (13, 33, 50, 3) 118.19090045698374
+Q round8-s17 6 (21, 0, 50, 34) 200.15495630693238
+Q round8-s17 5 (47, 2, 63, 36) 58.33017567118995
+Q round8-s17 3 (29, 57, 48, 67) 118.90310358069723
+Q round8-s17 13 (32, 27, 68, 57) 120.44827934481619
+Q round8-s17 9 (15, 27, 51, 15) 63.62115821937061
+Q round8-s17 1 (13, 31, 57, 31) 75.0082029125301
+Q round8-s17 0 (52, 9, 65, 11) 82.86210763286444
+Q round8-s17 14 (53, 50, 5, 66) 265.33682303809536
+Q round8-s17 8 (8, 37, 11, 62) 36.00763114679182
+Q round8-s17 2 (37, 29, 62, 15) 44.38217876515634
+Q round8-s17 4 (71, 50, 3, 30) 42.832698754990645
+Q round8-s17 12 (58, 5, 60, 58) 124.81910268598051
+Q round8-s17 7 (22, 55, 60, 53) 163.0912226446699
+Q round8-s17 11 (62, 33, 57, 31) 81.54049087480608
+Q round8-s17 15 (62, 37, 57, 17) 70.77941889990127
+ROUND 8 n 224 bestJ 26.15077789702448 best (44, 63, 32, 21) eligible 15987
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/_optv1_lamcts_mandler_meta_runtime.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round9-s17 15 (45, 12, 1, 58) 1468.7630956924866
+Q round9-s17 11 (1, 26, 34, 4) 3334.7321251173203
+Q round9-s17 6 (37, 52, 35, 64) 126.80012514880843
+Q round9-s17 14 (66, 71, 1, 6) 62.130885814851894
+Q round9-s17 5 (5, 71, 33, 38) 60.19054045872996
+Q round9-s17 12 (28, 11, 31, 44) 226.1927192361421
+Q round9-s17 10 (65, 43, 23, 5) 52.55919843741223
+Q round9-s17 3 (35, 41, 11, 4) 162.0066653815674
+Q round9-s17 2 (39, 46, 65, 43) 76.0095347380837
+Q round9-s17 1 (3, 11, 27, 54) 104.48602300238538
+Q round9-s17 4 (12, 1, 59, 64) 43.561496341378074
+Q round9-s17 9 (35, 39, 23, 29) 55.91404307105075
+Q round9-s17 7 (59, 58, 36, 21) 87.26102315402794
+Q round9-s17 13 (55, 56, 43, 30) 66.71258906400017
+Q round9-s17 8 (33, 9, 59, 33) 28.39797593067819
+Q round9-s17 0 (46, 10, 12, 54) 62.490831974421354
+ROUND 9 n 240 bestJ 26.15077789702448 best (44, 63, 32, 21) eligible 14995
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/_optv1_lamcts_mandler_meta_runtime.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round10-s17 8 (12, 33, 21, 28) 551.6572156399366
+Q round10-s17 10 (18, 56, 44, 4) 111.56526535440142
+Q round10-s17 4 (37, 24, 48, 62) 77.18808974449634
+Q round10-s17 12 (56, 41, 50, 15) 107.27339031513335
+Q round10-s17 14 (36, 62, 9, 36) 47.92873951682707
+Q round10-s17 1 (40, 43, 71, 43) 322.10860248808456
+Q round10-s17 7 (56, 41, 40, 2) 179.75429412857133
+Q round10-s17 0 (60, 38, 25, 44) 44.85689978029465
+Q round10-s17 11 (14, 38, 45, 61) 172.78755423868216
+Q round10-s17 2 (68, 45, 17, 57) 46.80865077042704
+Q round10-s17 15 (35, 50, 46, 49) 52.94209193328406
+Q round10-s17 6 (57, 37, 47, 0) 74.76108054156323
+Q round10-s17 9 (25, 32, 54, 49) 74.21569577600376
+Q round10-s17 13 (57, 46, 67, 49) 54.481468275198594
+Q round10-s17 5 (22, 69, 36, 64) 63.87866678291617
+Q round10-s17 3 (41, 37, 62, 54) 82.96580790155345
+ROUND 10 n 256 bestJ 26.15077789702448 best (44, 63, 32, 21) eligible 6665
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/_optv1_lamcts_mandler_meta_runtime.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round11-s17 14 (10, 52, 27, 40) 1379.3787821887922
+Q round11-s17 7 (55, 35, 69, 35) 867.8501519208028
+Q round11-s17 10 (48, 39, 0, 68) 102.0763805307639
+Q round11-s17 11 (40, 66, 26, 31) 50.196368958249586
+Q round11-s17 2 (2, 54, 27, 13) 131.08003941356472
+Q round11-s17 5 (45, 56, 48, 1) 53.33133831072611
+Q round11-s17 15 (33, 35, 33, 38) 33.70965115457955
+Q round11-s17 8 (32, 10, 40, 54) 48.21752185283854
+Q round11-s17 0 (33, 58, 13, 56) 95.7977929112838
+Q round11-s17 13 (1, 68, 8, 2) 45.582163163065296
+Q round11-s17 1 (1, 68, 71, 8) 64.43398310184764
+Q round11-s17 4 (12, 29, 3, 51) 126.65481339788819
+Q round11-s17 3 (20, 4, 71, 38) 43.07921650680172
+Q round11-s17 12 (65, 63, 52, 67) 39.58113994889701
+Q round11-s17 9 (65, 65, 47, 28) 82.76913808644831
+Q round11-s17 6 (54, 56, 63, 55) 98.34122817071518
+ROUND 11 n 272 bestJ 26.15077789702448 best (44, 63, 32, 21) eligible 7139
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/_optv1_lamcts_mandler_meta_runtime.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round12-s17 11 (48, 49, 42, 6) 116.4546979381212
+Q round12-s17 3 (8, 15, 9, 12) 85.50293559881126
+Q round12-s17 2 (5, 8, 49, 10) 54.21562892819891
+Q round12-s17 14 (11, 71, 19, 19) 98.92970189614721
+Q round12-s17 15 (33, 35, 55, 64) 55.204177195767855
+Q round12-s17 0 (32, 13, 28, 1) 30.11769591745104
+Q round12-s17 10 (68, 36, 10, 10) 115.31466823796782
+Q round12-s17 6 (24, 42, 6, 71) 63.636565327010686
+Q round12-s17 12 (19, 12, 24, 10) 201.08307745306706
+Q round12-s17 1 (68, 44, 7, 50) 135.2948656865859
+Q round12-s17 4 (62, 25, 21, 55) 108.70795959087027
+Q round12-s17 13 (54, 55, 17, 41) 119.91250292829613
+Q round12-s17 5 (17, 26, 13, 47) 41.31654799040354
+Q round12-s17 8 (6, 5, 36, 67) 117.85919175203266
+Q round12-s17 7 (46, 33, 51, 30) 56.99173413874095
+Q round12-s17 9 (9, 7, 55, 17) 95.03381099198708
+ROUND 12 n 288 bestJ 26.15077789702448 best (44, 63, 32, 21) eligible 6987
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/_optv1_lamcts_mandler_meta_runtime.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round13-s17 8 (10, 63, 37, 28) 5221.540249655529
+Q round13-s17 1 (59, 69, 9, 53) 2820.09531530806
+Q round13-s17 6 (24, 7, 50, 48) 175.2519365901991
+Q round13-s17 14 (50, 35, 55, 45) 435.3233774991148
+Q round13-s17 5 (10, 3, 50, 54) 113.06097768597925
+Q round13-s17 15 (42, 67, 44, 44) 94.3325057306745
+Q round13-s17 3 (24, 28, 33, 16) 63.014021204351074
+Q round13-s17 4 (48, 41, 1, 47) 94.57561412831119
+Q round13-s17 0 (66, 37, 57, 65) 66.1780253864143
+Q round13-s17 11 (40, 10, 54, 49) 55.95993771442721
+Q round13-s17 7 (70, 16, 10, 24) 161.0558364267457
+Q round13-s17 2 (12, 20, 68, 10) 87.80679235762318
+Q round13-s17 13 (28, 12, 51, 30) 80.17387193869726
+Q round13-s17 10 (1, 55, 38, 28) 105.52805159362205
+Q round13-s17 9 (54, 63, 59, 24) 82.09278472918548
+Q round13-s17 12 (41, 2, 15, 53) 132.4553506496546
+ROUND 13 n 304 bestJ 26.15077789702448 best (44, 63, 32, 21) eligible 8468
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/_optv1_lamcts_mandler_meta_runtime.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round14-s17 11 (26, 43, 68, 24) 1770.331631330537
+Q round14-s17 5 (68, 1, 58, 19) 348.3540051503591
+Q round14-s17 3 (18, 60, 33, 65) 56.783571230932004
+Q round14-s17 0 (17, 68, 48, 67) 84.37212339811481
+Q round14-s17 14 (35, 64, 66, 41) 68.5141113188056
+Q round14-s17 6 (16, 32, 33, 57) 77.56751745188987
+Q round14-s17 8 (10, 34, 33, 22) 55.45292538368428
+Q round14-s17 4 (54, 36, 24, 1) 66.48786599600768
+Q round14-s17 12 (33, 52, 56, 45) 42.333313605556334
+Q round14-s17 13 (59, 9, 52, 37) 183.66771073777045
+Q round14-s17 15 (67, 22, 56, 15) 69.91783120350895
+Q round14-s17 2 (14, 63, 6, 43) 93.15989520738717
+Q round14-s17 1 (11, 33, 70, 11) 104.84733698757756
+Q round14-s17 7 (12, 55, 44, 33) 34.68399959424162
+Q round14-s17 10 (41, 49, 1, 21) 127.40394177226668
+Q round14-s17 9 (49, 18, 49, 41) 62.55107189165303
+ROUND 14 n 320 bestJ 26.15077789702448 best (44, 63, 32, 21) eligible 7139
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/_optv1_lamcts_mandler_meta_runtime.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round15-s17 10 (5, 48, 13, 35) 1636.1605024091568
+Q round15-s17 11 (7, 42, 27, 3) 1179.3522874880325
+Q round15-s17 7 (24, 63, 50, 71) 131.96534923093992
+Q round15-s17 14 (26, 33, 66, 48) 624.8188978109843
+Q round15-s17 8 (58, 26, 45, 35) 132.03245839642597
+Q round15-s17 1 (26, 43, 17, 41) 59.938598440547274
+Q round15-s17 4 (46, 19, 42, 6) 109.252210869533
+Q round15-s17 15 (60, 17, 24, 68) 49.983967849232435
+Q round15-s17 0 (0, 2, 45, 40) 49.8764392791097
+Q round15-s17 9 (30, 36, 10, 13) 66.52730987221713
+Q round15-s17 6 (54, 23, 26, 46) 171.07239432905803
+Q round15-s17 12 (9, 63, 66, 8) 122.47309591351059
+Q round15-s17 2 (51, 71, 1, 40) 60.3141815673224
+Q round15-s17 13 (12, 50, 6, 15) 45.60267516289787
+Q round15-s17 3 (49, 10, 3, 55) 47.02763159296378
+Q round15-s17 5 (49, 18, 4, 49) 52.5111439800524
+ROUND 15 n 336 bestJ 26.15077789702448 best (44, 63, 32, 21) eligible 7558
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/_optv1_lamcts_mandler_meta_runtime.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round16-s17 5 (55, 34, 9, 27) 45.50966940402814
+Q round16-s17 10 (37, 24, 34, 64) 58.78353490918317
+Q round16-s17 3 (61, 59, 13, 44) 104.3550828042666
+Q round16-s17 2 (2, 64, 7, 13) 43.470437253383615
+Q round16-s17 9 (50, 17, 29, 41) 108.80717536387252
+Q round16-s17 13 (24, 41, 38, 45) 141.54779445783507
+Q round16-s17 0 (3, 20, 0, 32) 57.81152869907896
+Q round16-s17 1 (58, 69, 1, 42) 176.12090713007152
+Q round16-s17 15 (52, 14, 0, 46) 70.02935388553385
+Q round16-s17 8 (60, 31, 30, 2) 101.84997741703516
+Q round16-s17 11 (35, 18, 65, 57) 71.41198033897925
+Q round16-s17 12 (46, 64, 27, 29) 122.31948403492565
+Q round16-s17 7 (33, 13, 15, 39) 61.437239028692815
+Q round16-s17 6 (38, 21, 7, 7) 73.5095272889253
+Q round16-s17 14 (6, 15, 70, 5) 249.72141562723817
+Q round16-s17 4 (65, 55, 32, 16) 108.29092751447116
+ROUND 16 n 352 bestJ 26.15077789702448 best (44, 63, 32, 21) eligible 7506
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/_optv1_lamcts_mandler_meta_runtime.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round17-s17 14 (45, 56, 18, 9) 188.64675231337634
+Q round17-s17 10 (55, 29, 8, 43) 49.674321571597325
+Q round17-s17 12 (48, 50, 69, 28) 242.3363978159267
+Q round17-s17 3 (0, 62, 65, 51) 63.55274470704417
+Q round17-s17 1 (45, 35, 38, 18) 216.47823827805152
+Q round17-s17 15 (27, 53, 54, 20) 1222.466702089552
+Q round17-s17 5 (23, 33, 54, 19) 74.60743999361323
+Q round17-s17 7 (61, 21, 51, 2) 169.22923875088216
+Q round17-s17 4 (19, 54, 52, 28) 537.8661213565031
+Q round17-s17 6 (56, 7, 49, 65) 84.76650543342964
+Q round17-s17 11 (20, 32, 25, 6) 51.11148090443712
+Q round17-s17 2 (17, 58, 42, 61) 199.03383747020254
+Q round17-s17 0 (43, 55, 36, 32) 45.692555385783834
+Q round17-s17 8 (49, 71, 40, 26) 295.9757992312016
+Q round17-s17 13 (31, 38, 36, 34) 204.9593885064303
+Q round17-s17 9 (62, 48, 63, 70) 95.39831221241545
+ROUND 17 n 368 bestJ 26.15077789702448 best (44, 63, 32, 21) eligible 7680
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/_optv1_lamcts_mandler_meta_runtime.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round18-s17 0 (71, 5, 17, 3) 53.652987069990985
+Q round18-s17 8 (34, 1, 53, 6) 38.33620860438341
+Q round18-s17 6 (39, 28, 56, 35) 93.47161680590303
+Q round18-s17 11 (53, 63, 57, 38) 60.234445741932525
+Q round18-s17 2 (43, 1, 42, 59) 113.46357117782209
+Q round18-s17 14 (63, 20, 67, 7) 50.36776445145593
+Q round18-s17 1 (68, 41, 44, 27) 211.7088582434005
+Q round18-s17 4 (7, 52, 59, 13) 303.94585692166936
+Q round18-s17 5 (41, 0, 0, 20) 103.95700268659381
+Q round18-s17 7 (59, 27, 3, 69) 99.99017783689146
+Q round18-s17 9 (48, 63, 39, 53) 158.50404193518978
+Q round18-s17 15 (52, 54, 14, 32) 72.7558994245439
+Q round18-s17 12 (4, 54, 15, 48) 77.94862405979795
+Q round18-s17 13 (62, 34, 22, 50) 142.91912782007367
+Q round18-s17 10 (70, 7, 54, 9) 102.76063706690644
+Q round18-s17 3 (16, 7, 33, 39) 106.59179164386363
+ROUND 18 n 384 bestJ 26.15077789702448 best (44, 63, 32, 21) eligible 7181
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/_optv1_lamcts_mandler_meta_runtime.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round19-s17 5 (13, 25, 34, 44) 779.4335323270398
+Q round19-s17 15 (5, 8, 57, 43) 622.9519380058834
+Q round19-s17 1 (61, 43, 62, 18) 240.7275398663191
+Q round19-s17 2 (39, 27, 26, 10) 113.30252636429012
+Q round19-s17 7 (8, 9, 45, 66) 176.35369124598859
+Q round19-s17 9 (2, 66, 34, 58) 248.0048601796448
+Q round19-s17 10 (0, 47, 3, 42) 180.14390189265922
+Q round19-s17 13 (32, 35, 32, 49) 43.82552348208273
+Q round19-s17 11 (65, 35, 36, 20) 271.4983067163535
+Q round19-s17 4 (8, 37, 31, 47) 89.43037703936729
+Q round19-s17 6 (41, 64, 5, 59) 84.59764108696356
+Q round19-s17 3 (1, 12, 48, 64) 59.627725535784684
+Q round19-s17 14 (60, 57, 41, 24) 63.457318362423486
+Q round19-s17 8 (51, 48, 12, 42) 89.78227835749247
+Q round19-s17 12 (60, 42, 19, 53) 105.27529567473859
+Q round19-s17 0 (1, 21, 59, 62) 36.78780041364352
+ROUND 19 n 400 bestJ 26.15077789702448 best (44, 63, 32, 21) eligible 7717
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/_optv1_lamcts_mandler_meta_runtime.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round20-s17 11 (56, 7, 26, 70) 126.12073657487923
+Q round20-s17 14 (2, 1, 4, 23) 49.244840730888
+Q round20-s17 12 (18, 0, 10, 31) 226.74226941169434
+Q round20-s17 2 (24, 19, 46, 1) 61.49813772893753
+Q round20-s17 8 (63, 37, 35, 18) 105.12990337624288
+Q round20-s17 7 (61, 15, 64, 21) 98.57681761391193
+Q round20-s17 13 (68, 69, 69, 30) 143.71158136432712
+Q round20-s17 15 (2, 16, 11, 71) 88.12544105717616
+Q round20-s17 10 (13, 31, 1, 13) 63.921942477038876
+Q round20-s17 9 (5, 61, 67, 14) 105.06929084693788
+Q round20-s17 4 (41, 55, 43, 51) 51.46044534122296
+Q round20-s17 5 (24, 31, 6, 28) 111.45502769760242
+Q round20-s17 1 (35, 15, 11, 47) 41.49716008661539
+Q round20-s17 6 (11, 57, 34, 45) 130.12584420433978
+Q round20-s17 3 (52, 58, 64, 31) 45.49947216204005
+Q round20-s17 0 (9, 37, 12, 15) 41.80297958298019
+ROUND 20 n 416 bestJ 26.15077789702448 best (44, 63, 32, 21) eligible 7935
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/_optv1_lamcts_mandler_meta_runtime.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round21-s17 3 (8, 37, 18, 12) 84.50547884961448
+Q round21-s17 14 (23, 7, 26, 68) 103.18443197184138
+Q round21-s17 6 (13, 38, 36, 44) 291.5992327201765
+Q round21-s17 15 (2, 49, 38, 56) 47.44289404237676
+Q round21-s17 13 (66, 8, 17, 54) 55.55016074919707
+Q round21-s17 0 (58, 70, 68, 46) 42.77940079310465
+Q round21-s17 7 (56, 62, 55, 23) 90.252351494481
+Q round21-s17 4 (59, 59, 51, 43) 117.91873084859797
+Q round21-s17 10 (45, 53, 3, 7) 108.09789952544894
+Q round21-s17 2 (52, 68, 11, 40) 201.45792234276095
+Q round21-s17 9 (44, 46, 64, 49) 63.72647981907393
+Q round21-s17 11 (35, 71, 70, 47) 73.21420430316493
+Q round21-s17 12 (62, 21, 41, 26) 69.30721408707893
+Q round21-s17 5 (54, 22, 6, 27) 109.87018451879355
+Q round21-s17 8 (20, 40, 25, 16) 56.58687281320009
+Q round21-s17 1 (63, 30, 31, 32) 107.00174370294108
+ROUND 21 n 432 bestJ 26.15077789702448 best (44, 63, 32, 21) eligible 8618
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/_optv1_lamcts_mandler_meta_runtime.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round22-s17 10 (29, 15, 18, 65) 44.26513732656329
+Q round22-s17 14 (21, 64, 66, 14) 74.14785442753313
+Q round22-s17 0 (34, 22, 31, 12) 41.82896069845696
+Q round22-s17 13 (37, 4, 34, 36) 140.05740412157317
+Q round22-s17 5 (37, 12, 50, 62) 269.0309704359148
+Q round22-s17 1 (29, 49, 55, 62) 74.96533316748055
+Q round22-s17 9 (39, 51, 61, 62) 62.0206818579179
+Q round22-s17 8 (47, 8, 16, 57) 152.11493906542145
+Q round22-s17 3 (52, 40, 51, 35) 158.92146018810922
+Q round22-s17 4 (20, 21, 51, 28) 101.16707252943645
+Q round22-s17 7 (6, 50, 45, 14) 66.3660572925931
+Q round22-s17 6 (1, 8, 2, 16) 166.2715970799864
+Q round22-s17 12 (6, 22, 46, 27) 114.51609887844891
+Q round22-s17 2 (55, 14, 60, 24) 100.00118285644646
+Q round22-s17 11 (15, 62, 32, 22) 96.34443494588493
+Q round22-s17 15 (9, 30, 23, 1) 90.03389575870268
+ROUND 22 n 448 bestJ 26.15077789702448 best (44, 63, 32, 21) eligible 8824
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/_optv1_lamcts_mandler_meta_runtime.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round23-s17 12 (23, 67, 18, 41) 110.30171743641465
+Q round23-s17 8 (18, 14, 4, 58) 130.2648738217265
+Q round23-s17 2 (15, 12, 0, 44) 41.128045761563115
+Q round23-s17 4 (8, 44, 12, 64) 46.84744769938953
+Q round23-s17 10 (24, 19, 65, 54) 59.00105188190984
+Q round23-s17 11 (33, 12, 23, 24) 73.19478118565902
+Q round23-s17 1 (24, 6, 6, 61) 159.68896025041522
+Q round23-s17 0 (17, 12, 54, 28) 46.28905163495208
+Q round23-s17 15 (61, 10, 49, 30) 47.33754687465038
+Q round23-s17 5 (35, 57, 50, 64) 234.7860256199471
+Q round23-s17 7 (46, 8, 60, 28) 117.67539128114278
+Q round23-s17 9 (11, 35, 41, 50) 146.2812362607775
+Q round23-s17 14 (44, 71, 29, 34) 73.26617948533156
+Q round23-s17 3 (11, 26, 57, 68) 117.94551701768327
+Q round23-s17 13 (22, 8, 27, 23) 115.61603044289714
+Q round23-s17 6 (33, 10, 49, 53) 51.083081640499636
+ROUND 23 n 464 bestJ 26.15077789702448 best (44, 63, 32, 21) eligible 8730
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/_optv1_lamcts_mandler_meta_runtime.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round24-s17 11 (17, 11, 13, 60) 642.328286818122
+Q round24-s17 12 (66, 17, 6, 54) 68.62764273066945
+Q round24-s17 8 (45, 57, 70, 32) 60.81855843425334
+Q round24-s17 1 (30, 68, 59, 20) 292.92038149949485
+Q round24-s17 7 (41, 51, 56, 67) 373.9974713030474
+Q round24-s17 3 (32, 1, 39, 57) 75.68337968537715
+Q round24-s17 4 (24, 70, 25, 46) 80.73716977678748
+Q round24-s17 6 (25, 15, 69, 65) 117.28671853634675
+Q round24-s17 10 (71, 49, 6, 55) 93.81924579498765
+Q round24-s17 13 (16, 2, 15, 55) 70.29547291791957
+Q round24-s17 0 (44, 4, 33, 32) 54.33731018004287
+Q round24-s17 2 (12, 0, 33, 68) 48.19068690797971
+Q round24-s17 5 (71, 50, 47, 22) 101.0287623137175
+Q round24-s17 15 (27, 25, 23, 64) 67.77340196400253
+Q round24-s17 9 (43, 47, 46, 61) 61.58368695425551
+Q round24-s17 14 (49, 18, 17, 22) 66.80207834553448
+ROUND 24 n 480 bestJ 26.15077789702448 best (44, 63, 32, 21) eligible 8459
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/_optv1_lamcts_mandler_meta_runtime.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round25-s17 4 (57, 4, 9, 19) 2467.501024517749
+Q round25-s17 6 (2, 60, 59, 28) 91.64480606465983
+Q round25-s17 0 (18, 14, 11, 39) 99.77735916368745
+Q round25-s17 5 (45, 0, 34, 55) 39.08506145550096
+Q round25-s17 8 (32, 39, 56, 2) 215.74704527405345
+Q round25-s17 1 (33, 61, 18, 50) 217.16615897563804
+Q round25-s17 11 (17, 36, 55, 46) 69.53191989903382
+Q round25-s17 2 (9, 32, 10, 64) 97.15713431965969
+Q round25-s17 12 (59, 32, 43, 59) 76.79598572720917
+Q round25-s17 3 (52, 40, 17, 55) 65.0792518698829
+Q round25-s17 14 (59, 26, 68, 12) 82.3480088024664
+Q round25-s17 9 (52, 7, 38, 0) 74.10223935088177
+Q round25-s17 13 (9, 21, 57, 42) 59.34707081326108
+Q round25-s17 15 (19, 31, 39, 58) 40.35626554200458
+Q round25-s17 7 (8, 7, 39, 15) 137.32953115614174
+Q round25-s17 10 (57, 46, 24, 69) 217.90922262110846
+ROUND 25 n 496 bestJ 26.15077789702448 best (44, 63, 32, 21) eligible 8722
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/_optv1_lamcts_mandler_meta_runtime.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round26-s17 5 (53, 36, 61, 34) 152.30820088213383
+Q round26-s17 11 (58, 16, 58, 21) 158.88497462109407
+Q round26-s17 13 (71, 32, 36, 20) 65.01540357737787
+Q round26-s17 15 (19, 40, 42, 68) 165.5691049466927
+Q round26-s17 10 (37, 22, 46, 39) 89.99361439278263
+Q round26-s17 14 (15, 51, 7, 48) 72.95418562320833
+Q round26-s17 2 (0, 69, 67, 45) 622.0312569860567
+Q round26-s17 3 (21, 32, 48, 48) 58.30398777563773
+Q round26-s17 9 (50, 10, 29, 65) 107.09975076965694
+Q round26-s17 12 (59, 3, 69, 35) 88.29114322102181
+Q round26-s17 0 (9, 59, 33, 21) 109.88393163093991
+Q round26-s17 8 (68, 35, 41, 1) 48.627644812123194
+Q round26-s17 1 (4, 25, 32, 46) 57.15092872763182
+Q round26-s17 4 (67, 45, 68, 31) 102.25304468168984
+Q round26-s17 6 (28, 24, 68, 69) 198.60658558068397
+Q round26-s17 7 (1, 40, 71, 61) 220.428898663611
+ROUND 26 n 512 bestJ 26.15077789702448 best (44, 63, 32, 21) eligible 8391
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/_optv1_lamcts_mandler_meta_runtime.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round27-s17 6 (34, 6, 58, 59) 32977.14699379909
+Q round27-s17 10 (16, 30, 21, 3) 91.29397274438868
+Q round27-s17 11 (2, 44, 22, 37) 71.66982918968466
+Q round27-s17 5 (37, 34, 34, 7) 656.0377844703488
+Q round27-s17 13 (45, 22, 53, 50) 105.9450624788426
+Q round27-s17 15 (2, 32, 8, 71) 45.26929803809037
+Q round27-s17 0 (8, 52, 71, 58) 62.834935175309724
+Q round27-s17 3 (46, 3, 37, 60) 201.94439520170377
+Q round27-s17 1 (40, 4, 66, 42) 158.95385614669684
+Q round27-s17 12 (20, 57, 36, 20) 578.4925811688488
+Q round27-s17 8 (20, 10, 16, 4) 171.67470754187116
+Q round27-s17 7 (5, 29, 32, 8) 66.99014696890484
+Q round27-s17 14 (39, 58, 30, 65) 53.88616384415654
+Q round27-s17 9 (4, 71, 70, 59) 45.699930053671224
+Q round27-s17 4 (62, 34, 38, 42) 66.0598469880118
+Q round27-s17 2 (43, 33, 35, 71) 53.467819053221035
+ROUND 27 n 528 bestJ 26.15077789702448 best (44, 63, 32, 21) eligible 8193
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/_optv1_lamcts_mandler_meta_runtime.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round28-s17 1 (21, 16, 45, 9) 64.0547390432176
+Q round28-s17 12 (13, 57, 49, 21) 41.68161295223091
+Q round28-s17 14 (37, 40, 37, 40) 72.77125672127535
+Q round28-s17 10 (52, 0, 61, 59) 139.52903889492177
+Q round28-s17 4 (63, 47, 69, 50) 310.0979572586733
+Q round28-s17 3 (55, 3, 56, 13) 62.517505321140625
+Q round28-s17 2 (3, 18, 50, 51) 187.93544776472336
+Q round28-s17 7 (70, 70, 71, 3) 103.5717518861477
+Q round28-s17 5 (56, 5, 23, 31) 66.45947204195575
+Q round28-s17 8 (50, 26, 33, 34) 110.90850140205501
+Q round28-s17 13 (35, 70, 14, 1) 67.25291782982632
+Q round28-s17 11 (4, 51, 43, 67) 106.53561028926285
+Q round28-s17 9 (20, 4, 33, 44) 246.82175885575944
+Q round28-s17 6 (11, 55, 27, 15) 43.8064806850409
+Q round28-s17 15 (46, 48, 19, 23) 76.10215480710245
+Q round28-s17 0 (41, 37, 67, 25) 34.378536116750425
+ROUND 28 n 544 bestJ 26.15077789702448 best (44, 63, 32, 21) eligible 8073
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/_optv1_lamcts_mandler_meta_runtime.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round29-s17 13 (21, 63, 49, 20) 63.913419493940374
+Q round29-s17 2 (5, 19, 61, 66) 114.11534424943633
+Q round29-s17 10 (13, 44, 48, 40) 47.86431442498279
+Q round29-s17 11 (45, 60, 67, 13) 94.72906309194583
+Q round29-s17 15 (56, 40, 29, 29) 137.43696780322642
+Q round29-s17 3 (24, 52, 49, 16) 68.68403959251292
+Q round29-s17 8 (0, 68, 0, 16) 72.60297746973795
+Q round29-s17 9 (60, 21, 65, 35) 773.9546897964236
+Q round29-s17 0 (37, 48, 67, 6) 36.064970328273695
+Q round29-s17 5 (58, 32, 62, 71) 57.591770903093824
+Q round29-s17 6 (66, 31, 1, 40) 59.89223744178195
+Q round29-s17 4 (1, 43, 3, 15) 73.7302808526369
+Q round29-s17 7 (69, 2, 6, 63) 47.90552964621692
+Q round29-s17 12 (51, 60, 24, 21) 211.32134781767337
+Q round29-s17 14 (36, 47, 8, 34) 104.09686830948743
+Q round29-s17 1 (56, 71, 14, 22) 85.3541236822776
+ROUND 29 n 560 bestJ 26.15077789702448 best (44, 63, 32, 21) eligible 8621
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/_optv1_lamcts_mandler_meta_runtime.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round30-s17 4 (64, 31, 5, 52) 127.99322474268268
+Q round30-s17 10 (56, 29, 58, 9) 71.21201396289815
+Q round30-s17 1 (18, 9, 1, 5) 80.87565292566723
+Q round30-s17 11 (42, 25, 44, 43) 98.71394778528881
+Q round30-s17 0 (2, 14, 52, 0) 56.53853951079008
+Q round30-s17 3 (42, 10, 50, 63) 125.72112628443669
+Q round30-s17 13 (5, 18, 41, 42) 100.86522328282345
+Q round30-s17 6 (8, 70, 31, 38) 106.21899423882283
+Q round30-s17 7 (8, 40, 30, 37) 147.66782111898897
+Q round30-s17 5 (59, 9, 26, 39) 81.56055130537219
+Q round30-s17 8 (31, 53, 47, 45) 116.59226173713188
+Q round30-s17 12 (69, 58, 46, 33) 50.37749242433931
+Q round30-s17 9 (58, 58, 14, 39) 53.16001064006164
+Q round30-s17 2 (52, 6, 44, 25) 32.44398713085256
+Q round30-s17 15 (44, 61, 35, 55) 55.344237388695085
+Q round30-s17 14 (20, 58, 11, 53) 104.67802956584478
+ROUND 30 n 576 bestJ 26.15077789702448 best (44, 63, 32, 21) eligible 8550
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/_optv1_lamcts_mandler_meta_runtime.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round31-s17 15 (61, 5, 25, 35) 2717.415626939895
+Q round31-s17 6 (47, 59, 58, 35) 248.47056098979647
+Q round31-s17 9 (5, 4, 19, 55) 125.51864647109501
+Q round31-s17 4 (45, 30, 27, 48) 47.97745575305831
+Q round31-s17 7 (48, 36, 9, 49) 59.187630376366336
+Q round31-s17 10 (33, 44, 29, 35) 187.3472364681829
+Q round31-s17 0 (66, 7, 56, 13) 40.14639727551983
+Q round31-s17 12 (31, 20, 0, 23) 79.77652056952867
+Q round31-s17 3 (38, 50, 32, 60) 66.21456584851941
+Q round31-s17 5 (54, 55, 10, 39) 180.53692179995178
+Q round31-s17 2 (53, 26, 30, 14) 49.27738077650348
+Q round31-s17 14 (40, 45, 14, 46) 68.26632849934316
+Q round31-s17 8 (7, 69, 36, 63) 51.508345106323446
+Q round31-s17 11 (12, 58, 8, 25) 51.56506668666811
+Q round31-s17 1 (52, 16, 49, 42) 42.94261650333725
+Q round31-s17 13 (56, 46, 44, 64) 71.82447453985927
+ROUND 31 n 592 bestJ 26.15077789702448 best (44, 63, 32, 21) eligible 7374
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-full32b-20260910-1306/src/validation/_optv1_lamcts_mandler_meta_runtime.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round32-s17 3 (69, 15, 21, 67) 336.2005428871534
+Q round32-s17 2 (26, 44, 5, 27) 117.01635641025855
+Q round32-s17 1 (63, 5, 0, 43) 76.53737425897185
+Q round32-s17 5 (26, 49, 41, 24) 58.97200414154415
+Q round32-s17 0 (62, 69, 37, 48) 66.62581690009118
+Q round32-s17 7 (59, 49, 57, 9) 44.51761153617703
+Q round32-s17 6 (55, 55, 30, 55) 112.27817902167529
+Q round32-s17 4 (7, 40, 65, 7) 112.35340123284792
+ROUND 32 n 600 bestJ 26.15077789702448 best (44, 63, 32, 21) eligible 7646
+Q random-s1000020 28 (63, 69, 45, 28) 91.72864477544285
+Q random-s1000020 30 (2, 49, 26, 51) 110.19777127862916
+Q random-s1000020 31 (26, 19, 25, 69) 381.6829720045105
+Q random-s1000020 16 (53, 70, 22, 6) 81.5482422738253
+Q random-s1000020 18 (64, 40, 69, 54) 113.66516617161615
+Q random-s1000020 9 (45, 2, 18, 9) 99.82843409872893
+Q random-s1000020 13 (29, 14, 23, 24) 86.44553825343544
+Q random-s1000020 29 (47, 12, 55, 66) 80.17931858429081
+Q random-s1000020 6 (61, 27, 20, 41) 143.41273889560048
+Q random-s1000020 27 (66, 48, 55, 64) 62.03530899608494
+Q random-s1000020 0 (55, 24, 52, 28) 112.41287166115558
+Q random-s1000020 11 (8, 21, 60, 46) 32.63319071763656
+Q random-s1000020 35 (16, 7, 64, 68) 121.3527275342501
+Q random-s1000020 12 (25, 7, 37, 19) 112.7987369673032
+Q random-s1000020 23 (19, 5, 16, 4) 172.76692669545128
+Q random-s1000020 19 (66, 29, 54, 71) 41.645769506207984
+Q random-s1000020 40 (30, 12, 13, 35) 265.00026994073545
+Q random-s1000020 24 (22, 15, 0, 3) 124.9537640431187
+Q random-s1000020 8 (60, 8, 36, 59) 168.23905684404187
+Q random-s1000020 15 (28, 40, 21, 55) 48.25733705835162
+Q random-s1000020 17 (20, 28, 47, 32) 41.346044068723586
+Q random-s1000020 2 (47, 13, 38, 30) 71.49783942954788
+Q random-s1000020 25 (49, 34, 37, 9) 44.24297122353706
+Q random-s1000020 36 (7, 21, 21, 48) 85.27824926678427
+Q random-s1000020 10 (11, 14, 51, 17) 52.46737692713026
+Q random-s1000020 38 (4, 14, 2, 70) 40.48543037760092
+Q random-s1000020 14 (17, 63, 33, 35) 69.81770531528215
+Q random-s1000020 33 (42, 26, 43, 39) 127.78328129492863
+Q random-s1000020 43 (69, 30, 7, 58) 88.44467111548592
+Q random-s1000020 5 (51, 21, 63, 30) 52.220981905889616
+Q random-s1000020 44 (53, 9, 50, 21) 287.22854391358027
+Q random-s1000020 34 (0, 39, 56, 65) 98.37260090693634
+Q random-s1000020 48 (47, 32, 19, 11) 49.801937659947384
+Q random-s1000020 37 (68, 44, 33, 20) 290.31885688668353
+Q random-s1000020 47 (10, 68, 20, 3) 109.87607587757553
+Q random-s1000020 41 (54, 52, 9, 22) 50.720291798864274
+Q random-s1000020 4 (14, 42, 20, 14) 40.40561443496695
+Q random-s1000020 26 (28, 56, 1, 26) 34.20770428971819
+Q random-s1000020 7 (49, 58, 36, 20) 203.5277818342848
+Q random-s1000020 32 (1, 54, 47, 68) 104.1574235297098
+Q random-s1000020 58 (63, 34, 39, 11) 56.79795913922358
+Q random-s1000020 49 (32, 44, 36, 38) 49.2673147199369
+Q random-s1000020 3 (54, 25, 40, 71) 101.65227740661949
+Q random-s1000020 22 (70, 21, 3, 31) 34.27151779062293
+Q random-s1000020 60 (18, 1, 38, 16) 55.03210096332195
+Q random-s1000020 61 (31, 10, 45, 44) 74.39884372748274
+Q random-s1000020 51 (28, 70, 35, 68) 360.6770325969935
+Q random-s1000020 55 (54, 3, 67, 58) 94.50542938466667
+Q random-s1000020 42 (71, 38, 46, 27) 89.10840581923942
+Q random-s1000020 59 (5, 2, 0, 14) 52.07879895994948
+Q random-s1000020 54 (64, 10, 9, 16) 42.237604038997
+Q random-s1000020 71 (44, 43, 56, 61) 1193.1415493044092
+Q random-s1000020 45 (58, 18, 11, 31) 286.63945172308456
+Q random-s1000020 62 (40, 4, 71, 69) 54.26354600284707
+Q random-s1000020 53 (40, 18, 52, 65) 31.60649299394987
+Q random-s1000020 50 (50, 26, 58, 45) 249.13174198403394
+Q random-s1000020 66 (18, 33, 60, 15) 49.14089195232171
+Q random-s1000020 81 (13, 4, 29, 0) 1823.8074349406209
+Q random-s1000020 39 (44, 48, 25, 18) 34.60091142667723
+Q random-s1000020 20 (39, 46, 46, 38) 102.56411343720043
+Q random-s1000020 57 (9, 0, 70, 36) 82.6898935485977
+Q random-s1000020 21 (9, 10, 70, 30) 55.84917014578212
+Q random-s1000020 52 (65, 50, 68, 52) 391.96485107038956
+Q random-s1000020 46 (35, 26, 0, 39) 54.51401976124266
+Q random-s1000020 1 (65, 13, 49, 29) 95.2837443617631
+Q random-s1000020 87 (60, 47, 45, 12) 44.977970422274275
+Q random-s1000020 69 (30, 46, 42, 11) 156.19910503772417
+Q random-s1000020 84 (50, 30, 63, 18) 77.06311322591772
+Q random-s1000020 82 (60, 31, 34, 32) 75.15480262144796
+Q random-s1000020 83 (20, 47, 23, 68) 56.109787583711835
+Q random-s1000020 79 (40, 54, 9, 46) 70.15043340172107
+Q random-s1000020 64 (36, 16, 40, 46) 73.19807446963546
+Q random-s1000020 67 (38, 40, 64, 5) 176.8728169774216
+Q random-s1000020 86 (29, 53, 29, 13) 118.19891096102585
+Q random-s1000020 91 (5, 66, 28, 10) 151.44541496624663
+Q random-s1000020 76 (1, 6, 2, 49) 132.75521023573413
+Q random-s1000020 88 (14, 43, 69, 56) 107.94677071200098
+Q random-s1000020 77 (19, 12, 0, 18) 177.02350323484154
+Q random-s1000020 89 (38, 19, 22, 42) 54.496725145264335
+Q random-s1000020 56 (16, 47, 11, 16) 90.55569816400481
+Q random-s1000020 74 (3, 4, 1, 33) 56.54441803942193
+Q random-s1000020 96 (29, 4, 12, 43) 100.42166870301924
+Q random-s1000020 73 (51, 63, 32, 21) 58.479241442383255
+Q random-s1000020 85 (44, 67, 15, 51) 159.58169507202624
+Q random-s1000020 92 (57, 3, 38, 14) 57.681849360665495
+Q random-s1000020 98 (37, 4, 32, 39) 49.91896343332702
+Q random-s1000020 75 (44, 25, 41, 51) 109.71300161259325
+Q random-s1000020 94 (33, 20, 50, 21) 119.28579871812912
+Q random-s1000020 93 (41, 3, 4, 37) 181.52531529124843
+Q random-s1000020 72 (23, 49, 43, 17) 90.00514863940269
+Q random-s1000020 63 (19, 66, 65, 29) 124.39810120040698
+Q random-s1000020 78 (15, 32, 14, 24) 96.6511886622902
+Q random-s1000020 70 (62, 47, 8, 39) 103.32630695336842
+Q random-s1000020 115 (26, 49, 61, 52) 4059.343342321958
+Q random-s1000020 97 (15, 10, 56, 21) 92.21367061222921
+Q random-s1000020 101 (8, 49, 41, 71) 95.42713924431105
+Q random-s1000020 106 (61, 24, 62, 54) 76.5840114544792
+Q random-s1000020 109 (13, 59, 0, 23) 54.62194115986295
+Q random-s1000020 114 (22, 44, 10, 20) 477.9305538241341
+Q random-s1000020 104 (59, 55, 50, 30) 46.95186707579266
+Q random-s1000020 95 (68, 35, 60, 62) 59.11637628707793
+Q random-s1000020 113 (10, 49, 54, 41) 63.23654630705621
+Q random-s1000020 122 (69, 22, 59, 20) 1909.8973977304215
+Q random-s1000020 110 (48, 58, 53, 37) 68.33917925411659
+Q random-s1000020 108 (53, 24, 22, 37) 69.52553952412013
+Q random-s1000020 111 (34, 10, 26, 47) 101.41624820306744
+Q random-s1000020 112 (69, 26, 14, 11) 178.38768576299216
+Q random-s1000020 65 (14, 17, 32, 46) 107.71202837398522
+Q random-s1000020 99 (12, 36, 17, 28) 94.55232259062183
+Q random-s1000020 100 (35, 43, 23, 15) 50.99356516911
+Q random-s1000020 121 (69, 41, 39, 71) 77.01569109335804
+Q random-s1000020 80 (1, 71, 31, 6) 107.37179294302696
+Q random-s1000020 124 (63, 59, 56, 51) 624.2083092506766
+Q random-s1000020 68 (30, 56, 57, 57) 89.02390830306301
+Q random-s1000020 105 (32, 37, 17, 61) 86.91701494046154
+Q random-s1000020 118 (31, 65, 19, 52) 47.942261170418824
+Q random-s1000020 120 (17, 28, 10, 6) 45.72073160997748
+Q random-s1000020 126 (36, 26, 29, 59) 103.19966164535282
+Q random-s1000020 132 (0, 22, 26, 62) 145.54838319002135
+Q random-s1000020 133 (2, 20, 60, 41) 95.88279413776236
+Q random-s1000020 119 (34, 26, 48, 23) 51.172502988159344
+Q random-s1000020 131 (23, 31, 6, 19) 122.74063180128718
+Q random-s1000020 125 (39, 71, 14, 20) 106.77183989807929
+Q random-s1000020 135 (38, 24, 63, 11) 92.01596106285169
+Q random-s1000020 103 (68, 47, 1, 55) 70.33850132046446
+Q random-s1000020 107 (17, 32, 36, 28) 44.25083466226227
+Q random-s1000020 138 (68, 57, 5, 3) 171.28466828963755
+Q random-s1000020 150 (15, 8, 45, 67) 96.50882997892033
+Q random-s1000020 143 (23, 15, 64, 68) 138.55652569243162
+Q random-s1000020 90 (17, 7, 33, 5) 193.73553379252806
+Q random-s1000020 146 (70, 12, 25, 19) 100.30200447539481
+Q random-s1000020 139 (57, 36, 70, 36) 44.85087051303121
+Q random-s1000020 144 (23, 59, 36, 18) 410.2103713183426
+Q random-s1000020 147 (34, 31, 35, 51) 133.34759232105614
+Q random-s1000020 141 (50, 71, 19, 48) 124.26300015543298
+Q random-s1000020 140 (57, 62, 30, 60) 71.08065340971488
+Q random-s1000020 128 (67, 29, 59, 44) 94.78954897862356
+Q random-s1000020 142 (59, 16, 50, 70) 71.60597449161052
+Q random-s1000020 149 (7, 8, 43, 48) 115.8133362562105
+Q random-s1000020 152 (37, 12, 15, 18) 93.90580592367078
+Q random-s1000020 127 (68, 59, 2, 13) 121.00076560713173
+Q random-s1000020 156 (10, 52, 35, 29) 101.02667650830477
+Q random-s1000020 160 (8, 32, 69, 12) 73.07999514199557
+Q random-s1000020 145 (65, 44, 32, 64) 46.946398726770106
+Q random-s1000020 157 (32, 67, 5, 18) 111.91221790592108
+Q random-s1000020 154 (19, 27, 42, 68) 121.22965445770642
+Q random-s1000020 151 (14, 3, 23, 21) 42.610607221970234
+Q random-s1000020 137 (51, 1, 21, 39) 50.85971945629155
+Q random-s1000020 166 (38, 43, 10, 41) 442.71227654343653
+Q random-s1000020 163 (0, 60, 48, 9) 62.88106626765971
+Q random-s1000020 165 (61, 50, 68, 9) 364.95687168746315
+Q random-s1000020 155 (14, 35, 65, 9) 42.40851839969502
+Q random-s1000020 148 (27, 30, 65, 2) 31.053303223005923
+Q random-s1000020 102 (9, 29, 25, 24) 55.844214821011946
+Q random-s1000020 174 (69, 14, 32, 17) 66.19972406329258
+Q random-s1000020 175 (2, 12, 39, 56) 58.0155410835902
+Q random-s1000020 159 (71, 41, 57, 22) 95.64112587105171
+Q random-s1000020 162 (3, 56, 42, 56) 292.32786442194805
+Q random-s1000020 129 (3, 66, 40, 0) 57.95202132083659
+Q random-s1000020 167 (35, 58, 31, 43) 128.34405974417203
+Q random-s1000020 130 (22, 9, 41, 24) 111.69370511272531
+Q random-s1000020 171 (62, 43, 5, 50) 111.48205226590021
+Q random-s1000020 134 (49, 10, 1, 32) 57.85085792654934
+Q random-s1000020 179 (32, 11, 35, 19) 93.75343643383722
+Q random-s1000020 170 (35, 34, 57, 67) 110.24607752596955
+Q random-s1000020 117 (1, 57, 31, 16) 90.31496307378437
+Q random-s1000020 180 (0, 27, 69, 7) 49.72996289277231
+Q random-s1000020 123 (33, 17, 17, 6) 69.83623476241532
+Q random-s1000020 136 (64, 31, 70, 62) 94.98067544772672
+Q random-s1000020 184 (7, 51, 53, 50) 122.32894722010329
+Q random-s1000020 183 (16, 54, 44, 44) 71.04225147918793
+Q random-s1000020 176 (11, 36, 20, 54) 58.88694634316276
+Q random-s1000020 173 (33, 55, 14, 5) 147.45794203663903
+Q random-s1000020 192 (29, 11, 69, 68) 93.81941529851926
+Q random-s1000020 177 (55, 64, 65, 53) 202.03222649544225
+Q random-s1000020 181 (23, 41, 41, 26) 250.5856757554559
+Q random-s1000020 185 (43, 54, 37, 6) 57.8146256974016
+Q random-s1000020 197 (5, 52, 68, 25) 127.03099757270839
+Q random-s1000020 169 (49, 2, 3, 37) 381.28698496953007
+Q random-s1000020 172 (36, 34, 52, 49) 103.02710686346556
+Q random-s1000020 194 (34, 16, 0, 39) 60.16622258042325
+Q random-s1000020 168 (52, 66, 52, 66) 128.1150156297695
+Q random-s1000020 186 (57, 61, 2, 29) 89.17051490205648
+Q random-s1000020 201 (10, 12, 40, 47) 50.04216879804714
+Q random-s1000020 195 (12, 24, 59, 27) 149.0371733788108
+Q random-s1000020 116 (17, 69, 3, 39) 39.620965871478944
+Q random-s1000020 188 (35, 25, 30, 1) 59.06304987012654
+Q random-s1000020 161 (9, 66, 51, 13) 254.72588038878925
+Q random-s1000020 202 (7, 58, 28, 26) 95.99904620102481
+Q random-s1000020 193 (44, 35, 71, 20) 196.8757257540502
+Q random-s1000020 204 (8, 58, 5, 29) 117.04306214583562
+Q random-s1000020 198 (27, 20, 42, 1) 109.26929227945598
+Q random-s1000020 200 (38, 6, 69, 28) 114.32783886122438
+Q random-s1000020 208 (7, 55, 38, 3) 122.59371556855172
+Q random-s1000020 190 (27, 6, 47, 29) 64.74786481163818
+Q random-s1000020 209 (7, 48, 50, 33) 190.74837972593764
+Q random-s1000020 196 (28, 68, 27, 50) 130.84036628891621
+Q random-s1000020 211 (60, 57, 18, 25) 54.97108624310736
+Q random-s1000020 206 (64, 20, 24, 42) 44.516308708568296
+Q random-s1000020 178 (3, 37, 57, 29) 309.3410225405189
+Q random-s1000020 164 (47, 62, 28, 0) 87.21658538794786
+Q random-s1000020 158 (41, 30, 48, 64) 115.8342256384051
+Q random-s1000020 212 (39, 58, 53, 24) 47.46146755198021
+Q random-s1000020 153 (17, 22, 68, 39) 96.0063109435253
+Q random-s1000020 215 (37, 3, 21, 53) 102.96089501250759
+Q random-s1000020 219 (29, 34, 42, 20) 144.30610783104905
+Q random-s1000020 216 (16, 54, 49, 35) 84.05565732906751
+Q random-s1000020 224 (64, 55, 21, 33) 134.62851394528312
+Q random-s1000020 187 (14, 14, 38, 34) 215.63671831918057
+Q random-s1000020 213 (3, 30, 23, 19) 59.46846199202132
+Q random-s1000020 228 (5, 70, 4, 6) 41.01235882354659
+Q random-s1000020 205 (71, 24, 15, 71) 124.97141481273198
+Q random-s1000020 207 (1, 61, 62, 43) 38.222735947891124
+Q random-s1000020 220 (21, 69, 71, 71) 48.82528990809935
+Q random-s1000020 191 (28, 37, 33, 40) 41.56219757648345
+Q random-s1000020 199 (14, 6, 48, 1) 118.81255293972099
+Q random-s1000020 231 (26, 14, 55, 8) 69.60481503036996
+Q random-s1000020 234 (34, 59, 70, 65) 55.89779787964065
+Q random-s1000020 222 (6, 4, 0, 42) 59.71957537238496
+Q random-s1000020 232 (6, 59, 2, 37) 432.1404550235681
+Q random-s1000020 230 (32, 52, 15, 70) 69.61075281087837
+Q random-s1000020 223 (61, 26, 7, 54) 50.40311501622471
+Q random-s1000020 236 (66, 44, 47, 52) 225.44265007224988
+Q random-s1000020 189 (46, 5, 71, 0) 88.04757038705552
+Q random-s1000020 214 (67, 30, 46, 3) 49.32977709939325
+Q random-s1000020 243 (20, 52, 71, 59) 775.4722868019737
+Q random-s1000020 203 (43, 31, 1, 17) 53.1187417478436
+Q random-s1000020 239 (4, 44, 69, 60) 127.70905962262617
+Q random-s1000020 233 (16, 33, 40, 64) 88.97097434087098
+Q random-s1000020 237 (17, 9, 13, 41) 94.08877575944565
+Q random-s1000020 210 (28, 48, 40, 46) 66.44674512904483
+Q random-s1000020 247 (24, 70, 36, 52) 74.82242382830691
+Q random-s1000020 235 (32, 42, 51, 70) 81.14209897887388
+Q random-s1000020 217 (48, 55, 31, 34) 258.7198896691605
+Q random-s1000020 245 (71, 9, 47, 39) 110.94289530960015
+Q random-s1000020 240 (24, 53, 41, 29) 211.17174871172696
+Q random-s1000020 229 (52, 39, 30, 8) 65.42725658230816
+Q random-s1000020 218 (56, 70, 51, 1) 52.76782171710033
+Q random-s1000020 182 (36, 6, 62, 47) 81.67082038068624
+Q random-s1000020 241 (66, 34, 55, 31) 50.53421166771808
+Q random-s1000020 254 (24, 0, 53, 40) 138.56809197921132
+Q random-s1000020 251 (13, 26, 2, 2) 301.727154590338
+Q random-s1000020 255 (62, 59, 31, 11) 95.94206363713566
+Q random-s1000020 226 (33, 9, 17, 2) 118.42803771426904
+Q random-s1000020 256 (50, 7, 65, 28) 91.20145850649314
+Q random-s1000020 227 (33, 56, 8, 39) 71.33040645167038
+Q random-s1000020 259 (58, 36, 15, 52) 117.38015235918328
+Q random-s1000020 267 (24, 48, 7, 59) 95.87951521151845
+Q random-s1000020 250 (41, 36, 40, 30) 66.46360164725364
+Q random-s1000020 252 (24, 29, 56, 39) 62.5995918788166
+Q random-s1000020 261 (47, 12, 71, 0) 83.9899358747217
+Q random-s1000020 262 (29, 21, 47, 4) 421.3784851785712
+Q random-s1000020 265 (37, 52, 9, 57) 52.412390093304495
+Q random-s1000020 258 (30, 4, 0, 7) 77.0569683069476
+Q random-s1000020 249 (58, 18, 49, 32) 125.16112411210455
+Q random-s1000020 238 (11, 61, 49, 7) 46.3768928862402
+Q random-s1000020 269 (26, 25, 49, 63) 57.21571361372707
+Q random-s1000020 221 (62, 65, 57, 57) 81.34611536772782
+Q random-s1000020 270 (2, 60, 56, 59) 170.7453782303507
+Q random-s1000020 263 (9, 43, 49, 21) 89.07664548779417
+Q random-s1000020 275 (2, 1, 14, 70) 63.59510425407511
+Q random-s1000020 264 (49, 25, 34, 22) 105.59684180454656
+Q random-s1000020 271 (32, 63, 25, 18) 166.36332718287997
+Q random-s1000020 242 (49, 54, 30, 3) 82.35255008951022
+Q random-s1000020 268 (36, 1, 71, 43) 47.771128496475455
+Q random-s1000020 257 (60, 18, 21, 56) 140.65777152219857
+Q random-s1000020 260 (27, 60, 43, 51) 103.47022435126023
+Q random-s1000020 279 (31, 33, 34, 66) 239.7812814223594
+Q random-s1000020 253 (39, 48, 36, 15) 72.99405172150036
+Q random-s1000020 274 (41, 47, 42, 6) 146.53038433382534
+Q random-s1000020 266 (39, 6, 5, 1) 123.34168340568972
+Q random-s1000020 282 (53, 17, 23, 53) 66.48638587539793
+Q random-s1000020 283 (24, 38, 20, 2) 108.1156357227824
+Q random-s1000020 284 (61, 46, 0, 11) 47.208762586538555
+Q random-s1000020 285 (66, 41, 43, 53) 106.51610817018408
+Q random-s1000020 246 (1, 41, 15, 50) 184.37741992581974
+Q random-s1000020 225 (25, 56, 32, 37) 148.3614809947632
+Q random-s1000020 296 (29, 30, 63, 59) 49.740574417095964
+Q random-s1000020 299 (44, 67, 53, 39) 803.6452528246215
+Q random-s1000020 289 (66, 50, 32, 34) 114.7242787412377
+Q random-s1000020 280 (22, 31, 42, 24) 214.83654333428183
+Q random-s1000020 288 (28, 13, 50, 9) 147.6301110318363
+Q random-s1000020 305 (5, 37, 48, 11) 343.95522211436577
+Q random-s1000020 244 (22, 23, 70, 62) 129.7626334751266
+Q random-s1000020 300 (69, 26, 50, 24) 107.6962398610158
+Q random-s1000020 295 (48, 50, 15, 69) 65.0113435509147
+Q random-s1000020 281 (50, 18, 3, 45) 181.64224778501398
+Q random-s1000020 303 (37, 25, 67, 59) 237.29699735879035
+Q random-s1000020 290 (34, 58, 27, 49) 312.23636843965096
+Q random-s1000020 286 (55, 1, 59, 62) 90.81853560501358
+Q random-s1000020 292 (30, 20, 14, 15) 69.97500740610151
+Q random-s1000020 278 (27, 9, 64, 42) 45.35075518191488
+Q random-s1000020 304 (48, 6, 19, 5) 106.04357711842316
+Q random-s1000020 273 (70, 47, 15, 6) 119.70455081458549
+Q random-s1000020 308 (34, 33, 32, 52) 147.15931996324636
+Q random-s1000020 293 (25, 61, 10, 59) 83.08050755626317
+Q random-s1000020 314 (53, 26, 35, 25) 1103.1871390420508
+Q random-s1000020 248 (36, 22, 71, 31) 85.68814140936288
+Q random-s1000020 291 (6, 71, 14, 35) 120.46563547668669
+Q random-s1000020 302 (67, 34, 51, 70) 538.5784991476708
+Q random-s1000020 316 (13, 17, 63, 29) 50.501394645307734
+Q random-s1000020 323 (70, 20, 2, 13) 1307.9402209684526
+Q random-s1000020 312 (18, 26, 32, 3) 106.3643601759713
+Q random-s1000020 310 (38, 31, 21, 36) 117.17771678799093
+Q random-s1000020 277 (46, 14, 30, 1) 104.97244149991536
+Q random-s1000020 272 (9, 42, 48, 30) 57.53985010136399
+Q random-s1000020 307 (70, 15, 49, 4) 110.24233545893546
+Q random-s1000020 276 (23, 15, 63, 7) 129.7342000392105
+Q random-s1000020 313 (56, 33, 23, 23) 84.52953563193233
+Q random-s1000020 309 (39, 48, 70, 61) 134.87846793239225
+Q random-s1000020 326 (7, 9, 68, 12) 70.88977138846026
+Q random-s1000020 320 (57, 27, 0, 17) 49.15216522493141
+Q random-s1000020 297 (12, 66, 51, 47) 314.0021325672382
+Q random-s1000020 319 (63, 37, 54, 38) 71.96573837679108
+Q random-s1000020 335 (37, 0, 13, 55) 66.55309864529809
+Q random-s1000020 337 (64, 1, 32, 3) 62.30317520702928
+Q random-s1000020 329 (32, 0, 43, 42) 76.12840248052741
+Q random-s1000020 328 (8, 54, 32, 15) 112.66980172650817
+Q random-s1000020 333 (56, 36, 23, 67) 51.80446863871338
+Q random-s1000020 330 (69, 64, 20, 34) 368.23749718781966
+Q random-s1000020 327 (10, 15, 24, 5) 36.167946802038955
+Q random-s1000020 339 (21, 57, 49, 29) 44.42116342333335
+Q random-s1000020 317 (71, 57, 33, 41) 83.6866837901198
+Q random-s1000020 318 (35, 53, 17, 27) 153.43489012234303
+Q random-s1000020 336 (0, 28, 60, 44) 327.5006042155494
+Q random-s1000020 332 (8, 50, 48, 45) 79.42192002411701
+Q random-s1000020 306 (70, 14, 39, 66) 275.3140365275543
+Q random-s1000020 315 (33, 24, 68, 58) 160.60882088884594
+Q random-s1000020 331 (53, 66, 3, 1) 424.5857350935018
+Q random-s1000020 298 (9, 62, 44, 33) 55.32205325885279
+Q random-s1000020 338 (2, 29, 33, 32) 191.4572260716455
+Q random-s1000020 343 (32, 27, 42, 22) 371.91713938035025
+Q random-s1000020 322 (35, 61, 38, 54) 46.4542793656864
+Q random-s1000020 301 (6, 13, 60, 34) 63.14218497707158
+Q random-s1000020 346 (50, 43, 59, 34) 134.5091338769092
+Q random-s1000020 352 (7, 24, 69, 31) 166.9340880607587
+Q random-s1000020 294 (1, 2, 39, 30) 68.47696947334181
+Q random-s1000020 341 (46, 17, 59, 43) 45.152026232353336
+Q random-s1000020 356 (66, 39, 8, 68) 101.0378516079186
+Q random-s1000020 287 (7, 30, 30, 6) 104.18987288522976
+Q random-s1000020 321 (11, 5, 22, 14) 47.48376253660231
+Q random-s1000020 362 (11, 30, 34, 35) 1851.3171297612716
+Q random-s1000020 325 (28, 39, 4, 16) 37.74850798042559
+Q random-s1000020 355 (0, 1, 50, 28) 103.47318346492673
+Q random-s1000020 348 (61, 7, 54, 17) 80.00812130754986
+Q random-s1000020 334 (27, 14, 27, 7) 45.17710563045403
+Q random-s1000020 345 (31, 31, 61, 54) 153.15677526361054
+Q random-s1000020 357 (42, 14, 67, 6) 50.68421217280464
+Q random-s1000020 353 (18, 34, 27, 36) 101.0440722072825
+Q random-s1000020 370 (37, 51, 29, 25) 1677.0357509640328
+Q random-s1000020 358 (8, 66, 20, 28) 528.8239479500992
+Q random-s1000020 363 (18, 65, 24, 33) 44.65171685642661
+Q random-s1000020 347 (7, 55, 57, 50) 277.9279128911676
+Q random-s1000020 351 (49, 24, 42, 41) 133.05459286480124
+Q random-s1000020 311 (1, 16, 4, 70) 80.35494858990441
+Q random-s1000020 344 (6, 8, 66, 56) 236.21241348961067
+Q random-s1000020 377 (66, 69, 12, 16) 2059.7173267234884
+Q random-s1000020 367 (61, 12, 54, 7) 67.9956752013932
+Q random-s1000020 372 (40, 1, 69, 46) 108.7274848999437
+Q random-s1000020 365 (63, 39, 67, 21) 72.50543098085903
+Q random-s1000020 342 (19, 6, 17, 45) 41.59348943783914
+Q random-s1000020 349 (35, 58, 9, 11) 119.15038706178083
+Q random-s1000020 366 (48, 17, 47, 22) 100.63149055713247
+Q random-s1000020 359 (34, 10, 67, 13) 140.26985933302902
+Q random-s1000020 364 (66, 63, 11, 14) 68.21102421499835
+Q random-s1000020 368 (59, 21, 61, 60) 120.54799876804088
+Q random-s1000020 324 (54, 33, 33, 32) 92.54580147332109
+Q random-s1000020 340 (54, 9, 59, 24) 69.95366429073832
+Q random-s1000020 376 (40, 15, 61, 18) 311.6996313806442
+Q random-s1000020 388 (63, 65, 61, 35) 75.1105847163018
+Q random-s1000020 375 (63, 65, 6, 41) 79.95892238236515
+Q random-s1000020 369 (1, 11, 70, 33) 46.26912128534971
+Q random-s1000020 383 (64, 4, 16, 55) 70.92130785850671
+Q random-s1000020 354 (54, 46, 40, 65) 118.74850285077854
+Q random-s1000020 384 (35, 70, 53, 46) 57.865404191000756
+Q random-s1000020 371 (12, 12, 0, 49) 45.57611481403773
+Q random-s1000020 392 (21, 59, 65, 41) 56.842816848149624
+Q random-s1000020 360 (71, 70, 58, 31) 171.3047093122112
+Q random-s1000020 374 (22, 60, 32, 2) 95.77469080688356
+Q random-s1000020 381 (23, 50, 38, 32) 79.35278077062549
+Q random-s1000020 378 (35, 19, 39, 49) 54.45601190366484
+Q random-s1000020 379 (36, 31, 34, 50) 249.4314211380318
+Q random-s1000020 395 (64, 20, 3, 57) 142.2582207393921
+Q random-s1000020 394 (10, 24, 20, 13) 157.78248461531868
+Q random-s1000020 391 (24, 46, 17, 48) 103.38451776765862
+Q random-s1000020 389 (60, 10, 39, 59) 219.6330223726372
+Q random-s1000020 399 (26, 41, 60, 22) 47.564733038731156
+Q random-s1000020 397 (29, 58, 23, 12) 444.95777819805977
+Q random-s1000020 373 (50, 45, 22, 0) 41.32490264489731
+Q random-s1000020 400 (37, 67, 62, 26) 625.4236598250887
+Q random-s1000020 380 (28, 66, 10, 66) 225.67040892208365
+Q random-s1000020 382 (30, 10, 2, 48) 49.19524083997011
+Q random-s1000020 398 (35, 66, 37, 11) 109.34370770190593
+Q random-s1000020 411 (10, 64, 56, 67) 1755.7354412169636
+Q random-s1000020 405 (48, 70, 32, 36) 98.97458079868915
+Q random-s1000020 404 (32, 62, 18, 10) 160.03656954438497
+Q random-s1000020 390 (39, 22, 66, 9) 116.9438591809977
+Q random-s1000020 387 (60, 14, 30, 57) 70.4898368365077
+Q random-s1000020 412 (27, 37, 43, 17) 2388.4045203642563
+Q random-s1000020 408 (53, 64, 34, 40) 44.762343427600236
+Q random-s1000020 415 (53, 40, 26, 42) 617.6909392307927
+Q random-s1000020 350 (23, 38, 55, 25) 103.34261284944719
+Q random-s1000020 401 (62, 22, 26, 46) 135.97043625136996
+Q random-s1000020 407 (67, 23, 9, 11) 69.06854129664241
+Q random-s1000020 417 (47, 18, 0, 33) 77.85522800263348
+Q random-s1000020 403 (24, 26, 65, 6) 52.58503009752346
+Q random-s1000020 386 (33, 8, 41, 64) 101.54861675471277
+Q random-s1000020 424 (29, 51, 63, 27) 154.10755577507513
+Q random-s1000020 396 (36, 47, 44, 63) 46.977463529657406
+Q random-s1000020 385 (44, 13, 61, 50) 140.0815626434485
+Q random-s1000020 410 (70, 15, 40, 3) 112.58816154309451
+Q random-s1000020 361 (22, 21, 24, 37) 115.61036289699744
+Q random-s1000020 406 (4, 19, 35, 0) 235.1868121343201
+Q random-s1000020 432 (53, 71, 70, 19) 54.644200965281506
+Q random-s1000020 402 (68, 8, 11, 35) 187.72685035645458
+Q random-s1000020 418 (32, 26, 22, 25) 43.12263004028724
+Q random-s1000020 393 (11, 31, 14, 59) 41.62822348647885
+Q random-s1000020 413 (11, 35, 52, 34) 87.07382054096175
+Q random-s1000020 426 (46, 19, 59, 16) 73.45969776957088
+Q random-s1000020 431 (45, 29, 18, 8) 102.56839608090941
+Q random-s1000020 414 (6, 44, 3, 8) 50.01436904316435
+Q random-s1000020 422 (18, 26, 13, 37) 153.1432792375334
+Q random-s1000020 443 (40, 48, 45, 30) 121.64199195670868
+Q random-s1000020 427 (68, 71, 67, 19) 174.1568550083646
+Q random-s1000020 440 (50, 2, 58, 28) 168.21748763274704
+Q random-s1000020 437 (29, 32, 47, 42) 49.652071272589204
+Q random-s1000020 430 (41, 4, 47, 6) 64.1580540402537
+Q random-s1000020 420 (35, 48, 17, 30) 59.12480522972677
+Q random-s1000020 428 (40, 21, 52, 38) 24.863663104388618
+Q random-s1000020 419 (60, 31, 38, 22) 77.07096623439729
+Q random-s1000020 429 (22, 58, 1, 52) 59.59290039777225
+Q random-s1000020 434 (51, 59, 63, 66) 149.74222604845804
+Q random-s1000020 438 (66, 16, 46, 50) 62.20262742432842
+Q random-s1000020 441 (34, 56, 35, 46) 47.34619372829959
+Q random-s1000020 416 (59, 16, 9, 18) 44.54594568703667
+Q random-s1000020 433 (0, 61, 43, 57) 27.278461159140658
+Q random-s1000020 451 (66, 29, 7, 36) 168.02999991576405
+Q random-s1000020 436 (68, 42, 63, 61) 868.1520996282287
+Q random-s1000020 450 (7, 18, 39, 25) 76.38090909173651
+Q random-s1000020 446 (16, 45, 49, 31) 64.90594950029302
+Q random-s1000020 421 (46, 9, 16, 33) 110.75818067133156
+Q random-s1000020 454 (26, 57, 21, 71) 110.3087631105257
+Q random-s1000020 453 (13, 66, 71, 16) 47.61304392673242
+Q random-s1000020 448 (24, 45, 31, 69) 94.5717124800953
+Q random-s1000020 455 (58, 70, 26, 24) 90.47891031796146
+Q random-s1000020 444 (68, 11, 20, 43) 91.40443251061792
+Q random-s1000020 457 (50, 54, 17, 62) 54.742963127326504
+Q random-s1000020 456 (8, 15, 60, 59) 71.57152727541332
+Q random-s1000020 460 (62, 47, 35, 20) 69.95450344257118
+Q random-s1000020 423 (57, 56, 23, 39) 85.7786445583158
+Q random-s1000020 425 (70, 13, 36, 64) 58.32483508684255
+Q random-s1000020 449 (36, 21, 41, 71) 46.21437913335258
+Q random-s1000020 469 (50, 58, 10, 12) 157.55515019524543
+Q random-s1000020 466 (56, 44, 39, 70) 61.69765220999884
+Q random-s1000020 473 (34, 55, 30, 59) 62.91917077949492
+Q random-s1000020 439 (6, 30, 11, 45) 134.67932607662522
+Q random-s1000020 442 (52, 39, 17, 8) 59.266413660901485
+Q random-s1000020 472 (13, 20, 34, 63) 247.78671007088099
+Q random-s1000020 478 (24, 57, 32, 67) 55.22618007794758
+Q random-s1000020 481 (61, 65, 37, 70) 60.64070853463656
+Q random-s1000020 474 (20, 10, 34, 9) 130.51813484076595
+Q random-s1000020 475 (52, 41, 34, 64) 40.089037571381795
+Q random-s1000020 483 (47, 37, 34, 40) 127.01932355432957
+Q random-s1000020 464 (68, 19, 58, 26) 143.3255784348184
+Q random-s1000020 468 (25, 68, 12, 64) 38.645746048155516
+Q random-s1000020 409 (41, 53, 32, 0) 62.51011142890495
+Q random-s1000020 445 (43, 2, 11, 18) 187.763881710535
+Q random-s1000020 452 (27, 61, 3, 30) 101.19536663934315
+Q random-s1000020 461 (67, 65, 55, 61) 55.664978645712225
+Q random-s1000020 477 (62, 33, 3, 4) 115.89919439428489
+Q random-s1000020 480 (56, 15, 51, 53) 140.2144336360708
+Q random-s1000020 485 (10, 61, 25, 29) 952.0051546684416
+Q random-s1000020 479 (37, 26, 23, 25) 45.318602771308825
+Q random-s1000020 462 (36, 56, 69, 5) 99.65157147360578
+Q random-s1000020 489 (33, 60, 26, 65) 75.17570555100622
+Q random-s1000020 459 (39, 71, 55, 22) 102.89045614700619
+Q random-s1000020 482 (17, 57, 34, 20) 69.45248715381213
+Q random-s1000020 484 (25, 16, 67, 28) 43.29519019262666
+Q random-s1000020 447 (22, 71, 30, 41) 128.44450306197766
+Q random-s1000020 488 (66, 23, 63, 58) 44.438637974674535
+Q random-s1000020 435 (17, 24, 57, 5) 192.17925518225792
+Q random-s1000020 467 (17, 14, 7, 67) 88.12976929901087
+Q random-s1000020 463 (43, 37, 2, 21) 152.85614653360847
+Q random-s1000020 492 (13, 9, 32, 34) 39.444331730756254
+Q random-s1000020 491 (69, 49, 42, 56) 91.81935432323661
+Q random-s1000020 490 (32, 57, 67, 7) 35.55630868238622
+Q random-s1000020 458 (49, 57, 20, 52) 38.549330436121934
+Q random-s1000020 471 (3, 53, 38, 8) 52.72397872098782
+Q random-s1000020 501 (5, 40, 69, 71) 39.02248431545831
+Q random-s1000020 496 (13, 10, 53, 41) 274.37926703204477
+Q random-s1000020 499 (69, 43, 17, 20) 333.4537328637821
+Q random-s1000020 495 (14, 28, 26, 45) 285.1438735700118
+Q random-s1000020 510 (69, 25, 2, 3) 194.54100708830688
+Q random-s1000020 500 (48, 22, 40, 1) 113.22628765048802
+Q random-s1000020 470 (57, 25, 0, 26) 141.21300372462383
+Q random-s1000020 519 (44, 24, 66, 12) 1339.9327208000952
+Q random-s1000020 517 (7, 8, 50, 6) 102.67458510192773
+Q random-s1000020 505 (60, 14, 50, 2) 62.79880267218112
+Q random-s1000020 487 (44, 6, 32, 58) 58.88836492819466
+Q random-s1000020 514 (42, 37, 35, 20) 108.37428003773297
+Q random-s1000020 486 (44, 14, 6, 0) 72.97160585925077
+Q random-s1000020 476 (62, 49, 58, 37) 326.5035326564913
+Q random-s1000020 503 (61, 58, 48, 69) 290.81546568865895
+Q random-s1000020 513 (61, 16, 3, 31) 38.25363929654606
+Q random-s1000020 502 (52, 46, 49, 8) 68.00091029254433
+Q random-s1000020 507 (61, 37, 65, 53) 69.41704629949739
+Q random-s1000020 522 (31, 49, 27, 20) 54.293441046498266
+Q random-s1000020 520 (36, 62, 45, 65) 51.49975334583803
+Q random-s1000020 516 (14, 4, 13, 1) 41.963433639074076
+Q random-s1000020 465 (9, 15, 4, 39) 79.63146894829285
+Q random-s1000020 512 (25, 37, 66, 30) 67.29093722415033
+Q random-s1000020 494 (68, 50, 22, 66) 197.7692355430069
+Q random-s1000020 497 (30, 1, 43, 12) 45.79711870805364
+Q random-s1000020 529 (50, 65, 32, 55) 50.98184144224968
+Q random-s1000020 493 (44, 21, 51, 22) 99.12981337059358
+Q random-s1000020 521 (71, 48, 8, 58) 228.38130135101866
+Q random-s1000020 537 (26, 24, 24, 20) 139.25300611585862
+Q random-s1000020 511 (14, 58, 33, 27) 59.4148450928077
+Q random-s1000020 498 (35, 2, 46, 65) 53.63860311309165
+Q random-s1000020 535 (23, 25, 66, 38) 140.50142589359083
+Q random-s1000020 532 (53, 65, 16, 20) 48.52258843883067
+Q random-s1000020 506 (27, 56, 57, 33) 45.30394453086678
+Q random-s1000020 540 (40, 22, 26, 32) 160.76996876912153
+Q random-s1000020 509 (19, 41, 32, 55) 59.45577293082027
+Q random-s1000020 526 (68, 27, 55, 13) 82.27829887083519
+Q random-s1000020 504 (65, 56, 41, 2) 158.32751528306463
+Q random-s1000020 525 (71, 10, 33, 40) 64.16290982133205
+Q random-s1000020 528 (19, 43, 50, 35) 124.98484500537023
+Q random-s1000020 538 (3, 39, 64, 19) 212.85780715024708
+Q random-s1000020 533 (49, 12, 66, 2) 208.22183930071816
+Q random-s1000020 530 (56, 71, 51, 47) 62.285485112979934
+Q random-s1000020 546 (61, 68, 20, 44) 116.75045192094653
+Q random-s1000020 508 (7, 39, 46, 54) 97.36854553086765
+Q random-s1000020 547 (56, 4, 49, 7) 68.0140730683771
+Q random-s1000020 527 (38, 18, 29, 48) 43.16447609022069
+Q random-s1000020 539 (65, 22, 32, 67) 85.41254087813327
+Q random-s1000020 553 (26, 8, 39, 10) 149.6306227679053
+Q random-s1000020 555 (50, 23, 10, 42) 140.94074795150286
+Q random-s1000020 556 (16, 37, 61, 1) 81.8089685862244
+Q random-s1000020 524 (54, 58, 23, 42) 134.0950921676159
+Q random-s1000020 551 (20, 20, 42, 6) 204.93006439118057
+Q random-s1000020 545 (6, 4, 13, 45) 105.32492917086503
+Q random-s1000020 562 (64, 16, 7, 20) 101.79929983111825
+Q random-s1000020 550 (26, 13, 11, 58) 176.85175370311092
+Q random-s1000020 559 (61, 20, 53, 62) 164.306218472507
+Q random-s1000020 534 (70, 39, 54, 54) 99.72069671010789
+Q random-s1000020 565 (66, 46, 45, 51) 181.54055323366995
+Q random-s1000020 531 (46, 49, 56, 56) 121.5092201070131
+Q random-s1000020 558 (9, 58, 23, 20) 39.06548122736357
+Q random-s1000020 564 (55, 26, 30, 50) 105.38653055836124
+Q random-s1000020 549 (63, 62, 45, 13) 150.9407512267285
+Q random-s1000020 563 (48, 64, 33, 34) 238.66015230290827
+Q random-s1000020 523 (14, 61, 63, 24) 106.04327721437751
+Q random-s1000020 573 (4, 43, 67, 0) 1697.2968188893728
+Q random-s1000020 552 (6, 15, 0, 19) 123.56082737681753
+Q random-s1000020 515 (55, 6, 49, 9) 96.43732012927755
+Q random-s1000020 569 (66, 4, 26, 26) 200.41566635028923
+Q random-s1000020 536 (4, 34, 27, 50) 184.35187447742152
+Q random-s1000020 518 (17, 33, 31, 48) 89.34958223708031
+Q random-s1000020 574 (16, 51, 66, 56) 342.11546587614725
+Q random-s1000020 577 (18, 30, 10, 20) 165.96056536738791
+Q random-s1000020 542 (68, 31, 59, 57) 37.698378650361
+Q random-s1000020 561 (69, 13, 14, 13) 107.1573797555765
+Q random-s1000020 543 (68, 24, 68, 54) 36.73648215634061
+Q random-s1000020 541 (31, 56, 22, 25) 86.32612577922798
+Q random-s1000020 566 (68, 32, 5, 55) 41.990935032645176
+Q random-s1000020 579 (29, 19, 62, 20) 407.7728199501714
+Q random-s1000020 584 (48, 45, 65, 19) 84.89071109729043
+Q random-s1000020 572 (10, 53, 45, 21) 153.4786566440003
+Q random-s1000020 567 (28, 65, 21, 64) 43.58372571083918
+Q random-s1000020 581 (50, 9, 27, 57) 400.02665915189476
+Q random-s1000020 568 (54, 64, 24, 59) 108.15614291513793
+Q random-s1000020 585 (37, 3, 34, 4) 102.8681914328937
+Q random-s1000020 554 (19, 37, 35, 56) 470.3675253806705
+Q random-s1000020 560 (24, 31, 12, 69) 212.85029578948073
+Q random-s1000020 570 (23, 17, 57, 21) 184.4673944329788
+Q random-s1000020 580 (47, 4, 57, 61) 55.2951361586018
+Q random-s1000020 571 (23, 47, 55, 26) 256.60289733546165
+Q random-s1000020 591 (5, 70, 58, 51) 409.08832729202317
+Q random-s1000020 548 (43, 24, 33, 15) 52.58261912843157
+Q random-s1000020 588 (23, 19, 38, 50) 70.52560848585283
+Q random-s1000020 576 (1, 35, 20, 13) 163.6759152622073
+Q random-s1000020 596 (24, 25, 60, 12) 50.339387278583644
+Q random-s1000020 575 (11, 25, 6, 14) 65.6871982700119
+Q random-s1000020 599 (26, 35, 37, 33) 318.12672119194934
+Q random-s1000020 597 (42, 60, 54, 30) 56.10270660916281
+Q random-s1000020 587 (62, 39, 61, 48) 127.09627425184928
+Q random-s1000020 578 (68, 54, 17, 37) 60.49892382221673
+Q random-s1000020 557 (22, 41, 56, 32) 125.81397609971371
+Q random-s1000020 583 (6, 70, 60, 12) 93.59037305188177
+Q random-s1000020 582 (1, 18, 21, 26) 542.6464574606659
+Q random-s1000020 586 (38, 41, 47, 36) 87.60459833240776
+Q random-s1000020 598 (12, 59, 20, 7) 62.64815959162865
+Q random-s1000020 589 (44, 17, 3, 56) 84.3017522812219
+Q random-s1000020 544 (49, 69, 31, 15) 74.18134998795118
+Q random-s1000020 594 (60, 29, 21, 69) 93.77893696866771
+Q random-s1000020 595 (14, 1, 43, 2) 96.11062260311336
+Q random-s1000020 592 (51, 58, 7, 35) 164.8994831946015
+Q random-s1000020 590 (11, 42, 15, 57) 61.537001629994776
+Q random-s1000020 593 (48, 71, 16, 7) 123.58726126853297
+{
+  "reference_J": 11.906835229630682,
+  "best_J": 26.15077789702448,
+  "best_state4": [
+    44,
+    63,
+    32,
+    21
+  ],
+  "exact_reference_recovered": false,
+  "hamming": 4,
+  "J_over_ref": 2.196282840292198,
+  "random_best_J": 24.863663104388618,
+  "leakage_audit": {
+    "exact_or_1e-4_matches": [],
+    "nearest": [
+      {
+        "distance": 0.13321964915677276,
+        "family": "US004123144_Example09P.txt",
+        "state": 0,
+        "surfaces": 11
+      },
+      {
+        "distance": 0.1516833243154173,
+        "family": "US002745315_Example01P.txt",
+        "state": 0,
+        "surfaces": 11
+      },
+      {
+        "distance": 0.21761212048089185,
+        "family": "CH352844_Example01P.txt",
+        "state": 0,
+        "surfaces": 11
+      },
+      {
+        "distance": 0.21767419139744287,
+        "family": "CH346706_Example01P.txt",
+        "state": 0,
+        "surfaces": 11
+      },
+      {
+        "distance": 0.22335417381356912,
+        "family": "JP1988-081312_ExampleMLP.txt",
+        "state": 0,
+        "surfaces": 11
+      },
+      {
+        "distance": 0.22824697807944802,
+        "family": "US004123144_Example08P.txt",
+        "state": 0,
+        "surfaces": 11
+      },
+      {
+        "distance": 0.23323525124585534,
+        "family": "US002645975_Example01P.txt",
+        "state": 0,
+        "surfaces": 11
+      },
+      {
+        "distance": 0.2490598974067268,
+        "family": "US004728179_ExampleMLP.txt",
+        "state": 0,
+        "surfaces": 11
+      },
+      {
+        "distance": 0.2547604137177165,
+        "family": "US004377326_Example01P.txt",
+        "state": 0,
+        "surfaces": 11
+      },
+      {
+        "distance": 0.2788474049927909,
+        "family": "US002645974_Example01P.txt",
+        "state": 0,
+        "surfaces": 11
+      },
+      {
+        "distance": 0.2851297651694216,
+        "family": "DE02222892_Example03P.txt",
+        "state": 0,
+        "surfaces": 11
+      },
+      {
+        "distance": 0.2889136102935156,
+        "family": "GB0850117_Example01P.txt",
+        "state": 0,
+        "surfaces": 11
+      }
+    ],
+    "valid_independent_pretrain": true
+  },
+  "elapsed_sec": 2026.8462381362915
+}
