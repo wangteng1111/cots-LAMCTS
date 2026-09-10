@@ -1,29 +1,9 @@
 {
-  "args": [
-    "validation/opt10_workstation_meta.py"
-  ],
-  "code_commit": "72a62ee19441a3d1b041cfdab69659b8a2386002",
-  "elapsed_sec": 9.50511908531189,
-  "entrypoint": "scripts/run_with_workstation_venv.py",
-  "env": {
-    "MKL_NUM_THREADS": "1",
-    "NUMBA_NUM_THREADS": "1",
-    "OMP_NUM_THREADS": "1",
-    "OPENBLAS_NUM_THREADS": "1",
-    "PYTHONHASHSEED": "0"
-  },
-  "finished_at": 1788972259.934281,
+  "error": "<urlopen error timed out>",
   "hostname": "aipss-Rack-Server",
   "job_id": "opt10-meta-20260910-0042",
-  "log_tail": "torch 2.14.0+cu130 cuda 13.0 devices 2\n+ git clone --depth 1 https://github.com/dibyendumajumdar/goptical.git /var/lib/cots-lamcts/corpora/goptical\nCloning into '/var/lib/cots-lamcts/corpora/goptical'...\n\nparsed human prescriptions 0\nTraceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/opt10-meta-20260910-0042/src/validation/opt10_workstation_meta.py\", line 346, in <module>\n    if __name__=='__main__': main()\n                             ^^^^^^\n  File \"/var/lib/cots-lamcts/jobs/opt10-meta-20260910-0042/src/validation/opt10_workstation_meta.py\", line 286, in main\n    if len(human)<10: raise RuntimeError('too few parsed human prescriptions')\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: too few parsed human prescriptions",
-  "memory_gb": 0,
-  "pid": 980397,
-  "request_sha256": "1e433291661c56818b0d5944289ab39d86827b86ff96909adf05612491fb2a34",
-  "returncode": 1,
+  "queue_path": "remote/queue/opt10-meta-20260910-0042.json",
   "schema": 1,
-  "started_at": 1788972250.429162,
-  "state": "failed",
-  "timeout_sec": 21600,
-  "updated_at": 1788972252.636682,
-  "uploaded_artifacts": []
+  "state": "rejected",
+  "timestamp": 1789028054.514039
 }
