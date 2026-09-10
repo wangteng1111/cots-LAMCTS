@@ -1,36 +1,9 @@
 {
-  "args": [],
-  "code_commit": "f4b825e46c937f5ce61ef517639da89cae9f6053",
-  "elapsed_sec": 9.727729320526123,
-  "entrypoint": "scripts/inspect_opticalbench_source.py",
-  "env": {
-    "MKL_NUM_THREADS": "1",
-    "OMP_NUM_THREADS": "1",
-    "OPENBLAS_NUM_THREADS": "1"
-  },
-  "finished_at": 1788974787.0739698,
+  "error": "<urlopen error timed out>",
   "hostname": "aipss-Rack-Server",
   "job_id": "inspect-opticalbench-20260910-0055",
-  "log_tail": "{\n  \"bytes\": 163438,\n  \"link_count\": 11,\n  \"interesting_count\": 5,\n  \"first\": [\n    \"https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js\",\n    \"https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js\",\n    \"https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js\",\n    \"../../../js/sorttable.js\",\n    \"OpticalBench.htm\"\n  ]\n}",
-  "memory_gb": 0,
-  "pid": 984376,
-  "request_sha256": "b7e25476a62bc2d6755154638775636a2468ff0448af409bee6b0e9fc2f50fb3",
-  "returncode": 0,
+  "queue_path": "remote/queue/inspect-opticalbench-20260910-0055.json",
   "schema": 1,
-  "started_at": 1788974777.3462405,
-  "state": "finished",
-  "timeout_sec": 600,
-  "updated_at": 1788974779.6115234,
-  "uploaded_artifacts": [
-    {
-      "path": "opticalbench_hub_inspect.json",
-      "size": 88907,
-      "uploaded": true
-    },
-    {
-      "path": "opticalbench_hub_raw.txt",
-      "size": 163438,
-      "uploaded": true
-    }
-  ]
+  "state": "rejected",
+  "timestamp": 1789012736.7140222
 }
