@@ -1,0 +1,150 @@
+Q reference-posthoc 0 (0, 2, 4, 6) 11.906835229630682
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-smoke-20260910-1247/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+Q init-s17 2 (2, 15, 32, 27) 2391.8522247719043
+Q init-s17 5 (42, 18, 26, 43) 198.2346101031899
+Q init-s17 0 (53, 60, 7, 11) 155.62744057006842
+Q init-s17 1 (32, 40, 54, 26) 163.30471620742955
+Q init-s17 6 (11, 6, 50, 71) 42.7497238476047
+Q init-s17 3 (65, 30, 45, 44) 97.14363205201201
+Q init-s17 9 (35, 0, 50, 12) 322.6326091465428
+Q init-s17 7 (49, 59, 29, 2) 104.68014810785999
+Q init-s17 10 (34, 11, 41, 33) 60.37343003231818
+Q init-s17 11 (29, 40, 10, 32) 74.8787072914369
+Q init-s17 8 (46, 40, 53, 43) 116.60513415799379
+Q init-s17 16 (56, 40, 58, 17) 103.65800211583569
+Q init-s17 13 (24, 28, 58, 14) 43.64706233648576
+Q init-s17 18 (16, 37, 59, 20) 131.37266054318187
+Q init-s17 21 (66, 8, 36, 65) 60.0101904711403
+Q init-s17 20 (53, 47, 48, 39) 79.69042640194384
+Q init-s17 15 (19, 25, 61, 71) 39.16483588653191
+Q init-s17 19 (40, 45, 15, 34) 229.19553525117652
+Q init-s17 12 (51, 66, 15, 58) 108.97525436329202
+Q init-s17 17 (11, 47, 17, 47) 66.10315173739521
+Q init-s17 4 (6, 53, 3, 1) 36.23452497038776
+Q init-s17 25 (44, 51, 7, 35) 1745.8578636937568
+Q init-s17 27 (29, 39, 56, 36) 41.73341873518222
+Q init-s17 26 (37, 60, 0, 25) 51.145393507191706
+Q init-s17 24 (0, 44, 3, 39) 76.27408426546016
+Q init-s17 23 (3, 12, 68, 24) 156.10170186265998
+Q init-s17 29 (42, 6, 25, 17) 53.058261761917926
+Q init-s17 14 (17, 25, 46, 62) 84.73782064136219
+Q init-s17 28 (54, 1, 21, 16) 136.99068040534024
+Q init-s17 22 (30, 1, 70, 22) 96.68905728209786
+Q init-s17 31 (62, 26, 0, 46) 65.34830322308629
+Q init-s17 30 (67, 0, 47, 21) 44.872344808827215
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-smoke-20260910-1247/src/validation/optv1_lamcts_mandler_meta.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round1-s17 2 (65, 39, 34, 28) 98.31163075257564
+Q round1-s17 1 (55, 37, 51, 2) 275.04906776216376
+Q round1-s17 7 (18, 61, 30, 33) 52.46237910289818
+Q round1-s17 4 (37, 37, 31, 9) 46.70197461105955
+Q round1-s17 0 (12, 60, 61, 29) 190.15421973813224
+Q round1-s17 3 (12, 8, 33, 16) 55.50099531868626
+Q round1-s17 6 (22, 69, 35, 50) 100.41320259259794
+Q round1-s17 5 (62, 29, 41, 37) 78.90215431989152
+ROUND 1 n 40 bestJ 36.23452497038776 best (6, 53, 3, 1) eligible 5000
+/var/lib/cots-lamcts/jobs/optv1-lamcts-mandler-smoke-20260910-1247/src/validation/optv1_lamcts_mandler_meta.py:400: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+  s = pool[int(i)]
+Q round2-s17 4 (39, 53, 19, 4) 369.6872746456665
+Q round2-s17 5 (58, 22, 63, 5) 46.93958639458201
+Q round2-s17 3 (0, 68, 50, 13) 548.7430148180774
+Q round2-s17 7 (56, 67, 47, 30) 66.29648138998783
+Q round2-s17 1 (20, 20, 5, 43) 105.14908468691797
+Q round2-s17 6 (56, 64, 6, 46) 78.73463766235398
+Q round2-s17 2 (28, 21, 59, 35) 96.42619562147082
+Q round2-s17 0 (30, 58, 18, 46) 65.7832684388944
+ROUND 2 n 48 bestJ 36.23452497038776 best (6, 53, 3, 1) eligible 2553
+{
+  "reference_J": 11.906835229630682,
+  "best_J": 36.23452497038776,
+  "best_state4": [
+    6,
+    53,
+    3,
+    1
+  ],
+  "exact_reference_recovered": false,
+  "hamming": 4,
+  "J_over_ref": 3.043170101171515,
+  "random_best_J": null,
+  "leakage_audit": {
+    "exact_or_1e-4_matches": [],
+    "nearest": [
+      {
+        "distance": 0.13321964915677276,
+        "family": "US004123144_Example09P.txt",
+        "state": 0,
+        "surfaces": 11
+      },
+      {
+        "distance": 0.1516833243154173,
+        "family": "US002745315_Example01P.txt",
+        "state": 0,
+        "surfaces": 11
+      },
+      {
+        "distance": 0.21761212048089185,
+        "family": "CH352844_Example01P.txt",
+        "state": 0,
+        "surfaces": 11
+      },
+      {
+        "distance": 0.21767419139744287,
+        "family": "CH346706_Example01P.txt",
+        "state": 0,
+        "surfaces": 11
+      },
+      {
+        "distance": 0.22335417381356912,
+        "family": "JP1988-081312_ExampleMLP.txt",
+        "state": 0,
+        "surfaces": 11
+      },
+      {
+        "distance": 0.22824697807944802,
+        "family": "US004123144_Example08P.txt",
+        "state": 0,
+        "surfaces": 11
+      },
+      {
+        "distance": 0.23323525124585534,
+        "family": "US002645975_Example01P.txt",
+        "state": 0,
+        "surfaces": 11
+      },
+      {
+        "distance": 0.2490598974067268,
+        "family": "US004728179_ExampleMLP.txt",
+        "state": 0,
+        "surfaces": 11
+      },
+      {
+        "distance": 0.2547604137177165,
+        "family": "US004377326_Example01P.txt",
+        "state": 0,
+        "surfaces": 11
+      },
+      {
+        "distance": 0.2788474049927909,
+        "family": "US002645974_Example01P.txt",
+        "state": 0,
+        "surfaces": 11
+      },
+      {
+        "distance": 0.2851297651694216,
+        "family": "DE02222892_Example03P.txt",
+        "state": 0,
+        "surfaces": 11
+      },
+      {
+        "distance": 0.2889136102935156,
+        "family": "GB0850117_Example01P.txt",
+        "state": 0,
+        "surfaces": 11
+      }
+    ],
+    "valid_independent_pretrain": true
+  },
+  "elapsed_sec": 128.65163111686707
+}
