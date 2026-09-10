@@ -1,33 +1,9 @@
 {
-  "args": [
-    "scripts/goptical_corpus_probe.py"
-  ],
-  "code_commit": "70fa86753a47fde7c746f8635cab57880aa6664b",
-  "elapsed_sec": 11.304279804229736,
-  "entrypoint": "scripts/run_with_workstation_venv.py",
-  "env": {
-    "MKL_NUM_THREADS": "1",
-    "OMP_NUM_THREADS": "1",
-    "OPENBLAS_NUM_THREADS": "1"
-  },
-  "finished_at": 1788972337.1375659,
+  "error": "<urlopen error timed out>",
   "hostname": "aipss-Rack-Server",
   "job_id": "goptical-probe-20260910-0045",
-  "log_tail": "{\n  \"root_exists\": true,\n  \"data_exists\": true,\n  \"n_txt\": 22,\n  \"sample_paths\": [\n    \"data/canon-rf-50mmf1.2/canon-rf-50mmf1.2.txt\",\n    \"data/cosina-35mm-f1.2/JP2004-101880_Example02P.txt\",\n    \"data/leica-sl-90-280/JP2016-139125_Example01P.txt\",\n    \"data/leitz-r-summicron-50mmf2/leitz-r-summicron-50mmf2.txt\",\n    \"data/leitz-r-summilux-50mmf1.4/leitz-r-summilux-50mmf1.4.txt\"\n  ]\n}",
-  "memory_gb": 0,
-  "pid": 980547,
-  "request_sha256": "a9c510bb5fce4eb4332fe104fe7722dce6c93a3868f9dceb1e5a6ed1d70c215f",
-  "returncode": 0,
+  "queue_path": "remote/queue/goptical-probe-20260910-0045.json",
   "schema": 1,
-  "started_at": 1788972325.833286,
-  "state": "finished",
-  "timeout_sec": 600,
-  "updated_at": 1788972328.467021,
-  "uploaded_artifacts": [
-    {
-      "path": "goptical_probe.json",
-      "size": 10751,
-      "uploaded": true
-    }
-  ]
+  "state": "rejected",
+  "timestamp": 1789032685.1063383
 }
