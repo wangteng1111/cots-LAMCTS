@@ -27,10 +27,13 @@
   },
   "hostname": "aipss-Rack-Server",
   "job_id": "optv1-transformer-only-lamcts-mandler-full-20260910-1536",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 1054476,
   "request_sha256": "665f232ea6f6f85547fd7b9b4dd9121fda8ec3c1d6231bb95382fbca686d280d",
   "schema": 1,
   "started_at": 1789025920.7662184,
   "state": "running",
-  "timeout_sec": 43200
+  "timeout_sec": 43200,
+  "updated_at": 1789025932.3513403
 }
