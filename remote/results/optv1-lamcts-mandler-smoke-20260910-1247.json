@@ -25,10 +25,13 @@
   },
   "hostname": "aipss-Rack-Server",
   "job_id": "optv1-lamcts-mandler-smoke-20260910-1247",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 1030302,
   "request_sha256": "f1ece5010f4ad36a4ae5cfe4f4a0405b7cf9797ad1df88fb9445435575ed7833",
   "schema": 1,
   "started_at": 1789015911.0967574,
   "state": "running",
-  "timeout_sec": 10800
+  "timeout_sec": 10800,
+  "updated_at": 1789015913.6172745
 }
