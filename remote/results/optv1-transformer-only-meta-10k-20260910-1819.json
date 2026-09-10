@@ -27,10 +27,13 @@
   },
   "hostname": "aipss-Rack-Server",
   "job_id": "optv1-transformer-only-meta-10k-20260910-1819",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 1074792,
   "request_sha256": "84d1994e1e8137374f33736f4d7a0286ca4a9aef3cbda881fe2b291aaf716bbd",
   "schema": 1,
   "started_at": 1789037460.7009096,
   "state": "running",
-  "timeout_sec": 172800
+  "timeout_sec": 172800,
+  "updated_at": 1789037462.6617289
 }
