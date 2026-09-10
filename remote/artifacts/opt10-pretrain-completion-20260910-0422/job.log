@@ -1,0 +1,728 @@
+/var/lib/cots-lamcts/jobs/opt10-pretrain-completion-20260910-0422/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+PRE mlm_first_base 17 gpu 0 ep 0 loss 0.44180689408228946
+PRE mlm_first_base 17 gpu 0 ep 50 loss 0.13548808134137055
+PRE mlm_first_base 17 gpu 0 ep 100 loss 0.100748477742458
+PRE mlm_first_base 17 gpu 0 ep 150 loss 0.0875991586691294
+PRE mlm_first_base 17 gpu 0 ep 200 loss 0.0762353924413522
+PRE mlm_first_base 17 gpu 0 ep 250 loss 0.07163508924154136
+PRE mlm_first_base 17 gpu 0 ep 299 loss 0.06624072226576316
+{"variant": "mlm_first_base", "seed": 17, "gpu": 0, "corpus": "first", "corpus_n": 1233, "best_loss": 0.06624072226576316, "final_loss": 0.06624072226576316, "epochs": 300, "views": 24}
+
+/var/lib/cots-lamcts/jobs/opt10-pretrain-completion-20260910-0422/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+PRE mlm_first_base 43 gpu 1 ep 0 loss 0.4087821718973991
+PRE mlm_first_base 43 gpu 1 ep 50 loss 0.12373284049905263
+PRE mlm_first_base 43 gpu 1 ep 100 loss 0.09634501955065972
+PRE mlm_first_base 43 gpu 1 ep 150 loss 0.08356951052943866
+PRE mlm_first_base 43 gpu 1 ep 200 loss 0.0781063868258244
+PRE mlm_first_base 43 gpu 1 ep 250 loss 0.07553781043642606
+PRE mlm_first_base 43 gpu 1 ep 299 loss 0.07242751260025379
+{"variant": "mlm_first_base", "seed": 43, "gpu": 1, "corpus": "first", "corpus_n": 1233, "best_loss": 0.0681656360721741, "final_loss": 0.07242751260025379, "epochs": 300, "views": 24}
+
+/var/lib/cots-lamcts/jobs/opt10-pretrain-completion-20260910-0422/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+PRE mlm_first_base 89 gpu 0 ep 0 loss 0.40490709512661666
+PRE mlm_first_base 89 gpu 0 ep 50 loss 0.13418184621975973
+PRE mlm_first_base 89 gpu 0 ep 100 loss 0.1010130267494764
+PRE mlm_first_base 89 gpu 0 ep 150 loss 0.08530488266394688
+PRE mlm_first_base 89 gpu 0 ep 200 loss 0.07836006830135982
+PRE mlm_first_base 89 gpu 0 ep 250 loss 0.07281545415902749
+PRE mlm_first_base 89 gpu 0 ep 299 loss 0.06870548780529927
+{"variant": "mlm_first_base", "seed": 89, "gpu": 0, "corpus": "first", "corpus_n": 1233, "best_loss": 0.06870548780529927, "final_loss": 0.06870548780529927, "epochs": 300, "views": 24}
+
+/var/lib/cots-lamcts/jobs/opt10-pretrain-completion-20260910-0422/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+PRE mlm_first_base 131 gpu 1 ep 0 loss 0.42095536031784153
+PRE mlm_first_base 131 gpu 1 ep 50 loss 0.12880487233782426
+PRE mlm_first_base 131 gpu 1 ep 100 loss 0.09815037814088357
+PRE mlm_first_base 131 gpu 1 ep 150 loss 0.08526717670834981
+PRE mlm_first_base 131 gpu 1 ep 200 loss 0.07715484280234729
+PRE mlm_first_base 131 gpu 1 ep 250 loss 0.07274840275446574
+PRE mlm_first_base 131 gpu 1 ep 299 loss 0.06814219645009591
+{"variant": "mlm_first_base", "seed": 131, "gpu": 1, "corpus": "first", "corpus_n": 1233, "best_loss": 0.06814219645009591, "final_loss": 0.06814219645009591, "epochs": 300, "views": 24}
+
+/var/lib/cots-lamcts/jobs/opt10-pretrain-completion-20260910-0422/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+PRE mlm_first_base 173 gpu 0 ep 0 loss 0.3967547529400923
+PRE mlm_first_base 173 gpu 0 ep 50 loss 0.12747491943912628
+PRE mlm_first_base 173 gpu 0 ep 100 loss 0.09348777203987806
+PRE mlm_first_base 173 gpu 0 ep 150 loss 0.08090304869871873
+PRE mlm_first_base 173 gpu 0 ep 200 loss 0.07531124353408813
+PRE mlm_first_base 173 gpu 0 ep 250 loss 0.06991296123044613
+PRE mlm_first_base 173 gpu 0 ep 299 loss 0.06636816000518127
+{"variant": "mlm_first_base", "seed": 173, "gpu": 0, "corpus": "first", "corpus_n": 1233, "best_loss": 0.06570792737870644, "final_loss": 0.06636816000518127, "epochs": 300, "views": 24}
+
+/var/lib/cots-lamcts/jobs/opt10-pretrain-completion-20260910-0422/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+PRE mlm_multi_base 43 gpu 0 ep 0 loss 0.5613682000306401
+PRE mlm_multi_base 43 gpu 0 ep 50 loss 0.15371668523680554
+PRE mlm_multi_base 43 gpu 0 ep 100 loss 0.118145188547834
+PRE mlm_multi_base 43 gpu 0 ep 150 loss 0.1037740321816319
+PRE mlm_multi_base 43 gpu 0 ep 200 loss 0.09215272299564668
+PRE mlm_multi_base 43 gpu 0 ep 250 loss 0.08758343163415463
+PRE mlm_multi_base 43 gpu 0 ep 299 loss 0.08566427388547981
+{"variant": "mlm_multi_base", "seed": 43, "gpu": 0, "corpus": "multi", "corpus_n": 2192, "best_loss": 0.08339837574175675, "final_loss": 0.08566427388547981, "epochs": 300, "views": 24}
+
+/var/lib/cots-lamcts/jobs/opt10-pretrain-completion-20260910-0422/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+PRE mlm_multi_base 89 gpu 1 ep 0 loss 0.5998715592996917
+PRE mlm_multi_base 89 gpu 1 ep 50 loss 0.1607959249811451
+PRE mlm_multi_base 89 gpu 1 ep 100 loss 0.11824491935489821
+PRE mlm_multi_base 89 gpu 1 ep 150 loss 0.10524536081909264
+PRE mlm_multi_base 89 gpu 1 ep 200 loss 0.09471923433733682
+PRE mlm_multi_base 89 gpu 1 ep 250 loss 0.08736515904430055
+PRE mlm_multi_base 89 gpu 1 ep 299 loss 0.0834500739609238
+{"variant": "mlm_multi_base", "seed": 89, "gpu": 1, "corpus": "multi", "corpus_n": 2192, "best_loss": 0.08310972948143952, "final_loss": 0.0834500739609238, "epochs": 300, "views": 24}
+
+/var/lib/cots-lamcts/jobs/opt10-pretrain-completion-20260910-0422/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+PRE mlm_multi_base 131 gpu 0 ep 0 loss 0.6312579501719371
+PRE mlm_multi_base 131 gpu 0 ep 50 loss 0.16187178871057328
+PRE mlm_multi_base 131 gpu 0 ep 100 loss 0.11746394030586646
+PRE mlm_multi_base 131 gpu 0 ep 150 loss 0.10794670053207091
+PRE mlm_multi_base 131 gpu 0 ep 200 loss 0.09455271598196378
+PRE mlm_multi_base 131 gpu 0 ep 250 loss 0.09650935395790712
+PRE mlm_multi_base 131 gpu 0 ep 299 loss 0.08594611205541304
+{"variant": "mlm_multi_base", "seed": 131, "gpu": 0, "corpus": "multi", "corpus_n": 2192, "best_loss": 0.08394967998466353, "final_loss": 0.08594611205541304, "epochs": 300, "views": 24}
+
+/var/lib/cots-lamcts/jobs/opt10-pretrain-completion-20260910-0422/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+PRE mlm_multi_base 173 gpu 1 ep 0 loss 0.5161227183620425
+PRE mlm_multi_base 173 gpu 1 ep 50 loss 0.1455765917462154
+PRE mlm_multi_base 173 gpu 1 ep 100 loss 0.11436281907950005
+PRE mlm_multi_base 173 gpu 1 ep 150 loss 0.10287802748001405
+PRE mlm_multi_base 173 gpu 1 ep 200 loss 0.09337691902896783
+PRE mlm_multi_base 173 gpu 1 ep 250 loss 0.08632347036669724
+PRE mlm_multi_base 173 gpu 1 ep 299 loss 0.08370543499715137
+{"variant": "mlm_multi_base", "seed": 173, "gpu": 1, "corpus": "multi", "corpus_n": 2192, "best_loss": 0.08355464465426703, "final_loss": 0.08370543499715137, "epochs": 300, "views": 24}
+
+/var/lib/cots-lamcts/jobs/opt10-pretrain-completion-20260910-0422/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+PRE mlm_order_base 17 gpu 1 ep 0 loss 0.7427865490861183
+PRE mlm_order_base 17 gpu 1 ep 50 loss 0.18655741551931757
+PRE mlm_order_base 17 gpu 1 ep 100 loss 0.1377151374616762
+PRE mlm_order_base 17 gpu 1 ep 150 loss 0.1268533554172864
+PRE mlm_order_base 17 gpu 1 ep 200 loss 0.12180603409770631
+PRE mlm_order_base 17 gpu 1 ep 250 loss 0.10429441020654066
+PRE mlm_order_base 17 gpu 1 ep 299 loss 0.10057203123604294
+{"variant": "mlm_order_base", "seed": 17, "gpu": 1, "corpus": "multi", "corpus_n": 2192, "best_loss": 0.10016042804413468, "final_loss": 0.10057203123604294, "epochs": 300, "views": 24}
+
+/var/lib/cots-lamcts/jobs/opt10-pretrain-completion-20260910-0422/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+PRE mlm_order_base 43 gpu 0 ep 0 loss 0.7731202540606478
+PRE mlm_order_base 43 gpu 0 ep 50 loss 0.18575142867808794
+PRE mlm_order_base 43 gpu 0 ep 100 loss 0.15417377884588102
+PRE mlm_order_base 43 gpu 0 ep 150 loss 0.12449471511109902
+PRE mlm_order_base 43 gpu 0 ep 200 loss 0.14814914257204445
+PRE mlm_order_base 43 gpu 0 ep 250 loss 0.10827398430692019
+PRE mlm_order_base 43 gpu 0 ep 299 loss 0.10169270215895924
+{"variant": "mlm_order_base", "seed": 43, "gpu": 0, "corpus": "multi", "corpus_n": 2192, "best_loss": 0.10169270215895924, "final_loss": 0.10169270215895924, "epochs": 300, "views": 24}
+
+/var/lib/cots-lamcts/jobs/opt10-pretrain-completion-20260910-0422/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+PRE mlm_order_base 89 gpu 1 ep 0 loss 0.7134542510892353
+PRE mlm_order_base 89 gpu 1 ep 50 loss 0.1867622411164054
+PRE mlm_order_base 89 gpu 1 ep 100 loss 0.14296641227972767
+PRE mlm_order_base 89 gpu 1 ep 150 loss 0.12773545956524618
+PRE mlm_order_base 89 gpu 1 ep 200 loss 0.12389680547435789
+PRE mlm_order_base 89 gpu 1 ep 250 loss 0.11175695578329754
+PRE mlm_order_base 89 gpu 1 ep 299 loss 0.1031796846837893
+{"variant": "mlm_order_base", "seed": 89, "gpu": 1, "corpus": "multi", "corpus_n": 2192, "best_loss": 0.1031796846837893, "final_loss": 0.1031796846837893, "epochs": 300, "views": 24}
+
+/var/lib/cots-lamcts/jobs/opt10-pretrain-completion-20260910-0422/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+PRE mlm_order_base 131 gpu 0 ep 0 loss 0.7745184073918057
+PRE mlm_order_base 131 gpu 0 ep 50 loss 0.2084055090472646
+PRE mlm_order_base 131 gpu 0 ep 100 loss 0.14777153512857255
+PRE mlm_order_base 131 gpu 0 ep 150 loss 0.12593933581000696
+PRE mlm_order_base 131 gpu 0 ep 200 loss 0.12189040920377647
+PRE mlm_order_base 131 gpu 0 ep 250 loss 0.10744131786109758
+PRE mlm_order_base 131 gpu 0 ep 299 loss 0.10576038856575959
+{"variant": "mlm_order_base", "seed": 131, "gpu": 0, "corpus": "multi", "corpus_n": 2192, "best_loss": 0.10182050506781487, "final_loss": 0.10576038856575959, "epochs": 300, "views": 24}
+
+/var/lib/cots-lamcts/jobs/opt10-pretrain-completion-20260910-0422/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+PRE mlm_order_base 173 gpu 1 ep 0 loss 0.7226990111117816
+PRE mlm_order_base 173 gpu 1 ep 50 loss 0.2007369027085548
+PRE mlm_order_base 173 gpu 1 ep 100 loss 0.14263862491089063
+PRE mlm_order_base 173 gpu 1 ep 150 loss 0.12229865718714512
+PRE mlm_order_base 173 gpu 1 ep 200 loss 0.11694438070276358
+PRE mlm_order_base 173 gpu 1 ep 250 loss 0.10456229773533605
+PRE mlm_order_base 173 gpu 1 ep 299 loss 0.10004754310106709
+{"variant": "mlm_order_base", "seed": 173, "gpu": 1, "corpus": "multi", "corpus_n": 2192, "best_loss": 0.10004754310106709, "final_loss": 0.10004754310106709, "epochs": 300, "views": 24}
+
+/var/lib/cots-lamcts/jobs/opt10-pretrain-completion-20260910-0422/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+PRE mlm_contrast_base 17 gpu 1 ep 0 loss 0.9104813759344338
+PRE mlm_contrast_base 17 gpu 1 ep 50 loss 0.28084735604968386
+PRE mlm_contrast_base 17 gpu 1 ep 100 loss 0.20391630016974288
+PRE mlm_contrast_base 17 gpu 1 ep 150 loss 0.17964853868432287
+PRE mlm_contrast_base 17 gpu 1 ep 200 loss 0.17977052067753171
+PRE mlm_contrast_base 17 gpu 1 ep 250 loss 0.18904872467047976
+PRE mlm_contrast_base 17 gpu 1 ep 299 loss 0.15714017872827768
+{"variant": "mlm_contrast_base", "seed": 17, "gpu": 1, "corpus": "multi", "corpus_n": 2192, "best_loss": 0.15714017872827768, "final_loss": 0.15714017872827768, "epochs": 300, "views": 24}
+
+/var/lib/cots-lamcts/jobs/opt10-pretrain-completion-20260910-0422/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+PRE mlm_contrast_base 43 gpu 0 ep 0 loss 0.9941316938748325
+PRE mlm_contrast_base 43 gpu 0 ep 50 loss 0.2628580810379808
+PRE mlm_contrast_base 43 gpu 0 ep 100 loss 0.19556505695311693
+PRE mlm_contrast_base 43 gpu 0 ep 150 loss 0.19512416542011457
+PRE mlm_contrast_base 43 gpu 0 ep 200 loss 0.17252813638561834
+PRE mlm_contrast_base 43 gpu 0 ep 250 loss 0.16414656517279408
+PRE mlm_contrast_base 43 gpu 0 ep 299 loss 0.1790219352845728
+{"variant": "mlm_contrast_base", "seed": 43, "gpu": 0, "corpus": "multi", "corpus_n": 2192, "best_loss": 0.15897976133945216, "final_loss": 0.1790219352845728, "epochs": 300, "views": 24}
+
+/var/lib/cots-lamcts/jobs/opt10-pretrain-completion-20260910-0422/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+PRE mlm_contrast_base 89 gpu 1 ep 0 loss 0.9197308260158901
+PRE mlm_contrast_base 89 gpu 1 ep 50 loss 0.24940119172534803
+PRE mlm_contrast_base 89 gpu 1 ep 100 loss 0.21104537635824105
+PRE mlm_contrast_base 89 gpu 1 ep 150 loss 0.1832278058694227
+PRE mlm_contrast_base 89 gpu 1 ep 200 loss 0.1688021717280367
+PRE mlm_contrast_base 89 gpu 1 ep 250 loss 0.16681858549152848
+PRE mlm_contrast_base 89 gpu 1 ep 299 loss 0.16071832767368233
+{"variant": "mlm_contrast_base", "seed": 89, "gpu": 1, "corpus": "multi", "corpus_n": 2192, "best_loss": 0.1588272515439639, "final_loss": 0.16071832767368233, "epochs": 300, "views": 24}
+
+/var/lib/cots-lamcts/jobs/opt10-pretrain-completion-20260910-0422/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+PRE mlm_contrast_base 131 gpu 0 ep 0 loss 0.9352948543799184
+PRE mlm_contrast_base 131 gpu 0 ep 50 loss 0.26064374868887186
+PRE mlm_contrast_base 131 gpu 0 ep 100 loss 0.21658588902358591
+PRE mlm_contrast_base 131 gpu 0 ep 150 loss 0.189530603968314
+PRE mlm_contrast_base 131 gpu 0 ep 200 loss 0.19260653418346044
+PRE mlm_contrast_base 131 gpu 0 ep 250 loss 0.1660061932175699
+PRE mlm_contrast_base 131 gpu 0 ep 299 loss 0.16111771436068265
+{"variant": "mlm_contrast_base", "seed": 131, "gpu": 0, "corpus": "multi", "corpus_n": 2192, "best_loss": 0.16051191831157155, "final_loss": 0.16111771436068265, "epochs": 300, "views": 24}
+
+/var/lib/cots-lamcts/jobs/opt10-pretrain-completion-20260910-0422/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+PRE mlm_contrast_base 173 gpu 1 ep 0 loss 0.978465592339091
+PRE mlm_contrast_base 173 gpu 1 ep 50 loss 0.23791496771095444
+PRE mlm_contrast_base 173 gpu 1 ep 100 loss 0.1907818112930242
+PRE mlm_contrast_base 173 gpu 1 ep 150 loss 0.17566876940048523
+PRE mlm_contrast_base 173 gpu 1 ep 200 loss 0.16563671816439524
+PRE mlm_contrast_base 173 gpu 1 ep 250 loss 0.16757235703242085
+PRE mlm_contrast_base 173 gpu 1 ep 299 loss 0.15446528498708767
+{"variant": "mlm_contrast_base", "seed": 173, "gpu": 1, "corpus": "multi", "corpus_n": 2192, "best_loss": 0.15446528498708767, "final_loss": 0.15446528498708767, "epochs": 300, "views": 24}
+
+/var/lib/cots-lamcts/jobs/opt10-pretrain-completion-20260910-0422/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+PRE mlm_all_base 17 gpu 1 ep 0 loss 1.1648351902509257
+PRE mlm_all_base 17 gpu 1 ep 50 loss 0.31956655852986077
+PRE mlm_all_base 17 gpu 1 ep 100 loss 0.24944714821168107
+PRE mlm_all_base 17 gpu 1 ep 150 loss 0.22463369064957556
+PRE mlm_all_base 17 gpu 1 ep 200 loss 0.21206752466459344
+PRE mlm_all_base 17 gpu 1 ep 250 loss 0.20399120667555037
+PRE mlm_all_base 17 gpu 1 ep 299 loss 0.19636037271388257
+{"variant": "mlm_all_base", "seed": 17, "gpu": 1, "corpus": "multi", "corpus_n": 2192, "best_loss": 0.1960018024827442, "final_loss": 0.19636037271388257, "epochs": 300, "views": 24}
+
+/var/lib/cots-lamcts/jobs/opt10-pretrain-completion-20260910-0422/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+PRE mlm_all_base 43 gpu 0 ep 0 loss 1.1560283168388978
+PRE mlm_all_base 43 gpu 0 ep 50 loss 0.31323823680842877
+PRE mlm_all_base 43 gpu 0 ep 100 loss 0.25146620595542185
+PRE mlm_all_base 43 gpu 0 ep 150 loss 0.22593023731325665
+PRE mlm_all_base 43 gpu 0 ep 200 loss 0.22270023627002744
+PRE mlm_all_base 43 gpu 0 ep 250 loss 0.20434407726691586
+PRE mlm_all_base 43 gpu 0 ep 299 loss 0.20041561398627986
+{"variant": "mlm_all_base", "seed": 43, "gpu": 0, "corpus": "multi", "corpus_n": 2192, "best_loss": 0.1992466128873129, "final_loss": 0.20041561398627986, "epochs": 300, "views": 24}
+
+/var/lib/cots-lamcts/jobs/opt10-pretrain-completion-20260910-0422/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+PRE mlm_all_base 89 gpu 1 ep 0 loss 1.0918484782650524
+PRE mlm_all_base 89 gpu 1 ep 50 loss 0.317037950249484
+PRE mlm_all_base 89 gpu 1 ep 100 loss 0.25380344732399407
+PRE mlm_all_base 89 gpu 1 ep 150 loss 0.21958474967166455
+PRE mlm_all_base 89 gpu 1 ep 200 loss 0.20740727927998034
+PRE mlm_all_base 89 gpu 1 ep 250 loss 0.19969328454811208
+PRE mlm_all_base 89 gpu 1 ep 299 loss 0.19674303420703776
+{"variant": "mlm_all_base", "seed": 89, "gpu": 1, "corpus": "multi", "corpus_n": 2192, "best_loss": 0.19370042973191198, "final_loss": 0.19674303420703776, "epochs": 300, "views": 24}
+
+/var/lib/cots-lamcts/jobs/opt10-pretrain-completion-20260910-0422/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+PRE mlm_all_base 131 gpu 0 ep 0 loss 1.1223354474471434
+PRE mlm_all_base 131 gpu 0 ep 50 loss 0.31485438651412073
+PRE mlm_all_base 131 gpu 0 ep 100 loss 0.2432622056807915
+PRE mlm_all_base 131 gpu 0 ep 150 loss 0.2218599043188304
+PRE mlm_all_base 131 gpu 0 ep 200 loss 0.2093980698472392
+PRE mlm_all_base 131 gpu 0 ep 250 loss 0.20283480934853101
+PRE mlm_all_base 131 gpu 0 ep 299 loss 0.20036056648640738
+{"variant": "mlm_all_base", "seed": 131, "gpu": 0, "corpus": "multi", "corpus_n": 2192, "best_loss": 0.19734087945335974, "final_loss": 0.20036056648640738, "epochs": 300, "views": 24}
+
+/var/lib/cots-lamcts/jobs/opt10-pretrain-completion-20260910-0422/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+PRE mlm_all_base 173 gpu 1 ep 0 loss 1.213922045091643
+PRE mlm_all_base 173 gpu 1 ep 50 loss 0.31382185503514143
+PRE mlm_all_base 173 gpu 1 ep 100 loss 0.24275777200712775
+PRE mlm_all_base 173 gpu 1 ep 150 loss 0.22045503328316404
+PRE mlm_all_base 173 gpu 1 ep 200 loss 0.20850703761960468
+PRE mlm_all_base 173 gpu 1 ep 250 loss 0.21019516471963728
+PRE mlm_all_base 173 gpu 1 ep 299 loss 0.19457342133034755
+{"variant": "mlm_all_base", "seed": 173, "gpu": 1, "corpus": "multi", "corpus_n": 2192, "best_loss": 0.1935425233231844, "final_loss": 0.19457342133034755, "epochs": 300, "views": 24}
+
+/var/lib/cots-lamcts/jobs/opt10-pretrain-completion-20260910-0422/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+PRE mlm_all_medium 17 gpu 0 ep 0 loss 1.1268296072082797
+PRE mlm_all_medium 17 gpu 0 ep 50 loss 0.2275465752956641
+PRE mlm_all_medium 17 gpu 0 ep 100 loss 0.17506519775756085
+PRE mlm_all_medium 17 gpu 0 ep 150 loss 0.1633727247044988
+PRE mlm_all_medium 17 gpu 0 ep 200 loss 0.1850339015469934
+PRE mlm_all_medium 17 gpu 0 ep 250 loss 0.13749010164807313
+PRE mlm_all_medium 17 gpu 0 ep 299 loss 0.1300612920283401
+{"variant": "mlm_all_medium", "seed": 17, "gpu": 0, "corpus": "multi", "corpus_n": 2192, "best_loss": 0.1300612920283401, "final_loss": 0.1300612920283401, "epochs": 300, "views": 24}
+
+/var/lib/cots-lamcts/jobs/opt10-pretrain-completion-20260910-0422/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+PRE mlm_all_medium 43 gpu 1 ep 0 loss 1.134978769034365
+PRE mlm_all_medium 43 gpu 1 ep 50 loss 0.22157469554974216
+PRE mlm_all_medium 43 gpu 1 ep 100 loss 0.16968580058021268
+PRE mlm_all_medium 43 gpu 1 ep 150 loss 0.15185009214999903
+PRE mlm_all_medium 43 gpu 1 ep 200 loss 0.1405259344699609
+PRE mlm_all_medium 43 gpu 1 ep 250 loss 0.13229631099605213
+PRE mlm_all_medium 43 gpu 1 ep 299 loss 0.12851114076201933
+{"variant": "mlm_all_medium", "seed": 43, "gpu": 1, "corpus": "multi", "corpus_n": 2192, "best_loss": 0.12851114076201933, "final_loss": 0.12851114076201933, "epochs": 300, "views": 24}
+
+/var/lib/cots-lamcts/jobs/opt10-pretrain-completion-20260910-0422/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+PRE mlm_all_medium 89 gpu 0 ep 0 loss 1.0671445622931433
+PRE mlm_all_medium 89 gpu 0 ep 50 loss 0.22728290479548657
+PRE mlm_all_medium 89 gpu 0 ep 100 loss 0.20373577271064702
+PRE mlm_all_medium 89 gpu 0 ep 150 loss 0.1480061735985053
+PRE mlm_all_medium 89 gpu 0 ep 200 loss 0.13750502836965298
+PRE mlm_all_medium 89 gpu 0 ep 250 loss 0.1401676622620464
+PRE mlm_all_medium 89 gpu 0 ep 299 loss 0.1272100556070787
+{"variant": "mlm_all_medium", "seed": 89, "gpu": 0, "corpus": "multi", "corpus_n": 2192, "best_loss": 0.1268461000745314, "final_loss": 0.1272100556070787, "epochs": 300, "views": 24}
+
+/var/lib/cots-lamcts/jobs/opt10-pretrain-completion-20260910-0422/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+PRE mlm_all_medium 131 gpu 1 ep 0 loss 1.102949970830096
+PRE mlm_all_medium 131 gpu 1 ep 50 loss 0.2153249918109309
+PRE mlm_all_medium 131 gpu 1 ep 100 loss 0.16242054257079633
+PRE mlm_all_medium 131 gpu 1 ep 150 loss 0.1470518135023813
+PRE mlm_all_medium 131 gpu 1 ep 200 loss 0.1356727289457391
+PRE mlm_all_medium 131 gpu 1 ep 250 loss 0.1322152746202302
+PRE mlm_all_medium 131 gpu 1 ep 299 loss 0.18305475373555274
+{"variant": "mlm_all_medium", "seed": 131, "gpu": 1, "corpus": "multi", "corpus_n": 2192, "best_loss": 0.1253315827598537, "final_loss": 0.18305475373555274, "epochs": 300, "views": 24}
+
+/var/lib/cots-lamcts/jobs/opt10-pretrain-completion-20260910-0422/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+PRE mlm_all_medium 173 gpu 0 ep 0 loss 1.1781437135960935
+PRE mlm_all_medium 173 gpu 0 ep 50 loss 0.2207268646163662
+PRE mlm_all_medium 173 gpu 0 ep 100 loss 0.19085410900794678
+PRE mlm_all_medium 173 gpu 0 ep 150 loss 0.14987853615388383
+PRE mlm_all_medium 173 gpu 0 ep 200 loss 0.1436152089468754
+PRE mlm_all_medium 173 gpu 0 ep 250 loss 0.13232868643355195
+PRE mlm_all_medium 173 gpu 0 ep 299 loss 0.1384050077112922
+{"variant": "mlm_all_medium", "seed": 173, "gpu": 0, "corpus": "multi", "corpus_n": 2192, "best_loss": 0.12698409423558382, "final_loss": 0.1384050077112922, "epochs": 300, "views": 24}
+
+/var/lib/cots-lamcts/jobs/opt10-pretrain-completion-20260910-0422/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+/var/lib/cots-lamcts/jobs/opt10-pretrain-completion-20260910-0422/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)
+FT scratch_base 48 {'spearman': 0.6438824333561175, 'kendall': 0.48051948051948057, 'top_quartile_precision': 0.42857142857142855, 'pred_top8_mean_J': 47.185325622558594, 'pred_top8_best_J': 42.15381622314453}
+FT scratch_base 96 {'spearman': 0.5490088858509911, 'kendall': 0.4, 'top_quartile_precision': 0.42857142857142855, 'pred_top8_mean_J': 64.0937271118164, 'pred_top8_best_J': 42.53087615966797}
+FT scratch_base 192 {'spearman': 0.7590567327409434, 'kendall': 0.5766233766233767, 'top_quartile_precision': 0.6428571428571429, 'pred_top8_mean_J': 46.40214920043945, 'pred_top8_best_J': 42.15381622314453}
+FT scratch_medium 48 {'spearman': 0.5286397812713604, 'kendall': 0.38051948051948054, 'top_quartile_precision': 0.42857142857142855, 'pred_top8_mean_J': 51.63575744628906, 'pred_top8_best_J': 42.15381622314453}
+FT scratch_medium 96 {'spearman': 0.5116883116883117, 'kendall': 0.3688311688311689, 'top_quartile_precision': 0.35714285714285715, 'pred_top8_mean_J': 61.02949142456055, 'pred_top8_best_J': 42.53087615966797}
+FT scratch_medium 192 {'spearman': 0.7094326725905673, 'kendall': 0.5220779220779221, 'top_quartile_precision': 0.5714285714285714, 'pred_top8_mean_J': 51.06573486328125, 'pred_top8_best_J': 42.53087615966797}
+FT mlm_first_base 48 {'spearman': 0.6116199589883801, 'kendall': 0.4428571428571429, 'top_quartile_precision': 0.5714285714285714, 'pred_top8_mean_J': 45.82351303100586, 'pred_top8_best_J': 42.53087615966797}
+FT mlm_first_base 96 {'spearman': 0.7205058099794943, 'kendall': 0.5571428571428572, 'top_quartile_precision': 0.7142857142857143, 'pred_top8_mean_J': 49.33159637451172, 'pred_top8_best_J': 43.25596618652344}
+FT mlm_first_base 192 {'spearman': 0.6571428571428571, 'kendall': 0.5077922077922079, 'top_quartile_precision': 0.5714285714285714, 'pred_top8_mean_J': 45.22002410888672, 'pred_top8_best_J': 42.53087615966797}
+FT mlm_multi_base 48 {'spearman': 0.667464114832536, 'kendall': 0.49090909090909096, 'top_quartile_precision': 0.5714285714285714, 'pred_top8_mean_J': 45.823509216308594, 'pred_top8_best_J': 42.53087615966797}
+FT mlm_multi_base 96 {'spearman': 0.6740259740259741, 'kendall': 0.5116883116883117, 'top_quartile_precision': 0.5714285714285714, 'pred_top8_mean_J': 49.12199401855469, 'pred_top8_best_J': 42.57836151123047}
+FT mlm_multi_base 192 {'spearman': 0.6915926179084075, 'kendall': 0.5168831168831169, 'top_quartile_precision': 0.5714285714285714, 'pred_top8_mean_J': 45.96747970581055, 'pred_top8_best_J': 42.53087615966797}
+FT mlm_order_base 48 {'spearman': 0.4920027341079974, 'kendall': 0.338961038961039, 'top_quartile_precision': 0.5, 'pred_top8_mean_J': 46.78560256958008, 'pred_top8_best_J': 42.57836151123047}
+FT mlm_order_base 96 {'spearman': 0.6429938482570061, 'kendall': 0.45454545454545453, 'top_quartile_precision': 0.5714285714285714, 'pred_top8_mean_J': 47.239051818847656, 'pred_top8_best_J': 43.66284942626953}
+FT mlm_order_base 192 {'spearman': 0.6725905673274095, 'kendall': 0.49870129870129876, 'top_quartile_precision': 0.5714285714285714, 'pred_top8_mean_J': 46.76535415649414, 'pred_top8_best_J': 43.66284942626953}
+FT mlm_contrast_base 48 {'spearman': 0.6619275461380725, 'kendall': 0.4870129870129871, 'top_quartile_precision': 0.5, 'pred_top8_mean_J': 47.024635314941406, 'pred_top8_best_J': 42.53087615966797}
+FT mlm_contrast_base 96 {'spearman': 0.6959671907040329, 'kendall': 0.5415584415584417, 'top_quartile_precision': 0.7142857142857143, 'pred_top8_mean_J': 45.526275634765625, 'pred_top8_best_J': 42.57836151123047}
+FT mlm_contrast_base 192 {'spearman': 0.7263157894736842, 'kendall': 0.5467532467532468, 'top_quartile_precision': 0.5714285714285714, 'pred_top8_mean_J': 48.3203239440918, 'pred_top8_best_J': 42.53087615966797}
+FT mlm_all_base 48 {'spearman': 0.6952153110047847, 'kendall': 0.5051948051948052, 'top_quartile_precision': 0.6428571428571429, 'pred_top8_mean_J': 45.91415023803711, 'pred_top8_best_J': 42.57836151123047}
+FT mlm_all_base 96 {'spearman': 0.596719070403281, 'kendall': 0.464935064935065, 'top_quartile_precision': 0.5, 'pred_top8_mean_J': 56.02824401855469, 'pred_top8_best_J': 42.57836151123047}
+FT mlm_all_base 192 {'spearman': 0.6218045112781956, 'kendall': 0.4428571428571429, 'top_quartile_precision': 0.5, 'pred_top8_mean_J': 47.35376739501953, 'pred_top8_best_J': 42.57836151123047}
+FT mlm_all_medium 48 {'spearman': 0.6241968557758032, 'kendall': 0.45454545454545453, 'top_quartile_precision': 0.6428571428571429, 'pred_top8_mean_J': 45.77638244628906, 'pred_top8_best_J': 42.15381622314453}
+FT mlm_all_medium 96 {'spearman': 0.6617224880382776, 'kendall': 0.49350649350649356, 'top_quartile_precision': 0.6428571428571429, 'pred_top8_mean_J': 49.23064422607422, 'pred_top8_best_J': 42.57836151123047}
+FT mlm_all_medium 192 {'spearman': 0.6687628161312372, 'kendall': 0.4922077922077922, 'top_quartile_precision': 0.5714285714285714, 'pred_top8_mean_J': 48.75056838989258, 'pred_top8_best_J': 42.57836151123047}
+POOL 96 0 done
+POOL 96 1 done
+POOL 96 2 done
+POOL 192 0 done
+Q (10, 1, 27, 24, 1, 4, 4, 2) 113.05162180353383
+Q (58, 41, 12, 48, 1, 1, 2, 1) 52.3938173385009
+Q (54, 27, 56, 36, 0, 1, 3, 1) 59.00376983026402
+Q (3, 38, 37, 49, 3, 2, 1, 0) 53.60213390000913
+Q (34, 4, 17, 56, 4, 1, 1, 1) 54.821253908304975
+Q (44, 39, 29, 65, 3, 1, 0, 1) 44.49559408064549
+Q (65, 26, 29, 56, 3, 1, 0, 0) 70.51050998958124
+Q (20, 46, 61, 32, 3, 3, 4, 4) 57.52921943762698
+Q (60, 32, 21, 30, 2, 1, 0, 2) 47.32782728343952
+Q (44, 24, 18, 14, 4, 1, 2, 1) 50.37999650546946
+Q (58, 54, 19, 71, 3, 2, 0, 3) 51.8471224479227
+Q (44, 32, 11, 48, 3, 3, 3, 2) 58.64224170136878
+Q (50, 26, 0, 61, 2, 0, 2, 2) 134.4495856781597
+Q (4, 32, 19, 71, 4, 4, 0, 1) 46.94864997302543
+Q (52, 53, 65, 14, 1, 2, 1, 1) 40.112974193907384
+Q (44, 24, 53, 41, 1, 4, 1, 4) 38.13822292357645
+Q (44, 32, 53, 57, 4, 2, 0, 2) 63.03896019962336
+Q (9, 58, 63, 43, 1, 2, 0, 4) 134.29239528994995
+Q (14, 10, 35, 64, 3, 4, 0, 4) 44.92377753090985
+Q (48, 64, 11, 52, 3, 1, 2, 3) 55.71203268830548
+Q (54, 36, 10, 30, 3, 1, 0, 2) 54.059942429895
+Q (3, 70, 60, 30, 3, 3, 2, 0) 41.34353418597471
+Q (27, 49, 17, 66, 4, 1, 1, 1) 40.1000354081707
+Q (50, 41, 1, 3, 1, 4, 3, 3) 664.7090080976596
+Q (9, 45, 19, 32, 4, 2, 2, 2) 92.13126296666303
+Q (31, 71, 2, 36, 2, 0, 1, 2) 100.28243145015864
+Q (24, 27, 53, 56, 0, 4, 4, 1) 113.87494537579059
+Q (12, 57, 69, 65, 1, 0, 4, 1) 51.47999096229768
+Q (12, 32, 10, 65, 2, 4, 3, 4) 89.72855297541004
+Q (53, 49, 3, 31, 4, 0, 0, 1) 46.18994292036133
+Q (68, 40, 29, 17, 0, 3, 2, 1) 44.23733484627431
+Q (58, 41, 28, 55, 0, 1, 2, 4) 44.97049364741519
+Q (66, 50, 10, 36, 3, 2, 3, 3) 139.90743427625162
+Q (60, 16, 37, 62, 0, 3, 0, 2) 70.44664370733102
+Q (27, 57, 21, 49, 3, 2, 1, 0) 76.87458756469273
+Q (44, 2, 22, 38, 4, 1, 4, 3) 47.64908503003201
+Q (64, 48, 3, 26, 0, 4, 0, 4) 109.04005443794046
+Q (4, 53, 64, 41, 0, 4, 1, 1) 43.72782466069405
+Q (20, 32, 53, 9, 2, 2, 2, 4) 58.26428323165277
+Q (70, 35, 29, 24, 3, 0, 1, 4) 38.043880567746186
+Q (3, 32, 61, 49, 0, 2, 0, 1) 57.40931601852097
+Q (20, 24, 69, 62, 0, 2, 0, 1) 42.3539990823716
+Q (3, 32, 36, 39, 2, 0, 3, 1) 49.30792443571884
+Q (56, 58, 17, 20, 1, 0, 1, 1) 86.48785007219874
+Q (9, 2, 32, 68, 0, 3, 0, 0) 105.04337594620115
+Q (41, 42, 37, 32, 1, 2, 0, 0) 42.196362534208696
+Q (4, 56, 52, 71, 0, 1, 3, 3) 40.48251194167069
+Q (59, 56, 29, 49, 3, 4, 1, 2) 56.97296752447994
+Q (4, 34, 9, 56, 2, 3, 0, 4) 52.685768424803285
+Q (36, 32, 5, 54, 1, 4, 3, 0) 49.63710541055473
+Q (10, 41, 43, 24, 1, 1, 3, 4) 137.8063082694689
+Q (29, 17, 27, 71, 0, 0, 2, 4) 47.695096071782785
+Q (4, 56, 13, 54, 0, 2, 4, 3) 46.99130789112504
+Q (56, 13, 33, 20, 4, 3, 0, 1) 78.28418124382789
+Q (17, 66, 45, 32, 0, 0, 3, 3) 57.40800385814088
+Q (12, 34, 9, 46, 1, 2, 4, 2) 50.35778869922712
+Q (4, 39, 69, 1, 1, 4, 0, 1) 44.034182751085524
+Q (65, 8, 58, 19, 3, 4, 1, 0) 91.6223402052578
+Q (43, 33, 53, 25, 2, 3, 2, 2) 75.35652703039858
+Q (12, 69, 49, 54, 4, 4, 4, 0) 44.89480486073333
+Q (20, 32, 19, 63, 0, 3, 3, 3) 73.69477292971855
+Q (4, 18, 62, 63, 2, 3, 3, 4) 51.906108591837906
+Q (20, 69, 56, 14, 1, 1, 3, 0) 44.704611904467654
+Q (20, 8, 10, 54, 3, 3, 2, 4) 46.97836636510473
+Q (36, 32, 21, 17, 3, 1, 1, 0) 46.08360748598986
+Q (47, 15, 8, 3, 2, 4, 2, 1) 100.0901521646042
+Q (33, 58, 45, 41, 1, 0, 0, 4) 74.83562858564375
+Q (4, 71, 29, 41, 4, 2, 0, 1) 51.34213318043843
+Q (66, 16, 25, 60, 0, 4, 1, 4) 69.61832103405224
+Q (11, 56, 12, 54, 2, 2, 0, 1) 46.53627757282624
+Q (14, 12, 3, 68, 3, 0, 3, 0) 231.14304937950146
+Q (60, 0, 29, 41, 3, 4, 0, 1) 61.36533760323502
+Q (20, 40, 53, 17, 0, 1, 0, 2) 42.53189216235262
+Q (68, 33, 29, 17, 2, 4, 3, 3) 50.365627816411134
+Q (44, 18, 38, 46, 2, 1, 1, 2) 47.41497844395214
+Q (34, 41, 43, 55, 4, 1, 0, 3) 58.1886838668581
+Q (30, 58, 44, 32, 3, 2, 1, 2) 42.594349006619595
+Q (58, 9, 19, 31, 0, 4, 1, 4) 66.17386172657325
+Q (28, 47, 29, 41, 2, 3, 0, 0) 64.12173755965682
+Q (36, 32, 45, 1, 0, 0, 2, 4) 42.66017757943447
+Q (4, 56, 27, 31, 2, 4, 2, 0) 45.49082590376873
+Q (54, 16, 40, 50, 3, 4, 0, 0) 273.04893454414844
+Q (37, 9, 43, 31, 1, 4, 4, 2) 46.47362477383534
+Q (4, 32, 26, 70, 0, 1, 3, 2) 80.50496337084117
+Q (4, 66, 9, 15, 3, 1, 4, 4) 51.518781228283515
+Q (17, 29, 19, 56, 1, 1, 3, 1) 62.244464476059505
+Q (49, 2, 61, 32, 2, 4, 3, 1) 43.56558478308279
+Q (9, 37, 43, 32, 0, 1, 0, 2) 41.77422860946603
+Q (68, 56, 53, 1, 0, 3, 2, 2) 46.51655948910634
+Q (53, 9, 28, 48, 1, 2, 4, 4) 46.91740634387374
+Q (10, 49, 19, 24, 0, 4, 4, 4) 122.41693803037029
+Q (52, 8, 21, 30, 3, 0, 1, 4) 43.070717461789975
+Q (68, 39, 69, 17, 0, 0, 3, 3) 39.380882059884584
+Q (52, 42, 49, 22, 2, 2, 4, 3) 48.07221629778836
+Q (59, 49, 52, 14, 3, 3, 1, 4) 45.25062907917476
+Q (27, 56, 12, 38, 0, 4, 1, 0) 50.871584149885706
+Q (44, 13, 32, 6, 0, 4, 2, 4) 44.26752298869905
+Q (56, 37, 17, 3, 2, 3, 0, 3) 70.35121094577721
+Q (52, 49, 29, 65, 3, 1, 4, 1) 42.60365960338891
+Q (34, 65, 28, 71, 2, 3, 2, 2) 45.33255539916535
+Q (1, 69, 10, 56, 3, 2, 4, 0) 43.877138611624765
+Q (44, 53, 48, 25, 0, 3, 0, 1) 44.07673110404207
+Q (67, 56, 44, 70, 1, 3, 2, 2) 49.53825153469008
+Q (44, 26, 25, 15, 1, 4, 3, 2) 49.242969549214855
+Q (34, 1, 3, 48, 0, 3, 3, 1) 93.94699963422691
+Q (69, 41, 43, 24, 1, 4, 4, 3) 72.09811690138133
+Q (17, 64, 13, 28, 3, 1, 0, 0) 94.47271148473277
+Q (34, 1, 12, 31, 3, 0, 1, 4) 43.30193941968796
+Q (29, 17, 19, 48, 0, 3, 1, 4) 67.05179170318226
+Q (29, 25, 56, 20, 3, 0, 0, 3) 67.8298788087826
+Q (47, 55, 61, 30, 3, 2, 0, 1) 158.0941372922525
+Q (12, 24, 53, 49, 0, 3, 3, 2) 42.04997210821487
+Q (61, 25, 29, 56, 3, 3, 2, 0) 48.84816401128167
+Q (9, 50, 15, 67, 0, 2, 0, 2) 126.22160043136843
+Q (22, 43, 28, 19, 0, 1, 4, 2) 108.10312968311126
+Q (20, 29, 62, 22, 4, 0, 3, 2) 44.40951599013382
+Q (20, 37, 65, 46, 2, 4, 1, 2) 43.08073025556728
+Q (52, 57, 53, 46, 2, 1, 0, 1) 46.14527057411467
+Q (44, 29, 8, 65, 3, 3, 0, 2) 46.10215242677927
+Q (52, 55, 13, 17, 1, 2, 1, 3) 57.886289556992146
+Q (52, 36, 14, 11, 0, 2, 1, 0) 198.8274790319908
+Q (20, 32, 5, 46, 4, 4, 1, 0) 48.42767793488904
+Q (52, 63, 45, 14, 1, 1, 0, 1) 51.25366056248621
+Q (59, 14, 69, 8, 1, 3, 1, 0) 48.96975679460528
+Q (52, 56, 53, 38, 4, 0, 1, 4) 42.1587355481474
+Q (68, 14, 53, 65, 2, 0, 2, 0) 54.68085216228818
+Q (9, 20, 10, 56, 3, 2, 0, 3) 182.87498239852988
+Q (9, 2, 53, 56, 1, 4, 1, 0) 84.39379906273538
+Q (44, 33, 69, 22, 2, 3, 1, 4) 45.31648883502854
+Q (28, 56, 66, 25, 3, 1, 0, 2) 81.73855126794142
+Q (52, 34, 9, 62, 1, 4, 4, 1) 49.257385689730775
+Q (41, 58, 21, 41, 2, 1, 0, 1) 42.1852112344366
+Q (36, 14, 15, 62, 2, 4, 4, 4) 75.55622907745347
+Q (28, 38, 10, 65, 1, 3, 0, 0) 54.289413883763515
+Q (4, 32, 45, 22, 1, 3, 2, 3) 44.41060306014925
+Q (58, 46, 12, 48, 0, 3, 1, 1) 42.74043682536028
+Q (28, 33, 69, 54, 4, 3, 0, 1) 46.524593668106725
+Q (49, 34, 20, 56, 3, 4, 2, 2) 42.5176244330097
+Q (44, 32, 21, 46, 3, 1, 1, 4) 45.484489340067164
+Q (12, 8, 53, 49, 1, 1, 4, 0) 41.89206095225354
+Q (31, 65, 28, 13, 1, 3, 2, 1) 161.76988889381025
+Q (28, 70, 2, 7, 3, 1, 1, 0) 54.983684172981654
+Q (20, 69, 56, 1, 2, 4, 1, 4) 47.7675527177283
+Q (10, 17, 28, 48, 3, 3, 2, 1) 57.636062408146614
+Q (68, 56, 21, 25, 0, 3, 0, 3) 51.5580517739805
+Q (28, 61, 39, 46, 2, 4, 2, 3) 45.342297433489605
+Q (18, 54, 13, 32, 3, 2, 0, 4) 95.4252412962485
+Q (71, 66, 9, 3, 1, 0, 1, 1) 67.04884907786538
+Q (17, 26, 29, 56, 2, 1, 1, 3) 55.15996939374738
+Q (60, 56, 5, 1, 4, 0, 2, 1) 40.29446972057539
+Q (29, 17, 28, 71, 2, 2, 2, 2) 40.4666153150224
+Q (12, 37, 14, 46, 4, 2, 2, 0) 52.52937929190453
+Q (4, 2, 41, 62, 3, 3, 0, 2) 50.38556004321515
+Q (30, 10, 13, 56, 3, 3, 1, 0) 53.93288476204174
+Q (53, 30, 19, 71, 1, 2, 3, 3) 43.766053867383704
+Q (26, 1, 43, 31, 1, 1, 3, 2) 77.44844862371228
+Q (44, 32, 27, 71, 0, 2, 3, 4) 44.878676228939554
+Q (38, 59, 42, 24, 4, 4, 1, 3) 760.0332832489677
+Q (44, 23, 61, 62, 1, 2, 1, 4) 66.21340787057461
+Q (4, 56, 41, 4, 2, 3, 1, 3) 54.73530478693803
+Q (38, 26, 59, 24, 2, 2, 0, 0) 51.54266712082577
+Q (37, 19, 67, 55, 0, 1, 3, 4) 94.99140553256727
+Q (50, 56, 38, 28, 1, 0, 4, 1) 237.84739452426174
+Q (52, 57, 53, 1, 3, 3, 0, 2) 44.3329562369886
+Q (17, 10, 69, 32, 3, 4, 1, 1) 55.778404306315394
+Q (68, 0, 69, 22, 0, 3, 2, 0) 57.25470181501706
+Q (12, 32, 67, 63, 2, 4, 2, 1) 53.41621624654322
+Q (4, 34, 56, 70, 0, 2, 1, 4) 48.85747152571666
+Q (68, 32, 45, 41, 0, 1, 1, 2) 48.66956713898383
+Q (35, 32, 27, 70, 4, 4, 1, 4) 50.11945772067322
+Q (54, 4, 29, 9, 1, 4, 1, 2) 45.34385065390716
+Q (25, 37, 32, 28, 2, 1, 2, 1) 50.96079389967523
+Q (20, 69, 38, 38, 0, 3, 4, 1) 45.68505854003588
+Q (12, 56, 29, 70, 4, 1, 1, 2) 44.89922830991364
+Q (52, 16, 69, 25, 0, 0, 2, 1) 41.40273415890158
+Q (2, 49, 69, 32, 0, 4, 1, 0) 173.79760364840993
+Q (10, 1, 52, 64, 1, 3, 0, 1) 63.724469530641215
+Q (34, 65, 19, 24, 2, 3, 0, 1) 108.93202016564034
+Q (2, 9, 53, 56, 0, 4, 0, 2) 153.4749865278762
+Q (35, 33, 68, 62, 3, 3, 4, 3) 49.90040164324192
+Q (14, 35, 31, 1, 4, 3, 2, 2) 57.68500649003826
+Q (44, 69, 0, 9, 0, 1, 4, 1) 56.11430003915076
+Q (20, 32, 37, 54, 4, 1, 3, 3) 43.26490441107665
+Q (35, 62, 53, 38, 0, 0, 1, 4) 38.18640337990156
+Q (2, 14, 61, 32, 2, 3, 1, 4) 64.46407142414826
+Q (36, 62, 37, 49, 2, 3, 1, 4) 62.225011963629086
+Q (17, 42, 13, 56, 2, 2, 4, 0) 75.26708625113024
+Q (68, 49, 37, 49, 3, 1, 1, 4) 51.107793682349886
+Q (52, 38, 61, 65, 1, 1, 1, 2) 50.00536931185536
+Q (28, 0, 69, 38, 3, 2, 0, 1) 45.39867331960781
+Q (19, 32, 5, 41, 0, 0, 0, 4) 80.90718256120557
+Q (44, 15, 53, 1, 4, 1, 3, 2) 50.77936687356746
+Q (53, 61, 54, 63, 2, 0, 3, 4) 41.89664476289628
+Q (12, 56, 61, 30, 4, 2, 3, 0) 50.58109333759031
+Q (54, 10, 35, 48, 1, 1, 0, 2) 33.18437764731353
+Q (9, 58, 31, 19, 4, 1, 1, 4) 83.92055709184011
+Q (68, 38, 37, 17, 0, 3, 2, 2) 50.95025595950062
+Q (4, 32, 60, 63, 1, 3, 3, 0) 40.73603601062781
+Q (11, 49, 60, 38, 1, 4, 0, 0) 44.646262874098525
+Q (28, 40, 29, 49, 3, 1, 0, 2) 45.35350982254353
+Q (57, 65, 0, 7, 4, 2, 1, 3) 86.59080182021017
+Q (28, 56, 35, 63, 3, 3, 4, 1) 42.781299519269915
+Q (36, 64, 69, 22, 3, 2, 0, 0) 66.11546894673212
+Q (65, 42, 44, 32, 3, 0, 2, 2) 98.2467391859132
+Q (44, 64, 53, 17, 2, 0, 1, 3) 41.63186712508775
+Q (52, 23, 53, 65, 1, 4, 0, 3) 61.53225377299691
+Q (20, 56, 26, 49, 1, 2, 2, 0) 103.58881493677731
+Q (28, 56, 29, 41, 4, 2, 1, 0) 48.978187295216124
+Q (44, 63, 69, 62, 0, 1, 1, 2) 41.75661127692414
+Q (9, 42, 32, 68, 1, 3, 0, 0) 116.12407398232119
+Q (53, 70, 18, 32, 0, 1, 3, 2) 45.474747468109
+Q (4, 45, 62, 22, 0, 2, 1, 3) 42.26848674316267
+Q (3, 32, 21, 49, 3, 1, 1, 4) 84.1322615866306
+Q (44, 37, 32, 1, 2, 1, 1, 2) 41.83584881430788
+Q (65, 13, 42, 32, 3, 4, 2, 2) 62.98608894013271
+Q (12, 64, 61, 65, 2, 3, 1, 3) 46.98497570075068
+Q (28, 33, 53, 17, 4, 0, 2, 1) 50.93073061165529
+Q (44, 56, 10, 70, 2, 3, 2, 4) 58.35680675158098
+Q (11, 70, 53, 65, 1, 3, 2, 0) 49.21838854757915
+Q (28, 32, 28, 31, 2, 1, 4, 0) 39.57148529593049
+Q (12, 53, 32, 22, 4, 4, 1, 4) 42.027638926240066
+Q (68, 58, 63, 14, 3, 2, 0, 0) 44.9474497672384
+Q (20, 14, 53, 49, 1, 0, 1, 1) 50.0953924444187
+Q (69, 20, 62, 15, 0, 1, 3, 1) 55.02696961578647
+Q (68, 53, 38, 22, 4, 1, 4, 4) 44.762369592769915
+Q (28, 56, 66, 17, 0, 1, 0, 2) 79.46117092207
+Q (68, 33, 37, 25, 4, 3, 2, 0) 50.25528014284689
+Q (21, 56, 34, 48, 3, 2, 2, 0) 102.41327968125314
+Q (4, 39, 52, 6, 3, 1, 0, 2) 36.56579917313369
+Q (52, 32, 5, 30, 1, 0, 3, 3) 46.49966906347573
+Q (28, 61, 15, 46, 3, 2, 0, 0) 53.50735263817182
+Q (11, 56, 52, 39, 2, 1, 2, 0) 48.48078337815115
+Q (68, 64, 53, 41, 1, 1, 1, 4) 39.54075950181886
+Q (52, 65, 13, 41, 3, 3, 1, 3) 38.11294037656118
+Q (64, 53, 3, 39, 1, 0, 2, 0) 42.29402334628661
+Q (28, 56, 10, 17, 1, 1, 0, 4) 73.64094874186948
+Q (20, 47, 37, 62, 0, 4, 1, 2) 64.42461406423372
+Q (43, 32, 61, 65, 3, 3, 0, 4) 49.537258488402216
+Q (44, 46, 61, 32, 3, 1, 2, 3) 60.471448389193135
+Q (28, 45, 1, 22, 1, 1, 0, 0) 42.90227157534968
+Q (56, 10, 9, 44, 3, 2, 1, 4) 112.00918405002216
+Q (17, 10, 44, 32, 1, 0, 4, 0) 58.89263702320736
+Q (35, 57, 36, 38, 3, 1, 2, 1) 45.98637440214478
+Q (20, 50, 48, 6, 2, 4, 0, 0) 48.30469408314831
+Q (20, 40, 50, 62, 1, 1, 1, 2) 69.24334761695769
+Q (67, 32, 53, 41, 1, 1, 4, 3) 61.55034058681366
+Q (44, 32, 28, 48, 1, 1, 4, 3) 42.09514953056154
+Q (9, 66, 71, 19, 3, 2, 2, 4) 104.1747997827978
+Q (41, 37, 54, 36, 3, 4, 3, 3) 63.11745032962195
+{
+  "first_n": 1233,
+  "multistate_n": 2192,
+  "external96": {
+    "scratch_base": {
+      "spearman": 0.5490088858509911,
+      "kendall": 0.4,
+      "top_quartile_precision": 0.42857142857142855,
+      "pred_top8_mean_J": 64.0937271118164,
+      "pred_top8_best_J": 42.53087615966797
+    },
+    "scratch_medium": {
+      "spearman": 0.5116883116883117,
+      "kendall": 0.3688311688311689,
+      "top_quartile_precision": 0.35714285714285715,
+      "pred_top8_mean_J": 61.02949142456055,
+      "pred_top8_best_J": 42.53087615966797
+    },
+    "mlm_first_base": {
+      "spearman": 0.7205058099794943,
+      "kendall": 0.5571428571428572,
+      "top_quartile_precision": 0.7142857142857143,
+      "pred_top8_mean_J": 49.33159637451172,
+      "pred_top8_best_J": 43.25596618652344
+    },
+    "mlm_multi_base": {
+      "spearman": 0.6740259740259741,
+      "kendall": 0.5116883116883117,
+      "top_quartile_precision": 0.5714285714285714,
+      "pred_top8_mean_J": 49.12199401855469,
+      "pred_top8_best_J": 42.57836151123047
+    },
+    "mlm_order_base": {
+      "spearman": 0.6429938482570061,
+      "kendall": 0.45454545454545453,
+      "top_quartile_precision": 0.5714285714285714,
+      "pred_top8_mean_J": 47.239051818847656,
+      "pred_top8_best_J": 43.66284942626953
+    },
+    "mlm_contrast_base": {
+      "spearman": 0.6959671907040329,
+      "kendall": 0.5415584415584417,
+      "top_quartile_precision": 0.7142857142857143,
+      "pred_top8_mean_J": 45.526275634765625,
+      "pred_top8_best_J": 42.57836151123047
+    },
+    "mlm_all_base": {
+      "spearman": 0.596719070403281,
+      "kendall": 0.464935064935065,
+      "top_quartile_precision": 0.5,
+      "pred_top8_mean_J": 56.02824401855469,
+      "pred_top8_best_J": 42.57836151123047
+    },
+    "mlm_all_medium": {
+      "spearman": 0.6617224880382776,
+      "kendall": 0.49350649350649356,
+      "top_quartile_precision": 0.6428571428571429,
+      "pred_top8_mean_J": 49.23064422607422,
+      "pred_top8_best_J": 42.57836151123047
+    }
+  },
+  "prospective96": {
+    "scratch_base": {
+      "n": 24,
+      "mean_J": 82.51623052420506,
+      "median_J": 74.31769609480256,
+      "best_J": 41.77422860946603,
+      "worst_J": 182.87498239852988
+    },
+    "scratch_medium": {
+      "n": 24,
+      "mean_J": 96.54722229812391,
+      "median_J": 55.46918685003139,
+      "best_J": 33.18437764731353,
+      "worst_J": 760.0332832489677
+    },
+    "mlm_first_base": {
+      "n": 24,
+      "mean_J": 48.9915022352223,
+      "median_J": 46.29163827473279,
+      "best_J": 39.380882059884584,
+      "worst_J": 80.50496337084117
+    },
+    "mlm_multi_base": {
+      "n": 24,
+      "mean_J": 53.80006477898172,
+      "median_J": 48.72948533668364,
+      "best_J": 39.57148529593049,
+      "worst_J": 89.72855297541004
+    },
+    "mlm_order_base": {
+      "n": 24,
+      "mean_J": 66.2737677930853,
+      "median_J": 55.014939873323755,
+      "best_J": 40.4666153150224,
+      "worst_J": 137.8063082694689
+    },
+    "mlm_contrast_base": {
+      "n": 24,
+      "mean_J": 48.058472741321765,
+      "median_J": 46.3309150316105,
+      "best_J": 39.54075950181886,
+      "worst_J": 64.12173755965682
+    },
+    "mlm_all_base": {
+      "n": 24,
+      "mean_J": 60.1043925424189,
+      "median_J": 53.94577389188632,
+      "best_J": 38.11294037656118,
+      "worst_J": 103.58881493677731
+    },
+    "mlm_all_medium": {
+      "n": 24,
+      "mean_J": 52.77615733184344,
+      "median_J": 48.82387721709998,
+      "best_J": 39.54075950181886,
+      "worst_J": 84.1322615866306
+    },
+    "random": {
+      "n": 24,
+      "mean_J": 106.88229101872905,
+      "median_J": 94.73205850865003,
+      "best_J": 40.1000354081707,
+      "worst_J": 273.04893454414844
+    }
+  },
+  "elapsed_sec": 17278.38024163246
+}
