@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "job_id": "optv1-transformer-only-meta-10k-20260910-1819",
+  "code_commit": "e62e570a3a9558f8e24330d33a3148083ef04515",
+  "entrypoint": "validation/optv1_transformer_only_lamcts_mandler_runner.py",
+  "args": ["--seed", "17", "--budget", "10000", "--init", "96", "--batch", "16", "--pool", "60000", "--ensemble", "3", "--workers", "32", "--no-random"],
+  "env": {"OMP_NUM_THREADS":"1","MKL_NUM_THREADS":"1","OPENBLAS_NUM_THREADS":"1","NUMBA_NUM_THREADS":"1","PYTHONHASHSEED":"0"},
+  "timeout_sec": 172800,
+  "memory_gb": 0
+}
