@@ -4,6 +4,7 @@
     "1"
   ],
   "code_commit": "22f650292483f68b14e75de4ce6de27a139ea030",
+  "elapsed_sec": 13.705090045928955,
   "entrypoint": "scripts/benchmark_q4096_cuda_known_labels.py",
   "env": {
     "MKL_NUM_THREADS": "1",
@@ -12,15 +13,24 @@
     "OPENBLAS_NUM_THREADS": "1",
     "PYTHONHASHSEED": "0"
   },
+  "finished_at": 1789126217.1427732,
   "hostname": "aipss-Rack-Server",
   "job_id": "000-bench-q4096-cuda-prefix-20260911-1931",
-  "log_tail": "",
+  "log_tail": "WARMUP 2.612049685092643 11.906835230156798\nGPU reference (0, 2, 4, 6) J 11.906835230156798 expected 11.906835229630682 dJ 5.26116039623048e-10 sec 2.1909858610015363\nGPU olmfa-late-best (0, 45, 4, 62) J 17.985040982498457 expected 17.985040982462767 dJ 3.569056161722983e-11 sec 1.6586972640361637\nGPU olmfa-prev-best (16, 45, 44, 62) J 18.15617719401099 expected 18.156177194169597 dJ 1.5860734947636956e-10 sec 1.6584304228890687\n{\n  \"schema\": \"q4096-cuda-known-label-v1\",\n  \"backend\": {\n    \"backend\": \"torch_cuda_float64_exact_spherical_sag_safe_v2\",\n    \"device\": \"cuda:1\",\n    \"cuda\": true,\n    \"name\": \"NVIDIA GeForce RTX 5090\",\n    \"total_memory\": 33670758400,\n    \"torch\": \"2.14.0+cu130\"\n  },\n  \"warmup_seconds\": 2.612049685092643,\n  \"rows\": [\n    {\n      \"label\": \"reference\",\n      \"state4\": [\n        0,\n        2,\n        4,\n        6\n      ],\n      \"expected_J\": 11.906835229630682,\n      \"gpu_J\": 11.906835230156798,\n      \"abs_J_diff\": 5.26116039623048e-10,\n      \"rel_J_diff\": 4.418605191695146e-11,\n      \"seconds\": 2.1909858610015363,\n      \"config_hash\": \"0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da\"\n    },\n    {\n      \"label\": \"olmfa-late-best\",\n      \"state4\": [\n        0,\n        45,\n        4,\n        62\n      ],\n      \"expected_J\": 17.985040982462767,\n      \"gpu_J\": 17.985040982498457,\n      \"abs_J_diff\": 3.569056161722983e-11,\n      \"rel_J_diff\": 1.98445817566008e-12,\n      \"seconds\": 1.6586972640361637,\n      \"config_hash\": \"0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da\"\n    },\n    {\n      \"label\": \"olmfa-prev-best\",\n      \"state4\": [\n        16,\n        45,\n        44,\n        62\n      ],\n      \"expected_J\": 18.156177194169597,\n      \"gpu_J\": 18.15617719401099,\n      \"abs_J_diff\": 1.5860734947636956e-10,\n      \"rel_J_diff\": 8.735723813452445e-12,\n      \"seconds\": 1.6584304228890687,\n      \"config_hash\": \"0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da\"\n    }\n  ],\n  \"mean_seconds\": 1.8360378493089229,\n  \"max_abs_J_diff\": 5.26116039623048e-10,\n  \"max_rel_J_diff\": 4.418605191695146e-11,\n  \"all_config_hash_equal\": true\n}",
   "memory_gb": 0,
   "pid": 1265654,
   "request_sha256": "bcbe4284d8a55b36a4439dfbc1d21a1562bd2f6c9f47ecfca4cb295aa1b02822",
+  "returncode": 0,
   "schema": 1,
   "started_at": 1789126203.437683,
-  "state": "running",
+  "state": "finished",
   "timeout_sec": 3600,
-  "updated_at": 1789126205.668808
+  "updated_at": 1789126205.668808,
+  "uploaded_artifacts": [
+    {
+      "path": "q4096_cuda_known_labels.json",
+      "size": 1689,
+      "uploaded": true
+    }
+  ]
 }
