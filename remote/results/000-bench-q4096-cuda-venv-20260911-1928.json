@@ -14,10 +14,13 @@
   },
   "hostname": "aipss-Rack-Server",
   "job_id": "000-bench-q4096-cuda-venv-20260911-1928",
+  "log_tail": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/000-bench-q4096-cuda-venv-20260911-1928/src/scripts/benchmark_q4096_cuda_known_labels.py\", line 79, in <module>\n    main()\n  File \"/var/lib/cots-lamcts/jobs/000-bench-q4096-cuda-venv-20260911-1928/src/scripts/benchmark_q4096_cuda_known_labels.py\", line 36, in main\n    from evaluator import market_final_direct_q4096_v4_cuda as G\n  File \"/var/lib/cots-lamcts/jobs/000-bench-q4096-cuda-venv-20260911-1928/src/evaluator/market_final_direct_q4096_v4_cuda.py\", line 18, in <module>\n    import torch\nModuleNotFoundError: No module named 'torch'",
   "memory_gb": 0,
+  "pid": 1265517,
   "request_sha256": "b4b994ca359281b40406ebef72ea0b1db544fbb59f3c2e83f5644532e9107619",
   "schema": 1,
   "started_at": 1789126137.958186,
   "state": "running",
-  "timeout_sec": 3600
+  "timeout_sec": 3600,
+  "updated_at": 1789126139.9389443
 }
