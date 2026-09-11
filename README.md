@@ -1,203 +1,180 @@
 # COTS-LAMCTS
 
-## Commercial-Off-The-Shelf Optical Design with Learning-Augmented Monte Carlo Tree Search
+<div align="center">
 
-COTS-LAMCTS is a research framework for autonomous optical design by combining:
+## Designing the lenses that never existed.
 
-- Commercial-Off-The-Shelf (COTS) optical components;
-- Large-scale black-box optimization;
-- Learning-guided Monte Carlo Tree Search;
-- Physics-based optical evaluation.
+**Exploring a future where custom optical systems can be discovered through commercial components, intelligent search, and physics-driven evaluation.**
 
-The goal is to transform optical design from a manually guided iterative process into an autonomous search problem over manufacturable optical design spaces.
+</div>
 
 ---
 
-# Research Idea
+## Why this project exists
 
-Modern optical design requires expert knowledge to repeatedly:
+For more than a century, the creation of high-performance lenses has been one of the most specialized fields in engineering.
 
-1. select candidate optical elements;
-2. adjust configuration parameters;
-3. evaluate optical performance;
-4. refine the design.
+A new optical system traditionally requires expert optical designers, expensive simulation tools, long design cycles, and specialized manufacturing capabilities. As a result, most lenses available today come from a relatively small number of optical companies.
 
-However, optical search spaces are difficult because they are:
+But modern manufacturing has created an enormous ecosystem of commercially available optical components:
 
-- highly non-convex;
-- expensive to evaluate;
-- constrained by available commercial components.
+- precision glass elements;
+- aspherical lenses;
+- optical modules;
+- mechanical components.
 
-COTS-LAMCTS treats optical design as a structured search problem and combines learning with Monte Carlo Tree Search to efficiently explore this space.
+This raises a fundamental question:
 
----
+> **Can we discover new optical systems by intelligently combining what already exists?**
 
-# Core Methodology
+COTS-LAMCTS explores this possibility.
 
-## Transformer-Guided LA-MCTS
-
-The current OPTv1 framework follows:
-
-```
-Optical design state
-        |
-        v
-Transformer representation
-        |
-        v
-Search guidance
-(reward estimation + uncertainty)
-        |
-        v
-LA-MCTS exploration
-        |
-        v
-Q4096 physical evaluation
-        |
-        v
-True objective update
-```
-
-A key principle:
-
-> The Transformer guides search; it does not replace the physical evaluator.
-
-All final optical decisions are validated by Q4096.
+The goal is not simply to optimize a lens. The goal is to make **custom optical design more accessible, creative, and practical**.
 
 ---
 
-# Current Validation
+# From custom cameras to custom lenses
 
-## OPTv1 Transformer-only Meta Validation
+Today, photographers and engineers can customize many parts of an imaging system:
 
-Experiment:
+- camera bodies;
+- sensors;
+- film formats;
+- mechanical designs;
+- digital workflows.
 
-```
-optv1-transformer-only-meta-10k-20260910-1819
-```
+However, the optical design itself is usually fixed by existing product catalogs.
 
-Configuration:
+COTS-LAMCTS explores a different future:
 
-```
-Q4096 budget: 10000 evaluations
-Initial population: 96
-Batch size: 16
-Pool size: 60000
-Transformer ensemble: 3
-Workers: 32
-```
+> What if a small team, a researcher, or an individual creator could explore their own optical designs?
 
-The purpose is to validate whether Transformer-guided LA-MCTS can improve exploration efficiency while preserving physics-based evaluation.
+Possible applications include:
 
----
-
-# Execution Infrastructure
-
-The project uses a GitHub relay workstation architecture.
-
-```
-Development
-
-ChatGPT
-   |
-   v
-Sandbox
-   |
-   v
-Workstation repository
-   |
-   v
-GitHub main
-
-
-Execution
-
-GitHub
-   |
-   v
-Workstation bridge
-   |
-   v
-Compute node
-   |
-   v
-workstation-results
-```
-
-The bridge provides:
-
-- experiment execution;
-- heartbeat monitoring;
-- result synchronization.
-
-Development and execution are intentionally separated.
-
-Detailed recovery guide:
-
-```
-docs/workstation_takeover_optv1_meta10k.md
-```
+- compact lenses optimized for specific camera bodies;
+- portrait lenses with unique rendering character;
+- special-purpose scientific imaging systems;
+- experimental optics outside traditional product categories.
 
 ---
 
-# Repository Structure
+# The core idea
 
-```
-cots-LAMCTS/
+Traditional lens design often starts from an ideal mathematical model and moves toward manufacturing.
 
-├── core/
-├── validation/
-├── evaluator/
-├── infra/
-│   ├── cots_workstation_bridge.py
-│   └── cots-lamcts-bridge.service
-├── remote/
-│   ├── queue/
-│   ├── control/
-│   └── results/
-└── docs/
+COTS-LAMCTS investigates the opposite direction:
+
+**Start from what can already be built, then intelligently discover what is possible.**
+
+```mermaid
+flowchart LR
+A[Optical idea] --> B[Commercial optical components]
+B --> C[Intelligent exploration]
+C --> D[Physics-based optical evaluation]
+D --> E[Promising optical systems]
+E --> F[Prototype and validation]
 ```
+
+> **Intelligence guides the search. Physics decides the result.**
 
 ---
 
-# Research Roadmap
+# Why COTS optics?
 
-## Phase 1 — Transformer-Guided Search Validation
+Commercial off-the-shelf optical components provide:
 
-Demonstrate that learned search guidance improves LA-MCTS exploration.
+- real-world manufacturability;
+- faster prototyping;
+- lower development cost;
+- accessible experimentation for researchers and independent creators.
 
-## Phase 2 — Adaptive Learning
+Instead of asking:
 
-Future extension:
+> "What ideal continuous lens should be designed?"
 
-```
-Q4096 evaluation
-        |
-        v
-Dataset accumulation
-        |
-        v
-Transformer update
-        |
-        v
-Adaptive LA-MCTS
-```
+we ask:
 
-## Phase 3 — Autonomous COTS Optical Design
-
-Target:
-
-- large optical component catalogs;
-- physical optical representations;
-- manufacturable lens systems;
-- autonomous optical discovery.
+> "What high-quality optical systems can be discovered from what is already manufacturable?"
 
 ---
 
-# Key Research Questions
+# Research direction
 
-1. Can learning-guided search outperform classical optimization heuristics?
+COTS-LAMCTS is a research framework exploring automated optical discovery under practical constraints.
 
-2. Can a Transformer learn optical design representations rather than catalog identities?
+The project studies the combination of:
 
-3. Can autonomous search discover competitive optical systems under real manufacturing constraints?
+- commercial optical components;
+- large-scale optical search;
+- learning-guided exploration;
+- physics-based evaluation;
+- practical prototype development.
+
+The goal is not to replace optical engineers, but to create new tools that allow more people to participate in optical innovation.
+
+---
+
+# Research roots
+
+This project is inspired by the original **Lens Factory** work:
+
+**Sun, Libin, Brian Guenter, Neel Joshi, Patrick Therien, and James Hays.**  
+*Lens Factory: Automatic Lens Generation Using Off-the-shelf Components.*  
+2015.  
+https://arxiv.org/abs/1506.08956
+
+Lens Factory demonstrated that useful optical systems could be automatically generated from off-the-shelf optical elements by combining discrete search and optimization.
+
+COTS-LAMCTS builds on this vision by exploring larger-scale search, learning-guided discovery, and physically grounded autonomous optical exploration.
+
+---
+
+# Roadmap
+
+```mermaid
+flowchart TD
+A[Commercial optical components] --> B[Automated optical exploration]
+B --> C[Physics-driven evaluation]
+C --> D[Learning-guided search]
+D --> E[Adaptive optical discovery]
+E --> F[Custom optical systems]
+```
+
+Current milestones:
+
+- [x] Establish a COTS optical search framework
+- [x] Build automated experiment infrastructure
+- [x] Validate learning-guided optical exploration
+- [ ] Develop adaptive self-improving search
+- [ ] Expand optical representations and catalogs
+- [ ] Demonstrate practical custom optical assemblies
+
+---
+
+# Documentation
+
+Technical documentation:
+
+- `docs/workstation_github_bridge_access.md`
+- `docs/workstation_takeover_optv1_meta10k.md`
+
+---
+
+# Vision
+
+The next transformation in imaging may not only come from better sensors or better algorithms.
+
+It may come from discovering new optics.
+
+> **The next interesting lens does not have to come from a traditional lens factory.**
+
+---
+
+Research project by **Wang Teng**.
+
+Exploring the intersection of:
+
+- computational optics;
+- optical engineering;
+- artificial intelligence;
+- creative imaging systems.
