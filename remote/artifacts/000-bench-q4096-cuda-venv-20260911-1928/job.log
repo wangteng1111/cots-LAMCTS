@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/000-bench-q4096-cuda-venv-20260911-1928/src/scripts/benchmark_q4096_cuda_known_labels.py", line 79, in <module>
+    main()
+  File "/var/lib/cots-lamcts/jobs/000-bench-q4096-cuda-venv-20260911-1928/src/scripts/benchmark_q4096_cuda_known_labels.py", line 36, in main
+    from evaluator import market_final_direct_q4096_v4_cuda as G
+  File "/var/lib/cots-lamcts/jobs/000-bench-q4096-cuda-venv-20260911-1928/src/evaluator/market_final_direct_q4096_v4_cuda.py", line 18, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
