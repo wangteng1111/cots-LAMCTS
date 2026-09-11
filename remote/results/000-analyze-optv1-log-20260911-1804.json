@@ -1,0 +1,19 @@
+{
+  "args": [
+    "--target-job",
+    "optv1-transformer-only-meta-10k-20260910-1819"
+  ],
+  "code_commit": "d0f09213f1ed708b0043b68241dd12ef63e9b2b2",
+  "entrypoint": "scripts/analyze_optv1_job_log.py",
+  "env": {
+    "PYTHONHASHSEED": "0"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "000-analyze-optv1-log-20260911-1804",
+  "memory_gb": 0,
+  "request_sha256": "79a2fe9abe2906793fe0f774fd001f01b0b5521c10f45e76accfb5c7a7e03eb2",
+  "schema": 1,
+  "started_at": 1789120927.7802694,
+  "state": "running",
+  "timeout_sec": 600
+}
