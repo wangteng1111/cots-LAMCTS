@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "job_id": "000-bench-q4096-pool-gpu1x8-20260911-1943",
+  "code_commit": "6e21935016f43eb2831493db329d7b3c06d4b271",
+  "entrypoint": "scripts/benchmark_q4096_cuda_pool.py",
+  "args": ["--n", "16", "--gpus", "1", "--workers-per-gpu", "4,8"],
+  "env": {"PYTHONHASHSEED":"0","OMP_NUM_THREADS":"1","MKL_NUM_THREADS":"1","OPENBLAS_NUM_THREADS":"1","NUMBA_NUM_THREADS":"1"},
+  "timeout_sec": 3600,
+  "memory_gb": 0
+}
