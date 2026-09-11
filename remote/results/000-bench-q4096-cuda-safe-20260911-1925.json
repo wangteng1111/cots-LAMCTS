@@ -1,0 +1,23 @@
+{
+  "args": [
+    "--gpu",
+    "1"
+  ],
+  "code_commit": "8580ccf5d92d15009795b46e576e78500c1d35fc",
+  "entrypoint": "scripts/benchmark_q4096_cuda_known_labels.py",
+  "env": {
+    "MKL_NUM_THREADS": "1",
+    "NUMBA_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "000-bench-q4096-cuda-safe-20260911-1925",
+  "memory_gb": 0,
+  "request_sha256": "febefa9912085f2317283474ccdd24e83046911ff0ed0bbf4bc19879906efb0e",
+  "schema": 1,
+  "started_at": 1789126070.924583,
+  "state": "running",
+  "timeout_sec": 3600
+}
