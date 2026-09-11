@@ -10,7 +10,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 VENV = Path('/var/lib/cots-lamcts/venv/bin/python')
-if VENV.exists() and Path(sys.executable).resolve() != VENV.resolve():
+VENV_ROOT = str(VENV.parent.parent)
+if VENV.exists() and sys.prefix != VENV_ROOT:
     os.execv(str(VENV), [str(VENV), '-u', str(Path(__file__).resolve()), *sys.argv[1:]])
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
