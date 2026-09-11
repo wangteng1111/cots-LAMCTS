@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "job_id": "000-analyze-optv1-log-20260911-1804",
+  "code_commit": "d0f09213f1ed708b0043b68241dd12ef63e9b2b2",
+  "entrypoint": "scripts/analyze_optv1_job_log.py",
+  "args": ["--target-job", "optv1-transformer-only-meta-10k-20260910-1819"],
+  "env": {"PYTHONHASHSEED":"0"},
+  "timeout_sec": 600,
+  "memory_gb": 0
+}
