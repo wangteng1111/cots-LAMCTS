@@ -1,0 +1,39 @@
+{
+  "args": [
+    "--seed",
+    "17",
+    "--budget",
+    "160",
+    "--init",
+    "96",
+    "--batch",
+    "16",
+    "--pool",
+    "60000",
+    "--ensemble",
+    "3",
+    "--opt-gpu",
+    "0",
+    "--eval-gpus",
+    "0,1",
+    "--eval-workers-per-gpu",
+    "4"
+  ],
+  "code_commit": "16988a71e3d0197dd0f68183b452a951803e4a08",
+  "entrypoint": "validation/olmta_v1_mandler_meta.py",
+  "env": {
+    "MKL_NUM_THREADS": "1",
+    "NUMBA_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "000-olmta-v1-smoke-20260911-2228",
+  "memory_gb": 0,
+  "request_sha256": "032a5104547cc314fb3406a157f12c2544f49fa15af78e41a1c4ada6b7eff701",
+  "schema": 1,
+  "started_at": 1789136953.293284,
+  "state": "running",
+  "timeout_sec": 1800
+}
