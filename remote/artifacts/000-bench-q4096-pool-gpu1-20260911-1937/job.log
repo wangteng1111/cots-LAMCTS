@@ -1,0 +1,60 @@
+{"workers_per_gpu": 1, "capacity": 1, "warmup_sec": 4.545467288000509, "batch_sec": 36.336419301107526, "states_per_sec": 0.44032957313194376, "effective_sec_per_state": 2.2710262063192204, "max_abs_J_diff": 2.868560500246531e-09, "gpu_counts": {"1": 16}}
+{"workers_per_gpu": 2, "capacity": 2, "warmup_sec": 5.004428514977917, "batch_sec": 28.022856646915898, "states_per_sec": 0.5709624897132287, "effective_sec_per_state": 1.7514285404322436, "max_abs_J_diff": 2.868560500246531e-09, "gpu_counts": {"1": 16}}
+{"workers_per_gpu": 4, "capacity": 4, "warmup_sec": 9.757888200925663, "batch_sec": 22.769581488799304, "states_per_sec": 0.7026918789820813, "effective_sec_per_state": 1.4230988430499565, "max_abs_J_diff": 2.868560500246531e-09, "gpu_counts": {"1": 16}}
+{
+  "schema": "q4096-cuda-pool-benchmark-v1",
+  "n": 16,
+  "gpus": [
+    1
+  ],
+  "runs": [
+    {
+      "workers_per_gpu": 1,
+      "capacity": 1,
+      "warmup_sec": 4.545467288000509,
+      "batch_sec": 36.336419301107526,
+      "states_per_sec": 0.44032957313194376,
+      "effective_sec_per_state": 2.2710262063192204,
+      "max_abs_J_diff": 2.868560500246531e-09,
+      "gpu_counts": {
+        "1": 16
+      }
+    },
+    {
+      "workers_per_gpu": 2,
+      "capacity": 2,
+      "warmup_sec": 5.004428514977917,
+      "batch_sec": 28.022856646915898,
+      "states_per_sec": 0.5709624897132287,
+      "effective_sec_per_state": 1.7514285404322436,
+      "max_abs_J_diff": 2.868560500246531e-09,
+      "gpu_counts": {
+        "1": 16
+      }
+    },
+    {
+      "workers_per_gpu": 4,
+      "capacity": 4,
+      "warmup_sec": 9.757888200925663,
+      "batch_sec": 22.769581488799304,
+      "states_per_sec": 0.7026918789820813,
+      "effective_sec_per_state": 1.4230988430499565,
+      "max_abs_J_diff": 2.868560500246531e-09,
+      "gpu_counts": {
+        "1": 16
+      }
+    }
+  ],
+  "best": {
+    "workers_per_gpu": 4,
+    "capacity": 4,
+    "warmup_sec": 9.757888200925663,
+    "batch_sec": 22.769581488799304,
+    "states_per_sec": 0.7026918789820813,
+    "effective_sec_per_state": 1.4230988430499565,
+    "max_abs_J_diff": 2.868560500246531e-09,
+    "gpu_counts": {
+      "1": 16
+    }
+  }
+}
