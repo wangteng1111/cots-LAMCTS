@@ -6,6 +6,7 @@
     "16"
   ],
   "code_commit": "53790ea97d207b64a13656692f9b67d586677495",
+  "elapsed_sec": 35.63687443733215,
   "entrypoint": "scripts/benchmark_q4096_cpu_legacy.py",
   "env": {
     "MKL_NUM_THREADS": "1",
@@ -14,15 +15,24 @@
     "OPENBLAS_NUM_THREADS": "1",
     "PYTHONHASHSEED": "0"
   },
+  "finished_at": 1789126982.061535,
   "hostname": "aipss-Rack-Server",
   "job_id": "000-bench-q4096-cpu-legacy-20260911-1953",
-  "log_tail": "",
+  "log_tail": "{\n  \"schema\": \"q4096-legacy-cpu-batch-v1\",\n  \"n\": 16,\n  \"workers\": 16,\n  \"batch_sec\": 31.540353040909395,\n  \"states_per_sec\": 0.5072866489239106,\n  \"effective_sec_per_state\": 1.9712720650568372,\n  \"max_abs_J_diff\": 0.0\n}",
   "memory_gb": 0,
   "pid": 1267416,
   "request_sha256": "98c196ce022c40034592576cedd63bca892172b602f8ecaa60ab250f70b801c3",
+  "returncode": 0,
   "schema": 1,
   "started_at": 1789126946.4246604,
-  "state": "running",
+  "state": "finished",
   "timeout_sec": 1800,
-  "updated_at": 1789126948.627421
+  "updated_at": 1789126948.627421,
+  "uploaded_artifacts": [
+    {
+      "path": "q4096_cpu_legacy_benchmark.json",
+      "size": 221,
+      "uploaded": true
+    }
+  ]
 }
