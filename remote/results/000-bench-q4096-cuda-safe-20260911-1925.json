@@ -4,6 +4,7 @@
     "1"
   ],
   "code_commit": "8580ccf5d92d15009795b46e576e78500c1d35fc",
+  "elapsed_sec": 9.243523359298706,
   "entrypoint": "scripts/benchmark_q4096_cuda_known_labels.py",
   "env": {
     "MKL_NUM_THREADS": "1",
@@ -12,15 +13,18 @@
     "OPENBLAS_NUM_THREADS": "1",
     "PYTHONHASHSEED": "0"
   },
+  "finished_at": 1789126080.1681063,
   "hostname": "aipss-Rack-Server",
   "job_id": "000-bench-q4096-cuda-safe-20260911-1925",
   "log_tail": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/000-bench-q4096-cuda-safe-20260911-1925/src/scripts/benchmark_q4096_cuda_known_labels.py\", line 76, in <module>\n    main()\n  File \"/var/lib/cots-lamcts/jobs/000-bench-q4096-cuda-safe-20260911-1925/src/scripts/benchmark_q4096_cuda_known_labels.py\", line 33, in main\n    from evaluator import market_final_direct_q4096_v4_cuda as G\n  File \"/var/lib/cots-lamcts/jobs/000-bench-q4096-cuda-safe-20260911-1925/src/evaluator/market_final_direct_q4096_v4_cuda.py\", line 18, in <module>\n    import torch\nModuleNotFoundError: No module named 'torch'",
   "memory_gb": 0,
   "pid": 1265208,
   "request_sha256": "febefa9912085f2317283474ccdd24e83046911ff0ed0bbf4bc19879906efb0e",
+  "returncode": 1,
   "schema": 1,
   "started_at": 1789126070.924583,
-  "state": "running",
+  "state": "failed",
   "timeout_sec": 3600,
-  "updated_at": 1789126073.016086
+  "updated_at": 1789126073.016086,
+  "uploaded_artifacts": []
 }
