@@ -1,27 +1,9 @@
 {
-  "args": [],
-  "code_commit": "fc513b19f9d796e5958eadc3bf019ed5205e5636",
-  "elapsed_sec": 10.314142942428589,
-  "entrypoint": "validation/opt10_workstation_pretrain_meta.py",
-  "env": {
-    "MKL_NUM_THREADS": "1",
-    "NUMBA_NUM_THREADS": "1",
-    "OMP_NUM_THREADS": "1",
-    "OPENBLAS_NUM_THREADS": "1",
-    "PYTHONHASHSEED": "0"
-  },
-  "finished_at": 1788973223.305646,
+  "error": "<urlopen error timed out>",
   "hostname": "aipss-Rack-Server",
   "job_id": "opt10-pretrain-meta-20260910-0044",
-  "log_tail": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/opt10-pretrain-meta-20260910-0044/src/validation/opt10_workstation_pretrain_meta.py\", line 12, in <module>\n    import torch\nModuleNotFoundError: No module named 'torch'",
-  "memory_gb": 0,
-  "pid": 981599,
-  "request_sha256": "66eecaced46593491052c99e47990dc90c54632ed722c350f434e98f8a8b10cf",
-  "returncode": 1,
+  "queue_path": "remote/queue/opt10-pretrain-meta-20260910-0044.json",
   "schema": 1,
-  "started_at": 1788973212.991503,
-  "state": "failed",
-  "timeout_sec": 172800,
-  "updated_at": 1788973215.226599,
-  "uploaded_artifacts": []
+  "state": "rejected",
+  "timestamp": 1789116997.736129
 }
