@@ -18,10 +18,13 @@
   },
   "hostname": "aipss-Rack-Server",
   "job_id": "000-bench-q4096-pool-gpu1-20260911-1937",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 1266188,
   "request_sha256": "18a1b8c240bc14164e11dcffc0a832b4a63e7167f70e7e75396e5d2e2292d073",
   "schema": 1,
   "started_at": 1789126392.5418444,
   "state": "running",
-  "timeout_sec": 3600
+  "timeout_sec": 3600,
+  "updated_at": 1789126395.4591427
 }
