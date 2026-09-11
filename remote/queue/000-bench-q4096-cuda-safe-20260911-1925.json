@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "job_id": "000-bench-q4096-cuda-safe-20260911-1925",
+  "code_commit": "8580ccf5d92d15009795b46e576e78500c1d35fc",
+  "entrypoint": "scripts/benchmark_q4096_cuda_known_labels.py",
+  "args": ["--gpu", "1"],
+  "env": {"PYTHONHASHSEED":"0","OMP_NUM_THREADS":"1","MKL_NUM_THREADS":"1","OPENBLAS_NUM_THREADS":"1","NUMBA_NUM_THREADS":"1"},
+  "timeout_sec": 3600,
+  "memory_gb": 0
+}
