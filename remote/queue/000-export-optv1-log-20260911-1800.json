@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "job_id": "000-export-optv1-log-20260911-1800",
+  "code_commit": "3f1226e88c0700fd7d4496684d71a98217a7e7ae",
+  "entrypoint": "scripts/export_bridge_job_log.py",
+  "args": ["--target-job", "optv1-transformer-only-meta-10k-20260910-1819"],
+  "env": {"PYTHONHASHSEED":"0"},
+  "timeout_sec": 600,
+  "memory_gb": 0
+}
