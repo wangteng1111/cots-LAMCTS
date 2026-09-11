@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "job_id": "000-bench-q4096-cuda-20260911-1920",
+  "code_commit": "9fdd6ed347ba62df219404c6e72b5e7cf8cc0c10",
+  "entrypoint": "scripts/benchmark_q4096_cuda_backend.py",
+  "args": ["--gpu", "1"],
+  "env": {"PYTHONHASHSEED":"0","OMP_NUM_THREADS":"1","MKL_NUM_THREADS":"1","OPENBLAS_NUM_THREADS":"1","NUMBA_NUM_THREADS":"1"},
+  "timeout_sec": 3600,
+  "memory_gb": 0
+}
