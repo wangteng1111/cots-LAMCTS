@@ -1,0 +1,31 @@
+{
+  "artifact_files": [
+    {
+      "mtime": 1789126640.8556259,
+      "path": "optv1_transformer_only_lamcts_mandler_results.json",
+      "size": 10563621
+    }
+  ],
+  "best_q_in_tail": {
+    "J": 18.24764172996995,
+    "round": 607,
+    "seed": 17,
+    "state": "(0, 21, 68, 38)"
+  },
+  "last_complete_round": {
+    "bestJ": 17.985040982462767,
+    "best_state": "(0, 45, 4, 62)",
+    "eligible": 9,
+    "n": 10000,
+    "round": 619
+  },
+  "log_exists": true,
+  "log_mtime": 1789126640.8596258,
+  "log_size": 569044,
+  "pid": {
+    "alive": false,
+    "pid": 1074792
+  },
+  "target_dir_exists": true,
+  "target_job": "optv1-transformer-only-meta-10k-20260910-1819"
+}
