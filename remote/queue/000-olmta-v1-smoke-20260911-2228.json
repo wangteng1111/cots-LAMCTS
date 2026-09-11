@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "job_id": "000-olmta-v1-smoke-20260911-2228",
+  "code_commit": "16988a71e3d0197dd0f68183b452a951803e4a08",
+  "entrypoint": "validation/olmta_v1_mandler_meta.py",
+  "args": ["--seed", "17", "--budget", "160", "--init", "96", "--batch", "16", "--pool", "60000", "--ensemble", "3", "--opt-gpu", "0", "--eval-gpus", "0,1", "--eval-workers-per-gpu", "4"],
+  "env": {"PYTHONHASHSEED":"0","OMP_NUM_THREADS":"1","MKL_NUM_THREADS":"1","OPENBLAS_NUM_THREADS":"1","NUMBA_NUM_THREADS":"1"},
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
