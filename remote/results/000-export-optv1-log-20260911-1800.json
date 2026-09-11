@@ -1,0 +1,19 @@
+{
+  "args": [
+    "--target-job",
+    "optv1-transformer-only-meta-10k-20260910-1819"
+  ],
+  "code_commit": "3f1226e88c0700fd7d4496684d71a98217a7e7ae",
+  "entrypoint": "scripts/export_bridge_job_log.py",
+  "env": {
+    "PYTHONHASHSEED": "0"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "000-export-optv1-log-20260911-1800",
+  "memory_gb": 0,
+  "request_sha256": "86e46206d87a44d895b6b4e6b509f9a25dc8c660f72d8df643532676977f42c1",
+  "schema": 1,
+  "started_at": 1789120698.519976,
+  "state": "running",
+  "timeout_sec": 600
+}
