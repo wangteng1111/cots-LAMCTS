@@ -10,10 +10,13 @@
   },
   "hostname": "aipss-Rack-Server",
   "job_id": "000-analyze-optv1-log-20260911-1804",
+  "log_tail": "      \"eligible\": 104,\n      \"n\": 8432,\n      \"round\": 521,\n      \"state\": [\n        16,\n        45,\n        44,\n        62\n      ]\n    },\n    \"18.25\": {\n      \"bestJ\": 18.20120939039346,\n      \"eligible\": 118,\n      \"n\": 6992,\n      \"round\": 431,\n      \"state\": [\n        16,\n        45,\n        4,\n        39\n      ]\n    },\n    \"18.5\": {\n      \"bestJ\": 18.20120939039346,\n      \"eligible\": 118,\n      \"n\": 6992,\n      \"round\": 431,\n      \"state\": [\n        16,\n        45,\n        4,\n        39\n      ]\n    },\n    \"19\": {\n      \"bestJ\": 18.20120939039346,\n      \"eligible\": 118,\n      \"n\": 6992,\n      \"round\": 431,\n      \"state\": [\n        16,\n        45,\n        4,\n        39\n      ]\n    },\n    \"19.5\": {\n      \"bestJ\": 19.07316030276427,\n      \"eligible\": 601,\n      \"n\": 3808,\n      \"round\": 232,\n      \"state\": [\n        0,\n        69,\n        28,\n        57\n      ]\n    },\n    \"20\": {\n      \"bestJ\": 19.759673500626374,\n      \"eligible\": 4027,\n      \"n\": 1904,\n      \"round\": 113,\n      \"state\": [\n        16,\n        29,\n        28,\n        32\n      ]\n    },\n    \"21\": {\n      \"bestJ\": 19.759673500626374,\n      \"eligible\": 4027,\n      \"n\": 1904,\n      \"round\": 113,\n      \"state\": [\n        16,\n        29,\n        28,\n        32\n      ]\n    },\n    \"22\": {\n      \"bestJ\": 19.759673500626374,\n      \"eligible\": 4027,\n      \"n\": 1904,\n      \"round\": 113,\n      \"state\": [\n        16,\n        29,\n        28,\n        32\n      ]\n    },\n    \"25\": {\n      \"bestJ\": 22.760062170296987,\n      \"eligible\": 7427,\n      \"n\": 624,\n      \"round\": 33,\n      \"state\": [\n        62,\n        21,\n        44,\n        63\n      ]\n    },\n    \"30\": {\n      \"bestJ\": 26.86918574613337,\n      \"eligible\": 5758,\n      \"n\": 320,\n      \"round\": 14,\n      \"state\": [\n        17,\n        5,\n        44,\n        41\n      ]\n    }\n  }\n}",
   "memory_gb": 0,
+  "pid": 1253307,
   "request_sha256": "79a2fe9abe2906793fe0f774fd001f01b0b5521c10f45e76accfb5c7a7e03eb2",
   "schema": 1,
   "started_at": 1789120927.7802694,
   "state": "running",
-  "timeout_sec": 600
+  "timeout_sec": 600,
+  "updated_at": 1789120929.890784
 }
