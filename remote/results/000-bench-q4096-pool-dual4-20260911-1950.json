@@ -1,0 +1,27 @@
+{
+  "args": [
+    "--n",
+    "16",
+    "--gpus",
+    "0,1",
+    "--workers-per-gpu",
+    "4"
+  ],
+  "code_commit": "6e21935016f43eb2831493db329d7b3c06d4b271",
+  "entrypoint": "scripts/benchmark_q4096_cuda_pool.py",
+  "env": {
+    "MKL_NUM_THREADS": "1",
+    "NUMBA_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "000-bench-q4096-pool-dual4-20260911-1950",
+  "memory_gb": 0,
+  "request_sha256": "aea6b75981b9bc99f5a48434ceca7a56963f80b438c1183d2e92623c2b93855a",
+  "schema": 1,
+  "started_at": 1789126808.5487995,
+  "state": "running",
+  "timeout_sec": 3600
+}
