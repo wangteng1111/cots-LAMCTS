@@ -7,10 +7,10 @@ Wants=network-online.target
 Type=simple
 User=cotslamcts
 Group=cotslamcts
-WorkingDirectory=/opt/cots-lamcts
+WorkingDirectory=/opt/cots-lamcts/infra
 EnvironmentFile=/etc/cots-lamcts/bridge.env
 Environment=COTS_BRIDGE_ROOT=/var/lib/cots-lamcts
-ExecStart=/usr/bin/python3 /opt/cots-lamcts/infra/cots_workstation_bridge.py
+ExecStart=/usr/bin/python3 /opt/cots-lamcts/infra/cots_workstation_bridge_v04.py
 Restart=always
 RestartSec=10
 KillSignal=SIGTERM
