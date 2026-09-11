@@ -20,9 +20,9 @@
   ],
   "hostname": "aipss-Rack-Server",
   "loadavg": [
-    1.77001953125,
-    2.16845703125,
-    2.15234375
+    2.048828125,
+    2.23291015625,
+    2.17529296875
   ],
   "python": "/usr/bin/python3",
   "python_version": "3.12.3",
@@ -30,5 +30,5 @@
   "results_branch": "workstation-results",
   "running_job": "optv1-transformer-only-meta-10k-20260910-1819",
   "schema": 1,
-  "timestamp": 1789091292.232721
+  "timestamp": 1789091473.7291658
 }
