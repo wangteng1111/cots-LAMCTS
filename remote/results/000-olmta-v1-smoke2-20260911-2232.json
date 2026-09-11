@@ -1,0 +1,39 @@
+{
+  "args": [
+    "--seed",
+    "17",
+    "--budget",
+    "160",
+    "--init",
+    "96",
+    "--batch",
+    "16",
+    "--pool",
+    "60000",
+    "--ensemble",
+    "3",
+    "--opt-gpu",
+    "0",
+    "--eval-gpus",
+    "0,1",
+    "--eval-workers-per-gpu",
+    "4"
+  ],
+  "code_commit": "f040d9aaf3c8f586ba42f93eb25884fac056b365",
+  "entrypoint": "validation/olmta_v1_runner.py",
+  "env": {
+    "MKL_NUM_THREADS": "1",
+    "NUMBA_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "000-olmta-v1-smoke2-20260911-2232",
+  "memory_gb": 0,
+  "request_sha256": "83e692743156c6d4a4ad15ee68e977f19a877cd2f73205d22b48761b319efa55",
+  "schema": 1,
+  "started_at": 1789137166.5127015,
+  "state": "running",
+  "timeout_sec": 1800
+}
