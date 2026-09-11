@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "job_id": "000-recover-optv1-20260911-1810",
+  "code_commit": "b58a537821327d5cae4de98881d0625acb712bae",
+  "entrypoint": "scripts/recover_bridge_orphan.py",
+  "args": ["--target-job", "optv1-transformer-only-meta-10k-20260910-1819", "--pid", "1074792"],
+  "env": {"PYTHONHASHSEED":"0"},
+  "timeout_sec": 600,
+  "memory_gb": 0
+}
