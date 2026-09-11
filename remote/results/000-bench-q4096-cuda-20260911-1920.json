@@ -14,10 +14,13 @@
   },
   "hostname": "aipss-Rack-Server",
   "job_id": "000-bench-q4096-cuda-20260911-1920",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 1264654,
   "request_sha256": "7ad0171eb03ebcb024f92a1151dbc21a73a285dadcabc64ab00687bf269cc3c4",
   "schema": 1,
   "started_at": 1789125677.5047784,
   "state": "running",
-  "timeout_sec": 3600
+  "timeout_sec": 3600,
+  "updated_at": 1789125679.534395
 }
