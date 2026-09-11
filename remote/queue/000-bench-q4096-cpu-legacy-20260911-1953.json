@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "job_id": "000-bench-q4096-cpu-legacy-20260911-1953",
+  "code_commit": "53790ea97d207b64a13656692f9b67d586677495",
+  "entrypoint": "scripts/benchmark_q4096_cpu_legacy.py",
+  "args": ["--n", "16", "--workers", "16"],
+  "env": {"PYTHONHASHSEED":"0","OMP_NUM_THREADS":"1","MKL_NUM_THREADS":"1","OPENBLAS_NUM_THREADS":"1","NUMBA_NUM_THREADS":"1"},
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
