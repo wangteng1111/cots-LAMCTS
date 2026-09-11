@@ -12,10 +12,13 @@
   },
   "hostname": "aipss-Rack-Server",
   "job_id": "000-recover-optv1-20260911-1810",
+  "log_tail": "{\n  \"artifact_files\": [],\n  \"best_q_in_tail\": {\n    \"J\": 17.985040982462767,\n    \"round\": 572,\n    \"seed\": 17,\n    \"state\": \"(0, 45, 4, 62)\"\n  },\n  \"last_complete_round\": {\n    \"bestJ\": 17.985040982462767,\n    \"best_state\": \"(0, 45, 4, 62)\",\n    \"eligible\": 13,\n    \"n\": 9616,\n    \"round\": 595\n  },\n  \"log_exists\": true,\n  \"log_mtime\": 1789120859.6305182,\n  \"log_size\": 545072,\n  \"pid\": {\n    \"alive\": true,\n    \"cmdline\": \"/var/lib/cots-lamcts/venv/bin/python -u /var/lib/cots-lamcts/jobs/optv1-transformer-only-meta-10k-20260910-1819/src/validation/_optv1_transformer_only_lamcts_runtime.py --seed 17 --budget 10000 --init 96 --batch 16 --pool 60000 --ensemble 3 --workers 32 --no-random\",\n    \"pid\": 1074792,\n    \"status\": {\n      \"Name\": \"python\",\n      \"PPid\": \"973464\",\n      \"State\": \"R (running)\",\n      \"Threads\": \"14\",\n      \"VmRSS\": \"2143676 kB\",\n      \"VmSize\": \"27648440 kB\"\n    }\n  },\n  \"target_dir_exists\": true,\n  \"target_job\": \"optv1-transformer-only-meta-10k-20260910-1819\"\n}",
   "memory_gb": 0,
+  "pid": 1253431,
   "request_sha256": "69c7d1f468bf5a02b3f84d99939ff158623036726b676dd61ccc06c4a15978de",
   "schema": 1,
   "started_at": 1789120993.3691502,
   "state": "running",
-  "timeout_sec": 600
+  "timeout_sec": 600,
+  "updated_at": 1789120995.495787
 }
