@@ -1,0 +1,21 @@
+{
+  "args": [
+    "--target-job",
+    "optv1-transformer-only-meta-10k-20260910-1819",
+    "--pid",
+    "1074792"
+  ],
+  "code_commit": "b58a537821327d5cae4de98881d0625acb712bae",
+  "entrypoint": "scripts/recover_bridge_orphan.py",
+  "env": {
+    "PYTHONHASHSEED": "0"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "000-recover-optv1-20260911-1749",
+  "memory_gb": 0,
+  "request_sha256": "d10e5125038bf6ce88b0473b35ad306dc6435ab994664ed559f186a6d403f868",
+  "schema": 1,
+  "started_at": 1789120236.7642367,
+  "state": "running",
+  "timeout_sec": 600
+}
