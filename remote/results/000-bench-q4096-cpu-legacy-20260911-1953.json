@@ -16,10 +16,13 @@
   },
   "hostname": "aipss-Rack-Server",
   "job_id": "000-bench-q4096-cpu-legacy-20260911-1953",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 1267416,
   "request_sha256": "98c196ce022c40034592576cedd63bca892172b602f8ecaa60ab250f70b801c3",
   "schema": 1,
   "started_at": 1789126946.4246604,
   "state": "running",
-  "timeout_sec": 1800
+  "timeout_sec": 1800,
+  "updated_at": 1789126948.627421
 }
