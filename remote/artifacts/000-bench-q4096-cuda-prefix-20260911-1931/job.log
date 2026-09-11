@@ -1,0 +1,67 @@
+WARMUP 2.612049685092643 11.906835230156798
+GPU reference (0, 2, 4, 6) J 11.906835230156798 expected 11.906835229630682 dJ 5.26116039623048e-10 sec 2.1909858610015363
+GPU olmfa-late-best (0, 45, 4, 62) J 17.985040982498457 expected 17.985040982462767 dJ 3.569056161722983e-11 sec 1.6586972640361637
+GPU olmfa-prev-best (16, 45, 44, 62) J 18.15617719401099 expected 18.156177194169597 dJ 1.5860734947636956e-10 sec 1.6584304228890687
+{
+  "schema": "q4096-cuda-known-label-v1",
+  "backend": {
+    "backend": "torch_cuda_float64_exact_spherical_sag_safe_v2",
+    "device": "cuda:1",
+    "cuda": true,
+    "name": "NVIDIA GeForce RTX 5090",
+    "total_memory": 33670758400,
+    "torch": "2.14.0+cu130"
+  },
+  "warmup_seconds": 2.612049685092643,
+  "rows": [
+    {
+      "label": "reference",
+      "state4": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "expected_J": 11.906835229630682,
+      "gpu_J": 11.906835230156798,
+      "abs_J_diff": 5.26116039623048e-10,
+      "rel_J_diff": 4.418605191695146e-11,
+      "seconds": 2.1909858610015363,
+      "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+    },
+    {
+      "label": "olmfa-late-best",
+      "state4": [
+        0,
+        45,
+        4,
+        62
+      ],
+      "expected_J": 17.985040982462767,
+      "gpu_J": 17.985040982498457,
+      "abs_J_diff": 3.569056161722983e-11,
+      "rel_J_diff": 1.98445817566008e-12,
+      "seconds": 1.6586972640361637,
+      "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+    },
+    {
+      "label": "olmfa-prev-best",
+      "state4": [
+        16,
+        45,
+        44,
+        62
+      ],
+      "expected_J": 18.156177194169597,
+      "gpu_J": 18.15617719401099,
+      "abs_J_diff": 1.5860734947636956e-10,
+      "rel_J_diff": 8.735723813452445e-12,
+      "seconds": 1.6584304228890687,
+      "config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+    }
+  ],
+  "mean_seconds": 1.8360378493089229,
+  "max_abs_J_diff": 5.26116039623048e-10,
+  "max_rel_J_diff": 4.418605191695146e-11,
+  "all_config_hash_equal": true
+}
