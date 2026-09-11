@@ -18,10 +18,13 @@
   },
   "hostname": "aipss-Rack-Server",
   "job_id": "000-bench-q4096-pool-dual4-20260911-1950",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 1267125,
   "request_sha256": "aea6b75981b9bc99f5a48434ceca7a56963f80b438c1183d2e92623c2b93855a",
   "schema": 1,
   "started_at": 1789126808.5487995,
   "state": "running",
-  "timeout_sec": 3600
+  "timeout_sec": 3600,
+  "updated_at": 1789126811.3797824
 }
