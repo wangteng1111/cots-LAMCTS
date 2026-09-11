@@ -1,0 +1,25 @@
+{
+  "args": [
+    "--n",
+    "16",
+    "--workers",
+    "16"
+  ],
+  "code_commit": "53790ea97d207b64a13656692f9b67d586677495",
+  "entrypoint": "scripts/benchmark_q4096_cpu_legacy.py",
+  "env": {
+    "MKL_NUM_THREADS": "1",
+    "NUMBA_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "000-bench-q4096-cpu-legacy-20260911-1953",
+  "memory_gb": 0,
+  "request_sha256": "98c196ce022c40034592576cedd63bca892172b602f8ecaa60ab250f70b801c3",
+  "schema": 1,
+  "started_at": 1789126946.4246604,
+  "state": "running",
+  "timeout_sec": 1800
+}
