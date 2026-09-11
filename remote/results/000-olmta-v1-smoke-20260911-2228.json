@@ -30,10 +30,13 @@
   },
   "hostname": "aipss-Rack-Server",
   "job_id": "000-olmta-v1-smoke-20260911-2228",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 1284931,
   "request_sha256": "032a5104547cc314fb3406a157f12c2544f49fa15af78e41a1c4ada6b7eff701",
   "schema": 1,
   "started_at": 1789136953.293284,
   "state": "running",
-  "timeout_sec": 1800
+  "timeout_sec": 1800,
+  "updated_at": 1789136955.6803577
 }
