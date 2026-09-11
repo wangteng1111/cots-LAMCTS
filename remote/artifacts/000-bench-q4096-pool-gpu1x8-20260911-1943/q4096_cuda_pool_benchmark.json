@@ -1,0 +1,45 @@
+{
+  "schema": "q4096-cuda-pool-benchmark-v1",
+  "n": 16,
+  "gpus": [
+    1
+  ],
+  "runs": [
+    {
+      "workers_per_gpu": 4,
+      "capacity": 4,
+      "warmup_sec": 9.974568674806505,
+      "batch_sec": 22.65189557801932,
+      "states_per_sec": 0.7063426522028422,
+      "effective_sec_per_state": 1.4157434736262076,
+      "max_abs_J_diff": 2.868560500246531e-09,
+      "gpu_counts": {
+        "1": 16
+      }
+    },
+    {
+      "workers_per_gpu": 8,
+      "capacity": 8,
+      "warmup_sec": 15.818790931953117,
+      "batch_sec": 21.735574669903144,
+      "states_per_sec": 0.7361204036696076,
+      "effective_sec_per_state": 1.3584734168689465,
+      "max_abs_J_diff": 2.868560500246531e-09,
+      "gpu_counts": {
+        "1": 16
+      }
+    }
+  ],
+  "best": {
+    "workers_per_gpu": 8,
+    "capacity": 8,
+    "warmup_sec": 15.818790931953117,
+    "batch_sec": 21.735574669903144,
+    "states_per_sec": 0.7361204036696076,
+    "effective_sec_per_state": 1.3584734168689465,
+    "max_abs_J_diff": 2.868560500246531e-09,
+    "gpu_counts": {
+      "1": 16
+    }
+  }
+}
