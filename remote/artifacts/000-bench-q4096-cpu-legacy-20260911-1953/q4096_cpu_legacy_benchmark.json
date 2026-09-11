@@ -1,0 +1,9 @@
+{
+  "schema": "q4096-legacy-cpu-batch-v1",
+  "n": 16,
+  "workers": 16,
+  "batch_sec": 31.540353040909395,
+  "states_per_sec": 0.5072866489239106,
+  "effective_sec_per_state": 1.9712720650568372,
+  "max_abs_J_diff": 0.0
+}
