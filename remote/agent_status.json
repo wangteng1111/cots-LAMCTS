@@ -20,15 +20,15 @@
   ],
   "hostname": "aipss-Rack-Server",
   "loadavg": [
-    2.06494140625,
-    2.5146484375,
-    2.314453125
+    1.82861328125,
+    2.43994140625,
+    2.29248046875
   ],
   "python": "/usr/bin/python3",
   "python_version": "3.12.3",
   "repo": "wangteng1111/cots-LAMCTS",
   "results_branch": "workstation-results",
-  "running_job": null,
+  "running_job": "000-check-olmfa-final2-20260911-1941",
   "schema": 1,
-  "timestamp": 1789126558.9586148
+  "timestamp": 1789126574.752037
 }
