@@ -14,10 +14,13 @@
   },
   "hostname": "aipss-Rack-Server",
   "job_id": "000-bench-q4096-cuda-20260911-1918",
+  "log_tail": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/000-bench-q4096-cuda-20260911-1918/src/scripts/benchmark_q4096_cuda_backend.py\", line 10, in <module>\n    from validation import opt10_pretrain_completion_run as C\nModuleNotFoundError: No module named 'validation'",
   "memory_gb": 0,
+  "pid": 1264532,
   "request_sha256": "355cefb1e01804b4f3e67fdd47d3fc258b3a0e56c35f68b39247680ec4740718",
   "schema": 1,
   "started_at": 1789125613.373015,
   "state": "running",
-  "timeout_sec": 3600
+  "timeout_sec": 3600,
+  "updated_at": 1789125616.1240175
 }
