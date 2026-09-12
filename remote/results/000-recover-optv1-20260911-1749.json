@@ -1,34 +1,9 @@
 {
-  "args": [
-    "--target-job",
-    "optv1-transformer-only-meta-10k-20260910-1819",
-    "--pid",
-    "1074792"
-  ],
-  "code_commit": "b58a537821327d5cae4de98881d0625acb712bae",
-  "elapsed_sec": 9.305391550064087,
-  "entrypoint": "scripts/recover_bridge_orphan.py",
-  "env": {
-    "PYTHONHASHSEED": "0"
-  },
-  "finished_at": 1789120246.0696282,
+  "error": "<urlopen error timed out>",
   "hostname": "aipss-Rack-Server",
   "job_id": "000-recover-optv1-20260911-1749",
-  "log_tail": "{\n  \"artifact_files\": [],\n  \"best_q_in_tail\": {\n    \"J\": 17.985040982462767,\n    \"round\": 572,\n    \"seed\": 17,\n    \"state\": \"(0, 45, 4, 62)\"\n  },\n  \"last_complete_round\": {\n    \"bestJ\": 17.985040982462767,\n    \"best_state\": \"(0, 45, 4, 62)\",\n    \"eligible\": 10,\n    \"n\": 9568,\n    \"round\": 592\n  },\n  \"log_exists\": true,\n  \"log_mtime\": 1789120144.1100657,\n  \"log_size\": 542350,\n  \"pid\": {\n    \"alive\": true,\n    \"cmdline\": \"/var/lib/cots-lamcts/venv/bin/python -u /var/lib/cots-lamcts/jobs/optv1-transformer-only-meta-10k-20260910-1819/src/validation/_optv1_transformer_only_lamcts_runtime.py --seed 17 --budget 10000 --init 96 --batch 16 --pool 60000 --ensemble 3 --workers 32 --no-random\",\n    \"pid\": 1074792,\n    \"status\": {\n      \"Name\": \"python\",\n      \"PPid\": \"973464\",\n      \"State\": \"R (running)\",\n      \"Threads\": \"14\",\n      \"VmRSS\": \"2161872 kB\",\n      \"VmSize\": \"27666640 kB\"\n    }\n  },\n  \"target_dir_exists\": true,\n  \"target_job\": \"optv1-transformer-only-meta-10k-20260910-1819\"\n}",
-  "memory_gb": 0,
-  "pid": 1251670,
-  "request_sha256": "d10e5125038bf6ce88b0473b35ad306dc6435ab994664ed559f186a6d403f868",
-  "returncode": 0,
+  "queue_path": "remote/queue/000-recover-optv1-20260911-1749.json",
   "schema": 1,
-  "started_at": 1789120236.7642367,
-  "state": "finished",
-  "timeout_sec": 600,
-  "updated_at": 1789120238.8818965,
-  "uploaded_artifacts": [
-    {
-      "path": "recovery.json",
-      "size": 22861,
-      "uploaded": true
-    }
-  ]
+  "state": "rejected",
+  "timestamp": 1789216511.9281132
 }
