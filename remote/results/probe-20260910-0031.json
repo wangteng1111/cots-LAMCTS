@@ -1,9 +1,9 @@
 {
-  "error": "<urlopen error timed out>",
+  "error": "Remote end closed connection without response",
   "hostname": "aipss-Rack-Server",
   "job_id": "probe-20260910-0031",
   "queue_path": "remote/queue/probe-20260910-0031.json",
   "schema": 1,
   "state": "rejected",
-  "timestamp": 1789198099.2983482
+  "timestamp": 1789235066.5118864
 }
