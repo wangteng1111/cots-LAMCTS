@@ -1,40 +1,9 @@
 {
-  "args": [
-    "--n",
-    "16",
-    "--gpus",
-    "1",
-    "--workers-per-gpu",
-    "4,8"
-  ],
-  "code_commit": "6e21935016f43eb2831493db329d7b3c06d4b271",
-  "elapsed_sec": 75.48516535758972,
-  "entrypoint": "scripts/benchmark_q4096_cuda_pool.py",
-  "env": {
-    "MKL_NUM_THREADS": "1",
-    "NUMBA_NUM_THREADS": "1",
-    "OMP_NUM_THREADS": "1",
-    "OPENBLAS_NUM_THREADS": "1",
-    "PYTHONHASHSEED": "0"
-  },
-  "finished_at": 1789126717.7105384,
+  "error": "<urlopen error timed out>",
   "hostname": "aipss-Rack-Server",
   "job_id": "000-bench-q4096-pool-gpu1x8-20260911-1943",
-  "log_tail": "{\"workers_per_gpu\": 4, \"capacity\": 4, \"warmup_sec\": 9.974568674806505, \"batch_sec\": 22.65189557801932, \"states_per_sec\": 0.7063426522028422, \"effective_sec_per_state\": 1.4157434736262076, \"max_abs_J_diff\": 2.868560500246531e-09, \"gpu_counts\": {\"1\": 16}}\n{\"workers_per_gpu\": 8, \"capacity\": 8, \"warmup_sec\": 15.818790931953117, \"batch_sec\": 21.735574669903144, \"states_per_sec\": 0.7361204036696076, \"effective_sec_per_state\": 1.3584734168689465, \"max_abs_J_diff\": 2.868560500246531e-09, \"gpu_counts\": {\"1\": 16}}\n{\n  \"schema\": \"q4096-cuda-pool-benchmark-v1\",\n  \"n\": 16,\n  \"gpus\": [\n    1\n  ],\n  \"runs\": [\n    {\n      \"workers_per_gpu\": 4,\n      \"capacity\": 4,\n      \"warmup_sec\": 9.974568674806505,\n      \"batch_sec\": 22.65189557801932,\n      \"states_per_sec\": 0.7063426522028422,\n      \"effective_sec_per_state\": 1.4157434736262076,\n      \"max_abs_J_diff\": 2.868560500246531e-09,\n      \"gpu_counts\": {\n        \"1\": 16\n      }\n    },\n    {\n      \"workers_per_gpu\": 8,\n      \"capacity\": 8,\n      \"warmup_sec\": 15.818790931953117,\n      \"batch_sec\": 21.735574669903144,\n      \"states_per_sec\": 0.7361204036696076,\n      \"effective_sec_per_state\": 1.3584734168689465,\n      \"max_abs_J_diff\": 2.868560500246531e-09,\n      \"gpu_counts\": {\n        \"1\": 16\n      }\n    }\n  ],\n  \"best\": {\n    \"workers_per_gpu\": 8,\n    \"capacity\": 8,\n    \"warmup_sec\": 15.818790931953117,\n    \"batch_sec\": 21.735574669903144,\n    \"states_per_sec\": 0.7361204036696076,\n    \"effective_sec_per_state\": 1.3584734168689465,\n    \"max_abs_J_diff\": 2.868560500246531e-09,\n    \"gpu_counts\": {\n      \"1\": 16\n    }\n  }\n}",
-  "memory_gb": 0,
-  "pid": 1266770,
-  "request_sha256": "d1e94d45432775ef3a75fe35ee25a90b9de210ef302dee8bf15fbd31546c2531",
-  "returncode": 0,
+  "queue_path": "remote/queue/000-bench-q4096-pool-gpu1x8-20260911-1943.json",
   "schema": 1,
-  "started_at": 1789126642.225373,
-  "state": "finished",
-  "timeout_sec": 3600,
-  "updated_at": 1789126644.1848621,
-  "uploaded_artifacts": [
-    {
-      "path": "q4096_cuda_pool_benchmark.json",
-      "size": 1072,
-      "uploaded": true
-    }
-  ]
+  "state": "rejected",
+  "timestamp": 1789221808.5704248
 }
