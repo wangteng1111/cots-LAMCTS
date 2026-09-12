@@ -1,30 +1,9 @@
 {
-  "args": [
-    "--gpu",
-    "1"
-  ],
-  "code_commit": "689b9897c8a630bdb4562af7803eeaf8c5e7b57d",
-  "elapsed_sec": 10.279460430145264,
-  "entrypoint": "scripts/benchmark_q4096_cuda_backend.py",
-  "env": {
-    "MKL_NUM_THREADS": "1",
-    "NUMBA_NUM_THREADS": "1",
-    "OMP_NUM_THREADS": "1",
-    "OPENBLAS_NUM_THREADS": "1",
-    "PYTHONHASHSEED": "0"
-  },
-  "finished_at": 1789125623.6524754,
+  "error": "<urlopen error timed out>",
   "hostname": "aipss-Rack-Server",
   "job_id": "000-bench-q4096-cuda-20260911-1918",
-  "log_tail": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/000-bench-q4096-cuda-20260911-1918/src/scripts/benchmark_q4096_cuda_backend.py\", line 10, in <module>\n    from validation import opt10_pretrain_completion_run as C\nModuleNotFoundError: No module named 'validation'",
-  "memory_gb": 0,
-  "pid": 1264532,
-  "request_sha256": "355cefb1e01804b4f3e67fdd47d3fc258b3a0e56c35f68b39247680ec4740718",
-  "returncode": 1,
+  "queue_path": "remote/queue/000-bench-q4096-cuda-20260911-1918.json",
   "schema": 1,
-  "started_at": 1789125613.373015,
-  "state": "failed",
-  "timeout_sec": 3600,
-  "updated_at": 1789125616.1240175,
-  "uploaded_artifacts": []
+  "state": "rejected",
+  "timestamp": 1789254246.43669
 }
