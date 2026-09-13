@@ -1,30 +1,9 @@
 {
-  "args": [
-    "--gpu",
-    "1"
-  ],
-  "code_commit": "3cd191a480a4032bc4405b349200f623ce67682d",
-  "elapsed_sec": 184.8988859653473,
-  "entrypoint": "scripts/benchmark_q4096_cuda_known_labels.py",
-  "env": {
-    "MKL_NUM_THREADS": "1",
-    "NUMBA_NUM_THREADS": "1",
-    "OMP_NUM_THREADS": "1",
-    "OPENBLAS_NUM_THREADS": "1",
-    "PYTHONHASHSEED": "0"
-  },
-  "finished_at": 1789126058.2994182,
+  "error": "<urlopen error timed out>",
   "hostname": "aipss-Rack-Server",
   "job_id": "000-bench-q4096-cuda-known-20260911-1922",
-  "log_tail": "/var/lib/cots-lamcts/jobs/000-bench-q4096-cuda-known-20260911-1922/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True\n  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)\n/var/lib/cots-lamcts/jobs/000-bench-q4096-cuda-known-20260911-1922/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True\n  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)\nFT scratch_base 48 {'spearman': 0.6438824333561175, 'kendall': 0.48051948051948057, 'top_quartile_precision': 0.42857142857142855, 'pred_top8_mean_J': 47.185325622558594, 'pred_top8_best_J': 42.15381622314453}\nFT scratch_base 96 {'spearman': 0.5490088858509911, 'kendall': 0.4, 'top_quartile_precision': 0.42857142857142855, 'pred_top8_mean_J': 64.0937271118164, 'pred_top8_best_J': 42.53087615966797}\nFT scratch_base 192 {'spearman': 0.7590567327409434, 'kendall': 0.5766233766233767, 'top_quartile_precision': 0.6428571428571429, 'pred_top8_mean_J': 46.40214920043945, 'pred_top8_best_J': 42.15381622314453}\nFT scratch_medium 48 {'spearman': 0.5286397812713604, 'kendall': 0.38051948051948054, 'top_quartile_precision': 0.42857142857142855, 'pred_top8_mean_J': 51.63575744628906, 'pred_top8_best_J': 42.15381622314453}\nFT scratch_medium 96 {'spearman': 0.5116883116883117, 'kendall': 0.3688311688311689, 'top_quartile_precision': 0.35714285714285715, 'pred_top8_mean_J': 61.02949142456055, 'pred_top8_best_J': 42.53087615966797}\nFT scratch_medium 192 {'spearman': 0.7094326725905673, 'kendall': 0.5220779220779221, 'top_quartile_precision': 0.5714285714285714, 'pred_top8_mean_J': 51.06573486328125, 'pred_top8_best_J': 42.53087615966797}\nFT mlm_first_base 48 {'spearman': 0.6116199589883801, 'kendall': 0.4428571428571429, 'top_quartile_precision': 0.5714285714285714, 'pred_top8_mean_J': 45.82351303100586, 'pred_top8_best_J': 42.53087615966797}\nFT mlm_first_base 96 {'spearman': 0.7205058099794943, 'kendall': 0.5571428571428572, 'top_quartile_precision': 0.7142857142857143, 'pred_top8_mean_J': 49.33159637451172, 'pred_top8_best_J': 43.25596618652344}\nFT mlm_first_base 192 {'spearman': 0.6571428571428571, 'kendall': 0.5077922077922079, 'top_quartile_precision': 0.5714285714285714, 'pred_top8_mean_J': 45.22002410888672, 'pred_top8_best_J': 42.53087615966797}\nFT mlm_multi_base 48 {'spearman': 0.667464114832536, 'kendall': 0.49090909090909096, 'top_quartile_precision': 0.5714285714285714, 'pred_top8_mean_J': 45.823509216308594, 'pred_top8_best_J': 42.53087615966797}\nFT mlm_multi_base 96 {'spearman': 0.6740259740259741, 'kendall': 0.5116883116883117, 'top_quartile_precision': 0.5714285714285714, 'pred_top8_mean_J': 49.12199401855469, 'pred_top8_best_J': 42.57836151123047}\nFT mlm_multi_base 192 {'spearman': 0.6915926179084075, 'kendall': 0.5168831168831169, 'top_quartile_precision': 0.5714285714285714, 'pred_top8_mean_J': 45.96747970581055, 'pred_top8_best_J': 42.53087615966797}\nFT mlm_order_base 48 {'spearman': 0.4920027341079974, 'kendall': 0.338961038961039, 'top_quartile_precision': 0.5, 'pred_top8_mean_J': 46.78560256958008, 'pred_top8_best_J': 42.57836151123047}\nFT mlm_order_base 96 {'spearman': 0.6429938482570061, 'kendall': 0.45454545454545453, 'top_quartile_precision': 0.5714285714285714, 'pred_top8_mean_J': 47.239051818847656, 'pred_top8_best_J': 43.66284942626953}\nFT mlm_order_base 192 {'spearman': 0.6725905673274095, 'kendall': 0.49870129870129876, 'top_quartile_precision': 0.5714285714285714, 'pred_top8_mean_J': 46.76535415649414, 'pred_top8_best_J': 43.66284942626953}\nFT mlm_contrast_base 48 {'spearman': 0.6619275461380725, 'kendall': 0.4870129870129871, 'top_quartile_precision': 0.5, 'pred_top8_mean_J': 47.024635314941406, 'pred_top8_best_J': 42.53087615966797}\nFT mlm_contrast_base 96 {'spearman': 0.6959671907040329, 'kendall': 0.5415584415584417, 'top_quartile_precision': 0.7142857142857143, 'pred_top8_mean_J': 45.526275634765625, 'pred_top8_best_J': 42.57836151123047}",
-  "memory_gb": 0,
-  "pid": 1265022,
-  "request_sha256": "94ba2799ecc98518e637547bfe3f0ec0e967ce438aa4a6a6af9ad7195c93f50c",
-  "returncode": -15,
+  "queue_path": "remote/queue/000-bench-q4096-cuda-known-20260911-1922.json",
   "schema": 1,
-  "started_at": 1789125873.4005322,
-  "state": "stopped",
-  "timeout_sec": 3600,
-  "updated_at": 1789125875.3504176,
-  "uploaded_artifacts": []
+  "state": "rejected",
+  "timestamp": 1789288434.4507244
 }
