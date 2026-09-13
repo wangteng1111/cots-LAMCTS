@@ -1,9 +1,9 @@
 {
-  "error": "Remote end closed connection without response",
+  "error": "<urlopen error timed out>",
   "hostname": "aipss-Rack-Server",
   "job_id": "opt10-pretrain-meta-20260910-0046",
   "queue_path": "remote/queue/opt10-pretrain-meta-20260910-0046.json",
   "schema": 1,
   "state": "rejected",
-  "timestamp": 1789024209.8297756
+  "timestamp": 1789278254.8385534
 }
