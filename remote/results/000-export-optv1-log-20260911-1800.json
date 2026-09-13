@@ -1,37 +1,9 @@
 {
-  "args": [
-    "--target-job",
-    "optv1-transformer-only-meta-10k-20260910-1819"
-  ],
-  "code_commit": "3f1226e88c0700fd7d4496684d71a98217a7e7ae",
-  "elapsed_sec": 9.763025045394897,
-  "entrypoint": "scripts/export_bridge_job_log.py",
-  "env": {
-    "PYTHONHASHSEED": "0"
-  },
-  "finished_at": 1789120708.283001,
+  "error": "<urlopen error timed out>",
   "hostname": "aipss-Rack-Server",
   "job_id": "000-export-optv1-log-20260911-1800",
-  "log_tail": "{\n  \"exists\": true,\n  \"mtime\": 1789120603.785369,\n  \"size\": 544162,\n  \"snapshot_at\": 1789120700.6580865,\n  \"source\": \"/var/lib/cots-lamcts/jobs/optv1-transformer-only-meta-10k-20260910-1819/job.log\",\n  \"target_job\": \"optv1-transformer-only-meta-10k-20260910-1819\"\n}",
-  "memory_gb": 0,
-  "pid": 1252747,
-  "request_sha256": "86e46206d87a44d895b6b4e6b509f9a25dc8c660f72d8df643532676977f42c1",
-  "returncode": 0,
+  "queue_path": "remote/queue/000-export-optv1-log-20260911-1800.json",
   "schema": 1,
-  "started_at": 1789120698.519976,
-  "state": "finished",
-  "timeout_sec": 600,
-  "updated_at": 1789120700.6223593,
-  "uploaded_artifacts": [
-    {
-      "path": "export_info.json",
-      "size": 266,
-      "uploaded": true
-    },
-    {
-      "path": "orphan_job.log",
-      "size": 544162,
-      "uploaded": true
-    }
-  ]
+  "state": "rejected",
+  "timestamp": 1789266176.709654
 }
