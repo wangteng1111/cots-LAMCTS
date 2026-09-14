@@ -20,15 +20,15 @@
   ],
   "hostname": "aipss-Rack-Server",
   "loadavg": [
-    0.14208984375,
-    0.07470703125,
-    0.01318359375
+    0.11962890625,
+    0.07177734375,
+    0.01220703125
   ],
   "python": "/usr/bin/python3",
   "python_version": "3.12.3",
   "repo": "wangteng1111/cots-LAMCTS",
   "results_branch": "workstation-results",
-  "running_job": null,
+  "running_job": "000-000-bridge-v05-smoke-20260914",
   "schema": 1,
-  "timestamp": 1789373670.2417743
+  "timestamp": 1789373681.5645027
 }
