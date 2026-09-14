@@ -1,9 +1,11 @@
 {
-  "error": "<urlopen error timed out>",
   "hostname": "aipss-Rack-Server",
   "job_id": "build-opticalbench-corpus-20260910-0060",
-  "queue_path": "remote/queue/build-opticalbench-corpus-20260910-0060.json",
+  "last_complete_round": null,
+  "log_tail": "fetched 100 / 1280\nfetched 200 / 1280\nfetched 300 / 1280\nfetched 400 / 1280\nfetched 500 / 1280\nfetched 600 / 1280\nfetched 700 / 1280\nfetched 800 / 1280\nfetched 900 / 1280\nfetched 1000 / 1280\nfetched 1100 / 1280\nfetched 1200 / 1280\n{\n  \"schema\": \"opticalbench-corpus-v1\",\n  \"hub_entries\": 1280,\n  \"parsed\": 1234,\n  \"unique_prescriptions\": 1233,\n  \"duplicates_removed\": 1,\n  \"failed\": 46,\n  \"elapsed_sec\": 129.22834134101868,\n  \"persistent_path\": \"/var/lib/cots-lamcts/corpora/opticalbench_hub/parsed_lenses.json.gz\"\n}",
+  "note": "Legacy compute process ended outside bridge supervision; original exit code is unavailable.",
+  "recovered_at": 1789378473.7413359,
+  "recovery_source": "legacy_local_job_dir",
   "schema": 1,
-  "state": "rejected",
-  "timestamp": 1789373501.45942
+  "state": "recovered"
 }
