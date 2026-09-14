@@ -7,10 +7,13 @@
   },
   "hostname": "aipss-Rack-Server",
   "job_id": "bridge-v05-live-probe-20260914-1736",
+  "log_tail": "{\"bridge_version\": \"0.5.0\", \"duplicate_gate\": true, \"local_claim_persisted\": true, \"root\": \"/var/lib/cots-lamcts/jobs/bridge-v05-live-probe-20260914-1736/bridge-v05-test-nj4iaa1o\", \"terminal_states_include_recovered\": true}",
   "memory_gb": 0,
+  "pid": 1691838,
   "request_sha256": "f7fc80e3309908fa1a277d8971cd1573bb2729c9153af88c642827b99ae809e0",
   "schema": 1,
   "started_at": 1789378640.0322616,
   "state": "running",
-  "timeout_sec": 300
+  "timeout_sec": 300,
+  "updated_at": 1789378643.0127723
 }
