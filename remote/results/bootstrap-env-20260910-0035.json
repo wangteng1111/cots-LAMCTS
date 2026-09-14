@@ -1,9 +1,11 @@
 {
-  "error": "<urlopen error timed out>",
   "hostname": "aipss-Rack-Server",
   "job_id": "bootstrap-env-20260910-0035",
-  "queue_path": "remote/queue/bootstrap-env-20260910-0035.json",
+  "last_complete_round": null,
+  "log_tail": "+ /usr/bin/python3 -m venv /var/lib/cots-lamcts/venv\nThe virtual environment was not created successfully because ensurepip is not\navailable.  On Debian/Ubuntu systems, you need to install the python3-venv\npackage using the following command.\n\n    apt install python3.12-venv\n\nYou may need to use sudo with that command.  After installing the python3-venv\npackage, recreate your virtual environment.\n\nFailing command: /var/lib/cots-lamcts/venv/bin/python3\n\n\nTraceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/bootstrap-env-20260910-0035/src/scripts/bootstrap_workstation_env.py\", line 49, in <module>\n    run([sys.executable, '-m', 'venv', str(VENV)], timeout=300)\n  File \"/var/lib/cots-lamcts/jobs/bootstrap-env-20260910-0035/src/scripts/bootstrap_workstation_env.py\", line 35, in run\n    raise RuntimeError(f'command failed {p.returncode}: {cmd}')\nRuntimeError: command failed 1: ['/usr/bin/python3', '-m', 'venv', '/var/lib/cots-lamcts/venv']",
+  "note": "Legacy compute process ended outside bridge supervision; original exit code is unavailable.",
+  "recovered_at": 1789378460.5503244,
+  "recovery_source": "legacy_local_job_dir",
   "schema": 1,
-  "state": "rejected",
-  "timestamp": 1789025486.1624231
+  "state": "recovered"
 }
