@@ -1,9 +1,11 @@
 {
-  "error": "<urlopen error timed out>",
   "hostname": "aipss-Rack-Server",
   "job_id": "opt10-meta-20260910-0042",
-  "queue_path": "remote/queue/opt10-meta-20260910-0042.json",
+  "last_complete_round": null,
+  "log_tail": "torch 2.14.0+cu130 cuda 13.0 devices 2\n+ git clone --depth 1 https://github.com/dibyendumajumdar/goptical.git /var/lib/cots-lamcts/corpora/goptical\nCloning into '/var/lib/cots-lamcts/corpora/goptical'...\n\nparsed human prescriptions 0\nTraceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/opt10-meta-20260910-0042/src/validation/opt10_workstation_meta.py\", line 346, in <module>\n    if __name__=='__main__': main()\n                             ^^^^^^\n  File \"/var/lib/cots-lamcts/jobs/opt10-meta-20260910-0042/src/validation/opt10_workstation_meta.py\", line 286, in main\n    if len(human)<10: raise RuntimeError('too few parsed human prescriptions')\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: too few parsed human prescriptions",
+  "note": "Legacy compute process ended outside bridge supervision; original exit code is unavailable.",
+  "recovered_at": 1789378505.3978002,
+  "recovery_source": "legacy_local_job_dir",
   "schema": 1,
-  "state": "rejected",
-  "timestamp": 1789351585.794616
+  "state": "recovered"
 }
