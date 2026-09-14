@@ -1,0 +1,16 @@
+{
+  "args": [],
+  "code_commit": "1a0b94672f9882a87bac8cada249135ae7547aaf",
+  "entrypoint": "scripts/test_bridge_v05.py",
+  "env": {
+    "PYTHONHASHSEED": "0"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "000-000-bridge-v05-smoke-20260914",
+  "memory_gb": 0,
+  "request_sha256": "fcd162ae465798de1dcd2fbfd2f285b6d2e4a9f4920d1cf573950b8aaea72abe",
+  "schema": 1,
+  "started_at": 1789373674.8758378,
+  "state": "running",
+  "timeout_sec": 300
+}
