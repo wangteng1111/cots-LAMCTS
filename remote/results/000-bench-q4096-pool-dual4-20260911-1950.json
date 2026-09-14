@@ -1,9 +1,11 @@
 {
-  "error": "<urlopen error timed out>",
   "hostname": "aipss-Rack-Server",
   "job_id": "000-bench-q4096-pool-dual4-20260911-1950",
-  "queue_path": "remote/queue/000-bench-q4096-pool-dual4-20260911-1950.json",
+  "last_complete_round": null,
+  "log_tail": "{\"workers_per_gpu\": 4, \"capacity\": 8, \"warmup_sec\": 11.414079521084204, \"batch_sec\": 11.741295190993696, \"states_per_sec\": 1.3627116719008134, \"effective_sec_per_state\": 0.733830949437106, \"max_abs_J_diff\": 2.868560500246531e-09, \"gpu_counts\": {\"0\": 8, \"1\": 8}}\n{\n  \"schema\": \"q4096-cuda-pool-benchmark-v1\",\n  \"n\": 16,\n  \"gpus\": [\n    0,\n    1\n  ],\n  \"runs\": [\n    {\n      \"workers_per_gpu\": 4,\n      \"capacity\": 8,\n      \"warmup_sec\": 11.414079521084204,\n      \"batch_sec\": 11.741295190993696,\n      \"states_per_sec\": 1.3627116719008134,\n      \"effective_sec_per_state\": 0.733830949437106,\n      \"max_abs_J_diff\": 2.868560500246531e-09,\n      \"gpu_counts\": {\n        \"0\": 8,\n        \"1\": 8\n      }\n    }\n  ],\n  \"best\": {\n    \"workers_per_gpu\": 4,\n    \"capacity\": 8,\n    \"warmup_sec\": 11.414079521084204,\n    \"batch_sec\": 11.741295190993696,\n    \"states_per_sec\": 1.3627116719008134,\n    \"effective_sec_per_state\": 0.733830949437106,\n    \"max_abs_J_diff\": 2.868560500246531e-09,\n    \"gpu_counts\": {\n      \"0\": 8,\n      \"1\": 8\n    }\n  }\n}",
+  "note": "Legacy compute process ended outside bridge supervision; original exit code is unavailable.",
+  "recovered_at": 1789378377.494547,
+  "recovery_source": "legacy_local_job_dir",
   "schema": 1,
-  "state": "rejected",
-  "timestamp": 1789351169.45529
+  "state": "recovered"
 }
