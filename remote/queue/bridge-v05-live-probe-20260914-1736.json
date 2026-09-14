@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "job_id": "bridge-v05-live-probe-20260914-1736",
+  "code_commit": "1a0b94672f9882a87bac8cada249135ae7547aaf",
+  "entrypoint": "scripts/test_bridge_v05.py",
+  "args": [],
+  "env": {"PYTHONHASHSEED":"0"},
+  "timeout_sec": 300,
+  "memory_gb": 0
+}
