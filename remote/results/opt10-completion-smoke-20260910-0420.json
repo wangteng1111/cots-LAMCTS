@@ -1,9 +1,11 @@
 {
-  "error": "<urlopen error timed out>",
   "hostname": "aipss-Rack-Server",
   "job_id": "opt10-completion-smoke-20260910-0420",
-  "queue_path": "remote/queue/opt10-completion-smoke-20260910-0420.json",
+  "last_complete_round": null,
+  "log_tail": "/var/lib/cots-lamcts/jobs/opt10-completion-smoke-20260910-0420/src/validation/opt10_pretrain_completion_run.py:42: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True\n  self.enc=nn.TransformerEncoder(el,layers,norm=nn.LayerNorm(d));self.recon=nn.Linear(d,B.FIELDS)\nPRE mlm_multi_base 17 gpu 0 ep 0 loss 0.6171639326715121\nPRE mlm_multi_base 17 gpu 0 ep 50 loss 0.15783731856920424\nPRE mlm_multi_base 17 gpu 0 ep 100 loss 0.12142855374917497\nPRE mlm_multi_base 17 gpu 0 ep 150 loss 0.10208852328088162\nPRE mlm_multi_base 17 gpu 0 ep 200 loss 0.10182784829479065\nPRE mlm_multi_base 17 gpu 0 ep 250 loss 0.08947224474518839\nPRE mlm_multi_base 17 gpu 0 ep 299 loss 0.0870412155224459\n{\"variant\": \"mlm_multi_base\", \"seed\": 17, \"gpu\": 0, \"corpus\": \"multi\", \"corpus_n\": 2192, \"best_loss\": 0.08456461066312164, \"final_loss\": 0.0870412155224459, \"epochs\": 300, \"views\": 24}",
+  "note": "Legacy compute process ended outside bridge supervision; original exit code is unavailable.",
+  "recovered_at": 1789378499.7601004,
+  "recovery_source": "legacy_local_job_dir",
   "schema": 1,
-  "state": "rejected",
-  "timestamp": 1789328555.5320468
+  "state": "recovered"
 }
