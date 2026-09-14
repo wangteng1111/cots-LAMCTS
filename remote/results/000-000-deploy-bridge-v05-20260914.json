@@ -1,19 +1,29 @@
 {
   "args": [],
   "code_commit": "d728020a89e2feaba253aee088ecfa2f8a6d05a5",
+  "elapsed_sec": 10.844752550125122,
   "entrypoint": "scripts/deploy_bridge_v05.py",
   "env": {
     "PYTHONHASHSEED": "0"
   },
+  "finished_at": 1789373556.0842543,
   "hostname": "aipss-Rack-Server",
   "job_id": "000-000-deploy-bridge-v05-20260914",
   "log_tail": "{\n  \"timestamp\": 1789373548.5240204,\n  \"uid\": 997,\n  \"euid\": 997,\n  \"source_root\": \"/var/lib/cots-lamcts/jobs/000-000-deploy-bridge-v05-20260914/src\",\n  \"sudo_noninteractive\": false,\n  \"files\": [\n    {\n      \"src\": \"/var/lib/cots-lamcts/jobs/000-000-deploy-bridge-v05-20260914/src/infra/cots_workstation_bridge.py\",\n      \"dst\": \"/opt/cots-lamcts/infra/cots_workstation_bridge.py\",\n      \"ok\": false,\n      \"method\": null,\n      \"direct_error\": \"OSError(30, 'Read-only file system')\"\n    }\n  ],\n  \"restart_scheduled\": false\n}",
   "memory_gb": 0,
   "pid": 1684796,
   "request_sha256": "15de670a512ca3e17d8ad427a900b03de642c4601cc75d8aa5aae5d39f665c7a",
+  "returncode": 2,
   "schema": 1,
   "started_at": 1789373545.2395017,
-  "state": "running",
+  "state": "failed",
   "timeout_sec": 600,
-  "updated_at": 1789373548.4831026
+  "updated_at": 1789373548.4831026,
+  "uploaded_artifacts": [
+    {
+      "path": "bridge_deploy_report.json",
+      "size": 526,
+      "uploaded": true
+    }
+  ]
 }
