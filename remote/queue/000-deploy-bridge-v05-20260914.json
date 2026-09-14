@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "job_id": "000-deploy-bridge-v05-20260914",
+  "code_commit": "d728020a89e2feaba253aee088ecfa2f8a6d05a5",
+  "entrypoint": "scripts/deploy_bridge_v05.py",
+  "args": [],
+  "env": {"PYTHONHASHSEED": "0"},
+  "timeout_sec": 600,
+  "memory_gb": 0
+}
