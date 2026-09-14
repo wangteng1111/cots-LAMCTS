@@ -1,0 +1,16 @@
+{
+  "args": [],
+  "code_commit": "d728020a89e2feaba253aee088ecfa2f8a6d05a5",
+  "entrypoint": "scripts/deploy_bridge_v05.py",
+  "env": {
+    "PYTHONHASHSEED": "0"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "000-deploy-bridge-v05-20260914",
+  "memory_gb": 0,
+  "request_sha256": "72ab806127ec53388940632180f09bd0f53e61d52095fa7ac94229206fccecea",
+  "schema": 1,
+  "started_at": 1789373575.9222467,
+  "state": "running",
+  "timeout_sec": 600
+}
