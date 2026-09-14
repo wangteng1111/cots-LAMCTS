@@ -1,0 +1,7 @@
+{
+  "bridge_version": "0.5.0",
+  "root": "/var/lib/cots-lamcts/jobs/bridge-v05-live-probe-20260914-1736/bridge-v05-test-nj4iaa1o",
+  "local_claim_persisted": true,
+  "duplicate_gate": true,
+  "terminal_states_include_recovered": true
+}
