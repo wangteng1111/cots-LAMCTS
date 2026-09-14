@@ -1,9 +1,11 @@
 {
-  "error": "<urlopen error timed out>",
   "hostname": "aipss-Rack-Server",
   "job_id": "000-export-optv1-log-20260911-1800",
-  "queue_path": "remote/queue/000-export-optv1-log-20260911-1800.json",
+  "last_complete_round": null,
+  "log_tail": "{\n  \"exists\": true,\n  \"mtime\": 1789120603.785369,\n  \"size\": 544162,\n  \"snapshot_at\": 1789120700.6580865,\n  \"source\": \"/var/lib/cots-lamcts/jobs/optv1-transformer-only-meta-10k-20260910-1819/job.log\",\n  \"target_job\": \"optv1-transformer-only-meta-10k-20260910-1819\"\n}",
+  "note": "Legacy compute process ended outside bridge supervision; original exit code is unavailable.",
+  "recovered_at": 1789378420.6382248,
+  "recovery_source": "legacy_local_job_dir",
   "schema": 1,
-  "state": "rejected",
-  "timestamp": 1789356380.359507
+  "state": "recovered"
 }
