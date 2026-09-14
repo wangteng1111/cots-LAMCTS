@@ -1,0 +1,17 @@
+{
+  "timestamp": 1789373578.0250313,
+  "uid": 997,
+  "euid": 997,
+  "source_root": "/var/lib/cots-lamcts/jobs/000-deploy-bridge-v05-20260914/src",
+  "sudo_noninteractive": false,
+  "files": [
+    {
+      "src": "/var/lib/cots-lamcts/jobs/000-deploy-bridge-v05-20260914/src/infra/cots_workstation_bridge.py",
+      "dst": "/opt/cots-lamcts/infra/cots_workstation_bridge.py",
+      "ok": false,
+      "method": null,
+      "direct_error": "OSError(30, 'Read-only file system')"
+    }
+  ],
+  "restart_scheduled": false
+}
