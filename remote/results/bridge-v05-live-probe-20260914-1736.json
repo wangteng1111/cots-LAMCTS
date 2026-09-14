@@ -1,19 +1,29 @@
 {
   "args": [],
   "code_commit": "1a0b94672f9882a87bac8cada249135ae7547aaf",
+  "elapsed_sec": 11.845459938049316,
   "entrypoint": "scripts/test_bridge_v05.py",
   "env": {
     "PYTHONHASHSEED": "0"
   },
+  "finished_at": 1789378651.8777215,
   "hostname": "aipss-Rack-Server",
   "job_id": "bridge-v05-live-probe-20260914-1736",
   "log_tail": "{\"bridge_version\": \"0.5.0\", \"duplicate_gate\": true, \"local_claim_persisted\": true, \"root\": \"/var/lib/cots-lamcts/jobs/bridge-v05-live-probe-20260914-1736/bridge-v05-test-nj4iaa1o\", \"terminal_states_include_recovered\": true}",
   "memory_gb": 0,
   "pid": 1691838,
   "request_sha256": "f7fc80e3309908fa1a277d8971cd1573bb2729c9153af88c642827b99ae809e0",
+  "returncode": 0,
   "schema": 1,
   "started_at": 1789378640.0322616,
-  "state": "running",
+  "state": "finished",
   "timeout_sec": 300,
-  "updated_at": 1789378643.0127723
+  "updated_at": 1789378643.0127723,
+  "uploaded_artifacts": [
+    {
+      "path": "bridge_v05_smoke.json",
+      "size": 236,
+      "uploaded": true
+    }
+  ]
 }
