@@ -1,0 +1,29 @@
+{
+  "args": [
+    "--out",
+    "data/alpha_lense/opticalbench_hub",
+    "--sleep",
+    "0.15"
+  ],
+  "bridge_version": "0.5.0",
+  "code_commit": "61ad02cbe5403e5ff6b121554e8349f01ada102b",
+  "elapsed_sec": 9.609663486480713,
+  "entrypoint": "scripts/alpha_lense_collect_opticalbench.py",
+  "env": {},
+  "finished_at": 1789486739.5910661,
+  "hostname": "aipss-Rack-Server",
+  "immutable_job_id": true,
+  "job_id": "alpha-lense-data-hub002-20260915",
+  "log_tail": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/alpha-lense-data-hub002-20260915/src/scripts/alpha_lense_collect_opticalbench.py\", line 3, in <module>\n    from alpha_lense.data.collect_opticalbench import main\nModuleNotFoundError: No module named 'alpha_lense'",
+  "memory_gb": 0,
+  "pid": 1784092,
+  "request_sha256": "2b2fe0b28f40a60592a754079b779e1532653bb58f2a9a1239a9279032bbc27d",
+  "retry_policy": "new_job_id_required",
+  "returncode": 1,
+  "schema": 1,
+  "started_at": 1789486729.9814026,
+  "state": "failed",
+  "timeout_sec": 7200,
+  "updated_at": 1789486732.0306177,
+  "uploaded_artifacts": []
+}
