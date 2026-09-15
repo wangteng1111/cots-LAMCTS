@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "alpha-lense-data-corpus001-20260916",
+  "code_commit": "4f3aef2341561d2810387a950bdefb7f624c42b8",
+  "entrypoint": "scripts/alpha_lense_collect_corpus_v01.py",
+  "args": ["--out", "data/alpha_lense/corpus_v01", "--sleep", "0.02"],
+  "timeout_sec": 7200,
+  "memory_gb": 0,
+  "artifacts": ["data/alpha_lense/corpus_v01/index.json", "data/alpha_lense/corpus_v01/summary.json"],
+  "description": "Alpha Lense v0.1 first real corpus pass: collect production-associated P2P prescriptions from public known-lens manifest. No patent sibling expansion yet; measure exact yield first."
+}
