@@ -1,0 +1,16 @@
+{
+  "schema": "OLMTA-v1.0-progress",
+  "round": 1357,
+  "n": 21808,
+  "budget": 50000,
+  "best_J": 10.843484299878748,
+  "best_state4": [
+    0,
+    2,
+    20,
+    6
+  ],
+  "updates_total_including_initial": 92,
+  "last_trigger_reasons": [],
+  "eligible_pool": 0
+}
