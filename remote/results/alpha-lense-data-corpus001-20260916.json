@@ -10,10 +10,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "alpha-lense-data-corpus001-20260916",
+  "log_tail": "{\"known_manifest\": 1384}",
   "memory_gb": 0,
+  "pid": 1793269,
   "request_sha256": "3751364473671e9ced07ab47a29cce183a11d21645887e13024bd424733a6484",
   "schema": 1,
   "started_at": 1789493476.133511,
   "state": "running",
-  "timeout_sec": 7200
+  "timeout_sec": 7200,
+  "updated_at": 1789493478.282122
 }
