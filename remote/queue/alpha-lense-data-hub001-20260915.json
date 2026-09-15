@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "job_id": "alpha-lense-data-hub001-20260915",
+  "code_commit": "7d641abec46b1cb7b7b1e09f47367714552ac449",
+  "entrypoint": "alpha_lense/data/collect_opticalbench.py",
+  "args": ["--out", "data/alpha_lense/opticalbench_hub", "--sleep", "0.12"],
+  "timeout_sec": 7200,
+  "memory_gb": 0,
+  "description": "Download and provenance-index all production-associated PhotonsToPhotos Optical Bench Hub prescriptions as Alpha Lense v0.1 seed corpus. Raw data only; patent prescriptions are not asserted to equal production designs."
+}
