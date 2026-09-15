@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "alpha-lense-data-hub002-20260915",
+  "code_commit": "61ad02cbe5403e5ff6b121554e8349f01ada102b",
+  "entrypoint": "scripts/alpha_lense_collect_opticalbench.py",
+  "args": ["--out", "data/alpha_lense/opticalbench_hub", "--sleep", "0.15"],
+  "timeout_sec": 7200,
+  "memory_gb": 0,
+  "artifacts": ["data/alpha_lense/opticalbench_hub/index.json"],
+  "description": "Alpha Lense v0.1: collect full production-associated Optical Bench Hub corpus with provenance. Corrected retry after hub001 entrypoint-policy rejection."
+}
