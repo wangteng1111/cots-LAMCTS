@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "name": "alpha-lense-q4096-smoke",
+  "device": "cuda:0",
+  "root": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "next_state": [
+    0,
+    2,
+    9,
+    6
+  ],
+  "best_state": [
+    0,
+    2,
+    9,
+    6
+  ],
+  "best_J": 44.87080823456773,
+  "best_feasible": false,
+  "best_margins": {
+    "efl": 14.210511612484652,
+    "f_number": 4.715789767750307,
+    "distortion": -1727.601456505323,
+    "illumination": 0.3400569267301336
+  },
+  "physics_evals": 12,
+  "physics_calls": 12,
+  "policy_sum": 1.0,
+  "root_visits": 48.0,
+  "elapsed_sec": 27.220805883407593,
+  "constraints": "broad integration only; not final T3/80 brief",
+  "q4096_config_hash": "0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da"
+}
