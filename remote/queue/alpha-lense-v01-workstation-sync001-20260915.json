@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "job_id": "alpha-lense-v01-workstation-sync001-20260915",
+  "code_commit": "79ef595f049d57be449dd1f1837071ed1c926588",
+  "entrypoint": "-c",
+  "args": ["import pathlib,py_compile; files=['alpha_lense/core.py','alpha_lense/pretrain_v01.py','alpha_lense/pretrain_v01_goal.py','alpha_lense/test_pretrain_v01.py']; [py_compile.compile(f,doraise=True) for f in files]; print('ALPHA_LENSE_V01_SYNC_OK', pathlib.Path('alpha_lense/DATASET_10K_PLAN.md').exists())"],
+  "env": {"PYTHONHASHSEED":"0"},
+  "timeout_sec": 600,
+  "memory_gb": 0
+}
