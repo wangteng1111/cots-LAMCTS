@@ -1,0 +1,19 @@
+{
+  "args": [
+    "--out",
+    "data/alpha_lense/corpus_v01",
+    "--sleep",
+    "0.02"
+  ],
+  "code_commit": "4f3aef2341561d2810387a950bdefb7f624c42b8",
+  "entrypoint": "scripts/alpha_lense_collect_corpus_v01.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "alpha-lense-data-corpus001-20260916",
+  "memory_gb": 0,
+  "request_sha256": "3751364473671e9ced07ab47a29cce183a11d21645887e13024bd424733a6484",
+  "schema": 1,
+  "started_at": 1789493476.133511,
+  "state": "running",
+  "timeout_sec": 7200
+}
