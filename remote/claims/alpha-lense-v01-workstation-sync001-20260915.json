@@ -1,0 +1,12 @@
+{
+  "bridge_version": "0.5.0",
+  "error": "invalid Python entrypoint",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "alpha-lense-v01-workstation-sync001-20260915",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/alpha-lense-v01-workstation-sync001-20260915.json",
+  "request_sha256": "98e216311cf18ed6060970708e529af12409e4d0488f078e2766468d3e7378f4",
+  "schema": 1,
+  "state": "rejected",
+  "timestamp": 1789485843.8771071
+}
