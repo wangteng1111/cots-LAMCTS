@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1789433716.2891502,
+  "code_commit": "f040d9aaf3c8f586ba42f93eb25884fac056b365",
+  "entrypoint": "validation/olmta_v1_runner.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "olmta-v1-meta50k-run002b-20260915",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/olmta-v1-meta50k-run002b-20260915.json",
+  "request_sha256": "bb98911f0a00aaf6949830a53a70dd8391ca184118a1f1d80f9aaf28346a81fb",
+  "schema": 1,
+  "state": "claimed"
+}
