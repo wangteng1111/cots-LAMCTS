@@ -30,10 +30,13 @@
   },
   "hostname": "aipss-Rack-Server",
   "job_id": "olmta-v1-meta50k-run002b-20260915",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 1746338,
   "request_sha256": "bb98911f0a00aaf6949830a53a70dd8391ca184118a1f1d80f9aaf28346a81fb",
   "schema": 1,
   "started_at": 1789433718.5378902,
   "state": "running",
-  "timeout_sec": 172800
+  "timeout_sec": 172800,
+  "updated_at": 1789433720.5078855
 }
