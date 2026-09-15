@@ -1,0 +1,36 @@
+{
+  "args": [],
+  "bridge_version": "0.5.0",
+  "code_commit": "022830e70ec7644b7c141a3db7856f56caf53f92",
+  "elapsed_sec": 33.584118604660034,
+  "entrypoint": "validation/alpha_lense_smoke.py",
+  "env": {
+    "MKL_NUM_THREADS": "1",
+    "NUMBA_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONHASHSEED": "0"
+  },
+  "finished_at": 1789478225.8047748,
+  "hostname": "aipss-Rack-Server",
+  "immutable_job_id": true,
+  "job_id": "alpha-lense-q4096-smoke001-20260915",
+  "log_tail": "/var/lib/cots-lamcts/jobs/alpha-lense-q4096-smoke001-20260915/src/alpha_lense/core.py:96: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True\n  self.encoder=nn.TransformerEncoder(enc,layers);self.norm=nn.LayerNorm(d_model)\nALPHA_LENSE_SMOKE {\"schema\": 1, \"name\": \"alpha-lense-q4096-smoke\", \"device\": \"cuda:0\", \"root\": [0, 2, 4, 6], \"next_state\": [0, 2, 9, 6], \"best_state\": [0, 2, 9, 6], \"best_J\": 44.87080823456773, \"best_feasible\": false, \"best_margins\": {\"efl\": 14.210511612484652, \"f_number\": 4.715789767750307, \"distortion\": -1727.601456505323, \"illumination\": 0.3400569267301336}, \"physics_evals\": 12, \"physics_calls\": 12, \"policy_sum\": 1.0, \"root_visits\": 48.0, \"elapsed_sec\": 27.220805883407593, \"constraints\": \"broad integration only; not final T3/80 brief\", \"q4096_config_hash\": \"0dcde5089bd66deba991214558637fe906f6c2a52530619850e6c5bab0d684da\"}",
+  "memory_gb": 0,
+  "pid": 1773527,
+  "request_sha256": "feb95780982e90e15909e27072962aa0d281e607ca94a52dcf4bbac1a22fdc93",
+  "retry_policy": "new_job_id_required",
+  "returncode": 0,
+  "schema": 1,
+  "started_at": 1789478192.2206562,
+  "state": "finished",
+  "timeout_sec": 3600,
+  "updated_at": 1789478194.349465,
+  "uploaded_artifacts": [
+    {
+      "path": "alpha_lense_smoke.json",
+      "size": 730,
+      "uploaded": true
+    }
+  ]
+}
