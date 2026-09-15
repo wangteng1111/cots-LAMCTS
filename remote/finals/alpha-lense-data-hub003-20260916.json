@@ -1,0 +1,29 @@
+{
+  "args": [
+    "--out",
+    "data/alpha_lense/opticalbench_hub",
+    "--sleep",
+    "0.15"
+  ],
+  "bridge_version": "0.5.0",
+  "code_commit": "fbefe7ed9df3b47091448cf6a4059e7f3f51183c",
+  "elapsed_sec": 9.366966724395752,
+  "entrypoint": "scripts/alpha_lense_collect_opticalbench_v2.py",
+  "env": {},
+  "finished_at": 1789493367.1087744,
+  "hostname": "aipss-Rack-Server",
+  "immutable_job_id": true,
+  "job_id": "alpha-lense-data-hub003-20260916",
+  "log_tail": "{\"discovered\": 0, \"ok\": 0, \"errors\": 0, \"out\": \"data/alpha_lense/opticalbench_hub\"}",
+  "memory_gb": 0,
+  "pid": 1793086,
+  "request_sha256": "b71033487a370204ca4a0a8e705a3c6af758a75f2c83df88aa38d61eb93cc80d",
+  "retry_policy": "new_job_id_required",
+  "returncode": 0,
+  "schema": 1,
+  "started_at": 1789493357.7418077,
+  "state": "finished",
+  "timeout_sec": 7200,
+  "updated_at": 1789493360.1242898,
+  "uploaded_artifacts": []
+}
