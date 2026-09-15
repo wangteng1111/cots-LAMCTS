@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1789478189.892351,
+  "code_commit": "022830e70ec7644b7c141a3db7856f56caf53f92",
+  "entrypoint": "validation/alpha_lense_smoke.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "alpha-lense-q4096-smoke001-20260915",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/alpha-lense-q4096-smoke001-20260915.json",
+  "request_sha256": "feb95780982e90e15909e27072962aa0d281e607ca94a52dcf4bbac1a22fdc93",
+  "schema": 1,
+  "state": "claimed"
+}
