@@ -11,10 +11,13 @@
   },
   "hostname": "aipss-Rack-Server",
   "job_id": "alpha-lense-q4096-smoke001-20260915",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 1773527,
   "request_sha256": "feb95780982e90e15909e27072962aa0d281e607ca94a52dcf4bbac1a22fdc93",
   "schema": 1,
   "started_at": 1789478192.2206562,
   "state": "running",
-  "timeout_sec": 3600
+  "timeout_sec": 3600,
+  "updated_at": 1789478194.349465
 }
