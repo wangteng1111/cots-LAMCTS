@@ -1,0 +1,12 @@
+{
+  "bridge_version": "0.5.0",
+  "error": "timeout_sec must be in [60,172800]",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "olmta-v1-meta50k-run002-20260915",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/olmta-v1-meta50k-run002-20260915.json",
+  "request_sha256": "ddea02b0596683d53e076776cbc45dad49dc5f73a919c3844abe026fdb845fc5",
+  "schema": 1,
+  "state": "rejected",
+  "timestamp": 1789433639.307172
+}
