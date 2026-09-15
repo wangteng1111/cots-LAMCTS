@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "job_id": "alpha-lense-q4096-smoke001-20260915",
+  "code_commit": "022830e70ec7644b7c141a3db7856f56caf53f92",
+  "entrypoint": "validation/alpha_lense_smoke.py",
+  "args": [],
+  "env": {
+    "PYTHONHASHSEED": "0",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "NUMBA_NUM_THREADS": "1"
+  },
+  "timeout_sec": 3600,
+  "memory_gb": 0
+}
