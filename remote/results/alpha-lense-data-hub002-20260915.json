@@ -1,0 +1,19 @@
+{
+  "args": [
+    "--out",
+    "data/alpha_lense/opticalbench_hub",
+    "--sleep",
+    "0.15"
+  ],
+  "code_commit": "61ad02cbe5403e5ff6b121554e8349f01ada102b",
+  "entrypoint": "scripts/alpha_lense_collect_opticalbench.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "alpha-lense-data-hub002-20260915",
+  "memory_gb": 0,
+  "request_sha256": "2b2fe0b28f40a60592a754079b779e1532653bb58f2a9a1239a9279032bbc27d",
+  "schema": 1,
+  "started_at": 1789486729.9814026,
+  "state": "running",
+  "timeout_sec": 7200
+}
