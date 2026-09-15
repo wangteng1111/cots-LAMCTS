@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/alpha-lense-data-hub002-20260915/src/scripts/alpha_lense_collect_opticalbench.py", line 3, in <module>
+    from alpha_lense.data.collect_opticalbench import main
+ModuleNotFoundError: No module named 'alpha_lense'
