@@ -1,0 +1,12 @@
+{
+  "bridge_version": "0.5.0",
+  "error": "entrypoint must be under ('search/', 'validation/', 'scripts/', 'benchmarks/')",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "alpha-lense-data-hub001-20260915",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/alpha-lense-data-hub001-20260915.json",
+  "request_sha256": "ca8734bbe342a733228e4faf194951f022bedc75bc799501f0b2443c27681917",
+  "schema": 1,
+  "state": "rejected",
+  "timestamp": 1789485991.308877
+}
