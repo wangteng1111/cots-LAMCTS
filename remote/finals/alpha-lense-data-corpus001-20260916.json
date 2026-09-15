@@ -1,0 +1,29 @@
+{
+  "args": [
+    "--out",
+    "data/alpha_lense/corpus_v01",
+    "--sleep",
+    "0.02"
+  ],
+  "bridge_version": "0.5.0",
+  "code_commit": "4f3aef2341561d2810387a950bdefb7f624c42b8",
+  "elapsed_sec": 1110.9125199317932,
+  "entrypoint": "scripts/alpha_lense_collect_corpus_v01.py",
+  "env": {},
+  "finished_at": 1789494587.046031,
+  "hostname": "aipss-Rack-Server",
+  "immutable_job_id": true,
+  "job_id": "alpha-lense-data-corpus001-20260916",
+  "log_tail": "{\"known_manifest\": 1384}\n{\"i\": 100, \"n\": 1384, \"ok\": 100}\n{\"i\": 200, \"n\": 1384, \"ok\": 199}\n{\"i\": 300, \"n\": 1384, \"ok\": 298}\n{\"i\": 400, \"n\": 1384, \"ok\": 398}\n{\"i\": 500, \"n\": 1384, \"ok\": 497}\n{\"i\": 600, \"n\": 1384, \"ok\": 597}\n{\"i\": 700, \"n\": 1384, \"ok\": 697}\n{\"i\": 800, \"n\": 1384, \"ok\": 797}\n{\"i\": 900, \"n\": 1384, \"ok\": 897}\n{\"i\": 1000, \"n\": 1384, \"ok\": 997}\n{\"i\": 1100, \"n\": 1384, \"ok\": 1097}\n{\"i\": 1200, \"n\": 1384, \"ok\": 1197}\n{\"i\": 1300, \"n\": 1384, \"ok\": 1297}\n{\"known_manifest\": 1384, \"attempted\": 1384, \"downloaded\": 1381, \"unique_sha256\": 1381, \"production_associated\": 1381, \"patent_only\": 0, \"missing\": 3, \"errors\": 0}",
+  "memory_gb": 0,
+  "pid": 1793269,
+  "request_sha256": "3751364473671e9ced07ab47a29cce183a11d21645887e13024bd424733a6484",
+  "retry_policy": "new_job_id_required",
+  "returncode": 0,
+  "schema": 1,
+  "started_at": 1789493476.133511,
+  "state": "finished",
+  "timeout_sec": 7200,
+  "updated_at": 1789494564.9562032,
+  "uploaded_artifacts": []
+}
