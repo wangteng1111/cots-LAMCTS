@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "alpha-lense-stage0-restart001-20260917",
+  "code_commit": "bd4286fba3a0d489f6c699c560c5ce54090f9ff3",
+  "entrypoint": "scripts/alpha_lense_stage0_seed_prepare.py",
+  "args": ["--out", "data/alpha_lense/stage0"],
+  "timeout_sec": 14400,
+  "memory_gb": 0,
+  "artifacts": ["data/alpha_lense/stage0/stage0_summary.json", "data/alpha_lense/stage0/stage0_seeds.jsonl", "data/alpha_lense/stage0/stage0_quarantine.jsonl"],
+  "description": "Reviewed Stage0: bounded preparation of real-lens-associated seed prescriptions only; no blind sibling crawling and no training."
+}
