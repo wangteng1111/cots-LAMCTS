@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "alpha-lense-pretrain-data-v02-gen001-20260916",
+  "code_commit": "0d3139d8ceb36c8c3b1c8a48ce20b559b0720121",
+  "entrypoint": "scripts/alpha_lense_build_pretrain_dataset_v02.py",
+  "args": ["--out", "data/alpha_lense/pretrain_dataset_v01", "--max-example", "24", "--workers", "24"],
+  "timeout_sec": 172800,
+  "memory_gb": 0,
+  "artifacts": ["data/alpha_lense/pretrain_dataset_v01/summary.json", "data/alpha_lense/pretrain_dataset_v01/records.jsonl", "data/alpha_lense/pretrain_dataset_v01/usable_ingestion.jsonl"],
+  "description": "Generate full Alpha Lense pretraining prescription corpus from 1381 real-lens-associated seeds plus patent sibling expansion to Example24. Concurrent/resumable, provenance-preserving, normalized dedup, family-safe train/val/test split. Data generation only; no pretraining."
+}
