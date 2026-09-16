@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "alpha-lense-stage0-2-full002-20260917",
+  "code_commit": "f02ad0af658ce3210d3535e395d51b43e780751c",
+  "entrypoint": "scripts/alpha_lense_stage0_2_run.py",
+  "args": ["--out", "data/alpha_lense/stage0_2_v01", "--perturb-per-seed", "100", "--smoke-seeds", "2", "--smoke-perturb", "2"],
+  "timeout_sec": 172800,
+  "memory_gb": 0,
+  "artifacts": ["data/alpha_lense/stage0_2_v01/stage0_summary.json", "data/alpha_lense/stage0_2_v01/stage1_smoke.jsonl", "data/alpha_lense/stage0_2_v01/dataset_summary.json"],
+  "description": "Retry unified Stage0-2 after removing sklearn runtime dependency from arbitrary-prescription Q4096 adapter. Mandatory real-prescription Q4096 smoke gate precedes scale-out."
+}
