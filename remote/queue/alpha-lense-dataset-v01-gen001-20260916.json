@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "alpha-lense-dataset-v01-gen001-20260916",
+  "code_commit": "32c9f7bb37305dc1377c643399146b3e877d55c1",
+  "entrypoint": "scripts/alpha_lense_build_dataset_v01.py",
+  "args": ["--out", "data/alpha_lense/dataset_v01", "--max-example", "12", "--sleep", "0.01"],
+  "timeout_sec": 14400,
+  "memory_gb": 0,
+  "artifacts": ["data/alpha_lense/dataset_v01/summary.json", "data/alpha_lense/dataset_v01/records.jsonl", "data/alpha_lense/dataset_v01/usable_manifest.jsonl"],
+  "description": "Generate and audit Alpha Lense v0.1 prescription dataset: known production-associated corpus + patent sibling Examples 01..12, provenance preservation, raw/normalized deduplication, conservative parseability funnel. No pretraining."
+}
