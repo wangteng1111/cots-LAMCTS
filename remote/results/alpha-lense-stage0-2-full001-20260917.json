@@ -1,0 +1,23 @@
+{
+  "args": [
+    "--out",
+    "data/alpha_lense/stage0_2_v01",
+    "--perturb-per-seed",
+    "100",
+    "--smoke-seeds",
+    "2",
+    "--smoke-perturb",
+    "2"
+  ],
+  "code_commit": "f91453296e79a5d6736c81344dfdeefe53a30729",
+  "entrypoint": "scripts/alpha_lense_stage0_2_run.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "alpha-lense-stage0-2-full001-20260917",
+  "memory_gb": 0,
+  "request_sha256": "cf30296a6adf3574c9a5e57cc3d7a7799798aa9d8b1ba7c9c472f25638edadbb",
+  "schema": 1,
+  "started_at": 1789576641.183299,
+  "state": "running",
+  "timeout_sec": 172800
+}
