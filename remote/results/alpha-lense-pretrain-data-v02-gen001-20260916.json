@@ -12,10 +12,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "alpha-lense-pretrain-data-v02-gen001-20260916",
+  "log_tail": "{\"known\": 1384, \"candidates\": 61366, \"workers\": 24}",
   "memory_gb": 0,
+  "pid": 1891476,
   "request_sha256": "a24e79f5f28b2b8b864e52ceacd34af7634455d5be241732fb45804b391a9d84",
   "schema": 1,
   "started_at": 1789569319.436144,
   "state": "running",
-  "timeout_sec": 172800
+  "timeout_sec": 172800,
+  "updated_at": 1789569321.693275
 }
