@@ -14,7 +14,7 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "alpha-lense-stage0-2-full002-20260917",
-  "log_tail": "{\"stage\": 0, \"done\": 100, \"reconstructed\": 14, \"quarantine\": 86}\n{\"stage\": 0, \"done\": 200, \"reconstructed\": 62, \"quarantine\": 138}\n{\"stage\": 0, \"done\": 300, \"reconstructed\": 118, \"quarantine\": 182}\n{\"stage\": 0, \"done\": 400, \"reconstructed\": 154, \"quarantine\": 246}\n{\"stage\": 0, \"done\": 500, \"reconstructed\": 188, \"quarantine\": 312}\n{\"stage\": 0, \"done\": 600, \"reconstructed\": 226, \"quarantine\": 374}\n{\"stage\": 0, \"done\": 700, \"reconstructed\": 254, \"quarantine\": 446}\n{\"stage\": 0, \"done\": 800, \"reconstructed\": 267, \"quarantine\": 533}\n{\"stage\": 0, \"done\": 900, \"reconstructed\": 284, \"quarantine\": 616}",
+  "log_tail": "{\"stage\": 0, \"done\": 100, \"reconstructed\": 14, \"quarantine\": 86}\n{\"stage\": 0, \"done\": 200, \"reconstructed\": 62, \"quarantine\": 138}\n{\"stage\": 0, \"done\": 300, \"reconstructed\": 118, \"quarantine\": 182}\n{\"stage\": 0, \"done\": 400, \"reconstructed\": 154, \"quarantine\": 246}\n{\"stage\": 0, \"done\": 500, \"reconstructed\": 188, \"quarantine\": 312}\n{\"stage\": 0, \"done\": 600, \"reconstructed\": 226, \"quarantine\": 374}\n{\"stage\": 0, \"done\": 700, \"reconstructed\": 254, \"quarantine\": 446}\n{\"stage\": 0, \"done\": 800, \"reconstructed\": 267, \"quarantine\": 533}\n{\"stage\": 0, \"done\": 900, \"reconstructed\": 284, \"quarantine\": 616}\n{\"stage\": 0, \"done\": 1000, \"reconstructed\": 307, \"quarantine\": 693}\n{\"stage\": 0, \"done\": 1100, \"reconstructed\": 325, \"quarantine\": 775}",
   "memory_gb": 0,
   "pid": 1899289,
   "request_sha256": "c1607f3ba361d72304226e7ab1a6e39bb8eb392b2cb5ec2548165841f41210bb",
@@ -22,5 +22,5 @@
   "started_at": 1789577019.4756958,
   "state": "running",
   "timeout_sec": 172800,
-  "updated_at": 1789577746.4544883
+  "updated_at": 1789577928.2949824
 }
