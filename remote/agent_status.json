@@ -20,8 +20,8 @@
   ],
   "hostname": "aipss-Rack-Server",
   "loadavg": [
-    1.0029296875,
-    1.02685546875,
+    1.0,
+    1.00927734375,
     1.0
   ],
   "python": "/usr/bin/python3",
@@ -30,5 +30,5 @@
   "results_branch": "workstation-results",
   "running_job": "alpha-lense-stage0-2-full002-20260917",
   "schema": 1,
-  "timestamp": 1789580645.017856
+  "timestamp": 1789580826.8737953
 }
