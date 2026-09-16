@@ -4,17 +4,21 @@
     "data/alpha_lense/stage0"
   ],
   "code_commit": "bd4286fba3a0d489f6c699c560c5ce54090f9ff3",
+  "elapsed_sec": 364.5465393066406,
   "entrypoint": "scripts/alpha_lense_stage0_seed_prepare.py",
   "env": {},
+  "finished_at": 1789576624.5974858,
   "hostname": "aipss-Rack-Server",
   "job_id": "alpha-lense-stage0-restart001-20260917",
-  "log_tail": "{\"stage\": 0, \"done\": 200}",
+  "log_tail": "{\"stage\": 0, \"done\": 200}\n{\"stage\": 0, \"done\": 400}",
   "memory_gb": 0,
   "pid": 1898399,
   "request_sha256": "613a699ba1c8e5ac31bc42433f18d29cae93c39a862e083a6d7f3859761ed04a",
+  "returncode": -15,
   "schema": 1,
   "started_at": 1789576260.0509465,
-  "state": "running",
+  "state": "stopped",
   "timeout_sec": 14400,
-  "updated_at": 1789576442.4253006
+  "updated_at": 1789576442.4253006,
+  "uploaded_artifacts": []
 }
