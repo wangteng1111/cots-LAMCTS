@@ -1,0 +1,17 @@
+{
+  "args": [
+    "--out",
+    "data/alpha_lense/stage0"
+  ],
+  "code_commit": "bd4286fba3a0d489f6c699c560c5ce54090f9ff3",
+  "entrypoint": "scripts/alpha_lense_stage0_seed_prepare.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "alpha-lense-stage0-restart001-20260917",
+  "memory_gb": 0,
+  "request_sha256": "613a699ba1c8e5ac31bc42433f18d29cae93c39a862e083a6d7f3859761ed04a",
+  "schema": 1,
+  "started_at": 1789576260.0509465,
+  "state": "running",
+  "timeout_sec": 14400
+}
