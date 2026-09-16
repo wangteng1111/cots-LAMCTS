@@ -20,9 +20,9 @@
   ],
   "hostname": "aipss-Rack-Server",
   "loadavg": [
-    1.14013671875,
-    0.52001953125,
-    0.203125
+    0.82421875,
+    0.49365234375,
+    0.20166015625
   ],
   "python": "/usr/bin/python3",
   "python_version": "3.12.3",
@@ -30,5 +30,5 @@
   "results_branch": "workstation-results",
   "running_job": null,
   "schema": 1,
-  "timestamp": 1789553656.3600392
+  "timestamp": 1789553680.4753613
 }
