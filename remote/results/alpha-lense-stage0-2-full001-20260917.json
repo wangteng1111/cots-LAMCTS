@@ -14,10 +14,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "alpha-lense-stage0-2-full001-20260917",
+  "log_tail": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/alpha-lense-stage0-2-full001-20260917/src/scripts/alpha_lense_stage0_2_run.py\", line 12, in <module>\n    from evaluator.prescription_q4096 import evaluate_prescription\n  File \"/var/lib/cots-lamcts/jobs/alpha-lense-stage0-2-full001-20260917/src/evaluator/prescription_q4096.py\", line 11, in <module>\n    from core.mandler_benchmark_core import cauchy_from_ne_ve,Surf,cardinal,front_matrix\n  File \"/var/lib/cots-lamcts/jobs/alpha-lense-stage0-2-full001-20260917/src/core/mandler_benchmark_core.py\", line 6, in <module>\n    from sklearn.svm import SVC\nModuleNotFoundError: No module named 'sklearn'",
   "memory_gb": 0,
+  "pid": 1898664,
   "request_sha256": "cf30296a6adf3574c9a5e57cc3d7a7799798aa9d8b1ba7c9c472f25638edadbb",
   "schema": 1,
   "started_at": 1789576641.183299,
   "state": "running",
-  "timeout_sec": 172800
+  "timeout_sec": 172800,
+  "updated_at": 1789576643.570453
 }
