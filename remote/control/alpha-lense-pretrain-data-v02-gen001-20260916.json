@@ -1,0 +1,4 @@
+{
+  "action": "stop",
+  "reason": "Replace acquisition-only workflow with reviewed Stage0-Stage2 Alpha Lense pretrain data pipeline"
+}
