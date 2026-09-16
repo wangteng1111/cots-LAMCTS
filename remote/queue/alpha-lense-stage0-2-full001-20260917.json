@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "alpha-lense-stage0-2-full001-20260917",
+  "code_commit": "f91453296e79a5d6736c81344dfdeefe53a30729",
+  "entrypoint": "scripts/alpha_lense_stage0_2_run.py",
+  "args": ["--out", "data/alpha_lense/stage0_2_v01", "--perturb-per-seed", "100", "--smoke-seeds", "2", "--smoke-perturb", "2"],
+  "timeout_sec": 172800,
+  "memory_gb": 0,
+  "artifacts": ["data/alpha_lense/stage0_2_v01/stage0_summary.json", "data/alpha_lense/stage0_2_v01/stage1_smoke.jsonl", "data/alpha_lense/stage0_2_v01/dataset_summary.json"],
+  "description": "Unified Alpha Lense Stage0-2: reconstruct real-lens prescriptions, mandatory arbitrary-prescription Q4096 smoke gate, physical perturbation clouds with topology edits, authoritative physics ranking, deterministic Stage2 pretrain targets. No model training."
+}
