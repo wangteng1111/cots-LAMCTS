@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/alpha-lense-stage0-2-full001-20260917/src/scripts/alpha_lense_stage0_2_run.py", line 12, in <module>
+    from evaluator.prescription_q4096 import evaluate_prescription
+  File "/var/lib/cots-lamcts/jobs/alpha-lense-stage0-2-full001-20260917/src/evaluator/prescription_q4096.py", line 11, in <module>
+    from core.mandler_benchmark_core import cauchy_from_ne_ve,Surf,cardinal,front_matrix
+  File "/var/lib/cots-lamcts/jobs/alpha-lense-stage0-2-full001-20260917/src/core/mandler_benchmark_core.py", line 6, in <module>
+    from sklearn.svm import SVC
+ModuleNotFoundError: No module named 'sklearn'
