@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/alpha-lense-stage0-2-diag004-20260917/src/scripts/alpha_lense_stage0_2_run.py", line 10, in <module>
+    from evaluator.prescription_q4096 import evaluate_prescription
+  File "/var/lib/cots-lamcts/jobs/alpha-lense-stage0-2-diag004-20260917/src/evaluator/prescription_q4096.py", line 9, in <module>
+    from evaluator import market_final_direct_q4096_v4_cuda as CUDA
+  File "/var/lib/cots-lamcts/jobs/alpha-lense-stage0-2-diag004-20260917/src/evaluator/market_final_direct_q4096_v4_cuda.py", line 18, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
