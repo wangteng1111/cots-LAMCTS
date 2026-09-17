@@ -1,0 +1,4 @@
+{
+  "action": "stop",
+  "reason": "User requested termination: diagnose prolonged Stage0-2 run and GPU-idle behavior before continuing"
+}
