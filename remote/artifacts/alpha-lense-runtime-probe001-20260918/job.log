@@ -1,0 +1,10 @@
+{
+  "bridge_python": "/usr/bin/python3",
+  "candidates": [
+    {
+      "candidate": "/usr/bin/python3.12",
+      "rc": 0,
+      "output": "{\"python\": \"/usr/bin/python3.12\", \"version\": \"3.12.3\", \"torch_error\": \"ModuleNotFoundError(\\\"No module named 'torch'\\\")\"}\n"
+    }
+  ]
+}
