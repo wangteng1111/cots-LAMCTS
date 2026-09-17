@@ -5,10 +5,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "alpha-lense-runtime-probe001-20260918",
+  "log_tail": "{\n  \"bridge_python\": \"/usr/bin/python3\",\n  \"candidates\": [\n    {\n      \"candidate\": \"/usr/bin/python3.12\",\n      \"rc\": 0,\n      \"output\": \"{\\\"python\\\": \\\"/usr/bin/python3.12\\\", \\\"version\\\": \\\"3.12.3\\\", \\\"torch_error\\\": \\\"ModuleNotFoundError(\\\\\\\"No module named 'torch'\\\\\\\")\\\"}\\n\"\n    }\n  ]\n}",
   "memory_gb": 0,
+  "pid": 1971172,
   "request_sha256": "3279d7bc85e7d5a9b9596a70fb9329ac14b630885cf0f8ebf8f6098613f0aaf5",
   "schema": 1,
   "started_at": 1789670087.0765245,
   "state": "running",
-  "timeout_sec": 600
+  "timeout_sec": 600,
+  "updated_at": 1789670089.230509
 }
