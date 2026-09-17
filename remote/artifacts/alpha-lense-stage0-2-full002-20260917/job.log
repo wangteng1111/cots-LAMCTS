@@ -1,0 +1,27 @@
+{"stage": 0, "done": 100, "reconstructed": 14, "quarantine": 86}
+{"stage": 0, "done": 200, "reconstructed": 62, "quarantine": 138}
+{"stage": 0, "done": 300, "reconstructed": 118, "quarantine": 182}
+{"stage": 0, "done": 400, "reconstructed": 154, "quarantine": 246}
+{"stage": 0, "done": 500, "reconstructed": 188, "quarantine": 312}
+{"stage": 0, "done": 600, "reconstructed": 226, "quarantine": 374}
+{"stage": 0, "done": 700, "reconstructed": 254, "quarantine": 446}
+{"stage": 0, "done": 800, "reconstructed": 267, "quarantine": 533}
+{"stage": 0, "done": 900, "reconstructed": 284, "quarantine": 616}
+{"stage": 0, "done": 1000, "reconstructed": 307, "quarantine": 693}
+{"stage": 0, "done": 1100, "reconstructed": 325, "quarantine": 775}
+{"stage": 0, "done": 1200, "reconstructed": 348, "quarantine": 852}
+{"stage": 0, "done": 1300, "reconstructed": 365, "quarantine": 935}
+{"stage": 1, "smoke_records": 6, "status": "passed"}
+{"stage": 1, "seeds_done": 10, "physics_records": 1010}
+{"stage": 1, "seeds_done": 20, "physics_records": 2020}
+{"stage": 1, "seeds_done": 30, "physics_records": 3030}
+{"stage": 1, "seeds_done": 40, "physics_records": 4040}
+{"stage": 1, "seeds_done": 50, "physics_records": 5050}
+{"stage": 1, "seeds_done": 60, "physics_records": 6060}
+{"stage": 1, "seeds_done": 70, "physics_records": 7070}
+{"stage": 1, "seeds_done": 80, "physics_records": 8080}
+{"stage": 1, "seeds_done": 90, "physics_records": 9090}
+{"stage": 1, "seeds_done": 100, "physics_records": 10100}
+{"stage": 1, "seeds_done": 110, "physics_records": 11110}
+{"stage": 1, "seeds_done": 120, "physics_records": 12120}
+{"stage": 1, "seeds_done": 130, "physics_records": 13130}
