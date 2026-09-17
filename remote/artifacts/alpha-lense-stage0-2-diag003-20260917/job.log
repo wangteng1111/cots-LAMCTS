@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/alpha-lense-stage0-2-diag003-20260917/src/scripts/alpha_lense_stage0_2_run.py", line 10, in <module>
+    from evaluator.prescription_q4096 import evaluate_prescription
+  File "/var/lib/cots-lamcts/jobs/alpha-lense-stage0-2-diag003-20260917/src/evaluator/prescription_q4096.py", line 8, in <module>
+    from evaluator import market_final_direct_q4096_v4 as E
+  File "/var/lib/cots-lamcts/jobs/alpha-lense-stage0-2-diag003-20260917/src/evaluator/market_final_direct_q4096_v4.py", line 28, in <module>
+    _SPEC=importlib.util.spec_from_file_location('M',str(_CORE_PATH)); M=importlib.util.module_from_spec(_SPEC); _SPEC.loader.exec_module(M)
+                                                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/lib/cots-lamcts/jobs/alpha-lense-stage0-2-diag003-20260917/src/evaluator/optical_primitives.py", line 12, in <module>
+    @dataclass
+     ^^^^^^^^^
+  File "/usr/lib/python3.12/dataclasses.py", line 1268, in dataclass
+    return wrap(cls)
+           ^^^^^^^^^
+  File "/usr/lib/python3.12/dataclasses.py", line 1258, in wrap
+    return _process_class(cls, init, repr, eq, order, unsafe_hash,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/dataclasses.py", line 983, in _process_class
+    and _is_type(type, cls, dataclasses, dataclasses.KW_ONLY,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/dataclasses.py", line 749, in _is_type
+    ns = sys.modules.get(cls.__module__).__dict__
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '__dict__'. Did you mean: '__dir__'?
