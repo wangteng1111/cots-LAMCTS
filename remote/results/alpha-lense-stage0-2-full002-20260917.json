@@ -10,17 +10,21 @@
     "2"
   ],
   "code_commit": "f02ad0af658ce3210d3535e395d51b43e780751c",
+  "elapsed_sec": 83532.28144574165,
   "entrypoint": "scripts/alpha_lense_stage0_2_run.py",
   "env": {},
+  "finished_at": 1789660551.7571416,
   "hostname": "aipss-Rack-Server",
   "job_id": "alpha-lense-stage0-2-full002-20260917",
   "log_tail": "{\"stage\": 0, \"done\": 100, \"reconstructed\": 14, \"quarantine\": 86}\n{\"stage\": 0, \"done\": 200, \"reconstructed\": 62, \"quarantine\": 138}\n{\"stage\": 0, \"done\": 300, \"reconstructed\": 118, \"quarantine\": 182}\n{\"stage\": 0, \"done\": 400, \"reconstructed\": 154, \"quarantine\": 246}\n{\"stage\": 0, \"done\": 500, \"reconstructed\": 188, \"quarantine\": 312}\n{\"stage\": 0, \"done\": 600, \"reconstructed\": 226, \"quarantine\": 374}\n{\"stage\": 0, \"done\": 700, \"reconstructed\": 254, \"quarantine\": 446}\n{\"stage\": 0, \"done\": 800, \"reconstructed\": 267, \"quarantine\": 533}\n{\"stage\": 0, \"done\": 900, \"reconstructed\": 284, \"quarantine\": 616}\n{\"stage\": 0, \"done\": 1000, \"reconstructed\": 307, \"quarantine\": 693}\n{\"stage\": 0, \"done\": 1100, \"reconstructed\": 325, \"quarantine\": 775}\n{\"stage\": 0, \"done\": 1200, \"reconstructed\": 348, \"quarantine\": 852}\n{\"stage\": 0, \"done\": 1300, \"reconstructed\": 365, \"quarantine\": 935}\n{\"stage\": 1, \"smoke_records\": 6, \"status\": \"passed\"}\n{\"stage\": 1, \"seeds_done\": 10, \"physics_records\": 1010}\n{\"stage\": 1, \"seeds_done\": 20, \"physics_records\": 2020}\n{\"stage\": 1, \"seeds_done\": 30, \"physics_records\": 3030}\n{\"stage\": 1, \"seeds_done\": 40, \"physics_records\": 4040}\n{\"stage\": 1, \"seeds_done\": 50, \"physics_records\": 5050}\n{\"stage\": 1, \"seeds_done\": 60, \"physics_records\": 6060}\n{\"stage\": 1, \"seeds_done\": 70, \"physics_records\": 7070}\n{\"stage\": 1, \"seeds_done\": 80, \"physics_records\": 8080}\n{\"stage\": 1, \"seeds_done\": 90, \"physics_records\": 9090}\n{\"stage\": 1, \"seeds_done\": 100, \"physics_records\": 10100}\n{\"stage\": 1, \"seeds_done\": 110, \"physics_records\": 11110}\n{\"stage\": 1, \"seeds_done\": 120, \"physics_records\": 12120}\n{\"stage\": 1, \"seeds_done\": 130, \"physics_records\": 13130}",
   "memory_gb": 0,
   "pid": 1899289,
   "request_sha256": "c1607f3ba361d72304226e7ab1a6e39bb8eb392b2cb5ec2548165841f41210bb",
+  "returncode": -15,
   "schema": 1,
   "started_at": 1789577019.4756958,
-  "state": "running",
+  "state": "stopped",
   "timeout_sec": 172800,
-  "updated_at": 1789660370.1313825
+  "updated_at": 1789660370.1313825,
+  "uploaded_artifacts": []
 }
