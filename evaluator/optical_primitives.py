@@ -4,6 +4,9 @@ from dataclasses import dataclass
 import math
 import numpy as np
 WAVES=(479.99,546.07,643.85)
+REF_STOP_RADIUS=25.0
+REF_DES=None
+def make_surfaces(*args,**kwargs):raise RuntimeError('prescription adapter must inject make_surfaces before Q4096 evaluation')
 def cauchy_from_ne_ve(ne,ve,lam):
     F,E,C=WAVES;delta=(ne-1.0)/ve;B=delta/(1/F**2-1/C**2);A=ne-B/E**2;return A+B/lam**2
 @dataclass
