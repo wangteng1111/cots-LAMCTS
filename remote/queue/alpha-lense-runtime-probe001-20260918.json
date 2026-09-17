@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "job_id": "alpha-lense-runtime-probe001-20260918",
+  "code_commit": "0d23c354b7f973b1031f08c587f005f5d9d463cc",
+  "entrypoint": "scripts/probe_workstation_python_cuda.py",
+  "args": [],
+  "timeout_sec": 600,
+  "memory_gb": 0
+}
