@@ -14,17 +14,21 @@
     "1"
   ],
   "code_commit": "9780dd1d4889c4860e090081a410e9bec6fdf333",
+  "elapsed_sec": 9.753335237503052,
   "entrypoint": "scripts/alpha_lense_stage0_2_run.py",
   "env": {},
+  "finished_at": 1789661163.5409927,
   "hostname": "aipss-Rack-Server",
   "job_id": "alpha-lense-stage0-2-diag004-20260917",
   "log_tail": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/alpha-lense-stage0-2-diag004-20260917/src/scripts/alpha_lense_stage0_2_run.py\", line 10, in <module>\n    from evaluator.prescription_q4096 import evaluate_prescription\n  File \"/var/lib/cots-lamcts/jobs/alpha-lense-stage0-2-diag004-20260917/src/evaluator/prescription_q4096.py\", line 9, in <module>\n    from evaluator import market_final_direct_q4096_v4_cuda as CUDA\n  File \"/var/lib/cots-lamcts/jobs/alpha-lense-stage0-2-diag004-20260917/src/evaluator/market_final_direct_q4096_v4_cuda.py\", line 18, in <module>\n    import torch\nModuleNotFoundError: No module named 'torch'",
   "memory_gb": 0,
   "pid": 1956145,
   "request_sha256": "7a67951773680133e9c08320f252e82439833e46bd8f42ef8c63ec90378d0622",
+  "returncode": 1,
   "schema": 1,
   "started_at": 1789661153.7876575,
-  "state": "running",
+  "state": "failed",
   "timeout_sec": 3600,
-  "updated_at": 1789661155.8799515
+  "updated_at": 1789661155.8799515,
+  "uploaded_artifacts": []
 }
