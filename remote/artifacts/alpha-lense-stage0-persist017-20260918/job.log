@@ -1,0 +1,29 @@
+{"stage": 0, "done": 50, "total": 1384, "reconstructed": 41, "quarantine": 9}
+{"stage": 0, "done": 100, "total": 1384, "reconstructed": 58, "quarantine": 42}
+{"stage": 0, "done": 150, "total": 1384, "reconstructed": 107, "quarantine": 43}
+{"stage": 0, "done": 200, "total": 1384, "reconstructed": 156, "quarantine": 44}
+{"stage": 0, "done": 250, "total": 1384, "reconstructed": 204, "quarantine": 46}
+{"stage": 0, "done": 300, "total": 1384, "reconstructed": 254, "quarantine": 46}
+{"stage": 0, "done": 350, "total": 1384, "reconstructed": 303, "quarantine": 47}
+{"stage": 0, "done": 400, "total": 1384, "reconstructed": 353, "quarantine": 47}
+{"stage": 0, "done": 450, "total": 1384, "reconstructed": 402, "quarantine": 48}
+{"stage": 0, "done": 500, "total": 1384, "reconstructed": 450, "quarantine": 50}
+{"stage": 0, "done": 550, "total": 1384, "reconstructed": 498, "quarantine": 52}
+{"stage": 0, "done": 600, "total": 1384, "reconstructed": 548, "quarantine": 52}
+{"stage": 0, "done": 650, "total": 1384, "reconstructed": 595, "quarantine": 55}
+{"stage": 0, "done": 700, "total": 1384, "reconstructed": 645, "quarantine": 55}
+{"stage": 0, "done": 750, "total": 1384, "reconstructed": 694, "quarantine": 56}
+{"stage": 0, "done": 800, "total": 1384, "reconstructed": 744, "quarantine": 56}
+{"stage": 0, "done": 850, "total": 1384, "reconstructed": 794, "quarantine": 56}
+{"stage": 0, "done": 900, "total": 1384, "reconstructed": 839, "quarantine": 61}
+{"stage": 0, "done": 950, "total": 1384, "reconstructed": 888, "quarantine": 62}
+{"stage": 0, "done": 1000, "total": 1384, "reconstructed": 937, "quarantine": 63}
+{"stage": 0, "done": 1050, "total": 1384, "reconstructed": 984, "quarantine": 66}
+{"stage": 0, "done": 1100, "total": 1384, "reconstructed": 1034, "quarantine": 66}
+{"stage": 0, "done": 1150, "total": 1384, "reconstructed": 1080, "quarantine": 70}
+{"stage": 0, "done": 1200, "total": 1384, "reconstructed": 1130, "quarantine": 70}
+{"stage": 0, "done": 1250, "total": 1384, "reconstructed": 1179, "quarantine": 71}
+{"stage": 0, "done": 1300, "total": 1384, "reconstructed": 1227, "quarantine": 73}
+{"stage": 0, "done": 1350, "total": 1384, "reconstructed": 1276, "quarantine": 74}
+{"stage": 0, "complete": {"attempted": 1384, "reconstructed": 1300, "quarantine": 84, "workers": 32, "source": "p2p_manifest"}}
+{"stage": 0, "status": "finished_stage0_only"}
