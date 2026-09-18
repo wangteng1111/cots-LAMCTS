@@ -5,10 +5,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "alpha-lense-perturb-tests021-20260918",
+  "log_tail": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/alpha-lense-perturb-tests021-20260918/src/validation/alpha_lense_perturb_geometry_tests.py\", line 19, in <module>\n    assert len(q.surfaces)>=4 and len(q.surfaces)<=64\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError",
   "memory_gb": 0,
+  "pid": 2064459,
   "request_sha256": "ddabf04b4487a9b6a9e253927a64ae1ed7de96fc0979a329c3ca4b19c6dafbc6",
   "schema": 1,
   "started_at": 1789721653.0781107,
   "state": "running",
-  "timeout_sec": 600
+  "timeout_sec": 600,
+  "updated_at": 1789721655.2536836
 }
