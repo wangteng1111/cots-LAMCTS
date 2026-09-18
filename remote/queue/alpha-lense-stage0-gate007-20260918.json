@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "job_id": "alpha-lense-stage0-gate007-20260918",
+  "code_commit": "622b97c3ca1e5499d71eb7e9cfd327fdd0a7ad5f",
+  "entrypoint": "scripts/alpha_lense_stage0_2_cuda_exec.py",
+  "args": [
+    "--out",
+    "data/alpha_lense/stage0_gate007",
+    "--max-seeds",
+    "20",
+    "--stage0-workers",
+    "20",
+    "--stage0-only"
+  ],
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
