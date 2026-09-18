@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "job_id": "alpha-lense-runtime-verify003-20260918",
+  "code_commit": "1c164b7dbe66ea8006c642f2e653f4d1890a72f9",
+  "entrypoint": "scripts/verify_existing_cuda_runtime.py",
+  "args": [],
+  "timeout_sec": 600,
+  "memory_gb": 0
+}
