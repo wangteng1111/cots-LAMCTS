@@ -9,17 +9,37 @@
     "--stage0-only"
   ],
   "code_commit": "74880c0c859fb0069e76a7d90a77e97f02f44568",
+  "elapsed_sec": 21.907508611679077,
   "entrypoint": "scripts/alpha_lense_stage0_2_cuda_exec.py",
   "env": {},
+  "finished_at": 1789720285.8984423,
   "hostname": "aipss-Rack-Server",
   "job_id": "alpha-lense-stage0-parser011-20260918",
-  "log_tail": "",
+  "log_tail": "{\"stage\": 0, \"done\": 50, \"total\": 200, \"reconstructed\": 38, \"quarantine\": 12}\n{\"stage\": 0, \"done\": 100, \"total\": 200, \"reconstructed\": 49, \"quarantine\": 51}\n{\"stage\": 0, \"done\": 150, \"total\": 200, \"reconstructed\": 84, \"quarantine\": 66}\n{\"stage\": 0, \"done\": 200, \"total\": 200, \"reconstructed\": 116, \"quarantine\": 84}\n{\"stage\": 0, \"complete\": {\"attempted\": 200, \"reconstructed\": 116, \"quarantine\": 84, \"workers\": 24}, \"seeds_file\": \"data/alpha_lense/stage0_parser011/stage0_seeds.jsonl\"}\n{\"stage\": 0, \"status\": \"finished_stage0_only\"}",
   "memory_gb": 0,
   "pid": 2060096,
   "request_sha256": "71027c59166b3bb3a728d43758bd5e37a1142c3f7ddebeb407b13acda1bf9443",
+  "returncode": 0,
   "schema": 1,
   "started_at": 1789720263.9909337,
-  "state": "running",
+  "state": "finished",
   "timeout_sec": 1800,
-  "updated_at": 1789720269.6500926
+  "updated_at": 1789720269.6500926,
+  "uploaded_artifacts": [
+    {
+      "path": "stage0_quarantine.jsonl",
+      "size": 34910,
+      "uploaded": true
+    },
+    {
+      "path": "stage0_seeds.jsonl",
+      "size": 443487,
+      "uploaded": true
+    },
+    {
+      "path": "stage0_summary.json",
+      "size": 83,
+      "uploaded": true
+    }
+  ]
 }
