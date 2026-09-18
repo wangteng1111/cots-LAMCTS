@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1789720532.676139,
+  "code_commit": "ca0e364bbaf16a06fd974ccd0f8cda10da1cd4d0",
+  "entrypoint": "validation/alpha_lense_stage0_parser_tests.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "alpha-lense-stage0-tests013-20260918",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/alpha-lense-stage0-tests013-20260918.json",
+  "request_sha256": "d76f581fffb1b3efb4b1d5ca21b3ba3c346286ec9b7c571c2eb023185019ef81",
+  "schema": 1,
+  "state": "claimed"
+}
