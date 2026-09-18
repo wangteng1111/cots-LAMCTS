@@ -75,4 +75,6 @@ try:
  raise AssertionError('RCL without standalone stop must quarantine')
 except ValueError as e:
  assert 'external aperture stop' in str(e)
-from alpha_lense.stage_pipeline_v01 import _num\nassert abs(_num('4,32')-4.32)<1e-12\nprint({'status':'passed','fixed_surfaces':len(p.surfaces),'zoom_surfaces':len(q.surfaces),'stop_z':p.stop_z_mm})
+from alpha_lense.stage_pipeline_v01 import _num
+assert abs(_num('4,32')-4.32)<1e-12
+print({'status':'passed','fixed_surfaces':len(p.surfaces),'zoom_surfaces':len(q.surfaces),'stop_z':p.stop_z_mm})
