@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1789705012.326987,
+  "code_commit": "19f08493249f032b464cc59d919e58e40a81f2d9",
+  "entrypoint": "scripts/probe_workstation_runtime_deep.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "alpha-lense-runtime-deep002-20260918",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/alpha-lense-runtime-deep002-20260918.json",
+  "request_sha256": "7b11b888a50dd5a62d26727f48bc33b369611a13d9e4c7fe5afbf00c2a09203f",
+  "schema": 1,
+  "state": "claimed"
+}
