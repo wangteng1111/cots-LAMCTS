@@ -24,10 +24,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "alpha-lense-stage1-resume019-20260918",
+  "log_tail": "{\"stage\": 0, \"complete\": {\"attempted\": 8, \"reconstructed\": 8, \"quarantine\": 0, \"workers\": 0, \"source\": \"canonical_file\", \"source_path\": \"/var/lib/cots-lamcts/alpha_lense/stage0/p2p-prod-v03/stage0_seeds.jsonl\"}}",
   "memory_gb": 0,
+  "pid": 2063275,
   "request_sha256": "fbe5b1faae36e5641394e3e5c35d73c296ade5e225db551d96bb9dd7bcb88cee",
   "schema": 1,
   "started_at": 1789721255.94399,
   "state": "running",
-  "timeout_sec": 3600
+  "timeout_sec": 3600,
+  "updated_at": 1789721257.8634355
 }
