@@ -69,7 +69,7 @@ q=parse_explicit_surfaces(ZOOM_CG,'zoom','fam2',{})
 assert q.source_config_index==0
 assert len(q.surfaces)==10
 assert math.isinf(q.surfaces[-2].radius) and math.isinf(q.surfaces[-1].radius)
-assert q.surfaces[7].asphere and abs(q.surfaces[7].conic+0.9643)<1e-9
+assert q.surfaces[6].asphere and abs(q.surfaces[6].conic+0.9643)<1e-9  # source surface label 8; AS row 7 is not a refracting surface
 try:
  parse_explicit_surfaces(RCL,'rcl','fam3',{})
  raise AssertionError('RCL without standalone stop must quarantine')
