@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/alpha-lense-stage0-diagnose008-20260918/src/scripts/alpha_lense_stage0_diagnose.py", line 6, in <module>
+    from alpha_lense.stage_pipeline_v01 import parse_explicit_surfaces
+ModuleNotFoundError: No module named 'alpha_lense'
