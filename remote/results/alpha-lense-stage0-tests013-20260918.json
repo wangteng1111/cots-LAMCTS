@@ -1,17 +1,21 @@
 {
   "args": [],
   "code_commit": "ca0e364bbaf16a06fd974ccd0f8cda10da1cd4d0",
+  "elapsed_sec": 9.51509976387024,
   "entrypoint": "validation/alpha_lense_stage0_parser_tests.py",
   "env": {},
+  "finished_at": 1789720544.1962454,
   "hostname": "aipss-Rack-Server",
   "job_id": "alpha-lense-stage0-tests013-20260918",
   "log_tail": "{'status': 'passed', 'fixed_surfaces': 7, 'zoom_surfaces': 10, 'stop_z': 13.280000000000001}",
   "memory_gb": 0,
   "pid": 2060971,
   "request_sha256": "d76f581fffb1b3efb4b1d5ca21b3ba3c346286ec9b7c571c2eb023185019ef81",
+  "returncode": 0,
   "schema": 1,
   "started_at": 1789720534.6811457,
-  "state": "running",
+  "state": "finished",
   "timeout_sec": 600,
-  "updated_at": 1789720536.6424158
+  "updated_at": 1789720536.6424158,
+  "uploaded_artifacts": []
 }
