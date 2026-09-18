@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "alpha-lense-q4096-designspec016-20260918",
+  "code_commit": "9af183d7c44cddea1556d4490da52fd93e79e9ac",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/alpha_lense_prescription_q4096_tests.py"
+  ],
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
