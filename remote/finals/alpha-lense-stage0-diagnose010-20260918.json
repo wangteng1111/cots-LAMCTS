@@ -1,0 +1,40 @@
+{
+  "args": [
+    "--max-seeds",
+    "200",
+    "--workers",
+    "24"
+  ],
+  "bridge_version": "0.5.0",
+  "code_commit": "06d5099ce436e67818f8df0e92c5beed5626a0e9",
+  "elapsed_sec": 25.63104772567749,
+  "entrypoint": "scripts/alpha_lense_stage0_diagnose.py",
+  "env": {},
+  "finished_at": 1789720038.4541514,
+  "hostname": "aipss-Rack-Server",
+  "immutable_job_id": true,
+  "job_id": "alpha-lense-stage0-diagnose010-20260918",
+  "log_tail": "{\"done\": 50, \"n\": 200, \"reconstructed\": 12}\n{\"done\": 100, \"n\": 200, \"reconstructed\": 14}\n{\"done\": 150, \"n\": 200, \"reconstructed\": 36}\n{\"done\": 200, \"n\": 200, \"reconstructed\": 62}\n{\"attempted\": 200, \"reconstructed\": 62, \"quarantine\": 138, \"reason_counts\": {\"missing_explicit_stop\": 125, \"fetch_error\": 2, \"surface_table_split_columns_or_labels\": 8, \"surface_table_grammar_mismatch_numeric\": 3}, \"workers\": 24}",
+  "memory_gb": 0,
+  "pid": 2059580,
+  "request_sha256": "fab698c8279064d38e48df356ca70580f824dc8cc06a43e345e3a2dfa00b02c4",
+  "retry_policy": "new_job_id_required",
+  "returncode": 0,
+  "schema": 1,
+  "started_at": 1789720012.8231037,
+  "state": "finished",
+  "timeout_sec": 1800,
+  "updated_at": 1789720015.3168733,
+  "uploaded_artifacts": [
+    {
+      "path": "stage0_diagnosis.jsonl",
+      "size": 442063,
+      "uploaded": true
+    },
+    {
+      "path": "stage0_diagnosis_summary.json",
+      "size": 261,
+      "uploaded": true
+    }
+  ]
+}
