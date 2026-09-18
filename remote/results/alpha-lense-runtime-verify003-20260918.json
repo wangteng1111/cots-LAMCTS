@@ -5,10 +5,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "alpha-lense-runtime-verify003-20260918",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 2031522,
   "request_sha256": "0987cda2f12b32cdf2e3e6eaeb4994331dd7a2525e68b278b975dfdd66b17963",
   "schema": 1,
   "started_at": 1789705597.4663897,
   "state": "running",
-  "timeout_sec": 600
+  "timeout_sec": 600,
+  "updated_at": 1789705599.3086932
 }
