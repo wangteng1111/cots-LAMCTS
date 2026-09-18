@@ -1,0 +1,48 @@
+{
+  "args": [
+    "--out",
+    "data/alpha_lense/stage0_validation014",
+    "--max-seeds",
+    "200",
+    "--stage0-workers",
+    "24",
+    "--stage0-only"
+  ],
+  "bridge_version": "0.5.0",
+  "code_commit": "ca0e364bbaf16a06fd974ccd0f8cda10da1cd4d0",
+  "elapsed_sec": 13.52602505683899,
+  "entrypoint": "scripts/alpha_lense_stage0_2_cuda_exec.py",
+  "env": {},
+  "finished_at": 1789720599.4154372,
+  "hostname": "aipss-Rack-Server",
+  "immutable_job_id": true,
+  "job_id": "alpha-lense-stage0-validation014-20260918",
+  "log_tail": "{\"stage\": 0, \"done\": 50, \"total\": 200, \"reconstructed\": 43, \"quarantine\": 7}\n{\"stage\": 0, \"done\": 100, \"total\": 200, \"reconstructed\": 57, \"quarantine\": 43}\n{\"stage\": 0, \"done\": 150, \"total\": 200, \"reconstructed\": 107, \"quarantine\": 43}\n{\"stage\": 0, \"done\": 200, \"total\": 200, \"reconstructed\": 155, \"quarantine\": 45}\n{\"stage\": 0, \"complete\": {\"attempted\": 200, \"reconstructed\": 155, \"quarantine\": 45, \"workers\": 24}, \"seeds_file\": \"data/alpha_lense/stage0_validation014/stage0_seeds.jsonl\"}\n{\"stage\": 0, \"status\": \"finished_stage0_only\"}",
+  "memory_gb": 0,
+  "pid": 2061122,
+  "request_sha256": "1bf99bd922bb0f43f66457ecc9d170a5204262968c81f6800bd3ab3eaf92c0fb",
+  "retry_policy": "new_job_id_required",
+  "returncode": 0,
+  "schema": 1,
+  "started_at": 1789720585.8894122,
+  "state": "finished",
+  "timeout_sec": 3600,
+  "updated_at": 1789720587.9438128,
+  "uploaded_artifacts": [
+    {
+      "path": "stage0_quarantine.jsonl",
+      "size": 18868,
+      "uploaded": true
+    },
+    {
+      "path": "stage0_seeds.jsonl",
+      "size": 634641,
+      "uploaded": true
+    },
+    {
+      "path": "stage0_summary.json",
+      "size": 83,
+      "uploaded": true
+    }
+  ]
+}
