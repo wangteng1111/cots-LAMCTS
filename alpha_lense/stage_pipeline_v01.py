@@ -58,7 +58,9 @@ _UNDEF={'','undefined','undef','na','n/a','none'}
 def _num(x:str|None)->float|None:
     if x is None:return None
     s=str(x).strip()
-    if re.fullmatch(r'[-+]?\\d+,\\d+(?:[Ee][-+]?\\d+)?',s):s=s.replace(',','.')
+    if ',' in s and '.' not in s and s.count(',')==1:
+        a,b=s.split(',',1)
+        if a.lstrip('+-').isdigit() and b.isdigit():s=a+'.'+b
     if s.lower() in _UNDEF:return None
     if s.lower() in _INF:return math.inf
     try:return float(s)
