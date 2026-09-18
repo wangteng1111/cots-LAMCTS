@@ -1,0 +1,4 @@
+{
+  "action": "stop",
+  "reason": "regenerate after constraint_rank marks evaluator failures infeasible"
+}
