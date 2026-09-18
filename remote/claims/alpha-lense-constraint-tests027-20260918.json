@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1789721996.5692487,
+  "code_commit": "f767e878de2480d6119635f2a613b268d0dddab0",
+  "entrypoint": "validation/alpha_lense_constraint_rank_tests.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "alpha-lense-constraint-tests027-20260918",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/alpha-lense-constraint-tests027-20260918.json",
+  "request_sha256": "087ff92009e7a8ad102d125035cf7cdb34d3e43c1b323fcf70d7552e01eaa4f7",
+  "schema": 1,
+  "state": "claimed"
+}
