@@ -5,10 +5,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "alpha-lense-perturb-tests023-20260918",
+  "log_tail": "{'status': 'passed', 'efl_tol_mm': 1.5, 'seeds_checked': 100}",
   "memory_gb": 0,
+  "pid": 2064845,
   "request_sha256": "10c72190f9e0a0652dd5cd9d9f4aa2aab466be6692f0875efaf9a435043542e3",
   "schema": 1,
   "started_at": 1789721774.4221096,
   "state": "running",
-  "timeout_sec": 600
+  "timeout_sec": 600,
+  "updated_at": 1789721776.4816995
 }
