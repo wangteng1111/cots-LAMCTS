@@ -3,17 +3,21 @@
     "validation/alpha_lense_prescription_q4096_tests.py"
   ],
   "code_commit": "9af183d7c44cddea1556d4490da52fd93e79e9ac",
+  "elapsed_sec": 11.720985174179077,
   "entrypoint": "scripts/cuda_venv_exec.py",
   "env": {},
+  "finished_at": 1789720866.3031044,
   "hostname": "aipss-Rack-Server",
   "job_id": "alpha-lense-q4096-designspec016-20260918",
-  "log_tail": "",
+  "log_tail": "{\"status\": \"passed\", \"legacy_hash\": \"1b13ca0c8a53e7f0248ecaf9d61f05e74a27bb6a7d272798b2830167af58c715\", \"fixed\": {\"J\": 655.3159116726204, \"efl\": 449.92184437640793, \"fno\": 23.559109769739667, \"config_hash\": \"6a83bae7294d4587f1a062a116ddc70300b4517daffdb966c80ad0b074255055\", \"device\": 0, \"film_z_mm\": 25.33, \"stop_radius_mm\": 6.236, \"max_field_deg\": 31.5}, \"asphere\": {\"J\": 91.16532935697016, \"efl\": 6.765644464695066, \"fno\": 2.0698615849634905, \"config_hash\": \"572114e072ecf67424163c9b590f3ce83b10add4bc1b41e36b85123466d7c125\", \"device\": 1, \"film_z_mm\": 5.6, \"stop_radius_mm\": 2.4065, \"max_field_deg\": 11.65}}",
   "memory_gb": 0,
   "pid": 2062055,
   "request_sha256": "46d487d3746552436801af3340b78c4a1e5b3afe1e8793c541c90154b396f70a",
+  "returncode": 0,
   "schema": 1,
   "started_at": 1789720854.5821192,
-  "state": "running",
+  "state": "finished",
   "timeout_sec": 1800,
-  "updated_at": 1789720856.5817962
+  "updated_at": 1789720856.5817962,
+  "uploaded_artifacts": []
 }
