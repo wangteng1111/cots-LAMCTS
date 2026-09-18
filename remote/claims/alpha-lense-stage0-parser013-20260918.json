@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1789720424.2771654,
+  "code_commit": "3eb67179b6d5d4c4345378a0f7776865482f7a59",
+  "entrypoint": "scripts/alpha_lense_stage0_2_cuda_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "alpha-lense-stage0-parser013-20260918",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/alpha-lense-stage0-parser013-20260918.json",
+  "request_sha256": "17be70e211195f1e9c823af489f9bb0c7e7995206d5839829401d77a6aaf653e",
+  "schema": 1,
+  "state": "claimed"
+}
