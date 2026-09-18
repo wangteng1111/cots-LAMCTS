@@ -5,10 +5,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "alpha-lense-runtime-deep002-20260918",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 2030314,
   "request_sha256": "7b11b888a50dd5a62d26727f48bc33b369611a13d9e4c7fe5afbf00c2a09203f",
   "schema": 1,
   "started_at": 1789705014.826829,
   "state": "running",
-  "timeout_sec": 900
+  "timeout_sec": 900,
+  "updated_at": 1789705016.7061872
 }
