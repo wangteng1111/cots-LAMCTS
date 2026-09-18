@@ -1,17 +1,21 @@
 {
   "args": [],
   "code_commit": "f767e878de2480d6119635f2a613b268d0dddab0",
+  "elapsed_sec": 10.707983016967773,
   "entrypoint": "validation/alpha_lense_constraint_rank_tests.py",
   "env": {},
+  "finished_at": 1789722009.4329157,
   "hostname": "aipss-Rack-Server",
   "job_id": "alpha-lense-constraint-tests027-20260918",
   "log_tail": "{'status': 'passed', 'invalid_violation': 1000.0, 'efl_constraint_violation': 0.07}",
   "memory_gb": 0,
   "pid": 2065210,
   "request_sha256": "087ff92009e7a8ad102d125035cf7cdb34d3e43c1b323fcf70d7552e01eaa4f7",
+  "returncode": 0,
   "schema": 1,
   "started_at": 1789721998.7249327,
-  "state": "running",
+  "state": "finished",
   "timeout_sec": 600,
-  "updated_at": 1789722000.874312
+  "updated_at": 1789722000.874312,
+  "uploaded_artifacts": []
 }
