@@ -286,6 +286,13 @@ def perturb(p:Prescription,rng:random.Random,depth:int)->tuple[Prescription,list
     return replace(p,surfaces=tuple(ss),stop_after=sa,stop_z_mm=float(stop_z),image_z_mm=float(image_z)),ed
 
 def constraint_rank(physics:dict,spec:dict)->tuple[bool,float,tuple]:
+    J=float(physics.get('J',physics.get('merit_J',1e9)))
+    # Ray/cardinal/config failures are physical infeasibility, never a feasible
+    # design with zero constraint violation.  Keep a finite sentinel so these
+    # examples remain useful negative supervision without outranking valid optics.
+    if physics.get('error') or physics.get('config_hash') in (None,'invalid') or not math.isfinite(J) or J>=1e8:
+        violation=1000.0
+        return False,violation,(1,violation,J if math.isfinite(J) else 1e9)
     margins=[]
     def add(key,target,tol=None,upper=None,lower=None):
         if target is None or key not in physics:return
@@ -297,7 +304,7 @@ def constraint_rank(physics:dict,spec:dict)->tuple[bool,float,tuple]:
     add('fno',spec.get('max_f_number'),upper=spec.get('max_f_number'))
     add('min_illum',spec.get('min_relative_illumination'),lower=spec.get('min_relative_illumination'))
     add('dist_max',spec.get('max_distortion_pct'),upper=spec.get('max_distortion_pct'))
-    violation=sum(margins);feasible=violation<=1e-12;J=float(physics.get('J',physics.get('merit_J',1e9)))
+    violation=sum(margins);feasible=violation<=1e-12
     return feasible,violation,(0 if feasible else 1,J if feasible else violation,J)
 
 def generate_stage1_candidates(seed:Prescription,samples:int,seed_rng:int,max_depth:int=10)->list[tuple[Prescription,list[Edit]]]:
