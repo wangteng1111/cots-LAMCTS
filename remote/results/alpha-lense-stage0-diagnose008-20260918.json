@@ -1,0 +1,17 @@
+{
+  "args": [
+    "--max-seeds",
+    "200"
+  ],
+  "code_commit": "16b60d5bb9e89afc94b3c423682fdd0273bcf563",
+  "entrypoint": "scripts/alpha_lense_stage0_diagnose.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "alpha-lense-stage0-diagnose008-20260918",
+  "memory_gb": 0,
+  "request_sha256": "ff2f2b85eae28cec84fa28337e1a381211fee1d67f89ea154d6f9d97c70d162b",
+  "schema": 1,
+  "started_at": 1789719714.8056898,
+  "state": "running",
+  "timeout_sec": 3600
+}
