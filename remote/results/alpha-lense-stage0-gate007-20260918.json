@@ -1,0 +1,22 @@
+{
+  "args": [
+    "--out",
+    "data/alpha_lense/stage0_gate007",
+    "--max-seeds",
+    "20",
+    "--stage0-workers",
+    "20",
+    "--stage0-only"
+  ],
+  "code_commit": "622b97c3ca1e5499d71eb7e9cfd327fdd0a7ad5f",
+  "entrypoint": "scripts/alpha_lense_stage0_2_cuda_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "alpha-lense-stage0-gate007-20260918",
+  "memory_gb": 0,
+  "request_sha256": "bcc06399b5a45e303f760fff7bd0e8b44ff2bfee146503626cf272f19ea56633",
+  "schema": 1,
+  "started_at": 1789719629.8981047,
+  "state": "running",
+  "timeout_sec": 1800
+}
