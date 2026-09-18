@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1789721745.5928476,
+  "code_commit": "165eccc6b157a8f0084f16446e27e455d2b82645",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "alpha-lense-optv1-init024-20260918",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/alpha-lense-optv1-init024-20260918.json",
+  "request_sha256": "1528ce30024bddf29a7b1003ab0050904d5d1378b4ac1e58e1050fda678abfb2",
+  "schema": 1,
+  "state": "claimed"
+}
