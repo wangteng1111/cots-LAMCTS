@@ -1,0 +1,6 @@
+{"stage": 0, "done": 50, "total": 200, "reconstructed": 43, "quarantine": 7}
+{"stage": 0, "done": 100, "total": 200, "reconstructed": 57, "quarantine": 43}
+{"stage": 0, "done": 150, "total": 200, "reconstructed": 107, "quarantine": 43}
+{"stage": 0, "done": 200, "total": 200, "reconstructed": 155, "quarantine": 45}
+{"stage": 0, "complete": {"attempted": 200, "reconstructed": 155, "quarantine": 45, "workers": 24}, "seeds_file": "data/alpha_lense/stage0_parser013/stage0_seeds.jsonl"}
+{"stage": 0, "status": "finished_stage0_only"}
