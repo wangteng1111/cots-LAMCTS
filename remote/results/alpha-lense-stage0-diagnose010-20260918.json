@@ -10,10 +10,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "alpha-lense-stage0-diagnose010-20260918",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 2059580,
   "request_sha256": "fab698c8279064d38e48df356ca70580f824dc8cc06a43e345e3a2dfa00b02c4",
   "schema": 1,
   "started_at": 1789720012.8231037,
   "state": "running",
-  "timeout_sec": 1800
+  "timeout_sec": 1800,
+  "updated_at": 1789720015.3168733
 }
