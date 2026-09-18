@@ -102,7 +102,7 @@ def main():
  resume=persistent_root/'stage1_resume'/a.run_id;resume.mkdir(parents=True,exist_ok=True)
  run_dir=persistent_root/'runs'/a.run_id;run_dir.mkdir(parents=True,exist_ok=True)
  (run_dir/'run_manifest.json').write_text(json.dumps({'schema':1,'run_id':a.run_id,'git_commit':os.environ.get('COTS_GIT_COMMIT'),'stage0_count':len(seeds),'perturb_per_seed':a.perturb_per_seed,'gpus':gpus,'workers_per_gpu':a.workers_per_gpu},indent=2))
- allrec=[]
+ allrec=[];resumed_seeds=0;computed_seeds=0
  with PrescriptionQ4096Pool(gpus=gpus,workers_per_gpu=a.workers_per_gpu) as pool:
   smoke_pairs=[]
   for j,p in enumerate(seeds[:a.smoke_seeds]):
@@ -116,16 +116,17 @@ def main():
    smoke.extend(records_from_evaluations(p,[(c,ed) for c,ed,_ in items],[ph for _,_,ph in items]))
   if not smoke or any(x.physics.get('config_hash') in (None,'invalid') for x in smoke) or any('cuda' not in str(x.physics.get('backend','')).lower() for x in smoke):
    raise RuntimeError('real-prescription CUDA Q4096 smoke gate failed')
-  _write_jsonl(out/'stage1_smoke.jsonl',[x.__dict__ for x in smoke]);print(json.dumps({'stage':1,'smoke_records':len(smoke),'status':'passed','pool_capacity':pool.capacity}),flush=True)
+  _write_jsonl(out/'stage1_smoke.jsonl',[x.__dict__ for x in smoke]);print(json.dumps({'stage':1,'smoke_records':len(smoke),'status':'passed','pool_capacity':pool.capacity,'resumed_seeds':resumed_seeds,'computed_seeds':computed_seeds}),flush=True)
 
   for j,p in enumerate(seeds):
    shard=resume/f"{p.optical_hash()}.jsonl";rr=None
    if shard.is_file():
     try:
      tmp=_records_from_shard(shard)
-     if len(tmp)==a.perturb_per_seed+1:rr=tmp
+     if len(tmp)==a.perturb_per_seed+1:rr=tmp;resumed_seeds+=1
     except Exception:rr=None
    if rr is None:
+    computed_seeds+=1
     cand=generate_stage1_candidates(p,a.perturb_per_seed,20260917+j)
     ph=pool.evaluate([x for x,_ in cand])
     rr=records_from_evaluations(p,cand,ph)
@@ -136,7 +137,7 @@ def main():
 
  _write_jsonl(out/'stage1_physics.jsonl',[x.__dict__ for x in allrec])
  targets=assemble_stage2(allrec);_write_jsonl(out/'stage2_pretrain.jsonl',targets)
- summary={'schema':4,'stage0_reconstructed':len(seeds),'stage0_quarantine':len(qu),'stage1_physics_records':len(allrec),'stage2_targets':len(targets),'splits':{s:sum(x['split']==s for x in targets) for s in ('train','val','test')},'training_started':False,'run_id':a.run_id}
+ summary={'schema':4,'stage0_reconstructed':len(seeds),'stage0_quarantine':len(qu),'stage1_physics_records':len(allrec),'stage2_targets':len(targets),'splits':{s:sum(x['split']==s for x in targets) for s in ('train','val','test')},'training_started':False,'run_id':a.run_id,'resumed_seeds':resumed_seeds,'computed_seeds':computed_seeds}
  (out/'dataset_summary.json').write_text(json.dumps(summary,indent=2))
  _persist_files(out,run_dir,['stage1_smoke.jsonl','stage1_physics.jsonl','stage2_pretrain.jsonl','dataset_summary.json'])
  _publish_artifacts(out,['stage1_smoke.jsonl','dataset_summary.json'])
