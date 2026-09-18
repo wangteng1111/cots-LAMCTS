@@ -1,0 +1,14 @@
+{
+  "args": [],
+  "code_commit": "f767e878de2480d6119635f2a613b268d0dddab0",
+  "entrypoint": "validation/alpha_lense_constraint_rank_tests.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "alpha-lense-constraint-tests027-20260918",
+  "memory_gb": 0,
+  "request_sha256": "087ff92009e7a8ad102d125035cf7cdb34d3e43c1b323fcf70d7552e01eaa4f7",
+  "schema": 1,
+  "started_at": 1789721998.7249327,
+  "state": "running",
+  "timeout_sec": 600
+}
