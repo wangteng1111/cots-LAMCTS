@@ -1,10 +1,8 @@
-"""Alpha Lense v0.1 Stage0-2 pretrain-data pipeline core.
+"""Alpha Lense Stage0-2 pretrain-data pipeline core.
 
-Stage0 reconstructs source prescriptions into a canonical variable-topology model.
-Stage1 generates physical perturbation clouds and evaluates every candidate through
-an injected authoritative prescription evaluator.
-Stage2 turns physics-grounded local rankings into deterministic pretrain targets.
-No model training occurs here.
+Stage0 reconstructs PhotonToPhotos OpticalBench prescriptions into a canonical
+variable-topology representation. Stage1 generates physically perturbed clouds
+and evaluates them. Stage2 turns physics-grounded rankings into pretrain targets.
 """
 from __future__ import annotations
 from dataclasses import dataclass,asdict,replace
@@ -20,6 +18,7 @@ class Surface:
     clear_aperture:float|None=None
     conic:float=0.0
     asphere:tuple[float,...]=()
+
 @dataclass(frozen=True)
 class Prescription:
     surfaces:tuple[Surface,...]
@@ -28,37 +27,196 @@ class Prescription:
     family:str
     design_spec:dict
     provenance:dict
+    stop_z_mm:float|None=None
+    image_z_mm:float|None=None
+    source_config_index:int=0
     def canonical(self):
-        return {'surfaces':[asdict(s) for s in self.surfaces],'stop_after':self.stop_after,'design_spec':self.design_spec}
-    def optical_hash(self):return hashlib.sha256(json.dumps(self.canonical(),sort_keys=True,separators=(',',':')).encode()).hexdigest()
+        return {
+            'surfaces':[asdict(s) for s in self.surfaces],
+            'stop_after':self.stop_after,
+            'stop_z_mm':self.stop_z_mm,
+            'image_z_mm':self.image_z_mm,
+            'source_config_index':self.source_config_index,
+            'design_spec':self.design_spec,
+        }
+    def optical_hash(self):
+        return hashlib.sha256(json.dumps(self.canonical(),sort_keys=True,separators=(',',':')).encode()).hexdigest()
+
 @dataclass(frozen=True)
 class Edit:
     kind:str; index:int; delta:float=0.; payload:tuple[float,...]=()
+
 @dataclass
 class PhysicsRecord:
     seed_hash:str; candidate_hash:str; family:str; split:str; edits:list[dict]; prescription:dict; design_spec:dict; physics:dict; feasible:bool; violation:float; rank_key:tuple
 
-# P2P/OpticalBench files are heterogeneous. This parser accepts only explicit
-# sequential surface rows. Ambiguous files are quarantined, never guessed.
 FLOAT=r'[-+]?(?:\d+(?:\.\d*)?|\.\d+)(?:[Ee][-+]?\d+)?'
-ROW=re.compile(r'^\s*(?:S(?:URF(?:ACE)?)?\s*)?(\d+)\s+('+FLOAT+r'|INF|INFINITY)\s+('+FLOAT+r')\s+('+FLOAT+r')\s+('+FLOAT+r')(?:\s+('+FLOAT+r'))?',re.I)
-def _f(x):return math.inf if x.upper() in ('INF','INFINITY') else float(x)
+_NUM=re.compile(r'^'+FLOAT+r'$',re.I)
+_INF={'inf','infinity','∞'}
+_UNDEF={'','undefined','undef','na','n/a','none'}
+
+def _num(x:str|None)->float|None:
+    if x is None:return None
+    s=str(x).strip()
+    if s.lower() in _UNDEF:return None
+    if s.lower() in _INF:return math.inf
+    try:return float(s)
+    except Exception:return None
+
+def _sections(text:str)->dict[str,list[str]]:
+    out={};cur=''
+    for raw in text.replace('\r\n','\n').replace('\r','\n').splitlines():
+        line=raw.strip('\n')
+        m=re.match(r'^\s*\[([^]]+)\]\s*$',line)
+        if m:
+            cur=m.group(1).strip().lower();out.setdefault(cur,[]);continue
+        if cur and line.strip():out[cur].append(line.rstrip())
+    return out
+
+def _tab_fields(line:str)->list[str]:
+    if '\t' in line:return [x.strip() for x in line.split('\t')]
+    return re.split(r'\s{2,}',line.strip())
+
+def _series(lines:list[str])->dict[str,list[str]]:
+    d={}
+    for line in lines:
+        p=_tab_fields(line)
+        if len(p)>=2:d[p[0].strip()]=p[1:]
+    return d
+
+def _finite_series(vs:list[str]|None)->list[float|None]:
+    if not vs:return []
+    return [_num(x) for x in vs]
+
+def _choose_config(vars:dict[str,list[str]])->int:
+    f=_finite_series(vars.get('Focal Length'))
+    for i,v in enumerate(f):
+        if v is not None and math.isfinite(v):return i
+    return 0
+
+def _at(vars:dict[str,list[str]],key:str,idx:int)->float|None:
+    vals=vars.get(key) or []
+    if not vals:return None
+    j=min(idx,len(vals)-1)
+    return _num(vals[j])
+
+def _resolve_gap(token:str,vars:dict[str,list[str]],idx:int)->float:
+    v=_num(token)
+    if v is not None:return float(v)
+    vals=vars.get(token)
+    if vals:
+        x=_at(vars,token,idx)
+        if x is not None and math.isfinite(x):return float(x)
+    raise ValueError(f'unresolved axial distance token: {token!r}')
+
+def _parse_aspheres(lines:list[str])->dict[int,tuple[float,tuple[float,...]]]:
+    out={}
+    for line in lines:
+        p=_tab_fields(line)
+        if len(p)<4:continue
+        try:i=int(float(p[0]))
+        except Exception:continue
+        con=_num(p[2])
+        coeff=tuple(float(x) for x in p[3:] if _num(x) is not None)
+        out[i]=(0.0 if con is None else float(con),coeff)
+    return out
+
 def parse_explicit_surfaces(text:str,source_id:str,family:str,provenance:dict)->Prescription:
-    ss=[]
-    for ln in text.replace('\r','\n').splitlines():
-        m=ROW.match(ln)
-        if not m:continue
-        _,r,t,n,v,ca=m.groups();ss.append(Surface(_f(r),float(t),float(n),float(v),float(ca) if ca else None))
-    if len(ss)<4:raise ValueError('no unambiguous explicit sequential surface table')
-    # Air after surface is represented n=1, v=0. Stop is only accepted when explicit.
-    stop=None
-    for i,ln in enumerate(text.lower().splitlines()):
-        if 'stop' in ln or 'aperture' in ln:
-            nums=re.findall(r'\d+',ln)
-            if nums:stop=int(nums[0]);break
-    if stop is None:raise ValueError('stop position not explicit')
-    spec={'efl_target_mm':None,'max_f_number':None,'image_circle_mm':None}
-    return Prescription(tuple(ss),stop,source_id,family,spec,provenance)
+    """Parse native P2P OpticalBench sectioned text without guessing missing optics.
+
+    Native lens-data columns are:
+      surface-label, radius/special, axial-distance, n_after, clear-diameter, Vd
+    Empty n_after means air. AS/FS rows are non-refracting axial entities and
+    their distances are folded into the gap between adjacent refracting surfaces.
+    """
+    sec=_sections(text)
+    lens=sec.get('lens data') or []
+    if not lens:raise ValueError('missing [lens data] section')
+    vars=_series(sec.get('variable distances') or [])
+    config=_choose_config(vars)
+    asph=_parse_aspheres(sec.get('aspherical data') or [])
+
+    entities=[]
+    numeric_order=[]
+    for line in lens:
+        p=_tab_fields(line)
+        if len(p)<3:continue
+        label=p[0].strip();rad=p[1].strip();gap=p[2].strip()
+        n=p[3].strip() if len(p)>3 else ''
+        aperture=p[4].strip() if len(p)>4 else ''
+        vd=p[5].strip() if len(p)>5 else ''
+        special=rad.upper() in {'AS','FS'} or label.upper().endswith('AS') or label.upper().endswith('FS')
+        try:g=_resolve_gap(gap,vars,config)
+        except ValueError:
+            # Bf is often the final image-space distance and can be in variable data.
+            if gap.lower()=='bf':
+                bf=_at(vars,'Bf',config)
+                if bf is None:raise
+                g=float(bf)
+            else:raise
+        if special:
+            kind='AS' if (rad.upper()=='AS' or label.upper().endswith('AS')) else 'FS'
+            entities.append({'kind':kind,'label':label,'gap':g,'aperture':_num(aperture)})
+            continue
+        rr=_num(rad)
+        if rr is None:raise ValueError(f'unsupported radius token {rad!r} at {label}')
+        try:idx=float(label)
+        except Exception:raise ValueError(f'unsupported surface label {label!r}')
+        numeric_order.append(idx)
+        nd=_num(n);ca=_num(aperture);vv=_num(vd)
+        ndv=1.0 if nd is None else float(nd)
+        vdv=0.0 if nd is None else (0.0 if vv is None else float(vv))
+        ii=int(idx) if float(idx).is_integer() else None
+        con,coef=asph.get(ii,(0.0,()))
+        entities.append({'kind':'surface','label':label,'index':idx,'radius':float(rr),'gap':g,'n':ndv,'v':vdv,'aperture':None if ca is None else float(ca),'conic':con,'asphere':coef})
+
+    phys=[e for e in entities if e['kind']=='surface']
+    if len(phys)<2:raise ValueError('fewer than two refracting/physical surface rows')
+    if not any(e['n']>1.01 for e in phys):raise ValueError('no glass medium found')
+    # P2P files normally enumerate front-to-back. Reverse/nonmonotonic examples
+    # need an explicit orientation model and remain quarantined rather than guessed.
+    if any(b<=a for a,b in zip(numeric_order,numeric_order[1:])):
+        raise ValueError('unsupported non-increasing surface order')
+
+    z=0.0;positions=[];stop_z=None;stop_diam=None
+    for e in entities:
+        e['z']=z
+        if e['kind']=='AS':
+            if stop_z is not None:raise ValueError('multiple aperture stops not supported')
+            stop_z=z;stop_diam=e.get('aperture')
+        z+=e['gap']
+    image_z=z
+
+    # Convert physical entity positions into refracting-surface-to-surface gaps.
+    surfs=[]
+    ppos=[e for e in entities if e['kind']=='surface']
+    for k,e in enumerate(ppos):
+        if k+1<len(ppos):th=float(ppos[k+1]['z']-e['z'])
+        else:th=float(image_z-e['z'])
+        if th<0:raise ValueError('negative axial spacing')
+        surfs.append(Surface(e['radius'],th,e['n'],e['v'],e['aperture'],e['conic'],e['asphere']))
+        positions.append(float(e['z']))
+    if stop_z is None:raise ValueError('aperture stop (AS) position not explicit')
+    stop_after=sum(1 for zz in positions if zz < stop_z-1e-9)
+
+    efl=_at(vars,'Focal Length',config)
+    fno=_at(vars,'F-Number',config)
+    imh=_at(vars,'Image Height',config)
+    aov=_at(vars,'Angle of View',config)
+    bf=_at(vars,'Bf',config)
+    total=_at(vars,'Total Length',config)
+    apd=_at(vars,'Aperture Diameter',config)
+    if apd is None:apd=_at(vars,'Aperture Diameter(m)',config)
+    spec={
+        'efl_target_mm':efl,'efl_tol_mm':None,'max_f_number':fno,
+        'image_circle_mm':imh,'max_field_deg':None if aov is None else float(aov)/2.0,
+        'angle_of_view_deg':aov,'bfd_mm':bf,'total_length_mm':total,
+        'stop_diameter_mm':stop_diam if stop_diam is not None else apd,
+        'source_configuration_count':max([len(v) for v in vars.values()] or [1]),
+    }
+    prov=dict(provenance)
+    prov.update({'parser':'p2p_native_v02','source_config_index':config,'source_surface_rows':len(phys),'source_entity_rows':len(entities)})
+    return Prescription(tuple(surfs),stop_after,source_id,family,spec,prov,float(stop_z),float(image_z),config)
 
 def split_for_family(family:str)->str:
     x=int(hashlib.sha256(family.encode()).hexdigest()[:8],16)%100
@@ -78,7 +236,6 @@ def perturb(p:Prescription,rng:random.Random,depth:int)->tuple[Prescription,list
         elif k=='aperture' and ss[i].clear_aperture:
             d=rng.gauss(0,.03);ss[i]=replace(ss[i],clear_aperture=max(.5,ss[i].clear_aperture*(1+d)));ed.append(Edit(k,i,d))
         elif k=='add_element' and len(ss)<64:
-            # conservative thin singlet insertion; Stage1 evaluator decides viability.
             r=max(5.,abs(ss[i].radius) if math.isfinite(ss[i].radius) else 50.);new=[Surface(r,1.0,1.5168,64.17),Surface(-r,1.0,1.0,0.0)];ss[i:i]=new;ed.append(Edit(k,i))
         elif k=='remove_element' and len(ss)>6 and i+1<len(ss):del ss[i:i+2];ed.append(Edit(k,i))
         elif k=='split_element' and len(ss)<64:
@@ -102,14 +259,20 @@ def constraint_rank(physics:dict,spec:dict)->tuple[bool,float,tuple]:
     return feasible,violation,(0 if feasible else 1,J if feasible else violation,J)
 
 def generate_stage1(seed:Prescription,evaluator:Callable[[Prescription],dict],samples:int,seed_rng:int,max_depth:int=10)->list[PhysicsRecord]:
-    rng=random.Random(seed_rng);items=[]
-    candidates=[(seed,[])]
+    rng=random.Random(seed_rng);items=[];candidates=[(seed,[])]
     for _ in range(samples):candidates.append(perturb(seed,rng,rng.randint(1,max_depth)))
     for c,ed in candidates:
         ph=evaluator(c);feas,v,rk=constraint_rank(ph,seed.design_spec);items.append(PhysicsRecord(seed.optical_hash(),c.optical_hash(),seed.family,split_for_family(seed.family),[asdict(x) for x in ed],c.canonical(),seed.design_spec,ph,feas,v,rk))
     items.sort(key=lambda x:x.rank_key)
     for i,x in enumerate(items):x.physics['local_rank']=i
     return items
+
+def _structured_delta(current:dict,goal:dict)->dict:
+    a=current.get('surfaces',[]);b=goal.get('surfaces',[]);n=min(len(a),len(b));matched=[]
+    for i in range(n):
+        x,y=a[i],b[i]
+        matched.append({'index':i,'radius_delta':(None if not (math.isfinite(float(x['radius'])) and math.isfinite(float(y['radius']))) else float(y['radius'])-float(x['radius'])),'thickness_delta':float(y['thickness'])-float(x['thickness']),'n_after_delta':float(y['n_after'])-float(x['n_after']),'v_after_delta':float(y['v_after'])-float(x['v_after']),'aperture_delta':None if x.get('clear_aperture') is None or y.get('clear_aperture') is None else float(y['clear_aperture'])-float(x['clear_aperture'])})
+    return {'surface_count_delta':len(b)-len(a),'matched_surface_deltas':matched,'topology_required':len(a)!=len(b)}
 
 def assemble_stage2(records:Iterable[PhysicsRecord])->list[dict]:
     groups={}
@@ -118,6 +281,5 @@ def assemble_stage2(records:Iterable[PhysicsRecord])->list[dict]:
     for seed,rs in groups.items():
         rs=sorted(rs,key=lambda x:x.rank_key);best=rs[0]
         for r in rs:
-            # Direct physics-grounded target: best candidate in the same evaluated cloud.
-            out.append({'seed_hash':seed,'state_hash':r.candidate_hash,'family':r.family,'split':r.split,'state':r.prescription,'design_spec':r.design_spec,'value_target':-math.log(max(float(r.physics.get('J',r.physics.get('merit_J',1e9))),1e-12)) if r.feasible else -1000.-r.violation,'feasible_target':r.feasible,'violation_target':r.violation,'physics_target':r.physics,'policy_goal_hash':best.candidate_hash,'policy_goal':best.prescription,'policy_goal_edits':best.edits,'evaluator_config_hash':r.physics.get('config_hash')})
+            out.append({'seed_hash':seed,'state_hash':r.candidate_hash,'family':r.family,'split':r.split,'state':r.prescription,'design_spec':r.design_spec,'value_target':-math.log(max(float(r.physics.get('J',r.physics.get('merit_J',1e9))),1e-12)) if r.feasible else -1000.-r.violation,'feasible_target':r.feasible,'violation_target':r.violation,'physics_target':r.physics,'policy_goal_hash':best.candidate_hash,'policy_goal':best.prescription,'policy_goal_delta':_structured_delta(r.prescription,best.prescription),'evaluator_config_hash':r.physics.get('config_hash')})
     return out
