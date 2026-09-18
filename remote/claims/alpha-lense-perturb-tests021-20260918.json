@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1789721651.141618,
+  "code_commit": "e7e5501abcde8107dad1076aa80d8e9c840c4b91",
+  "entrypoint": "validation/alpha_lense_perturb_geometry_tests.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "alpha-lense-perturb-tests021-20260918",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/alpha-lense-perturb-tests021-20260918.json",
+  "request_sha256": "ddabf04b4487a9b6a9e253927a64ae1ed7de96fc0979a329c3ca4b19c6dafbc6",
+  "schema": 1,
+  "state": "claimed"
+}
