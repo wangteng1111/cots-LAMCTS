@@ -1,0 +1,14 @@
+{
+  "args": [],
+  "code_commit": "1c164b7dbe66ea8006c642f2e653f4d1890a72f9",
+  "entrypoint": "scripts/verify_existing_cuda_runtime.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "alpha-lense-runtime-verify003-20260918",
+  "memory_gb": 0,
+  "request_sha256": "0987cda2f12b32cdf2e3e6eaeb4994331dd7a2525e68b278b975dfdd66b17963",
+  "schema": 1,
+  "started_at": 1789705597.4663897,
+  "state": "running",
+  "timeout_sec": 600
+}
