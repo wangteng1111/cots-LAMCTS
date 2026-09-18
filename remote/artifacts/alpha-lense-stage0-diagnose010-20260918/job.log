@@ -1,0 +1,5 @@
+{"done": 50, "n": 200, "reconstructed": 12}
+{"done": 100, "n": 200, "reconstructed": 14}
+{"done": 150, "n": 200, "reconstructed": 36}
+{"done": 200, "n": 200, "reconstructed": 62}
+{"attempted": 200, "reconstructed": 62, "quarantine": 138, "reason_counts": {"missing_explicit_stop": 125, "fetch_error": 2, "surface_table_split_columns_or_labels": 8, "surface_table_grammar_mismatch_numeric": 3}, "workers": 24}
