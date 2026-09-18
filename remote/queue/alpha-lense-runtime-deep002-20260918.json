@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "job_id": "alpha-lense-runtime-deep002-20260918",
+  "code_commit": "19f08493249f032b464cc59d919e58e40a81f2d9",
+  "entrypoint": "scripts/probe_workstation_runtime_deep.py",
+  "args": [],
+  "timeout_sec": 900,
+  "memory_gb": 0,
+  "artifacts": [
+    "runtime_inventory.json"
+  ],
+  "description": "Deep inventory to recover previously working OLMTA CUDA/PyTorch runtime before restarting Alpha Lense."
+}
