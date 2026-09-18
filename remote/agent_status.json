@@ -20,15 +20,15 @@
   ],
   "hostname": "aipss-Rack-Server",
   "loadavg": [
-    0.50048828125,
-    0.37451171875,
-    0.19921875
+    0.4228515625,
+    0.36181640625,
+    0.1962890625
   ],
   "python": "/usr/bin/python3",
   "python_version": "3.12.3",
   "repo": "wangteng1111/cots-LAMCTS",
   "results_branch": "workstation-results",
-  "running_job": null,
+  "running_job": "alpha-lense-stage2-tests020-20260918",
   "schema": 1,
-  "timestamp": 1789721284.6091235
+  "timestamp": 1789721295.7853029
 }
