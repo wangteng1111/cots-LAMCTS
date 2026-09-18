@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1789720852.0083652,
+  "code_commit": "9af183d7c44cddea1556d4490da52fd93e79e9ac",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "alpha-lense-q4096-designspec016-20260918",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/alpha-lense-q4096-designspec016-20260918.json",
+  "request_sha256": "46d487d3746552436801af3340b78c4a1e5b3afe1e8793c541c90154b396f70a",
+  "schema": 1,
+  "state": "claimed"
+}
