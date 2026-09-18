@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "job_id": "alpha-lense-stage0-persist022-20260918",
+  "code_commit": "e7e5501abcde8107dad1076aa80d8e9c840c4b91",
+  "entrypoint": "scripts/alpha_lense_stage0_2_cuda_exec.py",
+  "args": [
+    "--out",
+    "data/alpha_lense/stage0_persist022",
+    "--stage0-workers",
+    "32",
+    "--stage0-only",
+    "--stage0-dataset-id",
+    "p2p-prod-v04"
+  ],
+  "timeout_sec": 7200,
+  "memory_gb": 0
+}
