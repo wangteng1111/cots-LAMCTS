@@ -13,10 +13,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "alpha-lense-stage0-validation014-20260918",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 2061122,
   "request_sha256": "1bf99bd922bb0f43f66457ecc9d170a5204262968c81f6800bd3ab3eaf92c0fb",
   "schema": 1,
   "started_at": 1789720585.8894122,
   "state": "running",
-  "timeout_sec": 3600
+  "timeout_sec": 3600,
+  "updated_at": 1789720587.9438128
 }
