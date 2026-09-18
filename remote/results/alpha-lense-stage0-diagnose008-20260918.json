@@ -8,10 +8,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "alpha-lense-stage0-diagnose008-20260918",
+  "log_tail": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/alpha-lense-stage0-diagnose008-20260918/src/scripts/alpha_lense_stage0_diagnose.py\", line 6, in <module>\n    from alpha_lense.stage_pipeline_v01 import parse_explicit_surfaces\nModuleNotFoundError: No module named 'alpha_lense'",
   "memory_gb": 0,
+  "pid": 2059171,
   "request_sha256": "ff2f2b85eae28cec84fa28337e1a381211fee1d67f89ea154d6f9d97c70d162b",
   "schema": 1,
   "started_at": 1789719714.8056898,
   "state": "running",
-  "timeout_sec": 3600
+  "timeout_sec": 3600,
+  "updated_at": 1789719717.8404546
 }
