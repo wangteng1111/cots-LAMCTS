@@ -11,7 +11,12 @@ def cauchy_from_ne_ve(ne,ve,lam):
     F,E,C=WAVES;delta=(ne-1.0)/ve;B=delta/(1/F**2-1/C**2);A=ne-B/E**2;return A+B/lam**2
 @dataclass
 class Surf:
-    z:float;R:float;n1:float;n2:float
+    z:float
+    R:float
+    n1:float
+    n2:float
+    conic:float=0.0
+    asphere:tuple[float,...]=()
 def mat_ref(n1,n2,R):
     if math.isinf(R):return np.array([[1.,0.],[0.,n1/n2]])
     return np.array([[1.,0.],[-(n2-n1)/(n2*R),n1/n2]])
