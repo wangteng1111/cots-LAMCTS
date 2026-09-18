@@ -1,0 +1,20 @@
+[
+  {
+    "cmd": [
+      "/var/lib/cots-lamcts/venv/bin/python",
+      "-c",
+      "import torch; print(torch.__version__, torch.version.cuda, torch.cuda.is_available(), torch.cuda.device_count()); [print(i,torch.cuda.get_device_name(i),(torch.ones(1024,1024,device=f'cuda:{i}')@torch.ones(1024,1024,device=f'cuda:{i}')).sum().item()) for i in range(torch.cuda.device_count())]"
+    ],
+    "rc": 0,
+    "out": "2.14.0+cu130 13.0 True 2\n0 NVIDIA GeForce RTX 5090 1073741824.0\n1 NVIDIA GeForce RTX 5090 1073741824.0\n"
+  },
+  {
+    "cmd": [
+      "/var/lib/cots-lamcts/venv/bin/python",
+      "-c",
+      "import scipy,numpy; print('scipy',scipy.__version__,'numpy',numpy.__version__)"
+    ],
+    "rc": 0,
+    "out": "scipy 1.15.3 numpy 2.2.6\n"
+  }
+]
