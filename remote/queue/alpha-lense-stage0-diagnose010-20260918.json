@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "job_id": "alpha-lense-stage0-diagnose010-20260918",
+  "code_commit": "06d5099ce436e67818f8df0e92c5beed5626a0e9",
+  "entrypoint": "scripts/alpha_lense_stage0_diagnose.py",
+  "args": [
+    "--max-seeds",
+    "200",
+    "--workers",
+    "24"
+  ],
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
