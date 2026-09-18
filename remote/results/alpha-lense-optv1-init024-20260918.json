@@ -7,10 +7,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "alpha-lense-optv1-init024-20260918",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 2064657,
   "request_sha256": "1528ce30024bddf29a7b1003ab0050904d5d1378b4ac1e58e1050fda678abfb2",
   "schema": 1,
   "started_at": 1789721748.0328302,
   "state": "running",
-  "timeout_sec": 600
+  "timeout_sec": 600,
+  "updated_at": 1789721750.0432656
 }
