@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "job_id": "alpha-lense-pretrain-data028-20260918",
+  "code_commit": "f767e878de2480d6119635f2a613b268d0dddab0",
+  "entrypoint": "scripts/alpha_lense_stage0_2_cuda_exec.py",
+  "args": [
+    "--out",
+    "data/alpha_lense/pretrain_data028",
+    "--stage0-from",
+    "/var/lib/cots-lamcts/alpha_lense/stage0/p2p-prod-v04/stage0_seeds.jsonl",
+    "--max-seeds",
+    "64",
+    "--perturb-per-seed",
+    "4",
+    "--smoke-seeds",
+    "2",
+    "--smoke-perturb",
+    "1",
+    "--gpus",
+    "0,1",
+    "--workers-per-gpu",
+    "1",
+    "--run-id",
+    "alpha-lense-pretrain-v01-data-v2"
+  ],
+  "timeout_sec": 14400,
+  "memory_gb": 0
+}
