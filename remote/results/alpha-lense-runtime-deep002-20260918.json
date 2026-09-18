@@ -1,0 +1,14 @@
+{
+  "args": [],
+  "code_commit": "19f08493249f032b464cc59d919e58e40a81f2d9",
+  "entrypoint": "scripts/probe_workstation_runtime_deep.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "alpha-lense-runtime-deep002-20260918",
+  "memory_gb": 0,
+  "request_sha256": "7b11b888a50dd5a62d26727f48bc33b369611a13d9e4c7fe5afbf00c2a09203f",
+  "schema": 1,
+  "started_at": 1789705014.826829,
+  "state": "running",
+  "timeout_sec": 900
+}
