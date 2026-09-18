@@ -330,20 +330,22 @@ def _structured_delta(current:dict,goal:dict)->dict:
     ops.reverse()
     return {'surface_count_delta':nb-na,'alignment_cost':float(dp[na][nb]),'operations':ops,'topology_required':any(x['op']!='match' for x in ops)}
 
-def _record_value(r:PhysicsRecord)->float:
-    if r.feasible:return -math.log(max(float(r.physics.get('J',r.physics.get('merit_J',1e9))),1e-12))
-    return -1000.-float(r.violation)
+def _quality_value(r:PhysicsRecord)->float:
+    return -math.log(max(float(r.physics.get('J',r.physics.get('merit_J',1e9))),1e-12))
 
 def assemble_stage2(records:Iterable[PhysicsRecord])->list[dict]:
     groups={}
     for r in records:groups.setdefault(r.seed_hash,[]).append(r)
     out=[]
     for seed,rs in groups.items():
-        rs=sorted(rs,key=lambda x:x.rank_key);best=rs[0];best_value=_record_value(best)
+        rs=sorted(rs,key=lambda x:x.rank_key);best=rs[0];best_quality=_quality_value(best)
         for r in rs:
-            merit=-math.log(max(float(r.physics.get('J',r.physics.get('merit_J',1e9))),1e-12))
+            merit=_quality_value(r)
             out.append({'seed_hash':seed,'state_hash':r.candidate_hash,'family':r.family,'split':r.split,'state':r.prescription,'design_spec':r.design_spec,
-              'merit_target':merit,'value_target':best_value,'feasible_target':r.feasible,'violation_target':r.violation,'physics_target':r.physics,
-              'policy_goal_hash':best.candidate_hash,'policy_goal':best.prescription,'policy_goal_delta':_structured_delta(r.prescription,best.prescription),
+              'merit_target':merit,'value_target':best_quality,
+              'feasible_target':r.feasible,'violation_target':r.violation,
+              'reachable_feasible_target':best.feasible,'reachable_violation_target':best.violation,
+              'physics_target':r.physics,'policy_goal_hash':best.candidate_hash,'policy_goal':best.prescription,
+              'policy_goal_delta':_structured_delta(r.prescription,best.prescription),
               'evaluator_config_hash':r.physics.get('config_hash'),'local_rank':r.physics.get('local_rank')})
     return out
