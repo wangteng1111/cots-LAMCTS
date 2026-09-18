@@ -1,0 +1,14 @@
+{
+  "args": [],
+  "code_commit": "982ec7af48cc7deea6d58ea594760691971e5fef",
+  "entrypoint": "validation/alpha_lense_stage0_parser_tests.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "alpha-lense-stage0-tests015-20260918",
+  "memory_gb": 0,
+  "request_sha256": "fe09aa58f1973597c0b03e25a665a4bd5083cc4ab324c88264a261e0d0e2bf92",
+  "schema": 1,
+  "started_at": 1789720645.6573188,
+  "state": "running",
+  "timeout_sec": 600
+}
