@@ -1,0 +1,14 @@
+{
+  "schema": 4,
+  "stage0_reconstructed": 8,
+  "stage0_quarantine": 0,
+  "stage1_physics_records": 16,
+  "stage2_targets": 16,
+  "splits": {
+    "train": 14,
+    "val": 2,
+    "test": 0
+  },
+  "training_started": false,
+  "run_id": "stage1-pool018"
+}
