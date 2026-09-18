@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "job_id": "alpha-lense-stage2-tests020-20260918",
+  "code_commit": "eb03d5bb71a24dd853f03d5a31d784c0dd6549f4",
+  "entrypoint": "validation/alpha_lense_stage2_targets_tests.py",
+  "args": [],
+  "timeout_sec": 600,
+  "memory_gb": 0
+}
