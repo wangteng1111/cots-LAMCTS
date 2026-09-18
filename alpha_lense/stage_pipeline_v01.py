@@ -58,6 +58,7 @@ _UNDEF={'','undefined','undef','na','n/a','none'}
 def _num(x:str|None)->float|None:
     if x is None:return None
     s=str(x).strip()
+    if re.fullmatch(r'[-+]?\\d+,\\d+(?:[Ee][-+]?\\d+)?',s):s=s.replace(',','.')
     if s.lower() in _UNDEF:return None
     if s.lower() in _INF:return math.inf
     try:return float(s)
@@ -133,6 +134,7 @@ def parse_explicit_surfaces(text:str,source_id:str,family:str,provenance:dict)->
     lens=sec.get('lens data') or []
     if not lens:raise ValueError('missing [lens data] section')
     vars=_series(sec.get('variable distances') or [])
+    const=_series(sec.get('constants') or [])
     config=_choose_config(vars)
     asph=_parse_aspheres(sec.get('aspherical data') or [])
 
@@ -158,8 +160,8 @@ def parse_explicit_surfaces(text:str,source_id:str,family:str,provenance:dict)->
             kind='AS' if (rad.upper()=='AS' or label.upper().endswith('AS')) else 'FS'
             entities.append({'kind':kind,'label':label,'gap':g,'aperture':_num(aperture)})
             continue
-        rr=_num(rad)
-        if rr is None:raise ValueError(f'unsupported radius token {rad!r} at {label}')
+        rr=math.inf if rad.upper()=='CG' else _num(rad)
+        if rr is None:raise ValueError(f'unsupported optical entity/radius token {rad!r} at {label}')
         try:idx=float(label)
         except Exception:raise ValueError(f'unsupported surface label {label!r}')
         numeric_order.append(idx)
@@ -196,7 +198,12 @@ def parse_explicit_surfaces(text:str,source_id:str,family:str,provenance:dict)->
         if th<0:raise ValueError('negative axial spacing')
         surfs.append(Surface(e['radius'],th,e['n'],e['v'],e['aperture'],e['conic'],e['asphere']))
         positions.append(float(e['z']))
-    if stop_z is None:raise ValueError('aperture stop (AS) position not explicit')
+    if stop_z is None:
+        typ=(const.get('Type') or [''])[0].strip().upper()
+        # RCL/teleconverter/close-up attachments legitimately use the main-lens stop.
+        # They are reconstructable optics but cannot be authoritative standalone Q4096 seeds.
+        if typ=='RCL':raise ValueError('external aperture stop: RCL/attachment is not a standalone Q4096 seed')
+        raise ValueError('aperture stop (AS) position not explicit')
     stop_after=sum(1 for zz in positions if zz < stop_z-1e-9)
 
     efl=_at(vars,'Focal Length',config)
@@ -207,8 +214,9 @@ def parse_explicit_surfaces(text:str,source_id:str,family:str,provenance:dict)->
     total=_at(vars,'Total Length',config)
     apd=_at(vars,'Aperture Diameter',config)
     if apd is None:apd=_at(vars,'Aperture Diameter(m)',config)
+    source_type=(const.get('Type') or ['standalone'])[0].strip() or 'standalone'
     spec={
-        'efl_target_mm':efl,'efl_tol_mm':None,'max_f_number':fno,
+        'efl_target_mm':efl,'efl_tol_mm':None,'max_f_number':fno,'source_type':source_type,
         'image_circle_mm':imh,'max_field_deg':None if aov is None else float(aov)/2.0,
         'angle_of_view_deg':aov,'bfd_mm':bf,'total_length_mm':total,
         'stop_diameter_mm':stop_diam if stop_diam is not None else apd,
