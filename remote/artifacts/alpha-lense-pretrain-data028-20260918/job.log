@@ -1,0 +1,10 @@
+{"stage": 0, "complete": {"attempted": 64, "reconstructed": 64, "quarantine": 0, "workers": 0, "source": "canonical_file", "source_path": "/var/lib/cots-lamcts/alpha_lense/stage0/p2p-prod-v04/stage0_seeds.jsonl"}}
+{"stage": 1, "smoke_records": 4, "status": "passed", "pool_capacity": 2, "resumed_seeds": 0, "computed_seeds": 0}
+{"stage": 1, "seeds_done": 10, "seeds_total": 64, "physics_records": 50, "pool_capacity": 2}
+{"stage": 1, "seeds_done": 20, "seeds_total": 64, "physics_records": 100, "pool_capacity": 2}
+{"stage": 1, "seeds_done": 30, "seeds_total": 64, "physics_records": 150, "pool_capacity": 2}
+{"stage": 1, "seeds_done": 40, "seeds_total": 64, "physics_records": 200, "pool_capacity": 2}
+{"stage": 1, "seeds_done": 50, "seeds_total": 64, "physics_records": 250, "pool_capacity": 2}
+{"stage": 1, "seeds_done": 60, "seeds_total": 64, "physics_records": 300, "pool_capacity": 2}
+{"stage": 1, "seeds_done": 64, "seeds_total": 64, "physics_records": 320, "pool_capacity": 2}
+{"schema": 4, "stage0_reconstructed": 64, "stage0_quarantine": 0, "stage1_physics_records": 320, "stage2_targets": 320, "splits": {"train": 290, "val": 20, "test": 10}, "training_started": false, "run_id": "alpha-lense-pretrain-v01-data-v2", "resumed_seeds": 0, "computed_seeds": 64}
