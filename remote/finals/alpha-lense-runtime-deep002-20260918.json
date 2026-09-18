@@ -1,0 +1,30 @@
+{
+  "args": [],
+  "bridge_version": "0.5.0",
+  "code_commit": "19f08493249f032b464cc59d919e58e40a81f2d9",
+  "elapsed_sec": 8.714121103286743,
+  "entrypoint": "scripts/probe_workstation_runtime_deep.py",
+  "env": {},
+  "finished_at": 1789705023.54095,
+  "hostname": "aipss-Rack-Server",
+  "immutable_job_id": true,
+  "job_id": "alpha-lense-runtime-deep002-20260918",
+  "log_tail": "{\n  \"bridge_python\": \"/usr/bin/python3\",\n  \"env_bridge_python\": null,\n  \"candidates\": [\n    {\n      \"candidate\": \"/usr/bin/python3\",\n      \"rc\": 0,\n      \"out\": \"{\\\"python\\\": \\\"/usr/bin/python3\\\", \\\"version\\\": \\\"3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]\\\", \\\"torch_error\\\": \\\"ModuleNotFoundError(\\\\\\\"No module named 'torch'\\\\\\\")\\\"}\\n\"\n    },\n    {\n      \"candidate\": \"/var/lib/cots-lamcts/venv/bin/python\",\n      \"rc\": 0,\n      \"out\": \"{\\\"python\\\": \\\"/var/lib/cots-lamcts/venv/bin/python\\\", \\\"version\\\": \\\"3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]\\\", \\\"torch\\\": \\\"2.14.0+cu130\\\", \\\"cuda\\\": true, \\\"cuda_version\\\": \\\"13.0\\\", \\\"devices\\\": 2, \\\"names\\\": [\\\"NVIDIA GeForce RTX 5090\\\", \\\"NVIDIA GeForce RTX 5090\\\"]}\\n\"\n    }\n  ],\n  \"extra\": {\n    \"which_python\": {\n      \"rc\": 0,\n      \"out\": \"/usr/bin/python3\\n\"\n    },\n    \"conda\": {\n      \"rc\": 0,\n      \"out\": \"\"\n    },\n    \"torch_dirs\": {\n      \"rc\": 0,\n      \"out\": \"/var/lib/cots-lamcts/venv/lib/python3.12/site-packages/torch\\n/var/lib/cots-lamcts/venv/lib/python3.12/site-packages/torch/include/torch\\n\"\n    },\n    \"systemd\": {\n      \"rc\": 0,\n      \"out\": \"No files found for cots-workstation-bridge.service.\\n# /etc/systemd/system/cots-lamcts-bridge.service\\n[Unit]\\nDescription=COTS-LAMCTS GitHub Workstation Bridge\\nAfter=network-online.target\\nWants=network-online.target\\n\\n[Service]\\nType=simple\\nUser=cotslamcts\\nGroup=cotslamcts\\nWorkingDirectory=/opt/cots-lamcts/infra\\nEnvironmentFile=/etc/cots-lamcts/bridge.env\\nEnvironment=COTS_BRIDGE_ROOT=/var/lib/cots-lamcts\\nExecStart=/usr/bin/python3 /opt/cots-lamcts/infra/cots_workstation_bridge_v05.py\\nRestart=always\\nRestartSec=10\\nKillSignal=SIGTERM\\nTimeoutStopSec=30\\nNoNewPrivileges=true\\nPrivateTmp=true\\nProtectSystem=strict\\nProtectHome=true\\nReadWritePaths=/var/lib/cots-lamcts\\n\\n[Install]\\nWantedBy=multi-user.target\\n\"\n    },\n    \"process_history\": {\n      \"rc\": 0,\n      \"out\": \"root        2587  0.0  0.0 950264 78336 ?        Ssl  Aug26  11:40 /usr/bin/python3 /usr/bin/fail2ban-server -xf start\\nroot        2589  0.0  0.0 218328 53380 ?        Ss   Aug26   0:00 /usr/bin/python3 /usr/bin/glances -s -B 127.0.0.1\\nroot        2593  0.0  0.0 115356 23452 ?        Ssl  Aug26   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal\\naipss     824119  0.0  0.0 118676 70136 ?        Ss   Sep08   0:00 /opt/conda/bin/python /opt/conda/bin/conda run --no-capture-output -n myplangen python /opt/mcp/relay.py mcp-server 8000\\naipss     824217  0.0  0.0 173128 18068 ?        Sl   Sep08   0:00 python /opt/mcp/relay.py mcp-server 8000\\nmcpuser   826477  0.0  0.0 119704 70312 ?        Ss   Sep08   0:00 /opt/conda/bin/python /opt/conda/bin/conda run --no-capture-output -n myplangen python -m mcp_service.server\\nmcpuser   826772  0.0  0.0 243752 83712 ?        Sl   Sep08  12:04 python -m mcp_service.server\\ncotslam+ 1691493  0.0  0.0  54396 41820 ?        Ss   Sep14   3:40 /usr/bin/python3 /opt/cots-lamcts/infra/cots_workstation_bridge_v05.py\\ncotslam+ 2030314 53.6  0.0  28496 15880 ?        Ss   12:16   0:02 /usr/bin/python3 -u /var/lib/cots-lamcts/jobs/alpha-lense-runtime-deep002-20260918/src/scripts/probe_workstation_runtime_deep.py\\n\"\n    }\n  }\n}",
+  "memory_gb": 0,
+  "pid": 2030314,
+  "request_sha256": "7b11b888a50dd5a62d26727f48bc33b369611a13d9e4c7fe5afbf00c2a09203f",
+  "retry_policy": "new_job_id_required",
+  "returncode": 0,
+  "schema": 1,
+  "started_at": 1789705014.826829,
+  "state": "finished",
+  "timeout_sec": 900,
+  "updated_at": 1789705016.7061872,
+  "uploaded_artifacts": [
+    {
+      "path": "runtime_inventory.json",
+      "size": 3238,
+      "uploaded": true
+    }
+  ]
+}
