@@ -1,0 +1,12 @@
+{
+  "bridge_version": "0.5.0",
+  "error": "timeout_sec must be in [60,172800]",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "alpha-lense-stage1-full029-20260918",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/alpha-lense-stage1-full029-20260918.json",
+  "request_sha256": "1235026ea2ca2cf38c43dc7ff02a51633a770e56c65058dfc3e4b37a273c4e2f",
+  "schema": 1,
+  "state": "rejected",
+  "timestamp": 1789722418.8496544
+}
