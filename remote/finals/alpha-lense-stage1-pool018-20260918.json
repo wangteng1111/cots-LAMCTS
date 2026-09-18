@@ -1,0 +1,54 @@
+{
+  "args": [
+    "--out",
+    "data/alpha_lense/stage1_pool018",
+    "--stage0-from",
+    "/var/lib/cots-lamcts/alpha_lense/stage0/p2p-prod-v03/stage0_seeds.jsonl",
+    "--max-seeds",
+    "8",
+    "--perturb-per-seed",
+    "1",
+    "--smoke-seeds",
+    "2",
+    "--smoke-perturb",
+    "1",
+    "--gpus",
+    "0,1",
+    "--workers-per-gpu",
+    "1",
+    "--run-id",
+    "stage1-pool018"
+  ],
+  "bridge_version": "0.5.0",
+  "code_commit": "d10eb1c45d7ef300a83b335902461af3ab24a2df",
+  "elapsed_sec": 47.540297508239746,
+  "entrypoint": "scripts/alpha_lense_stage0_2_cuda_exec.py",
+  "env": {},
+  "finished_at": 1789721189.6771617,
+  "hostname": "aipss-Rack-Server",
+  "immutable_job_id": true,
+  "job_id": "alpha-lense-stage1-pool018-20260918",
+  "log_tail": "{\"stage\": 0, \"complete\": {\"attempted\": 8, \"reconstructed\": 8, \"quarantine\": 0, \"workers\": 0, \"source\": \"canonical_file\", \"source_path\": \"/var/lib/cots-lamcts/alpha_lense/stage0/p2p-prod-v03/stage0_seeds.jsonl\"}}\n{\"stage\": 1, \"smoke_records\": 4, \"status\": \"passed\", \"pool_capacity\": 2}\n{\"stage\": 1, \"seeds_done\": 8, \"seeds_total\": 8, \"physics_records\": 16, \"pool_capacity\": 2}\n{\"schema\": 4, \"stage0_reconstructed\": 8, \"stage0_quarantine\": 0, \"stage1_physics_records\": 16, \"stage2_targets\": 16, \"splits\": {\"train\": 14, \"val\": 2, \"test\": 0}, \"training_started\": false, \"run_id\": \"stage1-pool018\"}",
+  "memory_gb": 0,
+  "pid": 2062888,
+  "request_sha256": "403689ab0d061b77c217d5c26b7b535e569fd0526f44f14ec28749baa44afa24",
+  "retry_policy": "new_job_id_required",
+  "returncode": 0,
+  "schema": 1,
+  "started_at": 1789721142.1368642,
+  "state": "finished",
+  "timeout_sec": 3600,
+  "updated_at": 1789721144.6916633,
+  "uploaded_artifacts": [
+    {
+      "path": "dataset_summary.json",
+      "size": 251,
+      "uploaded": true
+    },
+    {
+      "path": "stage1_smoke.jsonl",
+      "size": 19208,
+      "uploaded": true
+    }
+  ]
+}
