@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "alpha-lense-optv1-init024-20260918",
+  "code_commit": "165eccc6b157a8f0084f16446e27e455d2b82645",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/alpha_lense_optv1_init_tests.py"
+  ],
+  "timeout_sec": 600,
+  "memory_gb": 0
+}
