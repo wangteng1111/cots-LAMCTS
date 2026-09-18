@@ -271,7 +271,7 @@ def perturb(p:Prescription,rng:random.Random,depth:int)->tuple[Prescription,list
             ss[i:i+1]=[replace(surf,thickness=max(.02,surf.thickness*.48)),Surface(math.inf,max(.02,surf.thickness*.04),1.,0.),replace(surf,thickness=max(.02,surf.thickness*.48))]
             if i<sa:sa+=2
             ed.append(Edit(k,i))
-        elif k=='merge_elements' and i+2<len(ss):
+        elif k=='merge_elements' and len(ss)>6 and i+2<len(ss):
             # Deleting i+1:i+3 must stay wholly on one side of the stop.
             lo=i+1;hi=i+3
             if hi<=sa or lo>=sa:
