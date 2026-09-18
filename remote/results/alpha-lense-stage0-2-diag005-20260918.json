@@ -1,0 +1,27 @@
+{
+  "args": [
+    "--out",
+    "data/alpha_lense/stage0_2_diag005",
+    "--max-seeds",
+    "20",
+    "--stage0-workers",
+    "20",
+    "--perturb-per-seed",
+    "1",
+    "--smoke-seeds",
+    "2",
+    "--smoke-perturb",
+    "1"
+  ],
+  "code_commit": "e14d3a9466f949d03bd868190c7db42a7c9818b3",
+  "entrypoint": "scripts/alpha_lense_stage0_2_cuda_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "alpha-lense-stage0-2-diag005-20260918",
+  "memory_gb": 0,
+  "request_sha256": "148adbea8e66cd3d33ddec8ac2aa91d9fa097957332311c4b0dab832d3834efb",
+  "schema": 1,
+  "started_at": 1789710420.26623,
+  "state": "running",
+  "timeout_sec": 7200
+}
