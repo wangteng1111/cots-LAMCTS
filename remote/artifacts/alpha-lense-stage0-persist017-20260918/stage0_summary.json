@@ -1,0 +1,7 @@
+{
+  "attempted": 1384,
+  "reconstructed": 1300,
+  "quarantine": 84,
+  "workers": 32,
+  "source": "p2p_manifest"
+}
