@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "job_id": "alpha-lense-stage0-full015-20260918",
+  "code_commit": "ca0e364bbaf16a06fd974ccd0f8cda10da1cd4d0",
+  "entrypoint": "scripts/alpha_lense_stage0_2_cuda_exec.py",
+  "args": [
+    "--out",
+    "data/alpha_lense/stage0_full015",
+    "--stage0-workers",
+    "32",
+    "--stage0-only"
+  ],
+  "timeout_sec": 7200,
+  "memory_gb": 0
+}
