@@ -268,14 +268,25 @@ def constraint_rank(physics:dict,spec:dict)->tuple[bool,float,tuple]:
     violation=sum(margins);feasible=violation<=1e-12;J=float(physics.get('J',physics.get('merit_J',1e9)))
     return feasible,violation,(0 if feasible else 1,J if feasible else violation,J)
 
-def generate_stage1(seed:Prescription,evaluator:Callable[[Prescription],dict],samples:int,seed_rng:int,max_depth:int=10)->list[PhysicsRecord]:
-    rng=random.Random(seed_rng);items=[];candidates=[(seed,[])]
+def generate_stage1_candidates(seed:Prescription,samples:int,seed_rng:int,max_depth:int=10)->list[tuple[Prescription,list[Edit]]]:
+    rng=random.Random(seed_rng);candidates=[(seed,[])]
     for _ in range(samples):candidates.append(perturb(seed,rng,rng.randint(1,max_depth)))
-    for c,ed in candidates:
-        ph=evaluator(c);feas,v,rk=constraint_rank(ph,seed.design_spec);items.append(PhysicsRecord(seed.optical_hash(),c.optical_hash(),seed.family,split_for_family(seed.family),[asdict(x) for x in ed],c.canonical(),seed.design_spec,ph,feas,v,rk))
+    return candidates
+
+def records_from_evaluations(seed:Prescription,candidates:list[tuple[Prescription,list[Edit]]],physics:list[dict])->list[PhysicsRecord]:
+    if len(candidates)!=len(physics):raise ValueError('candidate/evaluation count mismatch')
+    items=[]
+    for (cand,ed),ph in zip(candidates,physics):
+        feas,v,rk=constraint_rank(ph,seed.design_spec)
+        items.append(PhysicsRecord(seed.optical_hash(),cand.optical_hash(),seed.family,split_for_family(seed.family),[asdict(x) for x in ed],cand.canonical(),seed.design_spec,ph,feas,v,rk))
     items.sort(key=lambda x:x.rank_key)
     for i,x in enumerate(items):x.physics['local_rank']=i
     return items
+
+def generate_stage1(seed:Prescription,evaluator:Callable[[Prescription],dict],samples:int,seed_rng:int,max_depth:int=10)->list[PhysicsRecord]:
+    candidates=generate_stage1_candidates(seed,samples,seed_rng,max_depth)
+    physics=[evaluator(c) for c,_ in candidates]
+    return records_from_evaluations(seed,candidates,physics)
 
 def _structured_delta(current:dict,goal:dict)->dict:
     a=current.get('surfaces',[]);b=goal.get('surfaces',[]);n=min(len(a),len(b));matched=[]
