@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "job_id": "alpha-lense-perturb-tests023-20260918",
+  "code_commit": "587b3501cf9bb987c7b9e07d2fdfec862e977722",
+  "entrypoint": "validation/alpha_lense_perturb_geometry_tests.py",
+  "args": [],
+  "timeout_sec": 600,
+  "memory_gb": 0
+}
