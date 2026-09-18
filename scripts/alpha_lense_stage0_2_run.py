@@ -61,7 +61,7 @@ def _load_jsonl(path):
 
 def _stage0(a,out,persistent_root):
  if a.stage0_from:
-  rows=_load_jsonl(a.stage0_from);seeds=[seed_from_record(x) for x in rows];qu=[]
+  rows=_load_jsonl(a.stage0_from);rows=rows[:a.max_seeds] if a.max_seeds else rows;seeds=[seed_from_record(x) for x in rows];qu=[]
   s0={'attempted':len(seeds),'reconstructed':len(seeds),'quarantine':0,'workers':0,'source':'canonical_file','source_path':a.stage0_from}
  else:
   rows=known_rows();rows=rows[:a.max_seeds] if a.max_seeds else rows;seeds=[];qu=[]
