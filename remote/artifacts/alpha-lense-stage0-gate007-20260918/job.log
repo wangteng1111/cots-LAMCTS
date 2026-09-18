@@ -1,0 +1,2 @@
+{"stage": 0, "complete": {"attempted": 20, "reconstructed": 4, "quarantine": 16, "workers": 20}, "seeds_file": "data/alpha_lense/stage0_gate007/stage0_seeds.jsonl"}
+{"stage": 0, "status": "finished_stage0_only"}
