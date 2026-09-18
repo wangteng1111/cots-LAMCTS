@@ -1,0 +1,1 @@
+{"attempted": 200, "reconstructed": 62, "quarantine": 138, "reason_counts": {"missing_explicit_stop": 126, "surface_table_grammar_mismatch_numeric": 3, "surface_table_split_columns_or_labels": 8, "fetch_error": 1}}
