@@ -5,10 +5,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "alpha-lense-stage0-tests012-20260918",
+  "log_tail": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/alpha-lense-stage0-tests012-20260918/src/validation/alpha_lense_stage0_parser_tests.py\", line 72, in <module>\n    assert q.surfaces[7].asphere and abs(q.surfaces[7].conic+0.9643)<1e-9\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError",
   "memory_gb": 0,
+  "pid": 2060785,
   "request_sha256": "1e2ff0ed8b9e0e09f7355389d181a5da86c6c326153bfe5d2e80d1532382ff0b",
   "schema": 1,
   "started_at": 1789720462.5796602,
   "state": "running",
-  "timeout_sec": 600
+  "timeout_sec": 600,
+  "updated_at": 1789720464.565445
 }
