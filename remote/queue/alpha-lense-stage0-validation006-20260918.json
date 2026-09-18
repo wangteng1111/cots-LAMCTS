@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "job_id": "alpha-lense-stage0-validation006-20260918",
+  "code_commit": "e14d3a9466f949d03bd868190c7db42a7c9818b3",
+  "entrypoint": "scripts/alpha_lense_stage0_2_cuda_exec.py",
+  "args": [
+    "--out",
+    "data/alpha_lense/stage0_validation006",
+    "--max-seeds",
+    "200",
+    "--stage0-workers",
+    "20",
+    "--perturb-per-seed",
+    "0",
+    "--smoke-seeds",
+    "0",
+    "--smoke-perturb",
+    "0"
+  ],
+  "timeout_sec": 7200,
+  "memory_gb": 0
+}
