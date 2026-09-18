@@ -55,17 +55,34 @@ def _safe_log(x,eps):return math.log(max(float(x),eps))
 def _dir(ax,ay=0.):
  tx,ty=math.tan(ax),math.tan(ay);dz=1/math.sqrt(1+tx*tx+ty*ty);return dz,tx*dz,ty*dz
 
-def _sag_ds(R,r):
- if math.isinf(R):return 0.,0.,True
- q=R*R-r*r
- if q<=0:return math.nan,math.nan,False
- sq=math.sqrt(q);sg=R-(1 if R>=0 else -1)*sq;ds=(1 if R>=0 else -1)*r/sq;return sg,ds,True
+def _sag_ds(R,r,conic=0.0,asphere=()):
+ if math.isinf(R):
+  base=0.;ds=0.;ok=True
+ else:
+  c=1.0/R
+  q=1.0-(1.0+float(conic))*(c*c)*(r*r)
+  if q<=0:return math.nan,math.nan,False
+  sq=math.sqrt(q)
+  den=1.0+sq
+  base=(c*r*r)/den
+  # d/dr of conic sag c r^2 / (1+sqrt(1-(1+k)c^2 r^2))
+  ds=(2*c*r*den + (c*r*r)*(1.0+float(conic))*c*c*r/max(sq,1e-30))/(den*den)
+  ok=True
+ sg=base
+ if asphere:
+  rr=r*r
+  # P2P coefficients are A4,A6,A8,... after the conic constant.
+  for j,a in enumerate(asphere):
+   power=4+2*j
+   sg+=float(a)*(r**power)
+   if r!=0: ds+=power*float(a)*(r**(power-1))
+ return sg,ds,ok
 
 def _safe_incident_start(surfs,ax,xv,yv):
  s0=surfs[0];finite_R=[abs(s.R) for s in surfs if math.isfinite(s.R)];ap=min(60.,max(20.,.45*min(finite_R) if finite_R else 20.));z0=s0.z-max(10.,2.5*ap);dz,dx,dy=_dir(ax);dt=(s0.z-z0)/dz;return z0,xv-dt*dx,yv-dt*dy,dz,dx,dy
 
 def _surf_step(z,x,y,dz,dx,dy,s,opl=None,maxit=14):
- tv=(s.z-z)/dz;xv=x+tv*dx;yv=y+tv*dy;r=math.hypot(xv,yv);sg,_,ok=_sag_ds(s.R,r)
+ tv=(s.z-z)/dz;xv=x+tv*dx;yv=y+tv*dy;r=math.hypot(xv,yv);sg,_,ok=_sag_ds(s.R,r,getattr(s,'conic',0.0),getattr(s,'asphere',()))
  if not ok:return None
  t=max(1e-10,(s.z+sg-z)/dz)
  for _ in range(maxit):
@@ -115,7 +132,8 @@ def _solve_input(surfs,ax,target,stop_z=0.,maxit=7):
   except np.linalg.LinAlgError:return None
  v=_trace_stop(surfs,ax,*q,stop_z);return q if v is not None and np.linalg.norm(np.array(v)-target)<2e-5 else None
 
-def chief_and_image(surfs,ax,film=FILM):
+def chief_and_image(surfs,ax,film=None):
+ if film is None:film=FILM
  q=_solve_input(surfs,ax,np.array([0.,0.]))
  if q is None:return None
  z,x,y,dz,dx,dy=_safe_incident_start(surfs,ax,*q)
@@ -125,7 +143,8 @@ def chief_and_image(surfs,ax,film=FILM):
   z,x,y,dz,dx,dy,_=o
  t=(film-z)/dz;return x+t*dx,y+t*dy
 
-def _eikonal(surfs,ax,uv,ref,film=FILM):
+def _eikonal(surfs,ax,uv,ref,film=None):
+ if film is None:film=FILM
  if uv[0]*uv[0]+uv[1]*uv[1]>1:return math.nan
  q=_solve_input(surfs,ax,np.array(uv)*STOP_R)
  if q is None:return math.nan
