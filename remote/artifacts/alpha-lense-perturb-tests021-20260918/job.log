@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/alpha-lense-perturb-tests021-20260918/src/validation/alpha_lense_perturb_geometry_tests.py", line 19, in <module>
+    assert len(q.surfaces)>=4 and len(q.surfaces)<=64
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
