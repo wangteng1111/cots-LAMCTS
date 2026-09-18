@@ -218,7 +218,7 @@ def parse_explicit_surfaces(text:str,source_id:str,family:str,provenance:dict)->
     if apd is None:apd=_at(vars,'Aperture Diameter(m)',config)
     source_type=(const.get('Type') or ['standalone'])[0].strip() or 'standalone'
     spec={
-        'efl_target_mm':efl,'efl_tol_mm':None,'max_f_number':fno,'source_type':source_type,
+        'efl_target_mm':efl,'efl_tol_mm':(None if efl is None else max(abs(float(efl))*0.03,0.05)),'max_f_number':fno,'source_type':source_type,
         'image_circle_mm':imh,'max_field_deg':None if aov is None else float(aov)/2.0,
         'angle_of_view_deg':aov,'bfd_mm':bf,'total_length_mm':total,
         'stop_diameter_mm':stop_diam if stop_diam is not None else apd,
@@ -233,25 +233,57 @@ def split_for_family(family:str)->str:
     return 'train' if x<90 else ('val' if x<95 else 'test')
 
 def perturb(p:Prescription,rng:random.Random,depth:int)->tuple[Prescription,list[Edit]]:
-    ss=list(p.surfaces);ed=[]
+    ss=list(p.surfaces);ed=[];sa=max(0,min(int(p.stop_after),len(ss)))
+    # Preserve the aperture stop inside its original inter-surface gap.  The
+    # parser collapses AS into that gap, so retain its fractional position while
+    # legal edits move the surrounding physical surfaces.
+    if 0<sa<=len(ss) and p.stop_z_mm is not None:
+        prev=sum(x.thickness for x in ss[:sa-1]);gap=max(float(ss[sa-1].thickness),1e-12)
+        stop_frac=max(0.0,min(1.0,(float(p.stop_z_mm)-prev)/gap))
+    else:stop_frac=0.0
     kinds=('curvature','spacing','thickness','material','aperture','add_element','remove_element','split_element','merge_elements')
     for _ in range(depth):
         k=rng.choice(kinds);i=rng.randrange(len(ss))
         if k=='curvature' and math.isfinite(ss[i].radius):
             d=rng.gauss(0,.025);ss[i]=replace(ss[i],radius=ss[i].radius*(1+d));ed.append(Edit(k,i,d))
         elif k in ('spacing','thickness'):
+            # Keep the image plane as an explicit design degree only through the
+            # final image-space gap; internal edits move downstream optics.
             d=rng.gauss(0,.04);ss[i]=replace(ss[i],thickness=max(.02,ss[i].thickness*(1+d)));ed.append(Edit(k,i,d))
         elif k=='material' and ss[i].n_after>1.01:
             dn=rng.gauss(0,.006);dv=rng.gauss(0,1.2);ss[i]=replace(ss[i],n_after=max(1.3,min(2.1,ss[i].n_after+dn)),v_after=max(15,min(95,ss[i].v_after+dv)));ed.append(Edit(k,i,dn,(dv,)))
         elif k=='aperture' and ss[i].clear_aperture:
             d=rng.gauss(0,.03);ss[i]=replace(ss[i],clear_aperture=max(.5,ss[i].clear_aperture*(1+d)));ed.append(Edit(k,i,d))
-        elif k=='add_element' and len(ss)<64:
-            r=max(5.,abs(ss[i].radius) if math.isfinite(ss[i].radius) else 50.);new=[Surface(r,1.0,1.5168,64.17),Surface(-r,1.0,1.0,0.0)];ss[i:i]=new;ed.append(Edit(k,i))
-        elif k=='remove_element' and len(ss)>6 and i+1<len(ss):del ss[i:i+2];ed.append(Edit(k,i))
-        elif k=='split_element' and len(ss)<64:
-            s=ss[i];ss[i:i+1]=[replace(s,thickness=max(.02,s.thickness*.48)),Surface(math.inf,max(.02,s.thickness*.04),1.,0.),replace(s,thickness=max(.02,s.thickness*.48))];ed.append(Edit(k,i))
-        elif k=='merge_elements' and i+2<len(ss):del ss[i+1:i+3];ed.append(Edit(k,i))
-    return replace(p,surfaces=tuple(ss)),ed
+        elif k=='add_element' and len(ss)<64 and i not in {max(0,sa-1),sa}:
+            rr=max(5.,abs(ss[i].radius) if math.isfinite(ss[i].radius) else 50.)
+            new=[Surface(rr,1.0,1.5168,64.17),Surface(-rr,1.0,1.0,0.0)]
+            ss[i:i]=new
+            if i<sa:sa+=2
+            ed.append(Edit(k,i))
+        elif k=='remove_element' and len(ss)>6 and i+1<len(ss):
+            # Never delete across the aperture-stop boundary.
+            if i+2<=sa or i>=sa:
+                del ss[i:i+2]
+                if i+2<=sa:sa-=2
+                ed.append(Edit(k,i))
+        elif k=='split_element' and len(ss)<64 and i not in {max(0,sa-1),sa}:
+            surf=ss[i]
+            ss[i:i+1]=[replace(surf,thickness=max(.02,surf.thickness*.48)),Surface(math.inf,max(.02,surf.thickness*.04),1.,0.),replace(surf,thickness=max(.02,surf.thickness*.48))]
+            if i<sa:sa+=2
+            ed.append(Edit(k,i))
+        elif k=='merge_elements' and i+2<len(ss):
+            # Deleting i+1:i+3 must stay wholly on one side of the stop.
+            lo=i+1;hi=i+3
+            if hi<=sa or lo>=sa:
+                del ss[lo:hi]
+                if hi<=sa:sa-=2
+                ed.append(Edit(k,i))
+    if 0<sa<=len(ss):
+        stop_z=sum(x.thickness for x in ss[:sa-1])+stop_frac*float(ss[sa-1].thickness)
+    else:
+        stop_z=0.0 if sa==0 else sum(x.thickness for x in ss)
+    image_z=sum(float(x.thickness) for x in ss)
+    return replace(p,surfaces=tuple(ss),stop_after=sa,stop_z_mm=float(stop_z),image_z_mm=float(image_z)),ed
 
 def constraint_rank(physics:dict,spec:dict)->tuple[bool,float,tuple]:
     margins=[]
