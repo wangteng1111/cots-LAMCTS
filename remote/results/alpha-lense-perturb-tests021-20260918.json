@@ -1,0 +1,14 @@
+{
+  "args": [],
+  "code_commit": "e7e5501abcde8107dad1076aa80d8e9c840c4b91",
+  "entrypoint": "validation/alpha_lense_perturb_geometry_tests.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "alpha-lense-perturb-tests021-20260918",
+  "memory_gb": 0,
+  "request_sha256": "ddabf04b4487a9b6a9e253927a64ae1ed7de96fc0979a329c3ca4b19c6dafbc6",
+  "schema": 1,
+  "started_at": 1789721653.0781107,
+  "state": "running",
+  "timeout_sec": 600
+}
