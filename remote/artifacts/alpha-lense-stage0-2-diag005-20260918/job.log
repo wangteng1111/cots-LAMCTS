@@ -1,0 +1,9 @@
+{"stage": 0, "complete": {"attempted": 20, "reconstructed": 4, "quarantine": 16, "workers": 20}}
+{"stage": 1, "smoke_seed": 1, "records": 2, "backends": ["torch_cuda_float64_exact_spherical_sag_safe_v2"], "errors": []}
+{"stage": 1, "smoke_seed": 2, "records": 2, "backends": ["torch_cuda_float64_exact_spherical_sag_safe_v2"], "errors": []}
+{"stage": 1, "smoke_records": 4, "status": "passed"}
+{"stage": 1, "seeds_done": 1, "seeds_total": 4, "physics_records": 2, "device": 0}
+{"stage": 1, "seeds_done": 2, "seeds_total": 4, "physics_records": 4, "device": 1}
+{"stage": 1, "seeds_done": 3, "seeds_total": 4, "physics_records": 6, "device": 0}
+{"stage": 1, "seeds_done": 4, "seeds_total": 4, "physics_records": 8, "device": 1}
+{"schema": 2, "stage0_reconstructed": 4, "stage0_quarantine": 16, "stage1_physics_records": 8, "stage2_targets": 8, "splits": {"train": 6, "val": 2, "test": 0}, "training_started": false}
