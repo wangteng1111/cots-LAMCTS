@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "job_id": "alpha-lense-stage0-parser013-20260918",
+  "code_commit": "3eb67179b6d5d4c4345378a0f7776865482f7a59",
+  "entrypoint": "scripts/alpha_lense_stage0_2_cuda_exec.py",
+  "args": [
+    "--out",
+    "data/alpha_lense/stage0_parser013",
+    "--max-seeds",
+    "200",
+    "--stage0-workers",
+    "24",
+    "--stage0-only"
+  ],
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
