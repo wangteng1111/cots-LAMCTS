@@ -288,19 +288,62 @@ def generate_stage1(seed:Prescription,evaluator:Callable[[Prescription],dict],sa
     physics=[evaluator(c) for c,_ in candidates]
     return records_from_evaluations(seed,candidates,physics)
 
+def _surface_match_cost(x:dict,y:dict)->float:
+    def rel(a,b,scale=1.0):
+        try:
+            aa=float(a);bb=float(b)
+            if not (math.isfinite(aa) and math.isfinite(bb)):return 0.0 if (math.isinf(aa) and math.isinf(bb) and (aa>0)==(bb>0)) else 2.0
+            return abs(aa-bb)/max(abs(aa),abs(bb),scale)
+        except Exception:return 1.0
+    return min(3.0,1.2*rel(x.get('radius'),y.get('radius'),5.0)+.5*rel(x.get('thickness'),y.get('thickness'),1.0)+1.2*abs(float(x.get('n_after',1.0))-float(y.get('n_after',1.0)))+.012*abs(float(x.get('v_after',0.0))-float(y.get('v_after',0.0))))
+
 def _structured_delta(current:dict,goal:dict)->dict:
-    a=current.get('surfaces',[]);b=goal.get('surfaces',[]);n=min(len(a),len(b));matched=[]
-    for i in range(n):
-        x,y=a[i],b[i]
-        matched.append({'index':i,'radius_delta':(None if not (math.isfinite(float(x['radius'])) and math.isfinite(float(y['radius']))) else float(y['radius'])-float(x['radius'])),'thickness_delta':float(y['thickness'])-float(x['thickness']),'n_after_delta':float(y['n_after'])-float(x['n_after']),'v_after_delta':float(y['v_after'])-float(x['v_after']),'aperture_delta':None if x.get('clear_aperture') is None or y.get('clear_aperture') is None else float(y['clear_aperture'])-float(x['clear_aperture'])})
-    return {'surface_count_delta':len(b)-len(a),'matched_surface_deltas':matched,'topology_required':len(a)!=len(b)}
+    a=current.get('surfaces',[]);b=goal.get('surfaces',[]);na=len(a);nb=len(b)
+    # Dynamic-programming sequence alignment prevents a topology insertion/removal
+    # from shifting every subsequent optical surface target.
+    insdel=1.15
+    dp=[[0.0]*(nb+1) for _ in range(na+1)]
+    bt=[[None]*(nb+1) for _ in range(na+1)]
+    for i in range(1,na+1):dp[i][0]=i*insdel;bt[i][0]='delete'
+    for j in range(1,nb+1):dp[0][j]=j*insdel;bt[0][j]='insert'
+    for i in range(1,na+1):
+        for j in range(1,nb+1):
+            opts=[(dp[i-1][j-1]+_surface_match_cost(a[i-1],b[j-1]),'match'),(dp[i-1][j]+insdel,'delete'),(dp[i][j-1]+insdel,'insert')]
+            dp[i][j],bt[i][j]=min(opts,key=lambda z:z[0])
+    ops=[];i=na;j=nb
+    while i or j:
+        op=bt[i][j]
+        if op=='match':
+            x,y=a[i-1],b[j-1]
+            def delta(k):
+                xv=x.get(k);yv=y.get(k)
+                if xv is None or yv is None:return None
+                try:
+                    xv=float(xv);yv=float(yv)
+                    if not (math.isfinite(xv) and math.isfinite(yv)):return None
+                    return yv-xv
+                except Exception:return None
+            ops.append({'op':'match','current_index':i-1,'goal_index':j-1,'radius_delta':delta('radius'),'thickness_delta':delta('thickness'),'n_after_delta':delta('n_after'),'v_after_delta':delta('v_after'),'aperture_delta':delta('clear_aperture')});i-=1;j-=1
+        elif op=='delete':ops.append({'op':'delete','current_index':i-1});i-=1
+        elif op=='insert':ops.append({'op':'insert','goal_index':j-1,'surface':b[j-1]});j-=1
+        else:raise RuntimeError('surface alignment backtrace failed')
+    ops.reverse()
+    return {'surface_count_delta':nb-na,'alignment_cost':float(dp[na][nb]),'operations':ops,'topology_required':any(x['op']!='match' for x in ops)}
+
+def _record_value(r:PhysicsRecord)->float:
+    if r.feasible:return -math.log(max(float(r.physics.get('J',r.physics.get('merit_J',1e9))),1e-12))
+    return -1000.-float(r.violation)
 
 def assemble_stage2(records:Iterable[PhysicsRecord])->list[dict]:
     groups={}
     for r in records:groups.setdefault(r.seed_hash,[]).append(r)
     out=[]
     for seed,rs in groups.items():
-        rs=sorted(rs,key=lambda x:x.rank_key);best=rs[0]
+        rs=sorted(rs,key=lambda x:x.rank_key);best=rs[0];best_value=_record_value(best)
         for r in rs:
-            out.append({'seed_hash':seed,'state_hash':r.candidate_hash,'family':r.family,'split':r.split,'state':r.prescription,'design_spec':r.design_spec,'value_target':-math.log(max(float(r.physics.get('J',r.physics.get('merit_J',1e9))),1e-12)) if r.feasible else -1000.-r.violation,'feasible_target':r.feasible,'violation_target':r.violation,'physics_target':r.physics,'policy_goal_hash':best.candidate_hash,'policy_goal':best.prescription,'policy_goal_delta':_structured_delta(r.prescription,best.prescription),'evaluator_config_hash':r.physics.get('config_hash')})
+            merit=-math.log(max(float(r.physics.get('J',r.physics.get('merit_J',1e9))),1e-12))
+            out.append({'seed_hash':seed,'state_hash':r.candidate_hash,'family':r.family,'split':r.split,'state':r.prescription,'design_spec':r.design_spec,
+              'merit_target':merit,'value_target':best_value,'feasible_target':r.feasible,'violation_target':r.violation,'physics_target':r.physics,
+              'policy_goal_hash':best.candidate_hash,'policy_goal':best.prescription,'policy_goal_delta':_structured_delta(r.prescription,best.prescription),
+              'evaluator_config_hash':r.physics.get('config_hash'),'local_rank':r.physics.get('local_rank')})
     return out
