@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/alpha-lense-stage0-tests012-20260918/src/validation/alpha_lense_stage0_parser_tests.py", line 72, in <module>
+    assert q.surfaces[7].asphere and abs(q.surfaces[7].conic+0.9643)<1e-9
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
