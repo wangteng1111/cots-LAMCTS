@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 from __future__ import annotations
-import argparse,json,os,re,urllib.request
-from collections import Counter,defaultdict
+import argparse,json,os,re,sys,urllib.request
+from collections import Counter
 from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:sys.path.insert(0,str(ROOT))
 from alpha_lense.stage_pipeline_v01 import parse_explicit_surfaces
 from scripts.alpha_lense_collect_corpus_v01 import known_rows
 NUM=re.compile(r'[-+]?(?:\d+(?:\.\d*)?|\.\d+)(?:[Ee][-+]?\d+)?')
@@ -31,7 +33,8 @@ def reason(err,feat):
 def main():
  ap=argparse.ArgumentParser();ap.add_argument('--max-seeds',type=int,default=200);a=ap.parse_args()
  rec=[];counts=Counter();success=0
- for i,r in enumerate(known_rows()[:a.max_seeds],1):
+ rows=known_rows()[:a.max_seeds]
+ for i,r in enumerate(rows,1):
   try:
    t=fetch(r);feat=features(t)
    try:
@@ -42,7 +45,7 @@ def main():
     rec.append({'status':'quarantine','filename':r['filename'],'lens_name':r.get('lens_name'),'reason':rr,'error':repr(e),'features':feat})
   except Exception as e:
    counts['fetch_error']+=1;rec.append({'status':'quarantine','filename':r['filename'],'lens_name':r.get('lens_name'),'reason':'fetch_error','error':repr(e)})
- summary={'attempted':a.max_seeds,'reconstructed':success,'quarantine':a.max_seeds-success,'reason_counts':dict(counts)}
+ summary={'attempted':len(rows),'reconstructed':success,'quarantine':len(rows)-success,'reason_counts':dict(counts)}
  ad=Path(os.environ.get('COTS_JOB_ARTIFACT_DIR','.'));ad.mkdir(parents=True,exist_ok=True)
  (ad/'stage0_diagnosis.jsonl').write_text('\n'.join(json.dumps(x,ensure_ascii=False) for x in rec)+'\n')
  (ad/'stage0_diagnosis_summary.json').write_text(json.dumps(summary,indent=2))
