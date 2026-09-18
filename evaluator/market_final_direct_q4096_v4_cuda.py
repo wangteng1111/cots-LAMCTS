@@ -59,14 +59,25 @@ def _dir(ax: float, ay: float = 0.0):
     return dz, tx * dz, ty * dz
 
 
-def _sag_ds_t(R: float, r: torch.Tensor):
+def _sag_ds_t(R: float, r: torch.Tensor, conic: float = 0.0, asphere=()):
     if math.isinf(R):
-        return torch.zeros_like(r), torch.zeros_like(r), torch.ones_like(r, dtype=torch.bool)
-    q = R * R - r * r
-    ok = q > 0
-    sq = torch.sqrt(torch.clamp(q, min=1e-30))
-    sign = 1.0 if R >= 0 else -1.0
-    return R - sign * sq, sign * r / sq, ok
+        sag = torch.zeros_like(r)
+        ds = torch.zeros_like(r)
+        ok = torch.ones_like(r, dtype=torch.bool)
+    else:
+        cc = 1.0 / float(R)
+        q = 1.0 - (1.0 + float(conic)) * (cc * cc) * r * r
+        ok = q > 0
+        sq = torch.sqrt(torch.clamp(q, min=1e-30))
+        den = 1.0 + sq
+        sag = (cc * r * r) / den
+        ds = (2.0 * cc * r * den + (cc * r * r) * (1.0 + float(conic)) * cc * cc * r / sq) / (den * den)
+    if asphere:
+        for j, a in enumerate(asphere):
+            power = 4 + 2*j
+            sag = sag + float(a) * torch.pow(r, power)
+            ds = ds + power * float(a) * torch.pow(r, power-1)
+    return sag, ds, ok
 
 
 def _safe_incident_start_t(surfs, ax: float, xv: torch.Tensor, yv: torch.Tensor):
@@ -84,7 +95,7 @@ def _surf_step_t(z, x, y, dz, dx, dy, s, opl=None, maxit: int = 14):
     xv = x + tv * dx
     yv = y + tv * dy
     rv = torch.hypot(xv, yv)
-    sg0, _, ok = _sag_ds_t(s.R, rv)
+    sg0, _, ok = _sag_ds_t(s.R, rv, getattr(s,'conic',0.0), getattr(s,'asphere',()))
     t = torch.clamp((s.z + sg0 - z) / dz, min=1e-10)
     valid = ok & torch.isfinite(t)
 
@@ -92,7 +103,7 @@ def _surf_step_t(z, x, y, dz, dx, dy, s, opl=None, maxit: int = 14):
         xx = x + t * dx
         yy = y + t * dy
         r = torch.hypot(xx, yy)
-        sg, ds, ok2 = _sag_ds_t(s.R, r)
+        sg, ds, ok2 = _sag_ds_t(s.R, r, getattr(s,'conic',0.0), getattr(s,'asphere',()))
         radial = torch.where(r > 1e-14, (xx * dx + yy * dy) / r, torch.zeros_like(r))
         f = z + t * dz - s.z - sg
         df = dz - ds * radial
@@ -205,7 +216,11 @@ def _solve_input_t(surfs, ax: float, targets: torch.Tensor, stop_z: float = 0.0,
     return q, ok, err
 
 
-def _eikonal_t(surfs, ax: float, uv: torch.Tensor, ref, film: float = E.FILM, stop_radius: float = E.STOP_R):
+def _eikonal_t(surfs, ax: float, uv: torch.Tensor, ref, film: float | None = None, stop_radius: float | None = None):
+    if film is None:
+        film = E.FILM
+    if stop_radius is None:
+        stop_radius = E.STOP_R
     inside = torch.sum(uv * uv, dim=1) <= 1.0
     targets = uv * stop_radius
     q = torch.full_like(uv, float("nan"))
