@@ -5,10 +5,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "alpha-lense-stage0-tests015-20260918",
+  "log_tail": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/alpha-lense-stage0-tests015-20260918/src/validation/alpha_lense_stage0_parser_tests.py\", line 79, in <module>\n    assert abs(_num('4,32')-4.32)<1e-12\n               ~~~~~~~~~~~~^~~~~\nTypeError: unsupported operand type(s) for -: 'NoneType' and 'float'",
   "memory_gb": 0,
+  "pid": 2061423,
   "request_sha256": "fe09aa58f1973597c0b03e25a665a4bd5083cc4ab324c88264a261e0d0e2bf92",
   "schema": 1,
   "started_at": 1789720645.6573188,
   "state": "running",
-  "timeout_sec": 600
+  "timeout_sec": 600,
+  "updated_at": 1789720647.553088
 }
