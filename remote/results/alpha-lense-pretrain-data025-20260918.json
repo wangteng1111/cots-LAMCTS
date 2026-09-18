@@ -24,10 +24,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "alpha-lense-pretrain-data025-20260918",
+  "log_tail": "{\"stage\": 0, \"complete\": {\"attempted\": 64, \"reconstructed\": 64, \"quarantine\": 0, \"workers\": 0, \"source\": \"canonical_file\", \"source_path\": \"/var/lib/cots-lamcts/alpha_lense/stage0/p2p-prod-v04/stage0_seeds.jsonl\"}}",
   "memory_gb": 0,
+  "pid": 2064908,
   "request_sha256": "f803ec018db0b53b5a7cb046429050bd561e01b7e952d4830344400a2a961640",
   "schema": 1,
   "started_at": 1789721800.2132473,
   "state": "running",
-  "timeout_sec": 14400
+  "timeout_sec": 14400,
+  "updated_at": 1789721802.1265714
 }
