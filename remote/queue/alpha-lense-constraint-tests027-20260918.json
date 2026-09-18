@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "job_id": "alpha-lense-constraint-tests027-20260918",
+  "code_commit": "f767e878de2480d6119635f2a613b268d0dddab0",
+  "entrypoint": "validation/alpha_lense_constraint_rank_tests.py",
+  "args": [],
+  "timeout_sec": 600,
+  "memory_gb": 0
+}
