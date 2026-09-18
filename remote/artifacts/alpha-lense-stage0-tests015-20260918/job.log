@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/alpha-lense-stage0-tests015-20260918/src/validation/alpha_lense_stage0_parser_tests.py", line 79, in <module>
+    assert abs(_num('4,32')-4.32)<1e-12
+               ~~~~~~~~~~~~^~~~~
+TypeError: unsupported operand type(s) for -: 'NoneType' and 'float'
