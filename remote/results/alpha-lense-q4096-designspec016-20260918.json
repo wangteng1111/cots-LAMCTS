@@ -1,0 +1,16 @@
+{
+  "args": [
+    "validation/alpha_lense_prescription_q4096_tests.py"
+  ],
+  "code_commit": "9af183d7c44cddea1556d4490da52fd93e79e9ac",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "alpha-lense-q4096-designspec016-20260918",
+  "memory_gb": 0,
+  "request_sha256": "46d487d3746552436801af3340b78c4a1e5b3afe1e8793c541c90154b396f70a",
+  "schema": 1,
+  "started_at": 1789720854.5821192,
+  "state": "running",
+  "timeout_sec": 1800
+}
