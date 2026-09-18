@@ -9,17 +9,37 @@
     "p2p-prod-v03"
   ],
   "code_commit": "374c4094db3fbd0cdaaf8cf481affe3a64316fc1",
+  "elapsed_sec": 41.288094997406006,
   "entrypoint": "scripts/alpha_lense_stage0_2_cuda_exec.py",
   "env": {},
+  "finished_at": 1789721062.8786123,
   "hostname": "aipss-Rack-Server",
   "job_id": "alpha-lense-stage0-persist017-20260918",
-  "log_tail": "",
+  "log_tail": "{\"stage\": 0, \"done\": 50, \"total\": 1384, \"reconstructed\": 41, \"quarantine\": 9}\n{\"stage\": 0, \"done\": 100, \"total\": 1384, \"reconstructed\": 58, \"quarantine\": 42}\n{\"stage\": 0, \"done\": 150, \"total\": 1384, \"reconstructed\": 107, \"quarantine\": 43}\n{\"stage\": 0, \"done\": 200, \"total\": 1384, \"reconstructed\": 156, \"quarantine\": 44}\n{\"stage\": 0, \"done\": 250, \"total\": 1384, \"reconstructed\": 204, \"quarantine\": 46}\n{\"stage\": 0, \"done\": 300, \"total\": 1384, \"reconstructed\": 254, \"quarantine\": 46}\n{\"stage\": 0, \"done\": 350, \"total\": 1384, \"reconstructed\": 303, \"quarantine\": 47}\n{\"stage\": 0, \"done\": 400, \"total\": 1384, \"reconstructed\": 353, \"quarantine\": 47}\n{\"stage\": 0, \"done\": 450, \"total\": 1384, \"reconstructed\": 402, \"quarantine\": 48}\n{\"stage\": 0, \"done\": 500, \"total\": 1384, \"reconstructed\": 450, \"quarantine\": 50}\n{\"stage\": 0, \"done\": 550, \"total\": 1384, \"reconstructed\": 498, \"quarantine\": 52}\n{\"stage\": 0, \"done\": 600, \"total\": 1384, \"reconstructed\": 548, \"quarantine\": 52}\n{\"stage\": 0, \"done\": 650, \"total\": 1384, \"reconstructed\": 595, \"quarantine\": 55}\n{\"stage\": 0, \"done\": 700, \"total\": 1384, \"reconstructed\": 645, \"quarantine\": 55}\n{\"stage\": 0, \"done\": 750, \"total\": 1384, \"reconstructed\": 694, \"quarantine\": 56}\n{\"stage\": 0, \"done\": 800, \"total\": 1384, \"reconstructed\": 744, \"quarantine\": 56}\n{\"stage\": 0, \"done\": 850, \"total\": 1384, \"reconstructed\": 794, \"quarantine\": 56}\n{\"stage\": 0, \"done\": 900, \"total\": 1384, \"reconstructed\": 839, \"quarantine\": 61}\n{\"stage\": 0, \"done\": 950, \"total\": 1384, \"reconstructed\": 888, \"quarantine\": 62}\n{\"stage\": 0, \"done\": 1000, \"total\": 1384, \"reconstructed\": 937, \"quarantine\": 63}\n{\"stage\": 0, \"done\": 1050, \"total\": 1384, \"reconstructed\": 984, \"quarantine\": 66}\n{\"stage\": 0, \"done\": 1100, \"total\": 1384, \"reconstructed\": 1034, \"quarantine\": 66}\n{\"stage\": 0, \"done\": 1150, \"total\": 1384, \"reconstructed\": 1080, \"quarantine\": 70}\n{\"stage\": 0, \"done\": 1200, \"total\": 1384, \"reconstructed\": 1130, \"quarantine\": 70}\n{\"stage\": 0, \"done\": 1250, \"total\": 1384, \"reconstructed\": 1179, \"quarantine\": 71}\n{\"stage\": 0, \"done\": 1300, \"total\": 1384, \"reconstructed\": 1227, \"quarantine\": 73}\n{\"stage\": 0, \"done\": 1350, \"total\": 1384, \"reconstructed\": 1276, \"quarantine\": 74}\n{\"stage\": 0, \"complete\": {\"attempted\": 1384, \"reconstructed\": 1300, \"quarantine\": 84, \"workers\": 32, \"source\": \"p2p_manifest\"}}\n{\"stage\": 0, \"status\": \"finished_stage0_only\"}",
   "memory_gb": 0,
   "pid": 2062618,
   "request_sha256": "e9acd9e52221d2094f57fc10664b4555fd68e3f90adaf4197ac86528dc94a432",
+  "returncode": 0,
   "schema": 1,
   "started_at": 1789721021.5905173,
-  "state": "running",
+  "state": "finished",
   "timeout_sec": 7200,
-  "updated_at": 1789721023.5256176
+  "updated_at": 1789721023.5256176,
+  "uploaded_artifacts": [
+    {
+      "path": "stage0_quarantine.jsonl",
+      "size": 35184,
+      "uploaded": true
+    },
+    {
+      "path": "stage0_seeds.jsonl",
+      "size": 5053004,
+      "uploaded": true
+    },
+    {
+      "path": "stage0_summary.json",
+      "size": 113,
+      "uploaded": true
+    }
+  ]
 }
