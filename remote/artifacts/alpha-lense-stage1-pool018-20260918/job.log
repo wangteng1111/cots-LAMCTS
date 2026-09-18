@@ -1,0 +1,4 @@
+{"stage": 0, "complete": {"attempted": 8, "reconstructed": 8, "quarantine": 0, "workers": 0, "source": "canonical_file", "source_path": "/var/lib/cots-lamcts/alpha_lense/stage0/p2p-prod-v03/stage0_seeds.jsonl"}}
+{"stage": 1, "smoke_records": 4, "status": "passed", "pool_capacity": 2}
+{"stage": 1, "seeds_done": 8, "seeds_total": 8, "physics_records": 16, "pool_capacity": 2}
+{"schema": 4, "stage0_reconstructed": 8, "stage0_quarantine": 0, "stage1_physics_records": 16, "stage2_targets": 16, "splits": {"train": 14, "val": 2, "test": 0}, "training_started": false, "run_id": "stage1-pool018"}
