@@ -23,8 +23,8 @@ def fetch_parse(r):
 def seed_record(p):
  return {
   'schema':1,'source_id':p.source_id,'family':p.family,'optical_hash':p.optical_hash(),
-  'stop_after':p.stop_after,'design_spec':p.design_spec,'provenance':p.provenance,
-  'surfaces':[asdict(s) for s in p.surfaces],
+  'stop_after':p.stop_after,'stop_z_mm':p.stop_z_mm,'image_z_mm':p.image_z_mm,'source_config_index':p.source_config_index,
+  'design_spec':p.design_spec,'provenance':p.provenance,'surfaces':[asdict(s) for s in p.surfaces],
  }
 
 def _write_jsonl(path,rows):
