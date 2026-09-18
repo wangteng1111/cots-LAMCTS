@@ -5,10 +5,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "alpha-lense-stage0-tests014-20260918",
+  "log_tail": "  File \"/var/lib/cots-lamcts/jobs/alpha-lense-stage0-tests014-20260918/src/validation/alpha_lense_stage0_parser_tests.py\", line 78\n    from alpha_lense.stage_pipeline_v01 import _num\\nassert abs(_num('4,32')-4.32)<1e-12\\nprint({'status':'passed','fixed_surfaces':len(p.surfaces),'zoom_surfaces':len(q.surfaces),'stop_z':p.stop_z_mm})\n                                                    ^\nSyntaxError: unexpected character after line continuation character",
   "memory_gb": 0,
+  "pid": 2061048,
   "request_sha256": "62cff310dd5c8f4ca197dad44078f4da35f2d1f59ae23fcf16dc438b1cc4beb9",
   "schema": 1,
   "started_at": 1789720561.2328935,
   "state": "running",
-  "timeout_sec": 600
+  "timeout_sec": 600,
+  "updated_at": 1789720563.3880253
 }
