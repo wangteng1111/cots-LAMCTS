@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "job_id": "alpha-lense-stage1-full030-20260922",
+  "code_commit": "f767e878de2480d6119635f2a613b268d0dddab0",
+  "entrypoint": "scripts/alpha_lense_stage0_2_cuda_exec.py",
+  "args": [
+    "--out",
+    "data/alpha_lense/stage1_full030",
+    "--stage0-from",
+    "/var/lib/cots-lamcts/alpha_lense/stage0/p2p-prod-v04/stage0_seeds.jsonl",
+    "--perturb-per-seed",
+    "100",
+    "--smoke-seeds",
+    "2",
+    "--smoke-perturb",
+    "2",
+    "--gpus",
+    "0,1",
+    "--workers-per-gpu",
+    "1",
+    "--run-id",
+    "alpha-lense-stage1-full-v01"
+  ],
+  "timeout_sec": 172800,
+  "memory_gb": 0
+}
