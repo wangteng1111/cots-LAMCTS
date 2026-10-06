@@ -20,7 +20,7 @@
   ],
   "hostname": "aipss-Rack-Server",
   "loadavg": [
-    0.0556640625,
+    0.08984375,
     0.1474609375,
     0.12548828125
   ],
@@ -30,5 +30,5 @@
   "results_branch": "workstation-results",
   "running_job": null,
   "schema": 1,
-  "timestamp": 1791312783.2843273
+  "timestamp": 1791312813.3539011
 }
