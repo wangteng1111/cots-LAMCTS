@@ -5,9 +5,9 @@
   "gpu": [],
   "hostname": "aipss-Rack-Server",
   "loadavg": [
-    0.13427734375,
-    0.06494140625,
-    0.0126953125
+    0.22021484375,
+    0.09130859375,
+    0.02197265625
   ],
   "python": "/usr/bin/python3",
   "python_version": "3.12.3",
@@ -15,5 +15,5 @@
   "results_branch": "workstation-results",
   "running_job": null,
   "schema": 1,
-  "timestamp": 1791620212.122131
+  "timestamp": 1791620235.5689163
 }
