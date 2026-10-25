@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1792953395.0217633,
+  "code_commit": "1c2325da38b5bd7af478c7a9c2fc2ce221e41c6e",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm02-megagrid-convergence-20261026-01",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/qfilm02-megagrid-convergence-20261026-01.json",
+  "request_sha256": "42e57bb77db030e6879cb42f22711f44c7dafd5c5395d4974f8caf4361b60da8",
+  "schema": 1,
+  "state": "claimed"
+}
