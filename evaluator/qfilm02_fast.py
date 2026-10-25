@@ -280,7 +280,9 @@ def evaluate(p,config:Config=Config(),device='cpu'):
     # Unsupported high-order aspheres also fall back rather than silently truncating.
     tmp_surfs=_surfaces_at(src,config.wavelengths_nm[0])
     high_order=any(any(abs(float(v))>0 for v in tuple(sf.asphere)[4:]) for sf in tmp_surfs)
-    if device.type!='cuda' or any(sf.z<float(stop_z)-1e-9 for sf in tmp_surfs) or high_order:
+    import os
+    front_group=any(sf.z<float(stop_z)-1e-9 for sf in tmp_surfs)
+    if device.type!='cuda' or (front_group and os.environ.get('QFILM_TEST_FUSED_INTERNAL')!='1') or high_order:
         result=torch_reference_evaluate(p,config,device=device)
         result['backend_mode']='torch_reference_internal_stop_or_unsupported'
         return result
