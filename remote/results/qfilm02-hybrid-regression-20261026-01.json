@@ -1,0 +1,17 @@
+{
+  "args": [
+    "scripts/qfilm02_triton_bootstrap.py",
+    "qfilm02_accelerated.py"
+  ],
+  "code_commit": "5d48e9bdad1d7fd27f2d82acd4c90de2dbd461c1",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm02-hybrid-regression-20261026-01",
+  "memory_gb": 0,
+  "request_sha256": "4d1cf924bfa63850dab19a72575d90abf26d5fe3e0f59c5b99ae3ec0e62525cf",
+  "schema": 1,
+  "started_at": 1792953585.8725193,
+  "state": "running",
+  "timeout_sec": 1800
+}
