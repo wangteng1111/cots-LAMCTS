@@ -7,10 +7,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm02-environment-probe-20261026-01",
+  "log_tail": "{\n  \"python\": \"/var/lib/cots-lamcts/venv/bin/python\",\n  \"python_version\": \"3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]\",\n  \"sysconfig_include\": \"/usr/include/python3.12\",\n  \"env_cache\": {\n    \"PYTHONUNBUFFERED\": \"1\"\n  },\n  \"nvcc\": null,\n  \"gcc\": \"/usr/bin/gcc\",\n  \"common_dev_headers\": [],\n  \"cuda_headers\": [],\n  \"python_h_locations\": []\n}",
   "memory_gb": 0,
+  "pid": 3603937,
   "request_sha256": "4cdf209cbec3e18334c5bd10f5c80ab1a76a1ccbea6a822a9da64471dea13b67",
   "schema": 1,
   "started_at": 1792952005.181619,
   "state": "running",
-  "timeout_sec": 180
+  "timeout_sec": 180,
+  "updated_at": 1792952007.533266
 }
