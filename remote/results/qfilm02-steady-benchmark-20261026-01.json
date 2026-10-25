@@ -1,0 +1,17 @@
+{
+  "args": [
+    "scripts/qfilm02_triton_bootstrap.py",
+    "qfilm02_steady_benchmark.py"
+  ],
+  "code_commit": "a0217f7d411517c35c68bd93332734f095f669f8",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm02-steady-benchmark-20261026-01",
+  "memory_gb": 0,
+  "request_sha256": "ed67ca80146ae0754e58672ff069b6ab5d9ae90893ee6271f8b1636d71471f0f",
+  "schema": 1,
+  "started_at": 1792953653.9085076,
+  "state": "running",
+  "timeout_sec": 1800
+}
