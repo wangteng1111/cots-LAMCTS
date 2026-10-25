@@ -8,10 +8,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm02-triton-internalstop-opt-20261026-01",
+  "log_tail": "APT_SHOW\nCOMMAND ['apt-cache', 'policy', 'libpython3.12-dev'] RC 0 stdout libpython3.12-dev:\n  Installed: (none)\n  Candidate: 3.12.3-1ubuntu0.17\n  Version table:\n     3.12.3-1ubuntu0.17 500\n        500 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages\n        500 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages\n     3.12.3-1 500\n        500 http://us.archive.ubuntu.com/ubuntu noble/main amd64 Packages\n stderr ",
   "memory_gb": 0,
+  "pid": 3606687,
   "request_sha256": "cb5d1179b9d2541a95e7d19a2ab4b7ad8b29b4c7c56a4be5f8b57b1da7609153",
   "schema": 1,
   "started_at": 1792952685.4821749,
   "state": "running",
-  "timeout_sec": 1800
+  "timeout_sec": 1800,
+  "updated_at": 1792952687.708082
 }
