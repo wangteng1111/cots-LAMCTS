@@ -4,17 +4,27 @@
     "qfilm02_steady_benchmark.py"
   ],
   "code_commit": "a0217f7d411517c35c68bd93332734f095f669f8",
+  "elapsed_sec": 18.37223792076111,
   "entrypoint": "scripts/cuda_venv_exec.py",
   "env": {},
+  "finished_at": 1792953672.2807455,
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm02-steady-benchmark-20261026-01",
-  "log_tail": "PYTHON_HEADERS_CACHE_HIT /var/lib/cots-lamcts/qfilm02_build_deps/unpacked/usr/include/python3.12\nAVAILABLE_PYTHON_HEADER /var/lib/cots-lamcts/qfilm02_build_deps/unpacked/usr/include/python3.12",
+  "log_tail": "PYTHON_HEADERS_CACHE_HIT /var/lib/cots-lamcts/qfilm02_build_deps/unpacked/usr/include/python3.12\nAVAILABLE_PYTHON_HEADER /var/lib/cots-lamcts/qfilm02_build_deps/unpacked/usr/include/python3.12\n/var/lib/cots-lamcts/jobs/qfilm02-steady-benchmark-20261026-01/src/evaluator/qfilm02.py:193: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /var/lib/cots-lamcts/qfilm02_build_deps/xdg_cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)\nSTEADY {\"pupil_n\": 64, \"fields\": 100, \"wavelengths\": 7, \"torch_median_s\": 0.7826988250017166, \"triton_median_s\": 0.05577762611210346, \"speedup\": 14.032487209631801, \"torch_samples_s\": [0.7810746803879738, 0.7852916643023491, 0.7843229696154594, 0.7803897336125374], \"triton_samples_s\": [0.05578271485865116, 0.05577253736555576, 0.055834236554801464, 0.05576095171272755], \"max_Q_abs\": 1.0658141036401503e-11, \"J_abs\": 8.304468224196171e-14}\nSTEADY {\"pupil_n\": 128, \"fields\": 100, \"wavelengths\": 7, \"torch_median_s\": 0.847996648401022, \"triton_median_s\": 0.17771547939628363, \"speedup\": 4.771653270056987, \"torch_samples_s\": [0.7878759140148759, 0.8456318052485585, 0.8538953028619289, 0.8503614915534854], \"triton_samples_s\": [0.17707587592303753, 0.17767032515257597, 0.1778252301737666, 0.17776063363999128], \"max_Q_abs\": 1.0658141036401503e-11, \"J_abs\": 6.927791673660977e-14}",
   "memory_gb": 0,
   "pid": 3610909,
   "request_sha256": "ed67ca80146ae0754e58672ff069b6ab5d9ae90893ee6271f8b1636d71471f0f",
+  "returncode": 0,
   "schema": 1,
   "started_at": 1792953653.9085076,
-  "state": "running",
+  "state": "finished",
   "timeout_sec": 1800,
-  "updated_at": 1792953656.5996568
+  "updated_at": 1792953656.5996568,
+  "uploaded_artifacts": [
+    {
+      "path": "qfilm02_steady_benchmark.json",
+      "size": 1265,
+      "uploaded": true
+    }
+  ]
 }
