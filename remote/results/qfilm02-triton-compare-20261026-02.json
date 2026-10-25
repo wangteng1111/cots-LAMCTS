@@ -7,10 +7,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm02-triton-compare-20261026-02",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 3603593,
   "request_sha256": "8012b8a6d476f319633e0a45d8e6d458d9fca64e5d406ed51f7678a79a50462c",
   "schema": 1,
   "started_at": 1792951927.7421339,
   "state": "running",
-  "timeout_sec": 1800
+  "timeout_sec": 1800,
+  "updated_at": 1792951929.900772
 }
