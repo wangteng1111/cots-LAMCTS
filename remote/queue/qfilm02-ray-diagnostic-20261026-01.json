@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "job_id": "qfilm02-ray-diagnostic-20261026-01",
+  "code_commit": "d877ca907154dce502770f3adc28c0bb91ca1266",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "scripts/qfilm02_triton_bootstrap.py",
+    "qfilm02_ray_diagnostic.py"
+  ],
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
