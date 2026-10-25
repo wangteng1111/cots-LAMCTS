@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "qfilm02-convergence-20261026-01",
+  "code_commit": "51f24858308172d2d0a07b877e9f8c11e0b407e8",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm02_convergence.py"
+  ],
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
