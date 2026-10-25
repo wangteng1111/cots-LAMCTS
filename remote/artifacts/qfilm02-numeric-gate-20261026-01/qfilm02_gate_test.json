@@ -1,0 +1,16 @@
+{
+  "schema": "qfilm02-label-gate-v1",
+  "identical_case": true,
+  "large_error_rejected": true,
+  "real_prescription_gate": {
+    "pupil_n": 64,
+    "checked_levels": [
+      32,
+      64
+    ],
+    "numerically_converged": false,
+    "physics_certified": false,
+    "training_eligible": false,
+    "reason": "exit_pupil_huygens_spectral_and_rigorous_psf_validation_required"
+  }
+}
