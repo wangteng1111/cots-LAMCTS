@@ -7,10 +7,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm02-numeric-gate-20261026-01",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 3607418,
   "request_sha256": "3fad3113b4976d1f1ba0d43804be9e879407d0a63a6db83b643b5a11f6241b99",
   "schema": 1,
   "started_at": 1792952935.192402,
   "state": "running",
-  "timeout_sec": 300
+  "timeout_sec": 300,
+  "updated_at": 1792952937.458544
 }
