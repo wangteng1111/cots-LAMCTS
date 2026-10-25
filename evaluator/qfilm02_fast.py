@@ -17,6 +17,7 @@ import numpy as np
 import torch
 from evaluator.optical_primitives import Surf, cardinal, front_matrix, cauchy_from_ne_ve
 from evaluator.qfilm02_triton import trace_wavelengths
+from evaluator.qfilm02 import evaluate as torch_reference_evaluate
 
 VERSION = 'Qfilm0.2-fused-triton-provisional-v2'
 FREQS = (5., 10., 15., 20., 30., 40., 50., 60., 70., 80.)
@@ -274,6 +275,15 @@ def evaluate(p,config:Config=Config(),device='cpu'):
     sd=spec.get('stop_diameter_mm')
     if sd is None or sd<=0:raise ValueError('explicit stop_diameter_mm required')
     stop_r=float(sd)/2.
+    # Hybrid backend: fused per-ray CUDA is validated and faster for a front stop.
+    # Stop-behind-surfaces inversion remains faster in the reference Torch backend.
+    # Unsupported high-order aspheres also fall back rather than silently truncating.
+    tmp_surfs=_surfaces_at(src,config.wavelengths_nm[0])
+    high_order=any(any(abs(float(v))>0 for v in tuple(sf.asphere)[4:]) for sf in tmp_surfs)
+    if device.type!='cuda' or any(sf.z<float(stop_z)-1e-9 for sf in tmp_surfs) or high_order:
+        result=torch_reference_evaluate(p,config,device=device)
+        result['backend_mode']='torch_reference_internal_stop_or_unsupported'
+        return result
     uv,inside=pupil_grid(config.pupil_n,device)
     field_h=np.linspace(0,1,config.fields)
     rmax=math.hypot(config.frame_width_mm,config.frame_height_mm)/2
