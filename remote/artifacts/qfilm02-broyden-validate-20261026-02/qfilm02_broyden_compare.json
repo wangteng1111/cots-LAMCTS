@@ -1,0 +1,63 @@
+{
+  "schema": "qfilm02-broyden-test-v1",
+  "passed": true,
+  "cases": [
+    {
+      "name": "internal_5fields_32",
+      "fields": 5,
+      "pupil": 32,
+      "wavelengths": 3,
+      "reference_secs": 2.575643979012966,
+      "fast_secs": 3.327794387936592,
+      "Q_image_max_abs": 2.1316282072803006e-11,
+      "Q_image_mean_abs": 7.098823888744207e-13,
+      "Q_image_valid": true,
+      "Q_wavefront_max_abs": 8.075033974819235e-10,
+      "Q_wavefront_mean_abs": 1.4088071896123102e-10,
+      "Q_wavefront_valid": true,
+      "J_ref": 57.3404265080119,
+      "J_fast": 57.340426508011745,
+      "J_abs": 1.5631940186722204e-13,
+      "speedup": 0.7739793024322038,
+      "passed": true
+    },
+    {
+      "name": "internal_15fields_64",
+      "fields": 15,
+      "pupil": 64,
+      "wavelengths": 3,
+      "reference_secs": 2.7285610027611256,
+      "fast_secs": 4.61178130377084,
+      "Q_image_max_abs": 2.1316282072803006e-11,
+      "Q_image_mean_abs": 6.408788883945827e-13,
+      "Q_image_valid": true,
+      "Q_wavefront_max_abs": 5.020410753786564e-10,
+      "Q_wavefront_mean_abs": 8.117195029784954e-11,
+      "Q_wavefront_valid": true,
+      "J_ref": 58.621356371559465,
+      "J_fast": 58.621356371559365,
+      "J_abs": 9.947598300641403e-14,
+      "speedup": 0.5916501288840621,
+      "passed": true
+    },
+    {
+      "name": "front_100fields_64",
+      "fields": 100,
+      "pupil": 64,
+      "wavelengths": 7,
+      "reference_secs": 1.639380776323378,
+      "fast_secs": 0.6189866587519646,
+      "Q_image_max_abs": 1.0658141036401503e-11,
+      "Q_image_mean_abs": 4.0598707223188895e-13,
+      "Q_image_valid": true,
+      "Q_wavefront_max_abs": 1.0370513336965814e-09,
+      "Q_wavefront_mean_abs": 5.1544608567943056e-11,
+      "Q_wavefront_valid": true,
+      "J_ref": 2.452306911646,
+      "J_fast": 2.4523069116459224,
+      "J_abs": 7.771561172376096e-14,
+      "speedup": 2.6484912932191285,
+      "passed": true
+    }
+  ]
+}
