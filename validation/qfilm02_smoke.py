@@ -3,6 +3,9 @@
 from __future__ import annotations
 import argparse, json, math, os, time
 from pathlib import Path
+import sys
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path: sys.path.insert(0, str(ROOT))
 import numpy as np
 import torch
 from evaluator.qfilm02 import Config, FREQS, area_weights, compact_json, evaluate, fft_pupil_metrics, pupil_grid, score_image, _sag_and_grad, VERSION
