@@ -11,6 +11,7 @@ import torch
 import triton
 import triton.language as tl
 from evaluator.qfilm02 import _surfaces_at
+from evaluator.optical_primitives import front_matrix
 
 @triton.jit
 def _sag(r, c, conic, a4, a6, a8, a10):
@@ -85,7 +86,7 @@ def _at_stop(sx,sy,angcos,angsin,params,wi,ZS:tl.constexpr,ZSTOP:tl.constexpr,NS
 @triton.jit
 def _fused_rays(U,V,ANGLES,PARAMS,OUT_X,OUT_Y,OUT_Z,OUT_OPL,OUT_FX,OUT_FY,OUT_VALID,
                 NP:tl.constexpr,NF:tl.constexpr,NW:tl.constexpr,NS:tl.constexpr,NFRONT:tl.constexpr,
-                ZS:tl.constexpr,ZSTOP:tl.constexpr,STOPR:tl.constexpr,FILM:tl.constexpr,BLOCK:tl.constexpr):
+                ZS:tl.constexpr,ZSTOP:tl.constexpr,STOPR:tl.constexpr,FILM:tl.constexpr,START_A:tl.constexpr,START_B:tl.constexpr,START_D:tl.constexpr,BLOCK:tl.constexpr):
     j=tl.program_id(0)*BLOCK+tl.arange(0,BLOCK)
     # Include exactly one additional pupil sample per field/wavelength for chief ray.
     group_size=NP+1
@@ -98,11 +99,15 @@ def _fused_rays(U,V,ANGLES,PARAMS,OUT_X,OUT_Y,OUT_Z,OUT_OPL,OUT_FX,OUT_FY,OUT_VA
     angle=tl.load(ANGLES+fi,mask=mask,other=0.)
     cosa=tl.cos(angle);sina=tl.sin(angle)
     tarx=STOPR*uf;tary=STOPR*vf
-    sx=tarx-(ZSTOP-ZS)*sina/tl.maximum(cosa,1e-12)
-    sy=tary
+    if NFRONT>0 and tl.abs(START_A)>1e-6:
+        sx=(tarx-(START_A*START_D+START_B)*sina/tl.maximum(cosa,1e-12))/START_A
+        sy=tary/START_A
+    else:
+        sx=tarx-(ZSTOP-ZS)*sina/tl.maximum(cosa,1e-12)
+        sy=tary
     valid=tl.full((BLOCK,),True,tl.int1)
     if NFRONT>0:
-        for _ in range(6):
+        for _ in range(4):
             fx,fy,v0=_at_stop(sx,sy,cosa,sina,PARAMS,wi,ZS,ZSTOP,NS,NFRONT)
             h=1e-3
             fxx,fyx,vx=_at_stop(sx+h,sy,cosa,sina,PARAMS,wi,ZS,ZSTOP,NS,NFRONT)
@@ -151,6 +156,10 @@ def trace_wavelengths(src, waves, angles, uv, stop_z, stop_r, film_z):
     ns=len(surfaces[0]);nf=len(angles);nw=len(waves)
     nfront=sum(s.z<stop_z-1e-9 for s in surfaces[0])
     zstart=min(float(stop_z),surfaces[0][0].z)-20.
+    fm=front_matrix(surfaces[0],float(stop_z)) if nfront>0 else None
+    A0=float(fm[0,0]) if fm is not None else 1.
+    B0=float(fm[0,1]) if fm is not None else 0.
+    D0=float(surfaces[0][0].z-zstart)
     arr=np.zeros((nw,ns,12),np.float64)
     for w,surfs in enumerate(surfaces):
         for s,sf in enumerate(surfs):
@@ -166,6 +175,6 @@ def trace_wavelengths(src, waves, angles, uv, stop_z, stop_r, film_z):
     out=[torch.empty(n,dtype=torch.float64,device=device) for _ in range(6)]
     valid=torch.empty(n,dtype=torch.bool,device=device)
     _fused_rays[(triton.cdiv(n,128),)](uf,vf,angles,par,*out,valid,
-        npup,nf,nw,ns,nfront,zstart,float(stop_z),float(stop_r),float(film_z),128,num_warps=4)
+        npup,nf,nw,ns,nfront,zstart,float(stop_z),float(stop_r),float(film_z),A0,B0,D0,128,num_warps=4)
     # Kernel output order is X,Y,Z,OPL,FX,FY. Public API is Z,X,Y,OPL,FX,FY.
     return tuple(t.reshape(nw,nf,npup+1) for t in (out[2],out[0],out[1],out[3],out[4],out[5],valid))
