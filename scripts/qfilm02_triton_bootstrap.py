@@ -26,4 +26,4 @@ os.environ["CPATH"]=str(inc)+os.pathsep+str(rootinc)+os.pathsep+os.environ.get("
 print("AVAILABLE_PYTHON_HEADER",str(inc),flush=True)
 # Python header follows expected ABI; now execute suite without spawning Python.
 from runpy import run_path
-run_path(str(Path(__file__).parents[1]/"validation"/"qfilm02_accelerated.py"),run_name="__main__")
+run_path(str(Path(__file__).parents[1]/"validation"/(sys.argv[1] if len(sys.argv)>1 else "qfilm02_accelerated.py")),run_name="__main__")
