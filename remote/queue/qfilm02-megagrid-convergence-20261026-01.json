@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "qfilm02-megagrid-convergence-20261026-01",
+  "code_commit": "1c2325da38b5bd7af478c7a9c2fc2ce221e41c6e",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm02_megagrid_convergence.py"
+  ],
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
