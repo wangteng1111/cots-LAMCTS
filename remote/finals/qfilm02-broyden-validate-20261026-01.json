@@ -1,0 +1,27 @@
+{
+  "args": [
+    "scripts/qfilm02_triton_bootstrap.py",
+    "qfilm02_broyden_test.py"
+  ],
+  "bridge_version": "0.5.0",
+  "code_commit": "d8bf6f3292c2431c78232796ef0f3831d3a08304",
+  "elapsed_sec": 10.037527084350586,
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "finished_at": 1792953265.659242,
+  "hostname": "aipss-Rack-Server",
+  "immutable_job_id": true,
+  "job_id": "qfilm02-broyden-validate-20261026-01",
+  "log_tail": "APT_SHOW\nCOMMAND ['apt-cache', 'policy', 'libpython3.12-dev'] RC 0 stdout libpython3.12-dev:\n  Installed: (none)\n  Candidate: 3.12.3-1ubuntu0.17\n  Version table:\n     3.12.3-1ubuntu0.17 500\n        500 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages\n        500 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages\n     3.12.3-1 500\n        500 http://us.archive.ubuntu.com/ubuntu noble/main amd64 Packages\n stderr \nCOMMAND ['apt', 'download', 'libpython3.12-dev'] RC 0 stdout Get:1 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12-dev amd64 3.12.3-1ubuntu0.17 [5,684 kB]\nFetched 5,684 kB in 4s (1,412 kB/s)\n stderr \nWARNING: apt does not have a stable CLI interface. Use with caution in scripts.\n\n\nCOMMAND ['dpkg-deb', '-x', '/var/lib/cots-lamcts/jobs/qfilm02-broyden-validate-20261026-01/artifacts/python_headers/libpython3.12-dev_3.12.3-1ubuntu0.17_amd64.deb', '/var/lib/cots-lamcts/jobs/qfilm02-broyden-validate-20261026-01/artifacts/python_headers/unpacked'] RC 0 stdout  stderr \nAVAILABLE_PYTHON_HEADER /var/lib/cots-lamcts/jobs/qfilm02-broyden-validate-20261026-01/artifacts/python_headers/unpacked/usr/include/python3.12\nTraceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/qfilm02-broyden-validate-20261026-01/src/scripts/qfilm02_triton_bootstrap.py\", line 29, in <module>\n    run_path(str(Path(__file__).parents[1]/\"validation\"/(sys.argv[1] if len(sys.argv)>1 else \"qfilm02_accelerated.py\")),run_name=\"__main__\")\n  File \"<frozen runpy>\", line 286, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/var/lib/cots-lamcts/jobs/qfilm02-broyden-validate-20261026-01/src/validation/qfilm02_broyden_test.py\", line 7, in <module>\n    from validation.qfilm02_accelerated import one_case,thin_lens,rich_lens\nModuleNotFoundError: No module named 'validation'",
+  "memory_gb": 0,
+  "pid": 3609268,
+  "request_sha256": "0154ceb0f9f717926438fcfff6c668a23f43487d95a4492c9218c2cd61a063e7",
+  "retry_policy": "new_job_id_required",
+  "returncode": 1,
+  "schema": 1,
+  "started_at": 1792953255.6217148,
+  "state": "failed",
+  "timeout_sec": 1800,
+  "updated_at": 1792953258.0326066,
+  "uploaded_artifacts": []
+}
