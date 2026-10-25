@@ -107,7 +107,7 @@ def _fused_rays(U,V,ANGLES,PARAMS,OUT_X,OUT_Y,OUT_Z,OUT_OPL,OUT_FX,OUT_FY,OUT_VA
         sy=tary
     valid=tl.full((BLOCK,),True,tl.int1)
     if NFRONT>0:
-        for _ in range(4):
+        for _ in range(2):
             fx,fy,v0=_at_stop(sx,sy,cosa,sina,PARAMS,wi,ZS,ZSTOP,NS,NFRONT)
             h=1e-3
             fxx,fyx,vx=_at_stop(sx+h,sy,cosa,sina,PARAMS,wi,ZS,ZSTOP,NS,NFRONT)
