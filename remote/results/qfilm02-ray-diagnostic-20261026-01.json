@@ -1,0 +1,17 @@
+{
+  "args": [
+    "scripts/qfilm02_triton_bootstrap.py",
+    "qfilm02_ray_diagnostic.py"
+  ],
+  "code_commit": "d877ca907154dce502770f3adc28c0bb91ca1266",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm02-ray-diagnostic-20261026-01",
+  "memory_gb": 0,
+  "request_sha256": "fa5b5be7c0270eb40b5311ad2d73348ac6e803daa77d8d18cf7fa6c8ffa6f33b",
+  "schema": 1,
+  "started_at": 1792952341.5404909,
+  "state": "running",
+  "timeout_sec": 1800
+}
