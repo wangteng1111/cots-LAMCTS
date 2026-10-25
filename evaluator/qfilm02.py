@@ -293,10 +293,11 @@ def evaluate(p,config:Config=Config(),device='cpu'):
     for start in range(0,config.fields,config.max_fields_per_chunk):
         end=min(config.fields,start+config.max_fields_per_chunk)
         angle=torch.tensor(field_angle[start:end],device=device,dtype=torch.float64)[:,None]
-        refs=[];sampled=[]
+        refs=[];sampled=[];chief_valid=[]
         for lam,surfs,fno,efl in wavelengths_data:
             chief=trace_pupil(surfs,angle,torch.zeros((1,2),device=device,dtype=torch.float64),float(stop_z),stop_r,float(film_z))
             refs.append((chief[4].squeeze(-1),chief[5].squeeze(-1)))
+            chief_valid.append(chief[6].squeeze(-1))
         for li,(lam,surfs,fno,efl) in enumerate(wavelengths_data):
             z,x,y,opl,xfilm,yfilm,valid=trace_pupil(surfs,angle,uv,float(stop_z),stop_r,float(film_z))
             rx,ry=refs[li]
@@ -335,7 +336,8 @@ def evaluate(p,config:Config=Config(),device='cpu'):
         obs[:,7:9]=encircled_energy(psfg,pitchg,(.5,.8)) * 1e3
         obs[:,9]=strehlg
         obs[:,10:20]=mtf[:,:,0];obs[:,20:30]=mtf[:,:,1]
-        obs[:,30]=(fill.min(dim=0).values>.20).double()
+        # A physically invalid chief ray invalidates the corresponding image field.
+        obs[:,30]=((fill.min(dim=0).values>.20) & torch.stack(chief_valid).all(dim=0)).double()
         obs[:,31]=bx
         wavem=torch.where(pupg,waveg,0.)
         count=pupg.sum((-1,-2),keepdim=True).clamp(min=1)
