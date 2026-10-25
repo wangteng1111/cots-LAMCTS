@@ -1,0 +1,17 @@
+{
+  "args": [
+    "scripts/qfilm02_triton_bootstrap.py",
+    "qfilm02_accelerated.py"
+  ],
+  "code_commit": "4976aa11ded57632edbcb9d5dd814a2d350423c2",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm02-triton-internalstop-opt-20261026-01",
+  "memory_gb": 0,
+  "request_sha256": "cb5d1179b9d2541a95e7d19a2ab4b7ad8b29b4c7c56a4be5f8b57b1da7609153",
+  "schema": 1,
+  "started_at": 1792952685.4821749,
+  "state": "running",
+  "timeout_sec": 1800
+}
