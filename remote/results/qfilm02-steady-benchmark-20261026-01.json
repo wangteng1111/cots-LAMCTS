@@ -8,10 +8,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm02-steady-benchmark-20261026-01",
+  "log_tail": "PYTHON_HEADERS_CACHE_HIT /var/lib/cots-lamcts/qfilm02_build_deps/unpacked/usr/include/python3.12\nAVAILABLE_PYTHON_HEADER /var/lib/cots-lamcts/qfilm02_build_deps/unpacked/usr/include/python3.12",
   "memory_gb": 0,
+  "pid": 3610909,
   "request_sha256": "ed67ca80146ae0754e58672ff069b6ab5d9ae90893ee6271f8b1636d71471f0f",
   "schema": 1,
   "started_at": 1792953653.9085076,
   "state": "running",
-  "timeout_sec": 1800
+  "timeout_sec": 1800,
+  "updated_at": 1792953656.5996568
 }
