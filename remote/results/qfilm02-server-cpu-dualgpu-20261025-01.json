@@ -3,17 +3,57 @@
     "scripts/qfilm02_server_validation.py"
   ],
   "code_commit": "760e290deaeb73b861e4b5229b6cb40b8a370e61",
+  "elapsed_sec": 22.36518931388855,
   "entrypoint": "scripts/cuda_venv_exec.py",
   "env": {},
+  "finished_at": 1792938397.6132987,
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm02-server-cpu-dualgpu-20261025-01",
-  "log_tail": "QFILM_BEGIN cpu",
+  "log_tail": "QFILM_BEGIN cpu\nQFILM_DONE cpu {\"device\": \"cpu\", \"elapsed_sec\": 9.773251010105014, \"returncode\": 0}\nQFILM_BEGIN cuda:0\nQFILM_DONE cuda:0 {\"device\": \"cuda:0\", \"elapsed_sec\": 4.629536031745374, \"returncode\": 0}\nQFILM_BEGIN cuda:1\nQFILM_DONE cuda:1 {\"device\": \"cuda:1\", \"elapsed_sec\": 4.521587924100459, \"returncode\": 0}\nQFILM_SUMMARY {\"passed\": true, \"comparisons\": {\"cuda:0\": {\"J_task_abs\": 5.329070518200751e-15, \"central_mtf_max_abs\": 1.2129186544029835e-13, \"edge_mtf_max_abs\": 2.0943143053120394e-13, \"gpu_faster_than_cpu\": 3.697823207256766}, \"cuda:1\": {\"J_task_abs\": 5.329070518200751e-15, \"central_mtf_max_abs\": 1.2129186544029835e-13, \"edge_mtf_max_abs\": 2.0943143053120394e-13, \"gpu_faster_than_cpu\": 3.808966248391495}}, \"devices\": [{\"device\": \"cpu\", \"returncode\": 0, \"error\": null}, {\"device\": \"cuda:0\", \"returncode\": 0, \"error\": null}, {\"device\": \"cuda:1\", \"returncode\": 0, \"error\": null}]}",
   "memory_gb": 0,
   "pid": 3559021,
   "request_sha256": "6420f6480ee892027e0593a4245390fb61d8ef9c1891fff4a9288910b5390b53",
+  "returncode": 0,
   "schema": 1,
   "started_at": 1792938375.2481093,
-  "state": "running",
+  "state": "finished",
   "timeout_sec": 1800,
-  "updated_at": 1792938377.710686
+  "updated_at": 1792938377.710686,
+  "uploaded_artifacts": [
+    {
+      "path": "qfilm02_cpu.log",
+      "size": 1675,
+      "uploaded": true
+    },
+    {
+      "path": "qfilm02_cpu_full.json",
+      "size": 1675,
+      "uploaded": true
+    },
+    {
+      "path": "qfilm02_cuda_0.log",
+      "size": 2178,
+      "uploaded": true
+    },
+    {
+      "path": "qfilm02_cuda_0_full.json",
+      "size": 1696,
+      "uploaded": true
+    },
+    {
+      "path": "qfilm02_cuda_1.log",
+      "size": 2179,
+      "uploaded": true
+    },
+    {
+      "path": "qfilm02_cuda_1_full.json",
+      "size": 1697,
+      "uploaded": true
+    },
+    {
+      "path": "qfilm02_server_summary.json",
+      "size": 7028,
+      "uploaded": true
+    }
+  ]
 }
