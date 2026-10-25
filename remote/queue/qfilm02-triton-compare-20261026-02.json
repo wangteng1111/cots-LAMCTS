@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "qfilm02-triton-compare-20261026-02",
+  "code_commit": "ead0225a5f900c82bbe585e3f37ed7a0ef926c4d",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm02_accelerated.py"
+  ],
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
