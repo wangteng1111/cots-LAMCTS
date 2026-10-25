@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "qfilm02-server-cpu-dualgpu-20261025-01",
+  "code_commit": "760e290deaeb73b861e4b5229b6cb40b8a370e61",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "scripts/qfilm02_server_validation.py"
+  ],
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
