@@ -30,7 +30,7 @@ def compare_qfilm(a,b,mtf_max_tol=.01,mtf_p95_tol=.005,j_tol=.002):
          and jd<=j_tol)
     return metrics
 
-def evaluate_multigrid(p,config,device="cuda:0",levels=(64,128,256,512),
+def evaluate_multigrid(p,config,device="cuda:0",levels=(64,128,256,512,1024),
                        evaluate_fn=None,mtf_max_tol=.01,mtf_p95_tol=.005,j_tol=.002):
     if evaluate_fn is None:
         from evaluator.qfilm02 import evaluate as evaluate_fn
@@ -40,7 +40,11 @@ def evaluate_multigrid(p,config,device="cuda:0",levels=(64,128,256,512),
         raise ValueError("pupil levels must be ascending and nonduplicated")
     results=[];checks=[]
     for n in levels:
-        cfg=replace(config,pupil_n=n,fft_n=max(n*4,config.fft_n))
+        # Bound per-field FFT memory: nfft=4*n, 7 colors and saved wave arrays.
+        # Keep chunks small at n=512/1024 without silently reducing physics fidelity.
+        max_safe_fields=max(1,int((128*128*100)/(n*n)))
+        cfg=replace(config,pupil_n=n,fft_n=max(n*4,config.fft_n),
+                    max_fields_per_chunk=min(config.max_fields_per_chunk,max_safe_fields))
         r=evaluate_fn(p,cfg,device=device)
         results.append(r)
         if len(results)>1:
