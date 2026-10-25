@@ -3,17 +3,27 @@
     "validation/qfilm02_convergence.py"
   ],
   "code_commit": "51f24858308172d2d0a07b877e9f8c11e0b407e8",
+  "elapsed_sec": 16.613266468048096,
   "entrypoint": "scripts/cuda_venv_exec.py",
   "env": {},
+  "finished_at": 1792952273.260711,
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm02-convergence-20261026-01",
-  "log_tail": "",
+  "log_tail": "/var/lib/cots-lamcts/jobs/qfilm02-convergence-20261026-01/src/evaluator/qfilm02.py:193: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)\nGRID simple_biconvex 32 seconds 1.5601674541831017 J 1.4513354918156023\nGRID simple_biconvex 64 seconds 0.48716460447758436 J 1.5213783778923873\nGRID simple_biconvex 128 seconds 0.465207127854228 J 1.5269308860029405\nCONVERGENCE {\"name\": \"simple_biconvex\", \"rows\": [{\"n\": 32, \"seconds\": 1.5601674541831017, \"J\": 1.4513354918156023, \"error\": null}, {\"n\": 64, \"seconds\": 0.48716460447758436, \"J\": 1.5213783778923873, \"error\": null}, {\"n\": 128, \"seconds\": 0.465207127854228, \"J\": 1.5269308860029405, \"error\": null}], \"comparisons\": [{\"from_n\": 32, \"to_n\": 64, \"mtf_max_abs\": 0.4464925735646249, \"mtf_mean_abs\": 0.03692088128072446, \"mtf_p95_abs\": 0.40566224165664605, \"J_abs\": 0.070042886076785, \"center_max_abs\": 0.041589159885729865, \"edge_max_abs\": 0.44219978827290296}, {\"from_n\": 64, \"to_n\": 128, \"mtf_max_abs\": 0.048257196929273834, \"mtf_mean_abs\": 0.0031882465456320335, \"mtf_p95_abs\": 0.015476485107763036, \"J_abs\": 0.005552508110553189, \"center_max_abs\": 0.0015373114952219602, \"edge_max_abs\": 0.01823435834667778}], \"passed_64_128\": false}\nGRID four_surface_internal_stop 32 seconds 2.8381571965292096 J 35.18927957895244\nGRID four_surface_internal_stop 64 seconds 2.5526992985978723 J 35.19879523787185\nGRID four_surface_internal_stop 128 seconds 2.4986386401578784 J 35.20597016188153\nCONVERGENCE {\"name\": \"four_surface_internal_stop\", \"rows\": [{\"n\": 32, \"seconds\": 2.8381571965292096, \"J\": 35.18927957895244, \"error\": null}, {\"n\": 64, \"seconds\": 2.5526992985978723, \"J\": 35.19879523787185, \"error\": null}, {\"n\": 128, \"seconds\": 2.4986386401578784, \"J\": 35.20597016188153, \"error\": null}], \"comparisons\": [{\"from_n\": 32, \"to_n\": 64, \"mtf_max_abs\": 0.15280432567457564, \"mtf_mean_abs\": 0.01071745801040224, \"mtf_p95_abs\": 0.05010457783536335, \"J_abs\": 0.009515658919411862, \"center_max_abs\": 0.05010457783536336, \"edge_max_abs\": 0.1301158377733807}, {\"from_n\": 64, \"to_n\": 128, \"mtf_max_abs\": 0.1346063575000561, \"mtf_mean_abs\": 0.007121727571175302, \"mtf_p95_abs\": 0.037627936649526836, \"J_abs\": 0.007174924009682115, \"center_max_abs\": 0.013530435827753389, \"edge_max_abs\": 0.07289569514302026}], \"passed_64_128\": false}",
   "memory_gb": 0,
   "pid": 3604950,
   "request_sha256": "fee40a9a47f48a539c225ab058eeb2f5f7310bc83050f185b1c6721eec7366fa",
+  "returncode": 0,
   "schema": 1,
   "started_at": 1792952256.6474445,
-  "state": "running",
+  "state": "finished",
   "timeout_sec": 1800,
-  "updated_at": 1792952258.9675589
+  "updated_at": 1792952258.9675589,
+  "uploaded_artifacts": [
+    {
+      "path": "qfilm02_convergence.json",
+      "size": 2545,
+      "uploaded": true
+    }
+  ]
 }
