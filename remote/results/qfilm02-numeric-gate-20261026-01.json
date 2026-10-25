@@ -3,17 +3,27 @@
     "validation/qfilm02_gate_smoke.py"
   ],
   "code_commit": "2db92473faf9a018a596a0b1fbe43f23cfde8484",
+  "elapsed_sec": 9.840731143951416,
   "entrypoint": "scripts/cuda_venv_exec.py",
   "env": {},
+  "finished_at": 1792952945.033133,
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm02-numeric-gate-20261026-01",
-  "log_tail": "",
+  "log_tail": "{\n  \"schema\": \"qfilm02-label-gate-v1\",\n  \"identical_case\": true,\n  \"large_error_rejected\": true,\n  \"real_prescription_gate\": {\n    \"pupil_n\": 64,\n    \"checked_levels\": [\n      32,\n      64\n    ],\n    \"numerically_converged\": false,\n    \"physics_certified\": false,\n    \"training_eligible\": false,\n    \"reason\": \"exit_pupil_huygens_spectral_and_rigorous_psf_validation_required\"\n  }\n}",
   "memory_gb": 0,
   "pid": 3607418,
   "request_sha256": "3fad3113b4976d1f1ba0d43804be9e879407d0a63a6db83b643b5a11f6241b99",
+  "returncode": 0,
   "schema": 1,
   "started_at": 1792952935.192402,
-  "state": "running",
+  "state": "finished",
   "timeout_sec": 300,
-  "updated_at": 1792952937.458544
+  "updated_at": 1792952937.458544,
+  "uploaded_artifacts": [
+    {
+      "path": "qfilm02_gate_test.json",
+      "size": 383,
+      "uploaded": true
+    }
+  ]
 }
