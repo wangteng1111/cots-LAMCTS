@@ -297,6 +297,7 @@ def evaluate(p,config:Config=Config(),device='cpu'):
         refs=[];sampled=[]
         z3,x3,y3,opl3,xf3,yf3,valid3=trace_wavelengths(src,waves,angle.squeeze(-1),uv,float(stop_z),stop_r,float(film_z))
         refs=[(xf3[li,:,-1],yf3[li,:,-1]) for li in range(len(waves))]
+        chief_valid=[valid3[li,:,-1] for li in range(len(waves))]
         for li,(lam,surfs,fno,efl) in enumerate(wavelengths_data):
             z,x,y,opl,xfilm,yfilm,valid=(t[li,:,:-1] for t in (z3,x3,y3,opl3,xf3,yf3,valid3))
             rx,ry=refs[li]
@@ -335,7 +336,8 @@ def evaluate(p,config:Config=Config(),device='cpu'):
         obs[:,7:9]=encircled_energy(psfg,pitchg,(.5,.8)) * 1e3
         obs[:,9]=strehlg
         obs[:,10:20]=mtf[:,:,0];obs[:,20:30]=mtf[:,:,1]
-        obs[:,30]=(fill.min(dim=0).values>.20).double()
+        # A physically invalid chief ray invalidates the corresponding image field.
+        obs[:,30]=((fill.min(dim=0).values>.20) & torch.stack(chief_valid).all(dim=0)).double()
         obs[:,31]=bx
         wavem=torch.where(pupg,waveg,0.)
         count=pupg.sum((-1,-2),keepdim=True).clamp(min=1)
