@@ -1,0 +1,73 @@
+{
+  "args": [
+    "scripts/qfilm02_triton_bootstrap.py",
+    "qfilm02_broyden_test.py"
+  ],
+  "bridge_version": "0.5.0",
+  "code_commit": "6dc0791fda940b61143b51308fb85795550d1b71",
+  "elapsed_sec": 26.409307718276978,
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "finished_at": 1792953357.180271,
+  "hostname": "aipss-Rack-Server",
+  "immutable_job_id": true,
+  "job_id": "qfilm02-broyden-validate-20261026-02",
+  "log_tail": "APT_SHOW\nCOMMAND ['apt-cache', 'policy', 'libpython3.12-dev'] RC 0 stdout libpython3.12-dev:\n  Installed: (none)\n  Candidate: 3.12.3-1ubuntu0.17\n  Version table:\n     3.12.3-1ubuntu0.17 500\n        500 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages\n        500 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages\n     3.12.3-1 500\n        500 http://us.archive.ubuntu.com/ubuntu noble/main amd64 Packages\n stderr \nCOMMAND ['apt', 'download', 'libpython3.12-dev'] RC 0 stdout Get:1 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12-dev amd64 3.12.3-1ubuntu0.17 [5,684 kB]\nFetched 5,684 kB in 4s (1,479 kB/s)\n stderr \nWARNING: apt does not have a stable CLI interface. Use with caution in scripts.\n\n\nCOMMAND ['dpkg-deb', '-x', '/var/lib/cots-lamcts/jobs/qfilm02-broyden-validate-20261026-02/artifacts/python_headers/libpython3.12-dev_3.12.3-1ubuntu0.17_amd64.deb', '/var/lib/cots-lamcts/jobs/qfilm02-broyden-validate-20261026-02/artifacts/python_headers/unpacked'] RC 0 stdout  stderr \nAVAILABLE_PYTHON_HEADER /var/lib/cots-lamcts/jobs/qfilm02-broyden-validate-20261026-02/artifacts/python_headers/unpacked/usr/include/python3.12\n/var/lib/cots-lamcts/jobs/qfilm02-broyden-validate-20261026-02/src/evaluator/qfilm02.py:193: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)\nCASE {\"name\": \"internal_5fields_32\", \"fields\": 5, \"pupil\": 32, \"wavelengths\": 3, \"reference_secs\": 2.575643979012966, \"fast_secs\": 3.327794387936592, \"Q_image_max_abs\": 2.1316282072803006e-11, \"Q_image_mean_abs\": 7.098823888744207e-13, \"Q_image_valid\": true, \"Q_wavefront_max_abs\": 8.075033974819235e-10, \"Q_wavefront_mean_abs\": 1.4088071896123102e-10, \"Q_wavefront_valid\": true, \"J_ref\": 57.3404265080119, \"J_fast\": 57.340426508011745, \"J_abs\": 1.5631940186722204e-13, \"speedup\": 0.7739793024322038, \"passed\": true}\nCASE {\"name\": \"internal_15fields_64\", \"fields\": 15, \"pupil\": 64, \"wavelengths\": 3, \"reference_secs\": 2.7285610027611256, \"fast_secs\": 4.61178130377084, \"Q_image_max_abs\": 2.1316282072803006e-11, \"Q_image_mean_abs\": 6.408788883945827e-13, \"Q_image_valid\": true, \"Q_wavefront_max_abs\": 5.020410753786564e-10, \"Q_wavefront_mean_abs\": 8.117195029784954e-11, \"Q_wavefront_valid\": true, \"J_ref\": 58.621356371559465, \"J_fast\": 58.621356371559365, \"J_abs\": 9.947598300641403e-14, \"speedup\": 0.5916501288840621, \"passed\": true}\nCASE {\"name\": \"front_100fields_64\", \"fields\": 100, \"pupil\": 64, \"wavelengths\": 7, \"reference_secs\": 1.639380776323378, \"fast_secs\": 0.6189866587519646, \"Q_image_max_abs\": 1.0658141036401503e-11, \"Q_image_mean_abs\": 4.0598707223188895e-13, \"Q_image_valid\": true, \"Q_wavefront_max_abs\": 1.0370513336965814e-09, \"Q_wavefront_mean_abs\": 5.1544608567943056e-11, \"Q_wavefront_valid\": true, \"J_ref\": 2.452306911646, \"J_fast\": 2.4523069116459224, \"J_abs\": 7.771561172376096e-14, \"speedup\": 2.6484912932191285, \"passed\": true}\nSUMMARY {\"passed\": true, \"cases\": 3}",
+  "memory_gb": 0,
+  "pid": 3609573,
+  "request_sha256": "abbd7a2a5a246390c4ce489e973752871118a70af00cc2ed960f9d9acf0b4a32",
+  "retry_policy": "new_job_id_required",
+  "returncode": 0,
+  "schema": 1,
+  "started_at": 1792953330.7709632,
+  "state": "finished",
+  "timeout_sec": 1800,
+  "updated_at": 1792953333.533833,
+  "uploaded_artifacts": [
+    {
+      "path": "qfilm02_broyden_compare.json",
+      "size": 1955,
+      "uploaded": true
+    },
+    {
+      "path": "triton_kernel_cache/DJNBXZY6I2JB7RQZXLMQQKIY6QFTGJ2GRKWMTXX7GQ254LSLUS2A/__grp___fused_rays.json",
+      "size": 1325,
+      "uploaded": true
+    },
+    {
+      "path": "triton_kernel_cache/DJNBXZY6I2JB7RQZXLMQQKIY6QFTGJ2GRKWMTXX7GQ254LSLUS2A/_fused_rays.json",
+      "size": 1110,
+      "uploaded": true
+    },
+    {
+      "path": "triton_kernel_cache/ED3QLELX6ZDP5KQYE33CMYUREWZL2VGBYOKBSZ7IXYE3UOI7BNXA/__grp___fused_rays.json",
+      "size": 1325,
+      "uploaded": true
+    },
+    {
+      "path": "triton_kernel_cache/ED3QLELX6ZDP5KQYE33CMYUREWZL2VGBYOKBSZ7IXYE3UOI7BNXA/_fused_rays.json",
+      "size": 1110,
+      "uploaded": true
+    },
+    {
+      "path": "triton_kernel_cache/PUN6KMUNINOXFGLWCN4QKMDODK3FEB55RUAXNHH464T3PX6HV4GA/__grp___fused_rays.json",
+      "size": 1325,
+      "uploaded": true
+    },
+    {
+      "path": "triton_kernel_cache/PUN6KMUNINOXFGLWCN4QKMDODK3FEB55RUAXNHH464T3PX6HV4GA/_fused_rays.json",
+      "size": 1110,
+      "uploaded": true
+    },
+    {
+      "path": "triton_kernel_cache/QZUK4473OLGPZJIUSNULXBZZU2T6UA7ATP3NAFJUH5CRAHHBRXBA/__grp___fused_rays.json",
+      "size": 1325,
+      "uploaded": true
+    },
+    {
+      "path": "triton_kernel_cache/QZUK4473OLGPZJIUSNULXBZZU2T6UA7ATP3NAFJUH5CRAHHBRXBA/_fused_rays.json",
+      "size": 1110,
+      "uploaded": true
+    }
+  ]
+}
