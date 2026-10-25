@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1792953253.3502247,
+  "code_commit": "d8bf6f3292c2431c78232796ef0f3831d3a08304",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm02-broyden-validate-20261026-01",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/qfilm02-broyden-validate-20261026-01.json",
+  "request_sha256": "0154ceb0f9f717926438fcfff6c668a23f43487d95a4492c9218c2cd61a063e7",
+  "schema": 1,
+  "state": "claimed"
+}
