@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "job_id": "qfilm02-broyden-validate-20261026-02",
+  "code_commit": "6dc0791fda940b61143b51308fb85795550d1b71",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "scripts/qfilm02_triton_bootstrap.py",
+    "qfilm02_broyden_test.py"
+  ],
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
