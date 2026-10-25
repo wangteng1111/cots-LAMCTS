@@ -1,0 +1,31 @@
+APT_SHOW
+COMMAND ['apt-cache', 'policy', 'libpython3.12-dev'] RC 0 stdout libpython3.12-dev:
+  Installed: (none)
+  Candidate: 3.12.3-1ubuntu0.17
+  Version table:
+     3.12.3-1ubuntu0.17 500
+        500 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages
+        500 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages
+     3.12.3-1 500
+        500 http://us.archive.ubuntu.com/ubuntu noble/main amd64 Packages
+ stderr 
+COMMAND ['apt', 'download', 'libpython3.12-dev'] RC 0 stdout Get:1 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12-dev amd64 3.12.3-1ubuntu0.17 [5,684 kB]
+Fetched 5,684 kB in 4s (1,367 kB/s)
+ stderr 
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+
+COMMAND ['dpkg-deb', '-x', '/var/lib/cots-lamcts/jobs/qfilm02-chunk-benchmark-20261026-01/artifacts/python_headers/libpython3.12-dev_3.12.3-1ubuntu0.17_amd64.deb', '/var/lib/cots-lamcts/jobs/qfilm02-chunk-benchmark-20261026-01/artifacts/python_headers/unpacked'] RC 0 stdout  stderr 
+AVAILABLE_PYTHON_HEADER /var/lib/cots-lamcts/jobs/qfilm02-chunk-benchmark-20261026-01/artifacts/python_headers/unpacked/usr/include/python3.12
+/var/lib/cots-lamcts/jobs/qfilm02-chunk-benchmark-20261026-01/src/evaluator/qfilm02.py:193: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)
+  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)
+CHUNK front_stop_64 {"pupil_n": 64, "fields": 100, "waves": 7, "chunk": 10, "baseline_sec": 1.9807017054408789, "fast_sec_best": 0.1810661032795906, "fast_sec_mean": 0.18213305668905377, "speedup": 10.939108256957443, "max_Q_abs": 1.0658141036401503e-11, "j_abs": 7.771561172376096e-14, "backend_mode": "triton_fused"}
+CHUNK front_stop_64 {"pupil_n": 64, "fields": 100, "waves": 7, "chunk": 25, "baseline_sec": 1.9807017054408789, "fast_sec_best": 0.07981167640537024, "fast_sec_mean": 0.07985928934067488, "speedup": 24.81719210332994, "max_Q_abs": 1.0658141036401503e-11, "j_abs": 7.771561172376096e-14, "backend_mode": "triton_fused"}
+CHUNK front_stop_64 {"pupil_n": 64, "fields": 100, "waves": 7, "chunk": 50, "baseline_sec": 1.9807017054408789, "fast_sec_best": 0.0590642960742116, "fast_sec_mean": 0.05907254293560982, "speedup": 33.534670470841085, "max_Q_abs": 1.0658141036401503e-11, "j_abs": 7.771561172376096e-14, "backend_mode": "triton_fused"}
+CHUNK front_stop_64 {"pupil_n": 64, "fields": 100, "waves": 7, "chunk": 100, "baseline_sec": 1.9807017054408789, "fast_sec_best": 0.05597090907394886, "fast_sec_mean": 0.055996967013925314, "speedup": 35.38805672825454, "max_Q_abs": 1.0658141036401503e-11, "j_abs": 7.771561172376096e-14, "backend_mode": "triton_fused"}
+CHUNK front_stop_128 {"pupil_n": 128, "fields": 100, "waves": 7, "chunk": 10, "baseline_sec": 0.8952907947823405, "fast_sec_best": 0.22952945437282324, "fast_sec_mean": 0.22954067960381508, "speedup": 3.900548612502365, "max_Q_abs": 1.0658141036401503e-11, "j_abs": 6.128431095930864e-14, "backend_mode": "triton_fused"}
+CHUNK front_stop_128 {"pupil_n": 128, "fields": 100, "waves": 7, "chunk": 25, "baseline_sec": 0.8952907947823405, "fast_sec_best": 0.20207786560058594, "fast_sec_mean": 0.20268018497154117, "speedup": 4.430424837086881, "max_Q_abs": 1.0658141036401503e-11, "j_abs": 6.128431095930864e-14, "backend_mode": "triton_fused"}
+CHUNK front_stop_128 {"pupil_n": 128, "fields": 100, "waves": 7, "chunk": 50, "baseline_sec": 0.8952907947823405, "fast_sec_best": 0.18672217708081007, "fast_sec_mean": 0.18711310485377908, "speedup": 4.794774829531226, "max_Q_abs": 1.0658141036401503e-11, "j_abs": 6.128431095930864e-14, "backend_mode": "triton_fused"}
+CHUNK front_stop_128 {"pupil_n": 128, "fields": 100, "waves": 7, "chunk": 100, "baseline_sec": 0.8952907947823405, "fast_sec_best": 0.1776733947917819, "fast_sec_mean": 0.17774693807587028, "speedup": 5.038969373166675, "max_Q_abs": 1.0658141036401503e-11, "j_abs": 6.128431095930864e-14, "backend_mode": "triton_fused"}
+CHUNK internal_stop_64 {"pupil_n": 64, "fields": 15, "waves": 3, "chunk": 15, "baseline_sec": 1.4113661302253604, "fast_sec_best": 1.3506829841062427, "fast_sec_mean": 1.3747421246953309, "speedup": 1.0449277490226712, "max_Q_abs": 0.0, "j_abs": 0.0, "backend_mode": "torch_reference_internal_stop_or_unsupported"}
+SUMMARY {"cases": 3}
