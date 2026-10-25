@@ -7,10 +7,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm02-server-cpu-dualgpu-20261025-01",
+  "log_tail": "QFILM_BEGIN cpu",
   "memory_gb": 0,
+  "pid": 3559021,
   "request_sha256": "6420f6480ee892027e0593a4245390fb61d8ef9c1891fff4a9288910b5390b53",
   "schema": 1,
   "started_at": 1792938375.2481093,
   "state": "running",
-  "timeout_sec": 1800
+  "timeout_sec": 1800,
+  "updated_at": 1792938377.710686
 }
