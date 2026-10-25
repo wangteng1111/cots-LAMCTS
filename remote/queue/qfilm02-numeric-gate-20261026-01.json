@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "qfilm02-numeric-gate-20261026-01",
+  "code_commit": "2db92473faf9a018a596a0b1fbe43f23cfde8484",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm02_gate_smoke.py"
+  ],
+  "timeout_sec": 300,
+  "memory_gb": 0
+}
