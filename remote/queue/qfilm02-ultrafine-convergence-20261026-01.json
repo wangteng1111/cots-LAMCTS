@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "qfilm02-ultrafine-convergence-20261026-01",
+  "code_commit": "9bbe5b27a0ab16bafe7896bfc3f7babd47bce645",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm02_ultrafine_convergence.py"
+  ],
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
