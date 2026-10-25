@@ -1,0 +1,32 @@
+{
+  "args": [
+    "validation/qfilm02_ultrafine_convergence.py"
+  ],
+  "bridge_version": "0.5.0",
+  "code_commit": "9bbe5b27a0ab16bafe7896bfc3f7babd47bce645",
+  "elapsed_sec": 42.14943075180054,
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "finished_at": 1792953006.4208486,
+  "hostname": "aipss-Rack-Server",
+  "immutable_job_id": true,
+  "job_id": "qfilm02-ultrafine-convergence-20261026-01",
+  "log_tail": "/var/lib/cots-lamcts/jobs/qfilm02-ultrafine-convergence-20261026-01/src/evaluator/qfilm02.py:193: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)\nsimple_biconvex GRID 128 SECONDS 1.7965052593499422 J 1.5503555053022504\nsimple_biconvex GRID 256 SECONDS 0.6941964579746127 J 1.551172737358483\nsimple_biconvex GRID 512 SECONDS 0.710539155639708 J 1.551049862910116\nRESULT {\"case\": \"simple_biconvex\", \"grids\": [{\"n\": 128, \"seconds\": 1.7965052593499422, \"J\": 1.5503555053022504, \"error\": null}, {\"n\": 256, \"seconds\": 0.6941964579746127, \"J\": 1.551172737358483, \"error\": null}, {\"n\": 512, \"seconds\": 0.710539155639708, \"J\": 1.551049862910116, \"error\": null}], \"comparisons\": [{\"from\": 128, \"to\": 256, \"mtf_max_abs\": 0.02286594600583032, \"mtf_p95_abs\": 0.00588989382572923, \"mtf_mean_abs\": 0.0013818969374084858, \"J_abs\": 0.0008172320562325197, \"field_max_abs\": [0.0009012162484909325, 0.0011266281648319998, 0.0061418076347949935, 0.008907417016895819, 0.01541064982740463, 0.0058766352041994575, 0.0037189896286187883, 0.01960609583867849, 0.02286594600583032], \"worst_field_i\": 8}, {\"from\": 256, \"to\": 512, \"mtf_max_abs\": 0.007055267227201435, \"mtf_p95_abs\": 0.0023187405656341976, \"mtf_mean_abs\": 0.0003682503107125627, \"J_abs\": 0.00012287444836700523, \"field_max_abs\": [0.00023929334300293315, 0.0006105112320566874, 0.002319857137319359, 0.0029608882685353, 0.00480746911099331, 0.004278504053982449, 0.007055267227201435, 0.0026923208095279007, 0.00272961357231512], \"worst_field_i\": 6}]}\ninternal_stop GRID 128 SECONDS 10.85501361452043 J 35.20579985796568\ninternal_stop GRID 256 SECONDS 10.817770153284073 J 35.21458149360866\ninternal_stop GRID 512 SECONDS 11.995688644237816 J 35.215581619712765\nRESULT {\"case\": \"internal_stop\", \"grids\": [{\"n\": 128, \"seconds\": 10.85501361452043, \"J\": 35.20579985796568, \"error\": null}, {\"n\": 256, \"seconds\": 10.817770153284073, \"J\": 35.21458149360866, \"error\": null}, {\"n\": 512, \"seconds\": 11.995688644237816, \"J\": 35.215581619712765, \"error\": null}], \"comparisons\": [{\"from\": 128, \"to\": 256, \"mtf_max_abs\": 0.20994447043766573, \"mtf_p95_abs\": 0.03677847482496125, \"mtf_mean_abs\": 0.008275060254383002, \"J_abs\": 0.008781635642982621, \"field_max_abs\": [0.08740715313355482, 0.20994447043766573, 0.18296215038759195, 0.03343605414659781, 0.01349640809476627, 0.016424846651644523, 0.03056002326322617, 0.029135355167268562, 0.015018540118311935], \"worst_field_i\": 1}, {\"from\": 256, \"to\": 512, \"mtf_max_abs\": 0.03313233648586653, \"mtf_p95_abs\": 0.005681454680679684, \"mtf_mean_abs\": 0.0010364566527851454, \"J_abs\": 0.0010001261041026055, \"field_max_abs\": [0.006527112670118494, 0.03313233648586653, 0.01138463708631391, 0.006816978286807527, 0.0023045959221009325, 0.01610415171496706, 0.003995360431827061, 0.007742192863681033, 0.0030006570778871164], \"worst_field_i\": 1}]}",
+  "memory_gb": 0,
+  "pid": 3608239,
+  "request_sha256": "774b9e0feb84492dc81f7d3b053e6a2e40681c064fa6887112c897fc68e865f7",
+  "retry_policy": "new_job_id_required",
+  "returncode": 0,
+  "schema": 1,
+  "started_at": 1792952964.2714179,
+  "state": "finished",
+  "timeout_sec": 1800,
+  "updated_at": 1792952966.6979172,
+  "uploaded_artifacts": [
+    {
+      "path": "qfilm02_ultrafine_convergence.json",
+      "size": 3598,
+      "uploaded": true
+    }
+  ]
+}
