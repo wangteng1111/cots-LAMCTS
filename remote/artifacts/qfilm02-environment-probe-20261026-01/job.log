@@ -1,0 +1,13 @@
+{
+  "python": "/var/lib/cots-lamcts/venv/bin/python",
+  "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "sysconfig_include": "/usr/include/python3.12",
+  "env_cache": {
+    "PYTHONUNBUFFERED": "1"
+  },
+  "nvcc": null,
+  "gcc": "/usr/bin/gcc",
+  "common_dev_headers": [],
+  "cuda_headers": [],
+  "python_h_locations": []
+}
