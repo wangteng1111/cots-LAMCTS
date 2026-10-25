@@ -1,0 +1,57 @@
+{
+  "schema": "Qfilm0.2-verification-v1",
+  "version": "Qfilm0.2-provisional-fft-v1",
+  "device": "cpu",
+  "torch_version": "2.14.0+cu130",
+  "gpu_name": null,
+  "certified": false,
+  "analytic": {
+    "airy_mtf_max_abs_error": 0.00039807712688177954,
+    "unit_strehl_error": 0.0,
+    "energy_error": 0.0,
+    "tilt_mtf_invariance": 0.0023835711001396476,
+    "defocus_sign_symmetry": 3.3306690738754696e-16,
+    "parabola_sag_error": 1.1102230246251565e-16,
+    "parabola_slope_error": 0.0,
+    "spherical_sag_error": 1.4432899320127035e-15,
+    "spherical_slope_error": 2.7755575615628914e-17,
+    "area_normalization_error": 0.0,
+    "ideal_fno2_J": 0.004043711750702849,
+    "ideal_fno16_J": 0.22986766649466353
+  },
+  "real_prescription_smoke": {
+    "n_fields": 100,
+    "n_waves": 7,
+    "n_pupil": 4096,
+    "seconds": 8.152110542170703,
+    "fields_per_sec": 12.266762022264299,
+    "J_task": 2.45693332014785,
+    "central_mtf_t": [
+      0.8098936360603237,
+      0.600001326712318,
+      0.46495530624363396,
+      0.38315320462315805,
+      0.2827491061953498,
+      0.21824115671830122,
+      0.17211099582339545,
+      0.14317195537504387,
+      0.11976807922263412,
+      0.10114645009263525
+    ],
+    "edge_mtf_t": [
+      0.022306507587062086,
+      0.00044778976786246744,
+      0.0010206524363236124,
+      0.0003970401769855396,
+      0.002929892717050552,
+      0.011784040241201183,
+      0.0009617941363758685,
+      0.013526517278656473,
+      0.004277561396615825,
+      0.029008323960160808
+    ],
+    "min_pupil_fill": 1.0,
+    "max_abs_distortion_pct": 3.8857047090418293,
+    "physics_status": "provisional_scalar_fft_exit_pupil_approx"
+  }
+}
