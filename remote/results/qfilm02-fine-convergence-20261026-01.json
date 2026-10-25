@@ -7,10 +7,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm02-fine-convergence-20261026-01",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 3605625,
   "request_sha256": "886177e442353c5063283b18f0c79bc09dbca82ee28bf8123dd14f853c92a015",
   "schema": 1,
   "started_at": 1792952410.1787221,
   "state": "running",
-  "timeout_sec": 1800
+  "timeout_sec": 1800,
+  "updated_at": 1792952412.8102798
 }
