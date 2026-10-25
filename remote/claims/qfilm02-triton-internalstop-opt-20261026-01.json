@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1792952683.287798,
+  "code_commit": "4976aa11ded57632edbcb9d5dd814a2d350423c2",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm02-triton-internalstop-opt-20261026-01",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/qfilm02-triton-internalstop-opt-20261026-01.json",
+  "request_sha256": "cb5d1179b9d2541a95e7d19a2ab4b7ad8b29b4c7c56a4be5f8b57b1da7609153",
+  "schema": 1,
+  "state": "claimed"
+}
