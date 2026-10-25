@@ -2,6 +2,12 @@
 """Compare experimental fused Triton path to baseline Torch tracer across physical cases."""
 from __future__ import annotations
 import os,sys,time,json,traceback
+# Each job owns a writable Triton JIT cache; workstation's default /mnt/data is read-only.
+from pathlib import Path as _Path
+_cache = _Path(os.environ.get("COTS_JOB_ARTIFACT_DIR", "/tmp")) / "triton_kernel_cache"
+_cache.mkdir(parents=True, exist_ok=True)
+os.environ["TRITON_CACHE_DIR"] = str(_cache)
+os.environ["TORCHINDUCTOR_CACHE_DIR"] = str(_cache / "torchinductor")
 from dataclasses import replace
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
