@@ -1,0 +1,16 @@
+{
+  "args": [
+    "validation/qfilm02_gate_smoke.py"
+  ],
+  "code_commit": "2db92473faf9a018a596a0b1fbe43f23cfde8484",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm02-numeric-gate-20261026-01",
+  "memory_gb": 0,
+  "request_sha256": "3fad3113b4976d1f1ba0d43804be9e879407d0a63a6db83b643b5a11f6241b99",
+  "schema": 1,
+  "started_at": 1792952935.192402,
+  "state": "running",
+  "timeout_sec": 300
+}
