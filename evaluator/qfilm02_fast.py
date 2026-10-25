@@ -202,7 +202,11 @@ def fft_pupil_metrics(wave_mm,mask,lam_nm,fno,nfft=256,frequencies=FREQS):
     for freq in frequencies:
         ix=freq/df
         lo=int(ix);t=ix-lo
-        if lo+center+1>=nfft: raise ValueError('frequency outside sampled OTF')
+        # Frequencies beyond incoherent diffraction cutoff have identically zero OTF.
+        if freq >= 1.0/(lam_mm*abs(fno)):
+            vals.append(torch.zeros((*otf.shape[:-2],2),dtype=otf.dtype,device=otf.device))
+            continue
+        if lo+center+1>=nfft: raise ValueError('frequency within cutoff but outside FFT grid')
         vals.append(torch.stack([(1-t)*otf[...,center,center+lo]+t*otf[...,center,center+lo+1],
                                  (1-t)*otf[...,center+lo,center]+t*otf[...,center+lo+1,center]],dim=-1))
     otfs=torch.stack(vals,dim=-2)
