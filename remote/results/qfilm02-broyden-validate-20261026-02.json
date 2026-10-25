@@ -1,0 +1,17 @@
+{
+  "args": [
+    "scripts/qfilm02_triton_bootstrap.py",
+    "qfilm02_broyden_test.py"
+  ],
+  "code_commit": "6dc0791fda940b61143b51308fb85795550d1b71",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm02-broyden-validate-20261026-02",
+  "memory_gb": 0,
+  "request_sha256": "abbd7a2a5a246390c4ce489e973752871118a70af00cc2ed960f9d9acf0b4a32",
+  "schema": 1,
+  "started_at": 1792953330.7709632,
+  "state": "running",
+  "timeout_sec": 1800
+}
