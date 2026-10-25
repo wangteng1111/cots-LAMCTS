@@ -1,0 +1,16 @@
+{
+  "args": [
+    "validation/qfilm02_ultrafine_convergence.py"
+  ],
+  "code_commit": "9bbe5b27a0ab16bafe7896bfc3f7babd47bce645",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm02-ultrafine-convergence-20261026-01",
+  "memory_gb": 0,
+  "request_sha256": "774b9e0feb84492dc81f7d3b053e6a2e40681c064fa6887112c897fc68e865f7",
+  "schema": 1,
+  "started_at": 1792952964.2714179,
+  "state": "running",
+  "timeout_sec": 1800
+}
