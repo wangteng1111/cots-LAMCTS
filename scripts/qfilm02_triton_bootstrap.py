@@ -18,8 +18,11 @@ dest=root/"unpacked";dest.mkdir(exist_ok=True)
 run(["dpkg-deb","-x",str(files[0]),str(dest)],timeout=60)
 inc=dest/"usr"/"include"/"python3.12"
 assert (inc/"Python.h").is_file(),"no Python.h in package"
-os.environ["C_INCLUDE_PATH"]=str(inc)+os.pathsep+os.environ.get("C_INCLUDE_PATH","")
-os.environ["CPATH"]=str(inc)+os.pathsep+os.environ.get("CPATH","")
+# Ubuntu multiarch Python headers forward pyconfig.h into x86_64-linux-gnu/.
+rootinc=dest/"usr"/"include"
+assert (rootinc/"x86_64-linux-gnu"/"python3.12"/"pyconfig.h").is_file(),"multiarch pyconfig.h not found"
+os.environ["C_INCLUDE_PATH"]=str(inc)+os.pathsep+str(rootinc)+os.pathsep+os.environ.get("C_INCLUDE_PATH","")
+os.environ["CPATH"]=str(inc)+os.pathsep+str(rootinc)+os.pathsep+os.environ.get("CPATH","")
 print("AVAILABLE_PYTHON_HEADER",str(inc),flush=True)
 # Python header follows expected ABI; now execute suite without spawning Python.
 from runpy import run_path
