@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1792951800.9484992,
+  "code_commit": "5b1b3a67c3d9b907b7ee131f62b65b03db5c6f05",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm02-triton-compare-20261026-01",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/qfilm02-triton-compare-20261026-01.json",
+  "request_sha256": "a09340e92f07f2e692f405d9aab371a5293fc56b414bc25211370c1660259a16",
+  "schema": 1,
+  "state": "claimed"
+}
