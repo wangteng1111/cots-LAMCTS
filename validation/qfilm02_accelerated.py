@@ -6,8 +6,8 @@ import os,sys,time,json,traceback
 from pathlib import Path as _Path
 _cache = _Path(os.environ.get("COTS_JOB_ARTIFACT_DIR", "/tmp")) / "triton_kernel_cache"
 _cache.mkdir(parents=True, exist_ok=True)
-os.environ["TRITON_CACHE_DIR"] = str(_cache)
-os.environ["TORCHINDUCTOR_CACHE_DIR"] = str(_cache / "torchinductor")
+os.environ.setdefault("TRITON_CACHE_DIR", str(_cache))
+os.environ.setdefault("TORCHINDUCTOR_CACHE_DIR", str(_cache / "torchinductor"))
 from dataclasses import replace
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
