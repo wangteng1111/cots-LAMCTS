@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Physically strict Broyden front-stop inversion comparison (experimental)."""
 from __future__ import annotations
-import os,json
+import os,json,sys
 from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 os.environ['QFILM_TEST_FUSED_INTERNAL']='1'
 from validation.qfilm02_accelerated import one_case,thin_lens,rich_lens
 def main():
