@@ -1,0 +1,16 @@
+{
+  "args": [
+    "validation/qfilm02_megagrid_convergence.py"
+  ],
+  "code_commit": "1c2325da38b5bd7af478c7a9c2fc2ce221e41c6e",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm02-megagrid-convergence-20261026-01",
+  "memory_gb": 0,
+  "request_sha256": "42e57bb77db030e6879cb42f22711f44c7dafd5c5395d4974f8caf4361b60da8",
+  "schema": 1,
+  "started_at": 1792953397.3067029,
+  "state": "running",
+  "timeout_sec": 1800
+}
