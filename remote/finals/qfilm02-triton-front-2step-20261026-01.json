@@ -1,0 +1,83 @@
+{
+  "args": [
+    "scripts/qfilm02_triton_bootstrap.py",
+    "qfilm02_accelerated.py"
+  ],
+  "bridge_version": "0.5.0",
+  "code_commit": "e0f6910d94d9b3ac742330004adc9a0469d25862",
+  "elapsed_sec": 26.720614910125732,
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "finished_at": 1792952831.017809,
+  "hostname": "aipss-Rack-Server",
+  "immutable_job_id": true,
+  "job_id": "qfilm02-triton-front-2step-20261026-01",
+  "log_tail": "APT_SHOW\nCOMMAND ['apt-cache', 'policy', 'libpython3.12-dev'] RC 0 stdout libpython3.12-dev:\n  Installed: (none)\n  Candidate: 3.12.3-1ubuntu0.17\n  Version table:\n     3.12.3-1ubuntu0.17 500\n        500 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages\n        500 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages\n     3.12.3-1 500\n        500 http://us.archive.ubuntu.com/ubuntu noble/main amd64 Packages\n stderr \nCOMMAND ['apt', 'download', 'libpython3.12-dev'] RC 0 stdout Get:1 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12-dev amd64 3.12.3-1ubuntu0.17 [5,684 kB]\nFetched 5,684 kB in 4s (1,485 kB/s)\n stderr \nWARNING: apt does not have a stable CLI interface. Use with caution in scripts.\n\n\nCOMMAND ['dpkg-deb', '-x', '/var/lib/cots-lamcts/jobs/qfilm02-triton-front-2step-20261026-01/artifacts/python_headers/libpython3.12-dev_3.12.3-1ubuntu0.17_amd64.deb', '/var/lib/cots-lamcts/jobs/qfilm02-triton-front-2step-20261026-01/artifacts/python_headers/unpacked'] RC 0 stdout  stderr \nAVAILABLE_PYTHON_HEADER /var/lib/cots-lamcts/jobs/qfilm02-triton-front-2step-20261026-01/artifacts/python_headers/unpacked/usr/include/python3.12\nGPU NVIDIA GeForce RTX 5090 TRITON 3.8.0\n/var/lib/cots-lamcts/jobs/qfilm02-triton-front-2step-20261026-01/src/evaluator/qfilm02.py:193: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)\nCASE {\"name\": \"thin_pupil32\", \"fields\": 5, \"pupil\": 32, \"wavelengths\": 3, \"reference_secs\": 0.9327010419219732, \"fast_secs\": 1.738049873150885, \"Q_image_max_abs\": 7.105427357601002e-12, \"Q_image_mean_abs\": 6.453960514618811e-13, \"Q_image_valid\": true, \"Q_wavefront_max_abs\": 4.113189788768068e-10, \"Q_wavefront_mean_abs\": 5.843437411302894e-11, \"Q_wavefront_valid\": true, \"J_ref\": 1.5439634207588342, \"J_fast\": 1.543963420758335, \"J_abs\": 4.991562718714704e-13, \"speedup\": 0.5366365236867991, \"passed\": true}\nCASE {\"name\": \"multi_front_pupil32\", \"fields\": 5, \"pupil\": 32, \"wavelengths\": 3, \"reference_secs\": 1.373432052321732, \"fast_secs\": 2.1795216435566545, \"Q_image_max_abs\": 1.993072373807081e-09, \"Q_image_mean_abs\": 3.3488455457590834e-11, \"Q_image_valid\": true, \"Q_wavefront_max_abs\": 1.153773041551176e-07, \"Q_wavefront_mean_abs\": 1.1273355250326898e-08, \"Q_wavefront_valid\": true, \"J_ref\": 57.3404265080119, \"J_fast\": 57.3404265081222, \"J_abs\": 1.1029754887204035e-10, \"speedup\": 0.6301529770911087, \"passed\": true}\nCASE {\"name\": \"thin_full_pupil64\", \"fields\": 100, \"pupil\": 64, \"wavelengths\": 7, \"reference_secs\": 1.8533105105161667, \"fast_secs\": 0.6837424635887146, \"Q_image_max_abs\": 1.0658141036401503e-11, \"Q_image_mean_abs\": 4.0598707223188895e-13, \"Q_image_valid\": true, \"Q_wavefront_max_abs\": 1.0370513336965814e-09, \"Q_wavefront_mean_abs\": 5.1544608567943056e-11, \"Q_wavefront_valid\": true, \"J_ref\": 2.452306911646, \"J_fast\": 2.4523069116459224, \"J_abs\": 7.771561172376096e-14, \"speedup\": 2.710538849362692, \"passed\": true}\nCASE {\"name\": \"multi_front_pupil64\", \"fields\": 15, \"pupil\": 64, \"wavelengths\": 3, \"reference_secs\": 2.8225278528407216, \"fast_secs\": 4.188518696464598, \"Q_image_max_abs\": 1.993072373807081e-09, \"Q_image_mean_abs\": 2.1242242277670277e-11, \"Q_image_valid\": true, \"Q_wavefront_max_abs\": 1.1236011232540477e-07, \"Q_wavefront_mean_abs\": 9.540296935224772e-09, \"Q_wavefront_valid\": true, \"J_ref\": 58.621356371559465, \"J_fast\": 58.62135637160771, \"J_abs\": 4.82458517581108e-11, \"speedup\": 0.673872568653718, \"passed\": true}\nSUMMARY {\"passed\": true, \"cases\": 4}",
+  "memory_gb": 0,
+  "pid": 3607125,
+  "request_sha256": "d7bd2a0c2672e3debf52a181c8300226aea655661b3e846403405f7628db4bac",
+  "retry_policy": "new_job_id_required",
+  "returncode": 0,
+  "schema": 1,
+  "started_at": 1792952804.297194,
+  "state": "finished",
+  "timeout_sec": 1800,
+  "updated_at": 1792952807.0326493,
+  "uploaded_artifacts": [
+    {
+      "path": "qfilm02_triton_compare.json",
+      "size": 2574,
+      "uploaded": true
+    },
+    {
+      "path": "triton_kernel_cache/5RN3S2CNBQU6EBHZ5XJ4GWLYUC4ZGU6FUNYF5KSO7TCT524WOLLQ/__grp___fused_rays.json",
+      "size": 1339,
+      "uploaded": true
+    },
+    {
+      "path": "triton_kernel_cache/5RN3S2CNBQU6EBHZ5XJ4GWLYUC4ZGU6FUNYF5KSO7TCT524WOLLQ/_fused_rays.json",
+      "size": 1110,
+      "uploaded": true
+    },
+    {
+      "path": "triton_kernel_cache/6CV53NFSCCNHVQ2SQDRWBLDSWTVLEZB7VLHUUPFLNRPFVBJMSKDQ/__grp___fused_rays.json",
+      "size": 1339,
+      "uploaded": true
+    },
+    {
+      "path": "triton_kernel_cache/6CV53NFSCCNHVQ2SQDRWBLDSWTVLEZB7VLHUUPFLNRPFVBJMSKDQ/_fused_rays.json",
+      "size": 1110,
+      "uploaded": true
+    },
+    {
+      "path": "triton_kernel_cache/GV6LOVURKDBLB43C7AMYH5OYGW6OWCHEPUMFHFJ65K5CH74JNJ2A/__grp___fused_rays.json",
+      "size": 1339,
+      "uploaded": true
+    },
+    {
+      "path": "triton_kernel_cache/GV6LOVURKDBLB43C7AMYH5OYGW6OWCHEPUMFHFJ65K5CH74JNJ2A/_fused_rays.json",
+      "size": 1110,
+      "uploaded": true
+    },
+    {
+      "path": "triton_kernel_cache/H6DKHW5CT3WRSV57HRO3UYV7SD2DNHJCLAZAMRTKERMAX2563TFA/__grp___fused_rays.json",
+      "size": 1339,
+      "uploaded": true
+    },
+    {
+      "path": "triton_kernel_cache/H6DKHW5CT3WRSV57HRO3UYV7SD2DNHJCLAZAMRTKERMAX2563TFA/_fused_rays.json",
+      "size": 1110,
+      "uploaded": true
+    },
+    {
+      "path": "triton_kernel_cache/WKKSKMVDCJ7MNCUM5GXPATG7NCZDALQVGGGABU5V2DSQIAC575VQ/__grp___fused_rays.json",
+      "size": 1339,
+      "uploaded": true
+    },
+    {
+      "path": "triton_kernel_cache/WKKSKMVDCJ7MNCUM5GXPATG7NCZDALQVGGGABU5V2DSQIAC575VQ/_fused_rays.json",
+      "size": 1110,
+      "uploaded": true
+    }
+  ]
+}
