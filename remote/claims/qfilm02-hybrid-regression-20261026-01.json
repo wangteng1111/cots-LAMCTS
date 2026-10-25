@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1792953583.5227482,
+  "code_commit": "5d48e9bdad1d7fd27f2d82acd4c90de2dbd461c1",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm02-hybrid-regression-20261026-01",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/qfilm02-hybrid-regression-20261026-01.json",
+  "request_sha256": "4d1cf924bfa63850dab19a72575d90abf26d5fe3e0f59c5b99ae3ec0e62525cf",
+  "schema": 1,
+  "state": "claimed"
+}
