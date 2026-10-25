@@ -167,4 +167,5 @@ def trace_wavelengths(src, waves, angles, uv, stop_z, stop_r, film_z):
     valid=torch.empty(n,dtype=torch.bool,device=device)
     _fused_rays[(triton.cdiv(n,128),)](uf,vf,angles,par,*out,valid,
         npup,nf,nw,ns,nfront,zstart,float(stop_z),float(stop_r),float(film_z),128,num_warps=4)
-    return tuple(t.reshape(nw,nf,npup+1) for t in (*out,valid))
+    # Kernel output order is X,Y,Z,OPL,FX,FY. Public API is Z,X,Y,OPL,FX,FY.
+    return tuple(t.reshape(nw,nf,npup+1) for t in (out[2],out[0],out[1],out[3],out[4],out[5],valid))
