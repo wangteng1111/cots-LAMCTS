@@ -1,0 +1,16 @@
+{
+  "args": [
+    "validation/qfilm02_fine_convergence.py"
+  ],
+  "code_commit": "237c46fe80e45b1d0f1bcda7154b69ab3d227107",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm02-fine-convergence-20261026-01",
+  "memory_gb": 0,
+  "request_sha256": "886177e442353c5063283b18f0c79bc09dbca82ee28bf8123dd14f853c92a015",
+  "schema": 1,
+  "started_at": 1792952410.1787221,
+  "state": "running",
+  "timeout_sec": 1800
+}
