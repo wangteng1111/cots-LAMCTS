@@ -107,21 +107,35 @@ def _fused_rays(U,V,ANGLES,PARAMS,OUT_X,OUT_Y,OUT_Z,OUT_OPL,OUT_FX,OUT_FY,OUT_VA
         sy=tary
     valid=tl.full((BLOCK,),True,tl.int1)
     if NFRONT>0:
+        # One finite-difference Jacobian followed by inverse-Broyden style secant updates.
+        # Reduces optical front traces per ray from 6*3+1=19 to 3+6=9.
+        fx,fy,v0=_at_stop(sx,sy,cosa,sina,PARAMS,wi,ZS,ZSTOP,NS,NFRONT)
+        h=1e-3
+        fxx,fyx,vx=_at_stop(sx+h,sy,cosa,sina,PARAMS,wi,ZS,ZSTOP,NS,NFRONT)
+        fxy,fyy,vy=_at_stop(sx,sy+h,cosa,sina,PARAMS,wi,ZS,ZSTOP,NS,NFRONT)
+        j00=(fxx-fx)/h;j10=(fyx-fy)/h
+        j01=(fxy-fx)/h;j11=(fyy-fy)/h
+        valid=valid & v0 & vx & vy
         for _ in range(6):
-            fx,fy,v0=_at_stop(sx,sy,cosa,sina,PARAMS,wi,ZS,ZSTOP,NS,NFRONT)
-            h=1e-3
-            fxx,fyx,vx=_at_stop(sx+h,sy,cosa,sina,PARAMS,wi,ZS,ZSTOP,NS,NFRONT)
-            fxy,fyy,vy=_at_stop(sx,sy+h,cosa,sina,PARAMS,wi,ZS,ZSTOP,NS,NFRONT)
-            j00=(fxx-fx)/h;j10=(fyx-fy)/h
-            j01=(fxy-fx)/h;j11=(fyy-fy)/h
             det=j00*j11-j01*j10
-            ok=v0 & vx & vy & (tl.abs(det)>1e-12)
+            good=tl.abs(det)>1e-12
             ex=fx-tarx;ey=fy-tary
-            sx=sx-tl.where(ok,(j11*ex-j01*ey)/tl.where(ok,det,1.),0.)
-            sy=sy-tl.where(ok,(-j10*ex+j00*ey)/tl.where(ok,det,1.),0.)
-            valid=valid & ok
-        fx,fy,ok=_at_stop(sx,sy,cosa,sina,PARAMS,wi,ZS,ZSTOP,NS,NFRONT)
-        valid=valid & ok & ((fx-tarx)*(fx-tarx)+(fy-tary)*(fy-tary)<1e-8)
+            stepx=tl.where(good,(j11*ex-j01*ey)/tl.where(good,det,1.),0.)
+            stepy=tl.where(good,(-j10*ex+j00*ey)/tl.where(good,det,1.),0.)
+            sxnew=sx-stepx;synew=sy-stepy
+            fnew,gnew,vnew=_at_stop(sxnew,synew,cosa,sina,PARAMS,wi,ZS,ZSTOP,NS,NFRONT)
+            dxq=sxnew-sx;dyq=synew-sy
+            df=fnew-fx;dg=gnew-fy
+            rx=df-j00*dxq-j01*dyq
+            ry=dg-j10*dxq-j11*dyq
+            scale=tl.maximum(dxq*dxq+dyq*dyq,1e-24)
+            j00=j00+rx*dxq/scale
+            j01=j01+rx*dyq/scale
+            j10=j10+ry*dxq/scale
+            j11=j11+ry*dyq/scale
+            valid=valid & good & vnew
+            sx=sxnew;sy=synew;fx=fnew;fy=gnew
+        valid=valid & ((fx-tarx)*(fx-tarx)+(fy-tary)*(fy-tary)<1e-8)
     z=tl.full((BLOCK,),ZS,tl.float64)
     x=sx;y=sy;dz=cosa;dx=sina;dy=tl.full((BLOCK,),0.,tl.float64)
     opl=dx*sx+dz*z
