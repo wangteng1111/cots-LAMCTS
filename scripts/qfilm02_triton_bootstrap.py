@@ -3,19 +3,35 @@
 from __future__ import annotations
 import subprocess,os,sys,shutil,json,tarfile,glob
 from pathlib import Path
-root=Path(os.environ.get("COTS_JOB_ARTIFACT_DIR","/tmp"))/"python_headers"
-root.mkdir(parents=True,exist_ok=True)
+# Cache development headers between bridge jobs without touching system Python.
+shared=Path("/var/lib/cots-lamcts/qfilm02_build_deps")
+try:
+    shared.mkdir(parents=True,exist_ok=True)
+    if not os.access(shared,os.W_OK):raise PermissionError(str(shared))
+    root=shared
+except (OSError,PermissionError):
+    root=Path(os.environ.get("COTS_JOB_ARTIFACT_DIR","/tmp"))/"python_headers"
+    root.mkdir(parents=True,exist_ok=True)
+os.environ.setdefault("TRITON_CACHE_DIR",str(root/"triton_cache"))
+os.environ.setdefault("XDG_CACHE_HOME",str(root/"xdg_cache"))
 def run(argv,timeout=100):
  p=subprocess.run(argv,cwd=root,capture_output=True,text=True,timeout=timeout)
  print("COMMAND",argv,"RC",p.returncode,"stdout",p.stdout[-2000:],"stderr",p.stderr[-2000:],flush=True)
  return p
-print("APT_SHOW")
-run(["apt-cache","policy","libpython3.12-dev"])
-p=run(["apt","download","libpython3.12-dev"],timeout=120)
-files=list(root.glob("*.deb"))
-if p.returncode or not files:raise SystemExit("apt download failed")
-dest=root/"unpacked";dest.mkdir(exist_ok=True)
-run(["dpkg-deb","-x",str(files[0]),str(dest)],timeout=60)
+dest=root/"unpacked"
+inc=dest/"usr"/"include"/"python3.12"
+pyconfig=dest/"usr"/"include"/"x86_64-linux-gnu"/"python3.12"/"pyconfig.h"
+if not (inc/"Python.h").is_file() or not pyconfig.is_file():
+    print("APT_SHOW")
+    run(["apt-cache","policy","libpython3.12-dev"])
+    p=run(["apt","download","libpython3.12-dev"],timeout=120)
+    files=list(root.glob("*.deb"))
+    if p.returncode or not files:raise SystemExit("apt download failed")
+    dest.mkdir(exist_ok=True)
+    unpack=run(["dpkg-deb","-x",str(files[0]),str(dest)],timeout=60)
+    if unpack.returncode:raise SystemExit("extract Python headers failed")
+else:
+    print("PYTHON_HEADERS_CACHE_HIT",str(inc),flush=True)
 inc=dest/"usr"/"include"/"python3.12"
 assert (inc/"Python.h").is_file(),"no Python.h in package"
 # Ubuntu multiarch Python headers forward pyconfig.h into x86_64-linux-gnu/.
