@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "job_id": "qfilm02-chunk-benchmark-20261026-01",
+  "code_commit": "de9701870cabb262a2cfbcf011a1755c3ef6f80b",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "scripts/qfilm02_triton_bootstrap.py",
+    "qfilm02_chunk_benchmark.py"
+  ],
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
