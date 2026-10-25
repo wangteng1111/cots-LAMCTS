@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "qfilm02-environment-probe-20261026-01",
+  "code_commit": "f1c3f0be669b594b35112206223467aa725dedcd",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "scripts/qfilm02_environment_probe.py"
+  ],
+  "timeout_sec": 180,
+  "memory_gb": 0
+}
