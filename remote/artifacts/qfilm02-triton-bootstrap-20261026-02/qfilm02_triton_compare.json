@@ -1,0 +1,44 @@
+{
+  "schema": "Qfilm0.2-triton-comparison-v1",
+  "passed": false,
+  "cases": [
+    {
+      "name": "thin_pupil32",
+      "fields": 5,
+      "pupil": 32,
+      "wavelengths": 3,
+      "reference_secs": 0.9254733938723803,
+      "fast_secs": 1.7546159252524376,
+      "Q_image_max_abs": 29.737338395924773,
+      "Q_image_mean_abs": 0.5024980187396726,
+      "Q_image_valid": true,
+      "Q_wavefront_max_abs": 1935630.7809515873,
+      "Q_wavefront_mean_abs": 230185.2313008827,
+      "Q_wavefront_valid": true,
+      "J_ref": 1.5439634207588342,
+      "J_fast": 1.5957563758916413,
+      "J_abs": 0.05179295513280713,
+      "speedup": 0.5274506976444043,
+      "passed": false
+    },
+    {
+      "name": "multi_front_pupil32",
+      "fields": 5,
+      "pupil": 32,
+      "wavelengths": 3,
+      "reference_secs": 1.3515634424984455,
+      "fast_secs": 2.03142043761909,
+      "Q_image_max_abs": 24.661807394112998,
+      "Q_image_mean_abs": 0.7147634774301688,
+      "Q_image_valid": true,
+      "Q_wavefront_max_abs": 2155341.4712802623,
+      "Q_wavefront_mean_abs": 231848.76598613156,
+      "Q_wavefront_valid": true,
+      "J_ref": 57.3404265080119,
+      "J_fast": 57.35982393677333,
+      "J_abs": 0.01939742876142958,
+      "speedup": 0.66532925310259,
+      "passed": false
+    }
+  ]
+}
