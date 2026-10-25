@@ -1,0 +1,7 @@
+QFILM_BEGIN cpu
+QFILM_DONE cpu {"device": "cpu", "elapsed_sec": 9.773251010105014, "returncode": 0}
+QFILM_BEGIN cuda:0
+QFILM_DONE cuda:0 {"device": "cuda:0", "elapsed_sec": 4.629536031745374, "returncode": 0}
+QFILM_BEGIN cuda:1
+QFILM_DONE cuda:1 {"device": "cuda:1", "elapsed_sec": 4.521587924100459, "returncode": 0}
+QFILM_SUMMARY {"passed": true, "comparisons": {"cuda:0": {"J_task_abs": 5.329070518200751e-15, "central_mtf_max_abs": 1.2129186544029835e-13, "edge_mtf_max_abs": 2.0943143053120394e-13, "gpu_faster_than_cpu": 3.697823207256766}, "cuda:1": {"J_task_abs": 5.329070518200751e-15, "central_mtf_max_abs": 1.2129186544029835e-13, "edge_mtf_max_abs": 2.0943143053120394e-13, "gpu_faster_than_cpu": 3.808966248391495}}, "devices": [{"device": "cpu", "returncode": 0, "error": null}, {"device": "cuda:0", "returncode": 0, "error": null}, {"device": "cuda:1", "returncode": 0, "error": null}]}
