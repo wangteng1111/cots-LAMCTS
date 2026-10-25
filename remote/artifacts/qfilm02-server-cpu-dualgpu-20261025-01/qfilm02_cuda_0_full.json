@@ -1,0 +1,57 @@
+{
+  "schema": "Qfilm0.2-verification-v1",
+  "version": "Qfilm0.2-provisional-fft-v1",
+  "device": "cuda:0",
+  "torch_version": "2.14.0+cu130",
+  "gpu_name": "NVIDIA GeForce RTX 5090",
+  "certified": false,
+  "analytic": {
+    "airy_mtf_max_abs_error": 0.00039807712688189056,
+    "unit_strehl_error": 0.0,
+    "energy_error": 0.0,
+    "tilt_mtf_invariance": 0.0023835711001395365,
+    "defocus_sign_symmetry": 1.1102230246251565e-16,
+    "parabola_sag_error": 1.1102230246251565e-16,
+    "parabola_slope_error": 0.0,
+    "spherical_sag_error": 1.4432899320127035e-15,
+    "spherical_slope_error": 2.7755575615628914e-17,
+    "area_normalization_error": 0.0,
+    "ideal_fno2_J": 0.004043711750702849,
+    "ideal_fno16_J": 0.22986766649466353
+  },
+  "real_prescription_smoke": {
+    "n_fields": 100,
+    "n_waves": 7,
+    "n_pupil": 4096,
+    "seconds": 2.204570117406547,
+    "fields_per_sec": 45.36031728382486,
+    "J_task": 2.4569333201478445,
+    "central_mtf_t": [
+      0.8098936360602866,
+      0.600001326712228,
+      0.46495530624353815,
+      0.3831532046231026,
+      0.28274910619532884,
+      0.21824115671837768,
+      0.1721109958233263,
+      0.14317195537509003,
+      0.11976807922275541,
+      0.10114645009257399
+    ],
+    "edge_mtf_t": [
+      0.02230650758715311,
+      0.0004477897678112904,
+      0.0010206524361228296,
+      0.0003970401768746311,
+      0.002929892716888375,
+      0.011784040240991752,
+      0.0009617941362572261,
+      0.013526517278646639,
+      0.004277561396675461,
+      0.02900832396018707
+    ],
+    "min_pupil_fill": 1.0,
+    "max_abs_distortion_pct": 3.8857047090418293,
+    "physics_status": "provisional_scalar_fft_exit_pupil_approx"
+  }
+}
