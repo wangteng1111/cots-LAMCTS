@@ -1,0 +1,25 @@
+APT_SHOW
+COMMAND ['apt-cache', 'policy', 'libpython3.12-dev'] RC 0 stdout libpython3.12-dev:
+  Installed: (none)
+  Candidate: 3.12.3-1ubuntu0.17
+  Version table:
+     3.12.3-1ubuntu0.17 500
+        500 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages
+        500 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages
+     3.12.3-1 500
+        500 http://us.archive.ubuntu.com/ubuntu noble/main amd64 Packages
+ stderr 
+COMMAND ['apt', 'download', 'libpython3.12-dev'] RC 0 stdout Get:1 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12-dev amd64 3.12.3-1ubuntu0.17 [5,684 kB]
+Fetched 5,684 kB in 4s (1,280 kB/s)
+ stderr 
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+
+COMMAND ['dpkg-deb', '-x', '/var/lib/cots-lamcts/jobs/qfilm02-triton-bootstrap-20261026-02/artifacts/python_headers/libpython3.12-dev_3.12.3-1ubuntu0.17_amd64.deb', '/var/lib/cots-lamcts/jobs/qfilm02-triton-bootstrap-20261026-02/artifacts/python_headers/unpacked'] RC 0 stdout  stderr 
+AVAILABLE_PYTHON_HEADER /var/lib/cots-lamcts/jobs/qfilm02-triton-bootstrap-20261026-02/artifacts/python_headers/unpacked/usr/include/python3.12
+GPU NVIDIA GeForce RTX 5090 TRITON 3.8.0
+/var/lib/cots-lamcts/jobs/qfilm02-triton-bootstrap-20261026-02/src/evaluator/qfilm02.py:193: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)
+  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)
+CASE {"name": "thin_pupil32", "fields": 5, "pupil": 32, "wavelengths": 3, "reference_secs": 0.9254733938723803, "fast_secs": 1.7546159252524376, "Q_image_max_abs": 29.737338395924773, "Q_image_mean_abs": 0.5024980187396726, "Q_image_valid": true, "Q_wavefront_max_abs": 1935630.7809515873, "Q_wavefront_mean_abs": 230185.2313008827, "Q_wavefront_valid": true, "J_ref": 1.5439634207588342, "J_fast": 1.5957563758916413, "J_abs": 0.05179295513280713, "speedup": 0.5274506976444043, "passed": false}
+CASE {"name": "multi_front_pupil32", "fields": 5, "pupil": 32, "wavelengths": 3, "reference_secs": 1.3515634424984455, "fast_secs": 2.03142043761909, "Q_image_max_abs": 24.661807394112998, "Q_image_mean_abs": 0.7147634774301688, "Q_image_valid": true, "Q_wavefront_max_abs": 2155341.4712802623, "Q_wavefront_mean_abs": 231848.76598613156, "Q_wavefront_valid": true, "J_ref": 57.3404265080119, "J_fast": 57.35982393677333, "J_abs": 0.01939742876142958, "speedup": 0.66532925310259, "passed": false}
+SUMMARY {"passed": false, "cases": 2}
