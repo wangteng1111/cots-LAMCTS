@@ -4,17 +4,77 @@
     "qfilm02_accelerated.py"
   ],
   "code_commit": "4976aa11ded57632edbcb9d5dd814a2d350423c2",
+  "elapsed_sec": 25.94339394569397,
   "entrypoint": "scripts/cuda_venv_exec.py",
   "env": {},
+  "finished_at": 1792952711.4255688,
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm02-triton-internalstop-opt-20261026-01",
-  "log_tail": "APT_SHOW\nCOMMAND ['apt-cache', 'policy', 'libpython3.12-dev'] RC 0 stdout libpython3.12-dev:\n  Installed: (none)\n  Candidate: 3.12.3-1ubuntu0.17\n  Version table:\n     3.12.3-1ubuntu0.17 500\n        500 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages\n        500 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages\n     3.12.3-1 500\n        500 http://us.archive.ubuntu.com/ubuntu noble/main amd64 Packages\n stderr ",
+  "log_tail": "APT_SHOW\nCOMMAND ['apt-cache', 'policy', 'libpython3.12-dev'] RC 0 stdout libpython3.12-dev:\n  Installed: (none)\n  Candidate: 3.12.3-1ubuntu0.17\n  Version table:\n     3.12.3-1ubuntu0.17 500\n        500 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages\n        500 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages\n     3.12.3-1 500\n        500 http://us.archive.ubuntu.com/ubuntu noble/main amd64 Packages\n stderr \nCOMMAND ['apt', 'download', 'libpython3.12-dev'] RC 0 stdout Get:1 http://us.archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12-dev amd64 3.12.3-1ubuntu0.17 [5,684 kB]\nFetched 5,684 kB in 5s (1,093 kB/s)\n stderr \nWARNING: apt does not have a stable CLI interface. Use with caution in scripts.\n\n\nCOMMAND ['dpkg-deb', '-x', '/var/lib/cots-lamcts/jobs/qfilm02-triton-internalstop-opt-20261026-01/artifacts/python_headers/libpython3.12-dev_3.12.3-1ubuntu0.17_amd64.deb', '/var/lib/cots-lamcts/jobs/qfilm02-triton-internalstop-opt-20261026-01/artifacts/python_headers/unpacked'] RC 0 stdout  stderr \nAVAILABLE_PYTHON_HEADER /var/lib/cots-lamcts/jobs/qfilm02-triton-internalstop-opt-20261026-01/artifacts/python_headers/unpacked/usr/include/python3.12\nGPU NVIDIA GeForce RTX 5090 TRITON 3.8.0\n/var/lib/cots-lamcts/jobs/qfilm02-triton-internalstop-opt-20261026-01/src/evaluator/qfilm02.py:193: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)\nCASE {\"name\": \"thin_pupil32\", \"fields\": 5, \"pupil\": 32, \"wavelengths\": 3, \"reference_secs\": 0.9225903637707233, \"fast_secs\": 1.6696131974458694, \"Q_image_max_abs\": 7.105427357601002e-12, \"Q_image_mean_abs\": 6.453960514618811e-13, \"Q_image_valid\": true, \"Q_wavefront_max_abs\": 4.113189788768068e-10, \"Q_wavefront_mean_abs\": 5.843437411302894e-11, \"Q_wavefront_valid\": true, \"J_ref\": 1.5439634207588342, \"J_fast\": 1.543963420758335, \"J_abs\": 4.991562718714704e-13, \"speedup\": 0.5525773066372965, \"passed\": true}\nCASE {\"name\": \"multi_front_pupil32\", \"fields\": 5, \"pupil\": 32, \"wavelengths\": 3, \"reference_secs\": 1.4011180605739355, \"fast_secs\": 2.0796681623905897, \"Q_image_max_abs\": 2.1316282072803006e-11, \"Q_image_mean_abs\": 7.150334550799428e-13, \"Q_image_valid\": true, \"Q_wavefront_max_abs\": 8.080505153884587e-10, \"Q_wavefront_mean_abs\": 1.4181602443414886e-10, \"Q_wavefront_valid\": true, \"J_ref\": 57.3404265080119, \"J_fast\": 57.34042650801172, \"J_abs\": 1.8474111129762605e-13, \"speedup\": 0.673721935985856, \"passed\": true}\nCASE {\"name\": \"thin_full_pupil64\", \"fields\": 100, \"pupil\": 64, \"wavelengths\": 7, \"reference_secs\": 1.7278237445279956, \"fast_secs\": 0.6810500854626298, \"Q_image_max_abs\": 1.0658141036401503e-11, \"Q_image_mean_abs\": 4.0598707223188895e-13, \"Q_image_valid\": true, \"Q_wavefront_max_abs\": 1.0370513336965814e-09, \"Q_wavefront_mean_abs\": 5.1544608567943056e-11, \"Q_wavefront_valid\": true, \"J_ref\": 2.452306911646, \"J_fast\": 2.4523069116459224, \"J_abs\": 7.771561172376096e-14, \"speedup\": 2.53699952677387, \"passed\": true}\nCASE {\"name\": \"multi_front_pupil64\", \"fields\": 15, \"pupil\": 64, \"wavelengths\": 3, \"reference_secs\": 2.624709263443947, \"fast_secs\": 4.2361341416835785, \"Q_image_max_abs\": 2.1316282072803006e-11, \"Q_image_mean_abs\": 6.55647997340207e-13, \"Q_image_valid\": true, \"Q_wavefront_max_abs\": 4.94765117764473e-10, \"Q_wavefront_mean_abs\": 8.159809498611528e-11, \"Q_wavefront_valid\": true, \"J_ref\": 58.621356371559465, \"J_fast\": 58.62135637155936, \"J_abs\": 1.0658141036401503e-13, \"speedup\": 0.6196001296599171, \"passed\": true}\nSUMMARY {\"passed\": true, \"cases\": 4}",
   "memory_gb": 0,
   "pid": 3606687,
   "request_sha256": "cb5d1179b9d2541a95e7d19a2ab4b7ad8b29b4c7c56a4be5f8b57b1da7609153",
+  "returncode": 0,
   "schema": 1,
   "started_at": 1792952685.4821749,
-  "state": "running",
+  "state": "finished",
   "timeout_sec": 1800,
-  "updated_at": 1792952687.708082
+  "updated_at": 1792952687.708082,
+  "uploaded_artifacts": [
+    {
+      "path": "qfilm02_triton_compare.json",
+      "size": 2575,
+      "uploaded": true
+    },
+    {
+      "path": "triton_kernel_cache/2UCHMYMEMX53HG3MNHDSPKBLCCOPH3HZK2RU2DM6FR3GMICWAIPA/__grp___fused_rays.json",
+      "size": 1374,
+      "uploaded": true
+    },
+    {
+      "path": "triton_kernel_cache/2UCHMYMEMX53HG3MNHDSPKBLCCOPH3HZK2RU2DM6FR3GMICWAIPA/_fused_rays.json",
+      "size": 1110,
+      "uploaded": true
+    },
+    {
+      "path": "triton_kernel_cache/EAJ4RUWHBHFKAX74CTPZS2FN5HJ5FLZDGL4PJED6OZ7YLEPNZOPA/__grp___fused_rays.json",
+      "size": 1374,
+      "uploaded": true
+    },
+    {
+      "path": "triton_kernel_cache/EAJ4RUWHBHFKAX74CTPZS2FN5HJ5FLZDGL4PJED6OZ7YLEPNZOPA/_fused_rays.json",
+      "size": 1110,
+      "uploaded": true
+    },
+    {
+      "path": "triton_kernel_cache/PJV7LAJL3PASL7F5INVQQSOXXR3IMSRH3TAHXA3XTVMEJOIJHYGQ/__grp___fused_rays.json",
+      "size": 1374,
+      "uploaded": true
+    },
+    {
+      "path": "triton_kernel_cache/PJV7LAJL3PASL7F5INVQQSOXXR3IMSRH3TAHXA3XTVMEJOIJHYGQ/_fused_rays.json",
+      "size": 1110,
+      "uploaded": true
+    },
+    {
+      "path": "triton_kernel_cache/SBL4DRVDAFYTC7MC2ZLO44JPYIYZXND7TBBW55XJI67GMOQDNAEQ/__grp___fused_rays.json",
+      "size": 1374,
+      "uploaded": true
+    },
+    {
+      "path": "triton_kernel_cache/SBL4DRVDAFYTC7MC2ZLO44JPYIYZXND7TBBW55XJI67GMOQDNAEQ/_fused_rays.json",
+      "size": 1110,
+      "uploaded": true
+    },
+    {
+      "path": "triton_kernel_cache/Z2KT6JR2GHI6TVAD7RFYMSEZIRGK5LIENALM52QVK63DWH56GFFA/__grp___fused_rays.json",
+      "size": 1374,
+      "uploaded": true
+    },
+    {
+      "path": "triton_kernel_cache/Z2KT6JR2GHI6TVAD7RFYMSEZIRGK5LIENALM52QVK63DWH56GFFA/_fused_rays.json",
+      "size": 1110,
+      "uploaded": true
+    }
+  ]
 }
