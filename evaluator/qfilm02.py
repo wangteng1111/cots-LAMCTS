@@ -84,8 +84,10 @@ def _refract_step(z,x,y,dz,dx,dy,s:Surf,valid,opl=None):
         valid=valid & ok & (torch.abs(df)>1e-12)
     xx=x+t*dx; yy=y+t*dy; zz=z+t*dz
     rr=torch.hypot(xx,yy)
-    _,ds,ok=_sag_and_grad(rr,s.R,s.conic,s.asphere)
-    valid=valid & ok & (t>0) & torch.isfinite(t)
+    sag_final,ds,ok=_sag_and_grad(rr,s.R,s.conic,s.asphere)
+    # Never label Newton failures as valid optical rays: 0.1 nm sag residual.
+    intersection_residual=zz-s.z-sag_final
+    valid=valid & ok & (t>0) & torch.isfinite(t) & torch.isfinite(intersection_residual) & (intersection_residual.abs()<=1e-7)
     # Surface aperture is stored as a full CLEAR DIAMETER by P2P parser.
     aperture=getattr(s,'clear_aperture',None)
     if aperture is not None and aperture>0:
@@ -256,8 +258,23 @@ def _surfaces_at(surfs,lam):
     z=0.;n1=1.;out=[]
     for s in surfs:
         def val(key,default=None):return s.get(key,default) if isinstance(s,dict) else getattr(s,key,default)
-        nbase=float(val('n_after'))
-        n2=1. if nbase<=1.000001 else cauchy_from_ne_ve(nbase,float(val('v_after')),lam)
+        # Exact supplier Sellmeier dispersion when provided; legacy n/V uses
+        # estimated Cauchy and must retain a provenance flag in Qfilm metadata.
+        sell=val('sellmeier',None)
+        if sell is not None:
+            B=sell.get('B') if isinstance(sell,dict) else sell[0]
+            C=sell.get('C') if isinstance(sell,dict) else sell[1]
+            if len(B)!=3 or len(C)!=3:
+                raise ValueError('Sellmeier requires three B and three C coefficients')
+            lam_um=float(lam)*1e-3
+            lam2=lam_um*lam_um
+            n_sq=1.+sum(float(b)*lam2/(lam2-float(c)) for b,c in zip(B,C))
+            if n_sq<=0. or not math.isfinite(n_sq):
+                raise ValueError('Sellmeier dispersion invalid at this wavelength')
+            n2=math.sqrt(n_sq)
+        else:
+            nbase=float(val('n_after'))
+            n2=1. if nbase<=1.000001 else cauchy_from_ne_ve(nbase,float(val('v_after')),lam)
         out.append(Surf(z,float(val('radius')),n1,n2,float(val('conic',0.)),tuple(val('asphere',()) or ())))
         # Surf is a frozen dataclass? currently mutable, attach clear diameter.
         out[-1].clear_aperture=val('clear_aperture')
