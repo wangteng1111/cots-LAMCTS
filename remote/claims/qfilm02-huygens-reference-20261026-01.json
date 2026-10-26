@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1792994040.67029,
+  "code_commit": "82e77d3a907028ee50463664a5c6f809b9792913",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm02-huygens-reference-20261026-01",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/qfilm02-huygens-reference-20261026-01.json",
+  "request_sha256": "1a8f51095c6423044439e6cba41596647ca3639ed2d001585d51f873fa74dbfd",
+  "schema": 1,
+  "state": "claimed"
+}
