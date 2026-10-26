@@ -1,0 +1,5 @@
+PYTHON_HEADERS_CACHE_HIT /var/lib/cots-lamcts/qfilm02_build_deps/unpacked/usr/include/python3.12
+AVAILABLE_PYTHON_HEADER /var/lib/cots-lamcts/qfilm02_build_deps/unpacked/usr/include/python3.12
+/var/lib/cots-lamcts/jobs/qfilm02-physics-integrity-20261026-01/src/evaluator/qfilm02_fast.py:201: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /var/lib/cots-lamcts/qfilm02_build_deps/xdg_cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)
+  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)
+SUMMARY {"schema": "qfilm02-physical-input-integrity-v1", "sellmeier": {"n_D": 1.5168000345005883, "cpu_gpu_Q_max": 7.105427357601002e-12, "provenance": "sellmeier_3term"}, "contract": {"unsorted_wavelength_rejected": true, "pre_surface_film_rejected": true}}
