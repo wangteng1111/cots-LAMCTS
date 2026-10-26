@@ -1,0 +1,18 @@
+{
+  "args": [
+    "validation/qfilm02_exitfft_compare.py",
+    "--device",
+    "cuda:0"
+  ],
+  "code_commit": "8a3698f630468d5a652ae0b59ca9b3973f13e8fb",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm02-exitfft-comparison-20261026-01",
+  "memory_gb": 0,
+  "request_sha256": "cb85a71d03f119cabb0856177346ba3926dec6327838faf8d048b773a8d9cb8a",
+  "schema": 1,
+  "started_at": 1792994839.917957,
+  "state": "running",
+  "timeout_sec": 900
+}
