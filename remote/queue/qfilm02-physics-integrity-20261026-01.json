@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "job_id": "qfilm02-physics-integrity-20261026-01",
+  "code_commit": "4c3103fdcab13d0867b1142595bcf7139e74d59f",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "scripts/qfilm02_triton_bootstrap.py",
+    "qfilm02_physics_integrity.py"
+  ],
+  "timeout_sec": 900,
+  "memory_gb": 0
+}
