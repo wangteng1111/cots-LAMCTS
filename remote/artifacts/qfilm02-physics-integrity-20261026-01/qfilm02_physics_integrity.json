@@ -1,0 +1,12 @@
+{
+  "schema": "qfilm02-physical-input-integrity-v1",
+  "sellmeier": {
+    "n_D": 1.5168000345005883,
+    "cpu_gpu_Q_max": 7.105427357601002e-12,
+    "provenance": "sellmeier_3term"
+  },
+  "contract": {
+    "unsorted_wavelength_rejected": true,
+    "pre_surface_film_rejected": true
+  }
+}
