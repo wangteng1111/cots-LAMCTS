@@ -1,0 +1,34 @@
+{
+  "args": [
+    "validation/qfilm02_exitfft_compare.py",
+    "--device",
+    "cuda:0"
+  ],
+  "bridge_version": "0.5.0",
+  "code_commit": "8a3698f630468d5a652ae0b59ca9b3973f13e8fb",
+  "elapsed_sec": 9.970518827438354,
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "finished_at": 1792994849.888476,
+  "hostname": "aipss-Rack-Server",
+  "immutable_job_id": true,
+  "job_id": "qfilm02-exitfft-comparison-20261026-01",
+  "log_tail": "/var/lib/cots-lamcts/jobs/qfilm02-exitfft-comparison-20261026-01/src/evaluator/qfilm02_exitfft.py:67: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square()\nRESULT {\"name\": \"thin\", \"field_i\": 0, \"exitfft_seconds\": 0.9630902679637074, \"exitfft_mtf_t\": [0.728121034078925, 0.4004604002340446, 0.22510677103994753, 0.18429033052778276], \"huygens_seconds\": 0.21680524200201035, \"huygens_mtf_t\": [0.6793642726855122, 0.35129559774585684, 0.20518689021484607, 0.16794713923131166], \"old_mtf_t\": [0.6927380762896944, 0.3609652970572839, 0.2070706238655476, 0.17019763772378452], \"exitfft_vs_huygens_max\": 0.04916480248822791, \"old_vs_huygens_max\": 0.013373803604182166, \"physical_bbox\": [-3.791329810580279, 3.791329810580279, -3.791329810580279, 3.791329810580279]}\nRESULT {\"name\": \"thin\", \"field_i\": 2, \"exitfft_seconds\": 0.024916578084230423, \"exitfft_mtf_t\": [0.03750897176899211, 0.013288728678378544, 0.12459566369713544, 0.01238314998053496], \"huygens_seconds\": 0.09912062902003527, \"huygens_mtf_t\": [0.006392109697269593, 0.02048946468202446, 0.01251278947043007, 0.023421438724591917], \"old_mtf_t\": [0.003526978915743275, 0.0019810868038256345, 0.06813426923959226, 0.02983671008775744], \"exitfft_vs_huygens_max\": 0.11208287422670538, \"old_vs_huygens_max\": 0.055621479769162194, \"physical_bbox\": [-1.5271371669006253, 6.059981017718408, -3.7752099505849617, 3.7752099505849617]}\nRESULT {\"name\": \"complex\", \"field_i\": 0, \"exitfft_seconds\": 0.4235612666234374, \"exitfft_mtf_t\": [0.2316795423117035, 0.056313011591373946, 0.05335691211217798, 0.0014820032224824617], \"huygens_seconds\": 0.48108596075326204, \"huygens_mtf_t\": [0.09433657566574086, 0.00698260482363817, 0.03927655222555575, 0.005118580117713408], \"old_mtf_t\": [0.09015814319894476, 0.004139819318701103, 0.0, 0.0], \"exitfft_vs_huygens_max\": 0.13734296664597528, \"old_vs_huygens_max\": 0.03927655222555575, \"physical_bbox\": [-4.2864152225863545, 4.2864152225863545, -4.2864152225863545, 4.2864152225863545]}\nRESULT {\"name\": \"complex\", \"field_i\": 2, \"exitfft_seconds\": 0.42671846877783537, \"exitfft_mtf_t\": [0.476981460626075, 0.20335566013693784, 0.16949784139023033, 0.21429929583382756], \"huygens_seconds\": 0.482964844442904, \"huygens_mtf_t\": [0.04689622246454653, 0.34096720586793083, 0.19574956584707165, 0.15420935011766276], \"old_mtf_t\": [0.16920145710165221, 0.06837829879104035, 0.0, 0.0], \"exitfft_vs_huygens_max\": 0.43008523816152844, \"old_vs_huygens_max\": 0.2725889070768905, \"physical_bbox\": [-2.3292888359548027, 6.100925339710988, -4.26761183389404, 4.26761183389404]}",
+  "memory_gb": 0,
+  "pid": 3776259,
+  "request_sha256": "cb85a71d03f119cabb0856177346ba3926dec6327838faf8d048b773a8d9cb8a",
+  "retry_policy": "new_job_id_required",
+  "returncode": 0,
+  "schema": 1,
+  "started_at": 1792994839.917957,
+  "state": "finished",
+  "timeout_sec": 900,
+  "updated_at": 1792994842.1840413,
+  "uploaded_artifacts": [
+    {
+      "path": "qfilm02_exitfft_compare.json",
+      "size": 3030,
+      "uploaded": true
+    }
+  ]
+}
