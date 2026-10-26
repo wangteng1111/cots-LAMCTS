@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "job_id": "qfilm02-exitfft-comparison-20261026-01",
+  "code_commit": "8a3698f630468d5a652ae0b59ca9b3973f13e8fb",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm02_exitfft_compare.py",
+    "--device",
+    "cuda:0"
+  ],
+  "timeout_sec": 900,
+  "memory_gb": 0
+}
