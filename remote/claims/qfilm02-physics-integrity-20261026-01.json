@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1792994592.071446,
+  "code_commit": "4c3103fdcab13d0867b1142595bcf7139e74d59f",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm02-physics-integrity-20261026-01",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/qfilm02-physics-integrity-20261026-01.json",
+  "request_sha256": "523aa7ef4bb191ee2df84d7cc99b85f7d946b89af2574221ec1bf3d93b4f50f7",
+  "schema": 1,
+  "state": "claimed"
+}
