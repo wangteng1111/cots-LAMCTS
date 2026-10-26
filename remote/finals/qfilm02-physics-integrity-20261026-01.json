@@ -1,0 +1,33 @@
+{
+  "args": [
+    "scripts/qfilm02_triton_bootstrap.py",
+    "qfilm02_physics_integrity.py"
+  ],
+  "bridge_version": "0.5.0",
+  "code_commit": "4c3103fdcab13d0867b1142595bcf7139e74d59f",
+  "elapsed_sec": 9.939629793167114,
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "finished_at": 1792994604.2455163,
+  "hostname": "aipss-Rack-Server",
+  "immutable_job_id": true,
+  "job_id": "qfilm02-physics-integrity-20261026-01",
+  "log_tail": "PYTHON_HEADERS_CACHE_HIT /var/lib/cots-lamcts/qfilm02_build_deps/unpacked/usr/include/python3.12\nAVAILABLE_PYTHON_HEADER /var/lib/cots-lamcts/qfilm02_build_deps/unpacked/usr/include/python3.12\n/var/lib/cots-lamcts/jobs/qfilm02-physics-integrity-20261026-01/src/evaluator/qfilm02_fast.py:201: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /var/lib/cots-lamcts/qfilm02_build_deps/xdg_cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)\nSUMMARY {\"schema\": \"qfilm02-physical-input-integrity-v1\", \"sellmeier\": {\"n_D\": 1.5168000345005883, \"cpu_gpu_Q_max\": 7.105427357601002e-12, \"provenance\": \"sellmeier_3term\"}, \"contract\": {\"unsorted_wavelength_rejected\": true, \"pre_surface_film_rejected\": true}}",
+  "memory_gb": 0,
+  "pid": 3774822,
+  "request_sha256": "523aa7ef4bb191ee2df84d7cc99b85f7d946b89af2574221ec1bf3d93b4f50f7",
+  "retry_policy": "new_job_id_required",
+  "returncode": 0,
+  "schema": 1,
+  "started_at": 1792994594.3058865,
+  "state": "finished",
+  "timeout_sec": 900,
+  "updated_at": 1792994596.5230298,
+  "uploaded_artifacts": [
+    {
+      "path": "qfilm02_physics_integrity.json",
+      "size": 288,
+      "uploaded": true
+    }
+  ]
+}
