@@ -37,8 +37,12 @@ class Config:
     def validate(self):
         if self.fields < 2 or self.pupil_n < 16 or self.fft_n < self.pupil_n or self.fft_n % self.pupil_n:
             raise ValueError('invalid field/pupil/fft dimensions')
-        if len(self.wavelengths_nm) != len(self.spectral_weights) or any(w <= 0 for w in self.spectral_weights):
+        if len(self.wavelengths_nm) != len(self.spectral_weights) or any(w <= 0 or not math.isfinite(float(w)) for w in self.spectral_weights):
             raise ValueError('invalid wavelength weights')
+        if any(not math.isfinite(float(lam)) or float(lam)<=0 for lam in self.wavelengths_nm) or tuple(self.wavelengths_nm)!=tuple(sorted(set(self.wavelengths_nm))):
+            raise ValueError('wavelengths must be positive, finite, distinct and ascending')
+        if self.max_fields_per_chunk<1:
+            raise ValueError('positive field chunk required')
         if min(self.frame_width_mm,self.frame_height_mm,self.target_efl_mm) <= 0:
             raise ValueError('invalid geometry')
     @property
@@ -287,6 +291,8 @@ def evaluate(p,config:Config=Config(),device='cpu'):
     config.validate();device=torch.device(device)
     src,stop_z,film_z,spec=_extract_spec(p)
     if stop_z is None or film_z is None:raise ValueError('stop and film must be explicitly fixed')
+    if not src or float(film_z)<=sum(float(si.get('thickness') if isinstance(si,dict) else si.thickness) for si in src[:-1]):
+        raise ValueError('fixed film must lie after the last refracting vertex')
     sd=spec.get('stop_diameter_mm')
     if sd is None or sd<=0:raise ValueError('explicit stop_diameter_mm required')
     stop_r=float(sd)/2.
@@ -376,8 +382,12 @@ def evaluate(p,config:Config=Config(),device='cpu'):
     return {'schema':'QfilmResult-0.2','version':VERSION,'certified':False,'physics_status':'provisional_scalar_fft_exit_pupil_approx',
             'config_hash':config.signature,'Q_image':q,'Q_wavefront':qw,'area_weights':aw,'quality':j,
             'efl_mm':float(wavelengths_data[len(waves)//2][3]),'fno':float(wavelengths_data[len(waves)//2][2]),
-            'assumptions':['cauchy_nV_dispersion','unit_pupil_amplitude','cos4_illumination_proxy',
-                           'green_only_encircled_energy','scalar_fft_no_huygens_certification'],
+            'assumptions':(['cauchy_nV_dispersion'] if any(
+                ((si.get('n_after',1.) if isinstance(si,dict) else si.n_after)>1.000001) and
+                ((si.get('sellmeier') if isinstance(si,dict) else getattr(si,'sellmeier',None)) is None)
+                for si in src) else [])+
+                ['unit_pupil_amplitude','cos4_illumination_proxy',
+                 'green_only_encircled_energy','scalar_fft_no_huygens_certification'],
             'backend':str(device)}
 
 
