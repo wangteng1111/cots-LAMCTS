@@ -9,10 +9,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm02-exitfft-comparison-20261026-01",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 3776259,
   "request_sha256": "cb85a71d03f119cabb0856177346ba3926dec6327838faf8d048b773a8d9cb8a",
   "schema": 1,
   "started_at": 1792994839.917957,
   "state": "running",
-  "timeout_sec": 900
+  "timeout_sec": 900,
+  "updated_at": 1792994842.1840413
 }
