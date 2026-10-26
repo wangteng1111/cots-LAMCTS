@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1792994262.5109146,
+  "code_commit": "9ca25924ec348ab0e3692974a9762b1e4c774912",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm02-huygens-convergence-20261026-01",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/qfilm02-huygens-convergence-20261026-01.json",
+  "request_sha256": "21cbf8ca297bf2c1d444c13d2422cd5c755e0fe17337b7b565b0a78129c9a91b",
+  "schema": 1,
+  "state": "claimed"
+}
