@@ -8,10 +8,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm02-physics-integrity-20261026-01",
+  "log_tail": "PYTHON_HEADERS_CACHE_HIT /var/lib/cots-lamcts/qfilm02_build_deps/unpacked/usr/include/python3.12\nAVAILABLE_PYTHON_HEADER /var/lib/cots-lamcts/qfilm02_build_deps/unpacked/usr/include/python3.12",
   "memory_gb": 0,
+  "pid": 3774822,
   "request_sha256": "523aa7ef4bb191ee2df84d7cc99b85f7d946b89af2574221ec1bf3d93b4f50f7",
   "schema": 1,
   "started_at": 1792994594.3058865,
   "state": "running",
-  "timeout_sec": 900
+  "timeout_sec": 900,
+  "updated_at": 1792994596.5230298
 }
