@@ -5,17 +5,27 @@
     "cuda:0"
   ],
   "code_commit": "9ca25924ec348ab0e3692974a9762b1e4c774912",
+  "elapsed_sec": 13.392331600189209,
   "entrypoint": "scripts/cuda_venv_exec.py",
   "env": {},
+  "finished_at": 1792994278.318821,
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm02-huygens-convergence-20261026-01",
-  "log_tail": "",
+  "log_tail": "/var/lib/cots-lamcts/jobs/qfilm02-huygens-convergence-20261026-01/src/evaluator/qfilm02_huygens.py:115: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  pieces.append((v.abs()**2))\nCASE thin 0 64 192 seconds 1.0464080348610878\nCASE thin 0 128 192 seconds 0.14347875863313675\nCASE thin 0 128 384 seconds 0.6188332410529256\nRESULT {\"name\": \"thin\", \"field\": 0, \"comparisons\": [{\"lhs\": \"64p_192i\", \"rhs\": \"128p_192i\", \"mtf_max_abs\": 0.01275461582403059, \"mtf_mean_abs\": 0.00476149602005128, \"mtf_p95_abs\": 0.012754615824028166}, {\"lhs\": \"128p_192i\", \"rhs\": \"128p_384i\", \"mtf_max_abs\": 0.006218392967910713, \"mtf_mean_abs\": 0.00276730648096429, \"mtf_p95_abs\": 0.0062183929679095005}]}\nCASE thin 2 64 192 seconds 0.14812093693763018\nCASE thin 2 128 192 seconds 0.15235104225575924\nCASE thin 2 128 384 seconds 0.5429151887074113\nRESULT {\"name\": \"thin\", \"field\": 2, \"comparisons\": [{\"lhs\": \"64p_192i\", \"rhs\": \"128p_192i\", \"mtf_max_abs\": 0.09568222564448958, \"mtf_mean_abs\": 0.012960585307788394, \"mtf_p95_abs\": 0.04506247403248473}, {\"lhs\": \"128p_192i\", \"rhs\": \"128p_384i\", \"mtf_max_abs\": 0.03371899213601459, \"mtf_mean_abs\": 0.005819335793048039, \"mtf_p95_abs\": 0.014014795043486667}]}\nCASE complex 0 64 192 seconds 0.5902009773999453\nCASE complex 0 128 192 seconds 0.5944043612107635\nCASE complex 0 128 384 seconds 0.9896442480385303\nRESULT {\"name\": \"complex\", \"field\": 0, \"comparisons\": [{\"lhs\": \"64p_192i\", \"rhs\": \"128p_192i\", \"mtf_max_abs\": 0.01572310752368769, \"mtf_mean_abs\": 0.004594834663138777, \"mtf_p95_abs\": 0.015723107523665396}, {\"lhs\": \"128p_192i\", \"rhs\": \"128p_384i\", \"mtf_max_abs\": 0.14749757540724673, \"mtf_mean_abs\": 0.023969936229450352, \"mtf_p95_abs\": 0.14749757540722416}]}\nCASE complex 2 64 192 seconds 0.5816320106387138\nCASE complex 2 128 192 seconds 0.5947764711454511\nCASE complex 2 128 384 seconds 0.9900087313726544\nRESULT {\"name\": \"complex\", \"field\": 2, \"comparisons\": [{\"lhs\": \"64p_192i\", \"rhs\": \"128p_192i\", \"mtf_max_abs\": 0.3025393764149481, \"mtf_mean_abs\": 0.05460467738824656, \"mtf_p95_abs\": 0.29296798584501754}, {\"lhs\": \"128p_192i\", \"rhs\": \"128p_384i\", \"mtf_max_abs\": 0.21980164774193678, \"mtf_mean_abs\": 0.03464899682664861, \"mtf_p95_abs\": 0.0856556553309174}]}",
   "memory_gb": 0,
   "pid": 3773448,
   "request_sha256": "21cbf8ca297bf2c1d444c13d2422cd5c755e0fe17337b7b565b0a78129c9a91b",
+  "returncode": 0,
   "schema": 1,
   "started_at": 1792994264.9264894,
-  "state": "running",
+  "state": "finished",
   "timeout_sec": 1800,
-  "updated_at": 1792994267.4981394
+  "updated_at": 1792994267.4981394,
+  "uploaded_artifacts": [
+    {
+      "path": "qfilm02_huygens_convergence.json",
+      "size": 16716,
+      "uploaded": true
+    }
+  ]
 }
