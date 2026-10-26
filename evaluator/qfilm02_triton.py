@@ -51,8 +51,10 @@ def _step(z,x,y,dz,dx,dy,opl,valid,params,wi,ss,NS:tl.constexpr,USE_OPL:tl.const
         valid=valid & ok & good
     xx=x+t*dx; yy=y+t*dy; zz=z+t*dz
     rr=tl.sqrt(xx*xx+yy*yy)
-    _,ds,ok=_sag(rr,c,conic,a4,a6,a8,a10)
-    valid=valid & ok & (t>0.) & (t==t) & (tl.abs(t)<1.e16) & (rr<=aper*.5+1e-9)
+    sag_final,ds,ok=_sag(rr,c,conic,a4,a6,a8,a10)
+    # Consistent with reference: 0.1 nm surface intersection residual.
+    residual=zz-zs-sag_final
+    valid=valid & ok & (tl.abs(residual)<=1.e-7) & (t>0.) & (t==t) & (tl.abs(t)<1.e16) & (rr<=aper*.5+1e-9)
     nx=-ds*xx/tl.maximum(rr,1e-14)
     ny=-ds*yy/tl.maximum(rr,1e-14)
     nz=tl.full(nx.shape,1.,tl.float64)
