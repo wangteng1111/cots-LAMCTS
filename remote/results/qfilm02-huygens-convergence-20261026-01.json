@@ -1,0 +1,18 @@
+{
+  "args": [
+    "validation/qfilm02_huygens_convergence.py",
+    "--device",
+    "cuda:0"
+  ],
+  "code_commit": "9ca25924ec348ab0e3692974a9762b1e4c774912",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm02-huygens-convergence-20261026-01",
+  "memory_gb": 0,
+  "request_sha256": "21cbf8ca297bf2c1d444c13d2422cd5c755e0fe17337b7b565b0a78129c9a91b",
+  "schema": 1,
+  "started_at": 1792994264.9264894,
+  "state": "running",
+  "timeout_sec": 1800
+}
