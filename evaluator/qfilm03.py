@@ -59,17 +59,59 @@ def _is_schott_bk7(source):
             if not np.allclose(sell[key],BK7[key],rtol=1e-8,atol=1e-12):return False
     return True
 
+def _material_parity(source, deep, cfg):
+    """Use supplier glass names only when raytracers agree at EVERY evaluation wavelength.
+
+    DeepLens named glasses can be optical-catalog COTS glasses beyond N-BK7.
+    The conversion produced initial surrogate material names; replace them and
+    reconstruct each interface's input medium after stop insertion/sorting.
+    """
+    from deeplens.material import Material
+    from evaluator.qfilm02 import _surfaces_at
+    src=source["surfaces"]
+    refractors=[d for d in deep["surfaces"] if d["type"] not in ("Aperture","Stop")]
+    if len(refractors)!=len(src):
+        return False,[],"refracting surfaces count mismatch"
+    names=[];medium="air";report=[]
+    for i,ss in enumerate(src):
+        if float(ss["n_after"])<=1.000001:
+            mat_name="air"
+        else:
+            mat_name=ss.get("glass_name") or ss.get("material_name")
+            if mat_name is None and _is_schott_bk7(source):
+                mat_name="N-BK7"
+            if mat_name is None:
+                return False,report,"glass_name required for non-BK7 catalog glass verification"
+            try:mat=Material(mat_name)
+            except Exception as e:return False,report,"DeepLens material unavailable: "+repr(e)
+            deviations=[]
+            for w in cfg.wavelengths_nm:
+                qn=_surfaces_at(src,w)[i].n2
+                dn=float(mat.ior(float(w)*1e-3))
+                deviations.append(abs(qn-dn))
+            if max(deviations)>2e-6:
+                return False,report,f"glass {mat_name} dispersion mismatch: max n delta {max(deviations):.4g}"
+            report.append({"index":i,"material":mat_name,"max_index_error":max(deviations)})
+        names.append(mat_name)
+    it=iter(names)
+    for d in deep["surfaces"]:
+        if d["type"] in ("Aperture","Stop"):
+            d["mat1"]=medium;d["mat2"]=medium
+        else:
+            d["mat1"]=medium;d["mat2"]=next(it);medium=d["mat2"]
+    return True,report,None
+
 def _reference(source,cfg,rcfg,qfilm,device):
-    # This module holds tested upstream import shims only; upstream GeoLens code stays pristine.
+    # Upstream optical core is unmodified; only optional nonoptical imports shimmed.
     from validation.qfilm_deeplens_same_prescription import conversion,mtf_from_psf
     from deeplens import GeoLens
-    # Until COTS glass-catalog equivalence conversion is generalized, only N-BK7
-    # Sellmeier prescriptions are allowed into the reference verification pathway.
-    if not isinstance(source,dict) or not _is_schott_bk7(source):
-        return {"status":"unsupported_material_or_prescription",
-                "reason":"same dispersion not guaranteed; N-BK7 Sellmeier only in Qfilm0.3-v1"}
+    if not isinstance(source,dict):
+        return {"status":"unsupported_prescription","reason":"dict prescription required"}
     deep,src=conversion(source,sensor_size=rcfg.physical_sensor_width_mm,
-                        sensor_res=rcfg.sensor_resolution,material_mode="bk7")
+                        sensor_res=rcfg.sensor_resolution,material_mode="bk7" if _is_schott_bk7(source) else "inline")
+    matched,materials,reason=_material_parity(source,deep,cfg)
+    if not matched:
+        return {"status":"material_mismatch","reason":reason,"material_parity":materials}
     with tempfile.TemporaryDirectory(prefix="qfilm03_deep_") as td:
         file=pathlib.Path(td)/"lens.json"
         file.write_text(json.dumps(deep))
@@ -77,7 +119,7 @@ def _reference(source,cfg,rcfg,qfilm,device):
         # Qfilm and DeepLens paraxial EFL must agree: detect material or geometry mismatch
         depefl=float(lens.foclen)
         efl_delta=abs(depefl-float(qfilm["efl_mm"]))
-        result={"status":"running","source_sha":DEEP_SHA,"device":str(device),
+        result={"status":"running","source_sha":DEEP_SHA,"material_parity":materials,"device":str(device),
                 "init_seconds":init_sec,"deeplens_efl_mm":depefl,
                 "qfilm_efl_mm":float(qfilm["efl_mm"]),"efl_abs_difference_mm":efl_delta,
                 "huygens_spp":rcfg.huygens_spp,"sensor_resolution":rcfg.sensor_resolution,
