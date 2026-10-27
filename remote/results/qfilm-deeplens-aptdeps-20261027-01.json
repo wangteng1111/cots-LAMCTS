@@ -7,10 +7,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm-deeplens-aptdeps-20261027-01",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 4186785,
   "request_sha256": "a0897c98d472c5001031b59c1dc9bcd4694acbc89638dd8457e928538c3aa2db",
   "schema": 1,
   "started_at": 1793096781.290314,
   "state": "running",
-  "timeout_sec": 1200
+  "timeout_sec": 1200,
+  "updated_at": 1793096783.9647944
 }
