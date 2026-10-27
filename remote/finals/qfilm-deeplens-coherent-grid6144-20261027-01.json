@@ -1,0 +1,48 @@
+{
+  "args": [
+    "validation/qfilm_deeplens_same_prescription.py",
+    "--cases",
+    "thin",
+    "--res",
+    "6144",
+    "--ks",
+    "192",
+    "--spp",
+    "8192",
+    "--coherent",
+    "--coherent-spp",
+    "4000000"
+  ],
+  "bridge_version": "0.5.0",
+  "code_commit": "358f7298bc9d5fe094baf5796b1f32e2e5b2062a",
+  "elapsed_sec": 10.938098907470703,
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "finished_at": 1793097724.4845338,
+  "hostname": "aipss-Rack-Server",
+  "immutable_job_id": true,
+  "job_id": "qfilm-deeplens-coherent-grid6144-20261027-01",
+  "log_tail": "/var/lib/cots-lamcts/jobs/qfilm-deeplens-coherent-grid6144-20261027-01/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)\nCOMPARE {\"name\": \"thin\", \"field\": 0, \"huygens_s\": 0.10318161081522703, \"huygens_delta_mtf\": 0.4555396269098489, \"coherent_s\": 0.449782557785511, \"coherent_ok\": true}\nCOMPARE {\"name\": \"thin\", \"field\": 1, \"huygens_s\": 0.08605705481022596, \"huygens_delta_mtf\": 0.38538606762718974, \"coherent_s\": null, \"coherent_ok\": null}\nCOMPARE {\"name\": \"thin\", \"field\": 2, \"huygens_s\": 0.0855138897895813, \"huygens_delta_mtf\": 0.19040280039262933, \"coherent_s\": null, \"coherent_ok\": null}\nRESULT {\"cases\": [[\"thin\", null, null, 3]]}",
+  "memory_gb": 0,
+  "pid": 4191652,
+  "request_sha256": "13044678d17e0b12bbff689c1030419e1c0bb9a7e5de9ea36dc837b6fa3dea1c",
+  "retry_policy": "new_job_id_required",
+  "returncode": 0,
+  "schema": 1,
+  "started_at": 1793097713.5464349,
+  "state": "finished",
+  "timeout_sec": 1500,
+  "updated_at": 1793097715.9235713,
+  "uploaded_artifacts": [
+    {
+      "path": "deeplens_qfilm_comparison.json",
+      "size": 14961,
+      "uploaded": true
+    },
+    {
+      "path": "thin_deeplens_same_prescription.json",
+      "size": 792,
+      "uploaded": true
+    }
+  ]
+}
