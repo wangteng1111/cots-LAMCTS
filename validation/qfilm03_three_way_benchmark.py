@@ -97,7 +97,7 @@ def shared_deeplens_pupil_field(Field,device="cuda:0",sensor_res=1024,spp=100000
         dpsf=norm_intensity(a,ks=96);tpsf=norm_intensity(b,ks=96)
         direct_diff=(dpsf-tpsf).abs()
         fx,fy=mtf_from_psf(dpsf.cpu().numpy(),pitch,(5.,10.,20.,30.))
-        tx,ty=mtf_from_psf(tpsf.cpu().numpy(),pitch,(5.,10.,20.,40.,60.,80.))
+        tx,ty=mtf_from_psf(tpsf.cpu().numpy(),pitch,(5.,10.,20.,30.))
         max_mtf=max(np.max(np.abs(np.asarray(fx)-tx)),np.max(np.abs(np.asarray(fy)-ty)))
         return {"input":"identical DeepLens exit-pupil complex field","pupil_field_sample_spp":spp,
                 "pupil_field_grid":sensor_res,"propagation_grid":2*sensor_res,
