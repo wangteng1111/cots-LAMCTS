@@ -18,10 +18,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm-deeplens-internal-positive-million-20261027-01",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 4190813,
   "request_sha256": "965c096c7b0c37f4635da24f2c9b08ed76244a0d96a9519511da759f9af2c7d0",
   "schema": 1,
   "started_at": 1793097571.7156858,
   "state": "running",
-  "timeout_sec": 1500
+  "timeout_sec": 1500,
+  "updated_at": 1793097574.0014508
 }
