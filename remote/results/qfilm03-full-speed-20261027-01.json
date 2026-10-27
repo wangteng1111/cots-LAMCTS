@@ -8,10 +8,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm03-full-speed-20261027-01",
+  "log_tail": "PYTHON_HEADERS_CACHE_HIT /var/lib/cots-lamcts/qfilm02_build_deps/unpacked/usr/include/python3.12\nAVAILABLE_PYTHON_HEADER /var/lib/cots-lamcts/qfilm02_build_deps/unpacked/usr/include/python3.12",
   "memory_gb": 0,
+  "pid": 65193,
   "request_sha256": "d0fa76effd045655cbabcc52207a9d2268c0a1572387fd9ebfcffba0a34eecf7",
   "schema": 1,
   "started_at": 1793111556.8517232,
   "state": "running",
-  "timeout_sec": 1800
+  "timeout_sec": 1800,
+  "updated_at": 1793111559.5686476
 }
