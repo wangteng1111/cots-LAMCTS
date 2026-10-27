@@ -1,0 +1,24 @@
+CMD ['git', '-C', '/var/lib/cots-lamcts/deeplens_upstream', 'rev-parse', 'HEAD'] returncode 0 stdout_tail 911bb9d334fce7e20a4407c4506ac683b52ff246
+ stderr_tail 
+CMD ['git', '-C', '/var/lib/cots-lamcts/deeplens_upstream', 'checkout', '--force', '911bb9d334fce7e20a4407c4506ac683b52ff246'] returncode 0 stdout_tail  stderr_tail Note: switching to '911bb9d334fce7e20a4407c4506ac683b52ff246'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 911bb9d docs(eval): merge required depth corrections into published API docs
+
+CMD ['git', '-C', '/var/lib/cots-lamcts/deeplens_upstream', 'rev-parse', 'HEAD'] returncode 0 stdout_tail 911bb9d334fce7e20a4407c4506ac683b52ff246
+ stderr_tail 
+BOOTSTRAP {"schema": "qfilm-deeplens-bootstrap-v1", "source": "https://github.com/vccimaging/DeepLens", "sha": "911bb9d334fce7e20a4407c4506ac683b52ff246", "upstream_path": "/var/lib/cots-lamcts/deeplens_upstream", "checked_out": "911bb9d334fce7e20a4407c4506ac683b52ff246", "torch": {"available": true, "version": "2.14.0+cu130"}, "torchvision": {"available": false, "error": "No module named 'torchvision'"}, "cv2": {"available": false, "error": "No module named 'cv2'"}, "matplotlib": {"available": false, "error": "No module named 'matplotlib'"}, "einops": {"available": false, "error": "No module named 'einops'"}, "scipy": {"available": true, "version": "1.15.3"}, "skimage": {"available": false, "error": "No module named 'skimage'"}, "deeplens": {"available": false, "error": "No module named 'matplotlib'"}}
