@@ -20,15 +20,15 @@
   ],
   "hostname": "aipss-Rack-Server",
   "loadavg": [
-    0.11376953125,
-    0.150390625,
-    0.1171875
+    0.29150390625,
+    0.19091796875,
+    0.130859375
   ],
   "python": "/usr/bin/python3",
   "python_version": "3.12.3",
   "repo": "wangteng1111/cots-LAMCTS",
   "results_branch": "workstation-results",
-  "running_job": null,
+  "running_job": "qfilm-deeplens-aptdeps-20261027-01",
   "schema": 1,
-  "timestamp": 1793096773.1215718
+  "timestamp": 1793096787.3816226
 }
