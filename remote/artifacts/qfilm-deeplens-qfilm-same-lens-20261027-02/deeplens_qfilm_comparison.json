@@ -1,0 +1,23 @@
+{
+  "schema": "qfilm-deeplens-pinned-comparison-v1",
+  "source_sha": "911bb9d334fce7e20a4407c4506ac683b52ff246",
+  "torch_version": "2.14.0+cu130",
+  "compatibility_shims": [
+    "torchvision visual-only import placeholder",
+    "lpips optional-metric import placeholder"
+  ],
+  "cases": [
+    {
+      "name": "thin",
+      "fatal": "ImportError('numpy.core.multiarray failed to import')",
+      "traceback": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/qfilm-deeplens-qfilm-same-lens-20261027-02/src/validation/qfilm_deeplens_same_prescription.py\", line 169, in main\n    try:r=run_case(name,p,out,args.res,args.ks,args.spp,args.coherent)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/lib/cots-lamcts/jobs/qfilm-deeplens-qfilm-same-lens-20261027-02/src/validation/qfilm_deeplens_same_prescription.py\", line 103, in run_case\n    from deeplens import GeoLens\n  File \"/var/lib/cots-lamcts/deeplens_upstream/deeplens/__init__.py\", line 39, in <module>\n    from .defocuslens import DefocusLens\n  File \"/var/lib/cots-lamcts/deeplens_upstream/deeplens/defocuslens.py\", line 32, in <module>\n    from .lens import Lens\n  File \"/var/lib/cots-lamcts/deeplens_upstream/deeplens/lens.py\", line 11, in <module>\n    import matplotlib.pyplot as plt\n  File \"/var/lib/cots-lamcts/deeplens_apt_deps/usr/lib/python3/dist-packages/matplotlib/__init__.py\", line 113, in <module>\n    from . import _api, _version, cbook, _docstring, rcsetup\n  File \"/var/lib/cots-lamcts/deeplens_apt_deps/usr/lib/python3/dist-packages/matplotlib/rcsetup.py\", line 27, in <module>\n    from matplotlib.colors import Colormap, is_color_like\n  File \"/var/lib/cots-lamcts/deeplens_apt_deps/usr/lib/python3/dist-packages/matplotlib/colors.py\", line 56, in <module>\n    from matplotlib import _api, _cm, cbook, scale\n  File \"/var/lib/cots-lamcts/deeplens_apt_deps/usr/lib/python3/dist-packages/matplotlib/scale.py\", line 22, in <module>\n    from matplotlib.ticker import (\n  File \"/var/lib/cots-lamcts/deeplens_apt_deps/usr/lib/python3/dist-packages/matplotlib/ticker.py\", line 138, in <module>\n    from matplotlib import transforms as mtransforms\n  File \"/var/lib/cots-lamcts/deeplens_apt_deps/usr/lib/python3/dist-packages/matplotlib/transforms.py\", line 49, in <module>\n    from matplotlib._path import (\nImportError: numpy.core.multiarray failed to import\n"
+    }
+  ],
+  "arguments": {
+    "coherent": false,
+    "res": 3072,
+    "ks": 96,
+    "spp": 4096,
+    "cases": "thin"
+  }
+}
