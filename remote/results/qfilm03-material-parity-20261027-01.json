@@ -1,0 +1,16 @@
+{
+  "args": [
+    "validation/qfilm03_material_parity.py"
+  ],
+  "code_commit": "d2ffab088e4832226c036eabd37059490940e31e",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm03-material-parity-20261027-01",
+  "memory_gb": 0,
+  "request_sha256": "932ee629adf417d82ede12202897996332b29a714170cd526df6e9832660571c",
+  "schema": 1,
+  "started_at": 1793111962.4210885,
+  "state": "running",
+  "timeout_sec": 900
+}
