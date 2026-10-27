@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "job_id": "qfilm-deeplens-huygens-million-20261027-01",
+  "code_commit": "c10e64a219921a979c6018114a503431abc15294",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm_deeplens_same_prescription.py",
+    "--cases",
+    "thin",
+    "--res",
+    "3072",
+    "--ks",
+    "96",
+    "--spp",
+    "1000000",
+    "--coherent"
+  ],
+  "timeout_sec": 1500,
+  "memory_gb": 0
+}
