@@ -4,17 +4,27 @@
     "qfilm03_full_gpu_benchmark.py"
   ],
   "code_commit": "de6eb79064af8a70d1aa06c04f26519810b9ef2e",
+  "elapsed_sec": 193.10738849639893,
   "entrypoint": "scripts/cuda_venv_exec.py",
   "env": {},
+  "finished_at": 1793111749.9591117,
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm03-full-speed-20261027-01",
-  "log_tail": "PYTHON_HEADERS_CACHE_HIT /var/lib/cots-lamcts/qfilm02_build_deps/unpacked/usr/include/python3.12\nAVAILABLE_PYTHON_HEADER /var/lib/cots-lamcts/qfilm02_build_deps/unpacked/usr/include/python3.12\n/var/lib/cots-lamcts/jobs/qfilm03-full-speed-20261027-01/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /var/lib/cots-lamcts/qfilm02_build_deps/xdg_cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)\nSPEED {\"name\": \"biconvex\", \"fields\": 100, \"wavelengths\": 7, \"pupil_n\": 64, \"qfilm02_torch_runs_sec\": [1.0367518551647663, 0.16712708678096533, 0.16888510063290596], \"qfilm03_hybrid_runs_sec\": [1.0166729530319571, 0.0558089017868042, 0.05582586210221052], \"qfilm02_torch_median_sec\": 0.16888510063290596, \"qfilm03_hybrid_median_sec\": 0.05582586210221052, \"speedup\": 3.0252125855879735, \"max_gpu_mem_qfilm02_GiB\": 1.0921039581298828, \"max_gpu_mem_qfilm03_GiB\": 1.202338695526123, \"Q_max_abs_delta\": 1.2434497875801753e-11, \"J_diff\": 1.1324274851176597e-13, \"training_eligible\": false, \"reference_status\": \"not_requested\"}",
+  "log_tail": "PYTHON_HEADERS_CACHE_HIT /var/lib/cots-lamcts/qfilm02_build_deps/unpacked/usr/include/python3.12\nAVAILABLE_PYTHON_HEADER /var/lib/cots-lamcts/qfilm02_build_deps/unpacked/usr/include/python3.12\n/var/lib/cots-lamcts/jobs/qfilm03-full-speed-20261027-01/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /var/lib/cots-lamcts/qfilm02_build_deps/xdg_cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)\nSPEED {\"name\": \"biconvex\", \"fields\": 100, \"wavelengths\": 7, \"pupil_n\": 64, \"qfilm02_torch_runs_sec\": [1.0367518551647663, 0.16712708678096533, 0.16888510063290596], \"qfilm03_hybrid_runs_sec\": [1.0166729530319571, 0.0558089017868042, 0.05582586210221052], \"qfilm02_torch_median_sec\": 0.16888510063290596, \"qfilm03_hybrid_median_sec\": 0.05582586210221052, \"speedup\": 3.0252125855879735, \"max_gpu_mem_qfilm02_GiB\": 1.0921039581298828, \"max_gpu_mem_qfilm03_GiB\": 1.202338695526123, \"Q_max_abs_delta\": 1.2434497875801753e-11, \"J_diff\": 1.1324274851176597e-13, \"training_eligible\": false, \"reference_status\": \"not_requested\"}\nSPEED {\"name\": \"internal_stop\", \"fields\": 100, \"wavelengths\": 7, \"pupil_n\": 64, \"qfilm02_torch_runs_sec\": [29.783986257389188, 30.606723751872778, 30.72657814435661], \"qfilm03_hybrid_runs_sec\": [30.396901798434556, 30.53191444464028, 31.645769013091922], \"qfilm02_torch_median_sec\": 30.606723751872778, \"qfilm03_hybrid_median_sec\": 30.53191444464028, \"speedup\": 1.0024502003426004, \"max_gpu_mem_qfilm02_GiB\": 0.11591053009033203, \"max_gpu_mem_qfilm03_GiB\": 0.11591053009033203, \"Q_max_abs_delta\": 0.0, \"J_diff\": 0.0, \"training_eligible\": false, \"reference_status\": \"not_requested\"}",
   "memory_gb": 0,
   "pid": 65193,
   "request_sha256": "d0fa76effd045655cbabcc52207a9d2268c0a1572387fd9ebfcffba0a34eecf7",
+  "returncode": 0,
   "schema": 1,
   "started_at": 1793111556.8517232,
-  "state": "running",
+  "state": "finished",
   "timeout_sec": 1800,
-  "updated_at": 1793111739.568876
+  "updated_at": 1793111739.568876,
+  "uploaded_artifacts": [
+    {
+      "path": "qfilm03_full_speed.json",
+      "size": 1615,
+      "uploaded": true
+    }
+  ]
 }
