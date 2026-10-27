@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "qfilm03-torchoptics-bootstrap-20261027-01",
+  "code_commit": "3ce45e1071f47496dffd8ac9f2d12d759b0db9f0",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "scripts/qfilm03_torchoptics_bootstrap.py"
+  ],
+  "timeout_sec": 300,
+  "memory_gb": 0
+}
