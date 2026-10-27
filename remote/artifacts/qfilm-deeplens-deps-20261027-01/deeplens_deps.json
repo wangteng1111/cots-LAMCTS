@@ -1,0 +1,37 @@
+{
+  "source_sha": "911bb9d334fce7e20a4407c4506ac683b52ff246",
+  "pip_returncode": 1,
+  "root": "/var/lib/cots-lamcts/deeplens_python_deps",
+  "torch_before": null,
+  "import_check": {
+    "torch": {
+      "ok": true,
+      "version": "2.14.0+cu130"
+    },
+    "matplotlib": {
+      "ok": false,
+      "error": "No module named 'matplotlib'",
+      "traceback": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/qfilm-deeplens-deps-20261027-01/src/scripts/qfilm_deeplens_deps.py\", line 20, in <module>\n    m=__import__(name);result['import_check'][name]={'ok':True,'version':str(getattr(m,'__version__','unknown'))}\n      ^^^^^^^^^^^^^^^^\nModuleNotFoundError: No module named 'matplotlib'\n"
+    },
+    "cv2": {
+      "ok": false,
+      "error": "No module named 'cv2'",
+      "traceback": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/qfilm-deeplens-deps-20261027-01/src/scripts/qfilm_deeplens_deps.py\", line 20, in <module>\n    m=__import__(name);result['import_check'][name]={'ok':True,'version':str(getattr(m,'__version__','unknown'))}\n      ^^^^^^^^^^^^^^^^\nModuleNotFoundError: No module named 'cv2'\n"
+    },
+    "einops": {
+      "ok": false,
+      "error": "No module named 'einops'",
+      "traceback": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/qfilm-deeplens-deps-20261027-01/src/scripts/qfilm_deeplens_deps.py\", line 20, in <module>\n    m=__import__(name);result['import_check'][name]={'ok':True,'version':str(getattr(m,'__version__','unknown'))}\n      ^^^^^^^^^^^^^^^^\nModuleNotFoundError: No module named 'einops'\n"
+    },
+    "skimage": {
+      "ok": false,
+      "error": "No module named 'skimage'",
+      "traceback": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/qfilm-deeplens-deps-20261027-01/src/scripts/qfilm_deeplens_deps.py\", line 20, in <module>\n    m=__import__(name);result['import_check'][name]={'ok':True,'version':str(getattr(m,'__version__','unknown'))}\n      ^^^^^^^^^^^^^^^^\nModuleNotFoundError: No module named 'skimage'\n"
+    },
+    "deeplens": {
+      "ok": false,
+      "error": "No module named 'deeplens'",
+      "traceback": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/qfilm-deeplens-deps-20261027-01/src/scripts/qfilm_deeplens_deps.py\", line 20, in <module>\n    m=__import__(name);result['import_check'][name]={'ok':True,'version':str(getattr(m,'__version__','unknown'))}\n      ^^^^^^^^^^^^^^^^\nModuleNotFoundError: No module named 'deeplens'\n"
+    }
+  }
+}
