@@ -3,17 +3,27 @@
     "validation/qfilm03_material_parity.py"
   ],
   "code_commit": "d2ffab088e4832226c036eabd37059490940e31e",
+  "elapsed_sec": 11.03966236114502,
   "entrypoint": "scripts/cuda_venv_exec.py",
   "env": {},
+  "finished_at": 1793111973.4607508,
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm03-material-parity-20261027-01",
-  "log_tail": "",
+  "log_tail": "/var/lib/cots-lamcts/jobs/qfilm03-material-parity-20261027-01/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)\nMATERIAL_PARITY {\"schema\": \"qfilm03-supplier-glass-parity-v1\", \"matching\": {\"status\": \"checked_subset\", \"material\": [{\"index\": 0, \"material\": \"N-BK7\", \"max_index_error\": 1.3012558297553767e-07}]}, \"rejected\": {\"status\": \"material_mismatch\", \"reason\": \"glass N-SF6 dispersion mismatch: max n delta 0.3002\"}}",
   "memory_gb": 0,
   "pid": 66596,
   "request_sha256": "932ee629adf417d82ede12202897996332b29a714170cd526df6e9832660571c",
+  "returncode": 0,
   "schema": 1,
   "started_at": 1793111962.4210885,
-  "state": "running",
+  "state": "finished",
   "timeout_sec": 900,
-  "updated_at": 1793111965.1181514
+  "updated_at": 1793111965.1181514,
+  "uploaded_artifacts": [
+    {
+      "path": "qfilm03_materials.json",
+      "size": 367,
+      "uploaded": true
+    }
+  ]
 }
