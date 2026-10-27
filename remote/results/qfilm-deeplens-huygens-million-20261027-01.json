@@ -1,0 +1,25 @@
+{
+  "args": [
+    "validation/qfilm_deeplens_same_prescription.py",
+    "--cases",
+    "thin",
+    "--res",
+    "3072",
+    "--ks",
+    "96",
+    "--spp",
+    "1000000",
+    "--coherent"
+  ],
+  "code_commit": "c10e64a219921a979c6018114a503431abc15294",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm-deeplens-huygens-million-20261027-01",
+  "memory_gb": 0,
+  "request_sha256": "3130c75b00cffc80f0969a673e13f9678ffd2c2b871c97fc031d3f7570d2b216",
+  "schema": 1,
+  "started_at": 1793097165.0619414,
+  "state": "running",
+  "timeout_sec": 1500
+}
