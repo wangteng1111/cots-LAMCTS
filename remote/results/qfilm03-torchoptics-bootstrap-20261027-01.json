@@ -1,0 +1,16 @@
+{
+  "args": [
+    "scripts/qfilm03_torchoptics_bootstrap.py"
+  ],
+  "code_commit": "3ce45e1071f47496dffd8ac9f2d12d759b0db9f0",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm03-torchoptics-bootstrap-20261027-01",
+  "memory_gb": 0,
+  "request_sha256": "bbe7dcf38a7ace323d78d6dba506035e41d56367d2f8ef113fa8456028947e22",
+  "schema": 1,
+  "started_at": 1793110845.4170413,
+  "state": "running",
+  "timeout_sec": 300
+}
