@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "job_id": "qfilm-deeplens-qfilm256-million-20261027-01",
+  "code_commit": "77e5deb846b585619b592c56a82b11705e0fa865",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm_deeplens_same_prescription.py",
+    "--cases",
+    "thin,internal_positive",
+    "--res",
+    "3072",
+    "--ks",
+    "96",
+    "--spp",
+    "1000000",
+    "--pupil-n",
+    "256"
+  ],
+  "timeout_sec": 1500,
+  "memory_gb": 0
+}
