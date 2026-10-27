@@ -53,6 +53,8 @@ if importlib.util.find_spec('lpips') is None:
 from evaluator.qfilm02 import Config,evaluate as qfilm_eval,_surfaces_at
 from validation.qfilm02_smoke import thin_lens
 from validation.qfilm02_accelerated import rich_lens
+torch.manual_seed(20261027)
+np.random.seed(20261027)
 
 SHA='911bb9d334fce7e20a4407c4506ac683b52ff246'
 WAVELENGTH_UM=0.55
@@ -158,18 +160,24 @@ def run_case(name, source, outpath, res=3072, ks=96, spp=4096, do_coherent=False
       entry['huygens']=stats
       if psf is not None:
        ht,hs=mtf_from_psf(psf.detach().cpu().numpy(),float(lens.pixel_size),fqs)
-       entry['huygens'].update({'mtf_t':ht,'mtf_s':hs,'sum':float(psf.sum()),
-                      'max_abs_mtf_t_diff_vs_qfilm':float(np.max(np.abs(np.array(ht)-qr['Q_image'][i,10:20]))),
-                      'max_abs_mtf_s_diff_vs_qfilm':float(np.max(np.abs(np.array(hs)-qr['Q_image'][i,20:30])))});
+       # Our Qfilm rotates the field into +X, while DeepLens sample uses +Y.
+       # T/S is defined *relative to field direction*, not fixed pixel axis.
+       aligned_t,aligned_s=(ht,hs) if i==0 else (hs,ht)
+       entry['huygens'].update({'pixel_x_mtf':ht,'pixel_y_mtf':hs,
+                      'mtf_t':aligned_t,'mtf_s':aligned_s,'sum':float(psf.sum()),
+                      'max_abs_mtf_t_diff_vs_qfilm':float(np.max(np.abs(np.array(aligned_t)-qr['Q_image'][i,10:20]))),
+                      'max_abs_mtf_s_diff_vs_qfilm':float(np.max(np.abs(np.array(aligned_s)-qr['Q_image'][i,20:30])))});
        np.savez_compressed(outpath/f'{name}_huygens_field{i}.npz',psf=psf.detach().cpu().numpy(),pitch_mm=float(lens.pixel_size))
       if do_coherent and i==0:
        coh,cs=safe_call(lens.psf_coherent,points=point,ks=ks,wvln=WAVELENGTH_UM,spp=1_000_000,recenter=True)
        entry['coherent']=cs
        if coh is not None:
         ct,css=mtf_from_psf(coh.detach().cpu().numpy(),float(lens.pixel_size),fqs)
-        entry['coherent'].update({'mtf_t':ct,'mtf_s':css,'sum':float(coh.sum()),
-                                'max_abs_mtf_t_diff_vs_qfilm':float(np.max(np.abs(np.array(ct)-qr['Q_image'][i,10:20]))),
-                                'max_abs_mtf_t_diff_vs_huygens':float(np.max(np.abs(np.array(ct)-np.array(entry['huygens']['mtf_t'])))) if psf is not None else None})
+        ct_aligned,cs_aligned=(ct,css) if i==0 else (css,ct)
+        entry['coherent'].update({'pixel_x_mtf':ct,'pixel_y_mtf':css,
+                                'mtf_t':ct_aligned,'mtf_s':cs_aligned,'sum':float(coh.sum()),
+                                'max_abs_mtf_t_diff_vs_qfilm':float(np.max(np.abs(np.array(ct_aligned)-qr['Q_image'][i,10:20]))),
+                                'max_abs_mtf_t_diff_vs_huygens':float(np.max(np.abs(np.array(ct_aligned)-np.array(entry['huygens']['mtf_t'])))) if psf is not None else None})
         np.savez_compressed(outpath/f'{name}_coherent_field{i}.npz',psf=coh.detach().cpu().numpy(),pitch_mm=float(lens.pixel_size))
       fileinfo['fields'].append(entry)
       print('COMPARE',json.dumps({'name':name,'field':i,'huygens_s':stats.get('seconds'),
