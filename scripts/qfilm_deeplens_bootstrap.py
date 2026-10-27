@@ -19,6 +19,7 @@ try:
  current=run(['git','-C',str(UP),'rev-parse','HEAD'])
  if current!=SHA:
   run(['git','-C',str(UP),'fetch','--depth','1','origin',SHA],timeout=180)
+ if current!=SHA or not (UP/'deeplens'/'__init__.py').is_file():
   run(['git','-C',str(UP),'checkout','--force',SHA],timeout=180)
  log['checked_out']=run(['git','-C',str(UP),'rev-parse','HEAD'])
  sys.path.insert(0,str(UP))
