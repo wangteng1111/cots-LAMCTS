@@ -1,0 +1,55 @@
+{
+  "schema": "qfilm03-physics-3way-v1",
+  "deep_source": "911bb9d334fce7e20a4407c4506ac683b52ff246",
+  "torchoptics_source": "34fe9c40f874e53db225e703c5580befe8c523b5",
+  "torch": "2.14.0+cu130",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "cases": {
+    "thin": {
+      "baseline_seconds": 0.7889736983925104,
+      "qfilm03_total_seconds": 7.039485612884164,
+      "fast_seconds": 0.03403167612850666,
+      "reference_seconds": 7.005298423580825,
+      "max_Q_image_abs": 0.0,
+      "J_diff": 0.0,
+      "qfilm03_version": "Qfilm0.3-raywave-deeplens-reference-v1",
+      "status": "checked_subset",
+      "max_abs_mtf_discrepancy": 0.01972845384176486,
+      "per_field_discrepancy": [
+        0.00711681987299323,
+        0.013661606435864448,
+        0.01972845384176486
+      ],
+      "physics_certified": false,
+      "training_eligible": false,
+      "efl_delta": 5.459727745460441e-07,
+      "error": null
+    },
+    "internal_positive": {
+      "baseline_seconds": 0.46723059844225645,
+      "qfilm03_total_seconds": 7.3923495234921575,
+      "fast_seconds": 0.46320950891822577,
+      "reference_seconds": 6.929025107063353,
+      "max_Q_image_abs": 0.0,
+      "J_diff": 0.0,
+      "qfilm03_version": "Qfilm0.3-raywave-deeplens-reference-v1",
+      "status": "checked_subset",
+      "max_abs_mtf_discrepancy": 0.031773545634442124,
+      "per_field_discrepancy": [
+        0.028008434375649427,
+        0.02067926545815868,
+        0.031773545634442124
+      ],
+      "physics_certified": false,
+      "training_eligible": false,
+      "efl_delta": 4.624742544478977e-07,
+      "error": null
+    }
+  },
+  "torchoptics_error": {
+    "error": "NameError(\"name 'w' is not defined\")",
+    "traceback": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/qfilm03-3way-gpu-20261027-01/src/validation/qfilm03_three_way_benchmark.py\", line 187, in main\n    records[\"torchoptics_same_wavefront\"]=shared_deeplens_pupil_field(Field)\n                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/lib/cots-lamcts/jobs/qfilm03-3way-gpu-20261027-01/src/validation/qfilm03_three_way_benchmark.py\", line 83, in shared_deeplens_pupil_field\n    w0=w[0].contiguous()\n       ^\nNameError: name 'w' is not defined\n"
+  },
+  "passed_qfilm03": true,
+  "passed_torchoptics": false
+}
