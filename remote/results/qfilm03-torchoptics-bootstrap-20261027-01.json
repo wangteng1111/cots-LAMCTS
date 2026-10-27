@@ -7,10 +7,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm03-torchoptics-bootstrap-20261027-01",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 61481,
   "request_sha256": "bbe7dcf38a7ace323d78d6dba506035e41d56367d2f8ef113fa8456028947e22",
   "schema": 1,
   "started_at": 1793110845.4170413,
   "state": "running",
-  "timeout_sec": 300
+  "timeout_sec": 300,
+  "updated_at": 1793110847.9915736
 }
