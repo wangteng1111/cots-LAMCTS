@@ -1,0 +1,42 @@
+{
+  "schema": "deeplens-apt-isolated-deps-v1",
+  "installed": [
+    "python3-matplotlib",
+    "python3-contourpy",
+    "python3-cycler",
+    "python3-dateutil",
+    "python3-fonttools",
+    "python3-kiwisolver",
+    "python3-packaging",
+    "python3-pil",
+    "python3-pyparsing",
+    "python3-six",
+    "python3-opencv",
+    "python3-skimage",
+    "python3-imageio",
+    "python3-tifffile",
+    "python3-networkx"
+  ],
+  "failed": [
+    {
+      "name": "python3-einops",
+      "message": "\nWARNING: apt does not have a stable CLI interface. Use with caution in scripts.\n\nE: Unable to locate package python3-einops\n"
+    }
+  ],
+  "matplotlib": {
+    "ok": false,
+    "error": "numpy.core.multiarray failed to import"
+  },
+  "cv2": {
+    "ok": false,
+    "error": "libopencv_stitching.so.406: cannot open shared object file: No such file or directory"
+  },
+  "einops": {
+    "ok": false,
+    "error": "No module named 'einops'"
+  },
+  "skimage": {
+    "ok": false,
+    "error": "No module named 'lazy_loader'"
+  }
+}
