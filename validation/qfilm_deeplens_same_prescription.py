@@ -9,7 +9,7 @@ import torch
 REPO=pathlib.Path(__file__).resolve().parents[1]
 DEEP=pathlib.Path('/var/lib/cots-lamcts/deeplens_upstream')
 DEPS=pathlib.Path('/var/lib/cots-lamcts/deeplens_python_deps')
-sys.path.insert(0,str(REPO));sys.path.insert(0,str(DEPS));sys.path.insert(0,str(DEEP))
+sys.path.insert(0,str(REPO));sys.path.insert(0,str(DEPS));sys.path.insert(0,str(pathlib.Path('/var/lib/cots-lamcts/deeplens_apt_deps/usr/lib/python3/dist-packages')));sys.path.insert(0,str(DEEP))
 # DeepLens core optics has optional visualization/LPIPS imports at package-import time.
 # Isolated workstation Torch 2.14 has no compatible torchvision wheel. Provide only
 # import-time placeholders; they error if called. None is used by GeoLens PSF methods.
