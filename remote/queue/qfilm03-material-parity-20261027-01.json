@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "qfilm03-material-parity-20261027-01",
+  "code_commit": "d2ffab088e4832226c036eabd37059490940e31e",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm03_material_parity.py"
+  ],
+  "timeout_sec": 900,
+  "memory_gb": 0
+}
