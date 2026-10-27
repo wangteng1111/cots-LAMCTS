@@ -122,12 +122,12 @@ def safe_call(fn,**kwargs):
       return value,{'ok':True,'seconds':time.perf_counter()-start}
     except Exception as e:return None,{'ok':False,'seconds':time.perf_counter()-start,'error':repr(e),'traceback':traceback.format_exc()[-4800:]}
 
-def run_case(name, source, outpath, res=3072, ks=96, spp=4096, do_coherent=False, coherent_spp=1000000):
+def run_case(name, source, outpath, res=3072, ks=96, spp=4096, do_coherent=False, coherent_spp=1000000, pupil_n=128):
     from deeplens import GeoLens
     data,p=conversion(source,sensor_res=res,material_mode='bk7' if name in ('thin','internal_positive') else 'inline')
     jsonpath=outpath/f'{name}_deeplens_same_prescription.json';jsonpath.write_text(json.dumps(data,indent=2)+'\n')
     fileinfo={'name':name,'model_source':'identical Qfilm prescription converted to native DeepLens geometry',
-              'deepjson':str(jsonpath),'sensor_res':res,'ks':ks,'spp_huygens':spp,
+              'deepjson':str(jsonpath),'sensor_res':res,'ks':ks,'spp_huygens':spp,'qfilm_pupil_n':pupil_n,
               'wavelength_um':WAVELENGTH_UM,'coherent_spp':coherent_spp,'methods':{},'fields':[]}
     lens,linfo=safe_call(GeoLens,filename=str(jsonpath),device='cuda:0',dtype=torch.float64)
     fileinfo['init']=linfo
@@ -135,7 +135,7 @@ def run_case(name, source, outpath, res=3072, ks=96, spp=4096, do_coherent=False
     fileinfo['deep_focal_mm']=float(lens.foclen)
     fileinfo['sensor_pitch_mm']=float(lens.pixel_size)
     fileinfo['exit_pupil']=list(map(float,lens.get_exit_pupil()))
-    conf=Config(fields=3,pupil_n=128,fft_n=512,max_fields_per_chunk=3,
+    conf=Config(fields=3,pupil_n=pupil_n,fft_n=pupil_n*4,max_fields_per_chunk=3,
             wavelengths_nm=(550.,),spectral_weights=(1.,),frame_width_mm=8.,frame_height_mm=6.,
             target_efl_mm=float(p['design_spec']['efl_target_mm']))
     qr,qinfo=safe_call(qfilm_eval,p=p,config=conf,device='cuda:0')
@@ -199,7 +199,7 @@ def internal_stop_positive_lens():
        'design_spec':{'stop_diameter_mm':8.,'efl_target_mm':43.58574}}
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--coherent',action='store_true');ap.add_argument('--res',type=int,default=3072);ap.add_argument('--ks',type=int,default=96);ap.add_argument('--spp',type=int,default=4096);ap.add_argument('--coherent-spp',type=int,default=1000000);ap.add_argument('--cases',default='thin');args=ap.parse_args()
+    ap=argparse.ArgumentParser();ap.add_argument('--coherent',action='store_true');ap.add_argument('--res',type=int,default=3072);ap.add_argument('--ks',type=int,default=96);ap.add_argument('--spp',type=int,default=4096);ap.add_argument('--coherent-spp',type=int,default=1000000);ap.add_argument('--pupil-n',type=int,default=128);ap.add_argument('--cases',default='thin');args=ap.parse_args()
     out=pathlib.Path(os.environ.get('COTS_JOB_ARTIFACT_DIR','/tmp/qfilm_deeplens_test'));out.mkdir(parents=True,exist_ok=True)
     result={'schema':'qfilm-deeplens-pinned-comparison-v1','source_sha':SHA,
             'torch_version':torch.__version__,'compatibility_shims':COMPATIBILITY_SHIMS,'cases':[],'arguments':vars(args)}
@@ -207,7 +207,7 @@ def main():
       if name not in ('thin','complex','internal_positive'):raise ValueError('unknown case '+name)
       p=thin_lens() if name=='thin' else (internal_stop_positive_lens() if name=='internal_positive' else rich_lens())
       if name=='thin':p['surfaces'][0]['sellmeier']=BK7
-      try:r=run_case(name,p,out,args.res,args.ks,args.spp,args.coherent,args.coherent_spp)
+      try:r=run_case(name,p,out,args.res,args.ks,args.spp,args.coherent,args.coherent_spp,args.pupil_n)
       except Exception as e:r={'name':name,'fatal':repr(e),'traceback':traceback.format_exc()[-8000:]}
       result['cases'].append(r)
       (out/'deeplens_qfilm_comparison.json').write_text(json.dumps(result,indent=2)+'\n')
