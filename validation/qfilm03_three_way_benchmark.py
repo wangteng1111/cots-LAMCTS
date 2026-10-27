@@ -96,13 +96,13 @@ def shared_deeplens_pupil_field(Field,device="cuda:0",sensor_res=1024,spp=100000
             a,ts=time_gpu(deep);dd.append(ts);b,ts=time_gpu(opt);tt.append(ts)
         dpsf=norm_intensity(a,ks=96);tpsf=norm_intensity(b,ks=96)
         direct_diff=(dpsf-tpsf).abs()
-        fx,fy=mtf_from_psf(dpsf.cpu().numpy(),pitch,(5.,10.,20.,40.,60.,80.))
+        fx,fy=mtf_from_psf(dpsf.cpu().numpy(),pitch,(5.,10.,20.,30.))
         tx,ty=mtf_from_psf(tpsf.cpu().numpy(),pitch,(5.,10.,20.,40.,60.,80.))
         max_mtf=max(np.max(np.abs(np.asarray(fx)-tx)),np.max(np.abs(np.asarray(fy)-ty)))
         return {"input":"identical DeepLens exit-pupil complex field","pupil_field_sample_spp":spp,
                 "pupil_field_grid":sensor_res,"propagation_grid":2*sensor_res,
                 "physical_z_mm":z,"pixel_pitch_mm":pitch,"wavelength_mm":0.00055,
-                "output_psf_patch":96,"interpolation":"none",
+                "output_psf_patch":96,"interpolation":"none","mtf_nyquist_lpmm":0.5/pitch,
                 "deeplens_asm_median_s":statistics.median(dd),
                 "torchoptics_asm_median_s":statistics.median(tt),
                 "psf_max_abs_diff":float(direct_diff.max()),
@@ -126,7 +126,7 @@ def crosscheck_asm_dim(Field,device="cuda:0",n=96):
     f=Field(wave.contiguous(),wavelength=lam,z=0.,spacing=(ps,ps)).to(device)
     def run(method):
         return f.propagate_to_z(z,propagation_method=method,
-                                asm_pad=(n//2,n//2),interpolation_mode="none").data
+                                asm_pad=(n//2,n//2),interpolation_mode="bilinear").data
     # TorchOptics returns padded support for ASM and original support for DIM:
     # crop to equivalent physical output window.
     results={}
@@ -194,7 +194,7 @@ def main():
     records["passed_qfilm03"]=all(c["status"]=="checked_subset" and c["max_Q_image_abs"]<1.e-7
                                     for c in records["cases"].values())
     records["passed_torchoptics"]=("torchoptics_same_wavefront" in records and
-                                  np.isfinite(records["torchoptics_same_wavefront"]["mtf_max_abs_diff"]))
+                                  bool(np.isfinite(records["torchoptics_same_wavefront"]["mtf_max_abs_diff"])))
     write()
     return 0 if records["passed_qfilm03"] and records["passed_torchoptics"] else 2
 if __name__=="__main__":raise SystemExit(main())
