@@ -1,0 +1,17 @@
+{
+  "args": [
+    "scripts/qfilm02_triton_bootstrap.py",
+    "qfilm03_full_gpu_benchmark.py"
+  ],
+  "code_commit": "de6eb79064af8a70d1aa06c04f26519810b9ef2e",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm03-full-speed-20261027-01",
+  "memory_gb": 0,
+  "request_sha256": "d0fa76effd045655cbabcc52207a9d2268c0a1572387fd9ebfcffba0a34eecf7",
+  "schema": 1,
+  "started_at": 1793111556.8517232,
+  "state": "running",
+  "timeout_sec": 1800
+}
