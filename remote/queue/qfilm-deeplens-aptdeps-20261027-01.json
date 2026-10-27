@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "qfilm-deeplens-aptdeps-20261027-01",
+  "code_commit": "92a28559c64ddcab19cd13a1f9730cf6ab45efea",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "scripts/qfilm_deeplens_aptdeps.py"
+  ],
+  "timeout_sec": 1200,
+  "memory_gb": 0
+}
