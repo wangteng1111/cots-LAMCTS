@@ -1,0 +1,6 @@
+/var/lib/cots-lamcts/jobs/qfilm-deeplens-qfilm-same-lens-20261027-03/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)
+  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)
+COMPARE {"name": "thin", "field": 0, "huygens_s": 0.056598156690597534, "huygens_delta_mtf": 0.5653977837657251, "coherent_s": null, "coherent_ok": null}
+COMPARE {"name": "thin", "field": 1, "huygens_s": 0.021051578223705292, "huygens_delta_mtf": 0.46155115922662354, "coherent_s": null, "coherent_ok": null}
+COMPARE {"name": "thin", "field": 2, "huygens_s": 0.020720811560750008, "huygens_delta_mtf": 0.20807400424630262, "coherent_s": null, "coherent_ok": null}
+RESULT {"cases": [["thin", null, null, 3]]}
