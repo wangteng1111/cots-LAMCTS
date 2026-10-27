@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1793096842.3637242,
+  "code_commit": "a91e4276881ff6b333311315db0ed3b9dcf8b495",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm-deeplens-qfilm-same-lens-20261027-02",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/qfilm-deeplens-qfilm-same-lens-20261027-02.json",
+  "request_sha256": "2b6001358155aab1e9681e7d3f571b1da10642b393ff7b2c93d8a8a771e7b917",
+  "schema": 1,
+  "state": "claimed"
+}
