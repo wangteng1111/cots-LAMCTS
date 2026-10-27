@@ -14,17 +14,32 @@
     "4000000"
   ],
   "code_commit": "358f7298bc9d5fe094baf5796b1f32e2e5b2062a",
+  "elapsed_sec": 11.392739534378052,
   "entrypoint": "scripts/cuda_venv_exec.py",
   "env": {},
+  "finished_at": 1793097643.3086162,
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm-deeplens-coherent-grid4096-20261027-01",
-  "log_tail": "",
+  "log_tail": "/var/lib/cots-lamcts/jobs/qfilm-deeplens-coherent-grid4096-20261027-01/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)\nCOMPARE {\"name\": \"thin\", \"field\": 0, \"huygens_s\": 0.07103254087269306, \"huygens_delta_mtf\": 0.45555342843280017, \"coherent_s\": 0.38429025281220675, \"coherent_ok\": true}\nCOMPARE {\"name\": \"thin\", \"field\": 1, \"huygens_s\": 0.04461991507560015, \"huygens_delta_mtf\": 0.3853556386767629, \"coherent_s\": null, \"coherent_ok\": null}\nCOMPARE {\"name\": \"thin\", \"field\": 2, \"huygens_s\": 0.044492170214653015, \"huygens_delta_mtf\": 0.19035303076093066, \"coherent_s\": null, \"coherent_ok\": null}\nRESULT {\"cases\": [[\"thin\", null, null, 3]]}",
   "memory_gb": 0,
   "pid": 4191179,
   "request_sha256": "1932c033d45cc9ebb04354dfaa23d8b8816416030eb2165017a43aeffbd73115",
+  "returncode": 0,
   "schema": 1,
   "started_at": 1793097631.9158766,
-  "state": "running",
+  "state": "finished",
   "timeout_sec": 1500,
-  "updated_at": 1793097634.3843038
+  "updated_at": 1793097634.3843038,
+  "uploaded_artifacts": [
+    {
+      "path": "deeplens_qfilm_comparison.json",
+      "size": 14969,
+      "uploaded": true
+    },
+    {
+      "path": "thin_deeplens_same_prescription.json",
+      "size": 792,
+      "uploaded": true
+    }
+  ]
 }
