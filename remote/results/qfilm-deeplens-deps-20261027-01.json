@@ -3,17 +3,27 @@
     "scripts/qfilm_deeplens_deps.py"
   ],
   "code_commit": "f1c7b407929aa24807ad5159ec521ed259381a60",
+  "elapsed_sec": 425.75968408584595,
   "entrypoint": "scripts/cuda_venv_exec.py",
   "env": {},
+  "finished_at": 1793096650.754367,
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm-deeplens-deps-20261027-01",
-  "log_tail": "INSTALL_TARGET /var/lib/cots-lamcts/deeplens_python_deps",
+  "log_tail": "INSTALL_TARGET /var/lib/cots-lamcts/deeplens_python_deps\nPIP 1  WARNING: The directory '/mnt/data/cotslamcts/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.\nWARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError(\"HTTPSConnection(host='pypi.org', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\")': /simple/matplotlib/\nWARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError(\"HTTPSConnection(host='pypi.org', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\")': /simple/matplotlib/\nERROR: Could not find a version that satisfies the requirement matplotlib==3.10.6 (from versions: none)\nERROR: No matching distribution found for matplotlib==3.10.6\n\nIMPORT_CHECK {\"source_sha\": \"911bb9d334fce7e20a4407c4506ac683b52ff246\", \"pip_returncode\": 1, \"root\": \"/var/lib/cots-lamcts/deeplens_python_deps\", \"torch_before\": null, \"import_check\": {\"torch\": {\"ok\": true, \"version\": \"2.14.0+cu130\"}, \"matplotlib\": {\"ok\": false, \"error\": \"No module named 'matplotlib'\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"/var/lib/cots-lamcts/jobs/qfilm-deeplens-deps-20261027-01/src/scripts/qfilm_deeplens_deps.py\\\", line 20, in <module>\\n    m=__import__(name);result['import_check'][name]={'ok':True,'version':str(getattr(m,'__version__','unknown'))}\\n      ^^^^^^^^^^^^^^^^\\nModuleNotFoundError: No module named 'matplotlib'\\n\"}, \"cv2\": {\"ok\": false, \"error\": \"No module named 'cv2'\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"/var/lib/cots-lamcts/jobs/qfilm-deeplens-deps-20261027-01/src/scripts/qfilm_deeplens_deps.py\\\", line 20, in <module>\\n    m=__import__(name);result['import_check'][name]={'ok':True,'version':str(getattr(m,'__version__','unknown'))}\\n      ^^^^^^^^^^^^^^^^\\nModuleNotFoundError: No module named 'cv2'\\n\"}, \"einops\": {\"ok\": false, \"error\": \"No module named 'einops'\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"/var/lib/cots-lamcts/jobs/qfilm-deeplens-deps-20261027-01/src/scripts/qfilm_deeplens_deps.py\\\", line 20, in <module>\\n    m=__import__(name);result['import_check'][name]={'ok':True,'version':str(getattr(m,'__version__','unknown'))}\\n      ^^^^^^^^^^^^^^^^\\nModuleNotFoundError: No module named 'einops'\\n\"}, \"skimage\": {\"ok\": false, \"error\": \"No module named 'skimage'\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"/var/lib/cots-lamcts/jobs/qfilm-deeplens-deps-20261027-01/src/scripts/qfilm_deeplens_deps.py\\\", line 20, in <module>\\n    m=__import__(name);result['import_check'][name]={'ok':True,'version':str(getattr(m,'__version__','unknown'))}\\n      ^^^^^^^^^^^^^^^^\\nModuleNotFoundError: No module named 'skimage'\\n\"}, \"deeplens\": {\"ok\": false, \"error\": \"No module named 'deeplens'\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"/var/lib/cots-lamcts/jobs/qfilm-deeplens-deps-20261027-01/src/scripts/qfilm_deeplens_deps.py\\\", line 20, in <module>\\n    m=__import__(name);result['import_check'][name]={'ok':True,'version':str(getattr(m,'__version__','unknown'))}\\n      ^^^^^^^^^^^^^^^^\\nModuleNotFoundError: No module named 'deeplens'\\n\"}}}",
   "memory_gb": 0,
   "pid": 4185579,
   "request_sha256": "cc3cb2e80055e3c84705ccf0d20aad3fbb8a074e6c1dcb6ec3fd2d5e078617b0",
+  "returncode": 2,
   "schema": 1,
   "started_at": 1793096224.994683,
-  "state": "running",
+  "state": "failed",
   "timeout_sec": 900,
-  "updated_at": 1793096588.643839
+  "updated_at": 1793096588.643839,
+  "uploaded_artifacts": [
+    {
+      "path": "deeplens_deps.json",
+      "size": 2553,
+      "uploaded": true
+    }
+  ]
 }
