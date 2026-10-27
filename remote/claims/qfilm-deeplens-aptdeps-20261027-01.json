@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1793096778.8514905,
+  "code_commit": "92a28559c64ddcab19cd13a1f9730cf6ab45efea",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm-deeplens-aptdeps-20261027-01",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/qfilm-deeplens-aptdeps-20261027-01.json",
+  "request_sha256": "a0897c98d472c5001031b59c1dc9bcd4694acbc89638dd8457e928538c3aa2db",
+  "schema": 1,
+  "state": "claimed"
+}
