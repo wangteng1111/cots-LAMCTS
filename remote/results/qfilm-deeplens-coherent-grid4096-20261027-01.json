@@ -1,0 +1,27 @@
+{
+  "args": [
+    "validation/qfilm_deeplens_same_prescription.py",
+    "--cases",
+    "thin",
+    "--res",
+    "4096",
+    "--ks",
+    "128",
+    "--spp",
+    "8192",
+    "--coherent",
+    "--coherent-spp",
+    "4000000"
+  ],
+  "code_commit": "358f7298bc9d5fe094baf5796b1f32e2e5b2062a",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm-deeplens-coherent-grid4096-20261027-01",
+  "memory_gb": 0,
+  "request_sha256": "1932c033d45cc9ebb04354dfaa23d8b8816416030eb2165017a43aeffbd73115",
+  "schema": 1,
+  "started_at": 1793097631.9158766,
+  "state": "running",
+  "timeout_sec": 1500
+}
