@@ -13,17 +13,37 @@
     "512"
   ],
   "code_commit": "77e5deb846b585619b592c56a82b11705e0fa865",
+  "elapsed_sec": 20.531913995742798,
   "entrypoint": "scripts/cuda_venv_exec.py",
   "env": {},
+  "finished_at": 1793097864.3320522,
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm-deeplens-qfilm512-million-20261027-01",
-  "log_tail": "",
+  "log_tail": "/var/lib/cots-lamcts/jobs/qfilm-deeplens-qfilm512-million-20261027-01/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)\nCOMPARE {\"name\": \"thin\", \"field\": 0, \"huygens_s\": 2.304562095552683, \"huygens_delta_mtf\": 0.00708850144128359, \"coherent_s\": null, \"coherent_ok\": null}\nCOMPARE {\"name\": \"thin\", \"field\": 1, \"huygens_s\": 2.2743627093732357, \"huygens_delta_mtf\": 0.013286636938439123, \"coherent_s\": null, \"coherent_ok\": null}\nCOMPARE {\"name\": \"thin\", \"field\": 2, \"huygens_s\": 2.2753790644928813, \"huygens_delta_mtf\": 0.010267377829846158, \"coherent_s\": null, \"coherent_ok\": null}\nCOMPARE {\"name\": \"internal_positive\", \"field\": 0, \"huygens_s\": 2.2966572903096676, \"huygens_delta_mtf\": 0.024532239196758565, \"coherent_s\": null, \"coherent_ok\": null}\nCOMPARE {\"name\": \"internal_positive\", \"field\": 1, \"huygens_s\": 2.2946441676467657, \"huygens_delta_mtf\": 0.021119513307786275, \"coherent_s\": null, \"coherent_ok\": null}\nCOMPARE {\"name\": \"internal_positive\", \"field\": 2, \"huygens_s\": 2.2949273167178035, \"huygens_delta_mtf\": 0.009837272695575813, \"coherent_s\": null, \"coherent_ok\": null}\nRESULT {\"cases\": [[\"thin\", null, null, 3], [\"internal_positive\", null, null, 3]]}",
   "memory_gb": 0,
   "pid": 4192423,
   "request_sha256": "43926a683756d807e4d3a8b7e8b0a281705557080e529529033acfb1c6946a75",
+  "returncode": 0,
   "schema": 1,
   "started_at": 1793097843.8001382,
-  "state": "running",
+  "state": "finished",
   "timeout_sec": 1500,
-  "updated_at": 1793097846.3246639
+  "updated_at": 1793097846.3246639,
+  "uploaded_artifacts": [
+    {
+      "path": "deeplens_qfilm_comparison.json",
+      "size": 25659,
+      "uploaded": true
+    },
+    {
+      "path": "internal_positive_deeplens_same_prescription.json",
+      "size": 1284,
+      "uploaded": true
+    },
+    {
+      "path": "thin_deeplens_same_prescription.json",
+      "size": 792,
+      "uploaded": true
+    }
+  ]
 }
