@@ -1,0 +1,32 @@
+{
+  "args": [
+    "validation/qfilm03_three_way_benchmark.py"
+  ],
+  "bridge_version": "0.5.0",
+  "code_commit": "ae63540c362890b870da876c05b04b4e87cc6cf3",
+  "elapsed_sec": 22.433422803878784,
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "finished_at": 1793111793.1448898,
+  "hostname": "aipss-Rack-Server",
+  "immutable_job_id": true,
+  "job_id": "qfilm03-3way-gpu-20261027-04",
+  "log_tail": "/var/lib/cots-lamcts/jobs/qfilm03-3way-gpu-20261027-04/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)\nQFILM03 thin {\"baseline_seconds\": 0.7897729529067874, \"qfilm03_total_seconds\": 7.043657095171511, \"fast_seconds\": 0.034389971755445004, \"reference_seconds\": 7.00910946726799, \"max_Q_image_abs\": 0.0, \"J_diff\": 0.0, \"qfilm03_version\": \"Qfilm0.3-raywave-deeplens-reference-v1\", \"status\": \"checked_subset\", \"max_abs_mtf_discrepancy\": 0.01972845384176486, \"per_field_discrepancy\": [0.00711681987299323, 0.013661606435864448, 0.01972845384176486], \"physics_certified\": false, \"training_eligible\": false, \"efl_delta\": 5.459727745460441e-07, \"error\": null}\nQFILM03 internal_positive {\"baseline_seconds\": 0.42590652871876955, \"qfilm03_total_seconds\": 7.353608381003141, \"fast_seconds\": 0.42093918938189745, \"reference_seconds\": 6.932576927356422, \"max_Q_image_abs\": 0.0, \"J_diff\": 0.0, \"qfilm03_version\": \"Qfilm0.3-raywave-deeplens-reference-v1\", \"status\": \"checked_subset\", \"max_abs_mtf_discrepancy\": 0.031773545634442124, \"per_field_discrepancy\": [0.028008434375649427, 0.02067926545815868, 0.031773545634442124], \"physics_certified\": false, \"training_eligible\": false, \"efl_delta\": 4.624742544478977e-07, \"error\": null}\nSAME_WAVEFIELD {\"input\": \"identical DeepLens exit-pupil complex field\", \"pupil_field_sample_spp\": 1000000, \"pupil_field_grid\": 1024, \"propagation_grid\": 2048, \"physical_z_mm\": 53.221824527030186, \"pixel_pitch_mm\": 0.012499999979024606, \"wavelength_mm\": 0.00055, \"output_psf_patch\": 96, \"interpolation\": \"none\", \"mtf_nyquist_lpmm\": 40.00000006712126, \"deeplens_asm_median_s\": 0.0023612407967448235, \"torchoptics_asm_median_s\": 0.0044375229626894, \"psf_max_abs_diff\": 2.836619827917275e-14, \"psf_mean_abs_diff\": 2.7245481531420304e-16, \"mtf_max_abs_diff\": 8.64863736182997e-14, \"deeplens_mtf_x\": [0.8572408626762982, 0.7855563409857155, 0.5781512336042056, 0.3071284605985201], \"torchoptics_mtf_x\": [0.8572408626762615, 0.7855563409856919, 0.5781512336041924, 0.3071284605984794], \"deeplens_mtf_y\": [0.8587837555956555, 0.7873236635896341, 0.5795421810457579, 0.30734331927167857], \"torchoptics_mtf_y\": [0.8587837555956087, 0.7873236635896389, 0.5795421810456715, 0.30734331927166836], \"physically_equivalent_inputs\": true}\nASM_DIM {\"field_n\": 96, \"input_pitch_mm\": 0.005, \"wavelength_mm\": 0.00055, \"distance_mm\": 6.0, \"aperture_radius_mm\": 0.12, \"methods\": {\"ASM\": {\"seconds_median\": 0.0027385661378502846, \"finite\": true}, \"DIM\": {\"seconds_median\": 0.0021400507539510727, \"finite\": true}}, \"psf_max_abs_diff\": 1.3368083422726773e-06, \"mtf_max_abs_diff\": 2.3954969359085698e-05}",
+  "memory_gb": 0,
+  "pid": 65560,
+  "request_sha256": "0b009eb60f18d212d373fc4599ca89c87c8b8d9062894c6569b9caeeb7ad0238",
+  "retry_policy": "new_job_id_required",
+  "returncode": 0,
+  "schema": 1,
+  "started_at": 1793111770.711467,
+  "state": "finished",
+  "timeout_sec": 1800,
+  "updated_at": 1793111773.1528196,
+  "uploaded_artifacts": [
+    {
+      "path": "qfilm03_benchmark/three_way.json",
+      "size": 3385,
+      "uploaded": true
+    }
+  ]
+}
