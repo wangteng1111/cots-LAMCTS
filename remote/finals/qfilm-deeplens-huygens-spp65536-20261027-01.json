@@ -1,0 +1,45 @@
+{
+  "args": [
+    "validation/qfilm_deeplens_same_prescription.py",
+    "--cases",
+    "thin",
+    "--res",
+    "3072",
+    "--ks",
+    "96",
+    "--spp",
+    "65536"
+  ],
+  "bridge_version": "0.5.0",
+  "code_commit": "c10e64a219921a979c6018114a503431abc15294",
+  "elapsed_sec": 10.71924901008606,
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "finished_at": 1793097094.7221582,
+  "hostname": "aipss-Rack-Server",
+  "immutable_job_id": true,
+  "job_id": "qfilm-deeplens-huygens-spp65536-20261027-01",
+  "log_tail": "/var/lib/cots-lamcts/jobs/qfilm-deeplens-huygens-spp65536-20261027-01/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)\nCOMPARE {\"name\": \"thin\", \"field\": 0, \"huygens_s\": 0.19068334437906742, \"huygens_delta_mtf\": 0.1077183158221442, \"coherent_s\": null, \"coherent_ok\": null}\nCOMPARE {\"name\": \"thin\", \"field\": 1, \"huygens_s\": 0.16025932133197784, \"huygens_delta_mtf\": 0.06640941843687206, \"coherent_s\": null, \"coherent_ok\": null}\nCOMPARE {\"name\": \"thin\", \"field\": 2, \"huygens_s\": 0.16019362956285477, \"huygens_delta_mtf\": 0.11600667982878071, \"coherent_s\": null, \"coherent_ok\": null}\nRESULT {\"cases\": [[\"thin\", null, null, 3]]}",
+  "memory_gb": 0,
+  "pid": 4188441,
+  "request_sha256": "94826d601a51216cbcd74869d8c35bd5ee6898327603f19d385efd6d07eb3b36",
+  "retry_policy": "new_job_id_required",
+  "returncode": 0,
+  "schema": 1,
+  "started_at": 1793097084.0029092,
+  "state": "finished",
+  "timeout_sec": 1500,
+  "updated_at": 1793097086.855364,
+  "uploaded_artifacts": [
+    {
+      "path": "deeplens_qfilm_comparison.json",
+      "size": 10687,
+      "uploaded": true
+    },
+    {
+      "path": "thin_deeplens_same_prescription.json",
+      "size": 792,
+      "uploaded": true
+    }
+  ]
+}
