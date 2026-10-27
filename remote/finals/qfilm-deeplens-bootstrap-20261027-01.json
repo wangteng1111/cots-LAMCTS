@@ -1,0 +1,32 @@
+{
+  "args": [
+    "scripts/qfilm_deeplens_bootstrap.py"
+  ],
+  "bridge_version": "0.5.0",
+  "code_commit": "67a44af1c7749d42dde6723679f5bd83eaece7ce",
+  "elapsed_sec": 10.317227840423584,
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "finished_at": 1793096109.5086708,
+  "hostname": "aipss-Rack-Server",
+  "immutable_job_id": true,
+  "job_id": "qfilm-deeplens-bootstrap-20261027-01",
+  "log_tail": "CMD ['git', 'clone', '--filter=blob:none', '--no-checkout', 'https://github.com/vccimaging/DeepLens.git', '/var/lib/cots-lamcts/deeplens_upstream'] returncode 0 stdout_tail  stderr_tail Cloning into '/var/lib/cots-lamcts/deeplens_upstream'...\n\nCMD ['git', '-C', '/var/lib/cots-lamcts/deeplens_upstream', 'rev-parse', 'HEAD'] returncode 0 stdout_tail 911bb9d334fce7e20a4407c4506ac683b52ff246\n stderr_tail \nCMD ['git', '-C', '/var/lib/cots-lamcts/deeplens_upstream', 'rev-parse', 'HEAD'] returncode 0 stdout_tail 911bb9d334fce7e20a4407c4506ac683b52ff246\n stderr_tail \nBOOTSTRAP {\"schema\": \"qfilm-deeplens-bootstrap-v1\", \"source\": \"https://github.com/vccimaging/DeepLens\", \"sha\": \"911bb9d334fce7e20a4407c4506ac683b52ff246\", \"upstream_path\": \"/var/lib/cots-lamcts/deeplens_upstream\", \"checked_out\": \"911bb9d334fce7e20a4407c4506ac683b52ff246\", \"torch\": {\"available\": true, \"version\": \"2.14.0+cu130\"}, \"torchvision\": {\"available\": false, \"error\": \"No module named 'torchvision'\"}, \"cv2\": {\"available\": false, \"error\": \"No module named 'cv2'\"}, \"matplotlib\": {\"available\": false, \"error\": \"No module named 'matplotlib'\"}, \"einops\": {\"available\": false, \"error\": \"No module named 'einops'\"}, \"scipy\": {\"available\": true, \"version\": \"1.15.3\"}, \"skimage\": {\"available\": false, \"error\": \"No module named 'skimage'\"}, \"deeplens\": {\"available\": false, \"error\": \"No module named 'deeplens'\"}}",
+  "memory_gb": 0,
+  "pid": 4184970,
+  "request_sha256": "88fc137fc76ba3726246db619bb616700dcf83fd220a3fcc8cca455b2a364d85",
+  "retry_policy": "new_job_id_required",
+  "returncode": 2,
+  "schema": 1,
+  "started_at": 1793096099.191443,
+  "state": "failed",
+  "timeout_sec": 1200,
+  "updated_at": 1793096101.4849257,
+  "uploaded_artifacts": [
+    {
+      "path": "deeplens_bootstrap.json",
+      "size": 927,
+      "uploaded": true
+    }
+  ]
+}
