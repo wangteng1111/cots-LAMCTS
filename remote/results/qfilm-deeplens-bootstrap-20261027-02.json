@@ -7,10 +7,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm-deeplens-bootstrap-20261027-02",
+  "log_tail": "CMD ['git', '-C', '/var/lib/cots-lamcts/deeplens_upstream', 'rev-parse', 'HEAD'] returncode 0 stdout_tail 911bb9d334fce7e20a4407c4506ac683b52ff246\n stderr_tail ",
   "memory_gb": 0,
+  "pid": 4186201,
   "request_sha256": "9a421b5d2c832bdd082ddecc8d58f8bc0c0f66af2861db4f32176e17a69b161e",
   "schema": 1,
   "started_at": 1793096670.3126209,
   "state": "running",
-  "timeout_sec": 360
+  "timeout_sec": 360,
+  "updated_at": 1793096672.7123704
 }
