@@ -1,0 +1,40 @@
+{
+  "args": [
+    "validation/qfilm_deeplens_same_prescription.py",
+    "--cases",
+    "thin",
+    "--res",
+    "3072",
+    "--ks",
+    "96",
+    "--spp",
+    "4096"
+  ],
+  "bridge_version": "0.5.0",
+  "code_commit": "b3ca84e65e0c57d3f39909035d5a424b8264f61b",
+  "elapsed_sec": 10.382027626037598,
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "finished_at": 1793096710.9761386,
+  "hostname": "aipss-Rack-Server",
+  "immutable_job_id": true,
+  "job_id": "qfilm-deeplens-qfilm-same-lens-20261027-01",
+  "log_tail": "RESULT {\"cases\": [[\"thin\", \"ModuleNotFoundError(\\\"No module named 'matplotlib'\\\")\", null, 0]]}",
+  "memory_gb": 0,
+  "pid": 4186400,
+  "request_sha256": "15455f365f0bb5661e9b5a4c8b500b2b96cc453fe29c95c7e93e8dac0a0781e0",
+  "retry_policy": "new_job_id_required",
+  "returncode": 2,
+  "schema": 1,
+  "started_at": 1793096700.594111,
+  "state": "failed",
+  "timeout_sec": 1500,
+  "updated_at": 1793096703.083396,
+  "uploaded_artifacts": [
+    {
+      "path": "deeplens_qfilm_comparison.json",
+      "size": 1366,
+      "uploaded": true
+    }
+  ]
+}
