@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1793097629.574114,
+  "code_commit": "358f7298bc9d5fe094baf5796b1f32e2e5b2062a",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm-deeplens-coherent-grid4096-20261027-01",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/qfilm-deeplens-coherent-grid4096-20261027-01.json",
+  "request_sha256": "1932c033d45cc9ebb04354dfaa23d8b8816416030eb2165017a43aeffbd73115",
+  "schema": 1,
+  "state": "claimed"
+}
