@@ -16,10 +16,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm-deeplens-coherent-repro-20261027-01",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 4188182,
   "request_sha256": "f887aafde2148f29bc54e5a2f156b8fddf2924b07c1e3e4b64aed6dff68bca54",
   "schema": 1,
   "started_at": 1793097050.6861048,
   "state": "running",
-  "timeout_sec": 1500
+  "timeout_sec": 1500,
+  "updated_at": 1793097053.0073416
 }
