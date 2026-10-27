@@ -1,0 +1,27 @@
+{
+  "args": [
+    "validation/qfilm_deeplens_same_prescription.py",
+    "--cases",
+    "internal_positive",
+    "--res",
+    "3072",
+    "--ks",
+    "96",
+    "--spp",
+    "1000000",
+    "--coherent",
+    "--coherent-spp",
+    "1000000"
+  ],
+  "code_commit": "358f7298bc9d5fe094baf5796b1f32e2e5b2062a",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm-deeplens-internal-positive-million-20261027-01",
+  "memory_gb": 0,
+  "request_sha256": "965c096c7b0c37f4635da24f2c9b08ed76244a0d96a9519511da759f9af2c7d0",
+  "schema": 1,
+  "started_at": 1793097571.7156858,
+  "state": "running",
+  "timeout_sec": 1500
+}
