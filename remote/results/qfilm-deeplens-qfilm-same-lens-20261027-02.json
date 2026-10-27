@@ -15,10 +15,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm-deeplens-qfilm-same-lens-20261027-02",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 4187120,
   "request_sha256": "2b6001358155aab1e9681e7d3f571b1da10642b393ff7b2c93d8a8a771e7b917",
   "schema": 1,
   "started_at": 1793096846.03185,
   "state": "running",
-  "timeout_sec": 1500
+  "timeout_sec": 1500,
+  "updated_at": 1793096848.304765
 }
