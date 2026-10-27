@@ -22,6 +22,7 @@ try:
  if current!=SHA or not (UP/'deeplens'/'__init__.py').is_file():
   run(['git','-C',str(UP),'checkout','--force',SHA],timeout=180)
  log['checked_out']=run(['git','-C',str(UP),'rev-parse','HEAD'])
+ sys.path.insert(0,'/var/lib/cots-lamcts/deeplens_python_deps')
  sys.path.insert(0,str(UP))
  for dep in ['torch','torchvision','cv2','matplotlib','einops','scipy','skimage','deeplens']:
   try:
