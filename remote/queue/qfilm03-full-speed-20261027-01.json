@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "job_id": "qfilm03-full-speed-20261027-01",
+  "code_commit": "de6eb79064af8a70d1aa06c04f26519810b9ef2e",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "scripts/qfilm02_triton_bootstrap.py",
+    "qfilm03_full_gpu_benchmark.py"
+  ],
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
