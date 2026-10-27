@@ -1,0 +1,73 @@
+{
+  "info": "Alpha Lense DeepLens vs Qfilm physical prescription equivalence",
+  "foclen": 53.0,
+  "fnum": 5.888888888888889,
+  "r_sensor": 9.050966784000002,
+  "d_sensor": 68.0,
+  "sensor_size": [
+    12.8,
+    12.8
+  ],
+  "sensor_res": [
+    3072,
+    3072
+  ],
+  "primary_wvln": 0.55,
+  "surfaces": [
+    {
+      "type": "Spheric",
+      "r": 17.0,
+      "c": 0.015384615384615385,
+      "roc": 65.0,
+      "mat1": "air",
+      "mat2": "1.516800/64.17000",
+      "d": 0.0,
+      "d_next": 4.5
+    },
+    {
+      "type": "Spheric",
+      "r": 17.0,
+      "c": -0.010526315789473684,
+      "roc": -95.0,
+      "mat1": "1.516800/64.17000",
+      "mat2": "air",
+      "d": 4.5,
+      "d_next": 1.0
+    },
+    {
+      "type": "Aperture",
+      "r": 4.5,
+      "c": 0.0,
+      "mat1": "air",
+      "mat2": "air",
+      "d": 5.5,
+      "d_next": 2.0
+    },
+    {
+      "type": "Aspheric",
+      "r": 15.0,
+      "c": -0.017857142857142856,
+      "roc": -56.0,
+      "mat1": "air",
+      "mat2": "1.620000/36.00000",
+      "d": 7.5,
+      "k": -0.3,
+      "ai": [
+        1.5e-07,
+        -3e-10
+      ],
+      "use_ai2": false,
+      "d_next": 3.6999999999999993
+    },
+    {
+      "type": "Spheric",
+      "r": 15.0,
+      "c": 0.008695652173913044,
+      "roc": 115.0,
+      "mat1": "1.620000/36.00000",
+      "mat2": "air",
+      "d": 11.2,
+      "d_next": 56.8
+    }
+  ]
+}
