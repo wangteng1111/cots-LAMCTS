@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1793111768.0513158,
+  "code_commit": "ae63540c362890b870da876c05b04b4e87cc6cf3",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm03-3way-gpu-20261027-04",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/qfilm03-3way-gpu-20261027-04.json",
+  "request_sha256": "0b009eb60f18d212d373fc4599ca89c87c8b8d9062894c6569b9caeeb7ad0238",
+  "schema": 1,
+  "state": "claimed"
+}
