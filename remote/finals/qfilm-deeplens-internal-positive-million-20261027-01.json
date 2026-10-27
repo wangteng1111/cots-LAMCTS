@@ -1,0 +1,48 @@
+{
+  "args": [
+    "validation/qfilm_deeplens_same_prescription.py",
+    "--cases",
+    "internal_positive",
+    "--res",
+    "3072",
+    "--ks",
+    "96",
+    "--spp",
+    "1000000",
+    "--coherent",
+    "--coherent-spp",
+    "1000000"
+  ],
+  "bridge_version": "0.5.0",
+  "code_commit": "358f7298bc9d5fe094baf5796b1f32e2e5b2062a",
+  "elapsed_sec": 14.229185342788696,
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "finished_at": 1793097585.9448712,
+  "hostname": "aipss-Rack-Server",
+  "immutable_job_id": true,
+  "job_id": "qfilm-deeplens-internal-positive-million-20261027-01",
+  "log_tail": "/var/lib/cots-lamcts/jobs/qfilm-deeplens-internal-positive-million-20261027-01/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)\nCOMPARE {\"name\": \"internal_positive\", \"field\": 0, \"huygens_s\": 2.323828624561429, \"huygens_delta_mtf\": 0.026669956596028388, \"coherent_s\": 0.3744185483083129, \"coherent_ok\": true}\nCOMPARE {\"name\": \"internal_positive\", \"field\": 1, \"huygens_s\": 2.2921687308698893, \"huygens_delta_mtf\": 0.022070217481004795, \"coherent_s\": null, \"coherent_ok\": null}\nCOMPARE {\"name\": \"internal_positive\", \"field\": 2, \"huygens_s\": 2.2953909328207374, \"huygens_delta_mtf\": 0.03062732678205099, \"coherent_s\": null, \"coherent_ok\": null}\nRESULT {\"cases\": [[\"internal_positive\", null, null, 3]]}",
+  "memory_gb": 0,
+  "pid": 4190813,
+  "request_sha256": "965c096c7b0c37f4635da24f2c9b08ed76244a0d96a9519511da759f9af2c7d0",
+  "retry_policy": "new_job_id_required",
+  "returncode": 0,
+  "schema": 1,
+  "started_at": 1793097571.7156858,
+  "state": "finished",
+  "timeout_sec": 1500,
+  "updated_at": 1793097574.0014508,
+  "uploaded_artifacts": [
+    {
+      "path": "deeplens_qfilm_comparison.json",
+      "size": 14947,
+      "uploaded": true
+    },
+    {
+      "path": "internal_positive_deeplens_same_prescription.json",
+      "size": 1284,
+      "uploaded": true
+    }
+  ]
+}
