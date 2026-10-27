@@ -1,0 +1,28 @@
+CMD ['git', 'clone', '--filter=blob:none', '--no-checkout', 'https://github.com/MatthewFilipovich/torchoptics.git', '/var/lib/cots-lamcts/torchoptics_upstream'] RC 0 LOG 
+Cloning into '/var/lib/cots-lamcts/torchoptics_upstream'...
+
+CMD ['git', '-C', '/var/lib/cots-lamcts/torchoptics_upstream', 'fetch', '--depth', '1', 'origin', '34fe9c40f874e53db225e703c5580befe8c523b5'] RC 0 LOG 
+From https://github.com/MatthewFilipovich/torchoptics
+ * branch            34fe9c40f874e53db225e703c5580befe8c523b5 -> FETCH_HEAD
+
+CMD ['git', '-C', '/var/lib/cots-lamcts/torchoptics_upstream', 'checkout', '--force', '34fe9c40f874e53db225e703c5580befe8c523b5'] RC 0 LOG 
+Note: switching to '34fe9c40f874e53db225e703c5580befe8c523b5'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 34fe9c4 Update `visualize_tensor()` phase interpolation to 'antialiased' (#97)
+
+TORCHOPTICS_BOOTSTRAP {"source": "https://github.com/MatthewFilipovich/torchoptics.git", "sha": "34fe9c40f874e53db225e703c5580befe8c523b5", "path": "/var/lib/cots-lamcts/torchoptics_upstream", "has_field": true}
