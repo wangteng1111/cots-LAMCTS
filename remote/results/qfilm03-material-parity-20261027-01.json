@@ -7,10 +7,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm03-material-parity-20261027-01",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 66596,
   "request_sha256": "932ee629adf417d82ede12202897996332b29a714170cd526df6e9832660571c",
   "schema": 1,
   "started_at": 1793111962.4210885,
   "state": "running",
-  "timeout_sec": 900
+  "timeout_sec": 900,
+  "updated_at": 1793111965.1181514
 }
