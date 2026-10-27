@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "qfilm03-3way-gpu-20261027-03",
+  "code_commit": "5527f67bcd427794683f86e59c8472e8594c04c1",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm03_three_way_benchmark.py"
+  ],
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
