@@ -7,10 +7,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm03-3way-gpu-20261027-03",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 64773,
   "request_sha256": "49dd12263ef35045d5bd6e9b9ebd6bb027ff2343045f1dad1c607afcc10bc85f",
   "schema": 1,
   "started_at": 1793111487.6518188,
   "state": "running",
-  "timeout_sec": 1800
+  "timeout_sec": 1800,
+  "updated_at": 1793111490.1615114
 }
