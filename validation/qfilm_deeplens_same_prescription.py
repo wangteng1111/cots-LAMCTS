@@ -71,7 +71,7 @@ def conversion(p, sensor_size=12.8, sensor_res=3072, material_mode='inline'):
     items=[];before='air'
     glass_names=[]
     for idx,s in enumerate(src):
-        after='air' if float(s['n_after'])<=1.000001 else ('N-BK7' if material_mode=='bk7' and idx==0 else f"{s['n_after']:.6f}/{s['v_after']:.5f}")
+        after='air' if float(s['n_after'])<=1.000001 else ('N-BK7' if material_mode=='bk7' and abs(float(s['n_after'])-1.5168)<1e-4 else f"{s['n_after']:.6f}/{s['v_after']:.5f}")
         kw={'type':'Aspheric' if abs(float(s.get('conic',0.)))>1e-13 or any(abs(float(x))>0 for x in s.get('asphere',[])) else 'Spheric',
             'r':float(s.get('clear_aperture',2*source['design_spec']['stop_diameter_mm']))/2,
             'c':0. if math.isinf(float(s['radius'])) else 1./float(s['radius']),
@@ -124,7 +124,7 @@ def safe_call(fn,**kwargs):
 
 def run_case(name, source, outpath, res=3072, ks=96, spp=4096, do_coherent=False, coherent_spp=1000000):
     from deeplens import GeoLens
-    data,p=conversion(source,sensor_res=res,material_mode='bk7' if name=='thin' else 'inline')
+    data,p=conversion(source,sensor_res=res,material_mode='bk7' if name in ('thin','internal_positive') else 'inline')
     jsonpath=outpath/f'{name}_deeplens_same_prescription.json';jsonpath.write_text(json.dumps(data,indent=2)+'\n')
     fileinfo={'name':name,'model_source':'identical Qfilm prescription converted to native DeepLens geometry',
               'deepjson':str(jsonpath),'sensor_res':res,'ks':ks,'spp_huygens':spp,
@@ -186,14 +186,26 @@ def run_case(name, source, outpath, res=3072, ks=96, spp=4096, do_coherent=False
           'coherent_ok':entry.get('coherent',{}).get('ok')}),flush=True)
     return fileinfo
 
+def internal_stop_positive_lens():
+    # Two discrete catalog-like spherical and conic/aspheric singlets, fixed
+    # internal stop and positive effective focal length (~43.5 mm).
+    return {'surfaces':[
+       {'radius':80., 'thickness':4., 'n_after':1.5168,'v_after':64.17,'clear_aperture':24.,'sellmeier':BK7},
+       {'radius':-80.,'thickness':6., 'n_after':1.,'v_after':0.,'clear_aperture':24.},
+       {'radius':90., 'thickness':4., 'n_after':1.5168,'v_after':64.17,'clear_aperture':24.,
+        'conic':-.3,'asphere':(1.5e-7,-3.e-10),'sellmeier':BK7},
+       {'radius':-90.,'thickness':37.4228,'n_after':1.,'v_after':0.,'clear_aperture':24.}],
+       'stop_z_mm':7.,'image_z_mm':51.4228,
+       'design_spec':{'stop_diameter_mm':8.,'efl_target_mm':43.58574}}
+
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--coherent',action='store_true');ap.add_argument('--res',type=int,default=3072);ap.add_argument('--ks',type=int,default=96);ap.add_argument('--spp',type=int,default=4096);ap.add_argument('--coherent-spp',type=int,default=1000000);ap.add_argument('--cases',default='thin');args=ap.parse_args()
     out=pathlib.Path(os.environ.get('COTS_JOB_ARTIFACT_DIR','/tmp/qfilm_deeplens_test'));out.mkdir(parents=True,exist_ok=True)
     result={'schema':'qfilm-deeplens-pinned-comparison-v1','source_sha':SHA,
             'torch_version':torch.__version__,'compatibility_shims':COMPATIBILITY_SHIMS,'cases':[],'arguments':vars(args)}
     for name in args.cases.split(','):
-      if name not in ('thin','complex'):raise ValueError('unknown case '+name)
-      p=thin_lens() if name=='thin' else rich_lens()
+      if name not in ('thin','complex','internal_positive'):raise ValueError('unknown case '+name)
+      p=thin_lens() if name=='thin' else (internal_stop_positive_lens() if name=='internal_positive' else rich_lens())
       if name=='thin':p['surfaces'][0]['sellmeier']=BK7
       try:r=run_case(name,p,out,args.res,args.ks,args.spp,args.coherent,args.coherent_spp)
       except Exception as e:r={'name':name,'fatal':repr(e),'traceback':traceback.format_exc()[-8000:]}
