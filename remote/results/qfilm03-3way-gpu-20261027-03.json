@@ -3,17 +3,27 @@
     "validation/qfilm03_three_way_benchmark.py"
   ],
   "code_commit": "5527f67bcd427794683f86e59c8472e8594c04c1",
+  "elapsed_sec": 23.113492488861084,
   "entrypoint": "scripts/cuda_venv_exec.py",
   "env": {},
+  "finished_at": 1793111510.7653112,
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm03-3way-gpu-20261027-03",
-  "log_tail": "",
+  "log_tail": "/var/lib/cots-lamcts/jobs/qfilm03-3way-gpu-20261027-03/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)\nQFILM03 thin {\"baseline_seconds\": 0.7859715316444635, \"qfilm03_total_seconds\": 7.040508628822863, \"fast_seconds\": 0.03437628597021103, \"reference_seconds\": 7.00596684217453, \"max_Q_image_abs\": 0.0, \"J_diff\": 0.0, \"qfilm03_version\": \"Qfilm0.3-raywave-deeplens-reference-v1\", \"status\": \"checked_subset\", \"max_abs_mtf_discrepancy\": 0.01972845384176486, \"per_field_discrepancy\": [0.00711681987299323, 0.013661606435864448, 0.01972845384176486], \"physics_certified\": false, \"training_eligible\": false, \"efl_delta\": 5.459727745460441e-07, \"error\": null}\nQFILM03 internal_positive {\"baseline_seconds\": 0.4694795021787286, \"qfilm03_total_seconds\": 7.4094243654981256, \"fast_seconds\": 0.47403839603066444, \"reference_seconds\": 6.935314673930407, \"max_Q_image_abs\": 0.0, \"J_diff\": 0.0, \"qfilm03_version\": \"Qfilm0.3-raywave-deeplens-reference-v1\", \"status\": \"checked_subset\", \"max_abs_mtf_discrepancy\": 0.031773545634442124, \"per_field_discrepancy\": [0.028008434375649427, 0.02067926545815868, 0.031773545634442124], \"physics_certified\": false, \"training_eligible\": false, \"efl_delta\": 4.624742544478977e-07, \"error\": null}\nTORCHOPTICS_ERROR ValueError('operands could not be broadcast together with shapes (4,) (6,) ')",
   "memory_gb": 0,
   "pid": 64773,
   "request_sha256": "49dd12263ef35045d5bd6e9b9ebd6bb027ff2343045f1dad1c607afcc10bc85f",
+  "returncode": 2,
   "schema": 1,
   "started_at": 1793111487.6518188,
-  "state": "running",
+  "state": "failed",
   "timeout_sec": 1800,
-  "updated_at": 1793111490.1615114
+  "updated_at": 1793111490.1615114,
+  "uploaded_artifacts": [
+    {
+      "path": "qfilm03_benchmark/three_way.json",
+      "size": 2502,
+      "uploaded": true
+    }
+  ]
 }
