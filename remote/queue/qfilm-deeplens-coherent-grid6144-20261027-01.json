@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "job_id": "qfilm-deeplens-coherent-grid6144-20261027-01",
+  "code_commit": "358f7298bc9d5fe094baf5796b1f32e2e5b2062a",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm_deeplens_same_prescription.py",
+    "--cases",
+    "thin",
+    "--res",
+    "6144",
+    "--ks",
+    "192",
+    "--spp",
+    "8192",
+    "--coherent",
+    "--coherent-spp",
+    "4000000"
+  ],
+  "timeout_sec": 1500,
+  "memory_gb": 0
+}
