@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "qfilm-deeplens-bootstrap-20261027-02",
+  "code_commit": "b3ca84e65e0c57d3f39909035d5a424b8264f61b",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "scripts/qfilm_deeplens_bootstrap.py"
+  ],
+  "timeout_sec": 360,
+  "memory_gb": 0
+}
