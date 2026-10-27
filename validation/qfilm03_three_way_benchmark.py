@@ -80,7 +80,7 @@ def shared_deeplens_pupil_field(Field,device="cuda:0",sensor_res=1024,spp=100000
         lens=GeoLens(filename=str(path),device=device,dtype=torch.float64)
         wave,psfc= time_gpu(lambda:lens.pupil_field(
             points=[0.,0.,-1000000.],wvln=0.55,spp=spp,recenter=True))
-        w0=w[0].contiguous()
+        w0=wave[0].contiguous()
         # Physical pupil field has shape [H,H]; same zero pad and same pixel pitch as DeepLens ASM.
         pd=torch.nn.functional.pad(w0,(sensor_res//2,)*4,mode="constant",value=0)
         z=float(lens.d_sensor)-float(lens.get_exit_pupil()[0])
