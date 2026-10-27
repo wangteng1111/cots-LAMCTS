@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "job_id": "qfilm-deeplens-coherent-4m-20261027-01",
+  "code_commit": "9945f14296689940114a5a6ae61697dd5c872c36",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm_deeplens_same_prescription.py",
+    "--cases",
+    "thin",
+    "--res",
+    "3072",
+    "--ks",
+    "96",
+    "--spp",
+    "8192",
+    "--coherent",
+    "--coherent-spp",
+    "4000000"
+  ],
+  "timeout_sec": 1500,
+  "memory_gb": 0
+}
