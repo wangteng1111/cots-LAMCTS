@@ -1,0 +1,17 @@
+{
+  "schema": "qfilm03-supplier-glass-parity-v1",
+  "matching": {
+    "status": "checked_subset",
+    "material": [
+      {
+        "index": 0,
+        "material": "N-BK7",
+        "max_index_error": 1.3012558297553767e-07
+      }
+    ]
+  },
+  "rejected": {
+    "status": "material_mismatch",
+    "reason": "glass N-SF6 dispersion mismatch: max n delta 0.3002"
+  }
+}
