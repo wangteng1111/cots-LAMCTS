@@ -1,0 +1,6 @@
+/var/lib/cots-lamcts/jobs/qfilm-deeplens-internal-positive-million-20261027-01/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)
+  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)
+COMPARE {"name": "internal_positive", "field": 0, "huygens_s": 2.323828624561429, "huygens_delta_mtf": 0.026669956596028388, "coherent_s": 0.3744185483083129, "coherent_ok": true}
+COMPARE {"name": "internal_positive", "field": 1, "huygens_s": 2.2921687308698893, "huygens_delta_mtf": 0.022070217481004795, "coherent_s": null, "coherent_ok": null}
+COMPARE {"name": "internal_positive", "field": 2, "huygens_s": 2.2953909328207374, "huygens_delta_mtf": 0.03062732678205099, "coherent_s": null, "coherent_ok": null}
+RESULT {"cases": [["internal_positive", null, null, 3]]}
