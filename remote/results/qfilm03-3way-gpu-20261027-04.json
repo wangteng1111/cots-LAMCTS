@@ -1,0 +1,16 @@
+{
+  "args": [
+    "validation/qfilm03_three_way_benchmark.py"
+  ],
+  "code_commit": "ae63540c362890b870da876c05b04b4e87cc6cf3",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm03-3way-gpu-20261027-04",
+  "memory_gb": 0,
+  "request_sha256": "0b009eb60f18d212d373fc4599ca89c87c8b8d9062894c6569b9caeeb7ad0238",
+  "schema": 1,
+  "started_at": 1793111770.711467,
+  "state": "running",
+  "timeout_sec": 1800
+}
