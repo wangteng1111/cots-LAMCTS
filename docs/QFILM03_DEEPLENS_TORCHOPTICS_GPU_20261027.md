@@ -69,7 +69,7 @@ Conditions: 550 nm, propagation distance 53.2218245 mm, pupil-field grid 1024²,
 |---|---:|
 | DeepLens ASM propagation median | 2.361 ms |
 | TorchOptics ASM propagation median | 4.438 ms |
-| DeepLens / TorchOptics ASM speed ratio | 1.88x |
+| DeepLens ASM advantage (TorchOptics time / DeepLens time) | 1.88x |
 | Maximum normalized 96² PSF pixel absolute discrepancy | **2.84e-14** |
 | Maximum MTF absolute discrepancy | **8.65e-14** |
 
