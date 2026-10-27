@@ -30,7 +30,7 @@ Field coordinates 0=center, 0.5=mid, 1=edge.  Each result compares Qfilm and **D
 ### N-BK7 biconvex singlet
 | Qfilm pupil | Center | Mid-field | Edge |
 |---|---:|---:|---:|
-|p128|—|—|—|
+|p128|0.00900|0.07873|0.21729|
 |p256|0.00689|0.01350|0.01687|
 |p512|0.00739|0.01329|0.01588|
 
