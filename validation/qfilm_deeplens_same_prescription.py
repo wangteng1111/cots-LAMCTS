@@ -10,6 +10,25 @@ REPO=pathlib.Path(__file__).resolve().parents[1]
 DEEP=pathlib.Path('/var/lib/cots-lamcts/deeplens_upstream')
 DEPS=pathlib.Path('/var/lib/cots-lamcts/deeplens_python_deps')
 sys.path.insert(0,str(REPO));sys.path.insert(0,str(DEPS));sys.path.insert(0,str(DEEP))
+# DeepLens core optics has optional visualization/LPIPS imports at package-import time.
+# Isolated workstation Torch 2.14 has no compatible torchvision wheel. Provide only
+# import-time placeholders; they error if called. None is used by GeoLens PSF methods.
+import importlib.util, types
+COMPATIBILITY_SHIMS=[]
+if importlib.util.find_spec('torchvision') is None:
+    tv=types.ModuleType('torchvision');tu=types.ModuleType('torchvision.utils')
+    ti=types.ModuleType('torchvision.io')
+    def _unavailable(*a,**k):raise RuntimeError('visualization-only torchvision shim invoked')
+    tu.save_image=_unavailable;tu.make_grid=_unavailable;ti.read_image=_unavailable
+    tv.utils=tu;tv.io=ti
+    sys.modules['torchvision']=tv;sys.modules['torchvision.utils']=tu;sys.modules['torchvision.io']=ti
+    COMPATIBILITY_SHIMS.append('torchvision visual-only import placeholder')
+if importlib.util.find_spec('lpips') is None:
+    lm=types.ModuleType('lpips')
+    class _UnavailableLPIPS:
+        def __init__(self,*a,**k):raise RuntimeError('optional perceptual LPIPS metric not installed')
+    lm.LPIPS=_UnavailableLPIPS;sys.modules['lpips']=lm
+    COMPATIBILITY_SHIMS.append('lpips optional-metric import placeholder')
 from evaluator.qfilm02 import Config,evaluate as qfilm_eval,_surfaces_at
 from validation.qfilm02_smoke import thin_lens
 from validation.qfilm02_accelerated import rich_lens
@@ -142,7 +161,7 @@ def main():
     ap=argparse.ArgumentParser();ap.add_argument('--coherent',action='store_true');ap.add_argument('--res',type=int,default=3072);ap.add_argument('--ks',type=int,default=96);ap.add_argument('--spp',type=int,default=4096);ap.add_argument('--cases',default='thin');args=ap.parse_args()
     out=pathlib.Path(os.environ.get('COTS_JOB_ARTIFACT_DIR','/tmp/qfilm_deeplens_test'));out.mkdir(parents=True,exist_ok=True)
     result={'schema':'qfilm-deeplens-pinned-comparison-v1','source_sha':SHA,
-            'torch_version':torch.__version__,'cases':[],'arguments':vars(args)}
+            'torch_version':torch.__version__,'compatibility_shims':COMPATIBILITY_SHIMS,'cases':[],'arguments':vars(args)}
     for name in args.cases.split(','):
       if name not in ('thin','complex'):raise ValueError('unknown case '+name)
       p=thin_lens() if name=='thin' else rich_lens()
