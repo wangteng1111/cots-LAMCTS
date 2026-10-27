@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1793097569.2922268,
+  "code_commit": "358f7298bc9d5fe094baf5796b1f32e2e5b2062a",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm-deeplens-internal-positive-million-20261027-01",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/qfilm-deeplens-internal-positive-million-20261027-01.json",
+  "request_sha256": "965c096c7b0c37f4635da24f2c9b08ed76244a0d96a9519511da759f9af2c7d0",
+  "schema": 1,
+  "state": "claimed"
+}
