@@ -1,0 +1,59 @@
+APT_OK python3-matplotlib
+APT_OK python3-contourpy
+APT_OK python3-cycler
+APT_OK python3-dateutil
+APT_OK python3-fonttools
+APT_OK python3-kiwisolver
+APT_OK python3-packaging
+APT_OK python3-pil
+APT_OK python3-pyparsing
+APT_OK python3-six
+APT_FAIL python3-einops 
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+E: Unable to locate package python3-einops
+
+APT_OK python3-opencv
+APT_OK python3-skimage
+APT_OK python3-imageio
+APT_OK python3-tifffile
+APT_OK python3-networkx
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.2.6 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "/var/lib/cots-lamcts/jobs/qfilm-deeplens-aptdeps-20261027-01/src/scripts/qfilm_deeplens_aptdeps.py", line 31, in <module>
+    m=__import__(name);report[name]={'ok':True,'version':str(getattr(m,'__version__','?'))}
+  File "/var/lib/cots-lamcts/deeplens_apt_deps/usr/lib/python3/dist-packages/matplotlib/__init__.py", line 113, in <module>
+    from . import _api, _version, cbook, _docstring, rcsetup
+  File "/var/lib/cots-lamcts/deeplens_apt_deps/usr/lib/python3/dist-packages/matplotlib/rcsetup.py", line 27, in <module>
+    from matplotlib.colors import Colormap, is_color_like
+  File "/var/lib/cots-lamcts/deeplens_apt_deps/usr/lib/python3/dist-packages/matplotlib/colors.py", line 56, in <module>
+    from matplotlib import _api, _cm, cbook, scale
+  File "/var/lib/cots-lamcts/deeplens_apt_deps/usr/lib/python3/dist-packages/matplotlib/scale.py", line 22, in <module>
+    from matplotlib.ticker import (
+  File "/var/lib/cots-lamcts/deeplens_apt_deps/usr/lib/python3/dist-packages/matplotlib/ticker.py", line 138, in <module>
+    from matplotlib import transforms as mtransforms
+  File "/var/lib/cots-lamcts/deeplens_apt_deps/usr/lib/python3/dist-packages/matplotlib/transforms.py", line 49, in <module>
+    from matplotlib._path import (
+Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/venv/lib/python3.12/site-packages/numpy/core/_multiarray_umath.py", line 44, in __getattr__
+    raise ImportError(msg)
+ImportError: 
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.2.6 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+
+DEPS_RESULT {"schema": "deeplens-apt-isolated-deps-v1", "installed": ["python3-matplotlib", "python3-contourpy", "python3-cycler", "python3-dateutil", "python3-fonttools", "python3-kiwisolver", "python3-packaging", "python3-pil", "python3-pyparsing", "python3-six", "python3-opencv", "python3-skimage", "python3-imageio", "python3-tifffile", "python3-networkx"], "failed": [{"name": "python3-einops", "message": "\nWARNING: apt does not have a stable CLI interface. Use with caution in scripts.\n\nE: Unable to locate package python3-einops\n"}], "matplotlib": {"ok": false, "error": "numpy.core.multiarray failed to import"}, "cv2": {"ok": false, "error": "libopencv_stitching.so.406: cannot open shared object file: No such file or directory"}, "einops": {"ok": false, "error": "No module named 'einops'"}, "skimage": {"ok": false, "error": "No module named 'lazy_loader'"}}
