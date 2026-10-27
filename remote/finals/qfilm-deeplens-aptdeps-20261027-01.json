@@ -1,0 +1,32 @@
+{
+  "args": [
+    "scripts/qfilm_deeplens_aptdeps.py"
+  ],
+  "bridge_version": "0.5.0",
+  "code_commit": "92a28559c64ddcab19cd13a1f9730cf6ab45efea",
+  "elapsed_sec": 40.71828579902649,
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "finished_at": 1793096822.0085998,
+  "hostname": "aipss-Rack-Server",
+  "immutable_job_id": true,
+  "job_id": "qfilm-deeplens-aptdeps-20261027-01",
+  "log_tail": "APT_OK python3-matplotlib\nAPT_OK python3-contourpy\nAPT_OK python3-cycler\nAPT_OK python3-dateutil\nAPT_OK python3-fonttools\nAPT_OK python3-kiwisolver\nAPT_OK python3-packaging\nAPT_OK python3-pil\nAPT_OK python3-pyparsing\nAPT_OK python3-six\nAPT_FAIL python3-einops \nWARNING: apt does not have a stable CLI interface. Use with caution in scripts.\n\nE: Unable to locate package python3-einops\n\nAPT_OK python3-opencv\nAPT_OK python3-skimage\nAPT_OK python3-imageio\nAPT_OK python3-tifffile\nAPT_OK python3-networkx\n\nA module that was compiled using NumPy 1.x cannot be run in\nNumPy 2.2.6 as it may crash. To support both 1.x and 2.x\nversions of NumPy, modules must be compiled with NumPy 2.0.\nSome module may need to rebuild instead e.g. with 'pybind11>=2.12'.\n\nIf you are a user of the module, the easiest solution will be to\ndowngrade to 'numpy<2' or try to upgrade the affected module.\nWe expect that some modules will need time to support NumPy 2.\n\nTraceback (most recent call last):  File \"/var/lib/cots-lamcts/jobs/qfilm-deeplens-aptdeps-20261027-01/src/scripts/qfilm_deeplens_aptdeps.py\", line 31, in <module>\n    m=__import__(name);report[name]={'ok':True,'version':str(getattr(m,'__version__','?'))}\n  File \"/var/lib/cots-lamcts/deeplens_apt_deps/usr/lib/python3/dist-packages/matplotlib/__init__.py\", line 113, in <module>\n    from . import _api, _version, cbook, _docstring, rcsetup\n  File \"/var/lib/cots-lamcts/deeplens_apt_deps/usr/lib/python3/dist-packages/matplotlib/rcsetup.py\", line 27, in <module>\n    from matplotlib.colors import Colormap, is_color_like\n  File \"/var/lib/cots-lamcts/deeplens_apt_deps/usr/lib/python3/dist-packages/matplotlib/colors.py\", line 56, in <module>\n    from matplotlib import _api, _cm, cbook, scale\n  File \"/var/lib/cots-lamcts/deeplens_apt_deps/usr/lib/python3/dist-packages/matplotlib/scale.py\", line 22, in <module>\n    from matplotlib.ticker import (\n  File \"/var/lib/cots-lamcts/deeplens_apt_deps/usr/lib/python3/dist-packages/matplotlib/ticker.py\", line 138, in <module>\n    from matplotlib import transforms as mtransforms\n  File \"/var/lib/cots-lamcts/deeplens_apt_deps/usr/lib/python3/dist-packages/matplotlib/transforms.py\", line 49, in <module>\n    from matplotlib._path import (\nTraceback (most recent call last):\n  File \"/var/lib/cots-lamcts/venv/lib/python3.12/site-packages/numpy/core/_multiarray_umath.py\", line 44, in __getattr__\n    raise ImportError(msg)\nImportError: \nA module that was compiled using NumPy 1.x cannot be run in\nNumPy 2.2.6 as it may crash. To support both 1.x and 2.x\nversions of NumPy, modules must be compiled with NumPy 2.0.\nSome module may need to rebuild instead e.g. with 'pybind11>=2.12'.\n\nIf you are a user of the module, the easiest solution will be to\ndowngrade to 'numpy<2' or try to upgrade the affected module.\nWe expect that some modules will need time to support NumPy 2.\n\n\nDEPS_RESULT {\"schema\": \"deeplens-apt-isolated-deps-v1\", \"installed\": [\"python3-matplotlib\", \"python3-contourpy\", \"python3-cycler\", \"python3-dateutil\", \"python3-fonttools\", \"python3-kiwisolver\", \"python3-packaging\", \"python3-pil\", \"python3-pyparsing\", \"python3-six\", \"python3-opencv\", \"python3-skimage\", \"python3-imageio\", \"python3-tifffile\", \"python3-networkx\"], \"failed\": [{\"name\": \"python3-einops\", \"message\": \"\\nWARNING: apt does not have a stable CLI interface. Use with caution in scripts.\\n\\nE: Unable to locate package python3-einops\\n\"}], \"matplotlib\": {\"ok\": false, \"error\": \"numpy.core.multiarray failed to import\"}, \"cv2\": {\"ok\": false, \"error\": \"libopencv_stitching.so.406: cannot open shared object file: No such file or directory\"}, \"einops\": {\"ok\": false, \"error\": \"No module named 'einops'\"}, \"skimage\": {\"ok\": false, \"error\": \"No module named 'lazy_loader'\"}}",
+  "memory_gb": 0,
+  "pid": 4186785,
+  "request_sha256": "a0897c98d472c5001031b59c1dc9bcd4694acbc89638dd8457e928538c3aa2db",
+  "retry_policy": "new_job_id_required",
+  "returncode": 0,
+  "schema": 1,
+  "started_at": 1793096781.290314,
+  "state": "finished",
+  "timeout_sec": 1200,
+  "updated_at": 1793096783.9647944,
+  "uploaded_artifacts": [
+    {
+      "path": "deeplens_aptdeps.json",
+      "size": 1019,
+      "uploaded": true
+    }
+  ]
+}
