@@ -122,13 +122,13 @@ def safe_call(fn,**kwargs):
       return value,{'ok':True,'seconds':time.perf_counter()-start}
     except Exception as e:return None,{'ok':False,'seconds':time.perf_counter()-start,'error':repr(e),'traceback':traceback.format_exc()[-4800:]}
 
-def run_case(name, source, outpath, res=3072, ks=96, spp=4096, do_coherent=False):
+def run_case(name, source, outpath, res=3072, ks=96, spp=4096, do_coherent=False, coherent_spp=1000000):
     from deeplens import GeoLens
     data,p=conversion(source,sensor_res=res,material_mode='bk7' if name=='thin' else 'inline')
     jsonpath=outpath/f'{name}_deeplens_same_prescription.json';jsonpath.write_text(json.dumps(data,indent=2)+'\n')
     fileinfo={'name':name,'model_source':'identical Qfilm prescription converted to native DeepLens geometry',
               'deepjson':str(jsonpath),'sensor_res':res,'ks':ks,'spp_huygens':spp,
-              'wavelength_um':WAVELENGTH_UM,'methods':{},'fields':[]}
+              'wavelength_um':WAVELENGTH_UM,'coherent_spp':coherent_spp,'methods':{},'fields':[]}
     lens,linfo=safe_call(GeoLens,filename=str(jsonpath),device='cuda:0',dtype=torch.float64)
     fileinfo['init']=linfo
     if lens is None:print('CASE_INIT_FAIL',name,linfo['error'],flush=True);return fileinfo
@@ -169,7 +169,7 @@ def run_case(name, source, outpath, res=3072, ks=96, spp=4096, do_coherent=False
                       'max_abs_mtf_s_diff_vs_qfilm':float(np.max(np.abs(np.array(aligned_s)-qr['Q_image'][i,20:30])))});
        np.savez_compressed(outpath/f'{name}_huygens_field{i}.npz',psf=psf.detach().cpu().numpy(),pitch_mm=float(lens.pixel_size))
       if do_coherent and i==0:
-       coh,cs=safe_call(lens.psf_coherent,points=point,ks=ks,wvln=WAVELENGTH_UM,spp=1_000_000,recenter=True)
+       coh,cs=safe_call(lens.psf_coherent,points=point,ks=ks,wvln=WAVELENGTH_UM,spp=coherent_spp,recenter=True)
        entry['coherent']=cs
        if coh is not None:
         ct,css=mtf_from_psf(coh.detach().cpu().numpy(),float(lens.pixel_size),fqs)
@@ -187,7 +187,7 @@ def run_case(name, source, outpath, res=3072, ks=96, spp=4096, do_coherent=False
     return fileinfo
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--coherent',action='store_true');ap.add_argument('--res',type=int,default=3072);ap.add_argument('--ks',type=int,default=96);ap.add_argument('--spp',type=int,default=4096);ap.add_argument('--cases',default='thin');args=ap.parse_args()
+    ap=argparse.ArgumentParser();ap.add_argument('--coherent',action='store_true');ap.add_argument('--res',type=int,default=3072);ap.add_argument('--ks',type=int,default=96);ap.add_argument('--spp',type=int,default=4096);ap.add_argument('--coherent-spp',type=int,default=1000000);ap.add_argument('--cases',default='thin');args=ap.parse_args()
     out=pathlib.Path(os.environ.get('COTS_JOB_ARTIFACT_DIR','/tmp/qfilm_deeplens_test'));out.mkdir(parents=True,exist_ok=True)
     result={'schema':'qfilm-deeplens-pinned-comparison-v1','source_sha':SHA,
             'torch_version':torch.__version__,'compatibility_shims':COMPATIBILITY_SHIMS,'cases':[],'arguments':vars(args)}
@@ -195,7 +195,7 @@ def main():
       if name not in ('thin','complex'):raise ValueError('unknown case '+name)
       p=thin_lens() if name=='thin' else rich_lens()
       if name=='thin':p['surfaces'][0]['sellmeier']=BK7
-      try:r=run_case(name,p,out,args.res,args.ks,args.spp,args.coherent)
+      try:r=run_case(name,p,out,args.res,args.ks,args.spp,args.coherent,args.coherent_spp)
       except Exception as e:r={'name':name,'fatal':repr(e),'traceback':traceback.format_exc()[-8000:]}
       result['cases'].append(r)
       (out/'deeplens_qfilm_comparison.json').write_text(json.dumps(result,indent=2)+'\n')
