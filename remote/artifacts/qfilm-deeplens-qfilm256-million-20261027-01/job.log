@@ -1,0 +1,9 @@
+/var/lib/cots-lamcts/jobs/qfilm-deeplens-qfilm256-million-20261027-01/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)
+  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)
+COMPARE {"name": "thin", "field": 0, "huygens_s": 2.3158149253576994, "huygens_delta_mtf": 0.0065888656630691544, "coherent_s": null, "coherent_ok": null}
+COMPARE {"name": "thin", "field": 1, "huygens_s": 2.275777512229979, "huygens_delta_mtf": 0.0134983929678264, "coherent_s": null, "coherent_ok": null}
+COMPARE {"name": "thin", "field": 2, "huygens_s": 2.275641801767051, "huygens_delta_mtf": 0.014433967206419096, "coherent_s": null, "coherent_ok": null}
+COMPARE {"name": "internal_positive", "field": 0, "huygens_s": 2.2942721266299486, "huygens_delta_mtf": 0.025143337600884164, "coherent_s": null, "coherent_ok": null}
+COMPARE {"name": "internal_positive", "field": 1, "huygens_s": 2.296870975755155, "huygens_delta_mtf": 0.022372345793224557, "coherent_s": null, "coherent_ok": null}
+COMPARE {"name": "internal_positive", "field": 2, "huygens_s": 2.295245018787682, "huygens_delta_mtf": 0.01029256867470621, "coherent_s": null, "coherent_ok": null}
+RESULT {"cases": [["thin", null, null, 3], ["internal_positive", null, null, 3]]}
