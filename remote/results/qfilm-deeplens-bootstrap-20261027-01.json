@@ -1,0 +1,16 @@
+{
+  "args": [
+    "scripts/qfilm_deeplens_bootstrap.py"
+  ],
+  "code_commit": "67a44af1c7749d42dde6723679f5bd83eaece7ce",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm-deeplens-bootstrap-20261027-01",
+  "memory_gb": 0,
+  "request_sha256": "88fc137fc76ba3726246db619bb616700dcf83fd220a3fcc8cca455b2a364d85",
+  "schema": 1,
+  "started_at": 1793096099.191443,
+  "state": "running",
+  "timeout_sec": 1200
+}
