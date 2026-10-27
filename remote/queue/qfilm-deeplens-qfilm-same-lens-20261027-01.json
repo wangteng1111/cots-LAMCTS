@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "job_id": "qfilm-deeplens-qfilm-same-lens-20261027-01",
+  "code_commit": "b3ca84e65e0c57d3f39909035d5a424b8264f61b",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm_deeplens_same_prescription.py",
+    "--cases",
+    "thin",
+    "--res",
+    "3072",
+    "--ks",
+    "96",
+    "--spp",
+    "4096"
+  ],
+  "timeout_sec": 1500,
+  "memory_gb": 0
+}
