@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1793097162.1935623,
+  "code_commit": "c10e64a219921a979c6018114a503431abc15294",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm-deeplens-huygens-million-20261027-01",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/qfilm-deeplens-huygens-million-20261027-01.json",
+  "request_sha256": "3130c75b00cffc80f0969a673e13f9678ffd2c2b871c97fc031d3f7570d2b216",
+  "schema": 1,
+  "state": "claimed"
+}
