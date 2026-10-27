@@ -1,0 +1,24 @@
+{
+  "args": [
+    "validation/qfilm_deeplens_same_prescription.py",
+    "--cases",
+    "complex",
+    "--res",
+    "3072",
+    "--ks",
+    "96",
+    "--spp",
+    "1000000"
+  ],
+  "code_commit": "4b01e8d81a115134358012299c954ce444609dc8",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm-deeplens-internalstop-million-20261027-01",
+  "memory_gb": 0,
+  "request_sha256": "c777969d2c4bd72ed48a6871615033b66615c51be4645e6d5d844d79e95474c7",
+  "schema": 1,
+  "started_at": 1793097345.6320596,
+  "state": "running",
+  "timeout_sec": 1500
+}
