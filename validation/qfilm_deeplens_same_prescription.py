@@ -15,6 +15,27 @@ sys.path.insert(0,str(REPO));sys.path.insert(0,str(DEPS));sys.path.insert(0,str(
 # import-time placeholders; they error if called. None is used by GeoLens PSF methods.
 import importlib.util, types
 COMPATIBILITY_SHIMS=[]
+# Package imports use visualization modules even when running only GeoLens optics.
+# Ubuntu matplotlib wheels were built against NumPy 1.x; workstation has NumPy 2.2.
+# Isolate optional visualization bindings. Upstream ray/PSF functions are unchanged.
+_mpl=types.ModuleType('matplotlib');_mpl.__path__=[]
+for _sub in ('pyplot','patches'):
+    _mod=types.ModuleType('matplotlib.'+_sub)
+    setattr(_mpl,_sub,_mod);sys.modules['matplotlib.'+_sub]=_mod
+sys.modules['matplotlib']=_mpl
+COMPATIBILITY_SHIMS.append('matplotlib plotting-only import placeholder (NumPy 1.x ABI mismatch)')
+_cv=types.ModuleType('cv2');sys.modules['cv2']=_cv
+COMPATIBILITY_SHIMS.append('cv2 optional image IO placeholder (unavailable OpenCV libraries)')
+if importlib.util.find_spec('einops') is None:
+    _eo=types.ModuleType('einops')
+    def _no_einops(*a,**k):raise RuntimeError('einops neural-network layer is unavailable; not part of optics PSF')
+    _eo.rearrange=_no_einops;sys.modules['einops']=_eo
+    COMPATIBILITY_SHIMS.append('einops surrogate-network-only placeholder')
+if importlib.util.find_spec('tqdm') is None:
+    _td=types.ModuleType('tqdm');_td.tqdm=lambda it,*a,**k:it;_td.trange=lambda n,*a,**k:range(n)
+    sys.modules['tqdm']=_td
+    COMPATIBILITY_SHIMS.append('tqdm optional progress meter')
+
 if importlib.util.find_spec('torchvision') is None:
     tv=types.ModuleType('torchvision');tu=types.ModuleType('torchvision.utils')
     ti=types.ModuleType('torchvision.io')
