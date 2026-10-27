@@ -3,17 +3,27 @@
     "scripts/qfilm_deeplens_bootstrap.py"
   ],
   "code_commit": "b3ca84e65e0c57d3f39909035d5a424b8264f61b",
+  "elapsed_sec": 10.459918975830078,
   "entrypoint": "scripts/cuda_venv_exec.py",
   "env": {},
+  "finished_at": 1793096680.7725399,
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm-deeplens-bootstrap-20261027-02",
-  "log_tail": "CMD ['git', '-C', '/var/lib/cots-lamcts/deeplens_upstream', 'rev-parse', 'HEAD'] returncode 0 stdout_tail 911bb9d334fce7e20a4407c4506ac683b52ff246\n stderr_tail ",
+  "log_tail": "CMD ['git', '-C', '/var/lib/cots-lamcts/deeplens_upstream', 'rev-parse', 'HEAD'] returncode 0 stdout_tail 911bb9d334fce7e20a4407c4506ac683b52ff246\n stderr_tail \nCMD ['git', '-C', '/var/lib/cots-lamcts/deeplens_upstream', 'checkout', '--force', '911bb9d334fce7e20a4407c4506ac683b52ff246'] returncode 0 stdout_tail  stderr_tail Note: switching to '911bb9d334fce7e20a4407c4506ac683b52ff246'.\n\nYou are in 'detached HEAD' state. You can look around, make experimental\nchanges and commit them, and you can discard any commits you make in this\nstate without impacting any branches by switching back to a branch.\n\nIf you want to create a new branch to retain commits you create, you may\ndo so (now or later) by using -c with the switch command. Example:\n\n  git switch -c <new-branch-name>\n\nOr undo this operation with:\n\n  git switch -\n\nTurn off this advice by setting config variable advice.detachedHead to false\n\nHEAD is now at 911bb9d docs(eval): merge required depth corrections into published API docs\n\nCMD ['git', '-C', '/var/lib/cots-lamcts/deeplens_upstream', 'rev-parse', 'HEAD'] returncode 0 stdout_tail 911bb9d334fce7e20a4407c4506ac683b52ff246\n stderr_tail \nBOOTSTRAP {\"schema\": \"qfilm-deeplens-bootstrap-v1\", \"source\": \"https://github.com/vccimaging/DeepLens\", \"sha\": \"911bb9d334fce7e20a4407c4506ac683b52ff246\", \"upstream_path\": \"/var/lib/cots-lamcts/deeplens_upstream\", \"checked_out\": \"911bb9d334fce7e20a4407c4506ac683b52ff246\", \"torch\": {\"available\": true, \"version\": \"2.14.0+cu130\"}, \"torchvision\": {\"available\": false, \"error\": \"No module named 'torchvision'\"}, \"cv2\": {\"available\": false, \"error\": \"No module named 'cv2'\"}, \"matplotlib\": {\"available\": false, \"error\": \"No module named 'matplotlib'\"}, \"einops\": {\"available\": false, \"error\": \"No module named 'einops'\"}, \"scipy\": {\"available\": true, \"version\": \"1.15.3\"}, \"skimage\": {\"available\": false, \"error\": \"No module named 'skimage'\"}, \"deeplens\": {\"available\": false, \"error\": \"No module named 'matplotlib'\"}}",
   "memory_gb": 0,
   "pid": 4186201,
   "request_sha256": "9a421b5d2c832bdd082ddecc8d58f8bc0c0f66af2861db4f32176e17a69b161e",
+  "returncode": 2,
   "schema": 1,
   "started_at": 1793096670.3126209,
-  "state": "running",
+  "state": "failed",
   "timeout_sec": 360,
-  "updated_at": 1793096672.7123704
+  "updated_at": 1793096672.7123704,
+  "uploaded_artifacts": [
+    {
+      "path": "deeplens_bootstrap.json",
+      "size": 929,
+      "uploaded": true
+    }
+  ]
 }
