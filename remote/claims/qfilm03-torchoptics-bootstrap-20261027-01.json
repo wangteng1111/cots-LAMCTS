@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1793110842.94171,
+  "code_commit": "3ce45e1071f47496dffd8ac9f2d12d759b0db9f0",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm03-torchoptics-bootstrap-20261027-01",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/qfilm03-torchoptics-bootstrap-20261027-01.json",
+  "request_sha256": "bbe7dcf38a7ace323d78d6dba506035e41d56367d2f8ef113fa8456028947e22",
+  "schema": 1,
+  "state": "claimed"
+}
