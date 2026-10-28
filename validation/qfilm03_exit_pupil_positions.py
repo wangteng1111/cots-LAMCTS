@@ -17,13 +17,13 @@ for name,pp in (("singlet",p),("internal_stop_asphere",internal_stop_positive_le
  f.parent.mkdir(parents=True,exist_ok=True);f.write_text(json.dumps(doc))
  lens=GeoLens(filename=str(f),device="cuda:0",dtype=torch.float64)
  z,r=lens.get_exit_pupil();ze,re=lens.get_entrance_pupil()
- surface_vertices=[float(s.d) for s in lens.surfaces]
+ surface_vertices=[float(lens.surf_d(i)) for i in range(len(lens.surfaces))]
  out[name]={"exit_pupil_z_mm":float(z),"exit_pupil_radius_mm":float(r),
      "entrance_pupil_z_mm":float(ze),"entrance_pupil_radius_mm":float(re),
      "surface_vertex_z_mm":surface_vertices,
      "film_z_mm":float(lens.d_sensor),
-     "last_refracting_vertex_mm":max(float(s.d) for s in lens.surfaces if not getattr(s,"is_aperture",False)),
+     "last_refracting_vertex_mm":max(float(lens.surf_d(i)) for i,s in enumerate(lens.surfaces) if not getattr(s,"is_aperture",False)),
      "stop_index":int(lens.aper_idx),
-     "stop_z_mm":float(lens.surfaces[lens.aper_idx].d)}
+     "stop_z_mm":float(lens.surf_d(lens.aper_idx))}
  print("EXIT_PUPIL",name,json.dumps(out[name]),flush=True)
 print("DONE",json.dumps(out))
