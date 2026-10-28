@@ -1,0 +1,52 @@
+{
+  "args": [
+    "validation/qfilm03_huygens_safechunk.py"
+  ],
+  "bridge_version": "0.5.0",
+  "code_commit": "d13b426d1672c858f20377e5fb1191162c81f2c6",
+  "elapsed_sec": 192.58297610282898,
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "finished_at": 1793173231.3312223,
+  "hostname": "aipss-Rack-Server",
+  "immutable_job_id": true,
+  "job_id": "qfilm03-huygens-safechunk-20261028-02",
+  "log_tail": "/var/lib/cots-lamcts/deeplens_upstream/deeplens/geolens_pkg/psf_compute.py:608: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  complex_amp = (amp / r) * torch.exp(1j * phase)  # [ks, ks, batch]\nHuygens_BATCH_INVARIANCE {\"schema\": \"Qfilm03-batch-invariance-v1\", \"upstream_SHA\": \"911bb9d334fce7e20a4407c4506ac683b52ff246\", \"original_sha256\": \"2e4949a4c7005dbf2ec4d0918db1d03b376f28912bbeca19d71093d931a342fd\", \"modified_sha256\": \"3fa7bbd21c01ae9b232dcbc733a8cf55af9c658f92b5f02e59d6d7d6fb21c546\", \"only_change\": \"Huygens ray-batch size 10000 -> 1024\", \"parity\": {\"PSF_max_abs\": 0.0, \"PSF_mean_abs\": 0.0, \"PSF_sum_a\": 1.0, \"PSF_sum_b\": 1.0}, \"optical_physics_changed\": false}\nREF_CONV singlet 430.0 0.0 rays 0.009 window 0.00868 time 11.23\nREF_CONV singlet 430.0 0.5 rays 0.01332 window 0.00689 time 11.24\nREF_CONV singlet 430.0 1.0 rays 0.00685 window 0.01652 time 11.24\nREF_CONV singlet 550.0 0.0 rays 0.02196 window 0.02534 time 11.24\nREF_CONV singlet 550.0 0.5 rays 0.01988 window 0.02367 time 11.25\nREF_CONV singlet 550.0 1.0 rays 0.01804 window 0.0173 time 11.26\nREF_CONV singlet 670.0 0.0 rays 0.01927 window 0.0221 time 11.26\nREF_CONV singlet 670.0 0.5 rays 0.01833 window 0.02179 time 11.25\nREF_CONV singlet 670.0 1.0 rays 0.01715 window 0.01929 time 11.26\nREF_CONV internal_stop_asphere 430.0 0.0 rays 0.01602 window 0.01405 time 11.28\nREF_CONV internal_stop_asphere 430.0 0.5 rays 0.01984 window 0.01369 time 11.29\nREF_CONV internal_stop_asphere 430.0 1.0 rays 0.01211 window 0.0791 time 11.28\nREF_CONV internal_stop_asphere 550.0 0.0 rays 0.0343 window 0.03733 time 11.28\nREF_CONV internal_stop_asphere 550.0 0.5 rays 0.02821 window 0.03269 time 11.29\nREF_CONV internal_stop_asphere 550.0 1.0 rays 0.02033 window 0.01952 time 11.29",
+  "memory_gb": 0,
+  "pid": 351987,
+  "request_sha256": "30284fb8953931bbf2647113f2ad227f796df86bb6a5d3bdd1ef84f5934e20f7",
+  "retry_policy": "new_job_id_required",
+  "returncode": -15,
+  "schema": 1,
+  "started_at": 1793173038.7482462,
+  "state": "stopped",
+  "timeout_sec": 1800,
+  "updated_at": 1793173046.2397592,
+  "uploaded_artifacts": [
+    {
+      "path": "chunk_parity_lens.json",
+      "size": 575,
+      "uploaded": true
+    },
+    {
+      "path": "huygens_safechunk_parity.json",
+      "size": 490,
+      "uploaded": true
+    },
+    {
+      "path": "qfilm03_huygens_quality/internal_stop_asphere.json",
+      "size": 909,
+      "uploaded": true
+    },
+    {
+      "path": "qfilm03_huygens_quality/reference_sampling_and_focus.json",
+      "size": 7783,
+      "uploaded": true
+    },
+    {
+      "path": "qfilm03_huygens_quality/singlet.json",
+      "size": 575,
+      "uploaded": true
+    }
+  ]
+}
