@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "qfilm03-physical-finalJ-20261028-01",
+  "code_commit": "2fc9566bf78b30e939e2ae7612fffa395f2fc4ac",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm03_physical_finalJ_validation.py"
+  ],
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
