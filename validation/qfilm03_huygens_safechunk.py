@@ -17,7 +17,7 @@ def patch_huygens(batch=1024):
  source=textwrap.dedent(inspect.getsource(old))
  needle="batch_size = min(num_valid, 10_000)"
  assert source.count(needle)==1,"upstream DeepLens Huygens method changed unexpectedly"
- altered=source.replace(needle,f"batch_size = min(num_valid, {batch:,})")
+ altered=source.replace(needle,f"batch_size = min(num_valid, {batch})")
  ns={}
  exec(compile(altered,old.__code__.co_filename,"exec"),old.__globals__,ns)
  new=ns["psf_huygens"]
