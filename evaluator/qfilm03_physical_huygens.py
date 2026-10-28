@@ -91,3 +91,24 @@ def mtf_from_psf_exact(psf,pitch_mm,freqs):
     ix=n//2
     return np.array([[np.interp(fr,f[ix:],otf[ix,ix:]),
                       np.interp(fr,f[ix:],otf[ix:,ix])] for fr in freqs],dtype=float)
+
+def coherent_otf_axis(psf,pitch_mm,freqs):
+    """Complex OTF at physical lp/mm. Do NOT take abs until after color summation.
+
+    Translation is applied separately using the actual mono chief-film location.
+    Frequencies must be below the detector-grid Nyquist.
+    """
+    import numpy as np
+    p=psf.detach().cpu().numpy().astype(np.float64)
+    p=p/p.sum()
+    n=p.shape[0]
+    if any(f<0 or f>=0.5/pitch_mm for f in freqs):
+        raise ValueError("MTF frequency must be inside physical Nyquist")
+    otf=np.fft.fftshift(np.fft.fft2(np.fft.ifftshift(p)))
+    mid=n//2
+    otf=otf/otf[mid,mid]
+    freq_grid=np.fft.fftshift(np.fft.fftfreq(n,pitch_mm))
+    def interp(complex_slice,f):
+        return (np.interp(f,freq_grid[mid:],complex_slice[mid:].real)
+            +1j*np.interp(f,freq_grid[mid:],complex_slice[mid:].imag))
+    return np.array([[interp(otf[mid,:],f),interp(otf[:,mid],f)] for f in freqs],dtype=np.complex128)
