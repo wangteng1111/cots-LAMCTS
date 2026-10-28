@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "qfilm04-real-lens-cpu-gpu-parity-20261028-01",
+  "code_commit": "3021321d8af1b92953065e4a2369a903ab2cf258",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm04_cpu_gpu_same_lens.py"
+  ],
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
