@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1793216650.2033365,
+  "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "000-qfilm04-fine-01g-01-ef35mm_f2.0-20261028",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/000-qfilm04-fine-01g-01-ef35mm_f2.0-20261028.json",
+  "request_sha256": "8cf814e15aa1bc9d266e6826e169d1398a127181996f36f334c8a816eb5ba245",
+  "schema": 1,
+  "state": "claimed"
+}
