@@ -27,7 +27,7 @@ def one(case,p):
  qdata={}
  for w in WAVES:
   cfg=Config(fields=11,pupil_n=64,fft_n=256,max_fields_per_chunk=11,
-          wavelengths_nm=(w,),spectral_weights=(1.),
+          wavelengths_nm=(w,),spectral_weights=(1.,),
           frame_width_mm=8.,frame_height_mm=6.,
           target_efl_mm=float(p["design_spec"]["efl_target_mm"]))
   with torch.inference_mode():qdata[w]=qev(p,cfg,device="cuda:0")["Q_image"]
