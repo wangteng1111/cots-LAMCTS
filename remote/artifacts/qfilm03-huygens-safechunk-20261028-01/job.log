@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/qfilm03-huygens-safechunk-20261028-01/src/validation/qfilm03_huygens_safechunk.py", line 55, in <module>
+    if __name__=="__main__":main()
+                            ^^^^^^
+  File "/var/lib/cots-lamcts/jobs/qfilm03-huygens-safechunk-20261028-01/src/validation/qfilm03_huygens_safechunk.py", line 45, in main
+    original,chunked,meta=patch_huygens(1024)
+                          ^^^^^^^^^^^^^^^^^^^
+  File "/var/lib/cots-lamcts/jobs/qfilm03-huygens-safechunk-20261028-01/src/validation/qfilm03_huygens_safechunk.py", line 22, in patch_huygens
+    exec(compile(altered,old.__code__.co_filename,"exec"),old.__globals__,ns)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/lib/cots-lamcts/deeplens_upstream/deeplens/geolens_pkg/psf_compute.py", line 125
+    batch_size = min(num_valid, 1,024)  # Process rays in batches
+                                  ^
+SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers
