@@ -116,7 +116,7 @@ def extract_full_precision_lens(lens,description):
   tp=surf.__class__.__name__
   data={"type":tp,"r":float(surf.r),"d_next":float(surf.d_next),
         "mat2":str(getattr(surf.mat2,"name","air")),
-        "is_aperture":bool(getattr(surf,"is_aperture",False)),
+        "is_aperture":bool(getattr(surf,"is_aperture",False) or getattr(surf,"is_stop",False)),
         "is_square":bool(getattr(surf,"is_square",False))}
   if hasattr(surf,"c"):
    data["c"]=float(surf.c)
