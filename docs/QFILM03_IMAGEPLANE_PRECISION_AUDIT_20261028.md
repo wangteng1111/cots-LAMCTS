@@ -123,6 +123,21 @@ Workstation full-field peak PyTorch allocated memory for n512 was ~0.766GiB with
 
 [Complete 100×7 raw results](https://github.com/wangteng1111/cots-LAMCTS/blob/workstation-results/remote/artifacts/qfilm03-imageplane-numerical-20261028-02/qfilm03_accuracy/numerical_100x7.json)
 
+### Matched external DeepLens Huygens on the *actual full-frame* 36×24mm image circle
+
+Completed 42 independent upstream DeepLens Huygens PSFs for two positive-EFL designs, at **7 radial image positions spanning 0–21.633mm image height** and wavelengths 430/550/670nm. Each DeepLens PSF uses 1M rays and 128×128 grid with 5µm pixel pitch (0.64mm physical PSF window, Nyquist 100lp/mm). Qfilm uses monochromatic n256 grid and the SAME mechanical film, lens, glass, field angle and 10 frequencies 5–80lp/mm. No failed PSFs were seen.
+
+| Lens | 430nm max | 550nm max | 670nm max | Maximum of 21 external PSFs |
+|---|---:|---:|---:|---:|
+| N-BK7 singlet | 0.03105 | 0.02984 | **0.30827** | **0.30827** |
+| Two-singlet internal stop/asphere | 0.05729 | 0.03599 | **0.27313** | **0.27313** |
+
+Worst red-wave discrepancies occur **on/near axis** (singlet h=0, internal stop h=0.1), not only at full-frame edge. The red wavelength disagreement was previously seen with 8×6mm and is **replicated** with genuine full-frame physical field angles and a larger 0.64mm Huygens window. Thus small-field mismatch cannot be dismissed as an off-axis coordinate mismatch or merely an undersized 8×6mm validation field. Yet this is still *method disagreement* and not a traceable absolute error without reference convergence and measured physical PSF.
+
+Edge h=1 in this test had cross-solver maximum differences of ~0.011/0.011/0.017 for the singlet at 430/550/670nm and ~0.0095/0.0096/0.0145 for the internal stop (not evidence that all real wide-angle edges have low error, because these are only two synthetic prescriptions). Independently normalized Huygens PSF crop is **not** an irradiance or spectral color-transfer certification.
+
+[Full-frame 42-PSF raw comparison](https://github.com/wangteng1111/cots-LAMCTS/blob/workstation-results/remote/artifacts/qfilm03-true-fullframe-20261028-01/qfilm03_true_fullframe/fullframe_huygens.json)
+
 ## 7. Blocks before authoritative Alpha Lense Action→ΔQ pretraining
 
 The following remain **uncertified**: 100 fields×7 wavelengths across varied real COTS catalog families, cross-wave absolute PSF centroid and color MTF at physically shared coordinates, lens photometry (vignetting/irradiance/throughput), coatings and glass batch, pupil amplitude/Jacobian weighting, severe aberration and caustics, mechanical shutter/Copal obstruction and decenter/tilt, fullframe edge valid-ray coverage, and converged external Huygens independent of window and number of rays.
