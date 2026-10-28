@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "job_id": "qfilm04-seven-independent-patents-20261028-01",
-  "code_commit": "9120a42621290f452684e69ac909e764319cf474",
+  "code_commit": "d534e3f40cdfcccfb5d62a367e51ea41fd242096",
   "entrypoint": "scripts/cuda_venv_exec.py",
   "args": [
     "validation/qfilm04_secondary_real_lens_pilot.py"
