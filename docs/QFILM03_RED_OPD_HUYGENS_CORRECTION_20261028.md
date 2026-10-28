@@ -102,6 +102,27 @@ assert result["training_eligible"] is False
 print(result["quality"]["J_task"])
 ```
 
+## Virtual-pupil secondary-source-plane hypothesis — tested and NOT confirmed
+
+An additional matched-wavelength experiment inspected the upstream DeepLens `get_exit_pupil()` coordinates:
+- Biconvex: exit pupil at DeepLens z=1.34175mm while last refracting vertex z=7.0mm (virtual pupil precedes last glass).
+- Internal-stop asphere: pupil z=8.10188mm, last refracting vertex z=14.0mm.
+
+DeepLens Huygens back-extrapolates outgoing rays in image-space air to the virtual pupil before direct scalar spherical integration. Such an equivalent virtual source plane is not necessarily a physical surface in air. **However the direct controlled test shows the source-plane choice is NOT the cause of the unresolved red residual.**
+
+Using exactly the same Qfilm outgoing rays, OPL, frequencies, pupil resolution and source weighting, merely replacing the physical post-last-surface Huygens source plane by DeepLens's virtual-pupil plane changed MTF disagreement by only ~0.0002–0.0007 in key red cases:
+- Singlet 670nm h0.1 n256 Jacobian-weighted: **0.12638** physical → **0.12664** virtual (no improvement).
+- Singlet 670nm h0 n256: 0.02824 physical → 0.02807 virtual.
+- Internal-stop 670nm h0.1 n256: 0.03104 physical → 0.03119 virtual.
+
+Therefore the observed red mismatch must instead be pursued through reference ray quadrature, pupil field amplitudes, finite detector support, coherent-source sampling and non-paraxial scalar propagation assumptions, not the exit-plane z location alone. In particular, independent DeepLens Huygens is still not an accepted absolute reference.
+
+[Matched physical-vs-virtual source-plane raw data](https://github.com/wangteng1111/cots-LAMCTS/blob/workstation-results/remote/artifacts/qfilm03-virtual-pupil-huygens-20261028-01/qfilm03_virtual_pupil_diagnostic/virtual_vs_postglass_huygens.json), [diagnostic code](https://github.com/wangteng1111/cots-LAMCTS/blob/main/validation/qfilm03_virtual_exit_plane_ablation.py).
+
+## Physical Final-J fail-closed controls
+
+The opt-in full physical score now rejects `pupil_n<128` or `detector_n<128`, frequencies beyond physical detector Nyquist, malformed PSFs, too few valid rays or >2% singular Jacobian samples (configurable). It never calls the virtual-plane diagnostic from Final-J. The original Qfilm0.3 fast mode remains unchanged. `training_eligible=False` and `physics_certified=False` are mandatory until full optical accuracy is established.
+
 ## Remaining blockers and strict next steps
 
 1. **Explain singlet 670nm h0.1 residual ≈0.126 and 7-wave aspheric center max 0.114.** Compare actual DeepLens Huygens secondary source plane, objective infinity condition, source grid sampling, normalized PSF support, and physical energy weighting. Do not fit a correction based on one sample.
