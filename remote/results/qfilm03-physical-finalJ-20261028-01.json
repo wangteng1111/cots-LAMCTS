@@ -1,0 +1,16 @@
+{
+  "args": [
+    "validation/qfilm03_physical_finalJ_validation.py"
+  ],
+  "code_commit": "2fc9566bf78b30e939e2ae7612fffa395f2fc4ac",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm03-physical-finalJ-20261028-01",
+  "memory_gb": 0,
+  "request_sha256": "c5d4531d68b22d9e426e6fcaad138ce102281225057eb97d94dd22572fc66458",
+  "schema": 1,
+  "started_at": 1793178953.533087,
+  "state": "running",
+  "timeout_sec": 1800
+}
