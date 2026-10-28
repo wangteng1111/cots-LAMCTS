@@ -1,0 +1,29 @@
+/var/lib/cots-lamcts/deeplens_upstream/deeplens/geolens_pkg/psf_compute.py:608: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)
+  complex_amp = (amp / r) * torch.exp(1j * phase)  # [ks, ks, batch]
+RED_CONVERGENCE singlet 670.0 0.0 128 uniform_stop max 0.02866394550351619 sec 0.1013821167871356
+RED_CONVERGENCE singlet 670.0 0.0 128 sqrt_exit_jac max 0.02855720996138922 sec 0.056350428611040115
+RED_CONVERGENCE singlet 670.0 0.0 192 uniform_stop max 0.028388178529541154 sec 0.12361831869930029
+RED_CONVERGENCE singlet 670.0 0.0 192 sqrt_exit_jac max 0.02828117615684335 sec 0.12348565459251404
+RED_CONVERGENCE singlet 670.0 0.0 256 uniform_stop max 0.028342481202953206 sec 0.20672410633414984
+RED_CONVERGENCE singlet 670.0 0.0 256 sqrt_exit_jac max 0.028235315590224228 sec 0.20631108805537224
+RED_CONVERGENCE singlet 670.0 0.1 128 uniform_stop max 0.12320561457113194 sec 0.05453281197696924
+RED_CONVERGENCE singlet 670.0 0.1 128 sqrt_exit_jac max 0.12363754429804902 sec 0.054195540957152843
+RED_CONVERGENCE singlet 670.0 0.1 192 uniform_stop max 0.12524349595790213 sec 0.12113347835838795
+RED_CONVERGENCE singlet 670.0 0.1 192 sqrt_exit_jac max 0.12567278337351956 sec 0.12107850983738899
+RED_CONVERGENCE singlet 670.0 0.1 256 uniform_stop max 0.1259491691401144 sec 0.20373037829995155
+RED_CONVERGENCE singlet 670.0 0.1 256 sqrt_exit_jac max 0.12637735248722176 sec 0.20351993571966887
+RED_CONVERGENCE singlet 670.0 0.1 384 uniform_stop max 0.12622552017071337 sec 0.4312903927639127
+RED_CONVERGENCE singlet 670.0 0.1 384 sqrt_exit_jac max 0.12665325644716735 sec 0.431604933924973
+RED_CONVERGENCE internal_stop_asphere 630.0 0.0 128 uniform_stop max 0.024092762470916185 sec 0.44691172149032354
+RED_CONVERGENCE internal_stop_asphere 630.0 0.0 128 sqrt_exit_jac max 0.024234248211410514 sec 0.4774950509890914
+RED_CONVERGENCE internal_stop_asphere 630.0 0.0 192 uniform_stop max 0.03480370683933831 sec 0.5740462355315685
+RED_CONVERGENCE internal_stop_asphere 630.0 0.0 192 sqrt_exit_jac max 0.034916522506684755 sec 0.5733725260943174
+RED_CONVERGENCE internal_stop_asphere 630.0 0.0 256 uniform_stop max 0.0359474084690542 sec 0.655066060833633
+RED_CONVERGENCE internal_stop_asphere 630.0 0.0 256 sqrt_exit_jac max 0.03605727246317658 sec 0.6569289769977331
+RED_CONVERGENCE internal_stop_asphere 670.0 0.1 128 uniform_stop max 0.020232857720837272 sec 0.5070057073608041
+RED_CONVERGENCE internal_stop_asphere 670.0 0.1 128 sqrt_exit_jac max 0.020418919912413624 sec 0.4989505270496011
+RED_CONVERGENCE internal_stop_asphere 670.0 0.1 192 uniform_stop max 0.02954534697215616 sec 0.5679324520751834
+RED_CONVERGENCE internal_stop_asphere 670.0 0.1 192 sqrt_exit_jac max 0.029705432291531664 sec 0.5745093869045377
+RED_CONVERGENCE internal_stop_asphere 670.0 0.1 256 uniform_stop max 0.0308815281599657 sec 0.6539161447435617
+RED_CONVERGENCE internal_stop_asphere 670.0 0.1 256 sqrt_exit_jac max 0.03103784188193648 sec 0.6528452187776566
+RED_RESOLUTION_COMPLETE [{"name": "singlet", "w": 670.0, "h": 0.0, "levels": [{"n": 128, "uniform": 0.02866394550351619, "jacobian": 0.02855720996138922}, {"n": 192, "uniform": 0.028388178529541154, "jacobian": 0.02828117615684335}, {"n": 256, "uniform": 0.028342481202953206, "jacobian": 0.028235315590224228}]}, {"name": "singlet", "w": 670.0, "h": 0.1, "levels": [{"n": 128, "uniform": 0.12320561457113194, "jacobian": 0.12363754429804902}, {"n": 192, "uniform": 0.12524349595790213, "jacobian": 0.12567278337351956}, {"n": 256, "uniform": 0.1259491691401144, "jacobian": 0.12637735248722176}, {"n": 384, "uniform": 0.12622552017071337, "jacobian": 0.12665325644716735}]}, {"name": "internal_stop_asphere", "w": 630.0, "h": 0.0, "levels": [{"n": 128, "uniform": 0.024092762470916185, "jacobian": 0.024234248211410514}, {"n": 192, "uniform": 0.03480370683933831, "jacobian": 0.034916522506684755}, {"n": 256, "uniform": 0.0359474084690542, "jacobian": 0.03605727246317658}]}, {"name": "internal_stop_asphere", "w": 670.0, "h": 0.1, "levels": [{"n": 128, "uniform": 0.020232857720837272, "jacobian": 0.020418919912413624}, {"n": 192, "uniform": 0.02954534697215616, "jacobian": 0.029705432291531664}, {"n": 256, "uniform": 0.0308815281599657, "jacobian": 0.03103784188193648}]}]
