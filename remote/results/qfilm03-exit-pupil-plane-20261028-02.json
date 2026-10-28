@@ -3,17 +3,27 @@
     "validation/qfilm03_exit_pupil_positions.py"
   ],
   "code_commit": "449efc7c44a4c1cd5258fe24dbf0dc2dafb6ac37",
+  "elapsed_sec": 11.001658201217651,
   "entrypoint": "scripts/cuda_venv_exec.py",
   "env": {},
+  "finished_at": 1793179180.3371944,
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm03-exit-pupil-plane-20261028-02",
-  "log_tail": "",
+  "log_tail": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/qfilm03-exit-pupil-plane-20261028-02/src/validation/qfilm03_exit_pupil_positions.py\", line 20, in <module>\n    surface_vertices=[float(s.d) for s in lens.surfaces]\n                            ^^^\nAttributeError: 'Aperture' object has no attribute 'd'",
   "memory_gb": 0,
   "pid": 372461,
   "request_sha256": "f73aefc2790f804fdcace6c273ede68433dc7c030abe1fe674a5caaaa40ced5a",
+  "returncode": 1,
   "schema": 1,
   "started_at": 1793179169.3355362,
-  "state": "running",
+  "state": "failed",
   "timeout_sec": 300,
-  "updated_at": 1793179171.8716743
+  "updated_at": 1793179171.8716743,
+  "uploaded_artifacts": [
+    {
+      "path": "singlet_exit.json",
+      "size": 569,
+      "uploaded": true
+    }
+  ]
 }
