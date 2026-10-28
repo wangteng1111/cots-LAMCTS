@@ -7,7 +7,7 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm03-imageplane-numerical-20261028-02",
-  "log_tail": "/var/lib/cots-lamcts/jobs/qfilm03-imageplane-numerical-20261028-02/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)",
+  "log_tail": "/var/lib/cots-lamcts/jobs/qfilm03-imageplane-numerical-20261028-02/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)\nRESOLUTION singlet 64 seconds 2.4789786767214537 valid 100\nRESOLUTION singlet 128 seconds 1.633039427921176 valid 100\nRESOLUTION singlet 256 seconds 7.984632344916463 valid 100\nRESOLUTION singlet 512 seconds 17.379605224356055 valid 100\nRESOLUTION singlet_large_stop 64 seconds 1.805559224449098 valid 100\nRESOLUTION singlet_large_stop 128 seconds 1.5924694184213877 valid 100\nRESOLUTION singlet_large_stop 256 seconds 7.922788629308343 valid 100\nRESOLUTION singlet_large_stop 512 seconds 16.308071548119187 valid 100\nRESOLUTION internal_stop_asphere 64 seconds 30.541588279418647 valid 100\nRESOLUTION internal_stop_asphere 128 seconds 30.818856943398714 valid 100",
   "memory_gb": 0,
   "pid": 352465,
   "request_sha256": "4a282b1285e9e8b09ff97c0cf7410e4150259de54b6639a04e2f1f4d6f8e6081",
@@ -15,5 +15,5 @@
   "started_at": 1793173326.768714,
   "state": "running",
   "timeout_sec": 1800,
-  "updated_at": 1793173334.5082207
+  "updated_at": 1793173515.051751
 }
