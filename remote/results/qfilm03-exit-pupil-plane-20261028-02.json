@@ -1,0 +1,16 @@
+{
+  "args": [
+    "validation/qfilm03_exit_pupil_positions.py"
+  ],
+  "code_commit": "449efc7c44a4c1cd5258fe24dbf0dc2dafb6ac37",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm03-exit-pupil-plane-20261028-02",
+  "memory_gb": 0,
+  "request_sha256": "f73aefc2790f804fdcace6c273ede68433dc7c030abe1fe674a5caaaa40ced5a",
+  "schema": 1,
+  "started_at": 1793179169.3355362,
+  "state": "running",
+  "timeout_sec": 300
+}
