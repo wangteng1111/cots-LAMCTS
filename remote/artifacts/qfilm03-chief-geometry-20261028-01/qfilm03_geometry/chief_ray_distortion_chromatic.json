@@ -1,0 +1,14 @@
+{
+  "schema": "qfilm03-chief-position-7wave-11field-v1",
+  "status": "uncertified",
+  "results": {
+    "singlet": {
+      "error": "TypeError(\"object of type 'float' has no len()\")",
+      "traceback": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/qfilm03-chief-geometry-20261028-01/src/validation/qfilm03_chief_geometry.py\", line 72, in main\n    try:r=one(name,p)\n          ^^^^^^^^^^^\n  File \"/var/lib/cots-lamcts/jobs/qfilm03-chief-geometry-20261028-01/src/validation/qfilm03_chief_geometry.py\", line 33, in one\n    with torch.inference_mode():qdata[w]=qev(p,cfg,device=\"cuda:0\")[\"Q_image\"]\n                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/lib/cots-lamcts/jobs/qfilm03-chief-geometry-20261028-01/src/evaluator/qfilm02.py\", line 291, in evaluate\n    config.validate();device=torch.device(device)\n    ^^^^^^^^^^^^^^^^^\n  File \"/var/lib/cots-lamcts/jobs/qfilm03-chief-geometry-20261028-01/src/evaluator/qfilm02.py\", line 40, in validate\n    if len(self.wavelengths_nm) != len(self.spectral_weights) or any(w <= 0 or not math.isfinite(float(w)) for w in self.spectral_weights):\n                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: object of type 'float' has no len()\n"
+    },
+    "internal_stop_asphere": {
+      "error": "TypeError(\"object of type 'float' has no len()\")",
+      "traceback": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/qfilm03-chief-geometry-20261028-01/src/validation/qfilm03_chief_geometry.py\", line 72, in main\n    try:r=one(name,p)\n          ^^^^^^^^^^^\n  File \"/var/lib/cots-lamcts/jobs/qfilm03-chief-geometry-20261028-01/src/validation/qfilm03_chief_geometry.py\", line 33, in one\n    with torch.inference_mode():qdata[w]=qev(p,cfg,device=\"cuda:0\")[\"Q_image\"]\n                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/lib/cots-lamcts/jobs/qfilm03-chief-geometry-20261028-01/src/evaluator/qfilm02.py\", line 291, in evaluate\n    config.validate();device=torch.device(device)\n    ^^^^^^^^^^^^^^^^^\n  File \"/var/lib/cots-lamcts/jobs/qfilm03-chief-geometry-20261028-01/src/evaluator/qfilm02.py\", line 40, in validate\n    if len(self.wavelengths_nm) != len(self.spectral_weights) or any(w <= 0 or not math.isfinite(float(w)) for w in self.spectral_weights):\n                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: object of type 'float' has no len()\n"
+    }
+  }
+}
