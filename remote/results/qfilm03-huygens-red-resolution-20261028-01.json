@@ -3,17 +3,37 @@
     "validation/qfilm03_huygens_resolution_convergence.py"
   ],
   "code_commit": "51658613f47d5303c410aa32bc8d15edc1989dfa",
+  "elapsed_sec": 37.57492995262146,
   "entrypoint": "scripts/cuda_venv_exec.py",
   "env": {},
+  "finished_at": 1793178859.070942,
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm03-huygens-red-resolution-20261028-01",
-  "log_tail": "/var/lib/cots-lamcts/deeplens_upstream/deeplens/geolens_pkg/psf_compute.py:608: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  complex_amp = (amp / r) * torch.exp(1j * phase)  # [ks, ks, batch]",
+  "log_tail": "/var/lib/cots-lamcts/deeplens_upstream/deeplens/geolens_pkg/psf_compute.py:608: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  complex_amp = (amp / r) * torch.exp(1j * phase)  # [ks, ks, batch]\nRED_CONVERGENCE singlet 670.0 0.0 128 uniform_stop max 0.02866394550351619 sec 0.1013821167871356\nRED_CONVERGENCE singlet 670.0 0.0 128 sqrt_exit_jac max 0.02855720996138922 sec 0.056350428611040115\nRED_CONVERGENCE singlet 670.0 0.0 192 uniform_stop max 0.028388178529541154 sec 0.12361831869930029\nRED_CONVERGENCE singlet 670.0 0.0 192 sqrt_exit_jac max 0.02828117615684335 sec 0.12348565459251404\nRED_CONVERGENCE singlet 670.0 0.0 256 uniform_stop max 0.028342481202953206 sec 0.20672410633414984\nRED_CONVERGENCE singlet 670.0 0.0 256 sqrt_exit_jac max 0.028235315590224228 sec 0.20631108805537224\nRED_CONVERGENCE singlet 670.0 0.1 128 uniform_stop max 0.12320561457113194 sec 0.05453281197696924\nRED_CONVERGENCE singlet 670.0 0.1 128 sqrt_exit_jac max 0.12363754429804902 sec 0.054195540957152843\nRED_CONVERGENCE singlet 670.0 0.1 192 uniform_stop max 0.12524349595790213 sec 0.12113347835838795\nRED_CONVERGENCE singlet 670.0 0.1 192 sqrt_exit_jac max 0.12567278337351956 sec 0.12107850983738899\nRED_CONVERGENCE singlet 670.0 0.1 256 uniform_stop max 0.1259491691401144 sec 0.20373037829995155\nRED_CONVERGENCE singlet 670.0 0.1 256 sqrt_exit_jac max 0.12637735248722176 sec 0.20351993571966887\nRED_CONVERGENCE singlet 670.0 0.1 384 uniform_stop max 0.12622552017071337 sec 0.4312903927639127\nRED_CONVERGENCE singlet 670.0 0.1 384 sqrt_exit_jac max 0.12665325644716735 sec 0.431604933924973\nRED_CONVERGENCE internal_stop_asphere 630.0 0.0 128 uniform_stop max 0.024092762470916185 sec 0.44691172149032354\nRED_CONVERGENCE internal_stop_asphere 630.0 0.0 128 sqrt_exit_jac max 0.024234248211410514 sec 0.4774950509890914\nRED_CONVERGENCE internal_stop_asphere 630.0 0.0 192 uniform_stop max 0.03480370683933831 sec 0.5740462355315685\nRED_CONVERGENCE internal_stop_asphere 630.0 0.0 192 sqrt_exit_jac max 0.034916522506684755 sec 0.5733725260943174\nRED_CONVERGENCE internal_stop_asphere 630.0 0.0 256 uniform_stop max 0.0359474084690542 sec 0.655066060833633\nRED_CONVERGENCE internal_stop_asphere 630.0 0.0 256 sqrt_exit_jac max 0.03605727246317658 sec 0.6569289769977331\nRED_CONVERGENCE internal_stop_asphere 670.0 0.1 128 uniform_stop max 0.020232857720837272 sec 0.5070057073608041\nRED_CONVERGENCE internal_stop_asphere 670.0 0.1 128 sqrt_exit_jac max 0.020418919912413624 sec 0.4989505270496011\nRED_CONVERGENCE internal_stop_asphere 670.0 0.1 192 uniform_stop max 0.02954534697215616 sec 0.5679324520751834\nRED_CONVERGENCE internal_stop_asphere 670.0 0.1 192 sqrt_exit_jac max 0.029705432291531664 sec 0.5745093869045377\nRED_CONVERGENCE internal_stop_asphere 670.0 0.1 256 uniform_stop max 0.0308815281599657 sec 0.6539161447435617\nRED_CONVERGENCE internal_stop_asphere 670.0 0.1 256 sqrt_exit_jac max 0.03103784188193648 sec 0.6528452187776566\nRED_RESOLUTION_COMPLETE [{\"name\": \"singlet\", \"w\": 670.0, \"h\": 0.0, \"levels\": [{\"n\": 128, \"uniform\": 0.02866394550351619, \"jacobian\": 0.02855720996138922}, {\"n\": 192, \"uniform\": 0.028388178529541154, \"jacobian\": 0.02828117615684335}, {\"n\": 256, \"uniform\": 0.028342481202953206, \"jacobian\": 0.028235315590224228}]}, {\"name\": \"singlet\", \"w\": 670.0, \"h\": 0.1, \"levels\": [{\"n\": 128, \"uniform\": 0.12320561457113194, \"jacobian\": 0.12363754429804902}, {\"n\": 192, \"uniform\": 0.12524349595790213, \"jacobian\": 0.12567278337351956}, {\"n\": 256, \"uniform\": 0.1259491691401144, \"jacobian\": 0.12637735248722176}, {\"n\": 384, \"uniform\": 0.12622552017071337, \"jacobian\": 0.12665325644716735}]}, {\"name\": \"internal_stop_asphere\", \"w\": 630.0, \"h\": 0.0, \"levels\": [{\"n\": 128, \"uniform\": 0.024092762470916185, \"jacobian\": 0.024234248211410514}, {\"n\": 192, \"uniform\": 0.03480370683933831, \"jacobian\": 0.034916522506684755}, {\"n\": 256, \"uniform\": 0.0359474084690542, \"jacobian\": 0.03605727246317658}]}, {\"name\": \"internal_stop_asphere\", \"w\": 670.0, \"h\": 0.1, \"levels\": [{\"n\": 128, \"uniform\": 0.020232857720837272, \"jacobian\": 0.020418919912413624}, {\"n\": 192, \"uniform\": 0.02954534697215616, \"jacobian\": 0.029705432291531664}, {\"n\": 256, \"uniform\": 0.0308815281599657, \"jacobian\": 0.03103784188193648}]}]",
   "memory_gb": 0,
   "pid": 370553,
   "request_sha256": "489f8459d5145b4cf5a95f6d3b19125cebcb315503440ea33e0008493606421e",
+  "returncode": 0,
   "schema": 1,
   "started_at": 1793178821.496012,
-  "state": "running",
+  "state": "finished",
   "timeout_sec": 1800,
-  "updated_at": 1793178828.3240268
+  "updated_at": 1793178828.3240268,
+  "uploaded_artifacts": [
+    {
+      "path": "qfilm03_huygens_resolution/internal_stop_asphere.json",
+      "size": 903,
+      "uploaded": true
+    },
+    {
+      "path": "qfilm03_huygens_resolution/red_resolution_convergence.json",
+      "size": 41146,
+      "uploaded": true
+    },
+    {
+      "path": "qfilm03_huygens_resolution/singlet.json",
+      "size": 569,
+      "uploaded": true
+    }
+  ]
 }
