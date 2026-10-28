@@ -1,0 +1,16 @@
+{
+  "args": [
+    "validation/qfilm03_true_fullframe_huygens.py"
+  ],
+  "code_commit": "5f8f562d204a83a3b4dd6e552663a8ceae0e9ad2",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm03-true-fullframe-20261028-01",
+  "memory_gb": 0,
+  "request_sha256": "30807ddf2092e2428c85f884a214f05504c6b7157fb066e80acb0d45d9e62362",
+  "schema": 1,
+  "started_at": 1793173967.3481362,
+  "state": "running",
+  "timeout_sec": 1800
+}
