@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1793225835.8443604,
+  "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "000-qfilm04-fine-01g-10-yongnuo_50mm_f1.8-20261028",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/000-qfilm04-fine-01g-10-yongnuo_50mm_f1.8-20261028.json",
+  "request_sha256": "30938646edcb7f2929aa7aaa5bf228b5b53bf1546e69bc649f2fd0a6100bf7fc",
+  "schema": 1,
+  "state": "claimed"
+}
