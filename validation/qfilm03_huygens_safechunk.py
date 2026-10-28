@@ -42,7 +42,7 @@ def parity(original,chunked):
  assert result["PSF_max_abs"]<1e-8,result
  return result
 def main():
- original,chunked,meta=patch_huygens(1024)
+ original,chunked,meta=patch_huygens(4096)
  test=parity(original,chunked)
  GeoLens.psf_huygens=chunked
  out=Path(os.environ.get("COTS_JOB_ARTIFACT_DIR","artifacts"))
