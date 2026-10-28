@@ -9,9 +9,9 @@ energy transport for arbitrary pupils, detector window and film photometry
 must still be certified case by case.
 """
 from __future__ import annotations
-from dataclasses import dataclass,replace
+from dataclasses import asdict
 from typing import Literal
-import json, argparse, numpy as np, torch
+import json, argparse, hashlib, numpy as np, torch
 from evaluator.qfilm02 import Config
 from evaluator.qfilm03_physical_mode import (
     PhysicalHuygensConfig,evaluate as physical_evaluate)
@@ -29,6 +29,20 @@ def evaluate(source,config:Config=Config(),physical:PhysicalHuygensConfig=Physic
         raise RuntimeError("Qfilm0.4-g explicitly requires available CUDA; no implicit CPU fallback")
     device="cpu" if backend=="c" else f"cuda:{int(gpu_index)}"
     r=physical_evaluate(source,config=config,device=device,physical=physical)
+    settings={"version":VERSION,"image":asdict(config),"physical":asdict(physical)}
+    # Physical pupil, image pitch and window must participate in cache identity.
+    # CPU/GPU variants share this identity because they execute the same math.
+    r["config_hash"]=hashlib.sha256(json.dumps(settings,sort_keys=True).encode()).hexdigest()
+    r["physical_config"]=asdict(physical)
+    # A 100lp/mm detector Nyquist exceeding the requested 80lp/mm is NOT
+    # sufficient: the underlying optical PSF may contain much higher frequencies.
+    # This is a paraxial warning estimate, not a finite-NA certification rule.
+    nyquist_pitch_um=min(config.wavelengths_nm)*1e-3*float(r["fno"])/2.
+    r["detector_sampling"]={"paraxial_optical_nyquist_pitch_um":nyquist_pitch_um,
+        "actual_pitch_um":physical.detector_pitch_um,
+        "pitch_to_paraxial_limit_ratio":physical.detector_pitch_um/nyquist_pitch_um,
+        "sampling_converged":False,
+        "interpretation":"diagnostic estimate; requires independent pitch and support convergence"}
     r.update(schema="QfilmResult-0.4",version=VERSION,variant=f"{VERSION}-{backend}",
              math_backend="physical_fixed_film_exit_Huygens",
              numerical_execution_device=device,
@@ -46,13 +60,16 @@ def main():
     ap.add_argument("--fields",type=int,default=100)
     ap.add_argument("--pupil",type=int,default=256)
     ap.add_argument("--detector",type=int,default=128)
+    ap.add_argument("--detector-pitch-um",type=float,default=5.)
+    ap.add_argument("--detector-block",type=int,default=384)
     ap.add_argument("--gpu-index",type=int,default=0)
     ap.add_argument("--output",help="Optional machine-readable full Q/J JSON output")
     args=ap.parse_args()
     data=json.loads(open(args.prescription,encoding="utf-8").read())
     cfg=Config(fields=args.fields,pupil_n=256,fft_n=1024,
         target_efl_mm=data["design_spec"]["efl_target_mm"])
-    phy=PhysicalHuygensConfig(pupil_n=args.pupil,detector_n=args.detector)
+    phy=PhysicalHuygensConfig(pupil_n=args.pupil,detector_n=args.detector,
+        detector_pitch_um=args.detector_pitch_um,detector_block=args.detector_block)
     out=evaluate(data,config=cfg,physical=phy,
         backend="c" if args.c else "g",gpu_index=args.gpu_index)
     def conv(x):

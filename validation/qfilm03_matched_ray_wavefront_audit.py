@@ -27,23 +27,23 @@ def metrics(x,mask):
  v=x[mask]
  return {"n":int(v.numel()),"max_abs":float(v.abs().max()),"mean_abs":float(v.abs().mean()),
   "rms":float(v.square().mean().sqrt()),"p95_abs":float(torch.quantile(v.abs(),.95))}
-def run_case(lens,p,w,h,n=64):
+def run_case(lens,p,w,h,n=64,device="cuda:0"):
  stop=float(p["stop_z_mm"]);rs=p["design_spec"]["stop_diameter_mm"]/2.
  film=float(p["image_z_mm"]);offset=max(0.,-min(0.,stop))
  zstart=min(stop,0.)-20.
  a=math.atan(h*RADIUS/p["design_spec"]["efl_target_mm"])
- ang=torch.tensor([[a]],device="cuda:0",dtype=torch.float64)
- uv,inside=pupil_grid(n,"cuda:0")
+ ang=torch.tensor([[a]],device=device,dtype=torch.float64)
+ uv,inside=pupil_grid(n,device)
  ss=_surfaces_at(p["surfaces"],w)
  with torch.inference_mode():
   x0,y0,valid0=_start_for_stop(ss,ang,uv,stop,rs,zstart)
   z,x,y,opl,xf,yf,vq=trace_pupil(ss,ang,uv,stop,rs,film)
-  chief=trace_pupil(ss,ang,torch.zeros((1,2),dtype=torch.float64,device="cuda:0"),stop,rs,film)
+  chief=trace_pupil(ss,ang,torch.zeros((1,2),dtype=torch.float64,device=device),stop,rs,film)
  ux=torch.sin(ang).expand_as(x0);uz=torch.cos(ang).expand_as(x0);uy=torch.zeros_like(ux)
  o=torch.stack((x0.flatten(),y0.flatten(),torch.full_like(x0.flatten(),zstart+offset)),dim=-1)
  d=torch.stack((ux.flatten(),uy.flatten(),uz.flatten()),dim=-1)
  with torch.inference_mode():
-  ray=Ray(o,d,float(w)*1e-3,is_coherent=True,device="cuda:0")
+  ray=Ray(o,d,float(w)*1e-3,is_coherent=True,device=device)
   ray,_=lens.trace(ray)
   dv=ray.is_valid>0
   dx=ray.d[:,0];dy=ray.d[:,1];dz=ray.d[:,2]
@@ -79,7 +79,13 @@ def run_case(lens,p,w,h,n=64):
   jq,_,jqa=exit_area_weights(qxe.reshape(n,n),qye.reshape(n,n),qmask.reshape(n,n),pitch)
   jd,_,jda=exit_area_weights(dxe.reshape(n,n),dye.reshape(n,n),qmask.reshape(n,n),pitch)
   # area amplitude sqrt(J), normalized RMS, remove photometric constant
-  aq=jq[qmask.reshape(n,n)];ad=jd[qmask.reshape(n,n)]
+  # Finite differences at a clipped-pupil edge read invalid neighboring
+  # coordinates. Compare Jacobians only on the common valid stencil.
+  common=qmask.reshape(n,n)
+  interior=torch.zeros_like(common)
+  interior[1:-1,1:-1]=(common[1:-1,1:-1]&common[:-2,1:-1]&common[2:,1:-1]
+                       &common[1:-1,:-2]&common[1:-1,2:])
+  aq=jq[interior];ad=jd[interior]
   an=(aq/aq.square().mean().sqrt())-(ad/ad.square().mean().sqrt())
   rr={
     "lambda_nm":w,"h":h,"pupil_n":n,"number_common_valid":int(qmask.sum()),
@@ -93,8 +99,9 @@ def run_case(lens,p,w,h,n=64):
     "OPD_Qfilm_rms_um":float(qOPD[qmask].square().mean().sqrt()*1e3),
     "OPD_DeepLens_rms_um":float(dOPD[qmask].square().mean().sqrt()*1e3),
     "relative_complex_phase_phasor_max":metrics(torch.abs(torch.exp(2j*math.pi*diffOPD/(w*1e-6))-1),qmask),
-    "exit_Jacobian_map_ratio_p95":float(torch.quantile((jqa[qmask.reshape(n,n)]/jda[qmask.reshape(n,n)]).abs(),.95)),
-    "exit_Jacobian_map_ratio_median":float(torch.quantile((jqa[qmask.reshape(n,n)]/jda[qmask.reshape(n,n)]).abs(),.5)),
+    "jacobian_comparison_common_interior_rays":int(interior.sum()),
+    "exit_Jacobian_map_ratio_p95":float(torch.quantile((jqa[interior]/jda[interior]).abs(),.95)),
+    "exit_Jacobian_map_ratio_median":float(torch.quantile((jqa[interior]/jda[interior]).abs(),.5)),
     "normalized_exit_integrand_amplitude_difference":metrics(an,torch.ones_like(an,dtype=torch.bool)),
     "stop_center_film_reference_x_mm":pixelx,
     "exit_plane_mm":zexit}

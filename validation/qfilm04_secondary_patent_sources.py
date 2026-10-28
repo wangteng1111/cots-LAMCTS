@@ -18,7 +18,8 @@ ZEMAX_SAMPLES={
 "nikon_nikkor28_f2.8s":"Nikon/Nikkor28mmf2.8S/Nikkor28mmf2.8S.zmx",
 "zeiss_distagon_t25_f2.8":"Zeiss/DistagonT25f2.8Contax/DistagonT25f2.8Contax.zmx",
 }
-ROOT="https://raw.githubusercontent.com/Amarthgul/ZemaxSims/main/"
+SOURCE_SHA="607ac6873b34b332c36cde428c70ace22ca43370"
+ROOT=f"https://raw.githubusercontent.com/Amarthgul/ZemaxSims/{SOURCE_SHA}/"
 def load_remote_zmx(name,target_dir,timeout=35):
  if name not in ZEMAX_SAMPLES:raise KeyError(name)
  path=ZEMAX_SAMPLES[name]
@@ -28,10 +29,14 @@ def load_remote_zmx(name,target_dir,timeout=35):
  output=target_dir/(name+".zmx")
  with urllib.request.urlopen(url,timeout=timeout) as response:
   source=response.read()
- if not source or len(source)>1024*1024 or b"SURF " not in source:
+ # OpticStudio writes both ASCII and UTF-16 files. Validate text without
+ # transcoding or otherwise changing the original bytes consumed by DeepLens.
+ encoding="utf-16" if source.startswith((b"\xff\xfe",b"\xfe\xff")) else "utf-8-sig"
+ text=source.decode(encoding)
+ if not source or len(source)>1024*1024 or "SURF " not in text:
   raise ValueError("not a complete Zemax optical file")
  output.write_bytes(source)
- return str(output),{"url":url,"bytes":len(source),
+ return str(output),{"url":url,"bytes":len(source),"source_commit":SOURCE_SHA,
                      "sha256":hashlib.sha256(source).hexdigest(),
                      "source_kind":"published_patent_or_independent_design",
                      "same_as_actual_manufacturing_not_proven":True}

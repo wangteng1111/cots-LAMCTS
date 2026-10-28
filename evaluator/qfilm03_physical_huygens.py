@@ -43,6 +43,10 @@ def eval_fixed_film(p,wave_nm,field_h,config=Propagation(),device="cuda:0"):
         chief=trace_pupil(surfs,angles,torch.zeros((1,2),device=device,dtype=torch.float64),stop,rs,film)
         z,x,y,opl,xf,yf,valid=trace
         mask=(valid & inside.unsqueeze(0)).reshape(pupil_n,pupil_n)
+        if int(mask.sum())<32:
+            raise ValueError(f"insufficient transmitted physical pupil rays at field={field_h},lambda={wave_nm}")
+        if not bool(chief[6].all()):
+            raise ValueError(f"invalid physical chief ray at field={field_h},lambda={wave_nm}")
         zz=z.reshape(pupil_n,pupil_n)
         max_z=float(zz[mask].max())
         exit_z=max_z+0.1 if config.diagnostic_virtual_exit_z_mm is None else float(config.diagnostic_virtual_exit_z_mm)
@@ -92,7 +96,11 @@ def eval_fixed_film(p,wave_nm,field_h,config=Propagation(),device="cuda:0"):
             E=(torch.polar(torch.ones_like(phase),phase)*(A[None,:]*ob/r)).sum(-1)
             accum.append(E)
         field=torch.cat(accum).reshape(n,n)
-        psf=field.abs().square();psf=psf/psf.sum()
+        psf=field.abs().square()
+        energy=psf.sum()
+        if not bool(torch.isfinite(energy)) or float(energy)<=0:
+            raise ValueError("nonfinite or zero physical PSF energy")
+        psf=psf/energy
         return {"psf":psf,"valid_rays":int(active.sum()),"bad_jacobian_fraction":float(bad.sum()/mask.sum()),
                 "jac_min":float(jac[active].min()),"jac_p95":float(torch.quantile(jac[active],.95)),
                 "center_film_mm":center,"exit_z_mm":exit_z,

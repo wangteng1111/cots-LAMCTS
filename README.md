@@ -157,6 +157,14 @@ Technical documentation:
 
 - `docs/workstation_github_bridge_access.md`
 - `docs/workstation_takeover_optv1_meta10k.md`
+- [Qfilm0.4 CPU/GPU variants and 18 photographic-prescription tests](docs/QFILM04_REAL_LENS_CPU_VALIDATION_20261028.md)
+
+The latest fixed-film physical Huygens evaluator is **Qfilm0.4**:
+`python -m evaluator.qfilm04 -c` selects CPU and `-g` selects CUDA GPU,
+with the same physical model. Supply `--prescription` to evaluate a lens.
+The 18-candidate CPU pilot has executed; photographic PSF/MTF accuracy remains
+uncertified because detector sampling, window support and independent references
+have not converged. Keep `training_eligible=False`.
 
 ---
 

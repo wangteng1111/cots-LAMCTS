@@ -1,0 +1,36 @@
+{
+  "schema": "QfilmResult-0.4",
+  "variant": "Qfilm0.4-c",
+  "physical_config": {
+    "pupil_n": 256,
+    "detector_n": 128,
+    "detector_pitch_um": 5.0,
+    "detector_block": 64,
+    "amplitude_mode": "sqrt_exit_jac",
+    "record_all_mtf": false,
+    "max_bad_exit_jacobian_fraction": 0.02
+  },
+  "detector_sampling": {
+    "paraxial_optical_nyquist_pitch_um": 0.5071851775488557,
+    "actual_pitch_um": 5.0,
+    "pitch_to_paraxial_limit_ratio": 9.858332264685247,
+    "sampling_converged": false,
+    "interpretation": "diagnostic estimate; requires independent pitch and support convergence"
+  },
+  "config_hash": "aacbbfc43c0d5f4caf08419be0afe51a203f8b7abe526c4d16ff92c2fc675345",
+  "quality": {
+    "valid": true,
+    "J_task": 0.9737842631293199,
+    "J_area": 0.9450365318550388,
+    "J_tail": 1.060027456952163,
+    "J_components": [
+      0.8109603213775644,
+      0.0,
+      0.8504878892244766,
+      1.8310363203250108
+    ]
+  },
+  "numerical_execution_device": "cpu",
+  "training_eligible": false,
+  "gpu_without_cuda_rejected": "Qfilm0.4-g explicitly requires available CUDA; no implicit CPU fallback"
+}

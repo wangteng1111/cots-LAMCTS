@@ -52,7 +52,11 @@ if importlib.util.find_spec('lpips') is None:
     COMPATIBILITY_SHIMS.append('lpips optional-metric import placeholder')
 from evaluator.qfilm02 import Config,evaluate as qfilm_eval,_surfaces_at
 from validation.qfilm02_smoke import thin_lens
-from validation.qfilm02_accelerated import rich_lens
+def rich_lens():
+    # Synthetic accelerated benchmark is optional. Real-prescription CPU
+    # validation must not import the CUDA-only Triton backend at module load.
+    from validation.qfilm02_accelerated import rich_lens as make_lens
+    return make_lens()
 torch.manual_seed(20261027)
 np.random.seed(20261027)
 

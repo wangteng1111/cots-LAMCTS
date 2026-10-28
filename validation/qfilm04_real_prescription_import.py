@@ -39,6 +39,13 @@ def _probe_materials(lens,wavelengths):
 
 def import_geolens_lens(lens,source_dict,identifier,frame_mm=(36.,24.),
                         wavelengths=(430.,470.,510.,550.,590.,630.,670.)):
+ # The pinned upstream defaults to 587 nm, not 550 nm. Derived EFL/pupil
+ # and object-field normalization must use the SAME reference wavelength
+ # as Qfilm. This changes cached cardinal properties, never the prescription.
+ original_primary_nm=float(lens.primary_wvln)*1000.
+ if abs(original_primary_nm-550.)>1e-9:
+  lens.primary_wvln=.550
+  lens.post_computation()
  rows=source_dict["surfaces"]
  if len(rows)!=len(lens.surfaces):
   raise IncompatibleLens("source/deeplens surface count mismatch")
@@ -92,6 +99,8 @@ def import_geolens_lens(lens,source_dict,identifier,frame_mm=(36.,24.),
    "design_spec":{"stop_diameter_mm":2*stop_r,"efl_target_mm":real_efl},
    "source_provenance":{"identifier":identifier,"source":"pinned-vccimaging/DeepLens datasets/lenses/camera",
     "source_primary_description":source_dict.get("info"),
+    "original_primary_wavelength_nm":original_primary_nm,
+    "comparison_primary_wavelength_nm":550.,
     "published_foclen_mm":nominal_efl,"deeplens_paraxial_efl_mm":real_efl,
     "fnumber":fnum,"physical_frame_mm":frame_mm,
     "not_proven_actual_manufacturing_prescription":True}}

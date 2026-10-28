@@ -1,0 +1,18 @@
+[
+  {
+    "name": "rf16mm_f2.8",
+    "field_h": 1.0,
+    "wavelength_nm": 550.0,
+    "pupil_n": 64,
+    "rejected": true,
+    "reason": "insufficient transmitted physical pupil rays at field=1.0,lambda=550.0"
+  },
+  {
+    "name": "rf24mm_f1.8",
+    "field_h": 1.0,
+    "wavelength_nm": 550.0,
+    "pupil_n": 64,
+    "rejected": true,
+    "reason": "insufficient transmitted physical pupil rays at field=1.0,lambda=550.0"
+  }
+]

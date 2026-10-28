@@ -106,6 +106,8 @@ def main():
    "PSF_window_mm":.64,"reference_spp_per_wavelength":args.spp,
    "evidence":"two-independently-implemented-scalar-solvers",
    "manufactured_lens_empirical_validation":False,
+   "detector_sampling_certified":False,"reference_spp_converged":False,
+   "acceptance_status":"screening_only_pending_pupil_pitch_window_and_reference_convergence",
    "certified":False,"training_eligible":False,"cases":[]}
  for kind,name in selected:
   c={"name":name,"source_kind":kind,"fields":[]};report["cases"].append(c)
