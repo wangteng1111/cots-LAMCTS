@@ -93,6 +93,24 @@ Each cell = max absolute MTF discrepancy at that wavelength and field over T/S a
 - **singlet**: 77 monochromatic PSFs; mean over all individual T/S/frequency MTF absolute errors 0.00810; max 0.30825; P95 of *each per-PSF maximum difference* 0.05812; 8 of 77 conditions above 0.03 and 3 above 0.10; median native 1M-ray Huygens runtime ~4.052s per PSF.
 - **internal_stop_asphere**: 77 monochromatic PSFs; mean over all individual T/S/frequency MTF absolute errors 0.01299; max 0.33441; P95 of *each per-PSF maximum difference* 0.10171; 28 of 77 conditions above 0.03 and 4 above 0.10; median native 1M-ray Huygens runtime ~4.073s per PSF.
 
+## High-ray-count reference convergence at most discrepant 670nm fields
+Additional **upstream DeepLens Huygens** runs using 1 million and 4 million rays, 128² (0.64mm) and 192² (0.96mm) physical detector windows, fixed actual sensor pitch 5µm. To avoid 32GiB GPU OOM, Huygens integration was changed only in its **ray accumulation batch size** 10,000→4,096; pristine vs resized-batch normalized 96² PSF had **exactly zero maximum pixel error** under the same seed.
+
+| Case | 1M rays, 0.64mm maximum Qfilm difference | 4M rays, 0.64mm | 4M rays, 0.96mm |
+|---|---:|---:|---:|
+| Singlet, λ670nm, h=0 | 0.30852 | **0.28803** | **0.28895** |
+| Singlet, λ670nm, h=0.1 | 0.23313 | **0.22180** | **0.22256** |
+| Internal-stop asphere, λ670nm, h=0 | 0.17950 | **0.16679** | **0.17141** |
+| Internal-stop asphere, λ670nm, h=0.1 | 0.32741 | **0.31434** | **0.31486** |
+
+For singlet on-axis λ670, the **Huygens 1M→4M maximum difference between full MTF curves** at 0.64mm was 0.03449; 4M window 0.64→0.96mm was 0.00775. For internal aspheric h=0.1 λ670 these were 0.02608 and 0.01048. The remaining solver disagreement ~0.22–0.31 is **much larger than either of the sampled convergence differences**. Nevertheless 4M is not a rigorous mathematical extrapolation to infinite rays or infinite PSF support.
+
+Also tested physical source depth: nominal -1km vs -10km vs -100km keeping field angle fixed. The 1M Qfilm-reference difference at singlet h0 λ670 changed 0.30852→0.30604→0.30579 and at internal aspheric h0.1 λ670 0.32741→0.32166→0.32094. Hence finite 1km source range is *not* the dominant reason for severe red mismatch.
+
+At green λ550 the independent reference remained less converged: singlet on-axis 1M window variation 0.02570 and 1M→4M ray-count MTF variation 0.01614. Internal asphere λ550 on-axis 1M window variation 0.03681 and 1M→4M ray-count variation 0.02443. **Do not treat 1M ray Huygens as a universal absolute ground truth** even at green.
+
+[Raw Huygens reference convergence JSON](https://github.com/wangteng1111/cots-LAMCTS/blob/workstation-results/remote/artifacts/qfilm03-fullframe-red-convergence-20261028-01/qfilm03_fullframe_reference_convergence/red_reference_ray_window.json) · [Per-condition convergence CSV](https://github.com/wangteng1111/cots-LAMCTS/blob/main/artifacts/qfilm03_fullframe_red_window_sampling_20261028.csv) · [Validation code](https://github.com/wangteng1111/cots-LAMCTS/blob/main/validation/qfilm03_fullframe_reference_convergence.py).
+
 ## Interpretation
 1. Blue and green wavelengths mostly agree within ~0.01–0.04 maximum per condition. But the 0.03 threshold is **not met everywhere**.
 2. A severe axial red disagreement is reproducible: 670nm singlet h=0 max ~0.308; internal stop 630nm h=0 max ~0.334. This is a solver discrepancy, **not a certified absolute error**.
