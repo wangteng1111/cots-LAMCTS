@@ -1,0 +1,26 @@
+{
+  "args": [
+    "validation/qfilm03_exit_pupil_positions.py"
+  ],
+  "bridge_version": "0.5.0",
+  "code_commit": "932e66ad0512129e4cdcaf8e0ddfe17a385e179e",
+  "elapsed_sec": 11.774426221847534,
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "finished_at": 1793179094.8902571,
+  "hostname": "aipss-Rack-Server",
+  "immutable_job_id": true,
+  "job_id": "qfilm03-exit-pupil-plane-20261028-01",
+  "log_tail": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/qfilm03-exit-pupil-plane-20261028-01/src/validation/qfilm03_exit_pupil_positions.py\", line 9, in <module>\n    from deeplens import GeoLens\nModuleNotFoundError: No module named 'deeplens'",
+  "memory_gb": 0,
+  "pid": 371622,
+  "request_sha256": "deeec525f3756a13013acb4476d50aaf8506b48829b6f717aadf7a6d894852a8",
+  "retry_policy": "new_job_id_required",
+  "returncode": 1,
+  "schema": 1,
+  "started_at": 1793179083.115831,
+  "state": "failed",
+  "timeout_sec": 300,
+  "updated_at": 1793179086.0880327,
+  "uploaded_artifacts": []
+}
