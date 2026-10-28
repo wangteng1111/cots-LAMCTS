@@ -3,17 +3,37 @@
     "validation/qfilm03_fullframe_polychromatic.py"
   ],
   "code_commit": "5af4c301eaeb0ece4c7b8a4efe760b4d10a13abc",
+  "elapsed_sec": 211.07405972480774,
   "entrypoint": "scripts/cuda_venv_exec.py",
   "env": {},
+  "finished_at": 1793175796.1515458,
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm03-fullframe-polychromatic-20261028-01",
   "log_tail": "/var/lib/cots-lamcts/jobs/qfilm03-fullframe-polychromatic-20261028-01/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)\nPOLY singlet 0.0 0.04868460462482428\nPOLY singlet 0.5 0.02051142018032827\nPOLY singlet 1.0 0.01705177503346873\nPOLY internal_stop_asphere 0.0 0.06723371403611896\nPOLY internal_stop_asphere 0.5 0.01881154296351276\nPOLY internal_stop_asphere 1.0 0.012579455223769562\nPOLY_COMPLETE {\"singlet\": {\"n\": 3, \"max\": 0.04868460462482428, \"error\": null}, \"internal_stop_asphere\": {\"n\": 3, \"max\": 0.06723371403611896, \"error\": null}}",
   "memory_gb": 0,
   "pid": 356569,
   "request_sha256": "e9e5dd7893d7369c3a21a64d71aa25f96c3de71a64249a86e1f1c7bedcacdc6d",
+  "returncode": 0,
   "schema": 1,
   "started_at": 1793175585.077486,
-  "state": "running",
+  "state": "finished",
   "timeout_sec": 1800,
-  "updated_at": 1793175772.7642395
+  "updated_at": 1793175772.7642395,
+  "uploaded_artifacts": [
+    {
+      "path": "qfilm03_poly_fullframe/internal_stop_asphere.json",
+      "size": 903,
+      "uploaded": true
+    },
+    {
+      "path": "qfilm03_poly_fullframe/polychromatic_huygens_36x24.json",
+      "size": 27258,
+      "uploaded": true
+    },
+    {
+      "path": "qfilm03_poly_fullframe/singlet.json",
+      "size": 569,
+      "uploaded": true
+    }
+  ]
 }
