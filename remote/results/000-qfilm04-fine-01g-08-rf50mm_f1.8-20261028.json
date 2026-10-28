@@ -19,7 +19,7 @@
   },
   "hostname": "aipss-Rack-Server",
   "job_id": "000-qfilm04-fine-01g-08-rf50mm_f1.8-20261028",
-  "log_tail": "",
+  "log_tail": "Surface dict lacks 'use_ai2'; assuming ai[0]=0 is the 2nd-order coefficient (legacy format).\nSurface dict lacks 'use_ai2'; assuming ai[0]=0 is the 2nd-order coefficient (legacy format).\n/var/lib/cots-lamcts/jobs/000-qfilm04-fine-01g-08-rf50mm_f1.8-20261028/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)\nPSF_PROGRESS rf50mm_f1.8 0.0 430.0 4077568 6553600\nPSF_PROGRESS rf50mm_f1.8 0.0 430.0 6553600 6553600\nFINE_SAMPLE rf50mm_f1.8 0.0 430.0 completed \nPSF_PROGRESS rf50mm_f1.8 0.0 470.0 4036928 6553600\nPSF_PROGRESS rf50mm_f1.8 0.0 470.0 6553600 6553600\nFINE_SAMPLE rf50mm_f1.8 0.0 470.0 completed \nPSF_PROGRESS rf50mm_f1.8 0.0 510.0 3991232 6553600\nPSF_PROGRESS rf50mm_f1.8 0.0 510.0 6553600 6553600\nFINE_SAMPLE rf50mm_f1.8 0.0 510.0 completed \nPSF_PROGRESS rf50mm_f1.8 0.0 550.0 4024128 6553600\nPSF_PROGRESS rf50mm_f1.8 0.0 550.0 6553600 6553600\nFINE_SAMPLE rf50mm_f1.8 0.0 550.0 completed \nPSF_PROGRESS rf50mm_f1.8 0.0 590.0 4020160 6553600\nPSF_PROGRESS rf50mm_f1.8 0.0 590.0 6553600 6553600\nFINE_SAMPLE rf50mm_f1.8 0.0 590.0 completed \nPSF_PROGRESS rf50mm_f1.8 0.0 630.0 4007552 6553600\nPSF_PROGRESS rf50mm_f1.8 0.0 630.0 6553600 6553600\nFINE_SAMPLE rf50mm_f1.8 0.0 630.0 completed \nPSF_PROGRESS rf50mm_f1.8 0.0 670.0 4012736 6553600",
   "memory_gb": 0,
   "pid": 420314,
   "request_sha256": "7c8828d34cae40858df2c4114a9ae2056e87654d3e6ac0b7303230f46a7b8299",
@@ -27,5 +27,5 @@
   "started_at": 1793224774.1459332,
   "state": "running",
   "timeout_sec": 172800,
-  "updated_at": 1793224777.6933944
+  "updated_at": 1793225138.008978
 }
