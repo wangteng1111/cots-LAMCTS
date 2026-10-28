@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1793179078.3669176,
+  "code_commit": "932e66ad0512129e4cdcaf8e0ddfe17a385e179e",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm03-exit-pupil-plane-20261028-01",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/qfilm03-exit-pupil-plane-20261028-01.json",
+  "request_sha256": "deeec525f3756a13013acb4476d50aaf8506b48829b6f717aadf7a6d894852a8",
+  "schema": 1,
+  "state": "claimed"
+}
