@@ -1,0 +1,16 @@
+{
+  "args": [
+    "validation/qfilm03_fullframe_polychromatic_fixedchief.py"
+  ],
+  "code_commit": "b86a8640953d0f0cb8783013e7efeeb27d26d497",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm03-poly-fixedchief-20261028-01",
+  "memory_gb": 0,
+  "request_sha256": "09c937c9c9a8005a9559bc24df205645f5c456bf0d1703020b53f545d8d9c7a6",
+  "schema": 1,
+  "started_at": 1793180335.431313,
+  "state": "running",
+  "timeout_sec": 1800
+}
