@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1793171833.0317905,
+  "code_commit": "c54e5d45db2eb1c9d58b065bd74526c9f8c40bd8",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm03-huygens-11fields-7waves-20261028-01",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/qfilm03-huygens-11fields-7waves-20261028-01.json",
+  "request_sha256": "a3058e5b826ca66ce3cabd750d07146b9b11be52bbf1db3fca714c52bd291339",
+  "schema": 1,
+  "state": "claimed"
+}
