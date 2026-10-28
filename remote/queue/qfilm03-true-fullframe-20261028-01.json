@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "qfilm03-true-fullframe-20261028-01",
+  "code_commit": "5f8f562d204a83a3b4dd6e552663a8ceae0e9ad2",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm03_true_fullframe_huygens.py"
+  ],
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
