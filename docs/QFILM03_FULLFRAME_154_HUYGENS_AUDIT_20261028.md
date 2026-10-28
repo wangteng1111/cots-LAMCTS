@@ -67,7 +67,20 @@ This is **solver-to-solver disagreement**, not a metrologically calibrated error
 4. DeepLens Huygens Monte Carlo ray count, 0.64mm PSF crop/normalization and approximate finite object distance can bias MTF. A separate [1M vs 4M / larger-window test](https://github.com/wangteng1111/cots-LAMCTS/blob/main/validation/qfilm03_fullframe_reference_convergence.py) is required to isolate red disagreements.
 5. Underlying Qfilm scalar paraxial pupil-FFT still uses unit pupil amplitude, proxy irradiance and approximate exit-pupil mapping. It may have systematic errors even where 512² pupil numerically converges.
 6. Independent previous DeepLens-vs-TorchOptics ASM shared-input test agreed to 8.65e-14 MTF; this validates the ASM kernel, **not pupil-field reconstruction**.
-7. Current 7-wave fixed-weight integrated MTF is not an empirical photographic-film response. Full-frame [multi-λ co-registered PSF](https://github.com/wangteng1111/cots-LAMCTS/blob/main/validation/qfilm03_fullframe_polychromatic.py) is also being tested separately.
+7. Fixed-weight seven-wave integrated MTF is **not** an empirical photographic-film response. The physically co-registered monochromatic Huygens PSF sum is now measured and reported below.
+
+## Incoherent polychromatic PSF and MTF (same physical fixed film)
+7 spectral bands [430,470,510,550,590,630,670] nm, weights [0.075,0.125,0.16,0.28,0.16,0.125,0.075]. DeepLens outputs each wavelength's PSF on a common 5µm primary-550nm-chief-referenced 128² grid before per-color *incoherent intensity* summation; Qfilm sums complex monochromatic OTF with physical lateral-chromatic offsets. 1 million Huygens rays per color. Qfilm512, full 36×24mm.
+
+| Radial field h | Singlet max absolute Δpoly-MTF | Internal-stop max absolute Δpoly-MTF |
+|---:|---:|---:|
+| 0.0 (center) | 0.04868 | 0.06723 |
+| 0.5 (10.8167mm) | 0.02051 | 0.01881 |
+| 1.0 (21.6333mm) | 0.01705 | 0.01258 |
+
+While the worst single-color disagreements are ~0.31–0.33, integrated PSF errors are smaller due to color-weighted intensity addition. However the center-field errors of ~0.05–0.07 remain above proposed high-quality label criteria. Chromatic window truncation, source-spectrum weights and photographic emulsion spectral response remain unverified.
+
+[Polychromatic reference raw data](https://github.com/wangteng1111/cots-LAMCTS/blob/workstation-results/remote/artifacts/qfilm03-fullframe-polychromatic-20261028-01/qfilm03_poly_fullframe/polychromatic_huygens_36x24.json).
 
 ## Raw data exports
 - [154-row scene summary CSV](https://github.com/wangteng1111/cots-LAMCTS/blob/main/artifacts/qfilm03_fullframe_154_cases_20261028.csv)
