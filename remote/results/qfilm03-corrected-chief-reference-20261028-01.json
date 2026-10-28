@@ -7,10 +7,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm03-corrected-chief-reference-20261028-01",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 379151,
   "request_sha256": "2204839492aed04c0f84e16df169ee4ec9433f8c6fb19733b00f0035e094d840",
   "schema": 1,
   "started_at": 1793180186.9711688,
   "state": "running",
-  "timeout_sec": 900
+  "timeout_sec": 900,
+  "updated_at": 1793180190.6458616
 }
