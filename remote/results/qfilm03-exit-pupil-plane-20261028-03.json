@@ -7,10 +7,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm03-exit-pupil-plane-20261028-03",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 373418,
   "request_sha256": "00e8e4ca388b3ae56aa95058cd290308ae819aabf126ac5ff83c129b9e259ea2",
   "schema": 1,
   "started_at": 1793179308.050005,
   "state": "running",
-  "timeout_sec": 300
+  "timeout_sec": 300,
+  "updated_at": 1793179311.2755318
 }
