@@ -1,0 +1,14 @@
+{
+  "schema": "Qfilm03-batch-invariance-v1",
+  "upstream_SHA": "911bb9d334fce7e20a4407c4506ac683b52ff246",
+  "original_sha256": "2e4949a4c7005dbf2ec4d0918db1d03b376f28912bbeca19d71093d931a342fd",
+  "modified_sha256": "3fa7bbd21c01ae9b232dcbc733a8cf55af9c658f92b5f02e59d6d7d6fb21c546",
+  "only_change": "Huygens ray-batch size 10000 -> 1024",
+  "parity": {
+    "PSF_max_abs": 0.0,
+    "PSF_mean_abs": 0.0,
+    "PSF_sum_a": 1.0,
+    "PSF_sum_b": 1.0
+  },
+  "optical_physics_changed": false
+}
