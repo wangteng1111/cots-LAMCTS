@@ -1,0 +1,194 @@
+{
+  "schema": "qfilm03-Huygens-reference-convergence-v1",
+  "cases": {
+    "singlet": {
+      "method": "DeepLens Huygens",
+      "source": "official upstream 911bb9d",
+      "name": "singlet",
+      "entries": [
+        {
+          "field_h": 0.0,
+          "wavelength_nm": 430.0,
+          "spp_262144_to_1M_mtf_max": 0.00899569573796205,
+          "spp_262144_to_1M_mtf_mean": 0.0028042726673597903,
+          "window_96_to_192_mtf_max": 0.008680301627842224,
+          "window_96_to_192_mtf_mean": 0.0012254780618116195,
+          "low_ray_time_s": 0.5704208482056856,
+          "million96_s": 2.1456054840236902,
+          "million192_s": 9.08089134003967
+        },
+        {
+          "field_h": 0.5,
+          "wavelength_nm": 430.0,
+          "spp_262144_to_1M_mtf_max": 0.013324541615264696,
+          "spp_262144_to_1M_mtf_mean": 0.0023837666298749606,
+          "window_96_to_192_mtf_max": 0.00689397948973991,
+          "window_96_to_192_mtf_mean": 0.001166890748193541,
+          "low_ray_time_s": 0.572439975105226,
+          "million96_s": 2.148130377754569,
+          "million192_s": 9.089653673581779
+        },
+        {
+          "field_h": 1.0,
+          "wavelength_nm": 430.0,
+          "spp_262144_to_1M_mtf_max": 0.006845704591704887,
+          "spp_262144_to_1M_mtf_mean": 0.0023993255742929816,
+          "window_96_to_192_mtf_max": 0.016518687508077307,
+          "window_96_to_192_mtf_mean": 0.002320937848672687,
+          "low_ray_time_s": 0.5711707919836044,
+          "million96_s": 2.1472519654780626,
+          "million192_s": 9.089965363964438
+        },
+        {
+          "field_h": 0.0,
+          "wavelength_nm": 550.0,
+          "spp_262144_to_1M_mtf_max": 0.021956281224028262,
+          "spp_262144_to_1M_mtf_mean": 0.005551013912250171,
+          "window_96_to_192_mtf_max": 0.02534211767940253,
+          "window_96_to_192_mtf_mean": 0.005748614628620171,
+          "low_ray_time_s": 0.5726246107369661,
+          "million96_s": 2.1486124768853188,
+          "million192_s": 9.090975214727223
+        },
+        {
+          "field_h": 0.5,
+          "wavelength_nm": 550.0,
+          "spp_262144_to_1M_mtf_max": 0.01988390078590241,
+          "spp_262144_to_1M_mtf_mean": 0.0036180663266307178,
+          "window_96_to_192_mtf_max": 0.02367157062833125,
+          "window_96_to_192_mtf_mean": 0.004518224511455634,
+          "low_ray_time_s": 0.5712091028690338,
+          "million96_s": 2.150493840686977,
+          "million192_s": 9.102873020805418
+        },
+        {
+          "field_h": 1.0,
+          "wavelength_nm": 550.0,
+          "spp_262144_to_1M_mtf_max": 0.018036641165541045,
+          "spp_262144_to_1M_mtf_mean": 0.003422589011624271,
+          "window_96_to_192_mtf_max": 0.01730044531617647,
+          "window_96_to_192_mtf_mean": 0.002256964397399649,
+          "low_ray_time_s": 0.5737038999795914,
+          "million96_s": 2.1527480175718665,
+          "million192_s": 9.104258327744901
+        },
+        {
+          "field_h": 0.0,
+          "wavelength_nm": 670.0,
+          "spp_262144_to_1M_mtf_max": 0.01926775743454967,
+          "spp_262144_to_1M_mtf_mean": 0.011227828598692624,
+          "window_96_to_192_mtf_max": 0.022098608444029444,
+          "window_96_to_192_mtf_mean": 0.01346926317256355,
+          "low_ray_time_s": 0.5733707966282964,
+          "million96_s": 2.1528770178556442,
+          "million192_s": 9.10381761752069
+        },
+        {
+          "field_h": 0.5,
+          "wavelength_nm": 670.0,
+          "spp_262144_to_1M_mtf_max": 0.01833236077717937,
+          "spp_262144_to_1M_mtf_mean": 0.009964410273076865,
+          "window_96_to_192_mtf_max": 0.021794051444218532,
+          "window_96_to_192_mtf_mean": 0.012329598568067757,
+          "low_ray_time_s": 0.5720392679795623,
+          "million96_s": 2.1513512702658772,
+          "million192_s": 9.102956962771714
+        },
+        {
+          "field_h": 1.0,
+          "wavelength_nm": 670.0,
+          "spp_262144_to_1M_mtf_max": 0.017151820370076898,
+          "spp_262144_to_1M_mtf_mean": 0.005600511498246583,
+          "window_96_to_192_mtf_max": 0.0192893935782511,
+          "window_96_to_192_mtf_mean": 0.005411481822768032,
+          "low_ray_time_s": 0.5734019707888365,
+          "million96_s": 2.1526507595553994,
+          "million192_s": 9.104608387686312
+        }
+      ],
+      "PSF_window_96_mm": 0.3999999993287874,
+      "PSF_window_192_mm": 0.7999999986575748,
+      "maximum_ray_sampling_MTF_change": 0.021956281224028262,
+      "maximum_window_MTF_change": 0.02534211767940253,
+      "mean_window_MTF_change": 0.005383050417728071
+    },
+    "internal_stop_asphere": {
+      "method": "DeepLens Huygens",
+      "source": "official upstream 911bb9d",
+      "name": "internal_stop_asphere",
+      "entries": [
+        {
+          "field_h": 0.0,
+          "wavelength_nm": 430.0,
+          "spp_262144_to_1M_mtf_max": 0.016019921794886205,
+          "spp_262144_to_1M_mtf_mean": 0.004074447332871494,
+          "window_96_to_192_mtf_max": 0.014050828748595257,
+          "window_96_to_192_mtf_mean": 0.0017989793229871212,
+          "low_ray_time_s": 0.5887330193072557,
+          "million96_s": 2.1632630061358213,
+          "million192_s": 9.12125535402447
+        },
+        {
+          "field_h": 0.5,
+          "wavelength_nm": 430.0,
+          "spp_262144_to_1M_mtf_max": 0.019844086741959865,
+          "spp_262144_to_1M_mtf_mean": 0.004172067086121828,
+          "window_96_to_192_mtf_max": 0.013685529507249411,
+          "window_96_to_192_mtf_mean": 0.0019415731645093567,
+          "low_ray_time_s": 0.5908705200999975,
+          "million96_s": 2.1663554841652513,
+          "million192_s": 9.12490854691714
+        },
+        {
+          "field_h": 1.0,
+          "wavelength_nm": 430.0,
+          "spp_262144_to_1M_mtf_max": 0.012110399891575002,
+          "spp_262144_to_1M_mtf_mean": 0.0030107449885075238,
+          "window_96_to_192_mtf_max": 0.07910423991718532,
+          "window_96_to_192_mtf_mean": 0.007259634967999142,
+          "low_ray_time_s": 0.5871425298973918,
+          "million96_s": 2.1627454878762364,
+          "million192_s": 9.121014716103673
+        },
+        {
+          "field_h": 0.0,
+          "wavelength_nm": 550.0,
+          "spp_262144_to_1M_mtf_max": 0.03430322197876545,
+          "spp_262144_to_1M_mtf_mean": 0.00809902153965514,
+          "window_96_to_192_mtf_max": 0.03733320005268692,
+          "window_96_to_192_mtf_mean": 0.008816518191787031,
+          "low_ray_time_s": 0.5873359898105264,
+          "million96_s": 2.162962634116411,
+          "million192_s": 9.121737466193736
+        },
+        {
+          "field_h": 0.5,
+          "wavelength_nm": 550.0,
+          "spp_262144_to_1M_mtf_max": 0.028212218810094614,
+          "spp_262144_to_1M_mtf_mean": 0.005687228360088425,
+          "window_96_to_192_mtf_max": 0.032694961906392095,
+          "window_96_to_192_mtf_mean": 0.007123458555348612,
+          "low_ray_time_s": 0.5873907739296556,
+          "million96_s": 2.162991216406226,
+          "million192_s": 9.123155337758362
+        },
+        {
+          "field_h": 1.0,
+          "wavelength_nm": 550.0,
+          "spp_262144_to_1M_mtf_max": 0.020325765409622054,
+          "spp_262144_to_1M_mtf_mean": 0.0036250886403651024,
+          "window_96_to_192_mtf_max": 0.019516373771622075,
+          "window_96_to_192_mtf_mean": 0.004419363565067071,
+          "low_ray_time_s": 0.5907952692359686,
+          "million96_s": 2.16605425439775,
+          "million192_s": 9.12556618731469
+        }
+      ],
+      "PSF_window_96_mm": 0.3999999993287874,
+      "PSF_window_192_mm": 0.7999999986575748
+    }
+  },
+  "focus_sweep": {},
+  "physics_certified": false,
+  "warning": "96/192 crop individually normalized; no flux certification"
+}
