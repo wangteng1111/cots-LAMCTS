@@ -52,7 +52,7 @@ def import_geolens_lens(lens,source_dict,identifier,frame_mm=(36.,24.),
    unsupported.append(f"decentered surface={i}")
   if s.get("vec_local") is not None and s["vec_local"] != [0,0,1]:
    unsupported.append(f"tilted surface={i}")
-  if typ in ("aperture","stop"):
+  if typ in ("aperture","stop") or bool(s.get("is_aperture",False)):
    if stop_z is not None:raise IncompatibleLens("multiple explicit stops")
    stop_z=z;stop_r=float(s["r"]);continue_from=0
   elif typ in ("spheric","spherical","aspheric"):
@@ -107,3 +107,27 @@ def lens_metadata(source_dict,identifier):
    "surface_count":len(source_dict["surfaces"]),
    "aspheric_count":sum(s.get("type")=="Aspheric" for s in source_dict["surfaces"]),
    "design_is_patent_not_verified_production":True}
+
+def extract_full_precision_lens(lens,description):
+ """Preserve native in-memory Zemax read precision; avoid lossy 4dp JSON export."""
+ raw={"info":description,"foclen":float(lens.foclen),
+  "fnum":float(lens.fnum),"surfaces":[]}
+ for i,surf in enumerate(lens.surfaces):
+  tp=surf.__class__.__name__
+  data={"type":tp,"r":float(surf.r),"d_next":float(surf.d_next),
+        "mat2":str(getattr(surf.mat2,"name","air")),
+        "is_aperture":bool(getattr(surf,"is_aperture",False)),
+        "is_square":bool(getattr(surf,"is_square",False))}
+  if hasattr(surf,"c"):
+   data["c"]=float(surf.c)
+  if hasattr(surf,"k"):
+   data["k"]=float(surf.k)
+  if hasattr(surf,"ai") and surf.ai is not None:
+   data["ai"]=[float(x) for x in surf.ai]
+   if getattr(surf,"ai2",None) is not None:
+    data["ai"]=[float(surf.ai2)]+data["ai"]
+    data["use_ai2"]=True
+   else:
+    data["use_ai2"]=False
+  raw["surfaces"].append(data)
+ return raw
