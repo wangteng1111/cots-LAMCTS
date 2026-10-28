@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1793172687.820704,
+  "code_commit": "b75a4267d7b9430d47e22553a01175cdf8932bc5",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm03-chief-geometry-20261028-02",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/qfilm03-chief-geometry-20261028-02.json",
+  "request_sha256": "4ecac7a2a8d78fd51890034d1af721d7f76e3454fd85d136e86aa10733968299",
+  "schema": 1,
+  "state": "claimed"
+}
