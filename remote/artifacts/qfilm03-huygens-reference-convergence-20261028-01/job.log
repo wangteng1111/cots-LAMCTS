@@ -1,0 +1,17 @@
+/var/lib/cots-lamcts/deeplens_upstream/deeplens/geolens_pkg/psf_compute.py:608: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)
+  complex_amp = (amp / r) * torch.exp(1j * phase)  # [ks, ks, batch]
+[W1028 15:28:45.524648540 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 5899288576 bytes (free: 4886036480, total: 33670758400).
+[W1028 15:28:45.596219616 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 5899288576 bytes (free: 2711289856, total: 33670758400).
+[W1028 15:28:45.699415915 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 5899288576 bytes (free: 2715484160, total: 33670758400).
+[W1028 15:28:45.699579055 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 5899288576 bytes (free: 2715484160, total: 33670758400).
+REFERENCE_ERROR singlet OutOfMemoryError('CUDA out of memory. Tried to allocate 5.49 GiB. GPU 0 has a total capacity of 31.36 GiB of which 2.53 GiB is free. Including non-PyTorch memory, this process has 28.82 GiB memory in use. Of the allocated memory 27.60 GiB is allocated by PyTorch, and 632.91 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)')
+[W1028 15:28:48.719873289 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 5899288576 bytes (free: 2707095552, total: 33670758400).
+[W1028 15:28:49.875244229 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 5899288576 bytes (free: 2717581312, total: 33670758400).
+[W1028 15:28:49.875414624 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 5899288576 bytes (free: 2717581312, total: 33670758400).
+REFERENCE_ERROR internal_stop_asphere OutOfMemoryError('CUDA out of memory. Tried to allocate 5.49 GiB. GPU 0 has a total capacity of 31.36 GiB of which 2.53 GiB is free. Including non-PyTorch memory, this process has 28.82 GiB memory in use. Of the allocated memory 27.61 GiB is allocated by PyTorch, and 629.90 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)')
+FOCUS singlet -0.05 {'0': 0.0101, '5': 0.0106, '10': 0.0166}
+FOCUS singlet -0.01 {'0': 0.0079, '5': 0.0123, '10': 0.0169}
+FOCUS singlet 0.0 {'0': 0.0081, '5': 0.0126, '10': 0.017}
+FOCUS singlet 0.01 {'0': 0.0083, '5': 0.0129, '10': 0.0171}
+FOCUS singlet 0.05 {'0': 0.014, '5': 0.0137, '10': 0.0179}
+SUMMARY {"singlet": {}, "internal_stop_asphere": {}}
