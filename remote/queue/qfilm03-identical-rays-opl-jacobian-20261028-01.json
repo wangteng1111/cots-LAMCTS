@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "qfilm03-identical-rays-opl-jacobian-20261028-01",
+  "code_commit": "e97ce67d4329c42dd76e23a0b78a8fd386629aa5",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm03_matched_ray_wavefront_audit.py"
+  ],
+  "timeout_sec": 900,
+  "memory_gb": 0
+}
