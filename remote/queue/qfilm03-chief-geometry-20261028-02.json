@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "qfilm03-chief-geometry-20261028-02",
+  "code_commit": "b75a4267d7b9430d47e22553a01175cdf8932bc5",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm03_chief_geometry.py"
+  ],
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
