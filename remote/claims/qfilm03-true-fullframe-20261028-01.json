@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1793173960.3961008,
+  "code_commit": "5f8f562d204a83a3b4dd6e552663a8ceae0e9ad2",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm03-true-fullframe-20261028-01",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/qfilm03-true-fullframe-20261028-01.json",
+  "request_sha256": "30807ddf2092e2428c85f884a214f05504c6b7157fb066e80acb0d45d9e62362",
+  "schema": 1,
+  "state": "claimed"
+}
