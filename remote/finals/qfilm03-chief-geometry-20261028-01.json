@@ -1,0 +1,42 @@
+{
+  "args": [
+    "validation/qfilm03_chief_geometry.py"
+  ],
+  "bridge_version": "0.5.0",
+  "code_commit": "43ee3b6b6320c88ddbbe630a489549c82f222799",
+  "elapsed_sec": 20.41190266609192,
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "finished_at": 1793172419.7722478,
+  "hostname": "aipss-Rack-Server",
+  "immutable_job_id": true,
+  "job_id": "qfilm03-chief-geometry-20261028-01",
+  "log_tail": "CASE_SUMMARY singlet \"TypeError(\\\"object of type 'float' has no len()\\\")\"\nCASE_SUMMARY internal_stop_asphere \"TypeError(\\\"object of type 'float' has no len()\\\")\"",
+  "memory_gb": 0,
+  "pid": 350335,
+  "request_sha256": "dc4d7a95255a43302ab94014e6dad8a42341a67a1d9742b64c58968a5b3d6710",
+  "retry_policy": "new_job_id_required",
+  "returncode": 0,
+  "schema": 1,
+  "started_at": 1793172399.3603451,
+  "state": "finished",
+  "timeout_sec": 1800,
+  "updated_at": 1793172406.4538336,
+  "uploaded_artifacts": [
+    {
+      "path": "qfilm03_geometry/chief_ray_distortion_chromatic.json",
+      "size": 2478,
+      "uploaded": true
+    },
+    {
+      "path": "qfilm03_geometry/internal_stop_asphere.json",
+      "size": 909,
+      "uploaded": true
+    },
+    {
+      "path": "qfilm03_geometry/singlet.json",
+      "size": 575,
+      "uploaded": true
+    }
+  ]
+}
