@@ -1,0 +1,28 @@
+{
+  "args": [
+    "validation/qfilm04_fine_11_cpu_gpu.py",
+    "--backend",
+    "g",
+    "--names",
+    "rf50mm_f1.8",
+    "--fields",
+    "3",
+    "--threads",
+    "2"
+  ],
+  "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {
+    "MKL_NUM_THREADS": "2",
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "000-qfilm04-fine-01g-08-rf50mm_f1.8-20261028",
+  "memory_gb": 0,
+  "request_sha256": "7c8828d34cae40858df2c4114a9ae2056e87654d3e6ac0b7303230f46a7b8299",
+  "schema": 1,
+  "started_at": 1793224774.1459332,
+  "state": "running",
+  "timeout_sec": 172800
+}
