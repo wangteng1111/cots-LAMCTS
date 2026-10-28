@@ -5,7 +5,7 @@
 ## Executive result
 1. **Identical incident-ray experiment** over 10 cases (N-BK7 biconvex and internal-stop aspheric optical systems) at 550/630/670nm, center and off-axis: Qfilm/DeepLens ray trace, integrated OPL, physical exit-plane OPD and Jacobian are numerically the same under matching input rays. Typical near-axis 670nm max OPD difference ~2e-11 to 1e-10 micrometer, exit-plane coordinate differences ~1e-13–1e-12mm, Jacobian median ratio almost exactly 1. The earlier large MTF discrepancy does NOT arise from a Snell/sag/OPL calculation mismatch.
 2. **Main identified error source:** old Qfilm0.2 stop-pupil *paraxial FFT* does not fully represent physical field propagation and coordinate/amplitude mapping. Holding Qfilm ray tracing and OPL fixed, deterministic **physical exit-plane direct Huygens spherical propagation** reduces several red-field disagreements from ~0.18–0.33 to ~0.02–0.04 MTF.
-3. **Not every red error is eliminated:** biconvex λ670nm h0.1 remains ~0.126 discrepancy after n384; and center-field seven-color Huygens discrepancy in the internal-stop lens can *worsen at one frequency* even while mean errors improve. Do not assert full correction or scientific physical certification.
+3. **Not every red error is eliminated:** biconvex λ670nm h0.1 remains ~0.126 discrepancy after n384; and using **only n128** for seven-color Huygens can worsen the center-field max; the n256 fix and corrected-center revalidation are documented below. Do not assert full correction or scientific physical certification.
 4. **Opt-in final score** implemented: `evaluator/qfilm03.evaluate_physical_huygens` calls `evaluator/qfilm03_physical_mode.evaluate`, recomputes actual fixed-film monochromatic PSFs with explicit ray-tube exit Jacobian amplitude, forms frequency-complex OTFs with lateral color shifts, recomputes *final* J over all fields/wavelengths. Not an intermediate/surrogate J. Remains `training_eligible=False`.
 5. **GPU performance:** direct deterministic Huygens in representative 128² pupil examples ~0.1s monochromatic PSF for front stop and ~0.5s for internal stop on single RTX 5090. These are different quadrature sample counts and not directly equivalent to DeepLens's 1M-ray reference. Complete 3-fields × 7-colors lens score, including baseline non-MTF metrics: 2.76s front stop and 15.27s internal stop.
 
@@ -147,7 +147,47 @@ At λ670nm h0.1, singlet, physical Qfilm direct Huygens n256 vs native DeepLens 
 
 [Chief/sample spherical source ablation](https://github.com/wangteng1111/cots-LAMCTS/blob/workstation-results/remote/artifacts/qfilm03-source-centering-curvature-20261028-01/qfilm03_source_wavefield/random_chief_and_source_curvature.json) · [identical ray kernel parity](https://github.com/wangteng1111/cots-LAMCTS/blob/workstation-results/remote/artifacts/qfilm03-identical-huygens-kernel-20261028-01/qfilm03_identical_huygens/identical_rays_two_propagators.json) · [corrected reference regression](https://github.com/wangteng1111/cots-LAMCTS/blob/main/validation/qfilm03_corrected_reference_chief_regression.py).
 
-**Important correction to earlier conclusions:** prior 0.126 red residual is NOT a permanent off-axis Huygens kernel disagreement; most of it was due to stochastic PSF center in the benchmark, plus remaining Monte Carlo and finite-window error. Do not use 0.126 as a bound on physical accuracy. Seven-color reference needs rerunning with all wavelengths on one deterministic **green reference chief** at the same real film plane (as an independent integration test).
+**Important correction to earlier conclusions:** prior 0.126 red residual is NOT a permanent off-axis Huygens kernel disagreement; most of it was due to stochastic PSF center in the benchmark, plus remaining Monte Carlo and finite-window error. Do not use 0.126 as a bound on physical accuracy. Seven-color reference **was rerun** with all wavelengths on one deterministic **green reference chief** at the same real film plane, and complete 256² physical Final-J regression passed (see below).
+
+## Third root cause: 128×128 physical-pupil sampling under-resolves broadband high-frequency WFE
+
+A seven-color deterministic-green-chief full-frame reference run finished successfully (2 lens × 3 fields × 7 wavelengths × 1 million Huygens rays, 5µm image sampling) after the stochastic-centering repair.
+
+It exposed another *implementation-level* error: **128² direct Huygens quadrature is insufficient for the full seven-color center MTF**, even though some individual red PSFs looked converged. The aspheric center-field λ-weighted **5 lp/mm MTF** with new n128 physical solver was ~0.609, versus independently reconstructed DeepLens ~0.723 (Δ0.114), while the **n256** direct field gives ~0.753 (Δ0.031). Signed complex OTF diagnostic confirmed this was NOT an arbitrary color sign/weight issue: e.g. n256 red/green per-color real OTFs vary smoothly and the summed seven-color center OTF was DeepLens 0.72057+...i versus Qfilm 0.75110+...i (magnitudes 0.72273 and 0.75339). No fitted correction was used.
+
+**Remediation in code:** `PhysicalHuygensConfig.pupil_n` now **defaults to 256**, and `physical_mode` fails closed if n<256 (detector must be at least 128). Qfilm0.3 old fast mode remains unchanged.
+
+### All 36×24mm seven-color full-frame metrics, with physically matched fixed chief
+
+Full 7-color Huygens 1M-ray reference uses the *same actual green stop-centered chief* for each monochromatic PSF on fixed film, avoiding independently shifted PSF windows. Qfilm old FFT uses n512+FFT2048; corrected physical Huygens uses **n256**, 128² detector (0.64mm), real source plane, exit Jacobian amplitude and recomputed FINAL J.
+
+| Lens | Field h | old FFT maximum abs MTF diff | corrected n256 Huygens maximum | old FFT mean abs | corrected n256 mean abs |
+|---|---:|---:|---:|---:|---:|
+| Singlet | 0 | 0.04874 | **0.01836** | 0.02886 | **0.00497** |
+| Singlet | 0.5 | 0.01972 | **0.01151** | 0.00364 | **0.00242** |
+| Singlet | 1 | 0.01690 | **0.01318** | 0.00334 | **0.00222** |
+| Internal-stop asphere | 0 | 0.06755 | **0.03142** | 0.05140 | **0.01058** |
+| Internal-stop asphere | 0.5 | 0.01762 | 0.01946 | 0.00345 | **0.00293** |
+| Internal-stop asphere | 1 | 0.01112 | **0.00873** | 0.00263 | **0.00240** |
+
+Final J based on **all 3 fields × 7 actual-wave PSFs** (no surrogate, unchanged feasibility and provisional non-MTF penalties):
+- Singlet FFT512 J 2.826412044 → new physical256 J **2.830613950**, complete computation 5.91s on RTX5090 (including old baseline).
+- Internal FFT512 J 0.956373255 → new physical256 J **0.963330391**, complete computation 18.63s on RTX5090 (including old baseline).
+
+All tests passed, source and raw data:
+- [Corrected seven-wave DeepLens fullframe PSF benchmark](https://github.com/wangteng1111/cots-LAMCTS/blob/workstation-results/remote/artifacts/qfilm03-poly-fixedchief-20261028-01/qfilm03_poly_fixed_chief/polychromatic_huygens_36x24_fixed_chief.json)
+- [256² physical Final-J regression vs matching DeepLens reference](https://github.com/wangteng1111/cots-LAMCTS/blob/workstation-results/remote/artifacts/qfilm03-physical-finalJ-fixedchief-256-20261028-01/qfilm03_physical_mode_fixedchief/fullframe_physical_finalJ_fixedchief_256.json)
+- [Signed 7-wave complex-OTF root cause test](https://github.com/wangteng1111/cots-LAMCTS/blob/workstation-results/remote/artifacts/qfilm03-signed-otf-center-20261028-01/qfilm03_signed_otf/signed_otf_center_ablation.json)
+- [Versioned correct-chief DeepLens reference fixture](https://github.com/wangteng1111/cots-LAMCTS/blob/main/validation/fixtures/qfilm03_fullframe_deeplens_poly_fixed_chief.json)
+
+### Caveats: physical accuracy not fully established
+
+- The fix addresses most of the *method disagreement* for **two synthetic, nominally perfect** test prescriptions, not all COTS lenses or real production MTF.
+- Independent DeepLens source ray sampling and window truncation remain finite (prior 1M→4M tests changed MTF by ~0.02–0.05); residual MTF deltas 0.008–0.031 are not guaranteed absolute truth errors.
+- Off-axis and large wavefront departures can require further **adaptive n256→384/512 pupil** and **detector window n128→192/256** convergence; current n256 is a minimum validated prototype, not a global convergence theorem.
+- Relative illumination, coatings, chromatic EE, polarization, true flux, mechanical tolerances remain preliminary.
+- `training_eligible=False`, `physics_certified=False`: no large-scale supervised pretraining labels should silently treat them as certified.
+- Default `evaluate(...fast...)` is still the original fast evaluator; users must explicitly choose `evaluate_physical_huygens`.
 
 ## Remaining blockers and strict next steps
 
