@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "qfilm04-11-real-lens-pilot-20261028-01",
+  "code_commit": "4d5f8f0f9065224d1b00f224476e66ff81503a01",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm04_real_lens_pilot.py"
+  ],
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
