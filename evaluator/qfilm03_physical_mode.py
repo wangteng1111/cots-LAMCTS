@@ -14,7 +14,7 @@ from evaluator.qfilm03_physical_huygens import Propagation,eval_fixed_film,coher
 
 @dataclass(frozen=True)
 class PhysicalHuygensConfig:
-    pupil_n:int=128
+    pupil_n:int=256
     detector_n:int=128
     detector_pitch_um:float=5.
     detector_block:int=384
@@ -26,8 +26,8 @@ class PhysicalHuygensConfig:
                     pixel_pitch_um=self.detector_pitch_um,
                     pixel_block=self.detector_block,weight_mode=self.amplitude_mode,
                     frame_width_mm=base.frame_width_mm,frame_height_mm=base.frame_height_mm).validate()
-        if self.pupil_n<128 or self.detector_n<128:
-            raise ValueError("physical Final-J requires at least 128x128 pupil and detector sampling")
+        if self.pupil_n<256 or self.detector_n<128:
+            raise ValueError("physical Final-J requires at least a 256x256 pupil and 128x128 detector")
         if not (0<=self.max_bad_exit_jacobian_fraction<=0.1):
             raise ValueError("invalid Jacobian validity threshold")
         if max(base.frequencies_lpmm)>=500./self.detector_pitch_um:
@@ -86,7 +86,7 @@ def evaluate(source,config:Config=Config(),device="cuda:0",
     out=dict(baseline)
     out["Q_image"]=q
     out["quality"]=score_image(q,baseline["area_weights"])
-    out.update(schema="QfilmResult-0.3",version="Qfilm0.3-physical-direct-huygens-v1",
+    out.update(schema="QfilmResult-0.3",version="Qfilm0.3-physical-direct-huygens-v2",
        physics_status="provisional_fixed_film_exit_huygens_jacobian",
        training_eligible=False,physics_certified=False,certified=False,
        physical_metadata={"pupil_n":physical.pupil_n,"detector_n":physical.detector_n,
