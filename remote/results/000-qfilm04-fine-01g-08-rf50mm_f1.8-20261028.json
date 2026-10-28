@@ -19,10 +19,13 @@
   },
   "hostname": "aipss-Rack-Server",
   "job_id": "000-qfilm04-fine-01g-08-rf50mm_f1.8-20261028",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 420314,
   "request_sha256": "7c8828d34cae40858df2c4114a9ae2056e87654d3e6ac0b7303230f46a7b8299",
   "schema": 1,
   "started_at": 1793224774.1459332,
   "state": "running",
-  "timeout_sec": 172800
+  "timeout_sec": 172800,
+  "updated_at": 1793224777.6933944
 }
