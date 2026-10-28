@@ -17,10 +17,12 @@ class Propagation:
     pixel_n:int=128
     pixel_pitch_um:float=5.
     pixel_block:int=32
+    frame_width_mm:float=36.
+    frame_height_mm:float=24.
     weight_mode:str="uniform_stop"
     obliquity:str="deep_ray"
     def validate(self):
-        if self.pupil_n<16 or self.pixel_n<16 or self.pixel_block<1:
+        if self.pupil_n<16 or self.pixel_n<16 or self.pixel_block<1 or self.frame_width_mm<=0 or self.frame_height_mm<=0:
             raise ValueError("bad physical-grid dimensions")
         if self.weight_mode not in ("uniform_stop","sqrt_exit_jac"):
             raise ValueError("invalid wave amplitude mode")
@@ -29,7 +31,7 @@ def eval_fixed_film(p,wave_nm,field_h,config=Propagation(),device="cuda:0"):
     config.validate()
     stop=float(p["stop_z_mm"]);film=float(p["image_z_mm"])
     rs=float(p["design_spec"]["stop_diameter_mm"])/2.
-    alpha=math.atan(field_h*math.hypot(36.,24.)/2/p["design_spec"]["efl_target_mm"])
+    alpha=math.atan(field_h*math.hypot(config.frame_width_mm,config.frame_height_mm)/2/p["design_spec"]["efl_target_mm"])
     angles=torch.tensor([[alpha]],dtype=torch.float64,device=device)
     pupil_n=config.pupil_n
     uv,inside=pupil_grid(pupil_n,device)
