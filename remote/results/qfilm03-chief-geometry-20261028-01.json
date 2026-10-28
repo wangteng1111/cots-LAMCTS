@@ -1,0 +1,16 @@
+{
+  "args": [
+    "validation/qfilm03_chief_geometry.py"
+  ],
+  "code_commit": "43ee3b6b6320c88ddbbe630a489549c82f222799",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm03-chief-geometry-20261028-01",
+  "memory_gb": 0,
+  "request_sha256": "dc4d7a95255a43302ab94014e6dad8a42341a67a1d9742b64c58968a5b3d6710",
+  "schema": 1,
+  "started_at": 1793172399.3603451,
+  "state": "running",
+  "timeout_sec": 1800
+}
