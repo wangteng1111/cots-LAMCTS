@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "qfilm03-fullframe-1024-20261028-01",
+  "code_commit": "d96f751f434306b1625c0da6fbc3df3453abe260",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm03_highres_fullframe.py"
+  ],
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
