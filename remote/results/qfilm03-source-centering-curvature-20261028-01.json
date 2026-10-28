@@ -1,0 +1,16 @@
+{
+  "args": [
+    "validation/qfilm03_source_sampling_centroid_ablation.py"
+  ],
+  "code_commit": "cbecad062e0474eea6e04175194a9d720b185991",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm03-source-centering-curvature-20261028-01",
+  "memory_gb": 0,
+  "request_sha256": "e90725691d8d522183421739ab2e90c187ad88d5e07d58a3d90b669801bb4489",
+  "schema": 1,
+  "started_at": 1793179928.1102047,
+  "state": "running",
+  "timeout_sec": 1200
+}
