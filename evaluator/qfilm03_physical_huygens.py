@@ -24,12 +24,14 @@ class Propagation:
     weight_mode:str="uniform_stop"
     obliquity:str="deep_ray"
     def validate(self):
+        if not math.isfinite(self.pixel_pitch_um) or self.pixel_pitch_um<=0:
+            raise ValueError("physical pixel pitch must be finite and positive")
         if self.pupil_n<16 or self.pixel_n<16 or self.pixel_block<1 or self.frame_width_mm<=0 or self.frame_height_mm<=0:
             raise ValueError("bad physical-grid dimensions")
         if self.weight_mode not in ("uniform_stop","sqrt_exit_jac"):
             raise ValueError("invalid wave amplitude mode")
 
-def eval_fixed_film(p,wave_nm,field_h,config=Propagation(),device="cuda:0"):
+def eval_fixed_film(p,wave_nm,field_h,config=Propagation(),device="cuda:0",progress_callback=None):
     config.validate()
     stop=float(p["stop_z_mm"]);film=float(p["image_z_mm"])
     rs=float(p["design_spec"]["stop_diameter_mm"])/2.
@@ -87,6 +89,8 @@ def eval_fixed_film(p,wave_nm,field_h,config=Propagation(),device="cuda:0"):
         z_distance=film-exit_z
         k=2*math.pi/(wave_nm*1e-6)
         accum=[]
+        if progress_callback is not None:
+            progress_callback(0,n*n)
         for start in range(0,n*n,config.pixel_block):
             sx=px[start:start+config.pixel_block,None]
             sy=py[start:start+config.pixel_block,None]
@@ -95,6 +99,8 @@ def eval_fixed_film(p,wave_nm,field_h,config=Propagation(),device="cuda:0"):
             ob=(1+dirz[None,:])/2 if config.obliquity=="deep_ray" else (1+z_distance/r)/2
             E=(torch.polar(torch.ones_like(phase),phase)*(A[None,:]*ob/r)).sum(-1)
             accum.append(E)
+            if progress_callback is not None:
+                progress_callback(min(start+config.pixel_block,n*n),n*n)
         field=torch.cat(accum).reshape(n,n)
         psf=field.abs().square()
         energy=psf.sum()

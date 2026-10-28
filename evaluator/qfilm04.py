@@ -19,8 +19,12 @@ from evaluator.qfilm03_physical_mode import (
 VERSION="Qfilm0.4"
 CPU="Qfilm0.4-c"
 GPU="Qfilm0.4-g"
+# Retain the 0.64 mm support while removing the legacy 5 um point grid.
+# Changing pitch alone with 128 pixels would shrink support twenty-fold.
+DEFAULT_PHYSICAL=PhysicalHuygensConfig(detector_n=2560,detector_pitch_um=.25,
+                                     detector_block=64)
 
-def evaluate(source,config:Config=Config(),physical:PhysicalHuygensConfig=PhysicalHuygensConfig(),
+def evaluate(source,config:Config=Config(),physical:PhysicalHuygensConfig=DEFAULT_PHYSICAL,
              backend:Literal["c","g"]="g",gpu_index:int=0):
     """Evaluate complete candidate's physical image-plane final score on CPU or GPU."""
     if backend not in ("c","g"):
@@ -59,9 +63,9 @@ def main():
     ap.add_argument("--prescription",required=True,help="Qfilm-native sequential optical prescription JSON")
     ap.add_argument("--fields",type=int,default=100)
     ap.add_argument("--pupil",type=int,default=256)
-    ap.add_argument("--detector",type=int,default=128)
-    ap.add_argument("--detector-pitch-um",type=float,default=5.)
-    ap.add_argument("--detector-block",type=int,default=384)
+    ap.add_argument("--detector",type=int,default=2560)
+    ap.add_argument("--detector-pitch-um",type=float,default=.25)
+    ap.add_argument("--detector-block",type=int,default=64)
     ap.add_argument("--gpu-index",type=int,default=0)
     ap.add_argument("--output",help="Optional machine-readable full Q/J JSON output")
     args=ap.parse_args()
