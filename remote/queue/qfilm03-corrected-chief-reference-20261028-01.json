@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "qfilm03-corrected-chief-reference-20261028-01",
+  "code_commit": "96c1887585f2a6f8126381f5cda63aa419b5e985",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm03_corrected_reference_chief_regression.py"
+  ],
+  "timeout_sec": 900,
+  "memory_gb": 0
+}
