@@ -265,7 +265,15 @@ def _surfaces_at(surfs,lam):
         # Exact supplier Sellmeier dispersion when provided; legacy n/V uses
         # estimated Cauchy and must retain a provenance flag in Qfilm metadata.
         sell=val('sellmeier',None)
-        if sell is not None:
+        ntable=val('n_by_lambda_nm',None)
+        if ntable is not None:
+            key=str(int(lam)) if float(lam).is_integer() else str(float(lam))
+            if key not in ntable:
+                raise ValueError('missing explicitly tabulated glass index at wavelength '+key)
+            n2=float(ntable[key])
+            if not 0.999<=n2<=3. or not math.isfinite(n2):
+                raise ValueError('invalid explicit material index at wavelength '+key)
+        elif sell is not None:
             B=sell.get('B') if isinstance(sell,dict) else sell[0]
             C=sell.get('C') if isinstance(sell,dict) else sell[1]
             if len(B)!=3 or len(C)!=3:
