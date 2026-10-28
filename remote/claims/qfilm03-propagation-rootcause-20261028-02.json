@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1793178664.9412892,
+  "code_commit": "fa1cbd314b759141cec2fc43e3a9ed225fd6906b",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm03-propagation-rootcause-20261028-02",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/qfilm03-propagation-rootcause-20261028-02.json",
+  "request_sha256": "d10a028ba033f042ece2d79eedc0f84bba04fbd73616f61f5010913e20c0e24a",
+  "schema": 1,
+  "state": "claimed"
+}
