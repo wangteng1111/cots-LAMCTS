@@ -7,8 +7,8 @@ import os,sys,json,math,types,time,traceback
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 import numpy as np,torch
-from deeplens.light import Ray
 from validation.qfilm_deeplens_same_prescription import (thin_lens,internal_stop_positive_lens,conversion,mtf_from_psf,BK7)
+from deeplens.light import Ray
 from validation.qfilm03_huygens_safechunk import patch_huygens
 from evaluator.qfilm02 import pupil_grid,_surfaces_at,_start_for_stop,trace_pupil
 from evaluator.qfilm03_physical_huygens import Propagation,eval_fixed_film,mtf_from_psf_exact
