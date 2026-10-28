@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "qfilm03-exit-pupil-plane-20261028-01",
+  "code_commit": "932e66ad0512129e4cdcaf8e0ddfe17a385e179e",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm03_exit_pupil_positions.py"
+  ],
+  "timeout_sec": 300,
+  "memory_gb": 0
+}
