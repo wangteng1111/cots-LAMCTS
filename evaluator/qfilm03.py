@@ -28,11 +28,14 @@ class ValidationConfig:
     physical_sensor_width_mm: float = 12.8
     max_mtf_disagreement: float = 0.04
     base_backend: str = "torch"  # torch | hybrid; torch does not need Triton JIT
+    reference_centering: str = "deterministic_physical_chief"  # alternative: native_stochastic
     source_dir: str = "/var/lib/cots-lamcts/deeplens_upstream"
 
     def validate(self,config):
         if self.mode not in ("fast","verify"): raise ValueError("mode must be fast or verify")
         if self.base_backend not in ("torch","hybrid"): raise ValueError("unknown Qfilm backend")
+        if self.reference_centering not in ("deterministic_physical_chief","native_stochastic"):
+            raise ValueError("unsupported Huygens reference PSF centering")
         if not (0<self.wavelength_nm and math.isfinite(self.wavelength_nm)): raise ValueError("bad wavelength")
         if self.huygens_spp<1024 or self.sensor_resolution<128 or self.psf_kernel<16:raise ValueError("under-resolved reference")
         if self.psf_kernel>self.sensor_resolution:raise ValueError("invalid PSF crop")
@@ -125,7 +128,7 @@ def _reference(source,cfg,rcfg,qfilm,device):
                 "huygens_spp":rcfg.huygens_spp,"sensor_resolution":rcfg.sensor_resolution,
                 "sensor_pixel_mm":float(lens.pixel_size),"psf_kernel":rcfg.psf_kernel,
                 "psf_window_mm":float(lens.pixel_size)*rcfg.psf_kernel,
-                "wavelength_nm":rcfg.wavelength_nm,"fields":[]}
+                "wavelength_nm":rcfg.wavelength_nm,"reference_centering":rcfg.reference_centering,"fields":[]}
         if not math.isfinite(depefl) or depefl<=0 or efl_delta>0.005:
             result["status"]="geometry_mismatch_or_non_imaging"
             return result
@@ -137,10 +140,38 @@ def _reference(source,cfg,rcfg,qfilm,device):
             alpha=math.atan(h_actual*image_radius/cfg.target_efl_mm)
             normalized_y=math.tan(alpha)*depefl/(float(lens.sensor_size[1])/2)
             point=[0.0,float(normalized_y),-1.0e6]
-            # DeepLens uses Y field; Qfilm uses X. Align T/S with the radial field
-            psf,elapsed=_clock(lambda:lens.psf_huygens(
-                points=point,ks=rcfg.psf_kernel,
-                wvln=rcfg.wavelength_nm*1e-3,spp=rcfg.huygens_spp,recenter=True))
+            # Native upstream Huygens samples only SPP_PSF=8192 additional
+            # rays to guess the chief-ray-centered PSF window, independent of
+            # its million-ray coherent integration. That stochastic center
+            # changes red off-axis MTF by as much as 0.256 in matched tests.
+            # Anchor the detector patch to the exact Qfilm physical-stop
+            # chief intercept; ray positions/OPL themselves have matched the
+            # independent DeepLens trace to ~1e-10 micrometer.
+            old_center=lens.psf_center
+            exact_chief_x=None
+            if rcfg.reference_centering=="deterministic_physical_chief":
+                import types
+                from evaluator.qfilm02 import _surfaces_at,trace_pupil
+                a=torch.tensor([[alpha]],dtype=torch.float64,device=device)
+                zero=torch.zeros((1,2),dtype=torch.float64,device=device)
+                ss=_surfaces_at(src["surfaces"],rcfg.wavelength_nm)
+                stop_r=float(src["design_spec"]["stop_diameter_mm"])/2.
+                chief=trace_pupil(ss,a,zero,float(src["stop_z_mm"]),stop_r,float(src["image_z_mm"]))
+                if not bool(chief[6].all()):
+                    raise ValueError("cannot center reference: invalid actual chief ray")
+                exact_chief_x=float(chief[4].item())
+                def deterministic_center(self,points_obj,method="chief_ray",ray=None):
+                    # DeepLens input field along +Y => output image along -Y.
+                    # PSF routine applies pointc = -psf_center(...).
+                    return torch.tensor([[0.,exact_chief_x]],dtype=torch.float64,device=device)
+                lens.psf_center=types.MethodType(deterministic_center,lens)
+            try:
+                # DeepLens uses Y field; Qfilm uses X. Align T/S with the radial field.
+                psf,elapsed=_clock(lambda:lens.psf_huygens(
+                    points=point,ks=rcfg.psf_kernel,
+                    wvln=rcfg.wavelength_nm*1e-3,spp=rcfg.huygens_spp,recenter=True))
+            finally:
+                lens.psf_center=old_center
             px,py=mtf_from_psf(psf.detach().cpu().numpy(),float(lens.pixel_size),freqs)
             if fi==0: tang,sag=px,py
             else: tang,sag=py,px
@@ -148,6 +179,7 @@ def _reference(source,cfg,rcfg,qfilm,device):
             dt=np.abs(np.asarray(tang)-np.asarray(q[10:20]))
             ds=np.abs(np.asarray(sag)-np.asarray(q[20:30]))
             entry={"field_index":fi,"field_h":h_actual,"angle_rad":alpha,
+                   "reference_chief_x_mm":exact_chief_x,
                    "huygens_seconds":elapsed,"psf_sum":float(psf.sum().item()),
                    "mtf_t":tang,"mtf_s":sag,"qfilm_t":q[10:20].tolist(),
                    "qfilm_s":q[20:30].tolist(),
