@@ -22,16 +22,16 @@ F=(5.,10.,15.,20.,30.,40.,50.,60.,70.,80.)
 CASES=[("singlet",670.,0.),("singlet",670.,.1),("singlet",550.,0.),
        ("internal_stop_asphere",670.,0.),("internal_stop_asphere",670.,.1),
        ("internal_stop_asphere",670.,.2),("internal_stop_asphere",550.,0.)]
-def run_point(lens,p,w,h,mode_spp,ks,seed):
+def run_point(lens,p,w,h,mode_spp,ks,seed,depth_mm=1.e6):
     angle=math.atan(h*math.hypot(36.,24.)/2/p["design_spec"]["efl_target_mm"])
-    point=[0.,math.tan(angle)*float(lens.foclen)/(float(lens.sensor_size[1])/2),-1e6]
+    point=[0.,math.tan(angle)*float(lens.foclen)/(float(lens.sensor_size[1])/2),-float(depth_mm)]
     torch.manual_seed(seed)
     start=time.perf_counter()
     with torch.inference_mode():psf=lens.psf_huygens(points=point,ks=ks,wvln=w*.001,spp=mode_spp,recenter=True)
     torch.cuda.synchronize()
     px,py=mtf_from_psf(psf.detach().cpu().numpy(),float(lens.pixel_size),F)
     t,s=(px,py) if abs(h)<1e-12 else (py,px)
-    return {"spp":mode_spp,"ks":ks,"physical_window_mm":ks*float(lens.pixel_size),
+    return {"spp":mode_spp,"ks":ks,"object_distance_mm":float(depth_mm),"physical_window_mm":ks*float(lens.pixel_size),
             "elapsed_s":time.perf_counter()-start,"PSF_sum":float(psf.sum()),
             "MTF":list(t)+list(s)}
 def main():
@@ -77,6 +77,19 @@ def main():
                     record["conditions"].append({"spp":spp,"ks":ks,"error":repr(e)})
                     print("HCONV_FAIL",name,w,h,spp,ks,repr(e),flush=True)
                 PATH.write_text(json.dumps(d,indent=2)+"\n")
+            # Far-field normalization check: DeepLens internally converts the
+            # normalized input to actual object-space coordinates via -depth/focal.
+            # A 1-km source is not a mathematical plane wave; quantify this error.
+            if w==670. and (name=="singlet" and h==0. or name=="internal_stop_asphere" and h==.1):
+                for distance in (1.e7,1.e8):
+                    try:
+                        r=run_point(lens,p,w,h,1000000,128,seed,depth_mm=distance)
+                        r["Qfilm_reference_MTF_max_abs"]=float(np.max(np.abs(np.asarray(r["MTF"])-np.asarray(qa))))
+                        record["conditions"].append(r)
+                        print("DISTANCE",name,w,h,distance,r["Qfilm_reference_MTF_max_abs"],flush=True)
+                    except Exception as exc:
+                        record["conditions"].append({"spp":1000000,"ks":128,"object_distance_mm":distance,"error":repr(exc)})
+                    PATH.write_text(json.dumps(d,indent=2)+"\n")
             arr=[x for x in record["conditions"] if "MTF" in x]
             def get(spp,ks):
                 return next((np.asarray(x["MTF"]) for x in arr if x["spp"]==spp and x["ks"]==ks),None)
