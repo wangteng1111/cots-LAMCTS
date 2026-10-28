@@ -7,10 +7,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm03-exit-pupil-plane-20261028-01",
+  "log_tail": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/qfilm03-exit-pupil-plane-20261028-01/src/validation/qfilm03_exit_pupil_positions.py\", line 9, in <module>\n    from deeplens import GeoLens\nModuleNotFoundError: No module named 'deeplens'",
   "memory_gb": 0,
+  "pid": 371622,
   "request_sha256": "deeec525f3756a13013acb4476d50aaf8506b48829b6f717aadf7a6d894852a8",
   "schema": 1,
   "started_at": 1793179083.115831,
   "state": "running",
-  "timeout_sec": 300
+  "timeout_sec": 300,
+  "updated_at": 1793179086.0880327
 }
