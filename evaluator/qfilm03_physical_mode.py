@@ -23,7 +23,8 @@ class PhysicalHuygensConfig:
     def validate(self,base):
         Propagation(pupil_n=self.pupil_n,pixel_n=self.detector_n,
                     pixel_pitch_um=self.detector_pitch_um,
-                    pixel_block=self.detector_block,weight_mode=self.amplitude_mode).validate()
+                    pixel_block=self.detector_block,weight_mode=self.amplitude_mode,
+                    frame_width_mm=base.frame_width_mm,frame_height_mm=base.frame_height_mm).validate()
         if max(base.frequencies_lpmm)>=500./self.detector_pitch_um:
             raise ValueError("physical detector frequency exceeds Nyquist")
         if self.detector_n*self.detector_pitch_um*1e-3<.25:
@@ -42,7 +43,8 @@ def evaluate(source,config:Config=Config(),device="cuda:0",
     freq=np.asarray(config.frequencies_lpmm,dtype=float)
     setup=Propagation(pupil_n=physical.pupil_n,pixel_n=physical.detector_n,
        pixel_pitch_um=physical.detector_pitch_um,
-       pixel_block=physical.detector_block,weight_mode=physical.amplitude_mode)
+       pixel_block=physical.detector_block,weight_mode=physical.amplitude_mode,
+       frame_width_mm=config.frame_width_mm,frame_height_mm=config.frame_height_mm)
     raw=[]
     for fi in range(config.fields):
         h=float(fi)/(config.fields-1)
