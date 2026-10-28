@@ -7,10 +7,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm03-physical-finalJ-20261028-01",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 371000,
   "request_sha256": "c5d4531d68b22d9e426e6fcaad138ce102281225057eb97d94dd22572fc66458",
   "schema": 1,
   "started_at": 1793178953.533087,
   "state": "running",
-  "timeout_sec": 1800
+  "timeout_sec": 1800,
+  "updated_at": 1793178959.624886
 }
