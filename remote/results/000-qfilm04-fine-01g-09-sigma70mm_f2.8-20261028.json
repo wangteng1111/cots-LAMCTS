@@ -1,0 +1,28 @@
+{
+  "args": [
+    "validation/qfilm04_fine_11_cpu_gpu.py",
+    "--backend",
+    "g",
+    "--names",
+    "sigma70mm_f2.8",
+    "--fields",
+    "3",
+    "--threads",
+    "2"
+  ],
+  "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {
+    "MKL_NUM_THREADS": "2",
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "000-qfilm04-fine-01g-09-sigma70mm_f2.8-20261028",
+  "memory_gb": 0,
+  "request_sha256": "4d1e44c40e1c90e19ad8e1fac3ded0f9e38204e1e3199fe2a1fbbf3fcae90708",
+  "schema": 1,
+  "started_at": 1793218843.6939533,
+  "state": "running",
+  "timeout_sec": 172800
+}
