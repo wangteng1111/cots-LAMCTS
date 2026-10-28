@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/qfilm03-exit-pupil-plane-20261028-02/src/validation/qfilm03_exit_pupil_positions.py", line 20, in <module>
+    surface_vertices=[float(s.d) for s in lens.surfaces]
+                            ^^^
+AttributeError: 'Aperture' object has no attribute 'd'
