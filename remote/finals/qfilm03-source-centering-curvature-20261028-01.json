@@ -1,0 +1,42 @@
+{
+  "args": [
+    "validation/qfilm03_source_sampling_centroid_ablation.py"
+  ],
+  "bridge_version": "0.5.0",
+  "code_commit": "cbecad062e0474eea6e04175194a9d720b185991",
+  "elapsed_sec": 32.626819372177124,
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "finished_at": 1793179960.737024,
+  "hostname": "aipss-Rack-Server",
+  "immutable_job_id": true,
+  "job_id": "qfilm03-source-centering-curvature-20261028-01",
+  "log_tail": "/var/lib/cots-lamcts/deeplens_upstream/deeplens/geolens_pkg/psf_compute.py:158: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  point_obj_x = points[..., 0] * scale * sensor_w / 2\nSOURCE_AUDIT singlet 670.0 0.0 {\"chief_only\": {\"max\": 0.0307466490477303, \"mean\": 0.00517236342184533}, \"finite_source_effect\": {\"max\": 0.0032659934588301354, \"mean\": 0.0015767094013442774}, \"random_vs_deterministic_plane\": {\"max\": 0.021058894164251996, \"mean\": 0.012141031412311543}, \"random_vs_deterministic_finite\": {\"max\": 0.021038954801818943, \"mean\": 0.010648640236754516}}\nSOURCE_AUDIT singlet 670.0 0.1 {\"chief_only\": {\"max\": 0.2564617641027125, \"mean\": 0.05780785197886602}, \"finite_source_effect\": {\"max\": 0.005511317925252168, \"mean\": 0.0022480471459828772}, \"random_vs_deterministic_plane\": {\"max\": 0.01755221791386541, \"mean\": 0.008503856936472664}, \"random_vs_deterministic_finite\": {\"max\": 0.0178416471974997, \"mean\": 0.00978277626728331}}\nSOURCE_AUDIT internal_stop_asphere 670.0 0.1 {\"chief_only\": {\"max\": 0.1600042356550947, \"mean\": 0.060795693887716176}, \"finite_source_effect\": {\"max\": 0.011502572600076463, \"mean\": 0.002763584698830915}, \"random_vs_deterministic_plane\": {\"max\": 0.03130160664542625, \"mean\": 0.015171145001465635}, \"random_vs_deterministic_finite\": {\"max\": 0.03164351591075665, \"mean\": 0.013957956455273706}}\nSOURCE_COMPLETE [{\"case\": \"singlet\", \"lambda_nm\": 670.0, \"field_h\": 0.0, \"comparisons\": {\"chief_only\": {\"max\": 0.0307466490477303, \"mean\": 0.00517236342184533}, \"finite_source_effect\": {\"max\": 0.0032659934588301354, \"mean\": 0.0015767094013442774}, \"random_vs_deterministic_plane\": {\"max\": 0.021058894164251996, \"mean\": 0.012141031412311543}, \"random_vs_deterministic_finite\": {\"max\": 0.021038954801818943, \"mean\": 0.010648640236754516}}}, {\"case\": \"singlet\", \"lambda_nm\": 670.0, \"field_h\": 0.1, \"comparisons\": {\"chief_only\": {\"max\": 0.2564617641027125, \"mean\": 0.05780785197886602}, \"finite_source_effect\": {\"max\": 0.005511317925252168, \"mean\": 0.0022480471459828772}, \"random_vs_deterministic_plane\": {\"max\": 0.01755221791386541, \"mean\": 0.008503856936472664}, \"random_vs_deterministic_finite\": {\"max\": 0.0178416471974997, \"mean\": 0.00978277626728331}}}, {\"case\": \"internal_stop_asphere\", \"lambda_nm\": 670.0, \"field_h\": 0.1, \"comparisons\": {\"chief_only\": {\"max\": 0.1600042356550947, \"mean\": 0.060795693887716176}, \"finite_source_effect\": {\"max\": 0.011502572600076463, \"mean\": 0.002763584698830915}, \"random_vs_deterministic_plane\": {\"max\": 0.03130160664542625, \"mean\": 0.015171145001465635}, \"random_vs_deterministic_finite\": {\"max\": 0.03164351591075665, \"mean\": 0.013957956455273706}}}]",
+  "memory_gb": 0,
+  "pid": 377476,
+  "request_sha256": "e90725691d8d522183421739ab2e90c187ad88d5e07d58a3d90b669801bb4489",
+  "retry_policy": "new_job_id_required",
+  "returncode": 0,
+  "schema": 1,
+  "started_at": 1793179928.1102047,
+  "state": "finished",
+  "timeout_sec": 1200,
+  "updated_at": 1793179930.6218774,
+  "uploaded_artifacts": [
+    {
+      "path": "qfilm03_source_wavefield/internal_stop_asphere.json",
+      "size": 903,
+      "uploaded": true
+    },
+    {
+      "path": "qfilm03_source_wavefield/random_chief_and_source_curvature.json",
+      "size": 13202,
+      "uploaded": true
+    },
+    {
+      "path": "qfilm03_source_wavefield/singlet.json",
+      "size": 569,
+      "uploaded": true
+    }
+  ]
+}
