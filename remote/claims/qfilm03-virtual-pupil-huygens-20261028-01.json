@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1793179503.0961528,
+  "code_commit": "9035c88973d9607725be83c5fb032cd69d582f05",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm03-virtual-pupil-huygens-20261028-01",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/qfilm03-virtual-pupil-huygens-20261028-01.json",
+  "request_sha256": "99f6ae0d6c9802e64166d4bfa6dad2c802950fc08785ae6fa1d6e01b2d14f7f8",
+  "schema": 1,
+  "state": "claimed"
+}
