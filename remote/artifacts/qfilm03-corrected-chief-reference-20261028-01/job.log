@@ -1,0 +1,7 @@
+/var/lib/cots-lamcts/jobs/qfilm03-corrected-chief-reference-20261028-01/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)
+  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)
+CENTER_VERIFY singlet native_stochastic maximum_diff 0.30102706799124285 efl_error 5.459727745460441e-07
+CENTER_VERIFY singlet deterministic_physical_chief maximum_diff 0.313482596633342 efl_error 5.459727745460441e-07
+CENTER_VERIFY internal_stop_asphere native_stochastic maximum_diff 0.3006875745842297 efl_error 4.624742544478977e-07
+CENTER_VERIFY internal_stop_asphere deterministic_physical_chief maximum_diff 0.2740829000390208 efl_error 4.624742544478977e-07
+CORRECTED_VERIFY_PASS 4
