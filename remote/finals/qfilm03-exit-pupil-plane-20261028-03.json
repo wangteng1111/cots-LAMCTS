@@ -1,0 +1,37 @@
+{
+  "args": [
+    "validation/qfilm03_exit_pupil_positions.py"
+  ],
+  "bridge_version": "0.5.0",
+  "code_commit": "d508e8f35888eb3ac67f9cfaeaa5cec77c0618e2",
+  "elapsed_sec": 11.617049217224121,
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "finished_at": 1793179319.6670542,
+  "hostname": "aipss-Rack-Server",
+  "immutable_job_id": true,
+  "job_id": "qfilm03-exit-pupil-plane-20261028-03",
+  "log_tail": "EXIT_PUPIL singlet {\"exit_pupil_z_mm\": 1.3417471956122748, \"exit_pupil_radius_mm\": 4.325010207333447, \"entrance_pupil_z_mm\": 0.0, \"entrance_pupil_radius_mm\": 4.0, \"surface_vertex_z_mm\": [0.0, 2.0, 7.0], \"film_z_mm\": 54.55, \"last_refracting_vertex_mm\": 7.0, \"stop_index\": 0, \"stop_z_mm\": 0.0}\nEXIT_PUPIL internal_stop_asphere {\"exit_pupil_z_mm\": 8.101883821080929, \"exit_pupil_radius_mm\": 4.208456149096166, \"entrance_pupil_z_mm\": 5.936058060558965, \"entrance_pupil_radius_mm\": 4.2361884428348935, \"surface_vertex_z_mm\": [0.0, 4.0, 7.0, 10.0, 14.0], \"film_z_mm\": 51.4228, \"last_refracting_vertex_mm\": 14.0, \"stop_index\": 2, \"stop_z_mm\": 7.0}\nDONE {\"singlet\": {\"exit_pupil_z_mm\": 1.3417471956122748, \"exit_pupil_radius_mm\": 4.325010207333447, \"entrance_pupil_z_mm\": 0.0, \"entrance_pupil_radius_mm\": 4.0, \"surface_vertex_z_mm\": [0.0, 2.0, 7.0], \"film_z_mm\": 54.55, \"last_refracting_vertex_mm\": 7.0, \"stop_index\": 0, \"stop_z_mm\": 0.0}, \"internal_stop_asphere\": {\"exit_pupil_z_mm\": 8.101883821080929, \"exit_pupil_radius_mm\": 4.208456149096166, \"entrance_pupil_z_mm\": 5.936058060558965, \"entrance_pupil_radius_mm\": 4.2361884428348935, \"surface_vertex_z_mm\": [0.0, 4.0, 7.0, 10.0, 14.0], \"film_z_mm\": 51.4228, \"last_refracting_vertex_mm\": 14.0, \"stop_index\": 2, \"stop_z_mm\": 7.0}}",
+  "memory_gb": 0,
+  "pid": 373418,
+  "request_sha256": "00e8e4ca388b3ae56aa95058cd290308ae819aabf126ac5ff83c129b9e259ea2",
+  "retry_policy": "new_job_id_required",
+  "returncode": 0,
+  "schema": 1,
+  "started_at": 1793179308.050005,
+  "state": "finished",
+  "timeout_sec": 300,
+  "updated_at": 1793179311.2755318,
+  "uploaded_artifacts": [
+    {
+      "path": "internal_stop_asphere_exit.json",
+      "size": 903,
+      "uploaded": true
+    },
+    {
+      "path": "singlet_exit.json",
+      "size": 569,
+      "uploaded": true
+    }
+  ]
+}
