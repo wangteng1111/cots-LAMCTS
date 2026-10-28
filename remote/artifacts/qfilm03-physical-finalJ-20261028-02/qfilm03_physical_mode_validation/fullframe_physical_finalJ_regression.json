@@ -1,0 +1,82 @@
+{
+  "schema": "Qfilm03-physical-finalJ-v1",
+  "cases": {
+    "singlet": {
+      "seconds": 2.7647003401070833,
+      "old_J": 2.826412044053487,
+      "physical_J": 2.8271948397242417,
+      "old_schema": "QfilmResult-0.2",
+      "physical_schema": "QfilmResult-0.3",
+      "physical_certified": false,
+      "training_eligible": false,
+      "per_field": [
+        {
+          "h": 0,
+          "baseline_max_abs_vs_deeplens": 0.04868460462482427,
+          "physical_max_abs_vs_deeplens": 0.02158972616687882,
+          "baseline_mean_abs_vs_deeplens": 0.028795978647675885,
+          "physical_mean_abs_vs_deeplens": 0.003819690739793698,
+          "max_physical_vs_baseline": 0.04722149743010198,
+          "quality_improvement_in_max_abs": 0.027094878457945448
+        },
+        {
+          "h": 0.5,
+          "baseline_max_abs_vs_deeplens": 0.020511420180328276,
+          "physical_max_abs_vs_deeplens": 0.017169217109647507,
+          "baseline_mean_abs_vs_deeplens": 0.0037389931925808175,
+          "physical_mean_abs_vs_deeplens": 0.004031266717882463,
+          "max_physical_vs_baseline": 0.016523639220043816,
+          "quality_improvement_in_max_abs": 0.0033422030706807687
+        },
+        {
+          "h": 1,
+          "baseline_max_abs_vs_deeplens": 0.01705177503346873,
+          "physical_max_abs_vs_deeplens": 0.01730594002820383,
+          "baseline_mean_abs_vs_deeplens": 0.003265353306160082,
+          "physical_mean_abs_vs_deeplens": 0.0046160500848450746,
+          "max_physical_vs_baseline": 0.0130679407747946,
+          "quality_improvement_in_max_abs": -0.000254164994735101
+        }
+      ]
+    },
+    "internal_stop_asphere": {
+      "seconds": 15.26956706121564,
+      "old_J": 0.9563732553565802,
+      "physical_J": 0.9637061246969125,
+      "old_schema": "QfilmResult-0.2",
+      "physical_schema": "QfilmResult-0.3",
+      "physical_certified": false,
+      "training_eligible": false,
+      "per_field": [
+        {
+          "h": 0,
+          "baseline_max_abs_vs_deeplens": 0.06723371403611896,
+          "physical_max_abs_vs_deeplens": 0.1142054302243003,
+          "baseline_mean_abs_vs_deeplens": 0.050605110234812914,
+          "physical_mean_abs_vs_deeplens": 0.014153883109744646,
+          "max_physical_vs_baseline": 0.15754770929663386,
+          "quality_improvement_in_max_abs": -0.04697171618818134
+        },
+        {
+          "h": 0.5,
+          "baseline_max_abs_vs_deeplens": 0.018811542963512767,
+          "physical_max_abs_vs_deeplens": 0.030244249078425062,
+          "baseline_mean_abs_vs_deeplens": 0.0035805613211110907,
+          "physical_mean_abs_vs_deeplens": 0.0053729812179907546,
+          "max_physical_vs_baseline": 0.02124392483775444,
+          "quality_improvement_in_max_abs": -0.011432706114912296
+        },
+        {
+          "h": 1,
+          "baseline_max_abs_vs_deeplens": 0.012579455223769562,
+          "physical_max_abs_vs_deeplens": 0.01330721753070918,
+          "baseline_mean_abs_vs_deeplens": 0.002655774397566095,
+          "physical_mean_abs_vs_deeplens": 0.0034199589501787324,
+          "max_physical_vs_baseline": 0.015870549641994337,
+          "quality_improvement_in_max_abs": -0.0007277623069396177
+        }
+      ]
+    }
+  },
+  "certified": false
+}
