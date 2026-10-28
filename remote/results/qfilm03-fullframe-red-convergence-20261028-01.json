@@ -7,10 +7,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm03-fullframe-red-convergence-20261028-01",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 357035,
   "request_sha256": "4c7d1ff27d263eb3259bc1787a008837e4a7246f17778c3d1b7c9a5dc345028e",
   "schema": 1,
   "started_at": 1793175863.4178014,
   "state": "running",
-  "timeout_sec": 1800
+  "timeout_sec": 1800,
+  "updated_at": 1793175867.2501655
 }
