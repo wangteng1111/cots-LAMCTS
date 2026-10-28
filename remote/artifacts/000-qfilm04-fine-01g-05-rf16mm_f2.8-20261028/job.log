@@ -1,0 +1,41 @@
+Surface dict lacks 'use_ai2'; assuming ai[0]=0 is the 2nd-order coefficient (legacy format).
+Surface dict lacks 'use_ai2'; assuming ai[0]=0 is the 2nd-order coefficient (legacy format).
+/var/lib/cots-lamcts/jobs/000-qfilm04-fine-01g-05-rf16mm_f2.8-20261028/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)
+  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)
+PSF_PROGRESS rf16mm_f2.8 0.0 430.0 4852864 6553600
+PSF_PROGRESS rf16mm_f2.8 0.0 430.0 6553600 6553600
+FINE_SAMPLE rf16mm_f2.8 0.0 430.0 completed 
+PSF_PROGRESS rf16mm_f2.8 0.0 470.0 4824640 6553600
+PSF_PROGRESS rf16mm_f2.8 0.0 470.0 6553600 6553600
+FINE_SAMPLE rf16mm_f2.8 0.0 470.0 completed 
+PSF_PROGRESS rf16mm_f2.8 0.0 510.0 4804480 6553600
+PSF_PROGRESS rf16mm_f2.8 0.0 510.0 6553600 6553600
+FINE_SAMPLE rf16mm_f2.8 0.0 510.0 completed 
+PSF_PROGRESS rf16mm_f2.8 0.0 550.0 4769920 6553600
+PSF_PROGRESS rf16mm_f2.8 0.0 550.0 6553600 6553600
+FINE_SAMPLE rf16mm_f2.8 0.0 550.0 completed 
+PSF_PROGRESS rf16mm_f2.8 0.0 590.0 4756288 6553600
+PSF_PROGRESS rf16mm_f2.8 0.0 590.0 6553600 6553600
+FINE_SAMPLE rf16mm_f2.8 0.0 590.0 completed 
+PSF_PROGRESS rf16mm_f2.8 0.0 630.0 4745792 6553600
+PSF_PROGRESS rf16mm_f2.8 0.0 630.0 6553600 6553600
+FINE_SAMPLE rf16mm_f2.8 0.0 630.0 completed 
+PSF_PROGRESS rf16mm_f2.8 0.0 670.0 4735680 6553600
+PSF_PROGRESS rf16mm_f2.8 0.0 670.0 6553600 6553600
+FINE_SAMPLE rf16mm_f2.8 0.0 670.0 completed 
+FINE_SAMPLE rf16mm_f2.8 0.5 430.0 invalid ValueError('invalid physical chief ray at field=0.5,lambda=430.0')
+FINE_SAMPLE rf16mm_f2.8 0.5 470.0 invalid ValueError('invalid physical chief ray at field=0.5,lambda=470.0')
+FINE_SAMPLE rf16mm_f2.8 0.5 510.0 invalid ValueError('invalid physical chief ray at field=0.5,lambda=510.0')
+FINE_SAMPLE rf16mm_f2.8 0.5 550.0 invalid ValueError('invalid physical chief ray at field=0.5,lambda=550.0')
+FINE_SAMPLE rf16mm_f2.8 0.5 590.0 invalid ValueError('invalid physical chief ray at field=0.5,lambda=590.0')
+FINE_SAMPLE rf16mm_f2.8 0.5 630.0 invalid ValueError('invalid physical chief ray at field=0.5,lambda=630.0')
+FINE_SAMPLE rf16mm_f2.8 0.5 670.0 invalid ValueError('invalid physical chief ray at field=0.5,lambda=670.0')
+FINE_SAMPLE rf16mm_f2.8 1.0 430.0 invalid ValueError('insufficient transmitted physical pupil rays at field=1.0,lambda=430.0')
+FINE_SAMPLE rf16mm_f2.8 1.0 470.0 invalid ValueError('insufficient transmitted physical pupil rays at field=1.0,lambda=470.0')
+FINE_SAMPLE rf16mm_f2.8 1.0 510.0 invalid ValueError('insufficient transmitted physical pupil rays at field=1.0,lambda=510.0')
+FINE_SAMPLE rf16mm_f2.8 1.0 550.0 invalid ValueError('insufficient transmitted physical pupil rays at field=1.0,lambda=550.0')
+FINE_SAMPLE rf16mm_f2.8 1.0 590.0 invalid ValueError('insufficient transmitted physical pupil rays at field=1.0,lambda=590.0')
+FINE_SAMPLE rf16mm_f2.8 1.0 630.0 invalid ValueError('insufficient transmitted physical pupil rays at field=1.0,lambda=630.0')
+FINE_SAMPLE rf16mm_f2.8 1.0 670.0 invalid ValueError('insufficient transmitted physical pupil rays at field=1.0,lambda=670.0')
+FINE_CASE rf16mm_f2.8 completed_with_invalid_samples
+FINE_COMPLETE {"lenses": 1, "completed_psfs": 7, "valid_final_scores": 0}
