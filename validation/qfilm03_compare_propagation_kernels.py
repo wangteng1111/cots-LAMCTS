@@ -61,7 +61,7 @@ def main():
       try:
        with torch.inference_mode():
         computed=eval_fixed_film(p,w,h,Propagation(pupil_n=n,pixel_n=128,
-                             pixel_pitch_um=5.,pixel_block=32,weight_mode=weight))
+                             pixel_pitch_um=5.,pixel_block=384,weight_mode=weight))
        direct=mtf_from_psf_exact(computed["psf"],.005,F)
        label=f"qfilm_huygens_{n}_{weight}"
        rr["methods"][label]={"MTF":direct.tolist(),"seconds":time.perf_counter()-start,
