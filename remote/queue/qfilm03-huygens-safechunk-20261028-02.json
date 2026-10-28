@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "qfilm03-huygens-safechunk-20261028-02",
+  "code_commit": "d13b426d1672c858f20377e5fb1191162c81f2c6",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm03_huygens_safechunk.py"
+  ],
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
