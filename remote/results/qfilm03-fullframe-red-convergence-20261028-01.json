@@ -3,17 +3,42 @@
     "validation/qfilm03_fullframe_reference_convergence.py"
   ],
   "code_commit": "9a5739010f7a89e814ee17743575bd62a9f7c41f",
+  "elapsed_sec": 387.5777904987335,
   "entrypoint": "scripts/cuda_venv_exec.py",
   "env": {},
+  "finished_at": 1793176250.9955919,
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm03-fullframe-red-convergence-20261028-01",
-  "log_tail": "/var/lib/cots-lamcts/deeplens_upstream/deeplens/geolens_pkg/psf_compute.py:608: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  complex_amp = (amp / r) * torch.exp(1j * phase)  # [ks, ks, batch]\nHCONV singlet 670.0 0.0 spp 1000000 ks 128 diff 0.30852498969695924 time 4.04\nHCONV singlet 670.0 0.0 spp 1000000 ks 192 diff 0.3109842248861693 time 9.09\nHCONV singlet 670.0 0.0 spp 4000000 ks 128 diff 0.28802715731392003 time 16.16\nHCONV singlet 670.0 0.0 spp 4000000 ks 192 diff 0.28895416141154523 time 36.35\nDISTANCE singlet 670.0 0.0 10000000.0 0.30604062117632524\nDISTANCE singlet 670.0 0.0 100000000.0 0.30579104648034827\nHCONV singlet 670.0 0.1 spp 1000000 ks 128 diff 0.23313403409708422 time 4.05\nHCONV singlet 670.0 0.1 spp 1000000 ks 192 diff 0.23563182184628753 time 9.1\nHCONV singlet 670.0 0.1 spp 4000000 ks 128 diff 0.22180429214175296 time 16.17\nHCONV singlet 670.0 0.1 spp 4000000 ks 192 diff 0.22256003366815522 time 36.37\nHCONV singlet 550.0 0.0 spp 1000000 ks 128 diff 0.028697774230142192 time 4.05\nHCONV singlet 550.0 0.0 spp 1000000 ks 192 diff 0.05433477293660882 time 9.1\nHCONV singlet 550.0 0.0 spp 4000000 ks 128 diff 0.01952137016375649 time 16.17\nHCONV internal_stop_asphere 670.0 0.0 spp 1000000 ks 128 diff 0.17950174882274667 time 4.07\nHCONV internal_stop_asphere 670.0 0.0 spp 1000000 ks 192 diff 0.2102055302110496 time 9.12\nHCONV internal_stop_asphere 670.0 0.0 spp 4000000 ks 128 diff 0.16678905878252165 time 16.22\nHCONV internal_stop_asphere 670.0 0.0 spp 4000000 ks 192 diff 0.17141103693728152 time 36.42\nHCONV internal_stop_asphere 670.0 0.1 spp 1000000 ks 128 diff 0.3274052385558699 time 4.07\nHCONV internal_stop_asphere 670.0 0.1 spp 1000000 ks 192 diff 0.32864160939686626 time 9.11\nHCONV internal_stop_asphere 670.0 0.1 spp 4000000 ks 128 diff 0.31433933957145366 time 16.22\nHCONV internal_stop_asphere 670.0 0.1 spp 4000000 ks 192 diff 0.31485646037356113 time 36.41\nDISTANCE internal_stop_asphere 670.0 0.1 10000000.0 0.3216622360895215\nDISTANCE internal_stop_asphere 670.0 0.1 100000000.0 0.32094286369105646\nHCONV internal_stop_asphere 670.0 0.2 spp 1000000 ks 128 diff 0.05493306525804059 time 4.07\nHCONV internal_stop_asphere 670.0 0.2 spp 1000000 ks 192 diff 0.05828357112791328 time 9.11\nHCONV internal_stop_asphere 670.0 0.2 spp 4000000 ks 128 diff 0.05439607035851313 time 16.22\nHCONV internal_stop_asphere 550.0 0.0 spp 1000000 ks 128 diff 0.0362961121239761 time 4.07",
+  "log_tail": "/var/lib/cots-lamcts/deeplens_upstream/deeplens/geolens_pkg/psf_compute.py:608: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  complex_amp = (amp / r) * torch.exp(1j * phase)  # [ks, ks, batch]\nHCONV singlet 670.0 0.0 spp 1000000 ks 128 diff 0.30852498969695924 time 4.04\nHCONV singlet 670.0 0.0 spp 1000000 ks 192 diff 0.3109842248861693 time 9.09\nHCONV singlet 670.0 0.0 spp 4000000 ks 128 diff 0.28802715731392003 time 16.16\nHCONV singlet 670.0 0.0 spp 4000000 ks 192 diff 0.28895416141154523 time 36.35\nDISTANCE singlet 670.0 0.0 10000000.0 0.30604062117632524\nDISTANCE singlet 670.0 0.0 100000000.0 0.30579104648034827\nHCONV singlet 670.0 0.1 spp 1000000 ks 128 diff 0.23313403409708422 time 4.05\nHCONV singlet 670.0 0.1 spp 1000000 ks 192 diff 0.23563182184628753 time 9.1\nHCONV singlet 670.0 0.1 spp 4000000 ks 128 diff 0.22180429214175296 time 16.17\nHCONV singlet 670.0 0.1 spp 4000000 ks 192 diff 0.22256003366815522 time 36.37\nHCONV singlet 550.0 0.0 spp 1000000 ks 128 diff 0.028697774230142192 time 4.05\nHCONV singlet 550.0 0.0 spp 1000000 ks 192 diff 0.05433477293660882 time 9.1\nHCONV singlet 550.0 0.0 spp 4000000 ks 128 diff 0.01952137016375649 time 16.17\nHCONV internal_stop_asphere 670.0 0.0 spp 1000000 ks 128 diff 0.17950174882274667 time 4.07\nHCONV internal_stop_asphere 670.0 0.0 spp 1000000 ks 192 diff 0.2102055302110496 time 9.12\nHCONV internal_stop_asphere 670.0 0.0 spp 4000000 ks 128 diff 0.16678905878252165 time 16.22\nHCONV internal_stop_asphere 670.0 0.0 spp 4000000 ks 192 diff 0.17141103693728152 time 36.42\nHCONV internal_stop_asphere 670.0 0.1 spp 1000000 ks 128 diff 0.3274052385558699 time 4.07\nHCONV internal_stop_asphere 670.0 0.1 spp 1000000 ks 192 diff 0.32864160939686626 time 9.11\nHCONV internal_stop_asphere 670.0 0.1 spp 4000000 ks 128 diff 0.31433933957145366 time 16.22\nHCONV internal_stop_asphere 670.0 0.1 spp 4000000 ks 192 diff 0.31485646037356113 time 36.41\nDISTANCE internal_stop_asphere 670.0 0.1 10000000.0 0.3216622360895215\nDISTANCE internal_stop_asphere 670.0 0.1 100000000.0 0.32094286369105646\nHCONV internal_stop_asphere 670.0 0.2 spp 1000000 ks 128 diff 0.05493306525804059 time 4.07\nHCONV internal_stop_asphere 670.0 0.2 spp 1000000 ks 192 diff 0.05828357112791328 time 9.11\nHCONV internal_stop_asphere 670.0 0.2 spp 4000000 ks 128 diff 0.05439607035851313 time 16.22\nHCONV internal_stop_asphere 550.0 0.0 spp 1000000 ks 128 diff 0.0362961121239761 time 4.07\nHCONV internal_stop_asphere 550.0 0.0 spp 1000000 ks 192 diff 0.0730654556941982 time 9.11\nHCONV internal_stop_asphere 550.0 0.0 spp 4000000 ks 128 diff 0.012478635552699124 time 16.22\nREFERENCE_COMPLETE [{\"n\": \"singlet\", \"w\": 670.0, \"h\": 0.0, \"convergence\": {\"window_128_to_192_1M_max_MTF\": 0.02723584988642236, \"rays_1M_to_4M_128_max_MTF\": 0.03448954484229265, \"window_128_to_192_4M_max_MTF\": 0.007748313529945539, \"rays_1M_to_4M_192_max_MTF\": 0.03594669005209461}}, {\"n\": \"singlet\", \"w\": 670.0, \"h\": 0.1, \"convergence\": {\"window_128_to_192_1M_max_MTF\": 0.023364585435433627, \"rays_1M_to_4M_128_max_MTF\": 0.016698786586350156, \"window_128_to_192_4M_max_MTF\": 0.006349458706420008, \"rays_1M_to_4M_192_max_MTF\": 0.030773777683718806}}, {\"n\": \"singlet\", \"w\": 550.0, \"h\": 0.0, \"convergence\": {\"window_128_to_192_1M_max_MTF\": 0.02570049864966162, \"rays_1M_to_4M_128_max_MTF\": 0.01614067787455431, \"window_128_to_192_4M_max_MTF\": null, \"rays_1M_to_4M_192_max_MTF\": null}}, {\"n\": \"internal_stop_asphere\", \"w\": 670.0, \"h\": 0.0, \"convergence\": {\"window_128_to_192_1M_max_MTF\": 0.07093902727583212, \"rays_1M_to_4M_128_max_MTF\": 0.04928754601041718, \"window_128_to_192_4M_max_MTF\": 0.021536930886284278, \"rays_1M_to_4M_192_max_MTF\": 0.09868964239996503}}, {\"n\": \"internal_stop_asphere\", \"w\": 670.0, \"h\": 0.1, \"convergence\": {\"window_128_to_192_1M_max_MTF\": 0.03762578833742636, \"rays_1M_to_4M_128_max_MTF\": 0.026082947604789547, \"window_128_to_192_4M_max_MTF\": 0.010476334645899588, \"rays_1M_to_4M_192_max_MTF\": 0.05208651842824752}}, {\"n\": \"internal_stop_asphere\", \"w\": 670.0, \"h\": 0.2, \"convergence\": {\"window_128_to_192_1M_max_MTF\": 0.02571050703247768, \"rays_1M_to_4M_128_max_MTF\": 0.021786127363354918, \"window_128_to_192_4M_max_MTF\": null, \"rays_1M_to_4M_192_max_MTF\": null}}, {\"n\": \"internal_stop_asphere\", \"w\": 550.0, \"h\": 0.0, \"convergence\": {\"window_128_to_192_1M_max_MTF\": 0.03681175442969942, \"rays_1M_to_4M_128_max_MTF\": 0.024426140608343805, \"window_128_to_192_4M_max_MTF\": null, \"rays_1M_to_4M_192_max_MTF\": null}}]",
   "memory_gb": 0,
   "pid": 357035,
   "request_sha256": "4c7d1ff27d263eb3259bc1787a008837e4a7246f17778c3d1b7c9a5dc345028e",
+  "returncode": 0,
   "schema": 1,
   "started_at": 1793175863.4178014,
-  "state": "running",
+  "state": "finished",
   "timeout_sec": 1800,
-  "updated_at": 1793176229.4162803
+  "updated_at": 1793176229.4162803,
+  "uploaded_artifacts": [
+    {
+      "path": "chunk_parity_lens.json",
+      "size": 575,
+      "uploaded": true
+    },
+    {
+      "path": "qfilm03_fullframe_reference_convergence/internal_stop_asphere.json",
+      "size": 1277,
+      "uploaded": true
+    },
+    {
+      "path": "qfilm03_fullframe_reference_convergence/red_reference_ray_window.json",
+      "size": 37532,
+      "uploaded": true
+    },
+    {
+      "path": "qfilm03_fullframe_reference_convergence/singlet.json",
+      "size": 785,
+      "uploaded": true
+    }
+  ]
 }
