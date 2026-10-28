@@ -1,0 +1,16 @@
+{
+  "args": [
+    "validation/qfilm03_huygens_safechunk.py"
+  ],
+  "code_commit": "d13b426d1672c858f20377e5fb1191162c81f2c6",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm03-huygens-safechunk-20261028-02",
+  "memory_gb": 0,
+  "request_sha256": "30284fb8953931bbf2647113f2ad227f796df86bb6a5d3bdd1ef84f5934e20f7",
+  "schema": 1,
+  "started_at": 1793173038.7482462,
+  "state": "running",
+  "timeout_sec": 1800
+}
