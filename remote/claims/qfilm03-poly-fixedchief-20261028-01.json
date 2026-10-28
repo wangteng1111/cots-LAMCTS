@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1793180332.829631,
+  "code_commit": "b86a8640953d0f0cb8783013e7efeeb27d26d497",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm03-poly-fixedchief-20261028-01",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/qfilm03-poly-fixedchief-20261028-01.json",
+  "request_sha256": "09c937c9c9a8005a9559bc24df205645f5c456bf0d1703020b53f545d8d9c7a6",
+  "schema": 1,
+  "state": "claimed"
+}
