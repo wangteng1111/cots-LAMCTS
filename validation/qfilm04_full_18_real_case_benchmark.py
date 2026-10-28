@@ -88,10 +88,10 @@ def independent_poly(lens,p,h,spp=250000):
   lens.psf_center=old
  accum/=accum.sum()
  tx,ty=mtf_from_psf(accum,.005,F)
- return np.asarray(list(tx)+list(ty) if abs(h)<1e-12 else list(ty)+list(tx)),
+ return (np.asarray(list(tx)+list(ty) if abs(h)<1e-12 else list(ty)+list(tx)),
          {"fixed_green_chief_film_mm":physical_chief_x,"max_4px_border_flux_fraction":max(edge),
           "wavelength_4px_border_flux_fraction":edge,"huygens_seconds":sum(times),
-          "reference_quality":"window-risk" if max(edge)>0.01 else "finite-spp-unconverged"}
+          "reference_quality":"window-risk" if max(edge)>0.01 else "finite-spp-unconverged"})
 def main():
  parser=argparse.ArgumentParser();parser.add_argument("--shard",type=int,required=True,
        choices=[0,1,2]);parser.add_argument("--spp",type=int,default=250000)
