@@ -187,3 +187,18 @@ def evaluate(source,config:Config=Config(),device="cuda:0",validation:Validation
                               "traceback":traceback.format_exc()[-4500:]}
     out["timings"]["total_seconds"]=fast_s+out["timings"].get("reference_seconds",0.0)
     return out
+
+
+def evaluate_physical_huygens(source,config:Config=Config(),device="cuda:0",physical=None):
+    """Explicit high-fidelity experiment: re-evaluate every final PSF and J.
+
+    Unlike `evaluate(..., ValidationConfig(mode='verify'))`, this mode
+    replaces the 10-frequency image-plane MTF with deterministic, physical
+    fixed-film direct Huygens integral for ALL fields/wavelengths, then
+    recomputes the single final J. This is NOT certified production truth.
+    No surrogate scores or intermediate optics can count as final scores.
+    """
+    from evaluator.qfilm03_physical_mode import (
+        evaluate as physical_eval, PhysicalHuygensConfig)
+    if physical is None:physical=PhysicalHuygensConfig()
+    return physical_eval(source,config,device=device,physical=physical)
