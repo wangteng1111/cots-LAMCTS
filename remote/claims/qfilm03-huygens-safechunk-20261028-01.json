@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1793172922.8086734,
+  "code_commit": "311e9fa8cc94bc4c9407ddbbb4d90bb550510ca1",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm03-huygens-safechunk-20261028-01",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/qfilm03-huygens-safechunk-20261028-01.json",
+  "request_sha256": "8b82724fa16a14c53ef1a6c5bc426401e002569ec9e42a4fd68322c1ce2229b1",
+  "schema": 1,
+  "state": "claimed"
+}
