@@ -1,0 +1,11 @@
+/var/lib/cots-lamcts/deeplens_upstream/deeplens/geolens_pkg/psf_compute.py:158: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)
+  point_obj_x = points[..., 0] * scale * sensor_w / 2
+IDENTICAL_KERNEL singlet 670.0 0.1 128 diff 4.005887732638769e-09 error None
+IDENTICAL_KERNEL singlet 670.0 0.1 256 diff 6.7684668980660945e-09 error None
+IDENTICAL_KERNEL singlet 670.0 0.0 128 diff 6.641114658201275e-09 error None
+IDENTICAL_KERNEL singlet 670.0 0.0 256 diff 4.765912331450295e-09 error None
+IDENTICAL_KERNEL internal_stop_asphere 670.0 0.1 128 diff 8.549968261162277e-09 error None
+IDENTICAL_KERNEL internal_stop_asphere 670.0 0.1 256 diff 1.4979176440887976e-08 error None
+IDENTICAL_KERNEL internal_stop_asphere 630.0 0.0 128 diff 5.478106690492979e-09 error None
+IDENTICAL_KERNEL internal_stop_asphere 630.0 0.0 256 diff 7.810896818227775e-09 error None
+IDENTICAL_KERNEL_SUMMARY [{"name": "singlet", "lambda_nm": 670.0, "h": 0.1, "pupil_n": 128, "max_abs_MTF_between_identical_ray_integrals": 4.005887732638769e-09}, {"name": "singlet", "lambda_nm": 670.0, "h": 0.1, "pupil_n": 256, "max_abs_MTF_between_identical_ray_integrals": 6.7684668980660945e-09}, {"name": "singlet", "lambda_nm": 670.0, "h": 0.0, "pupil_n": 128, "max_abs_MTF_between_identical_ray_integrals": 6.641114658201275e-09}, {"name": "singlet", "lambda_nm": 670.0, "h": 0.0, "pupil_n": 256, "max_abs_MTF_between_identical_ray_integrals": 4.765912331450295e-09}, {"name": "internal_stop_asphere", "lambda_nm": 670.0, "h": 0.1, "pupil_n": 128, "max_abs_MTF_between_identical_ray_integrals": 8.549968261162277e-09}, {"name": "internal_stop_asphere", "lambda_nm": 670.0, "h": 0.1, "pupil_n": 256, "max_abs_MTF_between_identical_ray_integrals": 1.4979176440887976e-08}, {"name": "internal_stop_asphere", "lambda_nm": 630.0, "h": 0.0, "pupil_n": 128, "max_abs_MTF_between_identical_ray_integrals": 5.478106690492979e-09}, {"name": "internal_stop_asphere", "lambda_nm": 630.0, "h": 0.0, "pupil_n": 256, "max_abs_MTF_between_identical_ray_integrals": 7.810896818227775e-09}]
