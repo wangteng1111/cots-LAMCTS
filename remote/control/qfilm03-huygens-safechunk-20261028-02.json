@@ -1,0 +1,4 @@
+{
+  "action": "stop",
+  "reason": "superseded by validated 4096-ray chunk benchmarking; 1024-ray batch excessively slow"
+}
