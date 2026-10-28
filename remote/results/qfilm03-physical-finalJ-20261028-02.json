@@ -3,17 +3,27 @@
     "validation/qfilm03_physical_finalJ_validation.py"
   ],
   "code_commit": "585f1b7ca210da6585d42a2d2a1c37133ba8f810",
+  "elapsed_sec": 24.406367778778076,
   "entrypoint": "scripts/cuda_venv_exec.py",
   "env": {},
+  "finished_at": 1793179145.494375,
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm03-physical-finalJ-20261028-02",
-  "log_tail": "",
+  "log_tail": "/var/lib/cots-lamcts/jobs/qfilm03-physical-finalJ-20261028-02/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)\nPHYSICAL_FINALJ singlet {\"seconds\": 2.7647003401070833, \"old_J\": 2.826412044053487, \"physical_J\": 2.8271948397242417, \"old_schema\": \"QfilmResult-0.2\", \"physical_schema\": \"QfilmResult-0.3\", \"physical_certified\": false, \"training_eligible\": false, \"per_field\": [{\"h\": 0, \"baseline_max_abs_vs_deeplens\": 0.04868460462482427, \"physical_max_abs_vs_deeplens\": 0.02158972616687882, \"baseline_mean_abs_vs_deeplens\": 0.028795978647675885, \"physical_mean_abs_vs_deeplens\": 0.003819690739793698, \"max_physical_vs_baseline\": 0.04722149743010198, \"quality_improvement_in_max_abs\": 0.027094878457945448}, {\"h\": 0.5, \"baseline_max_abs_vs_deeplens\": 0.020511420180328276, \"physical_max_abs_vs_deeplens\": 0.017169217109647507, \"baseline_mean_abs_vs_deeplens\": 0.0037389931925808175, \"physical_mean_abs_vs_deeplens\": 0.004031266717882463, \"max_physical_vs_baseline\": 0.016523639220043816, \"quality_improvement_in_max_abs\": 0.0033422030706807687}, {\"h\": 1, \"baseline_max_abs_vs_deeplens\": 0.01705177503346873, \"physical_max_abs_vs_deeplens\": 0.01730594002820383, \"baseline_mean_abs_vs_deeplens\": 0.003265353306160082, \"physical_mean_abs_vs_deeplens\": 0.0046160500848450746, \"max_physical_vs_baseline\": 0.0130679407747946, \"quality_improvement_in_max_abs\": -0.000254164994735101}]}\nPHYSICAL_FINALJ internal_stop_asphere {\"seconds\": 15.26956706121564, \"old_J\": 0.9563732553565802, \"physical_J\": 0.9637061246969125, \"old_schema\": \"QfilmResult-0.2\", \"physical_schema\": \"QfilmResult-0.3\", \"physical_certified\": false, \"training_eligible\": false, \"per_field\": [{\"h\": 0, \"baseline_max_abs_vs_deeplens\": 0.06723371403611896, \"physical_max_abs_vs_deeplens\": 0.1142054302243003, \"baseline_mean_abs_vs_deeplens\": 0.050605110234812914, \"physical_mean_abs_vs_deeplens\": 0.014153883109744646, \"max_physical_vs_baseline\": 0.15754770929663386, \"quality_improvement_in_max_abs\": -0.04697171618818134}, {\"h\": 0.5, \"baseline_max_abs_vs_deeplens\": 0.018811542963512767, \"physical_max_abs_vs_deeplens\": 0.030244249078425062, \"baseline_mean_abs_vs_deeplens\": 0.0035805613211110907, \"physical_mean_abs_vs_deeplens\": 0.0053729812179907546, \"max_physical_vs_baseline\": 0.02124392483775444, \"quality_improvement_in_max_abs\": -0.011432706114912296}, {\"h\": 1, \"baseline_max_abs_vs_deeplens\": 0.012579455223769562, \"physical_max_abs_vs_deeplens\": 0.01330721753070918, \"baseline_mean_abs_vs_deeplens\": 0.002655774397566095, \"physical_mean_abs_vs_deeplens\": 0.0034199589501787324, \"max_physical_vs_baseline\": 0.015870549641994337, \"quality_improvement_in_max_abs\": -0.0007277623069396177}]}\nALL_PASS {\"cases\": [\"singlet\", \"internal_stop_asphere\"]}",
   "memory_gb": 0,
   "pid": 371819,
   "request_sha256": "1399f6844fd070bceb9f95a40c1fceace8ba104f36841e8812a6974c071d93f7",
+  "returncode": 0,
   "schema": 1,
   "started_at": 1793179121.0880072,
-  "state": "running",
+  "state": "finished",
   "timeout_sec": 1800,
-  "updated_at": 1793179125.0745544
+  "updated_at": 1793179125.0745544,
+  "uploaded_artifacts": [
+    {
+      "path": "qfilm03_physical_mode_validation/fullframe_physical_finalJ_regression.json",
+      "size": 3261,
+      "uploaded": true
+    }
+  ]
 }
