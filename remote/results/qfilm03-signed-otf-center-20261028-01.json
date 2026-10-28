@@ -1,0 +1,16 @@
+{
+  "args": [
+    "validation/qfilm03_signed_otf_center_diagnostic.py"
+  ],
+  "code_commit": "e266fa65611d5a147eb566fb5908d550f6376f4a",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm03-signed-otf-center-20261028-01",
+  "memory_gb": 0,
+  "request_sha256": "a33251c9510fdd28d3b879c1f07f3b4e40677df57122b5a599c1441de161a2de",
+  "schema": 1,
+  "started_at": 1793180699.8423765,
+  "state": "running",
+  "timeout_sec": 1200
+}
