@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "qfilm03-propagation-rootcause-20261028-01",
+  "code_commit": "2052411f7cb8883a10e3b0b39a0d2ba0e7490d29",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm03_compare_propagation_kernels.py"
+  ],
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
