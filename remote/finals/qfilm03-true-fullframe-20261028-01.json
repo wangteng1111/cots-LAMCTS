@@ -1,0 +1,42 @@
+{
+  "args": [
+    "validation/qfilm03_true_fullframe_huygens.py"
+  ],
+  "bridge_version": "0.5.0",
+  "code_commit": "5f8f562d204a83a3b4dd6e552663a8ceae0e9ad2",
+  "elapsed_sec": 207.81203365325928,
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "finished_at": 1793174175.1601698,
+  "hostname": "aipss-Rack-Server",
+  "immutable_job_id": true,
+  "job_id": "qfilm03-true-fullframe-20261028-01",
+  "log_tail": "/var/lib/cots-lamcts/jobs/qfilm03-true-fullframe-20261028-01/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)\nFULLFRAME singlet 430.0 0.0 MTFmax 0.03105078489277635 error None\nFULLFRAME singlet 430.0 0.1 MTFmax 0.028976951015826452 error None\nFULLFRAME singlet 430.0 0.2 MTFmax 0.011453377227855659 error None\nFULLFRAME singlet 430.0 0.4 MTFmax 0.025031429755088062 error None\nFULLFRAME singlet 430.0 0.6 MTFmax 0.012669354854502489 error None\nFULLFRAME singlet 430.0 0.8 MTFmax 0.01645326645062532 error None\nFULLFRAME singlet 430.0 1.0 MTFmax 0.011267257507403594 error None\nFULLFRAME singlet 550.0 0.0 MTFmax 0.029835224485442013 error None\nFULLFRAME singlet 550.0 0.1 MTFmax 0.02220429175179961 error None\nFULLFRAME singlet 550.0 0.2 MTFmax 0.02476125927601014 error None\nFULLFRAME singlet 550.0 0.4 MTFmax 0.009479259113737357 error None\nFULLFRAME singlet 550.0 0.6 MTFmax 0.017533428322273194 error None\nFULLFRAME singlet 550.0 0.8 MTFmax 0.012420113915313424 error None\nFULLFRAME singlet 550.0 1.0 MTFmax 0.010591599289689136 error None\nFULLFRAME singlet 670.0 0.0 MTFmax 0.3082722780645152 error None\nFULLFRAME singlet 670.0 0.1 MTFmax 0.2340530311196436 error None\nFULLFRAME singlet 670.0 0.2 MTFmax 0.043405374797908056 error None\nFULLFRAME singlet 670.0 0.4 MTFmax 0.021199728690296404 error None\nFULLFRAME singlet 670.0 0.6 MTFmax 0.03492322171687118 error None\nFULLFRAME singlet 670.0 0.8 MTFmax 0.023390014103475777 error None\nFULLFRAME singlet 670.0 1.0 MTFmax 0.01679711017911362 error None\nFULLFRAME internal_stop_asphere 430.0 0.0 MTFmax 0.030336312276046717 error None\nFULLFRAME internal_stop_asphere 430.0 0.1 MTFmax 0.03412940927321512 error None\nFULLFRAME internal_stop_asphere 430.0 0.2 MTFmax 0.017661965795042762 error None\nFULLFRAME internal_stop_asphere 430.0 0.4 MTFmax 0.05728571532870364 error None\nFULLFRAME internal_stop_asphere 430.0 0.6 MTFmax 0.020187352588179486 error None\nFULLFRAME internal_stop_asphere 430.0 0.8 MTFmax 0.015005343567053422 error None\nFULLFRAME internal_stop_asphere 430.0 1.0 MTFmax 0.009509154521286034 error None\nFULLFRAME internal_stop_asphere 550.0 0.0 MTFmax 0.03502915686380115 error None\nFULLFRAME internal_stop_asphere 550.0 0.1 MTFmax 0.03329220722791326 error None\nFULLFRAME internal_stop_asphere 550.0 0.2 MTFmax 0.03599242529732449 error None\nFULLFRAME internal_stop_asphere 550.0 0.4 MTFmax 0.033913872295479305 error None\nFULLFRAME internal_stop_asphere 550.0 0.6 MTFmax 0.015699099271900593 error None\nFULLFRAME internal_stop_asphere 550.0 0.8 MTFmax 0.01720326696884973 error None\nFULLFRAME internal_stop_asphere 550.0 1.0 MTFmax 0.009627169165886792 error None\nFULLFRAME internal_stop_asphere 670.0 0.0 MTFmax 0.1811369737531482 error None\nFULLFRAME internal_stop_asphere 670.0 0.1 MTFmax 0.27313381775751905 error None\nFULLFRAME internal_stop_asphere 670.0 0.2 MTFmax 0.08512820208797611 error None\nFULLFRAME internal_stop_asphere 670.0 0.4 MTFmax 0.008699215718816763 error None\nFULLFRAME internal_stop_asphere 670.0 0.6 MTFmax 0.019545761970725363 error None\nFULLFRAME internal_stop_asphere 670.0 0.8 MTFmax 0.024231418859126237 error None\nFULLFRAME internal_stop_asphere 670.0 1.0 MTFmax 0.014515018355838263 error None\nFULLFRAME_SUMMARY {\"singlet\": {\"DeepLens_focal_mm\": 49.05139341594305, \"pixel_pitch_mm\": 0.004999999991609842, \"max_MTF_error\": 0.3082722780645152, \"n_valid_comparisons\": 21, \"n_errors\": 0}, \"internal_stop_asphere\": {\"DeepLens_focal_mm\": 43.44884932341632, \"pixel_pitch_mm\": 0.004999999991609842, \"max_MTF_error\": 0.27313381775751905, \"n_valid_comparisons\": 21, \"n_errors\": 0}}",
+  "memory_gb": 0,
+  "pid": 353135,
+  "request_sha256": "30807ddf2092e2428c85f884a214f05504c6b7157fb066e80acb0d45d9e62362",
+  "retry_policy": "new_job_id_required",
+  "returncode": 0,
+  "schema": 1,
+  "started_at": 1793173967.3481362,
+  "state": "finished",
+  "timeout_sec": 1800,
+  "updated_at": 1793174154.6658928,
+  "uploaded_artifacts": [
+    {
+      "path": "qfilm03_true_fullframe/fullframe_huygens.json",
+      "size": 80446,
+      "uploaded": true
+    },
+    {
+      "path": "qfilm03_true_fullframe/internal_stop_asphere.json",
+      "size": 903,
+      "uploaded": true
+    },
+    {
+      "path": "qfilm03_true_fullframe/singlet.json",
+      "size": 569,
+      "uploaded": true
+    }
+  ]
+}
