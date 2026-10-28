@@ -1,0 +1,44 @@
+{
+  "args": [
+    "validation/qfilm04_fine_11_cpu_gpu.py",
+    "--backend",
+    "g",
+    "--names",
+    "rf16mm_f2.8",
+    "--fields",
+    "3",
+    "--threads",
+    "2"
+  ],
+  "bridge_version": "0.5.0",
+  "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+  "elapsed_sec": 345.10547256469727,
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {
+    "MKL_NUM_THREADS": "2",
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2"
+  },
+  "finished_at": 1793222441.4105096,
+  "hostname": "aipss-Rack-Server",
+  "immutable_job_id": true,
+  "job_id": "000-qfilm04-fine-01g-05-rf16mm_f2.8-20261028",
+  "log_tail": "Surface dict lacks 'use_ai2'; assuming ai[0]=0 is the 2nd-order coefficient (legacy format).\nSurface dict lacks 'use_ai2'; assuming ai[0]=0 is the 2nd-order coefficient (legacy format).\n/var/lib/cots-lamcts/jobs/000-qfilm04-fine-01g-05-rf16mm_f2.8-20261028/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)\nPSF_PROGRESS rf16mm_f2.8 0.0 430.0 4852864 6553600\nPSF_PROGRESS rf16mm_f2.8 0.0 430.0 6553600 6553600\nFINE_SAMPLE rf16mm_f2.8 0.0 430.0 completed \nPSF_PROGRESS rf16mm_f2.8 0.0 470.0 4824640 6553600\nPSF_PROGRESS rf16mm_f2.8 0.0 470.0 6553600 6553600\nFINE_SAMPLE rf16mm_f2.8 0.0 470.0 completed \nPSF_PROGRESS rf16mm_f2.8 0.0 510.0 4804480 6553600\nPSF_PROGRESS rf16mm_f2.8 0.0 510.0 6553600 6553600\nFINE_SAMPLE rf16mm_f2.8 0.0 510.0 completed \nPSF_PROGRESS rf16mm_f2.8 0.0 550.0 4769920 6553600\nPSF_PROGRESS rf16mm_f2.8 0.0 550.0 6553600 6553600\nFINE_SAMPLE rf16mm_f2.8 0.0 550.0 completed \nPSF_PROGRESS rf16mm_f2.8 0.0 590.0 4756288 6553600\nPSF_PROGRESS rf16mm_f2.8 0.0 590.0 6553600 6553600\nFINE_SAMPLE rf16mm_f2.8 0.0 590.0 completed \nPSF_PROGRESS rf16mm_f2.8 0.0 630.0 4745792 6553600\nPSF_PROGRESS rf16mm_f2.8 0.0 630.0 6553600 6553600\nFINE_SAMPLE rf16mm_f2.8 0.0 630.0 completed \nPSF_PROGRESS rf16mm_f2.8 0.0 670.0 4735680 6553600\nPSF_PROGRESS rf16mm_f2.8 0.0 670.0 6553600 6553600\nFINE_SAMPLE rf16mm_f2.8 0.0 670.0 completed \nFINE_SAMPLE rf16mm_f2.8 0.5 430.0 invalid ValueError('invalid physical chief ray at field=0.5,lambda=430.0')\nFINE_SAMPLE rf16mm_f2.8 0.5 470.0 invalid ValueError('invalid physical chief ray at field=0.5,lambda=470.0')\nFINE_SAMPLE rf16mm_f2.8 0.5 510.0 invalid ValueError('invalid physical chief ray at field=0.5,lambda=510.0')\nFINE_SAMPLE rf16mm_f2.8 0.5 550.0 invalid ValueError('invalid physical chief ray at field=0.5,lambda=550.0')\nFINE_SAMPLE rf16mm_f2.8 0.5 590.0 invalid ValueError('invalid physical chief ray at field=0.5,lambda=590.0')\nFINE_SAMPLE rf16mm_f2.8 0.5 630.0 invalid ValueError('invalid physical chief ray at field=0.5,lambda=630.0')\nFINE_SAMPLE rf16mm_f2.8 0.5 670.0 invalid ValueError('invalid physical chief ray at field=0.5,lambda=670.0')\nFINE_SAMPLE rf16mm_f2.8 1.0 430.0 invalid ValueError('insufficient transmitted physical pupil rays at field=1.0,lambda=430.0')\nFINE_SAMPLE rf16mm_f2.8 1.0 470.0 invalid ValueError('insufficient transmitted physical pupil rays at field=1.0,lambda=470.0')\nFINE_SAMPLE rf16mm_f2.8 1.0 510.0 invalid ValueError('insufficient transmitted physical pupil rays at field=1.0,lambda=510.0')\nFINE_SAMPLE rf16mm_f2.8 1.0 550.0 invalid ValueError('insufficient transmitted physical pupil rays at field=1.0,lambda=550.0')\nFINE_SAMPLE rf16mm_f2.8 1.0 590.0 invalid ValueError('insufficient transmitted physical pupil rays at field=1.0,lambda=590.0')\nFINE_SAMPLE rf16mm_f2.8 1.0 630.0 invalid ValueError('insufficient transmitted physical pupil rays at field=1.0,lambda=630.0')\nFINE_SAMPLE rf16mm_f2.8 1.0 670.0 invalid ValueError('insufficient transmitted physical pupil rays at field=1.0,lambda=670.0')\nFINE_CASE rf16mm_f2.8 completed_with_invalid_samples\nFINE_COMPLETE {\"lenses\": 1, \"completed_psfs\": 7, \"valid_final_scores\": 0}",
+  "memory_gb": 0,
+  "pid": 418341,
+  "request_sha256": "1183fe1deb191360749c38226ad6e03ccfa5e04ad4029320616d8b865acff46d",
+  "retry_policy": "new_job_id_required",
+  "returncode": 0,
+  "schema": 1,
+  "started_at": 1793222096.305037,
+  "state": "finished",
+  "timeout_sec": 172800,
+  "updated_at": 1793222281.19946,
+  "uploaded_artifacts": [
+    {
+      "path": "fine_11_g_solve.json",
+      "size": 49341,
+      "uploaded": true
+    }
+  ]
+}
