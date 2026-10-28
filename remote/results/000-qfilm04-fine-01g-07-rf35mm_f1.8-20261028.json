@@ -11,21 +11,31 @@
     "2"
   ],
   "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+  "elapsed_sec": 691.7057776451111,
   "entrypoint": "scripts/cuda_venv_exec.py",
   "env": {
     "MKL_NUM_THREADS": "2",
     "OMP_NUM_THREADS": "2",
     "OPENBLAS_NUM_THREADS": "2"
   },
+  "finished_at": 1793224326.8708308,
   "hostname": "aipss-Rack-Server",
   "job_id": "000-qfilm04-fine-01g-07-rf35mm_f1.8-20261028",
-  "log_tail": "/var/lib/cots-lamcts/jobs/000-qfilm04-fine-01g-07-rf35mm_f1.8-20261028/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)\nPSF_PROGRESS rf35mm_f1.8 0.0 430.0 4383936 6553600\nPSF_PROGRESS rf35mm_f1.8 0.0 430.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 0.0 430.0 completed \nPSF_PROGRESS rf35mm_f1.8 0.0 470.0 4363264 6553600\nPSF_PROGRESS rf35mm_f1.8 0.0 470.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 0.0 470.0 completed \nPSF_PROGRESS rf35mm_f1.8 0.0 510.0 4316032 6553600\nPSF_PROGRESS rf35mm_f1.8 0.0 510.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 0.0 510.0 completed \nPSF_PROGRESS rf35mm_f1.8 0.0 550.0 4285248 6553600\nPSF_PROGRESS rf35mm_f1.8 0.0 550.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 0.0 550.0 completed \nPSF_PROGRESS rf35mm_f1.8 0.0 590.0 4282624 6553600\nPSF_PROGRESS rf35mm_f1.8 0.0 590.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 0.0 590.0 completed \nPSF_PROGRESS rf35mm_f1.8 0.0 630.0 4292736 6553600\nPSF_PROGRESS rf35mm_f1.8 0.0 630.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 0.0 630.0 completed \nPSF_PROGRESS rf35mm_f1.8 0.0 670.0 4282624 6553600\nPSF_PROGRESS rf35mm_f1.8 0.0 670.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 0.0 670.0 completed \nPSF_PROGRESS rf35mm_f1.8 0.5 430.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 0.5 430.0 completed \nPSF_PROGRESS rf35mm_f1.8 0.5 470.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 0.5 470.0 completed \nPSF_PROGRESS rf35mm_f1.8 0.5 510.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 0.5 510.0 completed \nPSF_PROGRESS rf35mm_f1.8 0.5 550.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 0.5 550.0 completed \nPSF_PROGRESS rf35mm_f1.8 0.5 590.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 0.5 590.0 completed \nPSF_PROGRESS rf35mm_f1.8 0.5 630.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 0.5 630.0 completed ",
+  "log_tail": "/var/lib/cots-lamcts/jobs/000-qfilm04-fine-01g-07-rf35mm_f1.8-20261028/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)\nPSF_PROGRESS rf35mm_f1.8 0.0 430.0 4383936 6553600\nPSF_PROGRESS rf35mm_f1.8 0.0 430.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 0.0 430.0 completed \nPSF_PROGRESS rf35mm_f1.8 0.0 470.0 4363264 6553600\nPSF_PROGRESS rf35mm_f1.8 0.0 470.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 0.0 470.0 completed \nPSF_PROGRESS rf35mm_f1.8 0.0 510.0 4316032 6553600\nPSF_PROGRESS rf35mm_f1.8 0.0 510.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 0.0 510.0 completed \nPSF_PROGRESS rf35mm_f1.8 0.0 550.0 4285248 6553600\nPSF_PROGRESS rf35mm_f1.8 0.0 550.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 0.0 550.0 completed \nPSF_PROGRESS rf35mm_f1.8 0.0 590.0 4282624 6553600\nPSF_PROGRESS rf35mm_f1.8 0.0 590.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 0.0 590.0 completed \nPSF_PROGRESS rf35mm_f1.8 0.0 630.0 4292736 6553600\nPSF_PROGRESS rf35mm_f1.8 0.0 630.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 0.0 630.0 completed \nPSF_PROGRESS rf35mm_f1.8 0.0 670.0 4282624 6553600\nPSF_PROGRESS rf35mm_f1.8 0.0 670.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 0.0 670.0 completed \nPSF_PROGRESS rf35mm_f1.8 0.5 430.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 0.5 430.0 completed \nPSF_PROGRESS rf35mm_f1.8 0.5 470.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 0.5 470.0 completed \nPSF_PROGRESS rf35mm_f1.8 0.5 510.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 0.5 510.0 completed \nPSF_PROGRESS rf35mm_f1.8 0.5 550.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 0.5 550.0 completed \nPSF_PROGRESS rf35mm_f1.8 0.5 590.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 0.5 590.0 completed \nPSF_PROGRESS rf35mm_f1.8 0.5 630.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 0.5 630.0 completed \nPSF_PROGRESS rf35mm_f1.8 0.5 670.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 0.5 670.0 completed \nPSF_PROGRESS rf35mm_f1.8 1.0 430.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 1.0 430.0 completed \nPSF_PROGRESS rf35mm_f1.8 1.0 470.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 1.0 470.0 completed \nPSF_PROGRESS rf35mm_f1.8 1.0 510.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 1.0 510.0 completed \nPSF_PROGRESS rf35mm_f1.8 1.0 550.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 1.0 550.0 completed \nPSF_PROGRESS rf35mm_f1.8 1.0 590.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 1.0 590.0 completed \nPSF_PROGRESS rf35mm_f1.8 1.0 630.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 1.0 630.0 completed \nPSF_PROGRESS rf35mm_f1.8 1.0 670.0 6553600 6553600\nFINE_SAMPLE rf35mm_f1.8 1.0 670.0 completed \nFINE_CASE rf35mm_f1.8 completed\nFINE_COMPLETE {\"lenses\": 1, \"completed_psfs\": 21, \"valid_final_scores\": 0}",
   "memory_gb": 0,
   "pid": 419486,
   "request_sha256": "6e634907bb173c12e0d6e5271be4577da9570840bf02e3033b1865714cf4f0aa",
+  "returncode": 0,
   "schema": 1,
   "started_at": 1793223635.1650531,
-  "state": "running",
+  "state": "finished",
   "timeout_sec": 172800,
-  "updated_at": 1793224181.530614
+  "updated_at": 1793224181.530614,
+  "uploaded_artifacts": [
+    {
+      "path": "fine_11_g_solve.json",
+      "size": 96258,
+      "uploaded": true
+    }
+  ]
 }
