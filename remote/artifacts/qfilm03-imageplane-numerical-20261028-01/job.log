@@ -1,0 +1,15 @@
+/var/lib/cots-lamcts/jobs/qfilm03-imageplane-numerical-20261028-01/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)
+  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)
+RESOLUTION singlet 64 seconds 2.6267530098557472 valid 100
+RESOLUTION singlet 128 seconds 1.755292679183185 valid 100
+Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/qfilm03-imageplane-numerical-20261028-01/src/validation/qfilm03_imageplane_numerical.py", line 79, in <module>
+    if __name__=="__main__":main()
+                            ^^^^^^
+  File "/var/lib/cots-lamcts/jobs/qfilm03-imageplane-numerical-20261028-01/src/validation/qfilm03_imageplane_numerical.py", line 75, in main
+    f"{x}->{y}":compare(rr[x],rr[y])
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/var/lib/cots-lamcts/jobs/qfilm03-imageplane-numerical-20261028-01/src/validation/qfilm03_imageplane_numerical.py", line 44, in compare
+    "J_abs":float(abs(float(a["quality"]["J_task"])-float(b["quality"]["J_task"]))) if a["quality"]["J_task"] is not None and b["quality"]["J_task"] is not None else None,
+                                                                                       ~^^^^^^^^^^^
+IndexError: only integers, slices (`:`), ellipsis (`...`), numpy.newaxis (`None`) and integer or boolean arrays are valid indices
