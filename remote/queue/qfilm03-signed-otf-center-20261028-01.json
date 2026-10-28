@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "qfilm03-signed-otf-center-20261028-01",
+  "code_commit": "e266fa65611d5a147eb566fb5908d550f6376f4a",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm03_signed_otf_center_diagnostic.py"
+  ],
+  "timeout_sec": 1200,
+  "memory_gb": 0
+}
