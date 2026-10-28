@@ -1,0 +1,16 @@
+{
+  "args": [
+    "validation/qfilm03_imageplane_numerical.py"
+  ],
+  "code_commit": "b7b835e5c248e64dd181dcb41f38e34d2b8053b5",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm03-imageplane-numerical-20261028-01",
+  "memory_gb": 0,
+  "request_sha256": "77465be0841b75500e20aa433f71167224ce5da98e07f86733e602ecba029286",
+  "schema": 1,
+  "started_at": 1793171775.8678315,
+  "state": "running",
+  "timeout_sec": 1800
+}
