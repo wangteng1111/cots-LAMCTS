@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1793179757.8577452,
+  "code_commit": "2170c34d3a3d13f089699144d0d9c70987391b91",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm03-identical-huygens-kernel-20261028-01",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/qfilm03-identical-huygens-kernel-20261028-01.json",
+  "request_sha256": "5289139dfe7f8b037647405f3d7515c3c95ac3f2f9d3803508c53842abf5626b",
+  "schema": 1,
+  "state": "claimed"
+}
