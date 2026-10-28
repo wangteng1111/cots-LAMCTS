@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "qfilm03-huygens-red-resolution-20261028-01",
+  "code_commit": "51658613f47d5303c410aa32bc8d15edc1989dfa",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm03_huygens_resolution_convergence.py"
+  ],
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
