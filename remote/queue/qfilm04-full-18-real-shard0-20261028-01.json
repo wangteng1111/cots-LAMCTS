@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "job_id": "qfilm04-full-18-real-shard0-20261028-01",
-  "code_commit": "d534e3f40cdfcccfb5d62a367e51ea41fd242096",
+  "code_commit": "be3e65bdb305ddf9f03c7024d6897299ed34fd83",
   "entrypoint": "scripts/cuda_venv_exec.py",
   "args": [
     "validation/qfilm04_full_18_real_case_benchmark.py",
