@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "qfilm03-fullframe-red-convergence-20261028-01",
+  "code_commit": "dd18109cd9ca15fd713f42375045d7d9fa210dc7",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm03_fullframe_reference_convergence.py"
+  ],
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
