@@ -1,0 +1,16 @@
+{
+  "args": [
+    "validation/qfilm03_fullframe_polychromatic.py"
+  ],
+  "code_commit": "5af4c301eaeb0ece4c7b8a4efe760b4d10a13abc",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm03-fullframe-polychromatic-20261028-01",
+  "memory_gb": 0,
+  "request_sha256": "e9e5dd7893d7369c3a21a64d71aa25f96c3de71a64249a86e1f1c7bedcacdc6d",
+  "schema": 1,
+  "started_at": 1793175585.077486,
+  "state": "running",
+  "timeout_sec": 1800
+}
