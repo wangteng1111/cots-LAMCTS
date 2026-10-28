@@ -3,17 +3,27 @@
     "validation/qfilm03_physical_finalJ_fixedchief_256.py"
   ],
   "code_commit": "cc80e5541c6188f1e28691a360e0f4e73a79da98",
+  "elapsed_sec": 30.158241510391235,
   "entrypoint": "scripts/cuda_venv_exec.py",
   "env": {},
+  "finished_at": 1793180949.59802,
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm03-physical-finalJ-fixedchief-256-20261028-01",
-  "log_tail": "",
+  "log_tail": "/var/lib/cots-lamcts/jobs/qfilm03-physical-finalJ-fixedchief-256-20261028-01/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)\nPHYSICAL_FINALJ singlet {\"seconds\": 5.906238332390785, \"old_J\": 2.826412044053487, \"physical_J\": 2.830613950424673, \"old_schema\": \"QfilmResult-0.2\", \"physical_schema\": \"QfilmResult-0.3\", \"physical_certified\": false, \"training_eligible\": false, \"per_field\": [{\"h\": 0, \"baseline_max_abs_vs_deeplens\": 0.048739269318651975, \"physical_max_abs_vs_deeplens\": 0.018361182311571356, \"baseline_mean_abs_vs_deeplens\": 0.02886079002305251, \"physical_mean_abs_vs_deeplens\": 0.004971262301355479, \"max_physical_vs_baseline\": 0.04791901513633694, \"quality_improvement_in_max_abs\": 0.03037808700708062}, {\"h\": 0.5, \"baseline_max_abs_vs_deeplens\": 0.01971940300836944, \"physical_max_abs_vs_deeplens\": 0.011514974681099957, \"baseline_mean_abs_vs_deeplens\": 0.0036410061665962832, \"physical_mean_abs_vs_deeplens\": 0.0024202512612838353, \"max_physical_vs_baseline\": 0.01206411495612219, \"quality_improvement_in_max_abs\": 0.008204428327269484}, {\"h\": 1, \"baseline_max_abs_vs_deeplens\": 0.01689577895965521, \"physical_max_abs_vs_deeplens\": 0.013178916630904073, \"baseline_mean_abs_vs_deeplens\": 0.003338857277759071, \"physical_mean_abs_vs_deeplens\": 0.002222456679828651, \"max_physical_vs_baseline\": 0.004654750483037042, \"quality_improvement_in_max_abs\": 0.003716862328751137}]}\nPHYSICAL_FINALJ internal_stop_asphere {\"seconds\": 18.63046895992011, \"old_J\": 0.9563732553565802, \"physical_J\": 0.9633303907139034, \"old_schema\": \"QfilmResult-0.2\", \"physical_schema\": \"QfilmResult-0.3\", \"physical_certified\": false, \"training_eligible\": false, \"per_field\": [{\"h\": 0, \"baseline_max_abs_vs_deeplens\": 0.06754704077698818, \"physical_max_abs_vs_deeplens\": 0.0314180092481855, \"baseline_mean_abs_vs_deeplens\": 0.05139625469971617, \"physical_mean_abs_vs_deeplens\": 0.010584068185747522, \"max_physical_vs_baseline\": 0.06277032620174504, \"quality_improvement_in_max_abs\": 0.03612903152880269}, {\"h\": 0.5, \"baseline_max_abs_vs_deeplens\": 0.01761773334161364, \"physical_max_abs_vs_deeplens\": 0.019462143244331157, \"baseline_mean_abs_vs_deeplens\": 0.003454720406226997, \"physical_mean_abs_vs_deeplens\": 0.002931038838344303, \"max_physical_vs_baseline\": 0.004071315619339662, \"quality_improvement_in_max_abs\": -0.001844409902717517}, {\"h\": 1, \"baseline_max_abs_vs_deeplens\": 0.01111836003926262, \"physical_max_abs_vs_deeplens\": 0.008733607049004177, \"baseline_mean_abs_vs_deeplens\": 0.002629157031254579, \"physical_mean_abs_vs_deeplens\": 0.0024020314819692503, \"max_physical_vs_baseline\": 0.00950623868594507, \"quality_improvement_in_max_abs\": 0.0023847529902584434}]}\nALL_PASS {\"cases\": [\"singlet\", \"internal_stop_asphere\"]}",
   "memory_gb": 0,
   "pid": 382820,
   "request_sha256": "6126818d247637e555225da2c137dd574393c4299830393d99002f4224bcfbd9",
+  "returncode": 0,
   "schema": 1,
   "started_at": 1793180919.4397786,
-  "state": "running",
+  "state": "finished",
   "timeout_sec": 1800,
-  "updated_at": 1793180922.7666004
+  "updated_at": 1793180922.7666004,
+  "uploaded_artifacts": [
+    {
+      "path": "qfilm03_physical_mode_fixedchief/fullframe_physical_finalJ_fixedchief_256.json",
+      "size": 3268,
+      "uploaded": true
+    }
+  ]
 }
