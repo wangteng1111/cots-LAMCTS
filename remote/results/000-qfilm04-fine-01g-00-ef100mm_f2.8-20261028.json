@@ -19,7 +19,7 @@
   },
   "hostname": "aipss-Rack-Server",
   "job_id": "000-qfilm04-fine-01g-00-ef100mm_f2.8-20261028",
-  "log_tail": "",
+  "log_tail": "/var/lib/cots-lamcts/jobs/000-qfilm04-fine-01g-00-ef100mm_f2.8-20261028/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)\nPSF_PROGRESS ef100mm_f2.8 0.0 430.0 3949056 6553600\nPSF_PROGRESS ef100mm_f2.8 0.0 430.0 6553600 6553600\nFINE_SAMPLE ef100mm_f2.8 0.0 430.0 completed \nPSF_PROGRESS ef100mm_f2.8 0.0 470.0 3882176 6553600\nPSF_PROGRESS ef100mm_f2.8 0.0 470.0 6553600 6553600\nFINE_SAMPLE ef100mm_f2.8 0.0 470.0 completed \nPSF_PROGRESS ef100mm_f2.8 0.0 510.0 3908608 6553600",
   "memory_gb": 0,
   "pid": 413795,
   "request_sha256": "74195701881f26d4e9c97e1c2fe514b81cc63750c93631d96b02b47eebb9e880",
@@ -27,5 +27,5 @@
   "started_at": 1793215700.308565,
   "state": "running",
   "timeout_sec": 172800,
-  "updated_at": 1793215705.8772855
+  "updated_at": 1793215887.6835604
 }
