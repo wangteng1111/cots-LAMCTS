@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "qfilm03-virtual-pupil-huygens-20261028-01",
+  "code_commit": "9035c88973d9607725be83c5fb032cd69d582f05",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm03_virtual_exit_plane_ablation.py"
+  ],
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
