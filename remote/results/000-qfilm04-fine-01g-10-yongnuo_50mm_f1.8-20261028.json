@@ -19,10 +19,13 @@
   },
   "hostname": "aipss-Rack-Server",
   "job_id": "000-qfilm04-fine-01g-10-yongnuo_50mm_f1.8-20261028",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 421120,
   "request_sha256": "30938646edcb7f2929aa7aaa5bf228b5b53bf1546e69bc649f2fd0a6100bf7fc",
   "schema": 1,
   "started_at": 1793225840.3232183,
   "state": "running",
-  "timeout_sec": 172800
+  "timeout_sec": 172800,
+  "updated_at": 1793225844.4646873
 }
