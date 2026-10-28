@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1793179925.4488227,
+  "code_commit": "cbecad062e0474eea6e04175194a9d720b185991",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm03-source-centering-curvature-20261028-01",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/qfilm03-source-centering-curvature-20261028-01.json",
+  "request_sha256": "e90725691d8d522183421739ab2e90c187ad88d5e07d58a3d90b669801bb4489",
+  "schema": 1,
+  "state": "claimed"
+}
