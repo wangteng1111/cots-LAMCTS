@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "qfilm03-huygens-reference-convergence-20261028-01",
+  "code_commit": "6a9fe3820a75fcf54b141a43af93846fb47e822e",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm03_huygens_reference_convergence.py"
+  ],
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
