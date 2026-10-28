@@ -3,17 +3,27 @@
     "validation/qfilm03_corrected_reference_chief_regression.py"
   ],
   "code_commit": "96c1887585f2a6f8126381f5cda63aa419b5e985",
+  "elapsed_sec": 51.755704402923584,
   "entrypoint": "scripts/cuda_venv_exec.py",
   "env": {},
+  "finished_at": 1793180238.7268732,
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm03-corrected-chief-reference-20261028-01",
-  "log_tail": "",
+  "log_tail": "/var/lib/cots-lamcts/jobs/qfilm03-corrected-chief-reference-20261028-01/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)\nCENTER_VERIFY singlet native_stochastic maximum_diff 0.30102706799124285 efl_error 5.459727745460441e-07\nCENTER_VERIFY singlet deterministic_physical_chief maximum_diff 0.313482596633342 efl_error 5.459727745460441e-07\nCENTER_VERIFY internal_stop_asphere native_stochastic maximum_diff 0.3006875745842297 efl_error 4.624742544478977e-07\nCENTER_VERIFY internal_stop_asphere deterministic_physical_chief maximum_diff 0.2740829000390208 efl_error 4.624742544478977e-07\nCORRECTED_VERIFY_PASS 4",
   "memory_gb": 0,
   "pid": 379151,
   "request_sha256": "2204839492aed04c0f84e16df169ee4ec9433f8c6fb19733b00f0035e094d840",
+  "returncode": 0,
   "schema": 1,
   "started_at": 1793180186.9711688,
-  "state": "running",
+  "state": "finished",
   "timeout_sec": 900,
-  "updated_at": 1793180190.6458616
+  "updated_at": 1793180190.6458616,
+  "uploaded_artifacts": [
+    {
+      "path": "qfilm03_fixed_chief_verify/corrected_reference_chief_and_mono_mtf.json",
+      "size": 15910,
+      "uploaded": true
+    }
+  ]
 }
