@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "qfilm03-huygens-11fields-7waves-20261028-01",
+  "code_commit": "c54e5d45db2eb1c9d58b065bd74526c9f8c40bd8",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm03_huygens_spectral_fields.py"
+  ],
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
