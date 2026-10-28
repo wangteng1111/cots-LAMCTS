@@ -19,6 +19,8 @@ class Propagation:
     pixel_block:int=32
     frame_width_mm:float=36.
     frame_height_mm:float=24.
+    # Diagnostic-only virtual backward propagation: not used by Final-J.
+    diagnostic_virtual_exit_z_mm:float|None=None
     weight_mode:str="uniform_stop"
     obliquity:str="deep_ray"
     def validate(self):
@@ -43,11 +45,25 @@ def eval_fixed_film(p,wave_nm,field_h,config=Propagation(),device="cuda:0"):
         mask=(valid & inside.unsqueeze(0)).reshape(pupil_n,pupil_n)
         zz=z.reshape(pupil_n,pupil_n)
         max_z=float(zz[mask].max())
-        exit_z=max_z+0.1
+        exit_z=max_z+0.1 if config.diagnostic_virtual_exit_z_mm is None else float(config.diagnostic_virtual_exit_z_mm)
         if exit_z>=film:raise ValueError("exit plane beyond film")
-        xe,ye,oe,ok=exit_plane_from_rays(
-          *[u.reshape(pupil_n,pupil_n) for u in (z,x,y,opl,xf,yf,(valid & inside.unsqueeze(0)))],
-          film,exit_z)
+        if config.diagnostic_virtual_exit_z_mm is None:
+            xe,ye,oe,ok=exit_plane_from_rays(
+              *[u.reshape(pupil_n,pupil_n) for u in (z,x,y,opl,xf,yf,(valid & inside.unsqueeze(0)))],
+              film,exit_z)
+        else:
+            # Reproduce the reference's image-space air backward extrapolation
+            # to a virtual exit pupil, even when it crosses the glass.
+            # This is a diagnostic, NOT a physical wavefront there.
+            zz=z.reshape(pupil_n,pupil_n)
+            xx=x.reshape(pupil_n,pupil_n);yy=y.reshape(pupil_n,pupil_n)
+            xf_=xf.reshape(pupil_n,pupil_n);yf_=yf.reshape(pupil_n,pupil_n)
+            dzf=(film-zz)
+            sx=(xf_-xx)/dzf;sy=(yf_-yy)/dzf
+            step=(exit_z-zz)
+            xe=xx+step*sx;ye=yy+step*sy
+            oe=opl.reshape(pupil_n,pupil_n)+step*torch.sqrt(1+sx*sx+sy*sy)
+            ok=(valid & inside.unsqueeze(0)).reshape(pupil_n,pupil_n) & (dzf>0)
         jac_area,bad,jac=exit_area_weights(xe,ye,ok,2*rs/pupil_n)
         if config.weight_mode=="uniform_stop":
             amp=torch.where(ok,torch.ones_like(jac_area)*(2*rs/pupil_n)**2,0.)
@@ -80,7 +96,8 @@ def eval_fixed_film(p,wave_nm,field_h,config=Propagation(),device="cuda:0"):
         return {"psf":psf,"valid_rays":int(active.sum()),"bad_jacobian_fraction":float(bad.sum()/mask.sum()),
                 "jac_min":float(jac[active].min()),"jac_p95":float(torch.quantile(jac[active],.95)),
                 "center_film_mm":center,"exit_z_mm":exit_z,
-                "weight_mode":config.weight_mode,"pupil_n":pupil_n}
+                "weight_mode":config.weight_mode,"pupil_n":pupil_n,
+                "source_plane_type":"physical" if config.diagnostic_virtual_exit_z_mm is None else "virtual_backward_extrapolation_not_physical"}
 
 def mtf_from_psf_exact(psf,pitch_mm,freqs):
     import numpy as np
