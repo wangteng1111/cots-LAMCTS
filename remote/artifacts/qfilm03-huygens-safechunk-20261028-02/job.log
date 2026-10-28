@@ -1,0 +1,18 @@
+/var/lib/cots-lamcts/deeplens_upstream/deeplens/geolens_pkg/psf_compute.py:608: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)
+  complex_amp = (amp / r) * torch.exp(1j * phase)  # [ks, ks, batch]
+Huygens_BATCH_INVARIANCE {"schema": "Qfilm03-batch-invariance-v1", "upstream_SHA": "911bb9d334fce7e20a4407c4506ac683b52ff246", "original_sha256": "2e4949a4c7005dbf2ec4d0918db1d03b376f28912bbeca19d71093d931a342fd", "modified_sha256": "3fa7bbd21c01ae9b232dcbc733a8cf55af9c658f92b5f02e59d6d7d6fb21c546", "only_change": "Huygens ray-batch size 10000 -> 1024", "parity": {"PSF_max_abs": 0.0, "PSF_mean_abs": 0.0, "PSF_sum_a": 1.0, "PSF_sum_b": 1.0}, "optical_physics_changed": false}
+REF_CONV singlet 430.0 0.0 rays 0.009 window 0.00868 time 11.23
+REF_CONV singlet 430.0 0.5 rays 0.01332 window 0.00689 time 11.24
+REF_CONV singlet 430.0 1.0 rays 0.00685 window 0.01652 time 11.24
+REF_CONV singlet 550.0 0.0 rays 0.02196 window 0.02534 time 11.24
+REF_CONV singlet 550.0 0.5 rays 0.01988 window 0.02367 time 11.25
+REF_CONV singlet 550.0 1.0 rays 0.01804 window 0.0173 time 11.26
+REF_CONV singlet 670.0 0.0 rays 0.01927 window 0.0221 time 11.26
+REF_CONV singlet 670.0 0.5 rays 0.01833 window 0.02179 time 11.25
+REF_CONV singlet 670.0 1.0 rays 0.01715 window 0.01929 time 11.26
+REF_CONV internal_stop_asphere 430.0 0.0 rays 0.01602 window 0.01405 time 11.28
+REF_CONV internal_stop_asphere 430.0 0.5 rays 0.01984 window 0.01369 time 11.29
+REF_CONV internal_stop_asphere 430.0 1.0 rays 0.01211 window 0.0791 time 11.28
+REF_CONV internal_stop_asphere 550.0 0.0 rays 0.0343 window 0.03733 time 11.28
+REF_CONV internal_stop_asphere 550.0 0.5 rays 0.02821 window 0.03269 time 11.29
+REF_CONV internal_stop_asphere 550.0 1.0 rays 0.02033 window 0.01952 time 11.29
