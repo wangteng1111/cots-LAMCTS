@@ -1,0 +1,2 @@
+CASE_SUMMARY singlet "TypeError(\"object of type 'float' has no len()\")"
+CASE_SUMMARY internal_stop_asphere "TypeError(\"object of type 'float' has no len()\")"
