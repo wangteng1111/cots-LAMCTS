@@ -1,0 +1,3728 @@
+{
+  "schema": "qfilm03-chief-position-7wave-11field-v1",
+  "status": "uncertified",
+  "results": {
+    "singlet": {
+      "case": "singlet",
+      "lens_efl_mm": 49.05139341594305,
+      "samples": [
+        {
+          "wavelength_nm": 430.0,
+          "field_h": 0.0,
+          "angle_rad": 0.0,
+          "qfilm_chief_x_mm": 0.0,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 0.00012422664555738344,
+            "positive_film_height_mm": -0.00012422664555738344,
+            "stop_dist_normalized": 0.003012017011093555,
+            "valid": 1.0,
+            "seconds": 0.02241283841431141
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 1.221666828439506e-05,
+            "positive_film_height_mm": -1.221666828439506e-05,
+            "stop_dist_normalized": 0.0009267803149137083,
+            "valid": 1.0,
+            "seconds": 0.007382362149655819
+          },
+          "chief_abs_height_error_mm": 1.221666828439506e-05,
+          "deeplens_sampling_change_mm": 0.00011200997727298838
+        },
+        {
+          "wavelength_nm": 430.0,
+          "field_h": 0.1,
+          "angle_rad": 0.009999666686665238,
+          "qfilm_chief_x_mm": 0.4914127882650029,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 0.49124698864206306,
+            "positive_film_height_mm": -0.49124698864206306,
+            "stop_dist_normalized": 0.0020675786373909014,
+            "valid": 1.0,
+            "seconds": 0.006042776629328728
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 0.49140715986642636,
+            "positive_film_height_mm": -0.49140715986642636,
+            "stop_dist_normalized": 0.0014906042532366768,
+            "valid": 1.0,
+            "seconds": 0.0061893220990896225
+          },
+          "chief_abs_height_error_mm": 5.6283985765404054e-06,
+          "deeplens_sampling_change_mm": 0.00016017122436329245
+        },
+        {
+          "wavelength_nm": 430.0,
+          "field_h": 0.2,
+          "angle_rad": 0.019997333973150535,
+          "qfilm_chief_x_mm": 0.9827877916620942,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 0.9827007554801354,
+            "positive_film_height_mm": -0.9827007554801354,
+            "stop_dist_normalized": 0.001265177687539651,
+            "valid": 1.0,
+            "seconds": 0.006035666912794113
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 0.9826615958534723,
+            "positive_film_height_mm": -0.9826615958534723,
+            "stop_dist_normalized": 0.0015864695529734362,
+            "valid": 1.0,
+            "seconds": 0.006221953779459
+          },
+          "chief_abs_height_error_mm": 0.00012619580862183177,
+          "deeplens_sampling_change_mm": 3.9159626663010094e-05
+        },
+        {
+          "wavelength_nm": 430.0,
+          "field_h": 0.3,
+          "angle_rad": 0.0299910048568779,
+          "qfilm_chief_x_mm": 1.4740872224261667,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 1.4741744612810836,
+            "positive_film_height_mm": -1.4741744612810836,
+            "stop_dist_normalized": 0.0017504413656177296,
+            "valid": 1.0,
+            "seconds": 0.00600622221827507
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 1.4740588919107538,
+            "positive_film_height_mm": -1.4740588919107538,
+            "stop_dist_normalized": 0.0004296884738931612,
+            "valid": 1.0,
+            "seconds": 0.006080404855310917
+          },
+          "chief_abs_height_error_mm": 2.8330515412955393e-05,
+          "deeplens_sampling_change_mm": 0.00011556937032985992
+        },
+        {
+          "wavelength_nm": 430.0,
+          "field_h": 0.4,
+          "angle_rad": 0.039978687123290044,
+          "qfilm_chief_x_mm": 1.9652732870212408,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 1.9653792709550477,
+            "positive_film_height_mm": -1.9653792709550477,
+            "stop_dist_normalized": 0.0014241557735274692,
+            "valid": 1.0,
+            "seconds": 0.006784077733755112
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 1.965331584487343,
+            "positive_film_height_mm": -1.965331584487343,
+            "stop_dist_normalized": 0.001217902367709699,
+            "valid": 1.0,
+            "seconds": 0.006238807924091816
+          },
+          "chief_abs_height_error_mm": 5.8297466102086304e-05,
+          "deeplens_sampling_change_mm": 4.7686467704810553e-05
+        },
+        {
+          "wavelength_nm": 430.0,
+          "field_h": 0.5,
+          "angle_rad": 0.049958395721942765,
+          "qfilm_chief_x_mm": 2.4563081833137685,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 2.456230660362906,
+            "positive_film_height_mm": -2.456230660362906,
+            "stop_dist_normalized": 0.0008474894323654621,
+            "valid": 1.0,
+            "seconds": 0.006001319736242294
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 2.456242430298782,
+            "positive_film_height_mm": -2.456242430298782,
+            "stop_dist_normalized": 0.0011237146842200242,
+            "valid": 1.0,
+            "seconds": 0.00615174975246191
+          },
+          "chief_abs_height_error_mm": 6.575301498656927e-05,
+          "deeplens_sampling_change_mm": 1.1769935876149162e-05
+        },
+        {
+          "wavelength_nm": 430.0,
+          "field_h": 0.6,
+          "angle_rad": 0.05992815512120788,
+          "qfilm_chief_x_mm": 2.947154097816248,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 2.9472422930995696,
+            "positive_film_height_mm": -2.9472422930995696,
+            "stop_dist_normalized": 0.0009235398910624023,
+            "valid": 1.0,
+            "seconds": 0.0060134148225188255
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 2.947063203819726,
+            "positive_film_height_mm": -2.947063203819726,
+            "stop_dist_normalized": 0.0013082461677189664,
+            "valid": 1.0,
+            "seconds": 0.006183406338095665
+          },
+          "chief_abs_height_error_mm": 9.089399652184582e-05,
+          "deeplens_sampling_change_mm": 0.0001790892798436694
+        },
+        {
+          "wavelength_nm": 430.0,
+          "field_h": 0.7,
+          "angle_rad": 0.06988600163464251,
+          "qfilm_chief_x_mm": 3.437773203024318,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 3.4378670975907135,
+            "positive_film_height_mm": -3.4378670975907135,
+            "stop_dist_normalized": 0.0008576936628813766,
+            "valid": 1.0,
+            "seconds": 0.006007843650877476
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 3.437841914012068,
+            "positive_film_height_mm": -3.437841914012068,
+            "stop_dist_normalized": 0.0013834364905665533,
+            "valid": 1.0,
+            "seconds": 0.006133800372481346
+          },
+          "chief_abs_height_error_mm": 6.871098774974271e-05,
+          "deeplens_sampling_change_mm": 2.518357864556009e-05
+        },
+        {
+          "wavelength_nm": 430.0,
+          "field_h": 0.8,
+          "angle_rad": 0.07982998571223732,
+          "qfilm_chief_x_mm": 3.9281276548702424,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 3.9285559898463576,
+            "positive_film_height_mm": -3.9285559898463576,
+            "stop_dist_normalized": 0.004120910347030671,
+            "valid": 1.0,
+            "seconds": 0.006053081713616848
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 3.9281196237991827,
+            "positive_film_height_mm": -3.9281196237991827,
+            "stop_dist_normalized": 0.000823701845740448,
+            "valid": 1.0,
+            "seconds": 0.006125331856310368
+          },
+          "chief_abs_height_error_mm": 8.031071059733108e-06,
+          "deeplens_sampling_change_mm": 0.00043636604717489647
+        },
+        {
+          "wavelength_nm": 430.0,
+          "field_h": 0.9,
+          "angle_rad": 0.08975817418995052,
+          "qfilm_chief_x_mm": 4.418179590315391,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 4.41793366634615,
+            "positive_film_height_mm": -4.41793366634615,
+            "stop_dist_normalized": 0.002152455801154361,
+            "valid": 1.0,
+            "seconds": 0.0059621697291731834
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 4.4182093123684085,
+            "positive_film_height_mm": -4.4182093123684085,
+            "stop_dist_normalized": 0.0005929488864213312,
+            "valid": 1.0,
+            "seconds": 0.0061217499896883965
+          },
+          "chief_abs_height_error_mm": 2.972205301787767e-05,
+          "deeplens_sampling_change_mm": 0.00027564602225815804
+        },
+        {
+          "wavelength_nm": 430.0,
+          "field_h": 1.0,
+          "angle_rad": 0.09966865249116204,
+          "qfilm_chief_x_mm": 4.907891125104003,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 4.9081158252049875,
+            "positive_film_height_mm": -4.9081158252049875,
+            "stop_dist_normalized": 0.0016082230596349823,
+            "valid": 1.0,
+            "seconds": 0.006009421311318874
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 4.907824342709669,
+            "positive_film_height_mm": -4.907824342709669,
+            "stop_dist_normalized": 0.0008053031497542226,
+            "valid": 1.0,
+            "seconds": 0.006239243783056736
+          },
+          "chief_abs_height_error_mm": 6.678239433366429e-05,
+          "deeplens_sampling_change_mm": 0.00029148249531818493
+        },
+        {
+          "wavelength_nm": 470.0,
+          "field_h": 0.0,
+          "angle_rad": 0.0,
+          "qfilm_chief_x_mm": 0.0,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 3.12844113976086e-05,
+            "positive_film_height_mm": -3.12844113976086e-05,
+            "stop_dist_normalized": 0.0027746896032596834,
+            "valid": 1.0,
+            "seconds": 0.006047951988875866
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 6.219742846268563e-06,
+            "positive_film_height_mm": -6.219742846268563e-06,
+            "stop_dist_normalized": 0.0004000658524181508,
+            "valid": 1.0,
+            "seconds": 0.006152822636067867
+          },
+          "chief_abs_height_error_mm": 6.219742846268563e-06,
+          "deeplens_sampling_change_mm": 2.5064668551340037e-05
+        },
+        {
+          "wavelength_nm": 470.0,
+          "field_h": 0.1,
+          "angle_rad": 0.009999666686665238,
+          "qfilm_chief_x_mm": 0.491706509419421,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 0.4917510441445131,
+            "positive_film_height_mm": -0.4917510441445131,
+            "stop_dist_normalized": 0.000872848088541123,
+            "valid": 1.0,
+            "seconds": 0.006050580181181431
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 0.49168684295890547,
+            "positive_film_height_mm": -0.49168684295890547,
+            "stop_dist_normalized": 0.0010389558108921998,
+            "valid": 1.0,
+            "seconds": 0.006114102900028229
+          },
+          "chief_abs_height_error_mm": 1.9666460515543882e-05,
+          "deeplens_sampling_change_mm": 6.420118560762633e-05
+        },
+        {
+          "wavelength_nm": 470.0,
+          "field_h": 0.2,
+          "angle_rad": 0.019997333973150535,
+          "qfilm_chief_x_mm": 0.9833753965056204,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 0.9833199988405209,
+            "positive_film_height_mm": -0.9833199988405209,
+            "stop_dist_normalized": 0.0018671038010180008,
+            "valid": 1.0,
+            "seconds": 0.006087657995522022
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 0.9833542235393995,
+            "positive_film_height_mm": -0.9833542235393995,
+            "stop_dist_normalized": 0.00043943891108840064,
+            "valid": 1.0,
+            "seconds": 0.006083468906581402
+          },
+          "chief_abs_height_error_mm": 2.117296622095033e-05,
+          "deeplens_sampling_change_mm": 3.422469887859325e-05
+        },
+        {
+          "wavelength_nm": 470.0,
+          "field_h": 0.3,
+          "angle_rad": 0.0299910048568779,
+          "qfilm_chief_x_mm": 1.4749690359733414,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 1.4750002249076632,
+            "positive_film_height_mm": -1.4750002249076632,
+            "stop_dist_normalized": 0.0017143584997298099,
+            "valid": 1.0,
+            "seconds": 0.0060365041717886925
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 1.4749627379325048,
+            "positive_film_height_mm": -1.4749627379325048,
+            "stop_dist_normalized": 0.0004790294705654094,
+            "valid": 1.0,
+            "seconds": 0.006149718537926674
+          },
+          "chief_abs_height_error_mm": 6.29804083662755e-06,
+          "deeplens_sampling_change_mm": 3.748697515848498e-05
+        },
+        {
+          "wavelength_nm": 470.0,
+          "field_h": 0.4,
+          "angle_rad": 0.039978687123290044,
+          "qfilm_chief_x_mm": 1.9664497966566903,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 1.9664209560123547,
+            "positive_film_height_mm": -1.9664209560123547,
+            "stop_dist_normalized": 0.0013194596411669082,
+            "valid": 1.0,
+            "seconds": 0.006035918369889259
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 1.9664585406563584,
+            "positive_film_height_mm": -1.9664585406563584,
+            "stop_dist_normalized": 0.0007271881394145027,
+            "valid": 1.0,
+            "seconds": 0.006132797338068485
+          },
+          "chief_abs_height_error_mm": 8.743999668103797e-06,
+          "deeplens_sampling_change_mm": 3.758464400371864e-05
+        },
+        {
+          "wavelength_nm": 470.0,
+          "field_h": 0.5,
+          "angle_rad": 0.049958395721942765,
+          "qfilm_chief_x_mm": 2.4577800386273396,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 2.4579751600309914,
+            "positive_film_height_mm": -2.4579751600309914,
+            "stop_dist_normalized": 0.0028961888260974804,
+            "valid": 1.0,
+            "seconds": 0.006000031717121601
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 2.4577928314642667,
+            "positive_film_height_mm": -2.4577928314642667,
+            "stop_dist_normalized": 0.0003411796347868834,
+            "valid": 1.0,
+            "seconds": 0.006108054891228676
+          },
+          "chief_abs_height_error_mm": 1.2792836927122408e-05,
+          "deeplens_sampling_change_mm": 0.00018232856672462106
+        },
+        {
+          "wavelength_nm": 470.0,
+          "field_h": 0.6,
+          "angle_rad": 0.05992815512120788,
+          "qfilm_chief_x_mm": 2.948922110382786,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 2.9490079429127167,
+            "positive_film_height_mm": -2.9490079429127167,
+            "stop_dist_normalized": 0.002997686334997479,
+            "valid": 1.0,
+            "seconds": 0.005960756912827492
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 2.9488171864223727,
+            "positive_film_height_mm": -2.9488171864223727,
+            "stop_dist_normalized": 0.0014826903859102517,
+            "valid": 1.0,
+            "seconds": 0.006113417446613312
+          },
+          "chief_abs_height_error_mm": 0.00010492396041339447,
+          "deeplens_sampling_change_mm": 0.00019075649034405728
+        },
+        {
+          "wavelength_nm": 470.0,
+          "field_h": 0.7,
+          "angle_rad": 0.06988600163464251,
+          "qfilm_chief_x_mm": 3.439838346127738,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 3.439682279475541,
+            "positive_film_height_mm": -3.439682279475541,
+            "stop_dist_normalized": 0.002043642444918929,
+            "valid": 1.0,
+            "seconds": 0.006099873222410679
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 3.439823348830901,
+            "positive_film_height_mm": -3.439823348830901,
+            "stop_dist_normalized": 0.0003617737250757956,
+            "valid": 1.0,
+            "seconds": 0.006136287935078144
+          },
+          "chief_abs_height_error_mm": 1.4997296836849472e-05,
+          "deeplens_sampling_change_mm": 0.00014106935536029042
+        },
+        {
+          "wavelength_nm": 470.0,
+          "field_h": 0.8,
+          "angle_rad": 0.07982998571223732,
+          "qfilm_chief_x_mm": 3.930491063171475,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 3.9304784771872123,
+            "positive_film_height_mm": -3.9304784771872123,
+            "stop_dist_normalized": 0.00029240955014386236,
+            "valid": 1.0,
+            "seconds": 0.006022104062139988
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 3.930458254397041,
+            "positive_film_height_mm": -3.930458254397041,
+            "stop_dist_normalized": 0.0009104415192139019,
+            "valid": 1.0,
+            "seconds": 0.006146117113530636
+          },
+          "chief_abs_height_error_mm": 3.280877443412322e-05,
+          "deeplens_sampling_change_mm": 2.022279017133144e-05
+        },
+        {
+          "wavelength_nm": 470.0,
+          "field_h": 0.9,
+          "angle_rad": 0.08975817418995052,
+          "qfilm_chief_x_mm": 4.42084255946369,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 4.421026980617752,
+            "positive_film_height_mm": -4.421026980617752,
+            "stop_dist_normalized": 0.003055112210579243,
+            "valid": 1.0,
+            "seconds": 0.006027434021234512
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 4.4207822906132686,
+            "positive_film_height_mm": -4.4207822906132686,
+            "stop_dist_normalized": 0.000614039759276318,
+            "valid": 1.0,
+            "seconds": 0.0061224233359098434
+          },
+          "chief_abs_height_error_mm": 6.026885042142993e-05,
+          "deeplens_sampling_change_mm": 0.00024469000448323897
+        },
+        {
+          "wavelength_nm": 470.0,
+          "field_h": 1.0,
+          "angle_rad": 0.09966865249116204,
+          "qfilm_chief_x_mm": 4.910855111291027,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 4.910662208955961,
+            "positive_film_height_mm": -4.910662208955961,
+            "stop_dist_normalized": 0.0017321772439451099,
+            "valid": 1.0,
+            "seconds": 0.005961769260466099
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 4.910985241625876,
+            "positive_film_height_mm": -4.910985241625876,
+            "stop_dist_normalized": 0.0011690423447320028,
+            "valid": 1.0,
+            "seconds": 0.006156057119369507
+          },
+          "chief_abs_height_error_mm": 0.00013013033484909897,
+          "deeplens_sampling_change_mm": 0.00032303266991462465
+        },
+        {
+          "wavelength_nm": 510.0,
+          "field_h": 0.0,
+          "angle_rad": 0.0,
+          "qfilm_chief_x_mm": 0.0,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 2.6355591647354848e-05,
+            "positive_film_height_mm": -2.6355591647354848e-05,
+            "stop_dist_normalized": 0.001355615419704324,
+            "valid": 1.0,
+            "seconds": 0.0060602352023124695
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": -3.502200275370569e-06,
+            "positive_film_height_mm": 3.502200275370569e-06,
+            "stop_dist_normalized": 0.00011840792147422104,
+            "valid": 1.0,
+            "seconds": 0.00614554900676012
+          },
+          "chief_abs_height_error_mm": 3.502200275370569e-06,
+          "deeplens_sampling_change_mm": 2.9857791922725417e-05
+        },
+        {
+          "wavelength_nm": 510.0,
+          "field_h": 0.1,
+          "angle_rad": 0.009999666686665238,
+          "qfilm_chief_x_mm": 0.4919331972851957,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 0.4920050123161441,
+            "positive_film_height_mm": -0.4920050123161441,
+            "stop_dist_normalized": 0.0022683934819992314,
+            "valid": 1.0,
+            "seconds": 0.006046525202691555
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 0.4919457849490736,
+            "positive_film_height_mm": -0.4919457849490736,
+            "stop_dist_normalized": 0.0009476182335172488,
+            "valid": 1.0,
+            "seconds": 0.006080023944377899
+          },
+          "chief_abs_height_error_mm": 1.2587663877905442e-05,
+          "deeplens_sampling_change_mm": 5.922736707048015e-05
+        },
+        {
+          "wavelength_nm": 510.0,
+          "field_h": 0.2,
+          "angle_rad": 0.019997333973150535,
+          "qfilm_chief_x_mm": 0.9838288978774735,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 0.9838013580042733,
+            "positive_film_height_mm": -0.9838013580042733,
+            "stop_dist_normalized": 0.0023763712358289926,
+            "valid": 1.0,
+            "seconds": 0.006007075309753418
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 0.9838785056624115,
+            "positive_film_height_mm": -0.9838785056624115,
+            "stop_dist_normalized": 0.0014914098143067964,
+            "valid": 1.0,
+            "seconds": 0.0061507029458880424
+          },
+          "chief_abs_height_error_mm": 4.9607784938010546e-05,
+          "deeplens_sampling_change_mm": 7.714765813826574e-05
+        },
+        {
+          "wavelength_nm": 510.0,
+          "field_h": 0.3,
+          "angle_rad": 0.0299910048568779,
+          "qfilm_chief_x_mm": 1.4756496020897805,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 1.4756984653375858,
+            "positive_film_height_mm": -1.4756984653375858,
+            "stop_dist_normalized": 0.0023434024528382045,
+            "valid": 1.0,
+            "seconds": 0.006009169854223728
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 1.4756744274119167,
+            "positive_film_height_mm": -1.4756744274119167,
+            "stop_dist_normalized": 0.000795141668769481,
+            "valid": 1.0,
+            "seconds": 0.00606662780046463
+          },
+          "chief_abs_height_error_mm": 2.482532213621269e-05,
+          "deeplens_sampling_change_mm": 2.40379256690737e-05
+        },
+        {
+          "wavelength_nm": 510.0,
+          "field_h": 0.4,
+          "angle_rad": 0.039978687123290044,
+          "qfilm_chief_x_mm": 1.9673578042701534,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 1.967353387319598,
+            "positive_film_height_mm": -1.967353387319598,
+            "stop_dist_normalized": 0.001965589595152686,
+            "valid": 1.0,
+            "seconds": 0.005992980673909187
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 1.9673706430273605,
+            "positive_film_height_mm": -1.9673706430273605,
+            "stop_dist_normalized": 0.0004795927119149339,
+            "valid": 1.0,
+            "seconds": 0.006125945597887039
+          },
+          "chief_abs_height_error_mm": 1.2838757207145335e-05,
+          "deeplens_sampling_change_mm": 1.7255707762453554e-05
+        },
+        {
+          "wavelength_nm": 510.0,
+          "field_h": 0.5,
+          "angle_rad": 0.049958395721942765,
+          "qfilm_chief_x_mm": 2.458915989877624,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 2.4588773153114176,
+            "positive_film_height_mm": -2.4588773153114176,
+            "stop_dist_normalized": 0.003639883616523277,
+            "valid": 1.0,
+            "seconds": 0.005992718040943146
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 2.458903854173563,
+            "positive_film_height_mm": -2.458903854173563,
+            "stop_dist_normalized": 0.0002830831265066896,
+            "valid": 1.0,
+            "seconds": 0.006133761256933212
+          },
+          "chief_abs_height_error_mm": 1.2135704061222441e-05,
+          "deeplens_sampling_change_mm": 2.6538862145208952e-05
+        },
+        {
+          "wavelength_nm": 510.0,
+          "field_h": 0.6,
+          "angle_rad": 0.05992815512120788,
+          "qfilm_chief_x_mm": 2.9502866326279706,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 2.950318656229667,
+            "positive_film_height_mm": -2.950318656229667,
+            "stop_dist_normalized": 0.0008138963613871337,
+            "valid": 1.0,
+            "seconds": 0.006122590973973274
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 2.9503252147961434,
+            "positive_film_height_mm": -2.9503252147961434,
+            "stop_dist_normalized": 0.0008296949742411767,
+            "valid": 1.0,
+            "seconds": 0.006156270392239094
+          },
+          "chief_abs_height_error_mm": 3.858216817276272e-05,
+          "deeplens_sampling_change_mm": 6.55856647657771e-06
+        },
+        {
+          "wavelength_nm": 510.0,
+          "field_h": 0.7,
+          "angle_rad": 0.06988600163464251,
+          "qfilm_chief_x_mm": 3.441432191732334,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 3.44144146855375,
+            "positive_film_height_mm": -3.44144146855375,
+            "stop_dist_normalized": 0.0005168408511144273,
+            "valid": 1.0,
+            "seconds": 0.0060440413653850555
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 3.4414156348122984,
+            "positive_film_height_mm": -3.4414156348122984,
+            "stop_dist_normalized": 0.000737681255532797,
+            "valid": 1.0,
+            "seconds": 0.0061424532905220985
+          },
+          "chief_abs_height_error_mm": 1.6556920035437628e-05,
+          "deeplens_sampling_change_mm": 2.5833741451819492e-05
+        },
+        {
+          "wavelength_nm": 510.0,
+          "field_h": 0.8,
+          "angle_rad": 0.07982998571223732,
+          "qfilm_chief_x_mm": 3.932315109251476,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 3.9322931742170164,
+            "positive_film_height_mm": -3.9322931742170164,
+            "stop_dist_normalized": 0.0020818117828056257,
+            "valid": 1.0,
+            "seconds": 0.006025608628988266
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 3.93225225370261,
+            "positive_film_height_mm": -3.93225225370261,
+            "stop_dist_normalized": 0.001352410859565322,
+            "valid": 1.0,
+            "seconds": 0.00612172856926918
+          },
+          "chief_abs_height_error_mm": 6.285554886575895e-05,
+          "deeplens_sampling_change_mm": 4.092051440629518e-05
+        },
+        {
+          "wavelength_nm": 510.0,
+          "field_h": 0.9,
+          "angle_rad": 0.08975817418995052,
+          "qfilm_chief_x_mm": 4.422897807588127,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 4.422725937726375,
+            "positive_film_height_mm": -4.422725937726375,
+            "stop_dist_normalized": 0.0033956435445049804,
+            "valid": 1.0,
+            "seconds": 0.0060497913509607315
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 4.4228541965341694,
+            "positive_film_height_mm": -4.4228541965341694,
+            "stop_dist_normalized": 0.0005779046834969982,
+            "valid": 1.0,
+            "seconds": 0.006110684014856815
+          },
+          "chief_abs_height_error_mm": 4.3611053957448576e-05,
+          "deeplens_sampling_change_mm": 0.00012825880779487875
+        },
+        {
+          "wavelength_nm": 510.0,
+          "field_h": 1.0,
+          "angle_rad": 0.09966865249116204,
+          "qfilm_chief_x_mm": 4.913142687139576,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 4.913192114918402,
+            "positive_film_height_mm": -4.913192114918402,
+            "stop_dist_normalized": 0.0011271938247399687,
+            "valid": 1.0,
+            "seconds": 0.006042285822331905
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 4.913228345314098,
+            "positive_film_height_mm": -4.913228345314098,
+            "stop_dist_normalized": 0.0012172712099225917,
+            "valid": 1.0,
+            "seconds": 0.006109208799898624
+          },
+          "chief_abs_height_error_mm": 8.565817452232949e-05,
+          "deeplens_sampling_change_mm": 3.623039569600195e-05
+        },
+        {
+          "wavelength_nm": 550.0,
+          "field_h": 0.0,
+          "angle_rad": 0.0,
+          "qfilm_chief_x_mm": 0.0,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 1.084555905399038e-05,
+            "positive_film_height_mm": -1.084555905399038e-05,
+            "stop_dist_normalized": 0.0027286325459664747,
+            "valid": 1.0,
+            "seconds": 0.006006042473018169
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 9.889073814255394e-06,
+            "positive_film_height_mm": -9.889073814255394e-06,
+            "stop_dist_normalized": 0.0010055967788099908,
+            "valid": 1.0,
+            "seconds": 0.0061294641345739365
+          },
+          "chief_abs_height_error_mm": 9.889073814255394e-06,
+          "deeplens_sampling_change_mm": 9.564852397349853e-07
+        },
+        {
+          "wavelength_nm": 550.0,
+          "field_h": 0.1,
+          "angle_rad": 0.009999666686665238,
+          "qfilm_chief_x_mm": 0.49211308867754144,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 0.4921507282391043,
+            "positive_film_height_mm": -0.4921507282391043,
+            "stop_dist_normalized": 0.003976813465736214,
+            "valid": 1.0,
+            "seconds": 0.0059937359765172005
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 0.49210205768960924,
+            "positive_film_height_mm": -0.49210205768960924,
+            "stop_dist_normalized": 0.0007521324700607601,
+            "valid": 1.0,
+            "seconds": 0.006083060055971146
+          },
+          "chief_abs_height_error_mm": 1.1030987932203473e-05,
+          "deeplens_sampling_change_mm": 4.8670549495033466e-05
+        },
+        {
+          "wavelength_nm": 550.0,
+          "field_h": 0.2,
+          "angle_rad": 0.019997333973150535,
+          "qfilm_chief_x_mm": 0.9841887804902257,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 0.9841717799529023,
+            "positive_film_height_mm": -0.9841717799529023,
+            "stop_dist_normalized": 0.003017698943426773,
+            "valid": 1.0,
+            "seconds": 0.005998336710035801
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 0.9841863527785161,
+            "positive_film_height_mm": -0.9841863527785161,
+            "stop_dist_normalized": 0.0005557304018087527,
+            "valid": 1.0,
+            "seconds": 0.0060782665386796
+          },
+          "chief_abs_height_error_mm": 2.4277117096627165e-06,
+          "deeplens_sampling_change_mm": 1.457282561379003e-05
+        },
+        {
+          "wavelength_nm": 550.0,
+          "field_h": 0.3,
+          "angle_rad": 0.0299910048568779,
+          "qfilm_chief_x_mm": 1.4761896755457877,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 1.476180008249578,
+            "positive_film_height_mm": -1.476180008249578,
+            "stop_dist_normalized": 0.0007259268467708155,
+            "valid": 1.0,
+            "seconds": 0.005961080081760883
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 1.4761800456977734,
+            "positive_film_height_mm": -1.4761800456977734,
+            "stop_dist_normalized": 0.0005120938271563291,
+            "valid": 1.0,
+            "seconds": 0.006095316261053085
+          },
+          "chief_abs_height_error_mm": 9.629848014336417e-06,
+          "deeplens_sampling_change_mm": 3.74481954334982e-08
+        },
+        {
+          "wavelength_nm": 550.0,
+          "field_h": 0.4,
+          "angle_rad": 0.039978687123290044,
+          "qfilm_chief_x_mm": 1.9680783679204592,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 1.9680755826080334,
+            "positive_film_height_mm": -1.9680755826080334,
+            "stop_dist_normalized": 0.0005901751795048945,
+            "valid": 1.0,
+            "seconds": 0.005996348336338997
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 1.9680779797273134,
+            "positive_film_height_mm": -1.9680779797273134,
+            "stop_dist_normalized": 0.0003207239165075943,
+            "valid": 1.0,
+            "seconds": 0.006134191527962685
+          },
+          "chief_abs_height_error_mm": 3.881931458504795e-07,
+          "deeplens_sampling_change_mm": 2.397119279962112e-06
+        },
+        {
+          "wavelength_nm": 550.0,
+          "field_h": 0.5,
+          "angle_rad": 0.049958395721942765,
+          "qfilm_chief_x_mm": 2.459817442701433,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 2.4598815513296213,
+            "positive_film_height_mm": -2.4598815513296213,
+            "stop_dist_normalized": 0.0024241042839568,
+            "valid": 1.0,
+            "seconds": 0.006027664057910442
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 2.4597918707971576,
+            "positive_film_height_mm": -2.4597918707971576,
+            "stop_dist_normalized": 0.0009064953492197789,
+            "valid": 1.0,
+            "seconds": 0.00611729733645916
+          },
+          "chief_abs_height_error_mm": 2.557190427543432e-05,
+          "deeplens_sampling_change_mm": 8.968053246372065e-05
+        },
+        {
+          "wavelength_nm": 550.0,
+          "field_h": 0.6,
+          "angle_rad": 0.05992815512120788,
+          "qfilm_chief_x_mm": 2.951369473099032,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 2.95136140749639,
+            "positive_film_height_mm": -2.95136140749639,
+            "stop_dist_normalized": 0.0004714677508599924,
+            "valid": 1.0,
+            "seconds": 0.005987164564430714
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 2.951366046699455,
+            "positive_film_height_mm": -2.951366046699455,
+            "stop_dist_normalized": 0.0001510024098605163,
+            "valid": 1.0,
+            "seconds": 0.006117899902164936
+          },
+          "chief_abs_height_error_mm": 3.4263995769556743e-06,
+          "deeplens_sampling_change_mm": 4.639203065259778e-06
+        },
+        {
+          "wavelength_nm": 550.0,
+          "field_h": 0.7,
+          "angle_rad": 0.06988600163464251,
+          "qfilm_chief_x_mm": 3.4426970176515126,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 3.4426747565496925,
+            "positive_film_height_mm": -3.4426747565496925,
+            "stop_dist_normalized": 0.0006434466866335596,
+            "valid": 1.0,
+            "seconds": 0.006019582040607929
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 3.442710223138149,
+            "positive_film_height_mm": -3.442710223138149,
+            "stop_dist_normalized": 0.0004783192551907516,
+            "valid": 1.0,
+            "seconds": 0.006114565767347813
+          },
+          "chief_abs_height_error_mm": 1.3205486636191921e-05,
+          "deeplens_sampling_change_mm": 3.546658845632322e-05
+        },
+        {
+          "wavelength_nm": 550.0,
+          "field_h": 0.8,
+          "angle_rad": 0.07982998571223732,
+          "qfilm_chief_x_mm": 3.9337626175452653,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 3.9338228024812816,
+            "positive_film_height_mm": -3.9338228024812816,
+            "stop_dist_normalized": 0.0019693098038203014,
+            "valid": 1.0,
+            "seconds": 0.0059798965230584145
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 3.9337540659687975,
+            "positive_film_height_mm": -3.9337540659687975,
+            "stop_dist_normalized": 0.00036185047120227673,
+            "valid": 1.0,
+            "seconds": 0.006131995469331741
+          },
+          "chief_abs_height_error_mm": 8.551576467841215e-06,
+          "deeplens_sampling_change_mm": 6.873651248406887e-05
+        },
+        {
+          "wavelength_nm": 550.0,
+          "field_h": 0.9,
+          "angle_rad": 0.08975817418995052,
+          "qfilm_chief_x_mm": 4.424528794072773,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 4.4245214452388675,
+            "positive_film_height_mm": -4.4245214452388675,
+            "stop_dist_normalized": 0.001222293825791096,
+            "valid": 1.0,
+            "seconds": 0.006001370958983898
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 4.424563871907382,
+            "positive_film_height_mm": -4.424563871907382,
+            "stop_dist_normalized": 0.0008825178187997869,
+            "valid": 1.0,
+            "seconds": 0.006133874878287315
+          },
+          "chief_abs_height_error_mm": 3.507783460854341e-05,
+          "deeplens_sampling_change_mm": 4.2426668514394805e-05
+        },
+        {
+          "wavelength_nm": 550.0,
+          "field_h": 1.0,
+          "angle_rad": 0.09966865249116204,
+          "qfilm_chief_x_mm": 4.914958046250463,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 4.91504919934288,
+            "positive_film_height_mm": -4.91504919934288,
+            "stop_dist_normalized": 0.0014320257714769634,
+            "valid": 1.0,
+            "seconds": 0.006034971214830875
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 4.915032882379395,
+            "positive_film_height_mm": -4.915032882379395,
+            "stop_dist_normalized": 0.0010526091947154561,
+            "valid": 1.0,
+            "seconds": 0.006242203526198864
+          },
+          "chief_abs_height_error_mm": 7.483612893199876e-05,
+          "deeplens_sampling_change_mm": 1.6316963484364067e-05
+        },
+        {
+          "wavelength_nm": 590.0,
+          "field_h": 0.0,
+          "angle_rad": 0.0,
+          "qfilm_chief_x_mm": 0.0,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 5.368626342806132e-07,
+            "positive_film_height_mm": -5.368626342806132e-07,
+            "stop_dist_normalized": 0.0015295553851943419,
+            "valid": 1.0,
+            "seconds": 0.006019020453095436
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 2.016214957758708e-07,
+            "positive_film_height_mm": -2.016214957758708e-07,
+            "stop_dist_normalized": 0.0012397465091171006,
+            "valid": 1.0,
+            "seconds": 0.006084847263991833
+          },
+          "chief_abs_height_error_mm": 2.016214957758708e-07,
+          "deeplens_sampling_change_mm": 3.352411385047424e-07
+        },
+        {
+          "wavelength_nm": 590.0,
+          "field_h": 0.1,
+          "angle_rad": 0.009999666686665238,
+          "qfilm_chief_x_mm": 0.49225933916727543,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 0.4922637305156943,
+            "positive_film_height_mm": -0.4922637305156943,
+            "stop_dist_normalized": 0.004687988350808379,
+            "valid": 1.0,
+            "seconds": 0.006022501736879349
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 0.4922575219233604,
+            "positive_film_height_mm": -0.4922575219233604,
+            "stop_dist_normalized": 0.0020221512553026916,
+            "valid": 1.0,
+            "seconds": 0.006143730133771896
+          },
+          "chief_abs_height_error_mm": 1.817243915014366e-06,
+          "deeplens_sampling_change_mm": 6.208592333856178e-06
+        },
+        {
+          "wavelength_nm": 590.0,
+          "field_h": 0.2,
+          "angle_rad": 0.019997333973150535,
+          "qfilm_chief_x_mm": 0.9844813627107609,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 0.9844799456281802,
+            "positive_film_height_mm": -0.9844799456281802,
+            "stop_dist_normalized": 0.0005337382816432204,
+            "valid": 1.0,
+            "seconds": 0.006048351526260376
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 0.9844840189394961,
+            "positive_film_height_mm": -0.9844840189394961,
+            "stop_dist_normalized": 0.0009881756217961727,
+            "valid": 1.0,
+            "seconds": 0.006160015240311623
+          },
+          "chief_abs_height_error_mm": 2.656228735187227e-06,
+          "deeplens_sampling_change_mm": 4.073311315910821e-06
+        },
+        {
+          "wavelength_nm": 590.0,
+          "field_h": 0.3,
+          "angle_rad": 0.0299910048568779,
+          "qfilm_chief_x_mm": 1.4766287519523,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 1.4766211531660938,
+            "positive_film_height_mm": -1.4766211531660938,
+            "stop_dist_normalized": 0.005068421444664423,
+            "valid": 1.0,
+            "seconds": 0.006016569212079048
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 1.4766342935455463,
+            "positive_film_height_mm": -1.4766342935455463,
+            "stop_dist_normalized": 0.0011956353130127548,
+            "valid": 1.0,
+            "seconds": 0.006122108548879623
+          },
+          "chief_abs_height_error_mm": 5.541593246283227e-06,
+          "deeplens_sampling_change_mm": 1.3140379452547535e-05
+        },
+        {
+          "wavelength_nm": 590.0,
+          "field_h": 0.4,
+          "angle_rad": 0.039978687123290044,
+          "qfilm_chief_x_mm": 1.9686641821282704,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 1.9686425586470335,
+            "positive_film_height_mm": -1.9686425586470335,
+            "stop_dist_normalized": 0.0023139416695159487,
+            "valid": 1.0,
+            "seconds": 0.006042092107236385
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 1.9686548056377653,
+            "positive_film_height_mm": -1.9686548056377653,
+            "stop_dist_normalized": 0.0013015428423320426,
+            "valid": 1.0,
+            "seconds": 0.006119783967733383
+          },
+          "chief_abs_height_error_mm": 9.376490505141888e-06,
+          "deeplens_sampling_change_mm": 1.2246990731767937e-05
+        },
+        {
+          "wavelength_nm": 590.0,
+          "field_h": 0.5,
+          "angle_rad": 0.049958395721942765,
+          "qfilm_chief_x_mm": 2.460550319404966,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 2.4605797133270593,
+            "positive_film_height_mm": -2.4605797133270593,
+            "stop_dist_normalized": 0.0028027840631082786,
+            "valid": 1.0,
+            "seconds": 0.006006825715303421
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 2.4605444207255536,
+            "positive_film_height_mm": -2.4605444207255536,
+            "stop_dist_normalized": 0.00043946787948738453,
+            "valid": 1.0,
+            "seconds": 0.006116944365203381
+          },
+          "chief_abs_height_error_mm": 5.898679412474905e-06,
+          "deeplens_sampling_change_mm": 3.5292601505698684e-05
+        },
+        {
+          "wavelength_nm": 590.0,
+          "field_h": 0.6,
+          "angle_rad": 0.05992815512120788,
+          "qfilm_chief_x_mm": 2.952249817963535,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 2.9522902072042765,
+            "positive_film_height_mm": -2.9522902072042765,
+            "stop_dist_normalized": 0.002737044549771348,
+            "valid": 1.0,
+            "seconds": 0.006021946668624878
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 2.952268759559252,
+            "positive_film_height_mm": -2.952268759559252,
+            "stop_dist_normalized": 0.0010702457087989497,
+            "valid": 1.0,
+            "seconds": 0.00615805946290493
+          },
+          "chief_abs_height_error_mm": 1.894159571724785e-05,
+          "deeplens_sampling_change_mm": 2.144764502443053e-05
+        },
+        {
+          "wavelength_nm": 590.0,
+          "field_h": 0.7,
+          "angle_rad": 0.06988600163464251,
+          "qfilm_chief_x_mm": 3.4437253171773983,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 3.443797449005066,
+            "positive_film_height_mm": -3.443797449005066,
+            "stop_dist_normalized": 0.002502571261610193,
+            "valid": 1.0,
+            "seconds": 0.006027636118233204
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 3.44371953952191,
+            "positive_film_height_mm": -3.44371953952191,
+            "stop_dist_normalized": 0.00024717637644958504,
+            "valid": 1.0,
+            "seconds": 0.006134803406894207
+          },
+          "chief_abs_height_error_mm": 5.77765548825937e-06,
+          "deeplens_sampling_change_mm": 7.790948315600232e-05
+        },
+        {
+          "wavelength_nm": 590.0,
+          "field_h": 0.8,
+          "angle_rad": 0.07982998571223732,
+          "qfilm_chief_x_mm": 3.934939438904843,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 3.934963192549393,
+            "positive_film_height_mm": -3.934963192549393,
+            "stop_dist_normalized": 0.0012310307730241154,
+            "valid": 1.0,
+            "seconds": 0.007034936919808388
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 3.934980476966841,
+            "positive_film_height_mm": -3.934980476966841,
+            "stop_dist_normalized": 0.0011041373637354522,
+            "valid": 1.0,
+            "seconds": 0.006260907277464867
+          },
+          "chief_abs_height_error_mm": 4.1038061997955566e-05,
+          "deeplens_sampling_change_mm": 1.728441744797138e-05
+        },
+        {
+          "wavelength_nm": 590.0,
+          "field_h": 0.9,
+          "angle_rad": 0.08975817418995052,
+          "qfilm_chief_x_mm": 4.425854784919117,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 4.425904171029615,
+            "positive_film_height_mm": -4.425904171029615,
+            "stop_dist_normalized": 0.0012849960905873285,
+            "valid": 1.0,
+            "seconds": 0.006040866486728191
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 4.425865860528131,
+            "positive_film_height_mm": -4.425865860528131,
+            "stop_dist_normalized": 0.0005561485069100958,
+            "valid": 1.0,
+            "seconds": 0.006139752455055714
+          },
+          "chief_abs_height_error_mm": 1.1075609013921905e-05,
+          "deeplens_sampling_change_mm": 3.831050148406234e-05
+        },
+        {
+          "wavelength_nm": 590.0,
+          "field_h": 1.0,
+          "angle_rad": 0.09966865249116204,
+          "qfilm_chief_x_mm": 4.91643393449813,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 4.916569014920793,
+            "positive_film_height_mm": -4.916569014920793,
+            "stop_dist_normalized": 0.0023204801065340804,
+            "valid": 1.0,
+            "seconds": 0.005998007953166962
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 4.916480308197073,
+            "positive_film_height_mm": -4.916480308197073,
+            "stop_dist_normalized": 0.0009488160446248425,
+            "valid": 1.0,
+            "seconds": 0.0061159897595644
+          },
+          "chief_abs_height_error_mm": 4.637369894311405e-05,
+          "deeplens_sampling_change_mm": 8.870672371941168e-05
+        },
+        {
+          "wavelength_nm": 630.0,
+          "field_h": 0.0,
+          "angle_rad": 0.0,
+          "qfilm_chief_x_mm": 0.0,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": -1.8165083181875992e-05,
+            "positive_film_height_mm": 1.8165083181875992e-05,
+            "stop_dist_normalized": 0.0017956563640166233,
+            "valid": 1.0,
+            "seconds": 0.006057185120880604
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 5.537381512628467e-06,
+            "positive_film_height_mm": -5.537381512628467e-06,
+            "stop_dist_normalized": 0.0005551598868985139,
+            "valid": 1.0,
+            "seconds": 0.006143107078969479
+          },
+          "chief_abs_height_error_mm": 5.537381512628467e-06,
+          "deeplens_sampling_change_mm": 2.370246469450446e-05
+        },
+        {
+          "wavelength_nm": 630.0,
+          "field_h": 0.1,
+          "angle_rad": 0.009999666686665238,
+          "qfilm_chief_x_mm": 0.49238082497857794,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 0.49238097824034377,
+            "positive_film_height_mm": -0.49238097824034377,
+            "stop_dist_normalized": 0.0011921503199636074,
+            "valid": 1.0,
+            "seconds": 0.0060205841436982155
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 0.49238772661605856,
+            "positive_film_height_mm": -0.49238772661605856,
+            "stop_dist_normalized": 0.0008628275137805478,
+            "valid": 1.0,
+            "seconds": 0.0061309365555644035
+          },
+          "chief_abs_height_error_mm": 6.901637480627443e-06,
+          "deeplens_sampling_change_mm": 6.748375714793475e-06
+        },
+        {
+          "wavelength_nm": 630.0,
+          "field_h": 0.2,
+          "angle_rad": 0.019997333973150535,
+          "qfilm_chief_x_mm": 0.9847244018736508,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 0.98472072233566,
+            "positive_film_height_mm": -0.98472072233566,
+            "stop_dist_normalized": 0.0011704228680578137,
+            "valid": 1.0,
+            "seconds": 0.006021060980856419
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 0.984722634506783,
+            "positive_film_height_mm": -0.984722634506783,
+            "stop_dist_normalized": 0.00020523852447512775,
+            "valid": 1.0,
+            "seconds": 0.006136917509138584
+          },
+          "chief_abs_height_error_mm": 1.76736686785528e-06,
+          "deeplens_sampling_change_mm": 1.9121711229974636e-06
+        },
+        {
+          "wavelength_nm": 630.0,
+          "field_h": 0.3,
+          "angle_rad": 0.0299910048568779,
+          "qfilm_chief_x_mm": 1.4769934795250153,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 1.4769956077573272,
+            "positive_film_height_mm": -1.4769956077573272,
+            "stop_dist_normalized": 0.0009342436463315174,
+            "valid": 1.0,
+            "seconds": 0.006024514324963093
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 1.4769897986760827,
+            "positive_film_height_mm": -1.4769897986760827,
+            "stop_dist_normalized": 0.0006670159703135466,
+            "valid": 1.0,
+            "seconds": 0.0061303386464715
+          },
+          "chief_abs_height_error_mm": 3.6808489325412808e-06,
+          "deeplens_sampling_change_mm": 5.809081244478875e-06
+        },
+        {
+          "wavelength_nm": 630.0,
+          "field_h": 0.4,
+          "angle_rad": 0.039978687123290044,
+          "qfilm_chief_x_mm": 1.9691508006423046,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 1.9691479173384647,
+            "positive_film_height_mm": -1.9691479173384647,
+            "stop_dist_normalized": 0.0017058736649031533,
+            "valid": 1.0,
+            "seconds": 0.006073836237192154
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 1.9691511432923812,
+            "positive_film_height_mm": -1.9691511432923812,
+            "stop_dist_normalized": 0.0010386070519495566,
+            "valid": 1.0,
+            "seconds": 0.0061738574877381325
+          },
+          "chief_abs_height_error_mm": 3.426500765346674e-07,
+          "deeplens_sampling_change_mm": 3.2259539164414264e-06
+        },
+        {
+          "wavelength_nm": 630.0,
+          "field_h": 0.5,
+          "angle_rad": 0.049958395721942765,
+          "qfilm_chief_x_mm": 2.4611590987979266,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 2.461162286216161,
+            "positive_film_height_mm": -2.461162286216161,
+            "stop_dist_normalized": 0.0009885655479614191,
+            "valid": 1.0,
+            "seconds": 0.006044386886060238
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 2.461158351865911,
+            "positive_film_height_mm": -2.461158351865911,
+            "stop_dist_normalized": 0.0007164225741386088,
+            "valid": 1.0,
+            "seconds": 0.006133423186838627
+          },
+          "chief_abs_height_error_mm": 7.469320157937887e-07,
+          "deeplens_sampling_change_mm": 3.934350250034413e-06
+        },
+        {
+          "wavelength_nm": 630.0,
+          "field_h": 0.6,
+          "angle_rad": 0.05992815512120788,
+          "qfilm_chief_x_mm": 2.9529810954894575,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 2.9529923275799304,
+            "positive_film_height_mm": -2.9529923275799304,
+            "stop_dist_normalized": 0.0022251530648758674,
+            "valid": 1.0,
+            "seconds": 0.006048554554581642
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 2.9529860672431654,
+            "positive_film_height_mm": -2.9529860672431654,
+            "stop_dist_normalized": 0.0006815550203204805,
+            "valid": 1.0,
+            "seconds": 0.0061188554391264915
+          },
+          "chief_abs_height_error_mm": 4.971753707838644e-06,
+          "deeplens_sampling_change_mm": 6.260336764984942e-06
+        },
+        {
+          "wavelength_nm": 630.0,
+          "field_h": 0.7,
+          "angle_rad": 0.06988600163464251,
+          "qfilm_chief_x_mm": 3.444579497294368,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 3.444566610092715,
+            "positive_film_height_mm": -3.444566610092715,
+            "stop_dist_normalized": 0.0008682851784137805,
+            "valid": 1.0,
+            "seconds": 0.006004044786095619
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 3.444594722316983,
+            "positive_film_height_mm": -3.444594722316983,
+            "stop_dist_normalized": 0.0008857953686767055,
+            "valid": 1.0,
+            "seconds": 0.006093500182032585
+          },
+          "chief_abs_height_error_mm": 1.5225022615084072e-05,
+          "deeplens_sampling_change_mm": 2.8112224268017627e-05
+        },
+        {
+          "wavelength_nm": 630.0,
+          "field_h": 0.8,
+          "angle_rad": 0.07982998571223732,
+          "qfilm_chief_x_mm": 3.935916993139738,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 3.9359165306291737,
+            "positive_film_height_mm": -3.9359165306291737,
+            "stop_dist_normalized": 0.0012317921481698954,
+            "valid": 1.0,
+            "seconds": 0.005988785065710545
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 3.9358958004846434,
+            "positive_film_height_mm": -3.9358958004846434,
+            "stop_dist_normalized": 0.0008702736605984137,
+            "valid": 1.0,
+            "seconds": 0.006118605844676495
+          },
+          "chief_abs_height_error_mm": 2.119265509481494e-05,
+          "deeplens_sampling_change_mm": 2.0730144530300976e-05
+        },
+        {
+          "wavelength_nm": 630.0,
+          "field_h": 0.9,
+          "angle_rad": 0.08975817418995052,
+          "qfilm_chief_x_mm": 4.426956251709281,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 4.4270281671217795,
+            "positive_film_height_mm": -4.4270281671217795,
+            "stop_dist_normalized": 0.003192561997037651,
+            "valid": 1.0,
+            "seconds": 0.005998049862682819
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 4.426912614475365,
+            "positive_film_height_mm": -4.426912614475365,
+            "stop_dist_normalized": 0.0012190089313757074,
+            "valid": 1.0,
+            "seconds": 0.006179332733154297
+          },
+          "chief_abs_height_error_mm": 4.36372339152058e-05,
+          "deeplens_sampling_change_mm": 0.00011555264641405216
+        },
+        {
+          "wavelength_nm": 630.0,
+          "field_h": 1.0,
+          "angle_rad": 0.09966865249116204,
+          "qfilm_chief_x_mm": 4.9176599190097,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 4.917746655325922,
+            "positive_film_height_mm": -4.917746655325922,
+            "stop_dist_normalized": 0.0019017072491258466,
+            "valid": 1.0,
+            "seconds": 0.0060372138395905495
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 4.91769028810625,
+            "positive_film_height_mm": -4.91769028810625,
+            "stop_dist_normalized": 0.0013320413449537986,
+            "valid": 1.0,
+            "seconds": 0.006132284179329872
+          },
+          "chief_abs_height_error_mm": 3.036909655040887e-05,
+          "deeplens_sampling_change_mm": 5.63672196713938e-05
+        },
+        {
+          "wavelength_nm": 670.0,
+          "field_h": 0.0,
+          "angle_rad": 0.0,
+          "qfilm_chief_x_mm": 0.0,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": -2.924500488167038e-05,
+            "positive_film_height_mm": 2.924500488167038e-05,
+            "stop_dist_normalized": 0.001773217887838045,
+            "valid": 1.0,
+            "seconds": 0.006031939759850502
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": -2.2714745986656196e-05,
+            "positive_film_height_mm": 2.2714745986656196e-05,
+            "stop_dist_normalized": 0.001096022279980268,
+            "valid": 1.0,
+            "seconds": 0.006123715080320835
+          },
+          "chief_abs_height_error_mm": 2.2714745986656196e-05,
+          "deeplens_sampling_change_mm": 6.530258895014185e-06
+        },
+        {
+          "wavelength_nm": 670.0,
+          "field_h": 0.1,
+          "angle_rad": 0.009999666686665238,
+          "qfilm_chief_x_mm": 0.4924837229340846,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 0.49247075417858355,
+            "positive_film_height_mm": -0.49247075417858355,
+            "stop_dist_normalized": 0.0006737726502330545,
+            "valid": 1.0,
+            "seconds": 0.0060402946546673775
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 0.4925104614874921,
+            "positive_film_height_mm": -0.4925104614874921,
+            "stop_dist_normalized": 0.0014143777864724185,
+            "valid": 1.0,
+            "seconds": 0.006151425652205944
+          },
+          "chief_abs_height_error_mm": 2.6738553407512633e-05,
+          "deeplens_sampling_change_mm": 3.970730890856533e-05
+        },
+        {
+          "wavelength_nm": 670.0,
+          "field_h": 0.2,
+          "angle_rad": 0.019997333973150535,
+          "qfilm_chief_x_mm": 0.9849302550307412,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 0.9849147521765907,
+            "positive_film_height_mm": -0.9849147521765907,
+            "stop_dist_normalized": 0.000848586181239096,
+            "valid": 1.0,
+            "seconds": 0.0060150278732180595
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 0.9849508189166643,
+            "positive_film_height_mm": -0.9849508189166643,
+            "stop_dist_normalized": 0.0013022696500277866,
+            "valid": 1.0,
+            "seconds": 0.006141512654721737
+          },
+          "chief_abs_height_error_mm": 2.056388592308611e-05,
+          "deeplens_sampling_change_mm": 3.6066740073503745e-05
+        },
+        {
+          "wavelength_nm": 670.0,
+          "field_h": 0.3,
+          "angle_rad": 0.0299910048568779,
+          "qfilm_chief_x_mm": 1.4773024023569745,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 1.4772936806847172,
+            "positive_film_height_mm": -1.4772936806847172,
+            "stop_dist_normalized": 0.0007963657169350477,
+            "valid": 1.0,
+            "seconds": 0.006121480837464333
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 1.4773096691571594,
+            "positive_film_height_mm": -1.4773096691571594,
+            "stop_dist_normalized": 0.0005781379230579447,
+            "valid": 1.0,
+            "seconds": 0.006109289824962616
+          },
+          "chief_abs_height_error_mm": 7.266800184924094e-06,
+          "deeplens_sampling_change_mm": 1.5988472442218793e-05
+        },
+        {
+          "wavelength_nm": 670.0,
+          "field_h": 0.4,
+          "angle_rad": 0.039978687123290044,
+          "qfilm_chief_x_mm": 1.969562964811853,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 1.9695476667178111,
+            "positive_film_height_mm": -1.9695476667178111,
+            "stop_dist_normalized": 0.0013857471006012943,
+            "valid": 1.0,
+            "seconds": 0.00595930777490139
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 1.9695585018185064,
+            "positive_film_height_mm": -1.9695585018185064,
+            "stop_dist_normalized": 0.0006090280288131891,
+            "valid": 1.0,
+            "seconds": 0.006112648174166679
+          },
+          "chief_abs_height_error_mm": 4.462993346443511e-06,
+          "deeplens_sampling_change_mm": 1.0835100695327782e-05
+        },
+        {
+          "wavelength_nm": 670.0,
+          "field_h": 0.5,
+          "angle_rad": 0.049958395721942765,
+          "qfilm_chief_x_mm": 2.461674733100488,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 2.4616675992140804,
+            "positive_film_height_mm": -2.4616675992140804,
+            "stop_dist_normalized": 0.0015887766134347185,
+            "valid": 1.0,
+            "seconds": 0.006005101837217808
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 2.4616800262831804,
+            "positive_film_height_mm": -2.4616800262831804,
+            "stop_dist_normalized": 0.0010610784457233606,
+            "valid": 1.0,
+            "seconds": 0.006155654788017273
+          },
+          "chief_abs_height_error_mm": 5.293182692600595e-06,
+          "deeplens_sampling_change_mm": 1.2427069099985033e-05
+        },
+        {
+          "wavelength_nm": 670.0,
+          "field_h": 0.6,
+          "angle_rad": 0.05992815512120788,
+          "qfilm_chief_x_mm": 2.9536004857773683,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 2.953600565214077,
+            "positive_film_height_mm": -2.953600565214077,
+            "stop_dist_normalized": 0.0008287534879760618,
+            "valid": 1.0,
+            "seconds": 0.006061159074306488
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 2.9536005813941424,
+            "positive_film_height_mm": -2.9536005813941424,
+            "stop_dist_normalized": 0.0010115268863465823,
+            "valid": 1.0,
+            "seconds": 0.006140090525150299
+          },
+          "chief_abs_height_error_mm": 9.561677405400815e-08,
+          "deeplens_sampling_change_mm": 1.618006528758542e-08
+        },
+        {
+          "wavelength_nm": 670.0,
+          "field_h": 0.7,
+          "angle_rad": 0.06988600163464251,
+          "qfilm_chief_x_mm": 3.4453029863819173,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 3.445306090317603,
+            "positive_film_height_mm": -3.445306090317603,
+            "stop_dist_normalized": 0.0015843839838850396,
+            "valid": 1.0,
+            "seconds": 0.00602550245821476
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 3.4453089247380335,
+            "positive_film_height_mm": -3.4453089247380335,
+            "stop_dist_normalized": 0.0007781148373748148,
+            "valid": 1.0,
+            "seconds": 0.006117597222328186
+          },
+          "chief_abs_height_error_mm": 5.938356116175214e-06,
+          "deeplens_sampling_change_mm": 2.834420430364304e-06
+        },
+        {
+          "wavelength_nm": 670.0,
+          "field_h": 0.8,
+          "angle_rad": 0.07982998571223732,
+          "qfilm_chief_x_mm": 3.936744980688874,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 3.9367402755397753,
+            "positive_film_height_mm": -3.9367402755397753,
+            "stop_dist_normalized": 0.00039693615552665034,
+            "valid": 1.0,
+            "seconds": 0.00629575178027153
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 3.9367577615212115,
+            "positive_film_height_mm": -3.9367577615212115,
+            "stop_dist_normalized": 0.0008297872709220192,
+            "valid": 1.0,
+            "seconds": 0.006182093173265457
+          },
+          "chief_abs_height_error_mm": 1.2780832337355719e-05,
+          "deeplens_sampling_change_mm": 1.748598143613833e-05
+        },
+        {
+          "wavelength_nm": 670.0,
+          "field_h": 0.9,
+          "angle_rad": 0.08975817418995052,
+          "qfilm_chief_x_mm": 4.427889194095805,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 4.427933946503363,
+            "positive_film_height_mm": -4.427933946503363,
+            "stop_dist_normalized": 0.0017958950608984853,
+            "valid": 1.0,
+            "seconds": 0.006057741120457649
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 4.427881350586968,
+            "positive_film_height_mm": -4.427881350586968,
+            "stop_dist_normalized": 0.00033099748738994934,
+            "valid": 1.0,
+            "seconds": 0.006148987449705601
+          },
+          "chief_abs_height_error_mm": 7.843508837090951e-06,
+          "deeplens_sampling_change_mm": 5.259591639550365e-05
+        },
+        {
+          "wavelength_nm": 670.0,
+          "field_h": 1.0,
+          "angle_rad": 0.09966865249116204,
+          "qfilm_chief_x_mm": 4.918698329169756,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 4.918683061665232,
+            "positive_film_height_mm": -4.918683061665232,
+            "stop_dist_normalized": 0.0008737192873374892,
+            "valid": 1.0,
+            "seconds": 0.006052564829587936
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 4.918679878485735,
+            "positive_film_height_mm": -4.918679878485735,
+            "stop_dist_normalized": 0.0012383665106263416,
+            "valid": 1.0,
+            "seconds": 0.006167957559227943
+          },
+          "chief_abs_height_error_mm": 1.845068402150929e-05,
+          "deeplens_sampling_change_mm": 3.183179496879518e-06
+        }
+      ],
+      "summary": {
+        "max_film_height_abs_error_mm": 0.00013013033484909897,
+        "p95_film_height_abs_error_mm": 8.670533892223277e-05,
+        "max_deeplens_stochastic_shift_mm": 0.00043636604717489647,
+        "max_stop_miscentering_normalized": 0.0020221512553026916,
+        "invalid_chief_1m": 0
+      }
+    },
+    "internal_stop_asphere": {
+      "case": "internal_stop_asphere",
+      "lens_efl_mm": 43.44884932341632,
+      "samples": [
+        {
+          "wavelength_nm": 430.0,
+          "field_h": 0.0,
+          "angle_rad": 0.0,
+          "qfilm_chief_x_mm": 0.0,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 0.00012321705514654717,
+            "positive_film_height_mm": -0.00012321705514654717,
+            "stop_dist_normalized": 0.0030102081311986113,
+            "valid": 1.0,
+            "seconds": 0.0173033494502306
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 1.2117391306812005e-05,
+            "positive_film_height_mm": -1.2117391306812005e-05,
+            "stop_dist_normalized": 0.0009262237382366843,
+            "valid": 1.0,
+            "seconds": 0.01686589140444994
+          },
+          "chief_abs_height_error_mm": 1.2117391306812005e-05,
+          "deeplens_sampling_change_mm": 0.00011109966383973516
+        },
+        {
+          "wavelength_nm": 430.0,
+          "field_h": 0.1,
+          "angle_rad": 0.011471138694378394,
+          "qfilm_chief_x_mm": 0.49989807166693023,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 0.49974272356624333,
+            "positive_film_height_mm": -0.49974272356624333,
+            "stop_dist_normalized": 0.001945848239675033,
+            "valid": 1.0,
+            "seconds": 0.01641213335096836
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 0.4999023092281393,
+            "positive_film_height_mm": -0.4999023092281393,
+            "stop_dist_normalized": 0.0014890013209152995,
+            "valid": 1.0,
+            "seconds": 0.01650784257799387
+          },
+          "chief_abs_height_error_mm": 4.237561209041729e-06,
+          "deeplens_sampling_change_mm": 0.00015958566189594459
+        },
+        {
+          "wavelength_nm": 430.0,
+          "field_h": 0.2,
+          "angle_rad": 0.022939259277025968,
+          "qfilm_chief_x_mm": 0.9997980991922607,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 0.9997306525247555,
+            "positive_film_height_mm": -0.9997306525247555,
+            "stop_dist_normalized": 0.0010702472763907131,
+            "valid": 1.0,
+            "seconds": 0.016010252758860588
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 0.9996911214533928,
+            "positive_film_height_mm": -0.9996911214533928,
+            "stop_dist_normalized": 0.0013526513295386326,
+            "valid": 1.0,
+            "seconds": 0.016377435065805912
+          },
+          "chief_abs_height_error_mm": 0.00010697773886791939,
+          "deeplens_sampling_change_mm": 3.9531071362675085e-05
+        },
+        {
+          "wavelength_nm": 430.0,
+          "field_h": 0.3,
+          "angle_rad": 0.03440134839797579,
+          "qfilm_chief_x_mm": 1.4997020556449074,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 1.499824472744788,
+            "positive_film_height_mm": -1.499824472744788,
+            "stop_dist_normalized": 0.001985173396010022,
+            "valid": 1.0,
+            "seconds": 0.015901432372629642
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 1.4997053494122996,
+            "positive_film_height_mm": -1.4997053494122996,
+            "stop_dist_normalized": 0.0002771777877296257,
+            "valid": 1.0,
+            "seconds": 0.016313700936734676
+          },
+          "chief_abs_height_error_mm": 3.2937673921651367e-06,
+          "deeplens_sampling_change_mm": 0.00011912333248842444
+        },
+        {
+          "wavelength_nm": 430.0,
+          "field_h": 0.4,
+          "angle_rad": 0.045854402212022374,
+          "qfilm_chief_x_mm": 1.9996119485082966,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 1.9995386853835704,
+            "positive_film_height_mm": -1.9995386853835704,
+            "stop_dist_normalized": 0.0010912528947055631,
+            "valid": 1.0,
+            "seconds": 0.01595606654882431
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 1.9996010284569414,
+            "positive_film_height_mm": -1.9996010284569414,
+            "stop_dist_normalized": 0.001118527306547447,
+            "valid": 1.0,
+            "seconds": 0.016404712572693825
+          },
+          "chief_abs_height_error_mm": 1.0920051355167715e-05,
+          "deeplens_sampling_change_mm": 6.234307337105172e-05
+        },
+        {
+          "wavelength_nm": 430.0,
+          "field_h": 0.5,
+          "angle_rad": 0.05729543108432457,
+          "qfilm_chief_x_mm": 2.4995298368715373,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 2.4995095997987535,
+            "positive_film_height_mm": -2.4995095997987535,
+            "stop_dist_normalized": 0.00030565809113714963,
+            "valid": 1.0,
+            "seconds": 0.01599549874663353
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 2.499522417206485,
+            "positive_film_height_mm": -2.499522417206485,
+            "stop_dist_normalized": 0.0008887225150183904,
+            "valid": 1.0,
+            "seconds": 0.016319260001182556
+          },
+          "chief_abs_height_error_mm": 7.419665052132984e-06,
+          "deeplens_sampling_change_mm": 1.2817407731624542e-05
+        },
+        {
+          "wavelength_nm": 430.0,
+          "field_h": 0.6,
+          "angle_rad": 0.0687214642402594,
+          "qfilm_chief_x_mm": 2.999457848601898,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 2.9996422933304916,
+            "positive_film_height_mm": -2.9996422933304916,
+            "stop_dist_normalized": 0.0016435499875131249,
+            "valid": 1.0,
+            "seconds": 0.016034141182899475
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 2.9994412154689725,
+            "positive_film_height_mm": -2.9994412154689725,
+            "stop_dist_normalized": 0.0009657697292261131,
+            "valid": 1.0,
+            "seconds": 0.016294180415570736
+          },
+          "chief_abs_height_error_mm": 1.66331329256586e-05,
+          "deeplens_sampling_change_mm": 0.00020107786151912777
+        },
+        {
+          "wavelength_nm": 430.0,
+          "field_h": 0.7,
+          "angle_rad": 0.08012955434158014,
+          "qfilm_chief_x_mm": 3.4993981974933357,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 3.4996183082381767,
+            "positive_film_height_mm": -3.4996183082381767,
+            "stop_dist_normalized": 0.0017344940937849796,
+            "valid": 1.0,
+            "seconds": 0.015895243734121323
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 3.4992483349489913,
+            "positive_film_height_mm": -3.4992483349489913,
+            "stop_dist_normalized": 0.0012120294704188836,
+            "valid": 1.0,
+            "seconds": 0.016358892433345318
+          },
+          "chief_abs_height_error_mm": 0.00014986254434434798,
+          "deeplens_sampling_change_mm": 0.00036997328918531025
+        },
+        {
+          "wavelength_nm": 430.0,
+          "field_h": 0.8,
+          "angle_rad": 0.09151678197146682,
+          "qfilm_chief_x_mm": 3.9993532003866896,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 3.9995388235893152,
+            "positive_film_height_mm": -3.9995388235893152,
+            "stop_dist_normalized": 0.0044300630774019535,
+            "valid": 1.0,
+            "seconds": 0.01596219092607498
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 3.999243918800336,
+            "positive_film_height_mm": -3.999243918800336,
+            "stop_dist_normalized": 0.0011602731474801508,
+            "valid": 1.0,
+            "seconds": 0.016295294277369976
+          },
+          "chief_abs_height_error_mm": 0.0001092815863534824,
+          "deeplens_sampling_change_mm": 0.000294904788979089
+        },
+        {
+          "wavelength_nm": 430.0,
+          "field_h": 0.9,
+          "angle_rad": 0.10288026001171562,
+          "qfilm_chief_x_mm": 4.499325294258228,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 4.499205172069429,
+            "positive_film_height_mm": -4.499205172069429,
+            "stop_dist_normalized": 0.0012402893568777189,
+            "valid": 1.0,
+            "seconds": 0.015929334796965122
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 4.499335593249167,
+            "positive_film_height_mm": -4.499335593249167,
+            "stop_dist_normalized": 0.0004770527407207108,
+            "valid": 1.0,
+            "seconds": 0.016333112493157387
+          },
+          "chief_abs_height_error_mm": 1.0298990939183739e-05,
+          "deeplens_sampling_change_mm": 0.00013042117973860456
+        },
+        {
+          "wavelength_nm": 430.0,
+          "field_h": 1.0,
+          "angle_rad": 0.11421713789608509,
+          "qfilm_chief_x_mm": 4.9993170532744475,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 4.999584183488156,
+            "positive_film_height_mm": -4.999584183488156,
+            "stop_dist_normalized": 0.0028177769665258747,
+            "valid": 1.0,
+            "seconds": 0.015888015739619732
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 4.999460422278414,
+            "positive_film_height_mm": -4.999460422278414,
+            "stop_dist_normalized": 0.0010402194782165935,
+            "valid": 1.0,
+            "seconds": 0.016208115965127945
+          },
+          "chief_abs_height_error_mm": 0.0001433690039664981,
+          "deeplens_sampling_change_mm": 0.0001237612097417795
+        },
+        {
+          "wavelength_nm": 470.0,
+          "field_h": 0.0,
+          "angle_rad": 0.0,
+          "qfilm_chief_x_mm": 0.0,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 3.0808545873315524e-05,
+            "positive_film_height_mm": -3.0808545873315524e-05,
+            "stop_dist_normalized": 0.0027740561736125657,
+            "valid": 1.0,
+            "seconds": 0.015879467129707336
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 6.125140039584583e-06,
+            "positive_film_height_mm": -6.125140039584583e-06,
+            "stop_dist_normalized": 0.0003999745240578183,
+            "valid": 1.0,
+            "seconds": 0.016156114637851715
+          },
+          "chief_abs_height_error_mm": 6.125140039584583e-06,
+          "deeplens_sampling_change_mm": 2.468340583373094e-05
+        },
+        {
+          "wavelength_nm": 470.0,
+          "field_h": 0.1,
+          "angle_rad": 0.011471138694378394,
+          "qfilm_chief_x_mm": 0.4999337097081418,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 0.49998362913535105,
+            "positive_film_height_mm": -0.49998362913535105,
+            "stop_dist_normalized": 0.0009776347673652445,
+            "valid": 1.0,
+            "seconds": 0.015807018615305424
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 0.4999199561415408,
+            "positive_film_height_mm": -0.4999199561415408,
+            "stop_dist_normalized": 0.0010051003776717288,
+            "valid": 1.0,
+            "seconds": 0.01621088944375515
+          },
+          "chief_abs_height_error_mm": 1.3753566601049094e-05,
+          "deeplens_sampling_change_mm": 6.367299381027092e-05
+        },
+        {
+          "wavelength_nm": 470.0,
+          "field_h": 0.2,
+          "angle_rad": 0.022939259277025968,
+          "qfilm_chief_x_mm": 0.9998693331476531,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 0.9998254420275184,
+            "positive_film_height_mm": -0.9998254420275184,
+            "stop_dist_normalized": 0.0017582918030986808,
+            "valid": 1.0,
+            "seconds": 0.01575251668691635
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 0.9998600575172498,
+            "positive_film_height_mm": -0.9998600575172498,
+            "stop_dist_normalized": 0.0002691442234084929,
+            "valid": 1.0,
+            "seconds": 0.016175875440239906
+          },
+          "chief_abs_height_error_mm": 9.275630403315915e-06,
+          "deeplens_sampling_change_mm": 3.4615489731382176e-05
+        },
+        {
+          "wavelength_nm": 470.0,
+          "field_h": 0.3,
+          "angle_rad": 0.03440134839797579,
+          "qfilm_chief_x_mm": 1.4998088011472763,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 1.4997225174078705,
+            "positive_film_height_mm": -1.4997225174078705,
+            "stop_dist_normalized": 0.0017261573370038709,
+            "valid": 1.0,
+            "seconds": 0.01576671004295349
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 1.4998220821089783,
+            "positive_film_height_mm": -1.4998220821089783,
+            "stop_dist_normalized": 0.0005156561756017483,
+            "valid": 1.0,
+            "seconds": 0.016239690594375134
+          },
+          "chief_abs_height_error_mm": 1.3280961701944705e-05,
+          "deeplens_sampling_change_mm": 9.956470110772386e-05
+        },
+        {
+          "wavelength_nm": 470.0,
+          "field_h": 0.4,
+          "angle_rad": 0.045854402212022374,
+          "qfilm_chief_x_mm": 1.9997540787238774,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 1.999752449218398,
+            "positive_film_height_mm": -1.999752449218398,
+            "stop_dist_normalized": 0.0012345310426104604,
+            "valid": 1.0,
+            "seconds": 0.015842518769204617
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 1.9997930539360718,
+            "positive_film_height_mm": -1.9997930539360718,
+            "stop_dist_normalized": 0.0009201099750775275,
+            "valid": 1.0,
+            "seconds": 0.01619315706193447
+          },
+          "chief_abs_height_error_mm": 3.8975212194314324e-05,
+          "deeplens_sampling_change_mm": 4.06047176737534e-05
+        },
+        {
+          "wavelength_nm": 470.0,
+          "field_h": 0.5,
+          "angle_rad": 0.05729543108432457,
+          "qfilm_chief_x_mm": 2.4997071821601584,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 2.4995110261552282,
+            "positive_film_height_mm": -2.4995110261552282,
+            "stop_dist_normalized": 0.0033761308953543304,
+            "valid": 1.0,
+            "seconds": 0.015828421339392662
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 2.499686111832779,
+            "positive_film_height_mm": -2.499686111832779,
+            "stop_dist_normalized": 0.00034180778869520974,
+            "valid": 1.0,
+            "seconds": 0.016180332750082016
+          },
+          "chief_abs_height_error_mm": 2.1070327379302256e-05,
+          "deeplens_sampling_change_mm": 0.000175085677550868
+        },
+        {
+          "wavelength_nm": 470.0,
+          "field_h": 0.6,
+          "angle_rad": 0.0687214642402594,
+          "qfilm_chief_x_mm": 2.999670196063334,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 2.9998280301101525,
+            "positive_film_height_mm": -2.9998280301101525,
+            "stop_dist_normalized": 0.0033137720886058345,
+            "valid": 1.0,
+            "seconds": 0.015778587199747562
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 2.999605537967767,
+            "positive_film_height_mm": -2.999605537967767,
+            "stop_dist_normalized": 0.0008593453618492812,
+            "valid": 1.0,
+            "seconds": 0.016238455660641193
+          },
+          "chief_abs_height_error_mm": 6.465809556699398e-05,
+          "deeplens_sampling_change_mm": 0.00022249214238545534
+        },
+        {
+          "wavelength_nm": 470.0,
+          "field_h": 0.7,
+          "angle_rad": 0.08012955434158014,
+          "qfilm_chief_x_mm": 3.4996452903994264,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 3.49953436989482,
+            "positive_film_height_mm": -3.49953436989482,
+            "stop_dist_normalized": 0.0013295608058003022,
+            "valid": 1.0,
+            "seconds": 0.01591204572468996
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 3.4997048208108787,
+            "positive_film_height_mm": -3.4997048208108787,
+            "stop_dist_normalized": 0.0006798872032157781,
+            "valid": 1.0,
+            "seconds": 0.01624654047191143
+          },
+          "chief_abs_height_error_mm": 5.95304114523465e-05,
+          "deeplens_sampling_change_mm": 0.00017045091605893958
+        },
+        {
+          "wavelength_nm": 470.0,
+          "field_h": 0.8,
+          "angle_rad": 0.09151678197146682,
+          "qfilm_chief_x_mm": 3.9996347374986088,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 3.9996708820341667,
+            "positive_film_height_mm": -3.9996708820341667,
+            "stop_dist_normalized": 0.00033515129748054785,
+            "valid": 1.0,
+            "seconds": 0.015864002518355846
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 3.9995535702852485,
+            "positive_film_height_mm": -3.9995535702852485,
+            "stop_dist_normalized": 0.0007786647297942608,
+            "valid": 1.0,
+            "seconds": 0.01623912900686264
+          },
+          "chief_abs_height_error_mm": 8.1167213360267e-05,
+          "deeplens_sampling_change_mm": 0.00011731174891815854
+        },
+        {
+          "wavelength_nm": 470.0,
+          "field_h": 0.9,
+          "angle_rad": 0.10288026001171562,
+          "qfilm_chief_x_mm": 4.4996409290282156,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 4.499350440348412,
+            "positive_film_height_mm": -4.499350440348412,
+            "stop_dist_normalized": 0.0023210173651313313,
+            "valid": 1.0,
+            "seconds": 0.015948591753840446
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 4.499697071774993,
+            "positive_film_height_mm": -4.499697071774993,
+            "stop_dist_normalized": 0.00045244009113805503,
+            "valid": 1.0,
+            "seconds": 0.016077631153166294
+          },
+          "chief_abs_height_error_mm": 5.614274677778752e-05,
+          "deeplens_sampling_change_mm": 0.00034663142658164503
+        },
+        {
+          "wavelength_nm": 470.0,
+          "field_h": 1.0,
+          "angle_rad": 0.11421713789608509,
+          "qfilm_chief_x_mm": 4.999666392931024,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 4.999583305691311,
+            "positive_film_height_mm": -4.999583305691311,
+            "stop_dist_normalized": 0.0005644622003442459,
+            "valid": 1.0,
+            "seconds": 0.015708357095718384
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 4.999682477153798,
+            "positive_film_height_mm": -4.999682477153798,
+            "stop_dist_normalized": 0.0013589080234891904,
+            "valid": 1.0,
+            "seconds": 0.016087275929749012
+          },
+          "chief_abs_height_error_mm": 1.6084222774104262e-05,
+          "deeplens_sampling_change_mm": 9.917146248739073e-05
+        },
+        {
+          "wavelength_nm": 510.0,
+          "field_h": 0.0,
+          "angle_rad": 0.0,
+          "qfilm_chief_x_mm": 0.0,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 2.557265784158347e-05,
+            "positive_film_height_mm": -2.557265784158347e-05,
+            "stop_dist_normalized": 0.001355694908895298,
+            "valid": 1.0,
+            "seconds": 0.01585507672280073
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": -3.3981630816546228e-06,
+            "positive_film_height_mm": 3.3981630816546228e-06,
+            "stop_dist_normalized": 0.00011841486470308508,
+            "valid": 1.0,
+            "seconds": 0.01611499860882759
+          },
+          "chief_abs_height_error_mm": 3.3981630816546228e-06,
+          "deeplens_sampling_change_mm": 2.8970820923238094e-05
+        },
+        {
+          "wavelength_nm": 510.0,
+          "field_h": 0.1,
+          "angle_rad": 0.011471138694378394,
+          "qfilm_chief_x_mm": 0.4999613599954025,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 0.4999704067837699,
+            "positive_film_height_mm": -0.4999704067837699,
+            "stop_dist_normalized": 0.002292222045803478,
+            "valid": 1.0,
+            "seconds": 0.015725587494671345
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 0.4999768106478176,
+            "positive_film_height_mm": -0.4999768106478176,
+            "stop_dist_normalized": 0.0009931856940366263,
+            "valid": 1.0,
+            "seconds": 0.016092862002551556
+          },
+          "chief_abs_height_error_mm": 1.5450652415149868e-05,
+          "deeplens_sampling_change_mm": 6.403864047710428e-06
+        },
+        {
+          "wavelength_nm": 510.0,
+          "field_h": 0.2,
+          "angle_rad": 0.022939259277025968,
+          "qfilm_chief_x_mm": 0.999924601418767,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 0.999903404503923,
+            "positive_film_height_mm": -0.999903404503923,
+            "stop_dist_normalized": 0.002315198208339284,
+            "valid": 1.0,
+            "seconds": 0.01583961769938469
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 0.9999817356507377,
+            "positive_film_height_mm": -0.9999817356507377,
+            "stop_dist_normalized": 0.001688623724390295,
+            "valid": 1.0,
+            "seconds": 0.016026475466787815
+          },
+          "chief_abs_height_error_mm": 5.713423197062362e-05,
+          "deeplens_sampling_change_mm": 7.833114681465858e-05
+        },
+        {
+          "wavelength_nm": 510.0,
+          "field_h": 0.3,
+          "angle_rad": 0.03440134839797579,
+          "qfilm_chief_x_mm": 1.4998916227083134,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 1.4999551992596647,
+            "positive_film_height_mm": -1.4999551992596647,
+            "stop_dist_normalized": 0.002526240813699734,
+            "valid": 1.0,
+            "seconds": 0.015616491436958313
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 1.499873529292856,
+            "positive_film_height_mm": -1.499873529292856,
+            "stop_dist_normalized": 0.000932948521685644,
+            "valid": 1.0,
+            "seconds": 0.015974445268511772
+          },
+          "chief_abs_height_error_mm": 1.809341545744303e-05,
+          "deeplens_sampling_change_mm": 8.16699668086951e-05
+        },
+        {
+          "wavelength_nm": 510.0,
+          "field_h": 0.4,
+          "angle_rad": 0.045854402212022374,
+          "qfilm_chief_x_mm": 1.9998643563160692,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 1.9998776025665643,
+            "positive_film_height_mm": -1.9998776025665643,
+            "stop_dist_normalized": 0.0019839341735066276,
+            "valid": 1.0,
+            "seconds": 0.01568155363202095
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 1.9998969050678763,
+            "positive_film_height_mm": -1.9998969050678763,
+            "stop_dist_normalized": 0.0008027549768703587,
+            "valid": 1.0,
+            "seconds": 0.016005546785891056
+          },
+          "chief_abs_height_error_mm": 3.254875180713768e-05,
+          "deeplens_sampling_change_mm": 1.930250131199074e-05
+        },
+        {
+          "wavelength_nm": 510.0,
+          "field_h": 0.5,
+          "angle_rad": 0.05729543108432457,
+          "qfilm_chief_x_mm": 2.499844785698224,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 2.4998265238166706,
+            "positive_film_height_mm": -2.4998265238166706,
+            "stop_dist_normalized": 0.003556115542567394,
+            "valid": 1.0,
+            "seconds": 0.015569772571325302
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 2.49985768364322,
+            "positive_film_height_mm": -2.49985768364322,
+            "stop_dist_normalized": 0.00025922990549410524,
+            "valid": 1.0,
+            "seconds": 0.015964669175446033
+          },
+          "chief_abs_height_error_mm": 1.2897944995593491e-05,
+          "deeplens_sampling_change_mm": 3.115982654922078e-05
+        },
+        {
+          "wavelength_nm": 510.0,
+          "field_h": 0.6,
+          "angle_rad": 0.0687214642402594,
+          "qfilm_chief_x_mm": 2.9998349622862097,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 2.9999136451217976,
+            "positive_film_height_mm": -2.9999136451217976,
+            "stop_dist_normalized": 0.0013349913595159127,
+            "valid": 1.0,
+            "seconds": 0.01554157119244337
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 2.9997981993773792,
+            "positive_film_height_mm": -2.9997981993773792,
+            "stop_dist_normalized": 0.0013865607504671773,
+            "valid": 1.0,
+            "seconds": 0.01600555796176195
+          },
+          "chief_abs_height_error_mm": 3.6762908830478835e-05,
+          "deeplens_sampling_change_mm": 0.00011544574441835209
+        },
+        {
+          "wavelength_nm": 510.0,
+          "field_h": 0.7,
+          "angle_rad": 0.08012955434158014,
+          "qfilm_chief_x_mm": 3.499837022433029,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 3.4998387729014744,
+            "positive_film_height_mm": -3.4998387729014744,
+            "stop_dist_normalized": 0.00015862796462546663,
+            "valid": 1.0,
+            "seconds": 0.015577911399304867
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 3.499814416447645,
+            "positive_film_height_mm": -3.499814416447645,
+            "stop_dist_normalized": 0.0007952465487787199,
+            "valid": 1.0,
+            "seconds": 0.015993844717741013
+          },
+          "chief_abs_height_error_mm": 2.2605985384061e-05,
+          "deeplens_sampling_change_mm": 2.435645382936613e-05
+        },
+        {
+          "wavelength_nm": 510.0,
+          "field_h": 0.8,
+          "angle_rad": 0.09151678197146682,
+          "qfilm_chief_x_mm": 3.9998532043302513,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 3.9998997296435665,
+            "positive_film_height_mm": -3.9998997296435665,
+            "stop_dist_normalized": 0.002118826275316789,
+            "valid": 1.0,
+            "seconds": 0.015553116798400879
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 3.999845546624859,
+            "positive_film_height_mm": -3.999845546624859,
+            "stop_dist_normalized": 0.0009978271436977043,
+            "valid": 1.0,
+            "seconds": 0.01605253294110298
+          },
+          "chief_abs_height_error_mm": 7.657705392460912e-06,
+          "deeplens_sampling_change_mm": 5.4183018707743e-05
+        },
+        {
+          "wavelength_nm": 510.0,
+          "field_h": 0.9,
+          "angle_rad": 0.10288026001171562,
+          "qfilm_chief_x_mm": 4.499885864892038,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 4.499693250252055,
+            "positive_film_height_mm": -4.499693250252055,
+            "stop_dist_normalized": 0.0028387928897901714,
+            "valid": 1.0,
+            "seconds": 0.01556463073939085
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 4.499927833329422,
+            "positive_film_height_mm": -4.499927833329422,
+            "stop_dist_normalized": 0.00042372276521445817,
+            "valid": 1.0,
+            "seconds": 0.015916118398308754
+          },
+          "chief_abs_height_error_mm": 4.196843738402123e-05,
+          "deeplens_sampling_change_mm": 0.00023458307736667905
+        },
+        {
+          "wavelength_nm": 510.0,
+          "field_h": 1.0,
+          "angle_rad": 0.11421713789608509,
+          "qfilm_chief_x_mm": 4.99993749660386,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 5.000019254163633,
+            "positive_film_height_mm": -5.000019254163633,
+            "stop_dist_normalized": 0.0015478617741075172,
+            "valid": 1.0,
+            "seconds": 0.015610149130225182
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 4.999825943739002,
+            "positive_film_height_mm": -4.999825943739002,
+            "stop_dist_normalized": 0.0009585695752383547,
+            "valid": 1.0,
+            "seconds": 0.016030303202569485
+          },
+          "chief_abs_height_error_mm": 0.00011155286485831084,
+          "deeplens_sampling_change_mm": 0.00019331042463122117
+        },
+        {
+          "wavelength_nm": 550.0,
+          "field_h": 0.0,
+          "angle_rad": 0.0,
+          "qfilm_chief_x_mm": 0.0,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 1.0054434736536926e-05,
+            "positive_film_height_mm": -1.0054434736536926e-05,
+            "stop_dist_normalized": 0.002729413167784452,
+            "valid": 1.0,
+            "seconds": 0.015601906925439835
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 9.167736136664242e-06,
+            "positive_film_height_mm": -9.167736136664242e-06,
+            "stop_dist_normalized": 0.0010058844696733877,
+            "valid": 1.0,
+            "seconds": 0.015988745726644993
+          },
+          "chief_abs_height_error_mm": 9.167736136664242e-06,
+          "deeplens_sampling_change_mm": 8.866985998726845e-07
+        },
+        {
+          "wavelength_nm": 550.0,
+          "field_h": 0.1,
+          "angle_rad": 0.011471138694378394,
+          "qfilm_chief_x_mm": 0.4999833924239898,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 0.5000206274694866,
+            "positive_film_height_mm": -0.5000206274694866,
+            "stop_dist_normalized": 0.004036949487370457,
+            "valid": 1.0,
+            "seconds": 0.015593498013913631
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 0.49997414869137247,
+            "positive_film_height_mm": -0.49997414869137247,
+            "stop_dist_normalized": 0.0006616959034266463,
+            "valid": 1.0,
+            "seconds": 0.016020549461245537
+          },
+          "chief_abs_height_error_mm": 9.243732617347789e-06,
+          "deeplens_sampling_change_mm": 4.6478778114145136e-05
+        },
+        {
+          "wavelength_nm": 550.0,
+          "field_h": 0.2,
+          "angle_rad": 0.022939259277025968,
+          "qfilm_chief_x_mm": 0.9999686407710535,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 0.9999543362480441,
+            "positive_film_height_mm": -0.9999543362480441,
+            "stop_dist_normalized": 0.00296090076051461,
+            "valid": 1.0,
+            "seconds": 0.01563665084540844
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 0.9999692382894327,
+            "positive_film_height_mm": -0.9999692382894327,
+            "stop_dist_normalized": 0.000537147156826102,
+            "valid": 1.0,
+            "seconds": 0.016117473132908344
+          },
+          "chief_abs_height_error_mm": 5.975183792195082e-07,
+          "deeplens_sampling_change_mm": 1.4902041388653586e-05
+        },
+        {
+          "wavelength_nm": 550.0,
+          "field_h": 0.3,
+          "angle_rad": 0.03440134839797579,
+          "qfilm_chief_x_mm": 1.4999576179055132,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 1.49995280110954,
+            "positive_film_height_mm": -1.49995280110954,
+            "stop_dist_normalized": 0.000573147854383009,
+            "valid": 1.0,
+            "seconds": 0.0155766187235713
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 1.4999528419664618,
+            "positive_film_height_mm": -1.4999528419664618,
+            "stop_dist_normalized": 0.00025445022717812395,
+            "valid": 1.0,
+            "seconds": 0.015979789197444916
+          },
+          "chief_abs_height_error_mm": 4.7759390513490985e-06,
+          "deeplens_sampling_change_mm": 4.085692184574441e-08
+        },
+        {
+          "wavelength_nm": 550.0,
+          "field_h": 0.4,
+          "angle_rad": 0.045854402212022374,
+          "qfilm_chief_x_mm": 1.9999522305674182,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 1.9999592913311517,
+            "positive_film_height_mm": -1.9999592913311517,
+            "stop_dist_normalized": 0.0006301289167422521,
+            "valid": 1.0,
+            "seconds": 0.015596872195601463
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 1.9999621679823945,
+            "positive_film_height_mm": -1.9999621679823945,
+            "stop_dist_normalized": 0.0004763705956516444,
+            "valid": 1.0,
+            "seconds": 0.016083737835288048
+          },
+          "chief_abs_height_error_mm": 9.937414976235459e-06,
+          "deeplens_sampling_change_mm": 2.8766512427669255e-06
+        },
+        {
+          "wavelength_nm": 550.0,
+          "field_h": 0.5,
+          "angle_rad": 0.05729543108432457,
+          "qfilm_chief_x_mm": 2.4999544362937103,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 2.5000533761185593,
+            "positive_film_height_mm": -2.5000533761185593,
+            "stop_dist_normalized": 0.0028566793218311585,
+            "valid": 1.0,
+            "seconds": 0.01565692387521267
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 2.4999388539168397,
+            "positive_film_height_mm": -2.4999388539168397,
+            "stop_dist_normalized": 0.0004580619057841279,
+            "valid": 1.0,
+            "seconds": 0.015915239229798317
+          },
+          "chief_abs_height_error_mm": 1.5582376870604264e-05,
+          "deeplens_sampling_change_mm": 0.00011452220171959127
+        },
+        {
+          "wavelength_nm": 550.0,
+          "field_h": 0.6,
+          "angle_rad": 0.0687214642402594,
+          "qfilm_chief_x_mm": 2.999966260319899,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 2.999981958717631,
+            "positive_film_height_mm": -2.999981958717631,
+            "stop_dist_normalized": 0.0005300462708259422,
+            "valid": 1.0,
+            "seconds": 0.015592026524245739
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 2.999988167907074,
+            "positive_film_height_mm": -2.999988167907074,
+            "stop_dist_normalized": 0.0004796691826961539,
+            "valid": 1.0,
+            "seconds": 0.015946650877594948
+          },
+          "chief_abs_height_error_mm": 2.1907587175018506e-05,
+          "deeplens_sampling_change_mm": 6.209189443051599e-06
+        },
+        {
+          "wavelength_nm": 550.0,
+          "field_h": 0.7,
+          "angle_rad": 0.08012955434158014,
+          "qfilm_chief_x_mm": 3.4999898124567657,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 3.4999983096263074,
+            "positive_film_height_mm": -3.4999983096263074,
+            "stop_dist_normalized": 0.0004038796001456837,
+            "valid": 1.0,
+            "seconds": 0.015616009011864662
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 3.4999577159612465,
+            "positive_film_height_mm": -3.4999577159612465,
+            "stop_dist_normalized": 0.0005632130643857216,
+            "valid": 1.0,
+            "seconds": 0.015966380946338177
+          },
+          "chief_abs_height_error_mm": 3.2096495519162715e-05,
+          "deeplens_sampling_change_mm": 4.059366506092843e-05
+        },
+        {
+          "wavelength_nm": 550.0,
+          "field_h": 0.8,
+          "angle_rad": 0.09151678197146682,
+          "qfilm_chief_x_mm": 4.000027303937346,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 3.999885826967159,
+            "positive_film_height_mm": -3.999885826967159,
+            "stop_dist_normalized": 0.0021236827147857666,
+            "valid": 1.0,
+            "seconds": 0.015503727830946445
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 4.000071573526921,
+            "positive_film_height_mm": -4.000071573526921,
+            "stop_dist_normalized": 0.0006823861231224065,
+            "valid": 1.0,
+            "seconds": 0.015838121064007282
+          },
+          "chief_abs_height_error_mm": 4.426958957548521e-05,
+          "deeplens_sampling_change_mm": 0.00018574655976211218
+        },
+        {
+          "wavelength_nm": 550.0,
+          "field_h": 0.9,
+          "angle_rad": 0.10288026001171562,
+          "qfilm_chief_x_mm": 4.500081064230541,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 4.500033466674221,
+            "positive_film_height_mm": -4.500033466674221,
+            "stop_dist_normalized": 0.001425657652260731,
+            "valid": 1.0,
+            "seconds": 0.015545694157481194
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 4.500131625173516,
+            "positive_film_height_mm": -4.500131625173516,
+            "stop_dist_normalized": 0.0010430881040740534,
+            "valid": 1.0,
+            "seconds": 0.01591760851442814
+          },
+          "chief_abs_height_error_mm": 5.056094297550828e-05,
+          "deeplens_sampling_change_mm": 9.815849929495357e-05
+        },
+        {
+          "wavelength_nm": 550.0,
+          "field_h": 1.0,
+          "angle_rad": 0.11421713789608509,
+          "qfilm_chief_x_mm": 5.000153557818901,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 5.0001805350939135,
+            "positive_film_height_mm": -5.0001805350939135,
+            "stop_dist_normalized": 0.001664797491024564,
+            "valid": 1.0,
+            "seconds": 0.01549641415476799
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 5.000268470128247,
+            "positive_film_height_mm": -5.000268470128247,
+            "stop_dist_normalized": 0.0015721363653744315,
+            "valid": 1.0,
+            "seconds": 0.01588862482458353
+          },
+          "chief_abs_height_error_mm": 0.00011491230934534968,
+          "deeplens_sampling_change_mm": 8.79350343332419e-05
+        },
+        {
+          "wavelength_nm": 590.0,
+          "field_h": 0.0,
+          "angle_rad": 0.0,
+          "qfilm_chief_x_mm": 0.0,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": -1.1728066822338373e-06,
+            "positive_film_height_mm": 1.1728066822338373e-06,
+            "stop_dist_normalized": 0.0015302755769821656,
+            "valid": 1.0,
+            "seconds": 0.01553320325911045
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": -4.4050985073887383e-07,
+            "positive_film_height_mm": 4.4050985073887383e-07,
+            "stop_dist_normalized": 0.0012403302449401662,
+            "valid": 1.0,
+            "seconds": 0.015881787985563278
+          },
+          "chief_abs_height_error_mm": 4.4050985073887383e-07,
+          "deeplens_sampling_change_mm": 7.322968314949635e-07
+        },
+        {
+          "wavelength_nm": 590.0,
+          "field_h": 0.1,
+          "angle_rad": 0.011471138694378394,
+          "qfilm_chief_x_mm": 0.5000013633705733,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 0.5000023276091736,
+            "positive_film_height_mm": -0.5000023276091736,
+            "stop_dist_normalized": 0.004772926737881001,
+            "valid": 1.0,
+            "seconds": 0.015489294193685055
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 0.5000010810429285,
+            "positive_film_height_mm": -0.5000010810429285,
+            "stop_dist_normalized": 0.0019409629570677103,
+            "valid": 1.0,
+            "seconds": 0.015899055637419224
+          },
+          "chief_abs_height_error_mm": 2.82327644818281e-07,
+          "deeplens_sampling_change_mm": 1.2465662451166537e-06
+        },
+        {
+          "wavelength_nm": 590.0,
+          "field_h": 0.2,
+          "angle_rad": 0.022939259277025968,
+          "qfilm_chief_x_mm": 1.0000045620137332,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 1.0000034916949996,
+            "positive_film_height_mm": -1.0000034916949996,
+            "stop_dist_normalized": 0.0003660339551364222,
+            "valid": 1.0,
+            "seconds": 0.015534557402133942
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 1.0000043558444272,
+            "positive_film_height_mm": -1.0000043558444272,
+            "stop_dist_normalized": 0.0010263568201556198,
+            "valid": 1.0,
+            "seconds": 0.015921774320304394
+          },
+          "chief_abs_height_error_mm": 2.0616930607175732e-07,
+          "deeplens_sampling_change_mm": 8.641494275707373e-07
+        },
+        {
+          "wavelength_nm": 590.0,
+          "field_h": 0.3,
+          "angle_rad": 0.03440134839797579,
+          "qfilm_chief_x_mm": 1.5000114480872904,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 1.50000302272852,
+            "positive_film_height_mm": -1.50000302272852,
+            "stop_dist_normalized": 0.0050066710320116545,
+            "valid": 1.0,
+            "seconds": 0.015520105138421059
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 1.5000210326358743,
+            "positive_film_height_mm": -1.5000210326358743,
+            "stop_dist_normalized": 0.0014149184619955645,
+            "valid": 1.0,
+            "seconds": 0.015836219303309917
+          },
+          "chief_abs_height_error_mm": 9.584548583907448e-06,
+          "deeplens_sampling_change_mm": 1.8009907354343824e-05
+        },
+        {
+          "wavelength_nm": 590.0,
+          "field_h": 0.4,
+          "angle_rad": 0.045854402212022374,
+          "qfilm_chief_x_mm": 2.000023907512688,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 1.9999969158097386,
+            "positive_film_height_mm": -1.9999969158097386,
+            "stop_dist_normalized": 0.0019825013858554737,
+            "valid": 1.0,
+            "seconds": 0.015498403459787369
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 2.0000149676906656,
+            "positive_film_height_mm": -2.0000149676906656,
+            "stop_dist_normalized": 0.0010699050738973656,
+            "valid": 1.0,
+            "seconds": 0.015902621671557426
+          },
+          "chief_abs_height_error_mm": 8.93982202265775e-06,
+          "deeplens_sampling_change_mm": 1.8051880926961417e-05
+        },
+        {
+          "wavelength_nm": 590.0,
+          "field_h": 0.5,
+          "angle_rad": 0.05729543108432457,
+          "qfilm_chief_x_mm": 2.5000438768399897,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 2.5000985551246235,
+            "positive_film_height_mm": -2.5000985551246235,
+            "stop_dist_normalized": 0.003121793911191918,
+            "valid": 1.0,
+            "seconds": 0.015479803085327148
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 2.500044706677919,
+            "positive_film_height_mm": -2.500044706677919,
+            "stop_dist_normalized": 0.00019378644430202417,
+            "valid": 1.0,
+            "seconds": 0.01595578994601965
+          },
+          "chief_abs_height_error_mm": 8.298379290394564e-07,
+          "deeplens_sampling_change_mm": 5.384844670475175e-05
+        },
+        {
+          "wavelength_nm": 590.0,
+          "field_h": 0.6,
+          "angle_rad": 0.0687214642402594,
+          "qfilm_chief_x_mm": 3.0000733600932388,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 3.000001368276477,
+            "positive_film_height_mm": -3.000001368276477,
+            "stop_dist_normalized": 0.003012130375360075,
+            "valid": 1.0,
+            "seconds": 0.015546883456408978
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 3.000056555417401,
+            "positive_film_height_mm": -3.000056555417401,
+            "stop_dist_normalized": 0.0010306121442766776,
+            "valid": 1.0,
+            "seconds": 0.01587875932455063
+          },
+          "chief_abs_height_error_mm": 1.6804675837978067e-05,
+          "deeplens_sampling_change_mm": 5.518714092378474e-05
+        },
+        {
+          "wavelength_nm": 590.0,
+          "field_h": 0.7,
+          "angle_rad": 0.08012955434158014,
+          "qfilm_chief_x_mm": 3.5001144455906146,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 3.500255754982914,
+            "positive_film_height_mm": -3.500255754982914,
+            "stop_dist_normalized": 0.00311814008508331,
+            "valid": 1.0,
+            "seconds": 0.01553944032639265
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 3.500133412493644,
+            "positive_film_height_mm": -3.500133412493644,
+            "stop_dist_normalized": 0.0004431683460203473,
+            "valid": 1.0,
+            "seconds": 0.015882913023233414
+          },
+          "chief_abs_height_error_mm": 1.8966903029493665e-05,
+          "deeplens_sampling_change_mm": 0.0001223424892700109
+        },
+        {
+          "wavelength_nm": 590.0,
+          "field_h": 0.8,
+          "angle_rad": 0.09151678197146682,
+          "qfilm_chief_x_mm": 4.000169322734622,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 4.000249493031258,
+            "positive_film_height_mm": -4.000249493031258,
+            "stop_dist_normalized": 0.0017122525767972745,
+            "valid": 1.0,
+            "seconds": 0.015542919747531414
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 4.000129301326821,
+            "positive_film_height_mm": -4.000129301326821,
+            "stop_dist_normalized": 0.0011627611720875983,
+            "valid": 1.0,
+            "seconds": 0.015926426276564598
+          },
+          "chief_abs_height_error_mm": 4.0021407801127395e-05,
+          "deeplens_sampling_change_mm": 0.00012019170443711147
+        },
+        {
+          "wavelength_nm": 590.0,
+          "field_h": 0.9,
+          "angle_rad": 0.10288026001171562,
+          "qfilm_chief_x_mm": 4.500240298768533,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 4.5001575905035365,
+            "positive_film_height_mm": -4.5001575905035365,
+            "stop_dist_normalized": 0.0013588190168653926,
+            "valid": 1.0,
+            "seconds": 0.015534057281911373
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 4.500234074151839,
+            "positive_film_height_mm": -4.500234074151839,
+            "stop_dist_normalized": 0.00048738483278124397,
+            "valid": 1.0,
+            "seconds": 0.01595440786331892
+          },
+          "chief_abs_height_error_mm": 6.224616694083807e-06,
+          "deeplens_sampling_change_mm": 7.648364830270538e-05
+        },
+        {
+          "wavelength_nm": 590.0,
+          "field_h": 1.0,
+          "angle_rad": 0.11421713789608509,
+          "qfilm_chief_x_mm": 5.000329815496636,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 5.000126457605953,
+            "positive_film_height_mm": -5.000126457605953,
+            "stop_dist_normalized": 0.00225159106027109,
+            "valid": 1.0,
+            "seconds": 0.015807298943400383
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 5.000265079611302,
+            "positive_film_height_mm": -5.000265079611302,
+            "stop_dist_normalized": 0.0007913889644255589,
+            "valid": 1.0,
+            "seconds": 0.015879149548709393
+          },
+          "chief_abs_height_error_mm": 6.473588533406627e-05,
+          "deeplens_sampling_change_mm": 0.00013862200534919822
+        },
+        {
+          "wavelength_nm": 630.0,
+          "field_h": 0.0,
+          "angle_rad": 0.0,
+          "qfilm_chief_x_mm": 0.0,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": -2.013596602871027e-05,
+            "positive_film_height_mm": 2.013596602871027e-05,
+            "stop_dist_normalized": 0.00179677724809634,
+            "valid": 1.0,
+            "seconds": 0.01557567622512579
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 6.138162728628249e-06,
+            "positive_film_height_mm": -6.138162728628249e-06,
+            "stop_dist_normalized": 0.0005555064297137539,
+            "valid": 1.0,
+            "seconds": 0.01739211194217205
+          },
+          "chief_abs_height_error_mm": 6.138162728628249e-06,
+          "deeplens_sampling_change_mm": 2.6274128757338517e-05
+        },
+        {
+          "wavelength_nm": 630.0,
+          "field_h": 0.1,
+          "angle_rad": 0.011471138694378394,
+          "qfilm_chief_x_mm": 0.5000163313025897,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 0.5000155979640339,
+            "positive_film_height_mm": -0.5000155979640339,
+            "stop_dist_normalized": 0.0011945658195373324,
+            "valid": 1.0,
+            "seconds": 0.015804107300937176
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 0.5000228906309094,
+            "positive_film_height_mm": -0.5000228906309094,
+            "stop_dist_normalized": 0.0008047235995010724,
+            "valid": 1.0,
+            "seconds": 0.015954473055899143
+          },
+          "chief_abs_height_error_mm": 6.5593283197218355e-06,
+          "deeplens_sampling_change_mm": 7.292666875491349e-06
+        },
+        {
+          "wavelength_nm": 630.0,
+          "field_h": 0.2,
+          "angle_rad": 0.022939259277025968,
+          "qfilm_chief_x_mm": 1.0000344807819148,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 1.0000335662414206,
+            "positive_film_height_mm": -1.0000335662414206,
+            "stop_dist_normalized": 0.0011982301476441278,
+            "valid": 1.0,
+            "seconds": 0.015486331656575203
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 1.0000313979969155,
+            "positive_film_height_mm": -1.0000313979969155,
+            "stop_dist_normalized": 0.0003627380361370402,
+            "valid": 1.0,
+            "seconds": 0.01591853890568018
+          },
+          "chief_abs_height_error_mm": 3.0827849992753897e-06,
+          "deeplens_sampling_change_mm": 2.1682445050519306e-06
+        },
+        {
+          "wavelength_nm": 630.0,
+          "field_h": 0.3,
+          "angle_rad": 0.03440134839797579,
+          "qfilm_chief_x_mm": 1.5000562834534532,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 1.500056762907116,
+            "positive_film_height_mm": -1.500056762907116,
+            "stop_dist_normalized": 0.0008705455528500675,
+            "valid": 1.0,
+            "seconds": 0.01552893128246069
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 1.5000580916828854,
+            "positive_film_height_mm": -1.5000580916828854,
+            "stop_dist_normalized": 0.0004666279332813647,
+            "valid": 1.0,
+            "seconds": 0.01590064074844122
+          },
+          "chief_abs_height_error_mm": 1.8082294321875025e-06,
+          "deeplens_sampling_change_mm": 1.328775769415813e-06
+        },
+        {
+          "wavelength_nm": 630.0,
+          "field_h": 0.4,
+          "angle_rad": 0.045854402212022374,
+          "qfilm_chief_x_mm": 2.0000836080033073,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 2.0000830402749465,
+            "positive_film_height_mm": -2.0000830402749465,
+            "stop_dist_normalized": 0.0016962169584535892,
+            "valid": 1.0,
+            "seconds": 0.015560188330709934
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 2.0000839844945597,
+            "positive_film_height_mm": -2.0000839844945597,
+            "stop_dist_normalized": 0.0010315359453893095,
+            "valid": 1.0,
+            "seconds": 0.01601412706077099
+          },
+          "chief_abs_height_error_mm": 3.7649125239624937e-07,
+          "deeplens_sampling_change_mm": 9.442196131637104e-07
+        },
+        {
+          "wavelength_nm": 630.0,
+          "field_h": 0.5,
+          "angle_rad": 0.05729543108432457,
+          "qfilm_chief_x_mm": 2.500118373606593,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 2.5001332416679305,
+            "positive_film_height_mm": -2.5001332416679305,
+            "stop_dist_normalized": 0.0013765984670534863,
+            "valid": 1.0,
+            "seconds": 0.015606234781444073
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 2.5001204436341036,
+            "positive_film_height_mm": -2.5001204436341036,
+            "stop_dist_normalized": 0.0007069650434815988,
+            "valid": 1.0,
+            "seconds": 0.015865350142121315
+          },
+          "chief_abs_height_error_mm": 2.070027510736594e-06,
+          "deeplens_sampling_change_mm": 1.2798033826921795e-05
+        },
+        {
+          "wavelength_nm": 630.0,
+          "field_h": 0.6,
+          "angle_rad": 0.0687214642402594,
+          "qfilm_chief_x_mm": 3.000162566726062,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 3.0001151315249253,
+            "positive_film_height_mm": -3.0001151315249253,
+            "stop_dist_normalized": 0.0024972277191613965,
+            "valid": 1.0,
+            "seconds": 0.015499447472393513
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 3.0001839982438963,
+            "positive_film_height_mm": -3.0001839982438963,
+            "stop_dist_normalized": 0.0010979088939208777,
+            "valid": 1.0,
+            "seconds": 0.01587764173746109
+          },
+          "chief_abs_height_error_mm": 2.1431517834180625e-05,
+          "deeplens_sampling_change_mm": 6.886671897099461e-05
+        },
+        {
+          "wavelength_nm": 630.0,
+          "field_h": 0.7,
+          "angle_rad": 0.08012955434158014,
+          "qfilm_chief_x_mm": 3.500218257885367,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 3.5002128104027546,
+            "positive_film_height_mm": -3.5002128104027546,
+            "stop_dist_normalized": 0.0004765428001018036,
+            "valid": 1.0,
+            "seconds": 0.015503867529332638
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 3.5002402794688945,
+            "positive_film_height_mm": -3.5002402794688945,
+            "stop_dist_normalized": 0.0013098571879450235,
+            "valid": 1.0,
+            "seconds": 0.015915381722152233
+          },
+          "chief_abs_height_error_mm": 2.2021583527376265e-05,
+          "deeplens_sampling_change_mm": 2.7469066139929055e-05
+        },
+        {
+          "wavelength_nm": 630.0,
+          "field_h": 0.8,
+          "angle_rad": 0.09151678197146682,
+          "qfilm_chief_x_mm": 4.000287618412122,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 4.000318949607977,
+            "positive_film_height_mm": -4.000318949607977,
+            "stop_dist_normalized": 0.0013953695648458752,
+            "valid": 1.0,
+            "seconds": 0.015596269629895687
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 4.000280947068589,
+            "positive_film_height_mm": -4.000280947068589,
+            "stop_dist_normalized": 0.00033815511408535177,
+            "valid": 1.0,
+            "seconds": 0.01590906921774149
+          },
+          "chief_abs_height_error_mm": 6.671343532715923e-06,
+          "deeplens_sampling_change_mm": 3.800253938823772e-05
+        },
+        {
+          "wavelength_nm": 630.0,
+          "field_h": 0.9,
+          "angle_rad": 0.10288026001171562,
+          "qfilm_chief_x_mm": 4.500372937146946,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 4.500549671562574,
+            "positive_film_height_mm": -4.500549671562574,
+            "stop_dist_normalized": 0.0037209509203192147,
+            "valid": 1.0,
+            "seconds": 0.015562263317406178
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 4.500344580033017,
+            "positive_film_height_mm": -4.500344580033017,
+            "stop_dist_normalized": 0.00045390443033549747,
+            "valid": 1.0,
+            "seconds": 0.01595890987664461
+          },
+          "chief_abs_height_error_mm": 2.8357113929011746e-05,
+          "deeplens_sampling_change_mm": 0.00020509152955661136
+        },
+        {
+          "wavelength_nm": 630.0,
+          "field_h": 1.0,
+          "angle_rad": 0.11421713789608509,
+          "qfilm_chief_x_mm": 5.000476637115944,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 5.000352179794028,
+            "positive_film_height_mm": -5.000352179794028,
+            "stop_dist_normalized": 0.0019371902990399069,
+            "valid": 1.0,
+            "seconds": 0.015492034144699574
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 5.000427725252071,
+            "positive_film_height_mm": -5.000427725252071,
+            "stop_dist_normalized": 0.001548630630813897,
+            "valid": 1.0,
+            "seconds": 0.015884445048868656
+          },
+          "chief_abs_height_error_mm": 4.891186387290247e-05,
+          "deeplens_sampling_change_mm": 7.554545804300261e-05
+        },
+        {
+          "wavelength_nm": 670.0,
+          "field_h": 0.0,
+          "angle_rad": 0.0,
+          "qfilm_chief_x_mm": 0.0,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": -3.103735032863701e-05,
+            "positive_film_height_mm": 3.103735032863701e-05,
+            "stop_dist_normalized": 0.0017745549795662125,
+            "valid": 1.0,
+            "seconds": 0.015488705597817898
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": -2.4106850786386087e-05,
+            "positive_film_height_mm": 2.4106850786386087e-05,
+            "stop_dist_normalized": 0.0010968487349999115,
+            "valid": 1.0,
+            "seconds": 0.015967223793268204
+          },
+          "chief_abs_height_error_mm": 2.4106850786386087e-05,
+          "deeplens_sampling_change_mm": 6.930499542250924e-06
+        },
+        {
+          "wavelength_nm": 670.0,
+          "field_h": 0.1,
+          "angle_rad": 0.011471138694378394,
+          "qfilm_chief_x_mm": 0.5000290374618526,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 0.5000139030040653,
+            "positive_film_height_mm": -0.5000139030040653,
+            "stop_dist_normalized": 0.0007458116464678792,
+            "valid": 1.0,
+            "seconds": 0.015533961355686188
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 0.5000554202891532,
+            "positive_film_height_mm": -0.5000554202891532,
+            "stop_dist_normalized": 0.0013457873360738157,
+            "valid": 1.0,
+            "seconds": 0.015907976776361465
+          },
+          "chief_abs_height_error_mm": 2.638282730060837e-05,
+          "deeplens_sampling_change_mm": 4.1517285087833145e-05
+        },
+        {
+          "wavelength_nm": 670.0,
+          "field_h": 0.2,
+          "angle_rad": 0.022939259277025968,
+          "qfilm_chief_x_mm": 1.0000598786614383,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 1.0000417590906585,
+            "positive_film_height_mm": -1.0000417590906585,
+            "stop_dist_normalized": 0.0009977836287893655,
+            "valid": 1.0,
+            "seconds": 0.015611696988344193
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 1.000077542955986,
+            "positive_film_height_mm": -1.000077542955986,
+            "stop_dist_normalized": 0.0011776370731933095,
+            "valid": 1.0,
+            "seconds": 0.01588692795485258
+          },
+          "chief_abs_height_error_mm": 1.7664294547747872e-05,
+          "deeplens_sampling_change_mm": 3.5783865327543296e-05
+        },
+        {
+          "wavelength_nm": 670.0,
+          "field_h": 0.3,
+          "angle_rad": 0.03440134839797579,
+          "qfilm_chief_x_mm": 1.5000943441358976,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 1.5000836210492512,
+            "positive_film_height_mm": -1.5000836210492512,
+            "stop_dist_normalized": 0.0009694070715039671,
+            "valid": 1.0,
+            "seconds": 0.015490466728806496
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 1.500097630575904,
+            "positive_film_height_mm": -1.500097630575904,
+            "stop_dist_normalized": 0.0004180183322604505,
+            "valid": 1.0,
+            "seconds": 0.01591747533529997
+          },
+          "chief_abs_height_error_mm": 3.2864400063559174e-06,
+          "deeplens_sampling_change_mm": 1.4009526652758453e-05
+        },
+        {
+          "wavelength_nm": 670.0,
+          "field_h": 0.4,
+          "angle_rad": 0.045854402212022374,
+          "qfilm_chief_x_mm": 2.000134288014301,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 2.000127755953069,
+            "positive_film_height_mm": -2.000127755953069,
+            "stop_dist_normalized": 0.001569467945873841,
+            "valid": 1.0,
+            "seconds": 0.015593498945236206
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 2.00012938358673,
+            "positive_film_height_mm": -2.00012938358673,
+            "stop_dist_normalized": 0.0008362476875391213,
+            "valid": 1.0,
+            "seconds": 0.01590985804796219
+          },
+          "chief_abs_height_error_mm": 4.904427570728842e-06,
+          "deeplens_sampling_change_mm": 1.6276336611831255e-06
+        },
+        {
+          "wavelength_nm": 670.0,
+          "field_h": 0.5,
+          "angle_rad": 0.05729543108432457,
+          "qfilm_chief_x_mm": 2.5001816147965963,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 2.500183694960251,
+            "positive_film_height_mm": -2.500183694960251,
+            "stop_dist_normalized": 0.001883111609253796,
+            "valid": 1.0,
+            "seconds": 0.015521560795605183
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 2.5001810429006013,
+            "positive_film_height_mm": -2.5001810429006013,
+            "stop_dist_normalized": 0.0007950958146915084,
+            "valid": 1.0,
+            "seconds": 0.015872950665652752
+          },
+          "chief_abs_height_error_mm": 5.718959950051783e-07,
+          "deeplens_sampling_change_mm": 2.652059649665972e-06
+        },
+        {
+          "wavelength_nm": 670.0,
+          "field_h": 0.6,
+          "angle_rad": 0.0687214642402594,
+          "qfilm_chief_x_mm": 3.0002382961127037,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 3.0002533284500457,
+            "positive_film_height_mm": -3.0002533284500457,
+            "stop_dist_normalized": 0.0012928006222858916,
+            "valid": 1.0,
+            "seconds": 0.015636841766536236
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 3.0002253503326983,
+            "positive_film_height_mm": -3.0002253503326983,
+            "stop_dist_normalized": 0.0011875409280384351,
+            "valid": 1.0,
+            "seconds": 0.015896744094789028
+          },
+          "chief_abs_height_error_mm": 1.2945780005324536e-05,
+          "deeplens_sampling_change_mm": 2.7978117347338127e-05
+        },
+        {
+          "wavelength_nm": 670.0,
+          "field_h": 0.7,
+          "angle_rad": 0.08012955434158014,
+          "qfilm_chief_x_mm": 3.500306387456087,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 3.500329137087719,
+            "positive_film_height_mm": -3.500329137087719,
+            "stop_dist_normalized": 0.001805115137812708,
+            "valid": 1.0,
+            "seconds": 0.015525839291512966
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 3.500298024458207,
+            "positive_film_height_mm": -3.500298024458207,
+            "stop_dist_normalized": 0.0011756181718985774,
+            "valid": 1.0,
+            "seconds": 0.01584731601178646
+          },
+          "chief_abs_height_error_mm": 8.362997879984846e-06,
+          "deeplens_sampling_change_mm": 3.111262951227545e-05
+        },
+        {
+          "wavelength_nm": 670.0,
+          "field_h": 0.8,
+          "angle_rad": 0.09151678197146682,
+          "qfilm_chief_x_mm": 4.000388044886947,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 4.000401245753075,
+            "positive_film_height_mm": -4.000401245753075,
+            "stop_dist_normalized": 0.00044248077539273947,
+            "valid": 1.0,
+            "seconds": 0.015573222190141678
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 4.000441880452519,
+            "positive_film_height_mm": -4.000441880452519,
+            "stop_dist_normalized": 0.0014462423458456036,
+            "valid": 1.0,
+            "seconds": 0.015915941447019577
+          },
+          "chief_abs_height_error_mm": 5.383556557259084e-05,
+          "deeplens_sampling_change_mm": 4.0634699444375144e-05
+        },
+        {
+          "wavelength_nm": 670.0,
+          "field_h": 0.9,
+          "angle_rad": 0.10288026001171562,
+          "qfilm_chief_x_mm": 4.500485541701177,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 4.500616919060045,
+            "positive_film_height_mm": -4.500616919060045,
+            "stop_dist_normalized": 0.0024974191628783357,
+            "valid": 1.0,
+            "seconds": 0.015507563017308712
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 4.500508642423023,
+            "positive_film_height_mm": -4.500508642423023,
+            "stop_dist_normalized": 0.00045134214091060385,
+            "valid": 1.0,
+            "seconds": 0.015893599949777126
+          },
+          "chief_abs_height_error_mm": 2.310072184652512e-05,
+          "deeplens_sampling_change_mm": 0.0001082766370217314
+        },
+        {
+          "wavelength_nm": 670.0,
+          "field_h": 1.0,
+          "angle_rad": 0.11421713789608509,
+          "qfilm_chief_x_mm": 5.000601285062442,
+          "deeplens_262k": {
+            "spp": 262144,
+            "physical_y_mm": 5.000630965037226,
+            "positive_film_height_mm": -5.000630965037226,
+            "stop_dist_normalized": 0.0008749889756300165,
+            "valid": 1.0,
+            "seconds": 0.01549278013408184
+          },
+          "deeplens_1m": {
+            "spp": 1000000,
+            "physical_y_mm": 5.000624819336635,
+            "positive_film_height_mm": -5.000624819336635,
+            "stop_dist_normalized": 0.0011807650958435597,
+            "valid": 1.0,
+            "seconds": 0.015896215103566647
+          },
+          "chief_abs_height_error_mm": 2.3534274193437454e-05,
+          "deeplens_sampling_change_mm": 6.145700591098091e-06
+        }
+      ],
+      "summary": {
+        "max_film_height_abs_error_mm": 0.00014986254434434798,
+        "p95_film_height_abs_error_mm": 0.00010973584205444809,
+        "max_deeplens_stochastic_shift_mm": 0.00036997328918531025,
+        "max_stop_miscentering_normalized": 0.0019409629570677103,
+        "invalid_chief_1m": 0
+      }
+    }
+  }
+}
