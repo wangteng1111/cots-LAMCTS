@@ -3,17 +3,37 @@
     "validation/qfilm03_identical_huygens_input.py"
   ],
   "code_commit": "2170c34d3a3d13f089699144d0d9c70987391b91",
+  "elapsed_sec": 13.137330055236816,
   "entrypoint": "scripts/cuda_venv_exec.py",
   "env": {},
+  "finished_at": 1793179774.3429923,
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm03-identical-huygens-kernel-20261028-01",
-  "log_tail": "",
+  "log_tail": "/var/lib/cots-lamcts/deeplens_upstream/deeplens/geolens_pkg/psf_compute.py:158: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  point_obj_x = points[..., 0] * scale * sensor_w / 2\nIDENTICAL_KERNEL singlet 670.0 0.1 128 diff 4.005887732638769e-09 error None\nIDENTICAL_KERNEL singlet 670.0 0.1 256 diff 6.7684668980660945e-09 error None\nIDENTICAL_KERNEL singlet 670.0 0.0 128 diff 6.641114658201275e-09 error None\nIDENTICAL_KERNEL singlet 670.0 0.0 256 diff 4.765912331450295e-09 error None\nIDENTICAL_KERNEL internal_stop_asphere 670.0 0.1 128 diff 8.549968261162277e-09 error None\nIDENTICAL_KERNEL internal_stop_asphere 670.0 0.1 256 diff 1.4979176440887976e-08 error None\nIDENTICAL_KERNEL internal_stop_asphere 630.0 0.0 128 diff 5.478106690492979e-09 error None\nIDENTICAL_KERNEL internal_stop_asphere 630.0 0.0 256 diff 7.810896818227775e-09 error None\nIDENTICAL_KERNEL_SUMMARY [{\"name\": \"singlet\", \"lambda_nm\": 670.0, \"h\": 0.1, \"pupil_n\": 128, \"max_abs_MTF_between_identical_ray_integrals\": 4.005887732638769e-09}, {\"name\": \"singlet\", \"lambda_nm\": 670.0, \"h\": 0.1, \"pupil_n\": 256, \"max_abs_MTF_between_identical_ray_integrals\": 6.7684668980660945e-09}, {\"name\": \"singlet\", \"lambda_nm\": 670.0, \"h\": 0.0, \"pupil_n\": 128, \"max_abs_MTF_between_identical_ray_integrals\": 6.641114658201275e-09}, {\"name\": \"singlet\", \"lambda_nm\": 670.0, \"h\": 0.0, \"pupil_n\": 256, \"max_abs_MTF_between_identical_ray_integrals\": 4.765912331450295e-09}, {\"name\": \"internal_stop_asphere\", \"lambda_nm\": 670.0, \"h\": 0.1, \"pupil_n\": 128, \"max_abs_MTF_between_identical_ray_integrals\": 8.549968261162277e-09}, {\"name\": \"internal_stop_asphere\", \"lambda_nm\": 670.0, \"h\": 0.1, \"pupil_n\": 256, \"max_abs_MTF_between_identical_ray_integrals\": 1.4979176440887976e-08}, {\"name\": \"internal_stop_asphere\", \"lambda_nm\": 630.0, \"h\": 0.0, \"pupil_n\": 128, \"max_abs_MTF_between_identical_ray_integrals\": 5.478106690492979e-09}, {\"name\": \"internal_stop_asphere\", \"lambda_nm\": 630.0, \"h\": 0.0, \"pupil_n\": 256, \"max_abs_MTF_between_identical_ray_integrals\": 7.810896818227775e-09}]",
   "memory_gb": 0,
   "pid": 376304,
   "request_sha256": "5289139dfe7f8b037647405f3d7515c3c95ac3f2f9d3803508c53842abf5626b",
+  "returncode": 0,
   "schema": 1,
   "started_at": 1793179761.2056623,
-  "state": "running",
+  "state": "finished",
   "timeout_sec": 1200,
-  "updated_at": 1793179764.5163403
+  "updated_at": 1793179764.5163403,
+  "uploaded_artifacts": [
+    {
+      "path": "qfilm03_identical_huygens/identical_rays_two_propagators.json",
+      "size": 16832,
+      "uploaded": true
+    },
+    {
+      "path": "qfilm03_identical_huygens/internal_stop_asphere.json",
+      "size": 903,
+      "uploaded": true
+    },
+    {
+      "path": "qfilm03_identical_huygens/singlet.json",
+      "size": 569,
+      "uploaded": true
+    }
+  ]
 }
