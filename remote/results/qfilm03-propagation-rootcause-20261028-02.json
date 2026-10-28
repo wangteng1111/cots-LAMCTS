@@ -7,10 +7,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm03-propagation-rootcause-20261028-02",
+  "log_tail": "/var/lib/cots-lamcts/jobs/qfilm03-propagation-rootcause-20261028-02/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)",
   "memory_gb": 0,
+  "pid": 370091,
   "request_sha256": "d10a028ba033f042ece2d79eedc0f84bba04fbd73616f61f5010913e20c0e24a",
   "schema": 1,
   "started_at": 1793178672.9470582,
   "state": "running",
-  "timeout_sec": 1800
+  "timeout_sec": 1800,
+  "updated_at": 1793178681.7575376
 }
