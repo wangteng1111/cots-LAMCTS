@@ -1,0 +1,16 @@
+{
+  "args": [
+    "validation/qfilm03_highres_fullframe.py"
+  ],
+  "code_commit": "d96f751f434306b1625c0da6fbc3df3453abe260",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm03-fullframe-1024-20261028-01",
+  "memory_gb": 0,
+  "request_sha256": "0e4c46e70a2e424bc04c85c8a1a7a72a201c79c26cb2529778a5b902d1025cbb",
+  "schema": 1,
+  "started_at": 1793172819.939794,
+  "state": "running",
+  "timeout_sec": 1800
+}
