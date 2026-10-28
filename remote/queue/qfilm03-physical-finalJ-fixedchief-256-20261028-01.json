@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "qfilm03-physical-finalJ-fixedchief-256-20261028-01",
+  "code_commit": "cc80e5541c6188f1e28691a360e0f4e73a79da98",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm03_physical_finalJ_fixedchief_256.py"
+  ],
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
