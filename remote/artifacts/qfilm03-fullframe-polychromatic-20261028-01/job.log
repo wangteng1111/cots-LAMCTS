@@ -1,0 +1,9 @@
+/var/lib/cots-lamcts/jobs/qfilm03-fullframe-polychromatic-20261028-01/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)
+  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)
+POLY singlet 0.0 0.04868460462482428
+POLY singlet 0.5 0.02051142018032827
+POLY singlet 1.0 0.01705177503346873
+POLY internal_stop_asphere 0.0 0.06723371403611896
+POLY internal_stop_asphere 0.5 0.01881154296351276
+POLY internal_stop_asphere 1.0 0.012579455223769562
+POLY_COMPLETE {"singlet": {"n": 3, "max": 0.04868460462482428, "error": null}, "internal_stop_asphere": {"n": 3, "max": 0.06723371403611896, "error": null}}
