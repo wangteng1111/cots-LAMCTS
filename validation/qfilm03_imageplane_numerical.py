@@ -31,6 +31,7 @@ def summary(r):
          "MTF_center_s":q[0,20:30].tolist(),"MTF_edge_s":q[-1,20:30].tolist(),
          "illuminance_edge_proxy":float(q[-1,1]),"area_fill_edge":float(q[-1,2])}
 def compare(a,b):
+ ja=a["quality"].get("J_task");jb=b["quality"].get("J_task")
  a,b=np.asarray(a["Q_image"],float),np.asarray(b["Q_image"],float)
  d=np.abs(a[:,10:30]-b[:,10:30])
  den=(a[:,10:30]+b[:,10:30])/2
@@ -41,7 +42,7 @@ def compare(a,b):
          "field_max_mtf":d.max(axis=1).tolist(),
          "max_field_h":float(np.argmax(d.max(axis=1))/(len(a)-1)),
          "mtf_bad_over_001":int((d>.01).sum()),"mtf_bad_over_005":int((d>.05).sum()),
-         "J_abs":float(abs(float(a["quality"]["J_task"])-float(b["quality"]["J_task"]))) if a["quality"]["J_task"] is not None and b["quality"]["J_task"] is not None else None,
+         "J_abs":float(abs(float(ja)-float(jb))) if ja is not None and jb is not None else None,
          "validity_mismatch_fields":int(np.count_nonzero((a[:,30]>.5)!=(b[:,30]>.5)))}
 def main():
  rec={"schema":"qfilm03-numerical-all-fields-v1",
