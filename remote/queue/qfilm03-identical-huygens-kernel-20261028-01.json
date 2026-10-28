@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "qfilm03-identical-huygens-kernel-20261028-01",
+  "code_commit": "f3107586a71bc3e3977dfdce3b3359ce7afa2012",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm03_identical_huygens_input.py"
+  ],
+  "timeout_sec": 1200,
+  "memory_gb": 0
+}
