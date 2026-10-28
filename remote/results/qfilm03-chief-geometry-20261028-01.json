@@ -7,10 +7,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm03-chief-geometry-20261028-01",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 350335,
   "request_sha256": "dc4d7a95255a43302ab94014e6dad8a42341a67a1d9742b64c58968a5b3d6710",
   "schema": 1,
   "started_at": 1793172399.3603451,
   "state": "running",
-  "timeout_sec": 1800
+  "timeout_sec": 1800,
+  "updated_at": 1793172406.4538336
 }
