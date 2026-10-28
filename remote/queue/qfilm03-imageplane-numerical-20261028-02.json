@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "job_id": "qfilm03-imageplane-numerical-20261028-02",
+  "code_commit": "36599ff2dfdfe00240c94c56f439b2977ee992fc",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm03_imageplane_numerical.py"
+  ],
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
