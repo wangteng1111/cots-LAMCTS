@@ -4,31 +4,31 @@
   "cpu_count": 128,
   "gpu": [
     {
-      "memory_free_mb": "32110",
+      "memory_free_mb": "2524",
       "memory_total_mb": "32607",
       "name": "NVIDIA GeForce RTX 5090",
-      "temperature_c": "37",
-      "utilization_pct": "0"
+      "temperature_c": "55",
+      "utilization_pct": "100"
     },
     {
-      "memory_free_mb": "32110",
+      "memory_free_mb": "32107",
       "memory_total_mb": "32607",
       "name": "NVIDIA GeForce RTX 5090",
-      "temperature_c": "40",
+      "temperature_c": "39",
       "utilization_pct": "0"
     }
   ],
   "hostname": "aipss-Rack-Server",
   "loadavg": [
-    0.38916015625,
-    0.705078125,
-    0.4716796875
+    0.44970703125,
+    0.66357421875,
+    0.46875
   ],
   "python": "/usr/bin/python3",
   "python_version": "3.12.3",
   "repo": "wangteng1111/cots-LAMCTS",
   "results_branch": "workstation-results",
-  "running_job": null,
+  "running_job": "qfilm03-huygens-reference-convergence-20261028-01",
   "schema": 1,
-  "timestamp": 1793172476.9334025
+  "timestamp": 1793172533.8888712
 }
