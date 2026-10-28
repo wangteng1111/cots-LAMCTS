@@ -1,0 +1,12 @@
+name,passed_trace_conditions,attempted_trace_conditions,center_passed,half_passed,edge_passed
+ef100mm_f2.8,21,21,7,7,7
+ef35mm_f2.0,14,21,7,7,0
+ef40mm_f2.8,21,21,7,7,7
+ef50mm_f1.8,21,21,7,7,7
+ef85mm_f1.8,21,21,7,7,7
+rf16mm_f2.8,7,21,7,0,0
+rf24mm_f1.8,7,21,7,0,0
+rf35mm_f1.8,21,21,7,7,7
+rf50mm_f1.8,21,21,7,7,7
+sigma70mm_f2.8,21,21,7,7,7
+yongnuo_50mm_f1.8,21,21,7,7,7

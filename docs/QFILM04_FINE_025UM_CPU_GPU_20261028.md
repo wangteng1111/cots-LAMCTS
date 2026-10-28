@@ -27,7 +27,24 @@
 4. 当前执行环境为 PyTorch 2.15.0+cpu，没有 CUDA。GPU 入口已实际尝试并明确返回 `unavailable`，没有回退为 CPU。
 5. 工作站最后读取到的心跳为北京时间 **2026-10-28 20:25:48**，未见恢复或本轮任务运行证据。这个时间戳不能代表当前 GPU 空闲状态。
 
-逐例完整瞳面的几何前检另存结果，状态以对应 JSON 为准；`mode=preflight` 或 `mode=benchmark` 的报告均不是正式 PSF 结果。
+11 个处方的完整瞳面几何前检已结束：231 组中 196 组同时具有足够透射光线与有效主光线，35 组未通过。EF35 的边缘 7 组主光线无效；RF16/RF24 的半场各 7 组主光线无效、最外场各 7 组没有可用透射光线。这些均不是完整 PSF 或最终评分结果。
+
+`mode=preflight` 或 `mode=benchmark` 的报告均不是正式 PSF 结果。
+
+
+| 处方 | 中心通过 / 7 | 半场通过 / 7 | 边缘通过 / 7 |
+|---|---:|---:|---:|
+| ef100mm_f2.8 | 7 | 7 | 7 |
+| ef35mm_f2.0 | 7 | 7 | 0 |
+| ef40mm_f2.8 | 7 | 7 | 7 |
+| ef50mm_f1.8 | 7 | 7 | 7 |
+| ef85mm_f1.8 | 7 | 7 | 7 |
+| rf16mm_f2.8 | 7 | 0 | 0 |
+| rf24mm_f1.8 | 7 | 0 | 0 |
+| rf35mm_f1.8 | 7 | 7 | 7 |
+| rf50mm_f1.8 | 7 | 7 | 7 |
+| sigma70mm_f2.8 | 7 | 7 | 7 |
+| yongnuo_50mm_f1.8 | 7 | 7 | 7 |
 
 ## 执行与恢复
 
@@ -57,8 +74,12 @@ python validation/qfilm04_compare_fine_cpu_gpu.py \
 
 比较器校验完整协议及源文件哈希，只比较双方实际完成的 PSF；缺少任一组合即显示 `incomplete`。CPU/GPU 吻合只证明执行设备一致性，不证明独立物理精度。
 
+22 个完整任务已写入 `remote/queue/`，11 个 GPU 在前、11 个 CPU 在后。执行代码固定为 `9a36a7011f379a153e4fab7f8c95b180cece49a1`；队列提交为 `a906fe43fc9a7d89627a92ed73f30f9a9339ce6d`。尚未观察到首个新 GPU 任务被领取。需要恢复工作站 `cots-lamcts-bridge` 服务后才能继续远端执行；当前环境不能代替 CUDA 工作站。
+
 ## 结果入口
 
+- [22 个完整任务及执行状态](../artifacts/qfilm04_fine_11_execution_status_20261028.json)
+- [11 镜头几何前检摘要 CSV](../artifacts/qfilm04_fine_11_preflight_summary_20261028.csv)
 - [0.25 μm Airy 解析控制](../artifacts/qfilm04_airy_sampling_rerun_20261028.json)
 - [11 案例 CPU 计时小块](../artifacts/qfilm04_fine_11_cpu_timing_single_thread_20261028.json)
 - [完整瞳面 CPU 几何前检](../artifacts/qfilm04_fine_11_cpu_preflight_20261028.json)

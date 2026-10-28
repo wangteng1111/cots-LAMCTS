@@ -1,0 +1,11 @@
+{
+  "default_pitch_um": 0.25,
+  "detector_n": 2560,
+  "support_mm": 0.64,
+  "progress_callback_psf_max_difference": 0.0,
+  "callback_events": 9,
+  "invalid_pitch_rejected": true,
+  "test_pupil_n": 16,
+  "test_pixel_n": 16,
+  "test_is_full_precision_lens_validation": false
+}

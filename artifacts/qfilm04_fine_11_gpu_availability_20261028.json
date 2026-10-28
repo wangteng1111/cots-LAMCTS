@@ -1,0 +1,78 @@
+{
+  "schema": "Qfilm04-fine-eleven-camera-v1",
+  "protocol": {
+    "source_commit": "911bb9d334fce7e20a4407c4506ac683b52ff246",
+    "names": [
+      "ef100mm_f2.8",
+      "ef35mm_f2.0",
+      "ef40mm_f2.8",
+      "ef50mm_f1.8",
+      "ef85mm_f1.8",
+      "rf16mm_f2.8",
+      "rf24mm_f1.8",
+      "rf35mm_f1.8",
+      "rf50mm_f1.8",
+      "sigma70mm_f2.8",
+      "yongnuo_50mm_f1.8"
+    ],
+    "fields_h": [
+      0.0,
+      0.5,
+      1.0
+    ],
+    "wavelengths_nm": [
+      430.0,
+      470.0,
+      510.0,
+      550.0,
+      590.0,
+      630.0,
+      670.0
+    ],
+    "spectral_weights": [
+      0.075,
+      0.125,
+      0.16,
+      0.28,
+      0.16,
+      0.125,
+      0.075
+    ],
+    "frequencies_lpmm": [
+      5.0,
+      10.0,
+      15.0,
+      20.0,
+      30.0,
+      40.0,
+      50.0,
+      60.0,
+      70.0,
+      80.0
+    ],
+    "frame_mm": [
+      36.0,
+      24.0
+    ],
+    "pupil_n": 256,
+    "detector_n": 2560,
+    "detector_pitch_um": 0.25,
+    "support_mm": 0.64,
+    "weight_mode": "sqrt_exit_jac"
+  },
+  "protocol_hash": "396113fc066533dbedf58312ec38b236a2f14490695e71f0abc05a073a41e311",
+  "variant": "Qfilm0.4-g",
+  "mode": "solve",
+  "device": "cuda:0",
+  "torch_version": "2.15.0+cpu",
+  "threads": 8,
+  "block": 64,
+  "status": "unavailable",
+  "training_eligible": false,
+  "physics_certified": false,
+  "sampling_converged": false,
+  "manufactured_lens_empirical_validation": false,
+  "cases": [],
+  "error": "CUDA unavailable; no CPU fallback",
+  "updated_unix": 1793202903.9261866
+}

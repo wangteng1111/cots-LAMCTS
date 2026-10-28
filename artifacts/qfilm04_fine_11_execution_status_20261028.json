@@ -1,0 +1,557 @@
+{
+  "schema": "Qfilm04-fine-11-execution-status-v1",
+  "requested_pitch_um": 0.25,
+  "detector_n": 2560,
+  "support_mm": 0.64,
+  "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+  "queue_commit": "a906fe43fc9a7d89627a92ed73f30f9a9339ce6d",
+  "queued_jobs": [
+    {
+      "schema": 1,
+      "job_id": "000-qfilm04-fine-01g-00-ef100mm_f2.8-20261028",
+      "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+      "entrypoint": "scripts/cuda_venv_exec.py",
+      "args": [
+        "validation/qfilm04_fine_11_cpu_gpu.py",
+        "--backend",
+        "g",
+        "--names",
+        "ef100mm_f2.8",
+        "--fields",
+        "3",
+        "--threads",
+        "2"
+      ],
+      "env": {
+        "OMP_NUM_THREADS": "2",
+        "MKL_NUM_THREADS": "2",
+        "OPENBLAS_NUM_THREADS": "2"
+      },
+      "timeout_sec": 172800,
+      "memory_gb": 0
+    },
+    {
+      "schema": 1,
+      "job_id": "000-qfilm04-fine-01g-01-ef35mm_f2.0-20261028",
+      "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+      "entrypoint": "scripts/cuda_venv_exec.py",
+      "args": [
+        "validation/qfilm04_fine_11_cpu_gpu.py",
+        "--backend",
+        "g",
+        "--names",
+        "ef35mm_f2.0",
+        "--fields",
+        "3",
+        "--threads",
+        "2"
+      ],
+      "env": {
+        "OMP_NUM_THREADS": "2",
+        "MKL_NUM_THREADS": "2",
+        "OPENBLAS_NUM_THREADS": "2"
+      },
+      "timeout_sec": 172800,
+      "memory_gb": 0
+    },
+    {
+      "schema": 1,
+      "job_id": "000-qfilm04-fine-01g-02-ef40mm_f2.8-20261028",
+      "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+      "entrypoint": "scripts/cuda_venv_exec.py",
+      "args": [
+        "validation/qfilm04_fine_11_cpu_gpu.py",
+        "--backend",
+        "g",
+        "--names",
+        "ef40mm_f2.8",
+        "--fields",
+        "3",
+        "--threads",
+        "2"
+      ],
+      "env": {
+        "OMP_NUM_THREADS": "2",
+        "MKL_NUM_THREADS": "2",
+        "OPENBLAS_NUM_THREADS": "2"
+      },
+      "timeout_sec": 172800,
+      "memory_gb": 0
+    },
+    {
+      "schema": 1,
+      "job_id": "000-qfilm04-fine-01g-03-ef50mm_f1.8-20261028",
+      "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+      "entrypoint": "scripts/cuda_venv_exec.py",
+      "args": [
+        "validation/qfilm04_fine_11_cpu_gpu.py",
+        "--backend",
+        "g",
+        "--names",
+        "ef50mm_f1.8",
+        "--fields",
+        "3",
+        "--threads",
+        "2"
+      ],
+      "env": {
+        "OMP_NUM_THREADS": "2",
+        "MKL_NUM_THREADS": "2",
+        "OPENBLAS_NUM_THREADS": "2"
+      },
+      "timeout_sec": 172800,
+      "memory_gb": 0
+    },
+    {
+      "schema": 1,
+      "job_id": "000-qfilm04-fine-01g-04-ef85mm_f1.8-20261028",
+      "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+      "entrypoint": "scripts/cuda_venv_exec.py",
+      "args": [
+        "validation/qfilm04_fine_11_cpu_gpu.py",
+        "--backend",
+        "g",
+        "--names",
+        "ef85mm_f1.8",
+        "--fields",
+        "3",
+        "--threads",
+        "2"
+      ],
+      "env": {
+        "OMP_NUM_THREADS": "2",
+        "MKL_NUM_THREADS": "2",
+        "OPENBLAS_NUM_THREADS": "2"
+      },
+      "timeout_sec": 172800,
+      "memory_gb": 0
+    },
+    {
+      "schema": 1,
+      "job_id": "000-qfilm04-fine-01g-05-rf16mm_f2.8-20261028",
+      "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+      "entrypoint": "scripts/cuda_venv_exec.py",
+      "args": [
+        "validation/qfilm04_fine_11_cpu_gpu.py",
+        "--backend",
+        "g",
+        "--names",
+        "rf16mm_f2.8",
+        "--fields",
+        "3",
+        "--threads",
+        "2"
+      ],
+      "env": {
+        "OMP_NUM_THREADS": "2",
+        "MKL_NUM_THREADS": "2",
+        "OPENBLAS_NUM_THREADS": "2"
+      },
+      "timeout_sec": 172800,
+      "memory_gb": 0
+    },
+    {
+      "schema": 1,
+      "job_id": "000-qfilm04-fine-01g-06-rf24mm_f1.8-20261028",
+      "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+      "entrypoint": "scripts/cuda_venv_exec.py",
+      "args": [
+        "validation/qfilm04_fine_11_cpu_gpu.py",
+        "--backend",
+        "g",
+        "--names",
+        "rf24mm_f1.8",
+        "--fields",
+        "3",
+        "--threads",
+        "2"
+      ],
+      "env": {
+        "OMP_NUM_THREADS": "2",
+        "MKL_NUM_THREADS": "2",
+        "OPENBLAS_NUM_THREADS": "2"
+      },
+      "timeout_sec": 172800,
+      "memory_gb": 0
+    },
+    {
+      "schema": 1,
+      "job_id": "000-qfilm04-fine-01g-07-rf35mm_f1.8-20261028",
+      "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+      "entrypoint": "scripts/cuda_venv_exec.py",
+      "args": [
+        "validation/qfilm04_fine_11_cpu_gpu.py",
+        "--backend",
+        "g",
+        "--names",
+        "rf35mm_f1.8",
+        "--fields",
+        "3",
+        "--threads",
+        "2"
+      ],
+      "env": {
+        "OMP_NUM_THREADS": "2",
+        "MKL_NUM_THREADS": "2",
+        "OPENBLAS_NUM_THREADS": "2"
+      },
+      "timeout_sec": 172800,
+      "memory_gb": 0
+    },
+    {
+      "schema": 1,
+      "job_id": "000-qfilm04-fine-01g-08-rf50mm_f1.8-20261028",
+      "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+      "entrypoint": "scripts/cuda_venv_exec.py",
+      "args": [
+        "validation/qfilm04_fine_11_cpu_gpu.py",
+        "--backend",
+        "g",
+        "--names",
+        "rf50mm_f1.8",
+        "--fields",
+        "3",
+        "--threads",
+        "2"
+      ],
+      "env": {
+        "OMP_NUM_THREADS": "2",
+        "MKL_NUM_THREADS": "2",
+        "OPENBLAS_NUM_THREADS": "2"
+      },
+      "timeout_sec": 172800,
+      "memory_gb": 0
+    },
+    {
+      "schema": 1,
+      "job_id": "000-qfilm04-fine-01g-09-sigma70mm_f2.8-20261028",
+      "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+      "entrypoint": "scripts/cuda_venv_exec.py",
+      "args": [
+        "validation/qfilm04_fine_11_cpu_gpu.py",
+        "--backend",
+        "g",
+        "--names",
+        "sigma70mm_f2.8",
+        "--fields",
+        "3",
+        "--threads",
+        "2"
+      ],
+      "env": {
+        "OMP_NUM_THREADS": "2",
+        "MKL_NUM_THREADS": "2",
+        "OPENBLAS_NUM_THREADS": "2"
+      },
+      "timeout_sec": 172800,
+      "memory_gb": 0
+    },
+    {
+      "schema": 1,
+      "job_id": "000-qfilm04-fine-01g-10-yongnuo_50mm_f1.8-20261028",
+      "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+      "entrypoint": "scripts/cuda_venv_exec.py",
+      "args": [
+        "validation/qfilm04_fine_11_cpu_gpu.py",
+        "--backend",
+        "g",
+        "--names",
+        "yongnuo_50mm_f1.8",
+        "--fields",
+        "3",
+        "--threads",
+        "2"
+      ],
+      "env": {
+        "OMP_NUM_THREADS": "2",
+        "MKL_NUM_THREADS": "2",
+        "OPENBLAS_NUM_THREADS": "2"
+      },
+      "timeout_sec": 172800,
+      "memory_gb": 0
+    },
+    {
+      "schema": 1,
+      "job_id": "000-qfilm04-fine-02c-00-ef100mm_f2.8-20261028",
+      "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+      "entrypoint": "scripts/cuda_venv_exec.py",
+      "args": [
+        "validation/qfilm04_fine_11_cpu_gpu.py",
+        "--backend",
+        "c",
+        "--names",
+        "ef100mm_f2.8",
+        "--fields",
+        "3",
+        "--threads",
+        "8"
+      ],
+      "env": {
+        "OMP_NUM_THREADS": "8",
+        "MKL_NUM_THREADS": "8",
+        "OPENBLAS_NUM_THREADS": "8"
+      },
+      "timeout_sec": 172800,
+      "memory_gb": 0
+    },
+    {
+      "schema": 1,
+      "job_id": "000-qfilm04-fine-02c-01-ef35mm_f2.0-20261028",
+      "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+      "entrypoint": "scripts/cuda_venv_exec.py",
+      "args": [
+        "validation/qfilm04_fine_11_cpu_gpu.py",
+        "--backend",
+        "c",
+        "--names",
+        "ef35mm_f2.0",
+        "--fields",
+        "3",
+        "--threads",
+        "8"
+      ],
+      "env": {
+        "OMP_NUM_THREADS": "8",
+        "MKL_NUM_THREADS": "8",
+        "OPENBLAS_NUM_THREADS": "8"
+      },
+      "timeout_sec": 172800,
+      "memory_gb": 0
+    },
+    {
+      "schema": 1,
+      "job_id": "000-qfilm04-fine-02c-02-ef40mm_f2.8-20261028",
+      "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+      "entrypoint": "scripts/cuda_venv_exec.py",
+      "args": [
+        "validation/qfilm04_fine_11_cpu_gpu.py",
+        "--backend",
+        "c",
+        "--names",
+        "ef40mm_f2.8",
+        "--fields",
+        "3",
+        "--threads",
+        "8"
+      ],
+      "env": {
+        "OMP_NUM_THREADS": "8",
+        "MKL_NUM_THREADS": "8",
+        "OPENBLAS_NUM_THREADS": "8"
+      },
+      "timeout_sec": 172800,
+      "memory_gb": 0
+    },
+    {
+      "schema": 1,
+      "job_id": "000-qfilm04-fine-02c-03-ef50mm_f1.8-20261028",
+      "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+      "entrypoint": "scripts/cuda_venv_exec.py",
+      "args": [
+        "validation/qfilm04_fine_11_cpu_gpu.py",
+        "--backend",
+        "c",
+        "--names",
+        "ef50mm_f1.8",
+        "--fields",
+        "3",
+        "--threads",
+        "8"
+      ],
+      "env": {
+        "OMP_NUM_THREADS": "8",
+        "MKL_NUM_THREADS": "8",
+        "OPENBLAS_NUM_THREADS": "8"
+      },
+      "timeout_sec": 172800,
+      "memory_gb": 0
+    },
+    {
+      "schema": 1,
+      "job_id": "000-qfilm04-fine-02c-04-ef85mm_f1.8-20261028",
+      "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+      "entrypoint": "scripts/cuda_venv_exec.py",
+      "args": [
+        "validation/qfilm04_fine_11_cpu_gpu.py",
+        "--backend",
+        "c",
+        "--names",
+        "ef85mm_f1.8",
+        "--fields",
+        "3",
+        "--threads",
+        "8"
+      ],
+      "env": {
+        "OMP_NUM_THREADS": "8",
+        "MKL_NUM_THREADS": "8",
+        "OPENBLAS_NUM_THREADS": "8"
+      },
+      "timeout_sec": 172800,
+      "memory_gb": 0
+    },
+    {
+      "schema": 1,
+      "job_id": "000-qfilm04-fine-02c-05-rf16mm_f2.8-20261028",
+      "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+      "entrypoint": "scripts/cuda_venv_exec.py",
+      "args": [
+        "validation/qfilm04_fine_11_cpu_gpu.py",
+        "--backend",
+        "c",
+        "--names",
+        "rf16mm_f2.8",
+        "--fields",
+        "3",
+        "--threads",
+        "8"
+      ],
+      "env": {
+        "OMP_NUM_THREADS": "8",
+        "MKL_NUM_THREADS": "8",
+        "OPENBLAS_NUM_THREADS": "8"
+      },
+      "timeout_sec": 172800,
+      "memory_gb": 0
+    },
+    {
+      "schema": 1,
+      "job_id": "000-qfilm04-fine-02c-06-rf24mm_f1.8-20261028",
+      "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+      "entrypoint": "scripts/cuda_venv_exec.py",
+      "args": [
+        "validation/qfilm04_fine_11_cpu_gpu.py",
+        "--backend",
+        "c",
+        "--names",
+        "rf24mm_f1.8",
+        "--fields",
+        "3",
+        "--threads",
+        "8"
+      ],
+      "env": {
+        "OMP_NUM_THREADS": "8",
+        "MKL_NUM_THREADS": "8",
+        "OPENBLAS_NUM_THREADS": "8"
+      },
+      "timeout_sec": 172800,
+      "memory_gb": 0
+    },
+    {
+      "schema": 1,
+      "job_id": "000-qfilm04-fine-02c-07-rf35mm_f1.8-20261028",
+      "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+      "entrypoint": "scripts/cuda_venv_exec.py",
+      "args": [
+        "validation/qfilm04_fine_11_cpu_gpu.py",
+        "--backend",
+        "c",
+        "--names",
+        "rf35mm_f1.8",
+        "--fields",
+        "3",
+        "--threads",
+        "8"
+      ],
+      "env": {
+        "OMP_NUM_THREADS": "8",
+        "MKL_NUM_THREADS": "8",
+        "OPENBLAS_NUM_THREADS": "8"
+      },
+      "timeout_sec": 172800,
+      "memory_gb": 0
+    },
+    {
+      "schema": 1,
+      "job_id": "000-qfilm04-fine-02c-08-rf50mm_f1.8-20261028",
+      "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+      "entrypoint": "scripts/cuda_venv_exec.py",
+      "args": [
+        "validation/qfilm04_fine_11_cpu_gpu.py",
+        "--backend",
+        "c",
+        "--names",
+        "rf50mm_f1.8",
+        "--fields",
+        "3",
+        "--threads",
+        "8"
+      ],
+      "env": {
+        "OMP_NUM_THREADS": "8",
+        "MKL_NUM_THREADS": "8",
+        "OPENBLAS_NUM_THREADS": "8"
+      },
+      "timeout_sec": 172800,
+      "memory_gb": 0
+    },
+    {
+      "schema": 1,
+      "job_id": "000-qfilm04-fine-02c-09-sigma70mm_f2.8-20261028",
+      "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+      "entrypoint": "scripts/cuda_venv_exec.py",
+      "args": [
+        "validation/qfilm04_fine_11_cpu_gpu.py",
+        "--backend",
+        "c",
+        "--names",
+        "sigma70mm_f2.8",
+        "--fields",
+        "3",
+        "--threads",
+        "8"
+      ],
+      "env": {
+        "OMP_NUM_THREADS": "8",
+        "MKL_NUM_THREADS": "8",
+        "OPENBLAS_NUM_THREADS": "8"
+      },
+      "timeout_sec": 172800,
+      "memory_gb": 0
+    },
+    {
+      "schema": 1,
+      "job_id": "000-qfilm04-fine-02c-10-yongnuo_50mm_f1.8-20261028",
+      "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+      "entrypoint": "scripts/cuda_venv_exec.py",
+      "args": [
+        "validation/qfilm04_fine_11_cpu_gpu.py",
+        "--backend",
+        "c",
+        "--names",
+        "yongnuo_50mm_f1.8",
+        "--fields",
+        "3",
+        "--threads",
+        "8"
+      ],
+      "env": {
+        "OMP_NUM_THREADS": "8",
+        "MKL_NUM_THREADS": "8",
+        "OPENBLAS_NUM_THREADS": "8"
+      },
+      "timeout_sec": 172800,
+      "memory_gb": 0
+    }
+  ],
+  "last_observed_workstation_heartbeat_unix": 1793190348.1398537,
+  "first_new_gpu_job_claim_observed": false,
+  "full_cpu_psfs_observed": 0,
+  "full_gpu_psfs_observed": 0,
+  "local_cuda_available": false,
+  "status": "queued_not_observed_running",
+  "physics_certified": false,
+  "training_eligible": false,
+  "airy_control_completed": true,
+  "observed_at_utc": "2026-10-28T16:11:37.112846+00:00",
+  "observed_at_beijing": "2026-10-29T00:11:37.112869+08:00",
+  "cpu_geometry_preflight_summary": {
+    "lenses": 11,
+    "trace_conditions": 231,
+    "trace_passes": 196,
+    "completed_psfs": 0,
+    "valid_final_scores": 0
+  },
+  "cpu_timing_tiles_completed": 11
+}

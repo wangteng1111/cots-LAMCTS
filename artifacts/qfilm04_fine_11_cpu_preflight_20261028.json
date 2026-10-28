@@ -1,0 +1,1891 @@
+{
+  "schema": "Qfilm04-fine-eleven-camera-v1",
+  "protocol": {
+    "source_commit": "911bb9d334fce7e20a4407c4506ac683b52ff246",
+    "names": [
+      "ef100mm_f2.8",
+      "ef35mm_f2.0",
+      "ef40mm_f2.8",
+      "ef50mm_f1.8",
+      "ef85mm_f1.8",
+      "rf16mm_f2.8",
+      "rf24mm_f1.8",
+      "rf35mm_f1.8",
+      "rf50mm_f1.8",
+      "sigma70mm_f2.8",
+      "yongnuo_50mm_f1.8"
+    ],
+    "fields_h": [
+      0.0,
+      0.5,
+      1.0
+    ],
+    "wavelengths_nm": [
+      430.0,
+      470.0,
+      510.0,
+      550.0,
+      590.0,
+      630.0,
+      670.0
+    ],
+    "spectral_weights": [
+      0.075,
+      0.125,
+      0.16,
+      0.28,
+      0.16,
+      0.125,
+      0.075
+    ],
+    "frequencies_lpmm": [
+      5.0,
+      10.0,
+      15.0,
+      20.0,
+      30.0,
+      40.0,
+      50.0,
+      60.0,
+      70.0,
+      80.0
+    ],
+    "frame_mm": [
+      36.0,
+      24.0
+    ],
+    "pupil_n": 256,
+    "detector_n": 2560,
+    "detector_pitch_um": 0.25,
+    "support_mm": 0.64,
+    "weight_mode": "sqrt_exit_jac"
+  },
+  "protocol_hash": "396113fc066533dbedf58312ec38b236a2f14490695e71f0abc05a073a41e311",
+  "variant": "Qfilm0.4-c",
+  "mode": "preflight",
+  "device": "cpu",
+  "torch_version": "2.15.0+cpu",
+  "threads": 1,
+  "block": 64,
+  "status": "finished",
+  "training_eligible": false,
+  "physics_certified": false,
+  "sampling_converged": false,
+  "manufactured_lens_empirical_validation": false,
+  "cases": [
+    {
+      "name": "ef100mm_f2.8",
+      "fields": [
+        {
+          "field_h": 0.0,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51468,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51468,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51468,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51468,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51468,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51468,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51468,
+              "chief_valid": true
+            }
+          ]
+        },
+        {
+          "field_h": 0.5,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 48277,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 48399,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 48507,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 48585,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 48650,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 48692,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 48742,
+              "chief_valid": true
+            }
+          ]
+        },
+        {
+          "field_h": 1.0,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 34600,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 34758,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 34941,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 35048,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 35121,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 35215,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 35278,
+              "chief_valid": true
+            }
+          ]
+        }
+      ],
+      "state": "trace_only_complete",
+      "source_sha256": "3e1b59d8ef13a3ac5f57c015cd2be4181282950d9752a5a6731ac1ab18155a5a",
+      "provenance": {
+        "identifier": "ef100mm_f2.8",
+        "source": "pinned-vccimaging/DeepLens datasets/lenses/camera",
+        "source_primary_description": "JP 1991-141313 Example 1 (Canon EF100mm f2.8 Macro)",
+        "original_primary_wavelength_nm": 587.0,
+        "comparison_primary_wavelength_nm": 550.0,
+        "published_foclen_mm": 100.03337780917897,
+        "deeplens_paraxial_efl_mm": 100.0045069648107,
+        "fnumber": 2.8944959699637205,
+        "physical_frame_mm": [
+          36.0,
+          24.0
+        ],
+        "not_proven_actual_manufacturing_prescription": true
+      },
+      "all_conditions_attempted": true
+    },
+    {
+      "name": "ef35mm_f2.0",
+      "fields": [
+        {
+          "field_h": 0.0,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 46400,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 46578,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 46700,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 46792,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 46876,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 46920,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 46952,
+              "chief_valid": true
+            }
+          ]
+        },
+        {
+          "field_h": 0.5,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 29449,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 29504,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 29543,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 29590,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 29610,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 29646,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 29674,
+              "chief_valid": true
+            }
+          ]
+        },
+        {
+          "field_h": 1.0,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 2260,
+              "chief_valid": false
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 2268,
+              "chief_valid": false
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 2270,
+              "chief_valid": false
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 2272,
+              "chief_valid": false
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 2278,
+              "chief_valid": false
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 2280,
+              "chief_valid": false
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 2284,
+              "chief_valid": false
+            }
+          ]
+        }
+      ],
+      "state": "trace_only_complete",
+      "source_sha256": "ecd6ed4979821130d24d0d95cd69b29789b16459ca5d54e3acc3dce6ebce5ac3",
+      "provenance": {
+        "identifier": "ef35mm_f2.0",
+        "source": "pinned-vccimaging/DeepLens datasets/lenses/camera",
+        "source_primary_description": "JP 1992-015611 Example 1 (Canon EF35mm f2)",
+        "original_primary_wavelength_nm": 587.0,
+        "comparison_primary_wavelength_nm": 550.0,
+        "published_foclen_mm": 34.825179762620515,
+        "deeplens_paraxial_efl_mm": 35.481930672402704,
+        "fnumber": 2.0851592117730724,
+        "physical_frame_mm": [
+          36.0,
+          24.0
+        ],
+        "not_proven_actual_manufacturing_prescription": true
+      },
+      "all_conditions_attempted": true
+    },
+    {
+      "name": "ef40mm_f2.8",
+      "fields": [
+        {
+          "field_h": 0.0,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51234,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51284,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51294,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51314,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51324,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51336,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51336,
+              "chief_valid": true
+            }
+          ]
+        },
+        {
+          "field_h": 0.5,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 38726,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 38752,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 38778,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 38800,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 38819,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 38827,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 38839,
+              "chief_valid": true
+            }
+          ]
+        },
+        {
+          "field_h": 1.0,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 22152,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 22170,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 22186,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 22189,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 22189,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 22191,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 22200,
+              "chief_valid": true
+            }
+          ]
+        }
+      ],
+      "state": "trace_only_complete",
+      "source_sha256": "18d8506e0f3a9c77b3a9aa53161b98930d93464e45a419d9b2091293dfa51f79",
+      "provenance": {
+        "identifier": "ef40mm_f2.8",
+        "source": "pinned-vccimaging/DeepLens datasets/lenses/camera",
+        "source_primary_description": null,
+        "original_primary_wavelength_nm": 587.0,
+        "comparison_primary_wavelength_nm": 550.0,
+        "published_foclen_mm": 39.53853478898897,
+        "deeplens_paraxial_efl_mm": 38.96954841720191,
+        "fnumber": 2.8090031745543445,
+        "physical_frame_mm": [
+          36.0,
+          24.0
+        ],
+        "not_proven_actual_manufacturing_prescription": true
+      },
+      "all_conditions_attempted": true
+    },
+    {
+      "name": "ef50mm_f1.8",
+      "fields": [
+        {
+          "field_h": 0.0,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51468,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51468,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51468,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51468,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51468,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51468,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51468,
+              "chief_valid": true
+            }
+          ]
+        },
+        {
+          "field_h": 0.5,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 39814,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 40020,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 40171,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 40269,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 40372,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 40459,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 40516,
+              "chief_valid": true
+            }
+          ]
+        },
+        {
+          "field_h": 1.0,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 15810,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 15952,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 16097,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 16217,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 16286,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 16350,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 16383,
+              "chief_valid": true
+            }
+          ]
+        }
+      ],
+      "state": "trace_only_complete",
+      "source_sha256": "0862741f9dc22e79a8ffad899d528eb05b6655012b685170925d7fc71183eb9d",
+      "provenance": {
+        "identifier": "ef50mm_f1.8",
+        "source": "pinned-vccimaging/DeepLens datasets/lenses/camera",
+        "source_primary_description": "JP 1987-087922 Example 1 (Canon EF50mm f1.8)",
+        "original_primary_wavelength_nm": 587.0,
+        "comparison_primary_wavelength_nm": 550.0,
+        "published_foclen_mm": 50.520361337010705,
+        "deeplens_paraxial_efl_mm": 51.46689898090607,
+        "fnumber": 1.838148673996381,
+        "physical_frame_mm": [
+          36.0,
+          24.0
+        ],
+        "not_proven_actual_manufacturing_prescription": true
+      },
+      "all_conditions_attempted": true
+    },
+    {
+      "name": "ef85mm_f1.8",
+      "fields": [
+        {
+          "field_h": 0.0,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 45100,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 45146,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 45212,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 45244,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 45284,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 45308,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 45324,
+              "chief_valid": true
+            }
+          ]
+        },
+        {
+          "field_h": 0.5,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 33548,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 33630,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 33698,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 33750,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 33797,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 33836,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 33869,
+              "chief_valid": true
+            }
+          ]
+        },
+        {
+          "field_h": 1.0,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 14336,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 14470,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 14584,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 14664,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 14720,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 14789,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 14830,
+              "chief_valid": true
+            }
+          ]
+        }
+      ],
+      "state": "trace_only_complete",
+      "source_sha256": "cf8c09d79a9e2e758a58815fe3423d1574377e6ab079bce62deca4cdf6def9b9",
+      "provenance": {
+        "identifier": "ef85mm_f1.8",
+        "source": "pinned-vccimaging/DeepLens datasets/lenses/camera",
+        "source_primary_description": "JP 1993-157964 Example 1 (Canon EF85mm f1.8 USM)",
+        "original_primary_wavelength_nm": 587.0,
+        "comparison_primary_wavelength_nm": 550.0,
+        "published_foclen_mm": 83.87447467479473,
+        "deeplens_paraxial_efl_mm": 84.95893406825392,
+        "fnumber": 1.7119046947221512,
+        "physical_frame_mm": [
+          36.0,
+          24.0
+        ],
+        "not_proven_actual_manufacturing_prescription": true
+      },
+      "all_conditions_attempted": true
+    },
+    {
+      "name": "rf16mm_f2.8",
+      "fields": [
+        {
+          "field_h": 0.0,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 43738,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 43980,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 44156,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 44316,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 44450,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 44548,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 44606,
+              "chief_valid": true
+            }
+          ]
+        },
+        {
+          "field_h": 0.5,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 15286,
+              "chief_valid": false
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 15371,
+              "chief_valid": false
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 15444,
+              "chief_valid": false
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 15489,
+              "chief_valid": false
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 15504,
+              "chief_valid": false
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 15542,
+              "chief_valid": false
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 15585,
+              "chief_valid": false
+            }
+          ]
+        },
+        {
+          "field_h": 1.0,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 0,
+              "chief_valid": false
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 0,
+              "chief_valid": false
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 0,
+              "chief_valid": false
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 0,
+              "chief_valid": false
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 0,
+              "chief_valid": false
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 0,
+              "chief_valid": false
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 0,
+              "chief_valid": false
+            }
+          ]
+        }
+      ],
+      "state": "trace_only_complete",
+      "source_sha256": "493474344dccf7bf53000b4eb1936e75e06cdf6461ea57c26d5770a7457fbaa9",
+      "provenance": {
+        "identifier": "rf16mm_f2.8",
+        "source": "pinned-vccimaging/DeepLens datasets/lenses/camera",
+        "source_primary_description": "JP 2022-085382 Example 3 (Canon RF16mm F2.8 STM). The original patent can not cover full-frame sensor.",
+        "original_primary_wavelength_nm": 587.0,
+        "comparison_primary_wavelength_nm": 550.0,
+        "published_foclen_mm": 13.053262435784244,
+        "deeplens_paraxial_efl_mm": 16.466248647498478,
+        "fnumber": 2.8734825523029213,
+        "physical_frame_mm": [
+          36.0,
+          24.0
+        ],
+        "not_proven_actual_manufacturing_prescription": true
+      },
+      "all_conditions_attempted": true
+    },
+    {
+      "name": "rf24mm_f1.8",
+      "fields": [
+        {
+          "field_h": 0.0,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 29892,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 30094,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 30180,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 30224,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 30276,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 30300,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 30316,
+              "chief_valid": true
+            }
+          ]
+        },
+        {
+          "field_h": 0.5,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 8711,
+              "chief_valid": false
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 8741,
+              "chief_valid": false
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 8764,
+              "chief_valid": false
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 8792,
+              "chief_valid": false
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 8805,
+              "chief_valid": false
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 8830,
+              "chief_valid": false
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 8842,
+              "chief_valid": false
+            }
+          ]
+        },
+        {
+          "field_h": 1.0,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 0,
+              "chief_valid": false
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 0,
+              "chief_valid": false
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 0,
+              "chief_valid": false
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 0,
+              "chief_valid": false
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 0,
+              "chief_valid": false
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 0,
+              "chief_valid": false
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": false,
+              "transmitted_pupil_rays": 0,
+              "chief_valid": false
+            }
+          ]
+        }
+      ],
+      "state": "trace_only_complete",
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "provenance": {
+        "identifier": "rf24mm_f1.8",
+        "source": "pinned-vccimaging/DeepLens datasets/lenses/camera",
+        "source_primary_description": "US 2022/0019061 Example 3 (Canon RF24mm F1.8 Macro IS STM)",
+        "original_primary_wavelength_nm": 587.0,
+        "comparison_primary_wavelength_nm": 550.0,
+        "published_foclen_mm": 39.53853478898897,
+        "deeplens_paraxial_efl_mm": 24.706748032498655,
+        "fnumber": 2.077578653599792,
+        "physical_frame_mm": [
+          36.0,
+          24.0
+        ],
+        "not_proven_actual_manufacturing_prescription": true
+      },
+      "all_conditions_attempted": true
+    },
+    {
+      "name": "rf35mm_f1.8",
+      "fields": [
+        {
+          "field_h": 0.0,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 47390,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 47578,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 47724,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 47848,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 47928,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 48020,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 48074,
+              "chief_valid": true
+            }
+          ]
+        },
+        {
+          "field_h": 0.5,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 27566,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 27536,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 27488,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 27459,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 27451,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 27424,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 27431,
+              "chief_valid": true
+            }
+          ]
+        },
+        {
+          "field_h": 1.0,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 8559,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 8556,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 8562,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 8570,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 8576,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 8565,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 8572,
+              "chief_valid": true
+            }
+          ]
+        }
+      ],
+      "state": "trace_only_complete",
+      "source_sha256": "64beb60c506a5a1cfe5d5db161429fc274f447edb3d83d92e8e8512612e2519c",
+      "provenance": {
+        "identifier": "rf35mm_f1.8",
+        "source": "pinned-vccimaging/DeepLens datasets/lenses/camera",
+        "source_primary_description": "US 2019/0113711 Example 1 (Canon RF35mm F1.8 MACRO IS STM)",
+        "original_primary_wavelength_nm": 587.0,
+        "comparison_primary_wavelength_nm": 550.0,
+        "published_foclen_mm": 36.0089,
+        "deeplens_paraxial_efl_mm": 35.993158259197706,
+        "fnumber": 1.8857197235151313,
+        "physical_frame_mm": [
+          36.0,
+          24.0
+        ],
+        "not_proven_actual_manufacturing_prescription": true
+      },
+      "all_conditions_attempted": true
+    },
+    {
+      "name": "rf50mm_f1.8",
+      "fields": [
+        {
+          "field_h": 0.0,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 50834,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 50952,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 50998,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51034,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51032,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51032,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51032,
+              "chief_valid": true
+            }
+          ]
+        },
+        {
+          "field_h": 0.5,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 36134,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 36259,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 36368,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 36439,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 36513,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 36556,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 36592,
+              "chief_valid": true
+            }
+          ]
+        },
+        {
+          "field_h": 1.0,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 13923,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 14174,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 14378,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 14508,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 14630,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 14745,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 14812,
+              "chief_valid": true
+            }
+          ]
+        }
+      ],
+      "state": "trace_only_complete",
+      "source_sha256": "da4b28edb742b435a3f9fc45186205157653614816f8438f5bf2d074ac716fae",
+      "provenance": {
+        "identifier": "rf50mm_f1.8",
+        "source": "pinned-vccimaging/DeepLens datasets/lenses/camera",
+        "source_primary_description": "US 2021/0263286 Example 1 (Canon RF50mm F1.8 STM)",
+        "original_primary_wavelength_nm": 587.0,
+        "comparison_primary_wavelength_nm": 550.0,
+        "published_foclen_mm": 49.565,
+        "deeplens_paraxial_efl_mm": 49.554586258818944,
+        "fnumber": 1.8415697057496243,
+        "physical_frame_mm": [
+          36.0,
+          24.0
+        ],
+        "not_proven_actual_manufacturing_prescription": true
+      },
+      "all_conditions_attempted": true
+    },
+    {
+      "name": "sigma70mm_f2.8",
+      "fields": [
+        {
+          "field_h": 0.0,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51468,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51468,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51468,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51468,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51468,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51468,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51468,
+              "chief_valid": true
+            }
+          ]
+        },
+        {
+          "field_h": 0.5,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 44815,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 44964,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 45060,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 45143,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 45222,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 45274,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 45322,
+              "chief_valid": true
+            }
+          ]
+        },
+        {
+          "field_h": 1.0,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 27519,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 27694,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 27856,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 27951,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 28070,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 28146,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 28216,
+              "chief_valid": true
+            }
+          ]
+        }
+      ],
+      "state": "trace_only_complete",
+      "source_sha256": "1fb88d4da358707420f4923e1e223df1823f883b2bb4789be5c51d048769e800",
+      "provenance": {
+        "identifier": "sigma70mm_f2.8",
+        "source": "pinned-vccimaging/DeepLens datasets/lenses/camera",
+        "source_primary_description": "JP 2008-020656 Example 1 (Sigma Macro 70mm F2.8 EX DG)",
+        "original_primary_wavelength_nm": 587.0,
+        "comparison_primary_wavelength_nm": 550.0,
+        "published_foclen_mm": 69.168,
+        "deeplens_paraxial_efl_mm": 68.88811957136373,
+        "fnumber": 2.883947749386616,
+        "physical_frame_mm": [
+          36.0,
+          24.0
+        ],
+        "not_proven_actual_manufacturing_prescription": true
+      },
+      "all_conditions_attempted": true
+    },
+    {
+      "name": "yongnuo_50mm_f1.8",
+      "fields": [
+        {
+          "field_h": 0.0,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51468,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51468,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51468,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51468,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51468,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51468,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 51468,
+              "chief_valid": true
+            }
+          ]
+        },
+        {
+          "field_h": 0.5,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 44359,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 44530,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 44656,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 44760,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 44836,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 44892,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 44943,
+              "chief_valid": true
+            }
+          ]
+        },
+        {
+          "field_h": 1.0,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 17073,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 470.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 17314,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 510.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 17467,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 550.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 17636,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 590.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 17732,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 630.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 17805,
+              "chief_valid": true
+            },
+            {
+              "wavelength_nm": 670.0,
+              "trace_ok": true,
+              "transmitted_pupil_rays": 17890,
+              "chief_valid": true
+            }
+          ]
+        }
+      ],
+      "state": "trace_only_complete",
+      "source_sha256": "4bf3c6a70801faad97c98bbc03aed6751fb16f2f25f5df0e025bb6f15fd6bd53",
+      "provenance": {
+        "identifier": "yongnuo_50mm_f1.8",
+        "source": "pinned-vccimaging/DeepLens datasets/lenses/camera",
+        "source_primary_description": null,
+        "original_primary_wavelength_nm": 587.0,
+        "comparison_primary_wavelength_nm": 550.0,
+        "published_foclen_mm": 48.90925059746878,
+        "deeplens_paraxial_efl_mm": 48.93706059881027,
+        "fnumber": 1.7638170742369015,
+        "physical_frame_mm": [
+          36.0,
+          24.0
+        ],
+        "not_proven_actual_manufacturing_prescription": true
+      },
+      "all_conditions_attempted": true
+    }
+  ],
+  "updated_unix": 1793203897.1078718,
+  "summary": {
+    "lenses": 11,
+    "trace_conditions": 231,
+    "trace_passes": 196,
+    "completed_psfs": 0,
+    "valid_final_scores": 0
+  },
+  "orchestration_workers": 6,
+  "execution_note": "Each independent CPU process used one Torch thread. Geometric trace only; no fine-grid PSF."
+}

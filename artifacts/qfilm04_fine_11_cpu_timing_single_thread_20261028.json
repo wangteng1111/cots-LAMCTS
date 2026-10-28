@@ -1,0 +1,391 @@
+{
+  "schema": "Qfilm04-fine-eleven-camera-v1",
+  "protocol": {
+    "source_commit": "911bb9d334fce7e20a4407c4506ac683b52ff246",
+    "names": [
+      "ef100mm_f2.8",
+      "ef35mm_f2.0",
+      "ef40mm_f2.8",
+      "ef50mm_f1.8",
+      "ef85mm_f1.8",
+      "rf16mm_f2.8",
+      "rf24mm_f1.8",
+      "rf35mm_f1.8",
+      "rf50mm_f1.8",
+      "sigma70mm_f2.8",
+      "yongnuo_50mm_f1.8"
+    ],
+    "fields_h": [
+      0.0,
+      0.5,
+      1.0
+    ],
+    "wavelengths_nm": [
+      430.0,
+      470.0,
+      510.0,
+      550.0,
+      590.0,
+      630.0,
+      670.0
+    ],
+    "spectral_weights": [
+      0.075,
+      0.125,
+      0.16,
+      0.28,
+      0.16,
+      0.125,
+      0.075
+    ],
+    "frequencies_lpmm": [
+      5.0,
+      10.0,
+      15.0,
+      20.0,
+      30.0,
+      40.0,
+      50.0,
+      60.0,
+      70.0,
+      80.0
+    ],
+    "frame_mm": [
+      36.0,
+      24.0
+    ],
+    "pupil_n": 256,
+    "detector_n": 2560,
+    "detector_pitch_um": 0.25,
+    "support_mm": 0.64,
+    "weight_mode": "sqrt_exit_jac"
+  },
+  "protocol_hash": "396113fc066533dbedf58312ec38b236a2f14490695e71f0abc05a073a41e311",
+  "variant": "Qfilm0.4-c",
+  "mode": "benchmark",
+  "device": "cpu",
+  "torch_version": "2.15.0+cpu",
+  "threads": 1,
+  "block": 64,
+  "status": "finished",
+  "training_eligible": false,
+  "physics_certified": false,
+  "sampling_converged": false,
+  "manufactured_lens_empirical_validation": false,
+  "cases": [
+    {
+      "name": "ef100mm_f2.8",
+      "fields": [],
+      "state": "timing_tile_only",
+      "source_sha256": "3e1b59d8ef13a3ac5f57c015cd2be4181282950d9752a5a6731ac1ab18155a5a",
+      "provenance": {
+        "identifier": "ef100mm_f2.8",
+        "source": "pinned-vccimaging/DeepLens datasets/lenses/camera",
+        "source_primary_description": "JP 1991-141313 Example 1 (Canon EF100mm f2.8 Macro)",
+        "original_primary_wavelength_nm": 587.0,
+        "comparison_primary_wavelength_nm": 550.0,
+        "published_foclen_mm": 100.03337780917897,
+        "deeplens_paraxial_efl_mm": 100.0045069648107,
+        "fnumber": 2.8944959699637205,
+        "physical_frame_mm": [
+          36.0,
+          24.0
+        ],
+        "not_proven_actual_manufacturing_prescription": true
+      },
+      "tile_pixels": 256,
+      "tile_seconds": 8.657696974999908,
+      "tile_propagation_seconds": 1.08449082300001,
+      "linear_full_psf_seconds_estimate": 27762.96506880026,
+      "estimate_includes_trace_overhead": false,
+      "valid_rays": 51468,
+      "all_conditions_attempted": true
+    },
+    {
+      "name": "ef35mm_f2.0",
+      "fields": [],
+      "state": "timing_tile_only",
+      "source_sha256": "ecd6ed4979821130d24d0d95cd69b29789b16459ca5d54e3acc3dce6ebce5ac3",
+      "provenance": {
+        "identifier": "ef35mm_f2.0",
+        "source": "pinned-vccimaging/DeepLens datasets/lenses/camera",
+        "source_primary_description": "JP 1992-015611 Example 1 (Canon EF35mm f2)",
+        "original_primary_wavelength_nm": 587.0,
+        "comparison_primary_wavelength_nm": 550.0,
+        "published_foclen_mm": 34.825179762620515,
+        "deeplens_paraxial_efl_mm": 35.481930672402704,
+        "fnumber": 2.0851592117730724,
+        "physical_frame_mm": [
+          36.0,
+          24.0
+        ],
+        "not_proven_actual_manufacturing_prescription": true
+      },
+      "tile_pixels": 256,
+      "tile_seconds": 6.0040428209999845,
+      "tile_propagation_seconds": 1.296465205000004,
+      "linear_full_psf_seconds_estimate": 33189.509248000104,
+      "estimate_includes_trace_overhead": false,
+      "valid_rays": 46792,
+      "all_conditions_attempted": true
+    },
+    {
+      "name": "ef40mm_f2.8",
+      "fields": [],
+      "state": "timing_tile_only",
+      "source_sha256": "18d8506e0f3a9c77b3a9aa53161b98930d93464e45a419d9b2091293dfa51f79",
+      "provenance": {
+        "identifier": "ef40mm_f2.8",
+        "source": "pinned-vccimaging/DeepLens datasets/lenses/camera",
+        "source_primary_description": null,
+        "original_primary_wavelength_nm": 587.0,
+        "comparison_primary_wavelength_nm": 550.0,
+        "published_foclen_mm": 39.53853478898897,
+        "deeplens_paraxial_efl_mm": 38.96954841720191,
+        "fnumber": 2.8090031745543445,
+        "physical_frame_mm": [
+          36.0,
+          24.0
+        ],
+        "not_proven_actual_manufacturing_prescription": true
+      },
+      "tile_pixels": 256,
+      "tile_seconds": 6.406948013000033,
+      "tile_propagation_seconds": 1.1429587720000427,
+      "linear_full_psf_seconds_estimate": 29259.744563201093,
+      "estimate_includes_trace_overhead": false,
+      "valid_rays": 51314,
+      "all_conditions_attempted": true
+    },
+    {
+      "name": "ef50mm_f1.8",
+      "fields": [],
+      "state": "timing_tile_only",
+      "source_sha256": "0862741f9dc22e79a8ffad899d528eb05b6655012b685170925d7fc71183eb9d",
+      "provenance": {
+        "identifier": "ef50mm_f1.8",
+        "source": "pinned-vccimaging/DeepLens datasets/lenses/camera",
+        "source_primary_description": "JP 1987-087922 Example 1 (Canon EF50mm f1.8)",
+        "original_primary_wavelength_nm": 587.0,
+        "comparison_primary_wavelength_nm": 550.0,
+        "published_foclen_mm": 50.520361337010705,
+        "deeplens_paraxial_efl_mm": 51.46689898090607,
+        "fnumber": 1.838148673996381,
+        "physical_frame_mm": [
+          36.0,
+          24.0
+        ],
+        "not_proven_actual_manufacturing_prescription": true
+      },
+      "tile_pixels": 256,
+      "tile_seconds": 8.07042939400003,
+      "tile_propagation_seconds": 1.2516543420000517,
+      "linear_full_psf_seconds_estimate": 32042.351155201322,
+      "estimate_includes_trace_overhead": false,
+      "valid_rays": 51468,
+      "all_conditions_attempted": true
+    },
+    {
+      "name": "ef85mm_f1.8",
+      "fields": [],
+      "state": "timing_tile_only",
+      "source_sha256": "cf8c09d79a9e2e758a58815fe3423d1574377e6ab079bce62deca4cdf6def9b9",
+      "provenance": {
+        "identifier": "ef85mm_f1.8",
+        "source": "pinned-vccimaging/DeepLens datasets/lenses/camera",
+        "source_primary_description": "JP 1993-157964 Example 1 (Canon EF85mm f1.8 USM)",
+        "original_primary_wavelength_nm": 587.0,
+        "comparison_primary_wavelength_nm": 550.0,
+        "published_foclen_mm": 83.87447467479473,
+        "deeplens_paraxial_efl_mm": 84.95893406825392,
+        "fnumber": 1.7119046947221512,
+        "physical_frame_mm": [
+          36.0,
+          24.0
+        ],
+        "not_proven_actual_manufacturing_prescription": true
+      },
+      "tile_pixels": 256,
+      "tile_seconds": 8.13844832999996,
+      "tile_propagation_seconds": 0.9781469819999984,
+      "linear_full_psf_seconds_estimate": 25040.56273919996,
+      "estimate_includes_trace_overhead": false,
+      "valid_rays": 45244,
+      "all_conditions_attempted": true
+    },
+    {
+      "name": "rf16mm_f2.8",
+      "fields": [],
+      "state": "timing_tile_only",
+      "source_sha256": "493474344dccf7bf53000b4eb1936e75e06cdf6461ea57c26d5770a7457fbaa9",
+      "provenance": {
+        "identifier": "rf16mm_f2.8",
+        "source": "pinned-vccimaging/DeepLens datasets/lenses/camera",
+        "source_primary_description": "JP 2022-085382 Example 3 (Canon RF16mm F2.8 STM). The original patent can not cover full-frame sensor.",
+        "original_primary_wavelength_nm": 587.0,
+        "comparison_primary_wavelength_nm": 550.0,
+        "published_foclen_mm": 13.053262435784244,
+        "deeplens_paraxial_efl_mm": 16.466248647498478,
+        "fnumber": 2.8734825523029213,
+        "physical_frame_mm": [
+          36.0,
+          24.0
+        ],
+        "not_proven_actual_manufacturing_prescription": true
+      },
+      "tile_pixels": 256,
+      "tile_seconds": 6.853244535000044,
+      "tile_propagation_seconds": 1.0834156659999508,
+      "linear_full_psf_seconds_estimate": 27735.44104959874,
+      "estimate_includes_trace_overhead": false,
+      "valid_rays": 44316,
+      "all_conditions_attempted": true
+    },
+    {
+      "name": "rf24mm_f1.8",
+      "fields": [],
+      "state": "timing_tile_only",
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "provenance": {
+        "identifier": "rf24mm_f1.8",
+        "source": "pinned-vccimaging/DeepLens datasets/lenses/camera",
+        "source_primary_description": "US 2022/0019061 Example 3 (Canon RF24mm F1.8 Macro IS STM)",
+        "original_primary_wavelength_nm": 587.0,
+        "comparison_primary_wavelength_nm": 550.0,
+        "published_foclen_mm": 39.53853478898897,
+        "deeplens_paraxial_efl_mm": 24.706748032498655,
+        "fnumber": 2.077578653599792,
+        "physical_frame_mm": [
+          36.0,
+          24.0
+        ],
+        "not_proven_actual_manufacturing_prescription": true
+      },
+      "tile_pixels": 256,
+      "tile_seconds": 7.162386116999983,
+      "tile_propagation_seconds": 0.5339199539999981,
+      "linear_full_psf_seconds_estimate": 13668.350822399952,
+      "estimate_includes_trace_overhead": false,
+      "valid_rays": 30224,
+      "all_conditions_attempted": true
+    },
+    {
+      "name": "rf35mm_f1.8",
+      "fields": [],
+      "state": "timing_tile_only",
+      "source_sha256": "64beb60c506a5a1cfe5d5db161429fc274f447edb3d83d92e8e8512612e2519c",
+      "provenance": {
+        "identifier": "rf35mm_f1.8",
+        "source": "pinned-vccimaging/DeepLens datasets/lenses/camera",
+        "source_primary_description": "US 2019/0113711 Example 1 (Canon RF35mm F1.8 MACRO IS STM)",
+        "original_primary_wavelength_nm": 587.0,
+        "comparison_primary_wavelength_nm": 550.0,
+        "published_foclen_mm": 36.0089,
+        "deeplens_paraxial_efl_mm": 35.993158259197706,
+        "fnumber": 1.8857197235151313,
+        "physical_frame_mm": [
+          36.0,
+          24.0
+        ],
+        "not_proven_actual_manufacturing_prescription": true
+      },
+      "tile_pixels": 256,
+      "tile_seconds": 8.889245771999981,
+      "tile_propagation_seconds": 1.024805227999991,
+      "linear_full_psf_seconds_estimate": 26235.01383679977,
+      "estimate_includes_trace_overhead": false,
+      "valid_rays": 47848,
+      "all_conditions_attempted": true
+    },
+    {
+      "name": "rf50mm_f1.8",
+      "fields": [],
+      "state": "timing_tile_only",
+      "source_sha256": "da4b28edb742b435a3f9fc45186205157653614816f8438f5bf2d074ac716fae",
+      "provenance": {
+        "identifier": "rf50mm_f1.8",
+        "source": "pinned-vccimaging/DeepLens datasets/lenses/camera",
+        "source_primary_description": "US 2021/0263286 Example 1 (Canon RF50mm F1.8 STM)",
+        "original_primary_wavelength_nm": 587.0,
+        "comparison_primary_wavelength_nm": 550.0,
+        "published_foclen_mm": 49.565,
+        "deeplens_paraxial_efl_mm": 49.554586258818944,
+        "fnumber": 1.8415697057496243,
+        "physical_frame_mm": [
+          36.0,
+          24.0
+        ],
+        "not_proven_actual_manufacturing_prescription": true
+      },
+      "tile_pixels": 256,
+      "tile_seconds": 6.178481826999928,
+      "tile_propagation_seconds": 1.0440382689999979,
+      "linear_full_psf_seconds_estimate": 26727.379686399945,
+      "estimate_includes_trace_overhead": false,
+      "valid_rays": 51034,
+      "all_conditions_attempted": true
+    },
+    {
+      "name": "sigma70mm_f2.8",
+      "fields": [],
+      "state": "timing_tile_only",
+      "source_sha256": "1fb88d4da358707420f4923e1e223df1823f883b2bb4789be5c51d048769e800",
+      "provenance": {
+        "identifier": "sigma70mm_f2.8",
+        "source": "pinned-vccimaging/DeepLens datasets/lenses/camera",
+        "source_primary_description": "JP 2008-020656 Example 1 (Sigma Macro 70mm F2.8 EX DG)",
+        "original_primary_wavelength_nm": 587.0,
+        "comparison_primary_wavelength_nm": 550.0,
+        "published_foclen_mm": 69.168,
+        "deeplens_paraxial_efl_mm": 68.88811957136373,
+        "fnumber": 2.883947749386616,
+        "physical_frame_mm": [
+          36.0,
+          24.0
+        ],
+        "not_proven_actual_manufacturing_prescription": true
+      },
+      "tile_pixels": 256,
+      "tile_seconds": 8.708357580999973,
+      "tile_propagation_seconds": 1.0803636470000129,
+      "linear_full_psf_seconds_estimate": 27657.30936320033,
+      "estimate_includes_trace_overhead": false,
+      "valid_rays": 51468,
+      "all_conditions_attempted": true
+    },
+    {
+      "name": "yongnuo_50mm_f1.8",
+      "fields": [],
+      "state": "timing_tile_only",
+      "source_sha256": "4bf3c6a70801faad97c98bbc03aed6751fb16f2f25f5df0e025bb6f15fd6bd53",
+      "provenance": {
+        "identifier": "yongnuo_50mm_f1.8",
+        "source": "pinned-vccimaging/DeepLens datasets/lenses/camera",
+        "source_primary_description": null,
+        "original_primary_wavelength_nm": 587.0,
+        "comparison_primary_wavelength_nm": 550.0,
+        "published_foclen_mm": 48.90925059746878,
+        "deeplens_paraxial_efl_mm": 48.93706059881027,
+        "fnumber": 1.7638170742369015,
+        "physical_frame_mm": [
+          36.0,
+          24.0
+        ],
+        "not_proven_actual_manufacturing_prescription": true
+      },
+      "tile_pixels": 256,
+      "tile_seconds": 6.522073051999996,
+      "tile_propagation_seconds": 1.024999532000038,
+      "linear_full_psf_seconds_estimate": 26239.988019200973,
+      "estimate_includes_trace_overhead": false,
+      "valid_rays": 51468,
+      "all_conditions_attempted": true
+    }
+  ],
+  "updated_unix": 1793203074.6585193,
+  "summary": {
+    "lenses": 11,
+    "completed_psfs": 0,
+    "valid_final_scores": 0
+  }
+}
