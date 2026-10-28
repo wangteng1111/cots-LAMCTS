@@ -3,17 +3,37 @@
     "validation/qfilm03_fullframe_polychromatic_fixedchief.py"
   ],
   "code_commit": "b86a8640953d0f0cb8783013e7efeeb27d26d497",
+  "elapsed_sec": 209.11613774299622,
   "entrypoint": "scripts/cuda_venv_exec.py",
   "env": {},
+  "finished_at": 1793180544.5474508,
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm03-poly-fixedchief-20261028-01",
-  "log_tail": "/var/lib/cots-lamcts/jobs/qfilm03-poly-fixedchief-20261028-01/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)\nFIXED_GREEN_POLY singlet 0.0 FFTmax 0.04873926931865199 NEWmax 0.02156859612205908 FFTmean 0.02886079002305252 NEWmean 0.003878079578661653\nFIXED_GREEN_POLY singlet 0.5 FFTmax 0.019719403008369434 NEWmax 0.01679118001053778 FFTmean 0.003641006166596283 NEWmean 0.003976278043601041\nFIXED_GREEN_POLY singlet 1.0 FFTmax 0.01689577895965521 NEWmax 0.01714994395439031 FFTmean 0.003338857277759072 NEWmean 0.004514334973221228\nFIXED_GREEN_POLY internal_stop_asphere 0.0 FFTmax 0.06754704077698818 NEWmax 0.11412979443643423 FFTmean 0.05139625469971618 NEWmean 0.01465763277259094\nFIXED_GREEN_POLY internal_stop_asphere 0.5 FFTmax 0.017617733341613633 NEWmax 0.029050439456525936 FFTmean 0.0034547204062269966 NEWmean 0.005135192518317683",
+  "log_tail": "/var/lib/cots-lamcts/jobs/qfilm03-poly-fixedchief-20261028-01/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)\nFIXED_GREEN_POLY singlet 0.0 FFTmax 0.04873926931865199 NEWmax 0.02156859612205908 FFTmean 0.02886079002305252 NEWmean 0.003878079578661653\nFIXED_GREEN_POLY singlet 0.5 FFTmax 0.019719403008369434 NEWmax 0.01679118001053778 FFTmean 0.003641006166596283 NEWmean 0.003976278043601041\nFIXED_GREEN_POLY singlet 1.0 FFTmax 0.01689577895965521 NEWmax 0.01714994395439031 FFTmean 0.003338857277759072 NEWmean 0.004514334973221228\nFIXED_GREEN_POLY internal_stop_asphere 0.0 FFTmax 0.06754704077698818 NEWmax 0.11412979443643423 FFTmean 0.05139625469971618 NEWmean 0.01465763277259094\nFIXED_GREEN_POLY internal_stop_asphere 0.5 FFTmax 0.017617733341613633 NEWmax 0.029050439456525936 FFTmean 0.0034547204062269966 NEWmean 0.005135192518317683\nFIXED_GREEN_POLY internal_stop_asphere 1.0 FFTmax 0.01111836003926262 NEWmax 0.013570489021558064 FFTmean 0.002629157031254579 NEWmean 0.0033003602700432664\nFIXED_GREEN_POLY_PASS {\"singlet\": {\"fields\": 3, \"fft\": 2.826412044053487, \"physical\": 2.8271948397242417}, \"internal_stop_asphere\": {\"fields\": 3, \"fft\": 0.9563732553565802, \"physical\": 0.9637061246969125}}",
   "memory_gb": 0,
   "pid": 380024,
   "request_sha256": "09c937c9c9a8005a9559bc24df205645f5c456bf0d1703020b53f545d8d9c7a6",
+  "returncode": 0,
   "schema": 1,
   "started_at": 1793180335.431313,
-  "state": "running",
+  "state": "finished",
   "timeout_sec": 1800,
-  "updated_at": 1793180519.5656192
+  "updated_at": 1793180519.5656192,
+  "uploaded_artifacts": [
+    {
+      "path": "qfilm03_poly_fixed_chief/internal_stop_asphere.json",
+      "size": 903,
+      "uploaded": true
+    },
+    {
+      "path": "qfilm03_poly_fixed_chief/polychromatic_huygens_36x24_fixed_chief.json",
+      "size": 22860,
+      "uploaded": true
+    },
+    {
+      "path": "qfilm03_poly_fixed_chief/singlet.json",
+      "size": 569,
+      "uploaded": true
+    }
+  ]
 }
