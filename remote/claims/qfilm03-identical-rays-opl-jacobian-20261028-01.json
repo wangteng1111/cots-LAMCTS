@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1793178325.833239,
+  "code_commit": "e97ce67d4329c42dd76e23a0b78a8fd386629aa5",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm03-identical-rays-opl-jacobian-20261028-01",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/qfilm03-identical-rays-opl-jacobian-20261028-01.json",
+  "request_sha256": "2fc7a9acd2ebe2c3459d7e9aea0e8e1b73341fc8df5e08ee76cfcf6826d192fa",
+  "schema": 1,
+  "state": "claimed"
+}
