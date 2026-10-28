@@ -10,6 +10,7 @@ import sys,os,json,time,traceback,math
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 import numpy as np,torch
+from validation.qfilm_deeplens_same_prescription import BK7  # pinned DeepLens loader shim
 from deeplens import GeoLens
 from evaluator.qfilm02 import Config,_surfaces_at
 from evaluator.optical_primitives import cardinal
