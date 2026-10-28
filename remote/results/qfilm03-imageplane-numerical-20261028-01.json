@@ -3,17 +3,27 @@
     "validation/qfilm03_imageplane_numerical.py"
   ],
   "code_commit": "b7b835e5c248e64dd181dcb41f38e34d2b8053b5",
+  "elapsed_sec": 11.06634259223938,
   "entrypoint": "scripts/cuda_venv_exec.py",
   "env": {},
+  "finished_at": 1793171786.934174,
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm03-imageplane-numerical-20261028-01",
-  "log_tail": "",
+  "log_tail": "/var/lib/cots-lamcts/jobs/qfilm03-imageplane-numerical-20261028-01/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)\nRESOLUTION singlet 64 seconds 2.6267530098557472 valid 100\nRESOLUTION singlet 128 seconds 1.755292679183185 valid 100\nTraceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/qfilm03-imageplane-numerical-20261028-01/src/validation/qfilm03_imageplane_numerical.py\", line 79, in <module>\n    if __name__==\"__main__\":main()\n                            ^^^^^^\n  File \"/var/lib/cots-lamcts/jobs/qfilm03-imageplane-numerical-20261028-01/src/validation/qfilm03_imageplane_numerical.py\", line 75, in main\n    f\"{x}->{y}\":compare(rr[x],rr[y])\n                ^^^^^^^^^^^^^^^^^^^^\n  File \"/var/lib/cots-lamcts/jobs/qfilm03-imageplane-numerical-20261028-01/src/validation/qfilm03_imageplane_numerical.py\", line 44, in compare\n    \"J_abs\":float(abs(float(a[\"quality\"][\"J_task\"])-float(b[\"quality\"][\"J_task\"]))) if a[\"quality\"][\"J_task\"] is not None and b[\"quality\"][\"J_task\"] is not None else None,\n                                                                                       ~^^^^^^^^^^^\nIndexError: only integers, slices (`:`), ellipsis (`...`), numpy.newaxis (`None`) and integer or boolean arrays are valid indices",
   "memory_gb": 0,
   "pid": 349314,
   "request_sha256": "77465be0841b75500e20aa433f71167224ce5da98e07f86733e602ecba029286",
+  "returncode": 1,
   "schema": 1,
   "started_at": 1793171775.8678315,
-  "state": "running",
+  "state": "failed",
   "timeout_sec": 1800,
-  "updated_at": 1793171778.564391
+  "updated_at": 1793171778.564391,
+  "uploaded_artifacts": [
+    {
+      "path": "qfilm03_accuracy/numerical_100x7.json",
+      "size": 2411,
+      "uploaded": true
+    }
+  ]
 }
