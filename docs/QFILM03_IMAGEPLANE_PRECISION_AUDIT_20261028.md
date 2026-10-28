@@ -107,6 +107,22 @@ A runtime-only exact subdivision changes DeepLens accumulation batch from 10000 
 
 [Original memory-safe Huygens partial results](https://github.com/wangteng1111/cots-LAMCTS/blob/workstation-results/remote/artifacts/qfilm03-huygens-safechunk-20261028-02/qfilm03_huygens_quality/reference_sampling_and_focus.json) and [exact optical-parity proof](https://github.com/wangteng1111/cots-LAMCTS/blob/workstation-results/remote/artifacts/qfilm03-huygens-safechunk-20261028-02/huygens_safechunk_parity.json).
 
+### All 100 radial fields × seven wavelengths full-frame numeric convergence (completed)
+
+All configurations have 100 valid fields, default 36×24mm image plane. At each of 100 fields Qfilm evaluates 10 frequencies ×2 orientations of the **polychromatic** MTF (2,000 values per state). Reference here is higher-resolution Qfilm, so the measured delta is a **discretization stability metric**, not an independent physics accuracy measure.
+
+| Structure | Max |ΔMTF| n64→128 | Max n128→256 | Max n256→512 | P95 n256→512 | |ΔJ| n256→512 | 512² seconds |
+|---|---:|---:|---:|---:|---:|---:|
+| Singlet | 0.052946 | 0.024929 | **0.007315** | 0.002724 | 0.000368 | 17.38 |
+| Larger-stop singlet | 0.141198 | 0.033619 | **0.009040** | 0.004113 | 0.000118 | 16.31 |
+| Internal-stop/asphere | 0.121326 | 0.037699 | **0.013824** | 0.003997 | 0.000630 | 302.26 |
+
+**Important:** n=64 (4096 pupil points) is not a reliable universal Alpha Lense final evaluator. Internal-stop case does not satisfy the initial 0.01 max-MTF numerical convergence criterion even at n256→512, despite a small J change and small P95 error. Three-field n512→1024 checks achieved 0.003364 max for this example, but cannot certify all 100 fields at n1024.
+
+Workstation full-field peak PyTorch allocated memory for n512 was ~0.766GiB with conservative chunks, versus full evaluation time 302sec for internal-stop; thus the bottleneck is CPU/launch/inverse-ray overhead more than a GPU VRAM limitation.
+
+[Complete 100×7 raw results](https://github.com/wangteng1111/cots-LAMCTS/blob/workstation-results/remote/artifacts/qfilm03-imageplane-numerical-20261028-02/qfilm03_accuracy/numerical_100x7.json)
+
 ## 7. Blocks before authoritative Alpha Lense Action→ΔQ pretraining
 
 The following remain **uncertified**: 100 fields×7 wavelengths across varied real COTS catalog families, cross-wave absolute PSF centroid and color MTF at physically shared coordinates, lens photometry (vignetting/irradiance/throughput), coatings and glass batch, pupil amplitude/Jacobian weighting, severe aberration and caustics, mechanical shutter/Copal obstruction and decenter/tilt, fullframe edge valid-ray coverage, and converged external Huygens independent of window and number of rays.
