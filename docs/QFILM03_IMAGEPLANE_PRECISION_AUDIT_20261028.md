@@ -92,6 +92,21 @@ This validates numerical wave propagation *on matched grid inputs* but **not the
 
 [Memory-safe reference test source](https://github.com/wangteng1111/cots-LAMCTS/blob/main/validation/qfilm03_huygens_safechunk.py)
 
+### Measured internal Huygens convergence (initial 15 of 18 optical points; 96/192 pixel windows)
+
+A runtime-only exact subdivision changes DeepLens accumulation batch from 10000 to 1024 rays (no optical equation changes). Seed-matched 96-pixel PSF parity against unmodified upstream was exactly **0.0 max pixel difference**. Larger window 192-pixel GPU integration avoids original 32GB OOM.
+
+| Scene | 262K vs 1M Huygens rays, max ΔMTF | PSF window 96→192, max ΔMTF |
+|---|---:|---:|
+| Singlet, 550nm, center | 0.02196 | 0.02534 |
+| Singlet, 670nm, center | 0.01927 | 0.02210 |
+| Internal stop/asphere, 550nm, center | 0.03430 | 0.03733 |
+| Internal stop/asphere, 430nm, edge | 0.01211 | 0.07910 |
+
+**Important:** a million rays and the 0.4mm normalized PSF window are **not a converged reference** in several conditions. Even when Qfilm and Huygens differ by 0.01–0.03, the Huygens own discretization can be larger. Red-light cross-method discrepancy ~0.195 is not explained by these observed ~0.02 ray/window shifts, but this does not establish which optical model is closer to physical truth. The original long-running 1024-ray chunk run was stopped after 15 cases to prioritize the 100-field fullframe audits. We must not claim full ray/window convergence.
+
+[Original memory-safe Huygens partial results](https://github.com/wangteng1111/cots-LAMCTS/blob/workstation-results/remote/artifacts/qfilm03-huygens-safechunk-20261028-02/qfilm03_huygens_quality/reference_sampling_and_focus.json) and [exact optical-parity proof](https://github.com/wangteng1111/cots-LAMCTS/blob/workstation-results/remote/artifacts/qfilm03-huygens-safechunk-20261028-02/huygens_safechunk_parity.json).
+
 ## 7. Blocks before authoritative Alpha Lense Action→ΔQ pretraining
 
 The following remain **uncertified**: 100 fields×7 wavelengths across varied real COTS catalog families, cross-wave absolute PSF centroid and color MTF at physically shared coordinates, lens photometry (vignetting/irradiance/throughput), coatings and glass batch, pupil amplitude/Jacobian weighting, severe aberration and caustics, mechanical shutter/Copal obstruction and decenter/tilt, fullframe edge valid-ray coverage, and converged external Huygens independent of window and number of rays.
