@@ -115,16 +115,29 @@ def _reference(source,cfg,rcfg,qfilm,device):
     matched,materials,reason=_material_parity(source,deep,cfg)
     if not matched:
         return {"status":"material_mismatch","reason":reason,"material_parity":materials}
+    # DeepLens paraxial EFL uses its primary 550nm wavelength independently
+    # of the reference's chosen monochromatic wave. Never compare a 670nm
+    # Qfilm EFL to a 550nm DeepLens EFL.
+    from evaluator.qfilm02 import _surfaces_at
+    from evaluator.optical_primitives import cardinal
+    qfilm_550_efl=float(cardinal(_surfaces_at(src["surfaces"],550.0))[0])
+    if len(cfg.wavelengths_nm)==1 and abs(cfg.wavelengths_nm[0]-rcfg.wavelength_nm)<1e-9:
+        reference_qfilm=qfilm
+    else:
+        # A seven-color FINAL Q/J must never be compared to a single-color PSF.
+        single_cfg=replace(cfg,wavelengths_nm=(rcfg.wavelength_nm,),spectral_weights=(1.,))
+        reference_qfilm=torch_qfilm(src,single_cfg,device=device)
     with tempfile.TemporaryDirectory(prefix="qfilm03_deep_") as td:
         file=pathlib.Path(td)/"lens.json"
         file.write_text(json.dumps(deep))
         lens,init_sec=_clock(lambda:GeoLens(filename=str(file),device=device,dtype=torch.float64))
         # Qfilm and DeepLens paraxial EFL must agree: detect material or geometry mismatch
         depefl=float(lens.foclen)
-        efl_delta=abs(depefl-float(qfilm["efl_mm"]))
+        efl_delta=abs(depefl-qfilm_550_efl)
         result={"status":"running","source_sha":DEEP_SHA,"material_parity":materials,"device":str(device),
                 "init_seconds":init_sec,"deeplens_efl_mm":depefl,
-                "qfilm_efl_mm":float(qfilm["efl_mm"]),"efl_abs_difference_mm":efl_delta,
+                "qfilm_efl_mm":qfilm_550_efl,"efl_abs_difference_mm":efl_delta,
+                "reference_Q_image_source":"single_wavelength_actual_film",
                 "huygens_spp":rcfg.huygens_spp,"sensor_resolution":rcfg.sensor_resolution,
                 "sensor_pixel_mm":float(lens.pixel_size),"psf_kernel":rcfg.psf_kernel,
                 "psf_window_mm":float(lens.pixel_size)*rcfg.psf_kernel,
@@ -175,7 +188,7 @@ def _reference(source,cfg,rcfg,qfilm,device):
             px,py=mtf_from_psf(psf.detach().cpu().numpy(),float(lens.pixel_size),freqs)
             if fi==0: tang,sag=px,py
             else: tang,sag=py,px
-            q=qfilm["Q_image"][fi]
+            q=reference_qfilm["Q_image"][fi]
             dt=np.abs(np.asarray(tang)-np.asarray(q[10:20]))
             ds=np.abs(np.asarray(sag)-np.asarray(q[20:30]))
             entry={"field_index":fi,"field_h":h_actual,"angle_rad":alpha,
