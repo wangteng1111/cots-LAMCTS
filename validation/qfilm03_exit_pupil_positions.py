@@ -6,8 +6,8 @@ from __future__ import annotations
 import sys,os,json
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
-from deeplens import GeoLens
 from validation.qfilm_deeplens_same_prescription import thin_lens,internal_stop_positive_lens,conversion,BK7
+from deeplens import GeoLens
 import torch
 p=thin_lens();p["surfaces"][0]["sellmeier"]=BK7
 out={}
