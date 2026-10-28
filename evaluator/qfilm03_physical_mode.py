@@ -20,11 +20,16 @@ class PhysicalHuygensConfig:
     detector_block:int=384
     amplitude_mode:str="sqrt_exit_jac"  # physical ray-tube energy transport
     record_all_mtf:bool=False
+    max_bad_exit_jacobian_fraction:float=0.02
     def validate(self,base):
         Propagation(pupil_n=self.pupil_n,pixel_n=self.detector_n,
                     pixel_pitch_um=self.detector_pitch_um,
                     pixel_block=self.detector_block,weight_mode=self.amplitude_mode,
                     frame_width_mm=base.frame_width_mm,frame_height_mm=base.frame_height_mm).validate()
+        if self.pupil_n<128 or self.detector_n<128:
+            raise ValueError("physical Final-J requires at least 128x128 pupil and detector sampling")
+        if not (0<=self.max_bad_exit_jacobian_fraction<=0.1):
+            raise ValueError("invalid Jacobian validity threshold")
         if max(base.frequencies_lpmm)>=500./self.detector_pitch_um:
             raise ValueError("physical detector frequency exceeds Nyquist")
         if self.detector_n*self.detector_pitch_um*1e-3<.25:
@@ -51,6 +56,10 @@ def evaluate(source,config:Config=Config(),device="cuda:0",
         samples=[]
         for wave_nm in wavelengths:
             with torch.inference_mode():res=eval_fixed_film(source,float(wave_nm),h,setup,device=device)
+            if res["source_plane_type"]!="physical" or res["valid_rays"]<32:
+                raise ValueError(f"invalid physical wavefront for field={fi},lambda={wave_nm}")
+            if res["bad_jacobian_fraction"]>physical.max_bad_exit_jacobian_fraction:
+                raise ValueError(f"exit-pupil Jacobian mapping singular for field={fi},lambda={wave_nm}")
             mtf_complex=coherent_otf_axis(res["psf"],physical.detector_pitch_um*1e-3,freq)
             if not np.all(np.isfinite(mtf_complex)):
                 raise ValueError(f"invalid physical PSF at field={fi},lambda={wave_nm}")
