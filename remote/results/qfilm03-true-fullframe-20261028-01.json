@@ -7,10 +7,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm03-true-fullframe-20261028-01",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 353135,
   "request_sha256": "30807ddf2092e2428c85f884a214f05504c6b7157fb066e80acb0d45d9e62362",
   "schema": 1,
   "started_at": 1793173967.3481362,
   "state": "running",
-  "timeout_sec": 1800
+  "timeout_sec": 1800,
+  "updated_at": 1793173972.8697112
 }
