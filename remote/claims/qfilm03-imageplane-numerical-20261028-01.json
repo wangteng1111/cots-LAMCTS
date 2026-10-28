@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1793171773.0374706,
+  "code_commit": "b7b835e5c248e64dd181dcb41f38e34d2b8053b5",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm03-imageplane-numerical-20261028-01",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/qfilm03-imageplane-numerical-20261028-01.json",
+  "request_sha256": "77465be0841b75500e20aa433f71167224ce5da98e07f86733e602ecba029286",
+  "schema": 1,
+  "state": "claimed"
+}
