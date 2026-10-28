@@ -7,10 +7,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm03-huygens-safechunk-20261028-02",
+  "log_tail": "/var/lib/cots-lamcts/deeplens_upstream/deeplens/geolens_pkg/psf_compute.py:608: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  complex_amp = (amp / r) * torch.exp(1j * phase)  # [ks, ks, batch]\nHuygens_BATCH_INVARIANCE {\"schema\": \"Qfilm03-batch-invariance-v1\", \"upstream_SHA\": \"911bb9d334fce7e20a4407c4506ac683b52ff246\", \"original_sha256\": \"2e4949a4c7005dbf2ec4d0918db1d03b376f28912bbeca19d71093d931a342fd\", \"modified_sha256\": \"3fa7bbd21c01ae9b232dcbc733a8cf55af9c658f92b5f02e59d6d7d6fb21c546\", \"only_change\": \"Huygens ray-batch size 10000 -> 1024\", \"parity\": {\"PSF_max_abs\": 0.0, \"PSF_mean_abs\": 0.0, \"PSF_sum_a\": 1.0, \"PSF_sum_b\": 1.0}, \"optical_physics_changed\": false}",
   "memory_gb": 0,
+  "pid": 351987,
   "request_sha256": "30284fb8953931bbf2647113f2ad227f796df86bb6a5d3bdd1ef84f5934e20f7",
   "schema": 1,
   "started_at": 1793173038.7482462,
   "state": "running",
-  "timeout_sec": 1800
+  "timeout_sec": 1800,
+  "updated_at": 1793173046.2397592
 }
