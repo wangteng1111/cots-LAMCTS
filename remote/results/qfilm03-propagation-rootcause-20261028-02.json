@@ -1,0 +1,16 @@
+{
+  "args": [
+    "validation/qfilm03_compare_propagation_kernels.py"
+  ],
+  "code_commit": "fa1cbd314b759141cec2fc43e3a9ed225fd6906b",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm03-propagation-rootcause-20261028-02",
+  "memory_gb": 0,
+  "request_sha256": "d10a028ba033f042ece2d79eedc0f84bba04fbd73616f61f5010913e20c0e24a",
+  "schema": 1,
+  "started_at": 1793178672.9470582,
+  "state": "running",
+  "timeout_sec": 1800
+}
