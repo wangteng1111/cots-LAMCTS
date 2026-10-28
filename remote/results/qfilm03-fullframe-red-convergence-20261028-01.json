@@ -1,0 +1,16 @@
+{
+  "args": [
+    "validation/qfilm03_fullframe_reference_convergence.py"
+  ],
+  "code_commit": "9a5739010f7a89e814ee17743575bd62a9f7c41f",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm03-fullframe-red-convergence-20261028-01",
+  "memory_gb": 0,
+  "request_sha256": "4c7d1ff27d263eb3259bc1787a008837e4a7246f17778c3d1b7c9a5dc345028e",
+  "schema": 1,
+  "started_at": 1793175863.4178014,
+  "state": "running",
+  "timeout_sec": 1800
+}
