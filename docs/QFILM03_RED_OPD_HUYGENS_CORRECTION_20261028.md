@@ -123,6 +123,32 @@ Therefore the observed red mismatch must instead be pursued through reference ra
 
 The opt-in full physical score now rejects `pupil_n<128` or `detector_n<128`, frequencies beyond physical detector Nyquist, malformed PSFs, too few valid rays or >2% singular Jacobian samples (configurable). It never calls the virtual-plane diagnostic from Final-J. The original Qfilm0.3 fast mode remains unchanged. `training_eligible=False` and `physics_certified=False` are mandatory until full optical accuracy is established.
 
+## Critical second root cause: stochastic DeepLens Huygens PSF crop center (experimentally isolated)
+
+The upstream pinned DeepLens  `psf_huygens(points, ..., spp=1_000_000)` independently calls `psf_center(...,method="chief_ray")`, which estimates the optical stop-center chief intercept from `SPP_PSF=8192` **new random pupil rays**, not from the million-ray Huygens integration. Its finite **0.64mm cropped and individually normalized PSF** is sensitive to this center selection. This is a reproducibility limitation **for our unusually aberrated red fixed-film comparison**; it is not a blanket claim that official DeepLens is incorrect.
+
+### Controlled three-factor ablation (same fullframe optical prescription)
+
+| Case | Max MTF change from *chief-center alone* | Finite 1km spherical vs plane input | Native random pupil vs deterministic finite pupil |
+|---|---:|---:|---:|
+| N-BK7 singlet 670nm h0 | 0.03075 | 0.00327 | 0.02104 |
+| Singlet 670nm h0.1 | **0.25646** | 0.00551 | 0.01784 |
+| Internal-stop 670nm h0.1 | **0.16000** | 0.01150 | 0.03164 |
+
+The chief center is a nuisance if the PSF is integrated across infinite detector support; under limited window normalization it becomes a real MTF error, and can dominate the optics-code comparison. DeepLens Huygens ray traces itself should not be altered to fit the data.
+
+**Most decisive test:** replace both integrators' input with identical deterministic rays, path-length phase, source plane and center. Across 8 red test conditions (pupil128/256), **native DeepLens Huygens vs Qfilm direct Huygens maximum MTF discrepancy is only 4.0e-9 to 1.5e-8**. This proves the discrete scalar Huygens kernel implementations are consistent. **Residuals stem from input wavefront, reference crop and sampling, not the Huygens propagation kernel.**
+
+At λ670nm h0.1, singlet, physical Qfilm direct Huygens n256 vs native DeepLens with stable actual chief has max MTF difference **0.01746**; previous randomized-chief reference yielded ~0.126 with identical Qfilm method. The original FFT nevertheless differs from *corrected* native reference by ~0.249, exposing its own propagation approximation. Internal-stop λ670nm h0.1 n256 physical vs corrected reference ~0.03116.
+
+### Production integration change in Qfilm0.3 verify
+
+`ValidationConfig.reference_centering` defaults to `deterministic_physical_chief` (alternative `native_stochastic` preserved for ablations). `qfilm03._reference` uses exact stop-centered fixed-film chief at each monochromatic wave for reference PSF patch center; restores upstream `GeoLens.psf_center` afterward without patching the installed DeepLens package. Also corrected *independent existing bugs* in verification: DeepLens primary-green EFL is compared to **Qfilm 550nm** EFL, rather than red EFL; **single-wavelength Huygens MTF is compared to single-wavelength Qfilm MTF**, never to the full 7-wave integrated Qfilm MTF. GPU regression `qfilm03-corrected-chief-reference-20261028-01` **finished rc0**, 4 combinations, EFL parity absolute ~5.46e-7mm singlet / 4.62e-7mm internal, unchanged final J.
+
+[Chief/sample spherical source ablation](https://github.com/wangteng1111/cots-LAMCTS/blob/workstation-results/remote/artifacts/qfilm03-source-centering-curvature-20261028-01/qfilm03_source_wavefield/random_chief_and_source_curvature.json) · [identical ray kernel parity](https://github.com/wangteng1111/cots-LAMCTS/blob/workstation-results/remote/artifacts/qfilm03-identical-huygens-kernel-20261028-01/qfilm03_identical_huygens/identical_rays_two_propagators.json) · [corrected reference regression](https://github.com/wangteng1111/cots-LAMCTS/blob/main/validation/qfilm03_corrected_reference_chief_regression.py).
+
+**Important correction to earlier conclusions:** prior 0.126 red residual is NOT a permanent off-axis Huygens kernel disagreement; most of it was due to stochastic PSF center in the benchmark, plus remaining Monte Carlo and finite-window error. Do not use 0.126 as a bound on physical accuracy. Seven-color reference needs rerunning with all wavelengths on one deterministic **green reference chief** at the same real film plane (as an independent integration test).
+
 ## Remaining blockers and strict next steps
 
 1. **Explain singlet 670nm h0.1 residual ≈0.126 and 7-wave aspheric center max 0.114.** Compare actual DeepLens Huygens secondary source plane, objective infinity condition, source grid sampling, normalized PSF support, and physical energy weighting. Do not fit a correction based on one sample.
