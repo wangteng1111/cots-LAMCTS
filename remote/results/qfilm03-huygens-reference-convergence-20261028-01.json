@@ -7,10 +7,13 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm03-huygens-reference-convergence-20261028-01",
+  "log_tail": "/var/lib/cots-lamcts/deeplens_upstream/deeplens/geolens_pkg/psf_compute.py:608: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  complex_amp = (amp / r) * torch.exp(1j * phase)  # [ks, ks, batch]",
   "memory_gb": 0,
+  "pid": 350683,
   "request_sha256": "080d0c6fbb6d8ab569a4c2ee9fdfced0d9b460a69caa60d1e113dc406177b98e",
   "schema": 1,
   "started_at": 1793172511.9536936,
   "state": "running",
-  "timeout_sec": 1800
+  "timeout_sec": 1800,
+  "updated_at": 1793172520.072862
 }
