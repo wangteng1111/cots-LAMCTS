@@ -21,7 +21,7 @@ def get_lenses():
 def main():
  result={"schema":"Qfilm03-physical-finalJ-v1","cases":{},"certified":False}
  for name,p in get_lenses().items():
-  config=Config(fields=3,pupil_n=64,fft_n=256,max_fields_per_chunk=3,
+  config=Config(fields=3,pupil_n=512,fft_n=2048,max_fields_per_chunk=3,
         wavelengths_nm=WAVES,spectral_weights=WEIGHTS,
         frame_width_mm=36.,frame_height_mm=24.,
         target_efl_mm=p["design_spec"]["efl_target_mm"])
