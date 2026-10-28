@@ -1,0 +1,32 @@
+{
+  "args": [
+    "validation/qfilm03_highres_fullframe.py"
+  ],
+  "bridge_version": "0.5.0",
+  "code_commit": "d96f751f434306b1625c0da6fbc3df3453abe260",
+  "elapsed_sec": 38.5405216217041,
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "finished_at": 1793172858.4803157,
+  "hostname": "aipss-Rack-Server",
+  "immutable_job_id": true,
+  "job_id": "qfilm03-fullframe-1024-20261028-01",
+  "log_tail": "/var/lib/cots-lamcts/jobs/qfilm03-fullframe-1024-20261028-01/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)\nHIGHRES singlet 256 seconds 1.34 J 2.8266858686177887\nHIGHRES singlet 512 seconds 0.55 J 2.826412044053487\nHIGHRES singlet 1024 seconds 0.72 J 2.826297011274314\nHIGHRES internal_stop_asphere 256 seconds 9.42 J 0.9565875522100533\nHIGHRES internal_stop_asphere 512 seconds 8.77 J 0.9563732553565802\nHIGHRES internal_stop_asphere 1024 seconds 9.95 J 0.9559487075471758\nSUMMARY {\"singlet\": {\"256->512\": {\"mtf_max\": 0.003469675739268826, \"mtf_p95\": 0.0008688005215142209, \"mtf_mean\": 0.0002593208728668548, \"per_field_mtf_max\": [0.0008496617081231728, 0.003469675739268826, 0.001232437975944156], \"J_abs\": 0.00027382456430169455}, \"512->1024\": {\"mtf_max\": 0.0009172579021545163, \"mtf_p95\": 0.000315939904346453, \"mtf_mean\": 7.50493500153951e-05, \"per_field_mtf_max\": [0.0002329229235160657, 0.0009172579021545163, 0.00041251541936387557], \"J_abs\": 0.00011503277917279675}}, \"internal_stop_asphere\": {\"256->512\": {\"mtf_max\": 0.00937949487693215, \"mtf_p95\": 0.0017340687896319831, \"mtf_mean\": 0.0006258549662579777, \"per_field_mtf_max\": [0.0008216802995711925, 0.008764586391667231, 0.00937949487693215], \"J_abs\": 0.0002142968534730727}, \"512->1024\": {\"mtf_max\": 0.0033635270011302897, \"mtf_p95\": 0.0009318766697594325, \"mtf_mean\": 0.000228245548378033, \"per_field_mtf_max\": [0.0002697878809373999, 0.002126893313532205, 0.0033635270011302897], \"J_abs\": 0.0004245478094044852}}}",
+  "memory_gb": 0,
+  "pid": 351432,
+  "request_sha256": "0e4c46e70a2e424bc04c85c8a1a7a72a201c79c26cb2529778a5b902d1025cbb",
+  "retry_policy": "new_job_id_required",
+  "returncode": 0,
+  "schema": 1,
+  "started_at": 1793172819.939794,
+  "state": "finished",
+  "timeout_sec": 1800,
+  "updated_at": 1793172824.2156057,
+  "uploaded_artifacts": [
+    {
+      "path": "qfilm03_highres/fullframe_1024_convergence.json",
+      "size": 17770,
+      "uploaded": true
+    }
+  ]
+}
