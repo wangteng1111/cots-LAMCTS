@@ -54,8 +54,8 @@ def import_geolens_lens(lens,source_dict,identifier,frame_mm=(36.,24.),
    unsupported.append(f"tilted surface={i}")
   if typ in ("aperture","stop") or bool(s.get("is_aperture",False)):
    if stop_z is not None:raise IncompatibleLens("multiple explicit stops")
-   stop_z=z;stop_r=float(s["r"]);continue_from=0
-  elif typ in ("spheric","spherical","aspheric"):
+   stop_z=z;stop_r=float(s["r"])
+  if typ in ("spheric","spherical","aspheric"):
    refrac_count+=1
    raw_ai=list(s.get("ai",[]) or [])
    if typ=="aspheric" and raw_ai and s.get("use_ai2",True):
@@ -75,7 +75,8 @@ def import_geolens_lens(lens,source_dict,identifier,frame_mm=(36.,24.),
     "n_by_lambda_nm":n2_by_lambda,"surface_source_index":i}
    if prev_z is not None:points[-1]["thickness"]=z-prev_z
    points.append(entry);prev_z=z
-  else:unsupported.append(f"unsupported surface type {typ} at {i}")
+  elif typ not in ("aperture","stop"):
+   unsupported.append(f"unsupported surface type {typ} at {i}")
   z+=float(s.get("d_next",0.))
  if stop_z is None or stop_r is None:raise IncompatibleLens("missing explicit physical stop")
  if unsupported:raise IncompatibleLens("; ".join(unsupported))
