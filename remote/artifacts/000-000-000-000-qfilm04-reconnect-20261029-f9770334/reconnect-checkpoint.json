@@ -1,0 +1,644 @@
+{
+  "code_commit_env": "34913438766198c7a087349746339af7de406806",
+  "code_files_sha256": {
+    "evaluator/qfilm04.py": "70d06d098a0b7102675eb687ab2e0db89abc454329611197ce89f280eb60820d",
+    "evaluator/qfilm04_evaluate.py": "6ccf4e40abafc56067b603c51eeba50966cf381f3b8efcbe956a979c9cbf11db",
+    "evaluator/qfilm04_io.py": "065ea3d181dc86dda5db83aa1214ad1c1296034564e5049fe20cf1bf28b241df",
+    "evaluator/qfilm04_sampling.py": "653cc6cbb7a66450bb55ff07bbbf452b40f511302f26ae7f15127738961a3c84",
+    "evaluator/qfilm04_wavefront.py": "0a453e159f9cfaed78fdf20b3286f530017df8148edf42677e0574dd2a450e04"
+  },
+  "cpu_count": 128,
+  "git_head": {
+    "output": "34913438766198c7a087349746339af7de406806\n",
+    "returncode": 0
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "000-000-000-000-qfilm04-reconnect-20261029-f9770334",
+  "nonce": "f97703343d2744acb2cfda47f354c48b",
+  "nvidia_smi": {
+    "output": "0, NVIDIA GeForce RTX 5090, 32607, 2, 0\n1, NVIDIA GeForce RTX 5090, 32607, 2, 0\n",
+    "returncode": 0
+  },
+  "physics_certified": false,
+  "pid": 465823,
+  "python": "/var/lib/cots-lamcts/venv/bin/python",
+  "qfilm_unit_tests": {
+    "output": "test_block_phase_bound_contains_random_points (__main__.RemediationTests.test_block_phase_bound_contains_random_points) ... ok\ntest_complex_extractor_against_two_dimensional_sum (__main__.RemediationTests.test_complex_extractor_against_two_dimensional_sum) ... ok\ntest_final_evaluator_never_returns_stale_fft_mtf (__main__.RemediationTests.test_final_evaluator_never_returns_stale_fft_mtf) ... ok\ntest_immutable_terminal_and_nonfinite (__main__.RemediationTests.test_immutable_terminal_and_nonfinite) ... ok\ntest_no_gpu_fallback (__main__.RemediationTests.test_no_gpu_fallback) ... ok\ntest_plan_source_and_policy_tamper_rejected (__main__.RemediationTests.test_plan_source_and_policy_tamper_rejected) ... ok\ntest_raw_projection_area_and_direct_kernel (__main__.RemediationTests.test_raw_projection_area_and_direct_kernel) ... ok\ntest_resource_exhaustion_never_certifies (__main__.RemediationTests.test_resource_exhaustion_never_certifies) ... ok\ntest_second_execution_replays_actual_first_device_grids (__main__.RemediationTests.test_second_execution_replays_actual_first_device_grids) ... ok\ntest_signed_mapping_orientation_and_fold (__main__.RemediationTests.test_signed_mapping_orientation_and_fold) ... ok\ntest_two_color_physical_translation (__main__.RemediationTests.test_two_color_physical_translation) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 2.527s\n\nOK\n",
+    "returncode": 0
+  },
+  "schema": "Qfilm04FreshReconnect-v1",
+  "started_unix": 1793281091.9705207,
+  "state": "testing",
+  "systemd": {
+    "output": "MainPID=383668\nNRestarts=1\nExecMainStartTimestamp=Wed 2026-10-28 17:50:41 CST\nActiveState=active\nSubState=running\n",
+    "returncode": 0
+  },
+  "training_eligible": false,
+  "workstation_state": {
+    "newest_queued_unix": 1793281091.8772652,
+    "oldest_queued_unix": 1793224538.3977132,
+    "pending_categories": {
+      "artifacts": 10,
+      "claims": 7,
+      "finals": 4,
+      "heartbeat": 23,
+      "results": 13
+    },
+    "pending_metadata_truncated": false,
+    "pending_publications": 57,
+    "processes": [
+      {
+        "pid": 383668,
+        "scripts": [
+          "cots_workstation_bridge_v05.py"
+        ],
+        "status": {
+          "PPid": "1",
+          "State": "S (sleeping)",
+          "Threads": "1",
+          "VmRSS": "26224 kB"
+        }
+      },
+      {
+        "pid": 427271,
+        "scripts": [
+          "qfilm04_fine_11_cpu_gpu.py"
+        ],
+        "status": {
+          "PPid": "383668",
+          "State": "R (running)",
+          "Threads": "22",
+          "VmRSS": "1054420 kB"
+        }
+      },
+      {
+        "pid": 428788,
+        "scripts": [
+          "qfilm04_fine_11_cpu_gpu.py"
+        ],
+        "status": {
+          "PPid": "383668",
+          "State": "R (running)",
+          "Threads": "22",
+          "VmRSS": "1044932 kB"
+        }
+      },
+      {
+        "pid": 430552,
+        "scripts": [
+          "qfilm04_fine_11_cpu_gpu.py"
+        ],
+        "status": {
+          "PPid": "383668",
+          "State": "R (running)",
+          "Threads": "22",
+          "VmRSS": "1034972 kB"
+        }
+      },
+      {
+        "pid": 439249,
+        "scripts": [
+          "qfilm04_fine_11_cpu_gpu.py"
+        ],
+        "status": {
+          "PPid": "383668",
+          "State": "R (running)",
+          "Threads": "22",
+          "VmRSS": "1048088 kB"
+        }
+      },
+      {
+        "pid": 442332,
+        "scripts": [
+          "qfilm04_fine_11_cpu_gpu.py"
+        ],
+        "status": {
+          "PPid": "383668",
+          "State": "R (running)",
+          "Threads": "22",
+          "VmRSS": "1082816 kB"
+        }
+      },
+      {
+        "pid": 458860,
+        "scripts": [
+          "qfilm04_remediation_run.py"
+        ],
+        "status": {
+          "PPid": "383668",
+          "State": "R (running)",
+          "Threads": "7",
+          "VmRSS": "7938928 kB"
+        }
+      },
+      {
+        "pid": 465823,
+        "scripts": [
+          "qfilm04_reconnect_probe.py"
+        ],
+        "status": {
+          "PPid": "383668",
+          "State": "R (running)",
+          "Threads": "1",
+          "VmRSS": "18896 kB"
+        }
+      }
+    ],
+    "qfilm_jobs": [
+      {
+        "checkpoint_files": [
+          {
+            "bytes": 3891,
+            "mtime": 1793279804.5283697,
+            "name": "controls-checkpoint.json"
+          },
+          {
+            "bytes": 3989,
+            "mtime": 1793279804.5303736,
+            "name": "controls-terminal.json"
+          }
+        ],
+        "job_directory_exists": true,
+        "job_id": "000-000-000-qfilm04-remediation-controls-20261029-01",
+        "receipt": {
+          "claimed_at": 1793279631.0916228,
+          "code_commit": "bc73cb4cfee50eb242dd2f498efd91f27b4f2db2",
+          "finished_at": 1793279878.3433766,
+          "returncode": 0,
+          "state": "finished"
+        }
+      },
+      {
+        "checkpoint_files": [],
+        "job_directory_exists": false,
+        "job_id": "000-000-001-qfilm04-remediation-ef40-blue-20261029-01"
+      },
+      {
+        "checkpoint_files": [
+          {
+            "bytes": 1573,
+            "mtime": 1793278066.2483916,
+            "name": "progress.json"
+          }
+        ],
+        "job_directory_exists": true,
+        "job_id": "000-000-002-qfilm04-remediation-ef40-green-20261029-01",
+        "receipt": {
+          "claimed_at": 1793276443.921865,
+          "code_commit": "bc73cb4cfee50eb242dd2f498efd91f27b4f2db2",
+          "state": "bridge_error"
+        }
+      },
+      {
+        "checkpoint_files": [],
+        "job_directory_exists": false,
+        "job_id": "000-000-003-qfilm04-remediation-rf50-red-20261029-01"
+      },
+      {
+        "checkpoint_files": [
+          {
+            "bytes": 96065,
+            "mtime": 1793241992.362683,
+            "name": "recovered/000-qfilm04-fine-01g-00-ef100mm_f2.8-20261028.json"
+          },
+          {
+            "bytes": 72597,
+            "mtime": 1793241992.3667502,
+            "name": "recovered/000-qfilm04-fine-01g-01-ef35mm_f2.0-20261028.json"
+          },
+          {
+            "bytes": 95811,
+            "mtime": 1793241992.3721285,
+            "name": "recovered/000-qfilm04-fine-01g-02-ef40mm_f2.8-20261028.json"
+          },
+          {
+            "bytes": 97344,
+            "mtime": 1793241992.3776674,
+            "name": "recovered/000-qfilm04-fine-01g-03-ef50mm_f1.8-20261028.json"
+          },
+          {
+            "bytes": 97007,
+            "mtime": 1793241992.383689,
+            "name": "recovered/000-qfilm04-fine-01g-04-ef85mm_f1.8-20261028.json"
+          },
+          {
+            "bytes": 49341,
+            "mtime": 1793241992.386328,
+            "name": "recovered/000-qfilm04-fine-01g-05-rf16mm_f2.8-20261028.json"
+          },
+          {
+            "bytes": 46309,
+            "mtime": 1793241992.3887153,
+            "name": "recovered/000-qfilm04-fine-01g-06-rf24mm_f1.8-20261028.json"
+          },
+          {
+            "bytes": 96258,
+            "mtime": 1793241992.394141,
+            "name": "recovered/000-qfilm04-fine-01g-07-rf35mm_f1.8-20261028.json"
+          },
+          {
+            "bytes": 96515,
+            "mtime": 1793241992.3995712,
+            "name": "recovered/000-qfilm04-fine-01g-08-rf50mm_f1.8-20261028.json"
+          },
+          {
+            "bytes": 95992,
+            "mtime": 1793241992.4049199,
+            "name": "recovered/000-qfilm04-fine-01g-09-sigma70mm_f2.8-20261028.json"
+          },
+          {
+            "bytes": 97187,
+            "mtime": 1793241992.4104729,
+            "name": "recovered/000-qfilm04-fine-01g-10-yongnuo_50mm_f1.8-20261028.json"
+          },
+          {
+            "bytes": 2848,
+            "mtime": 1793241992.4113998,
+            "name": "recovered/000-qfilm04-fine-02c-00-ef100mm_f2.8-20261028.json"
+          },
+          {
+            "bytes": 7043,
+            "mtime": 1793241992.4137251,
+            "name": "recovered/000-qfilm04-fine-02c-04-ef85mm_f1.8-20261028.json"
+          },
+          {
+            "bytes": 6984,
+            "mtime": 1793241992.4160285,
+            "name": "recovered/000-qfilm04-fine-02c-08-rf50mm_f1.8-20261028.json"
+          },
+          {
+            "bytes": 49361,
+            "mtime": 1793242028.6606364,
+            "name": "rf24_gpu_report_recovered.json"
+          },
+          {
+            "bytes": 12342,
+            "mtime": 1793242028.6615243,
+            "name": "workstation_recheck.json"
+          }
+        ],
+        "job_directory_exists": true,
+        "job_id": "000-000-qfilm04-recheck-20261029-01",
+        "receipt": {
+          "claimed_at": 1793241982.1629486,
+          "code_commit": "ff84cd1e308d64f83ba96c39c7e7b4ed3f78aadb",
+          "finished_at": 1793242030.4030116,
+          "returncode": 0,
+          "state": "finished"
+        }
+      },
+      {
+        "checkpoint_files": [
+          {
+            "bytes": 96065,
+            "mtime": 1793216657.3016496,
+            "name": "fine_11_g_solve.json"
+          }
+        ],
+        "job_directory_exists": true,
+        "job_id": "000-qfilm04-fine-01g-00-ef100mm_f2.8-20261028",
+        "receipt": {
+          "claimed_at": 1793215694.5356429,
+          "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+          "state": "bridge_error"
+        }
+      },
+      {
+        "checkpoint_files": [
+          {
+            "bytes": 72597,
+            "mtime": 1793217312.9322193,
+            "name": "fine_11_g_solve.json"
+          }
+        ],
+        "job_directory_exists": true,
+        "job_id": "000-qfilm04-fine-01g-01-ef35mm_f2.0-20261028",
+        "receipt": {
+          "claimed_at": 1793216650.2033365,
+          "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+          "state": "bridge_error"
+        }
+      },
+      {
+        "checkpoint_files": [
+          {
+            "bytes": 95811,
+            "mtime": 1793220533.7225072,
+            "name": "fine_11_g_solve.json"
+          }
+        ],
+        "job_directory_exists": true,
+        "job_id": "000-qfilm04-fine-01g-02-ef40mm_f2.8-20261028",
+        "receipt": {
+          "claimed_at": 1793219285.1363814,
+          "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+          "finished_at": 1793220534.7736242,
+          "returncode": 0,
+          "state": "finished"
+        }
+      },
+      {
+        "checkpoint_files": [
+          {
+            "bytes": 97344,
+            "mtime": 1793221695.7597773,
+            "name": "fine_11_g_solve.json"
+          }
+        ],
+        "job_directory_exists": true,
+        "job_id": "000-qfilm04-fine-01g-03-ef50mm_f1.8-20261028",
+        "receipt": {
+          "claimed_at": 1793220917.7407672,
+          "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+          "finished_at": 1793221696.6966522,
+          "returncode": 0,
+          "state": "finished"
+        }
+      },
+      {
+        "checkpoint_files": [
+          {
+            "bytes": 97007,
+            "mtime": 1793214880.89867,
+            "name": "fine_11_g_solve.json"
+          }
+        ],
+        "job_directory_exists": true,
+        "job_id": "000-qfilm04-fine-01g-04-ef85mm_f1.8-20261028",
+        "receipt": {
+          "claimed_at": 1793214055.6284857,
+          "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+          "state": "bridge_error"
+        }
+      },
+      {
+        "checkpoint_files": [
+          {
+            "bytes": 49341,
+            "mtime": 1793222439.122489,
+            "name": "fine_11_g_solve.json"
+          }
+        ],
+        "job_directory_exists": true,
+        "job_id": "000-qfilm04-fine-01g-05-rf16mm_f2.8-20261028",
+        "receipt": {
+          "claimed_at": 1793222091.6876879,
+          "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+          "finished_at": 1793222441.4105096,
+          "returncode": 0,
+          "state": "finished"
+        }
+      },
+      {
+        "checkpoint_files": [
+          {
+            "bytes": 46309,
+            "mtime": 1793223244.5207489,
+            "name": "fine_11_g_solve.json"
+          }
+        ],
+        "job_directory_exists": true,
+        "job_id": "000-qfilm04-fine-01g-06-rf24mm_f1.8-20261028",
+        "receipt": {
+          "claimed_at": 1793222969.9066024,
+          "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+          "finished_at": 1793223245.9045935,
+          "returncode": 1,
+          "state": "failed"
+        }
+      },
+      {
+        "checkpoint_files": [
+          {
+            "bytes": 96258,
+            "mtime": 1793224324.697258,
+            "name": "fine_11_g_solve.json"
+          }
+        ],
+        "job_directory_exists": true,
+        "job_id": "000-qfilm04-fine-01g-07-rf35mm_f1.8-20261028",
+        "receipt": {
+          "claimed_at": 1793223630.694527,
+          "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+          "finished_at": 1793224326.8708308,
+          "returncode": 0,
+          "state": "finished"
+        }
+      },
+      {
+        "checkpoint_files": [
+          {
+            "bytes": 96515,
+            "mtime": 1793225521.4352937,
+            "name": "fine_11_g_solve.json"
+          }
+        ],
+        "job_directory_exists": true,
+        "job_id": "000-qfilm04-fine-01g-08-rf50mm_f1.8-20261028",
+        "receipt": {
+          "claimed_at": 1793224769.7786982,
+          "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+          "finished_at": 1793225521.9635875,
+          "returncode": 0,
+          "state": "finished"
+        }
+      },
+      {
+        "checkpoint_files": [
+          {
+            "bytes": 95992,
+            "mtime": 1793220198.1798866,
+            "name": "fine_11_g_solve.json"
+          }
+        ],
+        "job_directory_exists": true,
+        "job_id": "000-qfilm04-fine-01g-09-sigma70mm_f2.8-20261028",
+        "receipt": {
+          "claimed_at": 1793218783.586765,
+          "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+          "state": "bridge_error"
+        }
+      },
+      {
+        "checkpoint_files": [
+          {
+            "bytes": 97187,
+            "mtime": 1793226649.3324442,
+            "name": "fine_11_g_solve.json"
+          }
+        ],
+        "job_directory_exists": true,
+        "job_id": "000-qfilm04-fine-01g-10-yongnuo_50mm_f1.8-20261028",
+        "receipt": {
+          "claimed_at": 1793225835.8443604,
+          "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+          "state": "bridge_error"
+        }
+      },
+      {
+        "checkpoint_files": [
+          {
+            "bytes": 27634,
+            "mtime": 1793281077.9537067,
+            "name": "fine_11_c_solve.json"
+          }
+        ],
+        "job_directory_exists": true,
+        "job_id": "000-qfilm04-fine-02c-00-ef100mm_f2.8-20261028",
+        "receipt": {
+          "claimed_at": 1793238867.9634268,
+          "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+          "state": "bridge_error"
+        }
+      },
+      {
+        "checkpoint_files": [
+          {
+            "bytes": 23504,
+            "mtime": 1793281072.016027,
+            "name": "fine_11_c_solve.json"
+          }
+        ],
+        "job_directory_exists": true,
+        "job_id": "000-qfilm04-fine-02c-01-ef35mm_f2.0-20261028",
+        "receipt": {
+          "claimed_at": 1793251491.337835,
+          "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+          "state": "bridge_error"
+        }
+      },
+      {
+        "checkpoint_files": [
+          {
+            "bytes": 11094,
+            "mtime": 1793281085.6858916,
+            "name": "fine_11_c_solve.json"
+          }
+        ],
+        "job_directory_exists": true,
+        "job_id": "000-qfilm04-fine-02c-02-ef40mm_f2.8-20261028",
+        "receipt": {
+          "claimed_at": 1793255981.8944461,
+          "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+          "state": "bridge_error"
+        }
+      },
+      {
+        "checkpoint_files": [],
+        "job_directory_exists": false,
+        "job_id": "000-qfilm04-fine-02c-03-ef50mm_f1.8-20261028"
+      },
+      {
+        "checkpoint_files": [
+          {
+            "bytes": 54084,
+            "mtime": 1793281069.8249855,
+            "name": "fine_11_c_solve.json"
+          }
+        ],
+        "job_directory_exists": true,
+        "job_id": "000-qfilm04-fine-02c-04-ef85mm_f1.8-20261028",
+        "receipt": {
+          "claimed_at": 1793234069.1093717,
+          "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+          "state": "bridge_error"
+        }
+      },
+      {
+        "checkpoint_files": [],
+        "job_directory_exists": false,
+        "job_id": "000-qfilm04-fine-02c-05-rf16mm_f2.8-20261028"
+      },
+      {
+        "checkpoint_files": [],
+        "job_directory_exists": false,
+        "job_id": "000-qfilm04-fine-02c-06-rf24mm_f1.8-20261028"
+      },
+      {
+        "checkpoint_files": [],
+        "job_directory_exists": false,
+        "job_id": "000-qfilm04-fine-02c-07-rf35mm_f1.8-20261028"
+      },
+      {
+        "checkpoint_files": [
+          {
+            "bytes": 41334,
+            "mtime": 1793281062.8647377,
+            "name": "fine_11_c_solve.json"
+          }
+        ],
+        "job_directory_exists": true,
+        "job_id": "000-qfilm04-fine-02c-08-rf50mm_f1.8-20261028",
+        "receipt": {
+          "claimed_at": 1793236265.2686422,
+          "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+          "state": "bridge_error"
+        }
+      },
+      {
+        "checkpoint_files": [],
+        "job_directory_exists": false,
+        "job_id": "000-qfilm04-fine-02c-09-sigma70mm_f2.8-20261028"
+      },
+      {
+        "checkpoint_files": [],
+        "job_directory_exists": false,
+        "job_id": "000-qfilm04-fine-02c-10-yongnuo_50mm_f1.8-20261028"
+      },
+      {
+        "checkpoint_files": [
+          {
+            "bytes": 18104,
+            "mtime": 1793260236.2235832,
+            "name": "qfilm04_real_catalog/11_product_prescriptions_gpu_pilot.json"
+          }
+        ],
+        "job_directory_exists": true,
+        "job_id": "qfilm04-11-real-lens-pilot-20261028-01",
+        "receipt": {
+          "claimed_at": 1793260048.7144701,
+          "code_commit": "be3e65bdb305ddf9f03c7024d6897299ed34fd83",
+          "finished_at": 1793260295.293411,
+          "returncode": 0,
+          "state": "finished"
+        }
+      },
+      {
+        "checkpoint_files": [],
+        "job_directory_exists": false,
+        "job_id": "qfilm04-full-18-real-shard0-20261028-01"
+      },
+      {
+        "checkpoint_files": [],
+        "job_directory_exists": false,
+        "job_id": "qfilm04-full-18-real-shard1-20261028-01"
+      },
+      {
+        "checkpoint_files": [],
+        "job_directory_exists": false,
+        "job_id": "qfilm04-full-18-real-shard2-20261028-01"
+      },
+      {
+        "checkpoint_files": [],
+        "job_directory_exists": false,
+        "job_id": "qfilm04-real-lens-cpu-gpu-parity-20261028-01"
+      },
+      {
+        "checkpoint_files": [
+          {
+            "bytes": 13523,
+            "mtime": 1793273736.7977674,
+            "name": "qfilm04_independent_patents/7_independent_camera_patents_gpu_pilot.json"
+          }
+        ],
+        "job_directory_exists": true,
+        "job_id": "qfilm04-seven-independent-patents-20261028-01",
+        "receipt": {
+          "claimed_at": 1793273511.2126458,
+          "code_commit": "be3e65bdb305ddf9f03c7024d6897299ed34fd83",
+          "state": "bridge_error"
+        }
+      }
+    ]
+  }
+}
