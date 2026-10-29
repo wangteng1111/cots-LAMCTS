@@ -7,13 +7,10 @@
   "env": {},
   "hostname": "aipss-Rack-Server",
   "job_id": "qfilm04-11-real-lens-pilot-20261028-01",
-  "log_tail": "",
   "memory_gb": 0,
-  "pid": 445279,
   "request_sha256": "085d69594af5acd6139cc42552c7239d40d66de85bd5a6cfbf1a820990aa57ea",
   "schema": 1,
   "started_at": 1793260110.7600625,
   "state": "running",
-  "timeout_sec": 1800,
-  "updated_at": 1793260170.8311393
+  "timeout_sec": 1800
 }
