@@ -1,0 +1,15 @@
+{
+  "schema": "Bridge06Deployment-v1",
+  "started_unix": 1793288080.677202,
+  "status": "staged_requires_host_activation",
+  "runtime": "/var/lib/cots-lamcts/runtime/bridge-v06-d22f69ba6ec6",
+  "uid": 997,
+  "code_commit": "d22f69ba6ec69ae0921a24c125b701ad33714fc0",
+  "activation_requires_root": true,
+  "existing_workers_terminated": false,
+  "tests_returncode": 0,
+  "systemd_before": "MainPID=383668\nProtectSystem=strict\nNoNewPrivileges=yes\nKillMode=control-group\nActiveState=active\n",
+  "checkpoints_backed_up": 240,
+  "activation_command": "sudo /usr/bin/python3 /var/lib/cots-lamcts/runtime/bridge-v06-d22f69ba6ec6/scripts/deploy_bridge_v06.py --activate",
+  "sudo_noninteractive": false
+}
