@@ -1,0 +1,9 @@
+{
+  "schema": "Bridge06LocalStageTest-v1",
+  "scope": "local_simulated_permissions_not_workstation",
+  "passed": true,
+  "checkpoint_backup_passed": true,
+  "source_checkpoint_preserved": true,
+  "automatic_activation_not_attempted": true,
+  "bridge_tests": 13
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "Bridge06RecoveryProgress-v1",
+  "code_commit": "d22f69ba6ec69ae0921a24c125b701ad33714fc0",
+  "queue_commit": "2e49ae2cb02f1e88086bd5b7ee7d97449d76c89d",
+  "stage_job_id": "000-000-000-000-000-bridge-v06-stage-20261029-01",
+  "deployment_status": "not_confirmed_no_remote_installation_receipt",
+  "results_tree_observed": "7c9971e05c0c1b890743c72c71e21d5a11fb6286",
+  "new_v06_remote_paths": [],
+  "local_bridge_failure_injection_tests_passed": 13,
+  "local_additional_adoption_tests_passed": 2,
+  "local_staging_simulation_passed": true,
+  "pinned_bootstrap_files_verified": 8,
+  "old_processes_terminated": false,
+  "old_checkpoints_deleted": false,
+  "three_conditions_verified": false,
+  "scientific_thresholds_relaxed": false,
+  "prepared_requests": [
+    "remote/prepared/bridge-v06/000-000-011-qfilm06-ef40-blue-20261029-01.json",
+    "remote/prepared/bridge-v06/000-000-012-qfilm06-ef40-green-20261029-01.json",
+    "remote/prepared/bridge-v06/000-000-013-qfilm06-rf50-red-20261029-01.json"
+  ],
+  "host_recovery_script": "scripts/bootstrap_bridge_v06_host.sh",
+  "host_recovery_command": "sudo bash bootstrap_bridge_v06_host.sh",
+  "activation_note": "Requires workstation administrator execution if the old Bridge cannot stage/activate the upgrade; code publication is not deployment.",
+  "training_eligible": false
+}

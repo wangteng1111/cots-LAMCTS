@@ -1,0 +1,15 @@
+{
+  "schema": "Bridge06AdditionalAdoptionTests-v1",
+  "scope": "local_process_integration_tests",
+  "passed": true,
+  "tests": [
+    {
+      "test": "wrapper_exit_recovery",
+      "passed": true
+    },
+    {
+      "test": "legacy_exit_not_fabricated",
+      "passed": true
+    }
+  ]
+}
