@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1793273511.2126458,
+  "code_commit": "be3e65bdb305ddf9f03c7024d6897299ed34fd83",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm04-seven-independent-patents-20261028-01",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/qfilm04-seven-independent-patents-20261028-01.json",
+  "request_sha256": "9482a6e37e708621552e4b4ac36fd7e927ba0dc3c620124ba9d2f29d5bbae566",
+  "schema": 1,
+  "state": "claimed"
+}
