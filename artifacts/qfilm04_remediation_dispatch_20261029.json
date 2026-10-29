@@ -1,0 +1,20 @@
+{
+  "schema": "Qfilm04RemediationDispatch-v1",
+  "code_commit": "bc73cb4cfee50eb242dd2f498efd91f27b4f2db2",
+  "job_ids": [
+    "000-000-000-qfilm04-remediation-controls-20261029-01",
+    "000-000-001-qfilm04-remediation-ef40-blue-20261029-01",
+    "000-000-002-qfilm04-remediation-ef40-green-20261029-01",
+    "000-000-003-qfilm04-remediation-rf50-red-20261029-01"
+  ],
+  "status": "queued_not_confirmed_executed",
+  "local_unit_tests_passed": 11,
+  "full_11_prescription_validation_completed": false,
+  "training_eligible": false,
+  "physics_certified": false,
+  "notes": [
+    "GPU execution and complete convergence require new immutable remote terminals",
+    "Each real-condition job checks its own pinned unit tests before running",
+    "Second backend replays the first backend actual integration sequence"
+  ]
+}

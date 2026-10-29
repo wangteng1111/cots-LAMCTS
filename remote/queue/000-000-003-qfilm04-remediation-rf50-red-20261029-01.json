@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "job_id": "000-000-003-qfilm04-remediation-rf50-red-20261029-01",
+  "code_commit": "bc73cb4cfee50eb242dd2f498efd91f27b4f2db2",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm04_remediation_run.py",
+    "--mode",
+    "solve",
+    "--case",
+    "rf50-red",
+    "--backends",
+    "g",
+    "c",
+    "--threads",
+    "4",
+    "--block",
+    "32",
+    "--save-full-psf"
+  ],
+  "env": {
+    "OMP_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout_sec": 172800,
+  "memory_gb": 0
+}

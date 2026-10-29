@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "job_id": "000-000-000-qfilm04-remediation-controls-20261029-01",
+  "code_commit": "bc73cb4cfee50eb242dd2f498efd91f27b4f2db2",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm04_remediation_workstation_controls.py"
+  ],
+  "env": {
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout_sec": 7200,
+  "memory_gb": 0
+}
