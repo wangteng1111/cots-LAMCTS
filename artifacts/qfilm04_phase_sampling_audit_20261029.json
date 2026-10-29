@@ -1,0 +1,425 @@
+{
+  "schema": "Qfilm04-actual-integrand-phase-sampling-v1",
+  "source_commit": "911bb9d334fce7e20a4407c4506ac683b52ff246",
+  "full_psf_computed": false,
+  "physics_certified": false,
+  "interpretation": "adjacent unwrapped phase increments diagnose sampled oscillatory quadrature; they are not a rigorous error bound",
+  "detector_window_half_width_um": 320,
+  "cases": [
+    {
+      "name": "ef40mm_f2.8",
+      "source_sha256": "18d8506e0f3a9c77b3a9aa53161b98930d93464e45a419d9b2091293dfa51f79",
+      "wavelength_nm": 430.0,
+      "grids": [
+        {
+          "wavelength_nm": 430.0,
+          "pupil_n": 256,
+          "active_nodes": 51234,
+          "exit_z_mm": 23.60995119792981,
+          "chief_xy_mm": [
+            0.0,
+            0.0
+          ],
+          "points": [
+            {
+              "detector_offset_um": [
+                0.0,
+                0.0
+              ],
+              "adjacent_pairs": 101956,
+              "max_abs_step_cycles": 0.08123277896538639,
+              "p95_abs_step_cycles": 0.07570536705225095,
+              "p99_abs_step_cycles": 0.07777501263376507,
+              "fraction_over_half_cycle": 0.0,
+              "quadrature_weight_fraction_over_half_cycle": 0.0,
+              "fraction_over_quarter_cycle": 0.0
+            },
+            {
+              "detector_offset_um": [
+                310.0,
+                0.0
+              ],
+              "adjacent_pairs": 101956,
+              "max_abs_step_cycles": 1.0762846175059622,
+              "p95_abs_step_cycles": 1.064066212795069,
+              "p99_abs_step_cycles": 1.0734464106064252,
+              "fraction_over_half_cycle": 0.5,
+              "quadrature_weight_fraction_over_half_cycle": 0.5000000000000001,
+              "fraction_over_quarter_cycle": 0.5
+            },
+            {
+              "detector_offset_um": [
+                0.0,
+                310.0
+              ],
+              "adjacent_pairs": 101956,
+              "max_abs_step_cycles": 1.0762846175059622,
+              "p95_abs_step_cycles": 1.064066212795069,
+              "p99_abs_step_cycles": 1.0734464106064252,
+              "fraction_over_half_cycle": 0.5,
+              "quadrature_weight_fraction_over_half_cycle": 0.5000000000000001,
+              "fraction_over_quarter_cycle": 0.5
+            },
+            {
+              "detector_offset_um": [
+                310.0,
+                310.0
+              ],
+              "adjacent_pairs": 101956,
+              "max_abs_step_cycles": 1.0779926827278814,
+              "p95_abs_step_cycles": 1.0716122846266103,
+              "p99_abs_step_cycles": 1.076466272809307,
+              "fraction_over_half_cycle": 1.0,
+              "quadrature_weight_fraction_over_half_cycle": 1.0,
+              "fraction_over_quarter_cycle": 1.0
+            }
+          ],
+          "seconds": 5.198079217000213
+        },
+        {
+          "wavelength_nm": 430.0,
+          "pupil_n": 512,
+          "active_nodes": 204940,
+          "exit_z_mm": 23.60998797193623,
+          "chief_xy_mm": [
+            0.0,
+            0.0
+          ],
+          "points": [
+            {
+              "detector_offset_um": [
+                0.0,
+                0.0
+              ],
+              "adjacent_pairs": 408860,
+              "max_abs_step_cycles": 0.040741376131109064,
+              "p95_abs_step_cycles": 0.03786593447057385,
+              "p99_abs_step_cycles": 0.03891500389113389,
+              "fraction_over_half_cycle": 0.0,
+              "quadrature_weight_fraction_over_half_cycle": 0.0,
+              "fraction_over_quarter_cycle": 0.0
+            },
+            {
+              "detector_offset_um": [
+                310.0,
+                0.0
+              ],
+              "adjacent_pairs": 408860,
+              "max_abs_step_cycles": 0.5381470388524576,
+              "p95_abs_step_cycles": 0.5320704801522425,
+              "p99_abs_step_cycles": 0.5367130526346955,
+              "fraction_over_half_cycle": 0.2997725382771609,
+              "quadrature_weight_fraction_over_half_cycle": 0.2996077725744044,
+              "fraction_over_quarter_cycle": 0.5
+            },
+            {
+              "detector_offset_um": [
+                0.0,
+                310.0
+              ],
+              "adjacent_pairs": 408860,
+              "max_abs_step_cycles": 0.5381470388524576,
+              "p95_abs_step_cycles": 0.5320704801522425,
+              "p99_abs_step_cycles": 0.5367130526346955,
+              "fraction_over_half_cycle": 0.2997725382771609,
+              "quadrature_weight_fraction_over_half_cycle": 0.29960777257440435,
+              "fraction_over_quarter_cycle": 0.5
+            },
+            {
+              "detector_offset_um": [
+                310.0,
+                310.0
+              ],
+              "adjacent_pairs": 408860,
+              "max_abs_step_cycles": 0.538998157511287,
+              "p95_abs_step_cycles": 0.5358170487932057,
+              "p99_abs_step_cycles": 0.5382302286009235,
+              "fraction_over_half_cycle": 0.6000244582497677,
+              "quadrature_weight_fraction_over_half_cycle": 0.599699992910428,
+              "fraction_over_quarter_cycle": 1.0
+            }
+          ],
+          "seconds": 21.360316439000144
+        }
+      ]
+    },
+    {
+      "name": "ef40mm_f2.8",
+      "source_sha256": "18d8506e0f3a9c77b3a9aa53161b98930d93464e45a419d9b2091293dfa51f79",
+      "wavelength_nm": 550.0,
+      "grids": [
+        {
+          "wavelength_nm": 550.0,
+          "pupil_n": 256,
+          "active_nodes": 51314,
+          "exit_z_mm": 23.609951403145885,
+          "chief_xy_mm": [
+            0.0,
+            0.0
+          ],
+          "points": [
+            {
+              "detector_offset_um": [
+                0.0,
+                0.0
+              ],
+              "adjacent_pairs": 102116,
+              "max_abs_step_cycles": 0.03854315870262326,
+              "p95_abs_step_cycles": 0.02969099439042111,
+              "p99_abs_step_cycles": 0.034283490192819954,
+              "fraction_over_half_cycle": 0.0,
+              "quadrature_weight_fraction_over_half_cycle": 0.0,
+              "fraction_over_quarter_cycle": 0.0
+            },
+            {
+              "detector_offset_um": [
+                310.0,
+                0.0
+              ],
+              "adjacent_pairs": 102116,
+              "max_abs_step_cycles": 0.8089770801173017,
+              "p95_abs_step_cycles": 0.8036356990262448,
+              "p99_abs_step_cycles": 0.806418273539748,
+              "fraction_over_half_cycle": 0.5,
+              "quadrature_weight_fraction_over_half_cycle": 0.5,
+              "fraction_over_quarter_cycle": 0.5
+            },
+            {
+              "detector_offset_um": [
+                0.0,
+                310.0
+              ],
+              "adjacent_pairs": 102116,
+              "max_abs_step_cycles": 0.8089770801173017,
+              "p95_abs_step_cycles": 0.8036356990262448,
+              "p99_abs_step_cycles": 0.806418273539748,
+              "fraction_over_half_cycle": 0.5,
+              "quadrature_weight_fraction_over_half_cycle": 0.5000000000000001,
+              "fraction_over_quarter_cycle": 0.5
+            },
+            {
+              "detector_offset_um": [
+                310.0,
+                310.0
+              ],
+              "adjacent_pairs": 102116,
+              "max_abs_step_cycles": 0.8150725360358138,
+              "p95_abs_step_cycles": 0.8076103297971713,
+              "p99_abs_step_cycles": 0.8105577397956722,
+              "fraction_over_half_cycle": 1.0,
+              "quadrature_weight_fraction_over_half_cycle": 1.0,
+              "fraction_over_quarter_cycle": 1.0
+            }
+          ],
+          "seconds": 6.05249589999994
+        },
+        {
+          "wavelength_nm": 550.0,
+          "pupil_n": 512,
+          "active_nodes": 205140,
+          "exit_z_mm": 23.609988023239644,
+          "chief_xy_mm": [
+            0.0,
+            0.0
+          ],
+          "points": [
+            {
+              "detector_offset_um": [
+                0.0,
+                0.0
+              ],
+              "adjacent_pairs": 409256,
+              "max_abs_step_cycles": 0.01952948506118446,
+              "p95_abs_step_cycles": 0.014893051911712973,
+              "p99_abs_step_cycles": 0.017244451142005346,
+              "fraction_over_half_cycle": 0.0,
+              "quadrature_weight_fraction_over_half_cycle": 0.0,
+              "fraction_over_quarter_cycle": 0.0
+            },
+            {
+              "detector_offset_um": [
+                310.0,
+                0.0
+              ],
+              "adjacent_pairs": 409256,
+              "max_abs_step_cycles": 0.4046610869129381,
+              "p95_abs_step_cycles": 0.40183895791295754,
+              "p99_abs_step_cycles": 0.40321679741509797,
+              "fraction_over_half_cycle": 0.0,
+              "quadrature_weight_fraction_over_half_cycle": 0.0,
+              "fraction_over_quarter_cycle": 0.5
+            },
+            {
+              "detector_offset_um": [
+                0.0,
+                310.0
+              ],
+              "adjacent_pairs": 409256,
+              "max_abs_step_cycles": 0.4046610869129381,
+              "p95_abs_step_cycles": 0.40183895791295754,
+              "p99_abs_step_cycles": 0.40321679741509797,
+              "fraction_over_half_cycle": 0.0,
+              "quadrature_weight_fraction_over_half_cycle": 0.0,
+              "fraction_over_quarter_cycle": 0.5
+            },
+            {
+              "detector_offset_um": [
+                310.0,
+                310.0
+              ],
+              "adjacent_pairs": 409256,
+              "max_abs_step_cycles": 0.4077069112895515,
+              "p95_abs_step_cycles": 0.40382806249976966,
+              "p99_abs_step_cycles": 0.4053031739722428,
+              "fraction_over_half_cycle": 0.0,
+              "quadrature_weight_fraction_over_half_cycle": 0.0,
+              "fraction_over_quarter_cycle": 1.0
+            }
+          ],
+          "seconds": 20.763491625999904
+        }
+      ]
+    },
+    {
+      "name": "rf50mm_f1.8",
+      "source_sha256": "da4b28edb742b435a3f9fc45186205157653614816f8438f5bf2d074ac716fae",
+      "wavelength_nm": 670.0,
+      "grids": [
+        {
+          "wavelength_nm": 670.0,
+          "pupil_n": 256,
+          "active_nodes": 51032,
+          "exit_z_mm": 34.00997852296375,
+          "chief_xy_mm": [
+            0.0,
+            0.0
+          ],
+          "points": [
+            {
+              "detector_offset_um": [
+                0.0,
+                0.0
+              ],
+              "adjacent_pairs": 101556,
+              "max_abs_step_cycles": 0.07392742969705068,
+              "p95_abs_step_cycles": 0.039121432063893735,
+              "p99_abs_step_cycles": 0.060249825610617085,
+              "fraction_over_half_cycle": 0.0,
+              "quadrature_weight_fraction_over_half_cycle": 0.0,
+              "fraction_over_quarter_cycle": 0.0
+            },
+            {
+              "detector_offset_um": [
+                310.0,
+                0.0
+              ],
+              "adjacent_pairs": 101556,
+              "max_abs_step_cycles": 1.079703926026923,
+              "p95_abs_step_cycles": 0.9884832851154215,
+              "p99_abs_step_cycles": 1.0347933413018717,
+              "fraction_over_half_cycle": 0.5,
+              "quadrature_weight_fraction_over_half_cycle": 0.5,
+              "fraction_over_quarter_cycle": 0.5
+            },
+            {
+              "detector_offset_um": [
+                0.0,
+                310.0
+              ],
+              "adjacent_pairs": 101556,
+              "max_abs_step_cycles": 1.079703926026923,
+              "p95_abs_step_cycles": 0.9884832851154215,
+              "p99_abs_step_cycles": 1.0347933413018717,
+              "fraction_over_half_cycle": 0.5,
+              "quadrature_weight_fraction_over_half_cycle": 0.5000000000000001,
+              "fraction_over_quarter_cycle": 0.5
+            },
+            {
+              "detector_offset_um": [
+                310.0,
+                310.0
+              ],
+              "adjacent_pairs": 101556,
+              "max_abs_step_cycles": 1.0822510808563948,
+              "p95_abs_step_cycles": 1.0079801969655477,
+              "p99_abs_step_cycles": 1.049335947454233,
+              "fraction_over_half_cycle": 1.0,
+              "quadrature_weight_fraction_over_half_cycle": 1.0,
+              "fraction_over_quarter_cycle": 1.0
+            }
+          ],
+          "seconds": 5.199623716999895
+        },
+        {
+          "wavelength_nm": 670.0,
+          "pupil_n": 512,
+          "active_nodes": 204196,
+          "exit_z_mm": 34.00999463150529,
+          "chief_xy_mm": [
+            0.0,
+            0.0
+          ],
+          "points": [
+            {
+              "detector_offset_um": [
+                0.0,
+                0.0
+              ],
+              "adjacent_pairs": 407372,
+              "max_abs_step_cycles": 0.03803397404385578,
+              "p95_abs_step_cycles": 0.019992398465774386,
+              "p99_abs_step_cycles": 0.030907685915053662,
+              "fraction_over_half_cycle": 0.0,
+              "quadrature_weight_fraction_over_half_cycle": 0.0,
+              "fraction_over_quarter_cycle": 0.0
+            },
+            {
+              "detector_offset_um": [
+                310.0,
+                0.0
+              ],
+              "adjacent_pairs": 407372,
+              "max_abs_step_cycles": 0.5413839991815621,
+              "p95_abs_step_cycles": 0.4943974791446749,
+              "p99_abs_step_cycles": 0.5179753026001253,
+              "fraction_over_half_cycle": 0.034430446864291114,
+              "quadrature_weight_fraction_over_half_cycle": 0.03583635387847191,
+              "fraction_over_quarter_cycle": 0.5
+            },
+            {
+              "detector_offset_um": [
+                0.0,
+                310.0
+              ],
+              "adjacent_pairs": 407372,
+              "max_abs_step_cycles": 0.5413839991815621,
+              "p95_abs_step_cycles": 0.4943974791446749,
+              "p99_abs_step_cycles": 0.5179753026001253,
+              "fraction_over_half_cycle": 0.034430446864291114,
+              "quadrature_weight_fraction_over_half_cycle": 0.0358363538784719,
+              "fraction_over_quarter_cycle": 0.5
+            },
+            {
+              "detector_offset_um": [
+                310.0,
+                310.0
+              ],
+              "adjacent_pairs": 407372,
+              "max_abs_step_cycles": 0.5421695640102371,
+              "p95_abs_step_cycles": 0.5043074629154489,
+              "p99_abs_step_cycles": 0.5255065690483683,
+              "fraction_over_half_cycle": 0.06561079308347162,
+              "quadrature_weight_fraction_over_half_cycle": 0.06829829918229562,
+              "fraction_over_quarter_cycle": 1.0
+            }
+          ],
+          "seconds": 23.20208106400014
+        }
+      ]
+    }
+  ],
+  "torch_version": "2.15.0+cpu",
+  "device": "cpu",
+  "threads": 1,
+  "physical_kernel_sha256": "af8bee658ab3a367aba736de41587ad2c3c22a05ef542abf4d3810f6f3819ef0"
+}
