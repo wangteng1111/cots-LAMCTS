@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "job_id": "000-000-013-qfilm06-zz-real11-99-usability-20261030",
+  "code_commit": "6c9de702f4d13e75156f76ea14224d5d40759b3e",
+  "entrypoint": "validation/qfilm04_real11_collect.py",
+  "args": [],
+  "env": {},
+  "timeout_sec": 3600,
+  "memory_gb": 0
+}
