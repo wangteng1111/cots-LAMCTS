@@ -1,0 +1,58 @@
+{
+  "args": [
+    "validation/qfilm04_reconnect_probe.py",
+    "--nonce",
+    "f97703343d2744acb2cfda47f354c48b"
+  ],
+  "bridge_version": "0.5.0",
+  "code_commit": "34913438766198c7a087349746339af7de406806",
+  "elapsed_sec": 128.05588817596436,
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {
+    "MKL_NUM_THREADS": "2",
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "finished_at": 1793281159.8707845,
+  "hostname": "aipss-Rack-Server",
+  "immutable_job_id": true,
+  "job_id": "000-000-000-000-qfilm04-reconnect-20261029-f9770334",
+  "log_tail": "FRESH_HANDSHAKE {\"schema\": \"Qfilm04FreshReconnect-v1\", \"nonce\": \"f97703343d2744acb2cfda47f354c48b\", \"started_unix\": 1793281091.9705207, \"hostname\": \"aipss-Rack-Server\", \"pid\": 465823, \"python\": \"/var/lib/cots-lamcts/venv/bin/python\", \"cpu_count\": 128, \"job_id\": \"000-000-000-000-qfilm04-reconnect-20261029-f9770334\", \"code_commit_env\": \"34913438766198c7a087349746339af7de406806\", \"state\": \"fresh_challenge_received\", \"training_eligible\": false, \"physics_certified\": false}\nFRESH_RECONNECT_TERMINAL {\"nonce\": \"f97703343d2744acb2cfda47f354c48b\", \"hostname\": \"aipss-Rack-Server\", \"state\": \"tests_passed\", \"finished_unix\": 1793281153.2148273}",
+  "memory_gb": 0,
+  "pid": 465823,
+  "request_sha256": "ff3d3957f18499ffdc34369f6c1e310401aa7a6973239384383cd36f39208d2f",
+  "retry_policy": "new_job_id_required",
+  "returncode": 0,
+  "schema": 1,
+  "started_at": 1793281031.8148963,
+  "state": "finished",
+  "timeout_sec": 1800,
+  "updated_at": 1793281091.8868577,
+  "uploaded_artifacts": [
+    {
+      "path": "controls/controls-checkpoint.json",
+      "size": 3891,
+      "uploaded": true
+    },
+    {
+      "path": "controls/controls-terminal.json",
+      "size": 3989,
+      "uploaded": true
+    },
+    {
+      "path": "fresh-handshake.json",
+      "size": 483,
+      "uploaded": true
+    },
+    {
+      "path": "reconnect-checkpoint.json",
+      "size": 20700,
+      "uploaded": true
+    },
+    {
+      "path": "reconnect-terminal.json",
+      "size": 26555,
+      "uploaded": true
+    }
+  ]
+}
