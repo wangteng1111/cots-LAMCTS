@@ -1,0 +1,16 @@
+{
+  "args": [
+    "validation/qfilm04_secondary_real_lens_pilot.py"
+  ],
+  "code_commit": "be3e65bdb305ddf9f03c7024d6897299ed34fd83",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {},
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm04-seven-independent-patents-20261028-01",
+  "memory_gb": 0,
+  "request_sha256": "9482a6e37e708621552e4b4ac36fd7e927ba0dc3c620124ba9d2f29d5bbae566",
+  "schema": 1,
+  "started_at": 1793273571.3249993,
+  "state": "running",
+  "timeout_sec": 1800
+}
