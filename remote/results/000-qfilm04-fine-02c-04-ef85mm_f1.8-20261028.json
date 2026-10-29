@@ -1,0 +1,31 @@
+{
+  "args": [
+    "validation/qfilm04_fine_11_cpu_gpu.py",
+    "--backend",
+    "c",
+    "--names",
+    "ef85mm_f1.8",
+    "--fields",
+    "3",
+    "--threads",
+    "8"
+  ],
+  "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {
+    "MKL_NUM_THREADS": "8",
+    "OMP_NUM_THREADS": "8",
+    "OPENBLAS_NUM_THREADS": "8"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "000-qfilm04-fine-02c-04-ef85mm_f1.8-20261028",
+  "log_tail": "",
+  "memory_gb": 0,
+  "pid": 427271,
+  "request_sha256": "7e0ba822db2c2cd049579553a0ad7a99a10b94b8fe62a26c683a99d627dd76cf",
+  "schema": 1,
+  "started_at": 1793234130.0869114,
+  "state": "running",
+  "timeout_sec": 172800,
+  "updated_at": 1793234190.1205044
+}
