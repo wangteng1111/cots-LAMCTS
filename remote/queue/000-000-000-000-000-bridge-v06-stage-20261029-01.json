@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "job_id": "000-000-000-000-000-bridge-v06-stage-20261029-01",
+  "code_commit": "d22f69ba6ec69ae0921a24c125b701ad33714fc0",
+  "entrypoint": "scripts/deploy_bridge_v06.py",
+  "args": [],
+  "env": {
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
