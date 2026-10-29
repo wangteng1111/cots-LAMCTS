@@ -1,0 +1,120 @@
+{
+  "schema": "Qfilm04-fine-eleven-camera-v1",
+  "protocol": {
+    "source_commit": "911bb9d334fce7e20a4407c4506ac683b52ff246",
+    "names": [
+      "ef100mm_f2.8"
+    ],
+    "fields_h": [
+      0.0,
+      0.5,
+      1.0
+    ],
+    "wavelengths_nm": [
+      430.0,
+      470.0,
+      510.0,
+      550.0,
+      590.0,
+      630.0,
+      670.0
+    ],
+    "spectral_weights": [
+      0.075,
+      0.125,
+      0.16,
+      0.28,
+      0.16,
+      0.125,
+      0.075
+    ],
+    "frequencies_lpmm": [
+      5.0,
+      10.0,
+      15.0,
+      20.0,
+      30.0,
+      40.0,
+      50.0,
+      60.0,
+      70.0,
+      80.0
+    ],
+    "frame_mm": [
+      36.0,
+      24.0
+    ],
+    "pupil_n": 256,
+    "detector_n": 2560,
+    "detector_pitch_um": 0.25,
+    "support_mm": 0.64,
+    "weight_mode": "sqrt_exit_jac"
+  },
+  "protocol_hash": "17cf42baf4f0139fc37243da869e4acb7ee0b9e993baaca8121de8d8ea9fda75",
+  "variant": "Qfilm0.4-c",
+  "mode": "solve",
+  "device": "cpu",
+  "torch_version": "2.14.0+cu130",
+  "threads": 8,
+  "block": 64,
+  "status": "running",
+  "training_eligible": false,
+  "physics_certified": false,
+  "sampling_converged": false,
+  "manufactured_lens_empirical_validation": false,
+  "cases": [
+    {
+      "name": "ef100mm_f2.8",
+      "fields": [
+        {
+          "index": 0,
+          "field_h": 0.0,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "state": "running",
+              "pixels_completed": 3972928,
+              "pixels_total": 6553600,
+              "elapsed_seconds": 2972.383885842748
+            }
+          ]
+        }
+      ],
+      "state": "running",
+      "source_sha256": "3e1b59d8ef13a3ac5f57c015cd2be4181282950d9752a5a6731ac1ab18155a5a",
+      "provenance": {
+        "identifier": "ef100mm_f2.8",
+        "source": "pinned-vccimaging/DeepLens datasets/lenses/camera",
+        "source_primary_description": "JP 1991-141313 Example 1 (Canon EF100mm f2.8 Macro)",
+        "original_primary_wavelength_nm": 587.0,
+        "comparison_primary_wavelength_nm": 550.0,
+        "published_foclen_mm": 100.03337780917897,
+        "deeplens_paraxial_efl_mm": 100.0045069648107,
+        "fnumber": 2.8944959699637205,
+        "physical_frame_mm": [
+          36.0,
+          24.0
+        ],
+        "not_proven_actual_manufacturing_prescription": true
+      },
+      "baseline_quality_provisional": {
+        "valid": true,
+        "J_task": 0.40622866840987215,
+        "J_area": 0.38772126303263066,
+        "J_tail": 0.46175088454159685,
+        "J_components": [
+          0.3703702082156174,
+          0.07461194239482735,
+          0.18642523287283652,
+          0.011371978677774017
+        ]
+      },
+      "baseline_area_weights": [
+        0.188995361328125,
+        0.506439208984375,
+        0.3045654296875
+      ]
+    }
+  ],
+  "updated_unix": 1793241986.0907216
+}
