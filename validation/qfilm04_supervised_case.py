@@ -8,6 +8,11 @@ from qfilm_convergence_status import CASES,OLD_IDS,verify_pair
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--case',choices=list(CASES),required=True);a=ap.parse_args()
     bridge=Path(os.environ.get('COTS_BRIDGE_ROOT','/var/lib/cots-lamcts'))
+    identity=json.loads((bridge/'state/daemon_identity_v06.json').read_text())
+    proc=Path('/proc')/str(identity['pid'])
+    if (identity['version']!='0.6.0' or (proc/'stat').read_text().rsplit(')',1)[1].split()[19]!=identity['start_ticks']
+        or b'cots_workstation_bridge_v06.py' not in (proc/'cmdline').read_bytes()):
+        raise SystemExit('Bridge v0.6 supervision is required; no computation started')
     source=bridge/'jobs'/OLD_IDS[a.case]/'artifacts'
     try:verified=verify_pair(source,a.case)
     except (OSError,ValueError,KeyError,AssertionError,StopIteration,TypeError,ZeroDivisionError):verified=None

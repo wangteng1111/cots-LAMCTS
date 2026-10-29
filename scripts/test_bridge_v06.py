@@ -122,4 +122,11 @@ class BridgeTests(unittest.TestCase):
         d=q.collect('/nonexistent-bridge-verification-fixture')
         self.assertFalse(d['all_three_verified'])
 
+    def test_prepared_requests_retain_original_validation(self):
+        jid=q.NEW_IDS['ef40-blue'];request={'job_id':jid}
+        with patch.object(b,'ORIGINAL_VALIDATE',return_value={'checked':True}) as check:
+            self.assertTrue(b.validate_request(request,f'remote/prepared/bridge-v06/{jid}.json')['checked'])
+            check.assert_called_once_with(request,f'remote/queue/{jid}.json')
+        with self.assertRaises(ValueError):b.validate_request({'job_id':'unapproved-id'},'remote/prepared/bridge-v06/unapproved-id.json')
+
 if __name__=='__main__':unittest.main(verbosity=2)

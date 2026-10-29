@@ -20,6 +20,15 @@ TERMINAL={'finished','failed','timed_out','stopped','rejected','recovered','reco
 UPLOAD_MARKS={}
 MANAGED=set()
 ADOPT_LOCK=threading.RLock()
+ORIGINAL_VALIDATE=v3.validate_request
+
+def validate_request(obj,path):
+    if path.startswith('remote/prepared/bridge-v06/'):
+        from qfilm_convergence_status import NEW_IDS
+        if obj.get('job_id') not in NEW_IDS.values() or path!=f"remote/prepared/bridge-v06/{obj['job_id']}.json":
+            raise ValueError('unapproved prepared request')
+        return ORIGINAL_VALIDATE(obj,f"remote/queue/{obj['job_id']}.json")
+    return ORIGINAL_VALIDATE(obj,path)
 
 def atomic(path,value):
     path.parent.mkdir(parents=True,exist_ok=True)
@@ -208,7 +217,7 @@ def queue_paths():
     # A live remediation job must finish before launching another full test.
     if any(p['script']=='qfilm04_remediation_run.py' for p in processes):return []
     if time.time()-LAST_SYNC>300:return []
-    out=v3.run(['git','ls-tree','-r','--name-only','origin/main','remote/queue'],cwd=v3.MIRROR,timeout=10)
+    out=v3.run(['git','ls-tree','-r','--name-only','origin/main','remote/queue','remote/prepared/bridge-v06'],cwd=v3.MIRROR,timeout=10)
     selected=os.environ.get('COTS_BRIDGE_QUEUE_INCLUDE',r'.*')
     return sorted(p for p in out.splitlines() if p.endswith('.json') and re.search(selected,Path(p).stem))
 
@@ -260,6 +269,7 @@ def install_patches():
     v4.flush_pending=lambda:(0,0)
     v4.recover_legacy_orphans=observe_adopted
     v4.queue_paths=queue_paths;v3.exact_commit=cached_exact
+    v3.validate_request=validate_request
     v5.already_claimed=cached_claimed
     v4.run_job=run_job
 
@@ -269,6 +279,8 @@ def main():
     try:fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
     except BlockingIOError:raise SystemExit('another v0.6 supervisor is active')
     install_patches();migrate_pending()
+    atomic(v3.STATE/'daemon_identity_v06.json',{'pid':os.getpid(),'version':VERSION,
+        'start_ticks':Path('/proc/self/stat').read_text().rsplit(')',1)[1].split()[19]})
     v3.put_json('remote/health/bridge-v06-start.json',{'bridge_version':VERSION,'timestamp':time.time(),
         'pid':os.getpid(),'hostname':socket.gethostname(),'preserve_existing_workers':True},'bridge v0.6 started')
     threading.Thread(target=publisher,daemon=True).start()
