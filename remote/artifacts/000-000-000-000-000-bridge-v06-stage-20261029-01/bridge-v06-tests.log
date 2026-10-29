@@ -1,0 +1,18 @@
+test_immutable_final_is_not_overwritten (__main__.BridgeTests.test_immutable_final_is_not_overwritten) ... ok
+test_independent_verifier_accepts_consistent_fixture (__main__.BridgeTests.test_independent_verifier_accepts_consistent_fixture) ... ok
+test_latest_observation_coalesces (__main__.BridgeTests.test_latest_observation_coalesces) ... ok
+test_missing_terminal_never_counts_as_pass (__main__.BridgeTests.test_missing_terminal_never_counts_as_pass) ... ok
+test_offline_enqueue_preserves_payload (__main__.BridgeTests.test_offline_enqueue_preserves_payload) ... ok
+test_prepared_requests_retain_original_validation (__main__.BridgeTests.test_prepared_requests_retain_original_validation) ... ok
+test_receipt_survives_network_failure (__main__.BridgeTests.test_receipt_survives_network_failure) ... ok
+test_remote_newer_heartbeat_not_overwritten (__main__.BridgeTests.test_remote_newer_heartbeat_not_overwritten) ... ok
+test_supervisor_keeps_polling_during_network_failure (__main__.BridgeTests.test_supervisor_keeps_polling_during_network_failure) ... ok
+test_terminal_cannot_regress_to_running (__main__.BridgeTests.test_terminal_cannot_regress_to_running) ... ok
+test_verifier_rejects_false_passed_flags (__main__.BridgeTests.test_verifier_rejects_false_passed_flags) ... ok
+test_verifier_rejects_loosened_tolerance (__main__.BridgeTests.test_verifier_rejects_loosened_tolerance) ... ok
+test_worker_persists_actual_failure (__main__.BridgeTests.test_worker_persists_actual_failure) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 1.643s
+
+OK
