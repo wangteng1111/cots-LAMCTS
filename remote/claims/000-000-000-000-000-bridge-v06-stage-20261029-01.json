@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1793288066.205267,
+  "code_commit": "d22f69ba6ec69ae0921a24c125b701ad33714fc0",
+  "entrypoint": "scripts/deploy_bridge_v06.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "000-000-000-000-000-bridge-v06-stage-20261029-01",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/000-000-000-000-000-bridge-v06-stage-20261029-01.json",
+  "request_sha256": "d2b3b42ac463f19d98169f67c9d6fee4f93b3dedbea6ae595865166bf300fb0b",
+  "schema": 1,
+  "state": "claimed"
+}
