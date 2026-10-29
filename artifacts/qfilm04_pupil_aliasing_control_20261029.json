@@ -1,0 +1,82 @@
+{
+  "schema": "Qfilm04-ideal-pupil-quadrature-alias-control-v1",
+  "real_lens_validation": false,
+  "qfilm_physical_kernel_modified": false,
+  "interpretation": "controlled mechanism only; real exit mapping and aberrations require independent convergence",
+  "cases": [
+    {
+      "name": "EF40-associated-fnumber",
+      "wavelength_um": 0.43,
+      "fnumber": 2.8090031745543445,
+      "N256_period_um": 309.21506945494224,
+      "comparison_x_um": [
+        0.0,
+        309.21506945494224
+      ],
+      "analytic_airy_intensity_relative_to_peak": [
+        1.0,
+        2.4453198152883304e-09
+      ],
+      "grid_results": [
+        {
+          "pupil_n": 256,
+          "intensity_relative_to_onaxis": [
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "pupil_n": 512,
+          "intensity_relative_to_onaxis": [
+            1.0,
+            8.648246612036912e-31
+          ]
+        },
+        {
+          "pupil_n": 1024,
+          "intensity_relative_to_onaxis": [
+            1.0,
+            2.3116486160785576e-09
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RF50-associated-fnumber",
+      "wavelength_um": 0.67,
+      "fnumber": 1.8415697057496243,
+      "N256_period_um": 315.8660359301756,
+      "comparison_x_um": [
+        0.0,
+        315.8660359301756
+      ],
+      "analytic_airy_intensity_relative_to_peak": [
+        1.0,
+        2.4453198152883304e-09
+      ],
+      "grid_results": [
+        {
+          "pupil_n": 256,
+          "intensity_relative_to_onaxis": [
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "pupil_n": 512,
+          "intensity_relative_to_onaxis": [
+            1.0,
+            3.112051930735191e-34
+          ]
+        },
+        {
+          "pupil_n": 1024,
+          "intensity_relative_to_onaxis": [
+            1.0,
+            2.3116486160429003e-09
+          ]
+        }
+      ]
+    }
+  ]
+}

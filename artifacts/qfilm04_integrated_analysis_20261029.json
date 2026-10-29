@@ -1,0 +1,402 @@
+{
+  "schema": "Qfilm04-integrated-analysis-v1",
+  "source_summary": "artifacts/qfilm04_workstation_summary_20261029.json",
+  "scope": "Previously published 133 GPU PSFs, not a new execution-status snapshot",
+  "border_band_area_fraction": 0.12109375,
+  "overall_border": {
+    "n": 133,
+    "min": 0.0002636559988604989,
+    "median": 0.06959986489862514,
+    "p95": 0.599609478384005,
+    "max": 0.8505179156035347,
+    "over_1pct": 95,
+    "over_10pct": 57,
+    "over_50pct": 13
+  },
+  "case_border": [
+    {
+      "name": "ef35mm_f2.0",
+      "fno": 2.0851592117730724,
+      "stats": {
+        "n": 14,
+        "min": 0.006538697954315413,
+        "median": 0.05649653841018214,
+        "p95": 0.6621574965581841,
+        "max": 0.7657691818153366,
+        "over_1pct": 12,
+        "over_10pct": 6,
+        "over_50pct": 2
+      },
+      "working_grid_period_um_430": 229.53432603197982,
+      "working_grid_period_um_550": 293.59041701764863,
+      "worst": {
+        "field_h": 0,
+        "wavelength_nm": 630,
+        "border": 0.7657691818153366
+      }
+    },
+    {
+      "name": "ef40mm_f2.8",
+      "fno": 2.8090031745543445,
+      "stats": {
+        "n": 21,
+        "min": 0.0006210920781916675,
+        "median": 0.0027171032725549337,
+        "p95": 0.5247247205472472,
+        "max": 0.5900924581663105,
+        "over_1pct": 8,
+        "over_10pct": 2,
+        "over_50pct": 2
+      },
+      "working_grid_period_um_430": 309.21506945494224,
+      "working_grid_period_um_550": 395.50764697725174,
+      "worst": {
+        "field_h": 0,
+        "wavelength_nm": 430,
+        "border": 0.5900924581663105
+      }
+    },
+    {
+      "name": "ef50mm_f1.8",
+      "fno": 1.838148673996381,
+      "stats": {
+        "n": 21,
+        "min": 0.0018667431374746035,
+        "median": 0.10569309667644382,
+        "p95": 0.5170955884022561,
+        "max": 0.575903449325436,
+        "over_1pct": 19,
+        "over_10pct": 11,
+        "over_50pct": 2
+      },
+      "working_grid_period_um_430": 202.34340603352163,
+      "working_grid_period_um_550": 258.8113332986905,
+      "worst": {
+        "field_h": 0.5,
+        "wavelength_nm": 630,
+        "border": 0.575903449325436
+      }
+    },
+    {
+      "name": "rf16mm_f2.8",
+      "fno": 2.8734825523029213,
+      "stats": {
+        "n": 7,
+        "min": 0.10345251572699174,
+        "median": 0.11252438000440795,
+        "p95": 0.1677434963611581,
+        "max": 0.18652284033790278,
+        "over_1pct": 7,
+        "over_10pct": 7,
+        "over_50pct": 0
+      },
+      "working_grid_period_um_430": 316.3129593575056,
+      "working_grid_period_um_550": 404.5863433642513,
+      "worst": {
+        "field_h": 0,
+        "wavelength_nm": 430,
+        "border": 0.18652284033790278
+      }
+    },
+    {
+      "name": "rf24mm_f1.8",
+      "fno": 2.077578653599792,
+      "stats": {
+        "n": 7,
+        "min": 0.015587193341143453,
+        "median": 0.017999589973291232,
+        "p95": 0.6065361123049084,
+        "max": 0.7936809788323693,
+        "over_1pct": 7,
+        "over_10pct": 2,
+        "over_50pct": 1
+      },
+      "working_grid_period_um_430": 228.6998581882651,
+      "working_grid_period_um_550": 292.5230744268507,
+      "worst": {
+        "field_h": 0,
+        "wavelength_nm": 670,
+        "border": 0.7936809788323693
+      }
+    },
+    {
+      "name": "rf35mm_f1.8",
+      "fno": 1.8857197235151313,
+      "stats": {
+        "n": 21,
+        "min": 0.002655126854874794,
+        "median": 0.08221083102642447,
+        "p95": 0.5951047378986585,
+        "max": 0.832380589158391,
+        "over_1pct": 14,
+        "over_10pct": 10,
+        "over_50pct": 2
+      },
+      "working_grid_period_um_430": 207.58002716454564,
+      "working_grid_period_um_550": 265.5093370709305,
+      "worst": {
+        "field_h": 0,
+        "wavelength_nm": 670,
+        "border": 0.832380589158391
+      }
+    },
+    {
+      "name": "rf50mm_f1.8",
+      "fno": 1.8415697057496243,
+      "stats": {
+        "n": 21,
+        "min": 0.0002636559988604989,
+        "median": 0.09647776317152382,
+        "p95": 0.670558906788348,
+        "max": 0.8505179156035347,
+        "over_1pct": 13,
+        "over_10pct": 10,
+        "over_50pct": 2
+      },
+      "working_grid_period_um_430": 202.71999320891865,
+      "working_grid_period_um_550": 259.2930145695471,
+      "worst": {
+        "field_h": 0,
+        "wavelength_nm": 670,
+        "border": 0.8505179156035347
+      }
+    },
+    {
+      "name": "yongnuo_50mm_f1.8",
+      "fno": 1.7638170742369015,
+      "stats": {
+        "n": 21,
+        "min": 0.0003343135448380589,
+        "median": 0.09502982842251174,
+        "p95": 0.5856157568672905,
+        "max": 0.8214821710517681,
+        "over_1pct": 15,
+        "over_10pct": 9,
+        "over_50pct": 2
+      },
+      "working_grid_period_um_430": 194.1609835319981,
+      "working_grid_period_um_550": 248.34544405255576,
+      "worst": {
+        "field_h": 0,
+        "wavelength_nm": 670,
+        "border": 0.8214821710517681
+      }
+    }
+  ],
+  "by_wavelength": [
+    {
+      "wavelength_nm": 430,
+      "n": 19,
+      "min": 0.0003496994779461165,
+      "median": 0.04594714655411615,
+      "p95": 0.5312614943091534,
+      "max": 0.5900924581663105,
+      "over_1pct": 13,
+      "over_10pct": 5,
+      "over_50pct": 2
+    },
+    {
+      "wavelength_nm": 470,
+      "n": 19,
+      "min": 0.0002636559988604989,
+      "median": 0.01574070515978059,
+      "p95": 0.24362468262789672,
+      "max": 0.37028843525430455,
+      "over_1pct": 12,
+      "over_10pct": 4,
+      "over_50pct": 0
+    },
+    {
+      "wavelength_nm": 510,
+      "n": 19,
+      "min": 0.00032365948896057316,
+      "median": 0.015587193341143453,
+      "p95": 0.1449777407234737,
+      "max": 0.3930608656848353,
+      "over_1pct": 12,
+      "over_10pct": 4,
+      "over_50pct": 0
+    },
+    {
+      "wavelength_nm": 550,
+      "n": 19,
+      "min": 0.0005858279646020784,
+      "median": 0.024997954955923073,
+      "p95": 0.2365855499276962,
+      "max": 0.33629316553456956,
+      "over_1pct": 13,
+      "over_10pct": 6,
+      "over_50pct": 0
+    },
+    {
+      "wavelength_nm": 590,
+      "n": 19,
+      "min": 0.001032249392571376,
+      "median": 0.1117183198832248,
+      "p95": 0.4496853428668749,
+      "max": 0.6063665891120251,
+      "over_1pct": 13,
+      "over_10pct": 10,
+      "over_50pct": 1
+    },
+    {
+      "wavelength_nm": 630,
+      "n": 19,
+      "min": 0.0007786289108333537,
+      "median": 0.27903452316981986,
+      "p95": 0.6800799342910466,
+      "max": 0.7657691818153366,
+      "over_1pct": 16,
+      "over_10pct": 15,
+      "over_50pct": 5
+    },
+    {
+      "wavelength_nm": 670,
+      "n": 19,
+      "min": 0.0006210920781916675,
+      "median": 0.3821838041046771,
+      "p95": 0.8341943218029053,
+      "max": 0.8505179156035347,
+      "over_1pct": 16,
+      "over_10pct": 13,
+      "over_50pct": 5
+    }
+  ],
+  "by_field": [
+    {
+      "field_h": 0,
+      "n": 56,
+      "min": 0.0002636559988604989,
+      "median": 0.01761338776880232,
+      "p95": 0.800631276887219,
+      "max": 0.8505179156035347,
+      "over_1pct": 33,
+      "over_10pct": 21,
+      "over_50pct": 6
+    },
+    {
+      "field_h": 0.5,
+      "n": 42,
+      "min": 0.0006284902527661934,
+      "median": 0.05649653841018214,
+      "p95": 0.59463028884709,
+      "max": 0.670558906788348,
+      "over_1pct": 30,
+      "over_10pct": 15,
+      "over_50pct": 6
+    },
+    {
+      "field_h": 1,
+      "n": 35,
+      "min": 0.001517695782340222,
+      "median": 0.11236632854201721,
+      "p95": 0.4068607081865218,
+      "max": 0.5170955884022561,
+      "over_1pct": 32,
+      "over_10pct": 21,
+      "over_50pct": 1
+    }
+  ],
+  "J_decomposition": [
+    {
+      "name": "ef40mm_f2.8",
+      "J_task": 0.6657720375941858,
+      "J_area": 0.6247996916676998,
+      "J_tail": 0.788689075373644,
+      "area_weighted_components": [
+        0.42101940620859246,
+        0.15217354927888432,
+        0.03194381300754764,
+        0.019662923172675362
+      ],
+      "area_component_shares": [
+        0.6738470134081179,
+        0.2435557368357633,
+        0.051126486510074946,
+        0.03147076324604383
+      ]
+    },
+    {
+      "name": "ef50mm_f1.8",
+      "J_task": 2.525159951853698,
+      "J_area": 2.16901147286478,
+      "J_tail": 3.5936053888204516,
+      "area_weighted_components": [
+        0.8551998216140781,
+        1.2274281499074733,
+        0.030998894719809197,
+        0.05538460662341948
+      ],
+      "area_component_shares": [
+        0.3942809119790178,
+        0.5658928803572969,
+        0.01429171542318611,
+        0.025534492240499206
+      ]
+    },
+    {
+      "name": "rf50mm_f1.8",
+      "J_task": 0.9552481278961769,
+      "J_area": 0.9161735905849501,
+      "J_tail": 1.0724717398298569,
+      "area_weighted_components": [
+        0.7209027376194468,
+        0.1538984648384457,
+        0.03583242668353038,
+        0.005539961443527135
+      ],
+      "area_component_shares": [
+        0.786862604453782,
+        0.16797959078932412,
+        0.039110957848776697,
+        0.0060468469081170866
+      ]
+    },
+    {
+      "name": "yongnuo_50mm_f1.8",
+      "J_task": 0.9633449829162005,
+      "J_area": 0.9233559863507962,
+      "J_tail": 1.0833119726124134,
+      "area_weighted_components": [
+        0.8618984670178937,
+        0.03364937882956285,
+        0.027763357261264044,
+        0.00004478324207559319
+      ],
+      "area_component_shares": [
+        0.9334411426996978,
+        0.03644247649549431,
+        0.030067880288498338,
+        0.00004850051630962123
+      ]
+    }
+  ],
+  "metric_interpretation": {
+    "J_component_order": [
+      "MTF_detail_loss",
+      "lateral_chromatic_chief_span_penalty",
+      "illumination_proxy_penalty",
+      "distortion_penalty"
+    ],
+    "J_task_formula": ".75*J_area+.25*CVaR10percent",
+    "component_shares_apply_to": "J_area, NOT J_task",
+    "boundary_thresholds_are": "diagnostic thresholds, NOT measured physical MTF errors"
+  },
+  "rf35_edge": {
+    "all_7_physical_psfs_complete": true,
+    "baseline_weighted_pupil_fill": 0.16644575270070724,
+    "program_min_color_fill_threshold": 0.2,
+    "interpretation": "engineering rejection criterion; not absence of transmitted field"
+  },
+  "pupil_aliasing_inference": {
+    "status": "hypothesis for real lens results; independently demonstrated only in ideal circular-pupil control",
+    "ideal_uniform_grid_intensity_period": "lambda_um*Fnumber*N",
+    "EF40_430nm_period_um": 309.21506945494224,
+    "RF50_670nm_period_um": 315.8660359301756,
+    "detector_half_width_um": 320,
+    "border_band_from_abs_coordinate_um": 300,
+    "requires_actual_pupil_and_window_convergence": true
+  },
+  "physics_certified": false,
+  "training_eligible": false
+}
