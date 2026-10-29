@@ -26,9 +26,25 @@ def encode(x):
     raise TypeError(type(x).__name__)
 
 def atomic_json(path,data):
+    # Invalid legacy geometric metrics can contain NaN even when a field is
+    # already rejected. Preserve that rejection and write explicit nulls,
+    # rather than losing all completed fine-grid OTFs to a JSON exception.
+    nonfinite=[]
+    def clean(value,where="$"):
+        if isinstance(value,np.ndarray): value=value.tolist()
+        if isinstance(value,np.generic): value=value.item()
+        if isinstance(value,float) and not math.isfinite(value):
+            nonfinite.append(where);return None
+        if isinstance(value,dict): return {k:clean(v,where+"."+str(k)) for k,v in value.items()}
+        if isinstance(value,(tuple,list)): return [clean(v,where+f"[{i}]") for i,v in enumerate(value)]
+        return value
+    payload=clean(data)
+    if nonfinite:
+        payload["serialization_diagnostics"]={"nonfinite_values_written_as_null":nonfinite,
+            "meaning":"missing or invalid numerical metrics; never an accepted finite result"}
     path.parent.mkdir(parents=True,exist_ok=True)
     tmp=path.with_suffix(path.suffix+".tmp")
-    tmp.write_text(json.dumps(data,default=encode,indent=2,allow_nan=False)+"\n")
+    tmp.write_text(json.dumps(payload,default=encode,indent=2,allow_nan=False)+"\n")
     os.replace(tmp,path)
 
 def import_case(root,name):
@@ -110,6 +126,8 @@ def solve_case(p,case,args,device,save):
                 k=80
                 edge=float(arr[:k].sum()+arr[-k:].sum()+arr[k:-k,:k].sum()+arr[k:-k,-k:].sum())
                 otf=coherent_otf_axis(r["psf"],.00025,FREQS)
+                if not np.all(np.isfinite(otf)):
+                    raise ValueError("nonfinite fine-grid OTF")
                 sample.update(state="completed",otf_real=otf.real,otf_imag=otf.imag,
                     mtf=abs(otf),chief_xy_mm=r["center_film_mm"],
                     valid_rays=r["valid_rays"],bad_jacobian_fraction=r["bad_jacobian_fraction"],
@@ -134,11 +152,21 @@ def solve_case(p,case,args,device,save):
     case["propagation_complete"]=all(f.get("complete",False) for f in case["fields"])
     case["all_conditions_attempted"]=True
     if q is not None:
+        bad_metrics=np.where(~np.isfinite(q).all(axis=1))[0]
+        if len(bad_metrics):
+            q[bad_metrics,30]=0.
+            case["nonfinite_baseline_metric_fields"]=bad_metrics.tolist()
         case["Q_image"]=q
         case["quality"]=score_image(q,b["area_weights"])
     else:
         case["quality"]={"valid":False,"J_task":None,"reason":"baseline failed"}
     case["state"]="completed" if case["propagation_complete"] else "completed_with_invalid_samples"
+    completed=[s for f in case["fields"] for s in f["samples"] if s["state"]=="completed"]
+    case["sampling_assessment"]={"sampling_converged":False,
+        "max_border_20um_flux_fraction":max((s["border_20um_flux_fraction"] for s in completed),default=None),
+        "boundary_energy_flag_threshold":.01,
+        "boundary_energy_flagged_samples":sum(s["border_20um_flux_fraction"]>.01 for s in completed),
+        "interpretation":"boundary energy requires independent support and pupil convergence; program validity is not physical certification"}
 
 def main():
     ap=argparse.ArgumentParser(description=__doc__)
@@ -172,6 +200,7 @@ def main():
         if old["protocol_hash"]!=identity or old["mode"]!=args.mode or old["variant"]!=report["variant"]:
             raise ValueError("checkpoint protocol or backend mismatch")
         report=old;report["status"]="running"
+        report.update(threads=args.threads,block=args.block)
     def save():
         report["updated_unix"]=time.time();atomic_json(args.output,report)
     if args.backend=="g" and not torch.cuda.is_available():
