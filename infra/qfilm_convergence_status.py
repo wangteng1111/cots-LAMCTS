@@ -8,8 +8,10 @@ CASES={'ef40-blue':('ef40mm_f2.8',430.,'18d8506e0f3a9c77b3a9aa53161b98930d93464e
 OLD_IDS={case:f'000-000-00{i+1}-qfilm04-remediation-{case}-20261029-01' for i,case in enumerate(CASES)}
 NEW_IDS={case:f'000-000-01{i+1}-qfilm06-{case}-20261029-01' for i,case in enumerate(CASES)}
 
-def verify_pair(root,case):
-    name,wave,source_sha=CASES[case]
+def verify_pair(root,case,*,expected=None,field_h=0.):
+    # Explicit expected data extends the same raw-data checks to the 11-lens
+    # matrix. Existing three-control callers retain their pinned identities.
+    name,wave,source_sha=CASES[case] if expected is None else expected
     summary=json.loads((root/'summary-terminal.json').read_text())
     assert summary['source_commit']=='911bb9d334fce7e20a4407c4506ac683b52ff246'
     record=next(v for v in summary['cases'] if v['id']==case)
@@ -20,7 +22,7 @@ def verify_pair(root,case):
         assert d['state']=='numerically_converged'
         assert all(d['flags'][k] is True for k in ('pupil_converged','support_converged','pitch_converged','joint_converged'))
         p=d['resolved_sampling_plan']
-        assert p['wavelength_nm']==wave and p['field_h']==0 and p['frozen'] is True
+        assert p['wavelength_nm']==wave and p['field_h']==field_h and p['frozen'] is True
         assert p['policy']['pitch_um']==.25
         assert p['model_version']=='qfilm04-fixed-plane-scalar-v3'
         assert p['frequencies_lpmm']==[5.,10.,15.,20.,30.,40.,50.,60.,70.,80.]

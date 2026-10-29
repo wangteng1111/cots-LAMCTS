@@ -1,0 +1,7 @@
+{
+  "schema": "Qfilm04Real11ImplementationValidation-v1",
+  "observed_unix": 1793290617.3799326,
+  "tests_passed": 17,
+  "test_log": ".................\n----------------------------------------------------------------------\nRan 17 tests in 3.826s\n\nOK\n",
+  "scope": "local code and failure-injection tests, not GPU or full PSF validation"
+}
