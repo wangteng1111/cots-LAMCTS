@@ -23,10 +23,13 @@
   },
   "hostname": "aipss-Rack-Server",
   "job_id": "000-000-002-qfilm04-remediation-ef40-green-20261029-01",
+  "log_tail": "",
   "memory_gb": 0,
+  "pid": 458860,
   "request_sha256": "b235cdc0f3db18981ab5f287b3f3826a32fbb8fe5f024b63c7a5a0e693f0b246",
   "schema": 1,
   "started_at": 1793276504.0454369,
   "state": "running",
-  "timeout_sec": 172800
+  "timeout_sec": 172800,
+  "updated_at": 1793276564.1163921
 }
