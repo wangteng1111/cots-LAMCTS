@@ -19,13 +19,10 @@
   },
   "hostname": "aipss-Rack-Server",
   "job_id": "000-qfilm04-fine-02c-08-rf50mm_f1.8-20261028",
-  "log_tail": "Surface dict lacks 'use_ai2'; assuming ai[0]=0 is the 2nd-order coefficient (legacy format).\nSurface dict lacks 'use_ai2'; assuming ai[0]=0 is the 2nd-order coefficient (legacy format).\nPSF_PROGRESS rf50mm_f1.8 0.0 430.0 41472 6553600\nPSF_PROGRESS rf50mm_f1.8 0.0 430.0 85632 6553600\nPSF_PROGRESS rf50mm_f1.8 0.0 430.0 129920 6553600\nPSF_PROGRESS rf50mm_f1.8 0.0 430.0 173504 6553600",
   "memory_gb": 0,
-  "pid": 428788,
   "request_sha256": "0f48200cc847b26a01393b9bb5e7217dd5ca5c4cb6b1e7753b1dc2003f2d10ad",
   "schema": 1,
   "started_at": 1793236325.3755846,
   "state": "running",
-  "timeout_sec": 172800,
-  "updated_at": 1793236566.4472933
+  "timeout_sec": 172800
 }
