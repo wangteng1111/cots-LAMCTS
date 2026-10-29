@@ -1,0 +1,56 @@
+{
+  "all_three_verified": false,
+  "cases": [
+    {
+      "attempts": [
+        {
+          "directory_exists": false,
+          "job_id": "000-000-011-qfilm06-ef40-blue-20261029-01",
+          "state": "no_native_terminal"
+        },
+        {
+          "directory_exists": true,
+          "job_id": "000-000-001-qfilm04-remediation-ef40-blue-20261029-01",
+          "state": "no_native_terminal"
+        }
+      ],
+      "case": "ef40-blue",
+      "verified": false
+    },
+    {
+      "attempts": [
+        {
+          "directory_exists": false,
+          "job_id": "000-000-012-qfilm06-ef40-green-20261029-01",
+          "state": "no_native_terminal"
+        },
+        {
+          "directory_exists": true,
+          "job_id": "000-000-002-qfilm04-remediation-ef40-green-20261029-01",
+          "state": "no_native_terminal"
+        }
+      ],
+      "case": "ef40-green",
+      "verified": false
+    },
+    {
+      "attempts": [
+        {
+          "directory_exists": false,
+          "job_id": "000-000-013-qfilm06-rf50-red-20261029-01",
+          "state": "no_native_terminal"
+        },
+        {
+          "directory_exists": false,
+          "job_id": "000-000-003-qfilm04-remediation-rf50-red-20261029-01",
+          "state": "no_native_terminal"
+        }
+      ],
+      "case": "rf50-red",
+      "verified": false
+    }
+  ],
+  "observed_unix": 1793289948.9310822,
+  "schema": "QfilmThreeIndependentTerminalVerification-v1",
+  "training_eligible": false
+}
