@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "job_id": "000-000-qfilm04-recheck-20261029-01",
+  "code_commit": "ff84cd1e308d64f83ba96c39c7e7b4ed3f78aadb",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm04_workstation_recheck.py"
+  ],
+  "env": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout_sec": 1200,
+  "memory_gb": 0
+}
