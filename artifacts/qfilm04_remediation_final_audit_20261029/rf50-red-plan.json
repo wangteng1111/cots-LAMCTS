@@ -1,0 +1,138 @@
+{
+  "center_mm": [
+    0.0,
+    0.0
+  ],
+  "exit_z_mm": 34.01,
+  "extractor_version": "physical-centers-axis-dtft-v1",
+  "field_h": 0.0,
+  "frame_mm": [
+    36.0,
+    24.0
+  ],
+  "frequencies_lpmm": [
+    5.0,
+    10.0,
+    15.0,
+    20.0,
+    30.0,
+    40.0,
+    50.0,
+    60.0,
+    70.0,
+    80.0
+  ],
+  "frozen": true,
+  "levels": [
+    {
+      "phase_guards": [
+        {
+          "alarm": true,
+          "continuous_pupil_certified": false,
+          "detector_tiles_per_axis": 4,
+          "is_mtf_error_bound": false,
+          "max_neighbor_block_bound_cycles": 1.2577315569201777,
+          "max_sampled_half_step_cycles": 0.5536818335531194,
+          "midpoint_all_transmitted": true,
+          "midpoint_check_passed": false,
+          "midpoint_pairs_checked": 129,
+          "passed": false,
+          "sampled_pair_count": 100120
+        },
+        {
+          "alarm": true,
+          "continuous_pupil_certified": false,
+          "detector_tiles_per_axis": 4,
+          "is_mtf_error_bound": false,
+          "max_neighbor_block_bound_cycles": 1.8496682271763532,
+          "max_sampled_half_step_cycles": 0.8104447219700398,
+          "midpoint_all_transmitted": true,
+          "midpoint_check_passed": false,
+          "midpoint_pairs_checked": 129,
+          "passed": false,
+          "sampled_pair_count": 100120
+        }
+      ],
+      "pupil_n": 256
+    },
+    {
+      "phase_guards": [
+        {
+          "alarm": true,
+          "continuous_pupil_certified": false,
+          "detector_tiles_per_axis": 4,
+          "is_mtf_error_bound": false,
+          "max_neighbor_block_bound_cycles": 0.632415952785892,
+          "max_sampled_half_step_cycles": 0.27811071154539446,
+          "midpoint_all_transmitted": true,
+          "midpoint_check_passed": false,
+          "midpoint_pairs_checked": 129,
+          "passed": false,
+          "sampled_pair_count": 404496
+        },
+        {
+          "alarm": true,
+          "continuous_pupil_certified": false,
+          "detector_tiles_per_axis": 4,
+          "is_mtf_error_bound": false,
+          "max_neighbor_block_bound_cycles": 0.9291495201376264,
+          "max_sampled_half_step_cycles": 0.406290631753051,
+          "midpoint_all_transmitted": true,
+          "midpoint_check_passed": false,
+          "midpoint_pairs_checked": 128,
+          "passed": false,
+          "sampled_pair_count": 404496
+        }
+      ],
+      "pupil_n": 512
+    }
+  ],
+  "model_version": "qfilm04-fixed-plane-scalar-v3",
+  "pilot_geometry": {
+    "active_nodes": 50312,
+    "bad_jacobian_fraction": 0.0,
+    "derivative_stencil_excluded_fraction": 0.014108794741332531,
+    "energy_transport_validated": false,
+    "exit_mapping_orientation": 1,
+    "geometric_pupil_fill": 0.9915286898612976,
+    "input_mapping_fold": false,
+    "input_plane_z_mm": -20.0,
+    "power_units": "unit stop-plane flux density times mm^2; active quadrature only",
+    "pupil_n": 256,
+    "reference_ray_blocked": false,
+    "signed_exit_mapping_fold": false,
+    "source_plane_type": "physical",
+    "transmitted_ray_tube_power": 202.47140703124995,
+    "transport_model": "uniform_stop_flux",
+    "valid_rays": 51032
+  },
+  "plan_hash": "287fc520fd415933d32a1c53ce2f53be26ba38e3724317c90724cd3307154ee2",
+  "planning_device": "cpu",
+  "policy": {
+    "integral_relative_tolerance": 0.005,
+    "joint_mtf_tolerance": 0.005,
+    "kernel": "legacy_deep_ray",
+    "max_bad_jacobian_fraction": 0.02,
+    "max_pair_evaluations": 150000000000000,
+    "midpoint_pairs": 128,
+    "phase_alarm_cycles": 0.5,
+    "phase_target_cycles": 0.25,
+    "phase_tiles_per_axis": 4,
+    "pitch_otf_tolerance": 0.001,
+    "pitch_um": 0.25,
+    "pupil_candidates": [
+      256,
+      512
+    ],
+    "pupil_otf_tolerance": 0.002,
+    "support_candidates_mm": [
+      0.64,
+      0.96
+    ],
+    "support_otf_tolerance": 0.002,
+    "transport_model": "uniform_stop_flux"
+  },
+  "schema": "Qfilm04ResolvedSamplingPlan-v1",
+  "source_hash": "5c5e235d76589499537168316ddb8e1aebeae31d6360d790f399e046442aa9a7",
+  "wavelength_nm": 670.0
+}

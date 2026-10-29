@@ -1,0 +1,52 @@
+{
+  "cases": [
+    {
+      "elapsed_seconds": 86.14539665400025,
+      "field_h": 0.0,
+      "id": "ef40-blue",
+      "name": "ef40mm_f2.8",
+      "plan_file": "ef40-blue-plan.json",
+      "plan_hash": "1e4d7062491013f532e5dba3e3b7198705cf8d8fdebdf635b8cf0ee522aa3e1f",
+      "source_sha256": "18d8506e0f3a9c77b3a9aa53161b98930d93464e45a419d9b2091293dfa51f79",
+      "state": "phase_audit_complete_no_psf_computed",
+      "wavelength_nm": 430.0
+    },
+    {
+      "elapsed_seconds": 63.22371016499983,
+      "field_h": 0.0,
+      "id": "ef40-green",
+      "name": "ef40mm_f2.8",
+      "plan_file": "ef40-green-plan.json",
+      "plan_hash": "27518936bff590087d2044cf1f5e6271ac78b3c12f422ada2c489779a022450f",
+      "source_sha256": "18d8506e0f3a9c77b3a9aa53161b98930d93464e45a419d9b2091293dfa51f79",
+      "state": "phase_audit_complete_no_psf_computed",
+      "wavelength_nm": 550.0
+    },
+    {
+      "elapsed_seconds": 66.54475497900057,
+      "field_h": 0.0,
+      "id": "rf50-red",
+      "name": "rf50mm_f1.8",
+      "plan_file": "rf50-red-plan.json",
+      "plan_hash": "287fc520fd415933d32a1c53ce2f53be26ba38e3724317c90724cd3307154ee2",
+      "source_sha256": "da4b28edb742b435a3f9fc45186205157653614816f8438f5bf2d074ac716fae",
+      "state": "phase_audit_complete_no_psf_computed",
+      "wavelength_nm": 670.0
+    }
+  ],
+  "code_commit": "c585307edac1193db90ef21d465de72568ff7615",
+  "code_files_sha256": {
+    "evaluator/qfilm04.py": "70d06d098a0b7102675eb687ab2e0db89abc454329611197ce89f280eb60820d",
+    "evaluator/qfilm04_evaluate.py": "7b23dc41ffa60ca03733894bc62b290b25a7e34d29215ad546472492558f151e",
+    "evaluator/qfilm04_io.py": "065ea3d181dc86dda5db83aa1214ad1c1296034564e5049fe20cf1bf28b241df",
+    "evaluator/qfilm04_sampling.py": "72ac857324264b171e5e692e94abbcfd46d0fc49b8870b76290ddbf6067faa26",
+    "evaluator/qfilm04_wavefront.py": "263cb94193d64c4f9ca8793bb6248312d8d75c90c97ee078de622b5571ad7daf"
+  },
+  "finished_unix": 1793269625.2177777,
+  "mode": "audit",
+  "physics_certified": false,
+  "schema": "Qfilm04RemediationValidation-v1",
+  "source_commit": "911bb9d334fce7e20a4407c4506ac683b52ff246",
+  "status": "completed",
+  "training_eligible": false
+}

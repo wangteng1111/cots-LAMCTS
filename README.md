@@ -158,10 +158,16 @@ Technical documentation:
 - `docs/workstation_github_bridge_access.md`
 - `docs/workstation_takeover_optv1_meta10k.md`
 - [Qfilm0.4 CPU/GPU variants and 18 photographic-prescription tests](docs/QFILM04_REAL_LENS_CPU_VALIDATION_20261028.md)
+- [Qfilm0.4 convergence-gated implementation and current validation](docs/QFILM04_REMEDIATION_IMPLEMENTATION_20261029.md)
 
 The latest fixed-film physical Huygens evaluator is **Qfilm0.4**:
 `python -m evaluator.qfilm04 -c` selects CPU and `-g` selects CUDA GPU,
 with the same physical model. Supply `--prescription` to evaluate a lens.
+The default now uses a 0.25 um detector grid, a frozen CPU/GPU sampling plan,
+unwrapped-phase guards and pupil/window/pitch/joint convergence gates. Missing
+convergence gives `J_task=null`. `--legacy-fixed-grid` (API `convergence=None`)
+explicitly replays the historical fixed-grid path. Actual requested-frequency
+complex OTF is computed directly from raw intensity projections.
 The 18-candidate CPU pilot has executed; photographic PSF/MTF accuracy remains
 uncertified because detector sampling, window support and independent references
 have not converged. Keep `training_eligible=False`.

@@ -7,8 +7,11 @@ No claim that a real aberrated photographic lens equals an Airy PSF.
 """
 import argparse,json
 from pathlib import Path
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 import numpy as np
 from scipy.special import j1
+from evaluator.qfilm04_wavefront import otf_from_projections,EXTRACTOR_VERSION
 
 F=np.array([5.,10.,15.,20.,30.,40.,50.,60.,70.,80.])
 
@@ -20,8 +23,7 @@ def sampled(wave_nm,fnumber,pitch_um):
     psf=np.ones_like(u)
     np.divide(2*j1(u),u,out=psf,where=u!=0)
     psf*=psf
-    projection=psf.sum(axis=0);projection/=projection.sum()
-    return np.abs(np.exp(-2j*np.pi*F[:,None]*x[None,:])@projection)
+    return np.abs(otf_from_projections(psf.sum(0),psf.sum(1),pitch,F)[:,0])
 
 def main():
     ap=argparse.ArgumentParser(description=__doc__)
@@ -32,6 +34,7 @@ def main():
     if not np.isfinite(args.pitch_um) or args.pitch_um<=0:
         ap.error("pitch must be finite and positive")
     out={"schema":"Qfilm04-analytic-Airy-image-sampling-control-v2",
+         "production_extractor_version":EXTRACTOR_VERSION,
          "detector_pitch_um":args.pitch_um,"detector_n":int(round(640./args.pitch_um)),
          "frequency_lpmm":F.tolist(),"physical_support_mm":.64,"cases":[]}
     for w in (550.,670.):

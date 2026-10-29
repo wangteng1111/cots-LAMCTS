@@ -1,0 +1,56 @@
+{
+  "cases": [
+    {
+      "active_quadrature_power": 3.09716796875,
+      "expected_power": 3.141592653589793,
+      "field_h": 0.0,
+      "orientation": 1,
+      "pupil_n": 256,
+      "relative_error": 0.014140816375105319
+    },
+    {
+      "active_quadrature_power": 3.11956787109375,
+      "expected_power": 3.141592653589793,
+      "field_h": 0.0,
+      "orientation": 1,
+      "pupil_n": 512,
+      "relative_error": 0.00701070600953823
+    },
+    {
+      "active_quadrature_power": 3.130706787109375,
+      "expected_power": 3.141592653589793,
+      "field_h": 0.0,
+      "orientation": 1,
+      "pupil_n": 1024,
+      "relative_error": 0.0034650789203938327
+    },
+    {
+      "active_quadrature_power": 3.0271427554692365,
+      "expected_power": 3.070563023350625,
+      "field_h": 1.0,
+      "orientation": 1,
+      "pupil_n": 256,
+      "relative_error": 0.014140816375104996
+    },
+    {
+      "active_quadrature_power": 3.049036208710156,
+      "expected_power": 3.070563023350625,
+      "field_h": 1.0,
+      "orientation": 1,
+      "pupil_n": 512,
+      "relative_error": 0.007010706009537876
+    },
+    {
+      "active_quadrature_power": 3.059923280144673,
+      "expected_power": 3.070563023350625,
+      "field_h": 1.0,
+      "orientation": 1,
+      "pupil_n": 1024,
+      "relative_error": 0.0034650789203934185
+    }
+  ],
+  "fine_grid_control_passed": true,
+  "general_transport_validated": false,
+  "schema": "Qfilm04LosslessInputAreaControls-v1",
+  "scope": "neutral planar surfaces; parallel rays; geometrical flux only; no diffraction closure"
+}

@@ -1,0 +1,18 @@
+{
+  "elapsed_seconds": 2.117372989654541,
+  "errors": 0,
+  "failures": 0,
+  "passed": true,
+  "schema": "Qfilm04RemediationUnitTests-v1",
+  "source_files_sha256": {
+    "evaluator/qfilm04.py": "70d06d098a0b7102675eb687ab2e0db89abc454329611197ce89f280eb60820d",
+    "evaluator/qfilm04_evaluate.py": "6ccf4e40abafc56067b603c51eeba50966cf381f3b8efcbe956a979c9cbf11db",
+    "evaluator/qfilm04_io.py": "065ea3d181dc86dda5db83aa1214ad1c1296034564e5049fe20cf1bf28b241df",
+    "evaluator/qfilm04_sampling.py": "653cc6cbb7a66450bb55ff07bbbf452b40f511302f26ae7f15127738961a3c84",
+    "evaluator/qfilm04_wavefront.py": "0a453e159f9cfaed78fdf20b3286f530017df8148edf42677e0574dd2a450e04",
+    "validation/qfilm04_remediation_tests.py": "3cdfb41125c3031b8e650ee08e5701f39d5b95865320fb50f1805ba4e4069d79"
+  },
+  "tests_run": 11,
+  "training_eligible": false,
+  "transcript": "test_block_phase_bound_contains_random_points (validation.qfilm04_remediation_tests.RemediationTests.test_block_phase_bound_contains_random_points) ... ok\ntest_complex_extractor_against_two_dimensional_sum (validation.qfilm04_remediation_tests.RemediationTests.test_complex_extractor_against_two_dimensional_sum) ... ok\ntest_final_evaluator_never_returns_stale_fft_mtf (validation.qfilm04_remediation_tests.RemediationTests.test_final_evaluator_never_returns_stale_fft_mtf) ... ok\ntest_immutable_terminal_and_nonfinite (validation.qfilm04_remediation_tests.RemediationTests.test_immutable_terminal_and_nonfinite) ... ok\ntest_no_gpu_fallback (validation.qfilm04_remediation_tests.RemediationTests.test_no_gpu_fallback) ... ok\ntest_plan_source_and_policy_tamper_rejected (validation.qfilm04_remediation_tests.RemediationTests.test_plan_source_and_policy_tamper_rejected) ... ok\ntest_raw_projection_area_and_direct_kernel (validation.qfilm04_remediation_tests.RemediationTests.test_raw_projection_area_and_direct_kernel) ... ok\ntest_resource_exhaustion_never_certifies (validation.qfilm04_remediation_tests.RemediationTests.test_resource_exhaustion_never_certifies) ... ok\ntest_second_execution_replays_actual_first_device_grids (validation.qfilm04_remediation_tests.RemediationTests.test_second_execution_replays_actual_first_device_grids) ... ok\ntest_signed_mapping_orientation_and_fold (validation.qfilm04_remediation_tests.RemediationTests.test_signed_mapping_orientation_and_fold) ... ok\ntest_two_color_physical_translation (validation.qfilm04_remediation_tests.RemediationTests.test_two_color_physical_translation) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 2.117s\n\nOK\n"
+}
