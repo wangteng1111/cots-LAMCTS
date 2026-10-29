@@ -1,0 +1,8 @@
+{
+  "schema": "Bridge06Validation-v1",
+  "tests": 12,
+  "passed": true,
+  "errors": 0,
+  "failures": 0,
+  "transcript": "test_immutable_final_is_not_overwritten (bridge_tests.BridgeTests.test_immutable_final_is_not_overwritten) ... ok\ntest_independent_verifier_accepts_consistent_fixture (bridge_tests.BridgeTests.test_independent_verifier_accepts_consistent_fixture) ... ok\ntest_latest_observation_coalesces (bridge_tests.BridgeTests.test_latest_observation_coalesces) ... ok\ntest_missing_terminal_never_counts_as_pass (bridge_tests.BridgeTests.test_missing_terminal_never_counts_as_pass) ... ok\ntest_offline_enqueue_preserves_payload (bridge_tests.BridgeTests.test_offline_enqueue_preserves_payload) ... ok\ntest_receipt_survives_network_failure (bridge_tests.BridgeTests.test_receipt_survives_network_failure) ... ok\ntest_remote_newer_heartbeat_not_overwritten (bridge_tests.BridgeTests.test_remote_newer_heartbeat_not_overwritten) ... ok\ntest_supervisor_keeps_polling_during_network_failure (bridge_tests.BridgeTests.test_supervisor_keeps_polling_during_network_failure) ... ok\ntest_terminal_cannot_regress_to_running (bridge_tests.BridgeTests.test_terminal_cannot_regress_to_running) ... ok\ntest_verifier_rejects_false_passed_flags (bridge_tests.BridgeTests.test_verifier_rejects_false_passed_flags) ... ok\ntest_verifier_rejects_loosened_tolerance (bridge_tests.BridgeTests.test_verifier_rejects_loosened_tolerance) ... ok\ntest_worker_persists_actual_failure (bridge_tests.BridgeTests.test_worker_persists_actual_failure) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 1.668s\n\nOK\n"
+}
