@@ -2,10 +2,10 @@
   "message": [
     "ef40-blue",
     "g",
-    2032768,
+    2047296,
     6553600
   ],
-  "sequence": 305,
+  "sequence": 306,
   "state": "running",
-  "updated_unix": 1793302656.7591488
+  "updated_unix": 1793302686.7834387
 }
