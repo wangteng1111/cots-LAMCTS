@@ -1,0 +1,331 @@
+{
+  "schema": "Qfilm04-workstation-recheck-v1",
+  "observed_unix": 1793241991.990535,
+  "hostname": "aipss-Rack-Server",
+  "torch_version": "2.14.0+cu130",
+  "cuda_available": true,
+  "cpu_count": 128,
+  "job_reports": [
+    {
+      "job_id": "000-qfilm04-fine-01g-00-ef100mm_f2.8-20261028",
+      "backend": "g",
+      "local_checkpoint_exists": true,
+      "checkpoint_mtime": 1793216657.3016496,
+      "report_status": "finished",
+      "completed_psfs": 21,
+      "invalid_samples": 0,
+      "active_samples": [],
+      "recovered_artifact": "recovered/000-qfilm04-fine-01g-00-ef100mm_f2.8-20261028.json",
+      "local_receipt_state": "bridge_error",
+      "receipt_error": "RuntimeError(\"command failed (128): ['git', 'fetch', '--prune', '--tags', 'origin']\\nfatal: unable to access 'https://github.com/wangteng1111/cots-LAMCTS.git/': Recv failure: Connection reset by peer\\n\")"
+    },
+    {
+      "job_id": "000-qfilm04-fine-01g-01-ef35mm_f2.0-20261028",
+      "backend": "g",
+      "local_checkpoint_exists": true,
+      "checkpoint_mtime": 1793217312.9322193,
+      "report_status": "finished",
+      "completed_psfs": 14,
+      "invalid_samples": 7,
+      "active_samples": [],
+      "recovered_artifact": "recovered/000-qfilm04-fine-01g-01-ef35mm_f2.0-20261028.json",
+      "local_receipt_state": "bridge_error",
+      "receipt_error": "RuntimeError(\"command failed (128): ['git', 'fetch', '--prune', '--tags', 'origin']\\nfatal: unable to access 'https://github.com/wangteng1111/cots-LAMCTS.git/': SSL connection timeout\\n\")"
+    },
+    {
+      "job_id": "000-qfilm04-fine-01g-02-ef40mm_f2.8-20261028",
+      "backend": "g",
+      "local_checkpoint_exists": true,
+      "checkpoint_mtime": 1793220533.7225072,
+      "report_status": "finished",
+      "completed_psfs": 21,
+      "invalid_samples": 0,
+      "active_samples": [],
+      "recovered_artifact": "recovered/000-qfilm04-fine-01g-02-ef40mm_f2.8-20261028.json",
+      "local_receipt_state": "finished",
+      "receipt_error": null
+    },
+    {
+      "job_id": "000-qfilm04-fine-01g-03-ef50mm_f1.8-20261028",
+      "backend": "g",
+      "local_checkpoint_exists": true,
+      "checkpoint_mtime": 1793221695.7597773,
+      "report_status": "finished",
+      "completed_psfs": 21,
+      "invalid_samples": 0,
+      "active_samples": [],
+      "recovered_artifact": "recovered/000-qfilm04-fine-01g-03-ef50mm_f1.8-20261028.json",
+      "local_receipt_state": "finished",
+      "receipt_error": null
+    },
+    {
+      "job_id": "000-qfilm04-fine-01g-04-ef85mm_f1.8-20261028",
+      "backend": "g",
+      "local_checkpoint_exists": true,
+      "checkpoint_mtime": 1793214880.89867,
+      "report_status": "finished",
+      "completed_psfs": 21,
+      "invalid_samples": 0,
+      "active_samples": [],
+      "recovered_artifact": "recovered/000-qfilm04-fine-01g-04-ef85mm_f1.8-20261028.json",
+      "local_receipt_state": "bridge_error",
+      "receipt_error": "RuntimeError(\"command failed (128): ['git', 'fetch', '--prune', '--tags', 'origin']\\nfatal: unable to access 'https://github.com/wangteng1111/cots-LAMCTS.git/': SSL connection timeout\\n\")"
+    },
+    {
+      "job_id": "000-qfilm04-fine-01g-05-rf16mm_f2.8-20261028",
+      "backend": "g",
+      "local_checkpoint_exists": true,
+      "checkpoint_mtime": 1793222439.122489,
+      "report_status": "finished",
+      "completed_psfs": 7,
+      "invalid_samples": 14,
+      "active_samples": [],
+      "recovered_artifact": "recovered/000-qfilm04-fine-01g-05-rf16mm_f2.8-20261028.json",
+      "local_receipt_state": "finished",
+      "receipt_error": null
+    },
+    {
+      "job_id": "000-qfilm04-fine-01g-06-rf24mm_f1.8-20261028",
+      "backend": "g",
+      "local_checkpoint_exists": true,
+      "checkpoint_mtime": 1793223244.5207489,
+      "report_status": "running",
+      "completed_psfs": 7,
+      "invalid_samples": 14,
+      "active_samples": [],
+      "recovered_artifact": "recovered/000-qfilm04-fine-01g-06-rf24mm_f1.8-20261028.json",
+      "local_receipt_state": "failed",
+      "receipt_error": null
+    },
+    {
+      "job_id": "000-qfilm04-fine-01g-07-rf35mm_f1.8-20261028",
+      "backend": "g",
+      "local_checkpoint_exists": true,
+      "checkpoint_mtime": 1793224324.697258,
+      "report_status": "finished",
+      "completed_psfs": 21,
+      "invalid_samples": 0,
+      "active_samples": [],
+      "recovered_artifact": "recovered/000-qfilm04-fine-01g-07-rf35mm_f1.8-20261028.json",
+      "local_receipt_state": "finished",
+      "receipt_error": null
+    },
+    {
+      "job_id": "000-qfilm04-fine-01g-08-rf50mm_f1.8-20261028",
+      "backend": "g",
+      "local_checkpoint_exists": true,
+      "checkpoint_mtime": 1793225521.4352937,
+      "report_status": "finished",
+      "completed_psfs": 21,
+      "invalid_samples": 0,
+      "active_samples": [],
+      "recovered_artifact": "recovered/000-qfilm04-fine-01g-08-rf50mm_f1.8-20261028.json",
+      "local_receipt_state": "finished",
+      "receipt_error": null
+    },
+    {
+      "job_id": "000-qfilm04-fine-01g-09-sigma70mm_f2.8-20261028",
+      "backend": "g",
+      "local_checkpoint_exists": true,
+      "checkpoint_mtime": 1793220198.1798866,
+      "report_status": "finished",
+      "completed_psfs": 21,
+      "invalid_samples": 0,
+      "active_samples": [],
+      "recovered_artifact": "recovered/000-qfilm04-fine-01g-09-sigma70mm_f2.8-20261028.json",
+      "local_receipt_state": "bridge_error",
+      "receipt_error": "RuntimeError(\"command failed (128): ['git', 'fetch', '--prune', '--tags', 'origin']\\nfatal: unable to access 'https://github.com/wangteng1111/cots-LAMCTS.git/': SSL connection timeout\\n\")"
+    },
+    {
+      "job_id": "000-qfilm04-fine-01g-10-yongnuo_50mm_f1.8-20261028",
+      "backend": "g",
+      "local_checkpoint_exists": true,
+      "checkpoint_mtime": 1793226649.3324442,
+      "report_status": "finished",
+      "completed_psfs": 21,
+      "invalid_samples": 0,
+      "active_samples": [],
+      "recovered_artifact": "recovered/000-qfilm04-fine-01g-10-yongnuo_50mm_f1.8-20261028.json",
+      "local_receipt_state": "bridge_error",
+      "receipt_error": "RuntimeError(\"command failed (128): ['git', 'fetch', '--prune', '--tags', 'origin']\\nfatal: unable to access 'https://github.com/wangteng1111/cots-LAMCTS.git/': gnutls_handshake() failed: The TLS connection was non-properly terminated.\\n\")"
+    },
+    {
+      "job_id": "000-qfilm04-fine-02c-00-ef100mm_f2.8-20261028",
+      "backend": "c",
+      "local_checkpoint_exists": true,
+      "checkpoint_mtime": 1793241986.0916293,
+      "report_status": "running",
+      "completed_psfs": 0,
+      "invalid_samples": 0,
+      "active_samples": [
+        {
+          "wavelength_nm": 430.0,
+          "pixels_completed": 3972928,
+          "pixels_total": 6553600,
+          "elapsed_seconds": 2972.383885842748
+        }
+      ],
+      "recovered_artifact": "recovered/000-qfilm04-fine-02c-00-ef100mm_f2.8-20261028.json",
+      "local_receipt_state": "bridge_error",
+      "receipt_error": "RuntimeError(\"command failed (128): ['git', 'fetch', '--prune', '--tags', 'origin']\\nfatal: unable to access 'https://github.com/wangteng1111/cots-LAMCTS.git/': SSL connection timeout\\n\")"
+    },
+    {
+      "job_id": "000-qfilm04-fine-02c-01-ef35mm_f2.0-20261028",
+      "backend": "c",
+      "local_checkpoint_exists": false
+    },
+    {
+      "job_id": "000-qfilm04-fine-02c-02-ef40mm_f2.8-20261028",
+      "backend": "c",
+      "local_checkpoint_exists": false
+    },
+    {
+      "job_id": "000-qfilm04-fine-02c-03-ef50mm_f1.8-20261028",
+      "backend": "c",
+      "local_checkpoint_exists": false
+    },
+    {
+      "job_id": "000-qfilm04-fine-02c-04-ef85mm_f1.8-20261028",
+      "backend": "c",
+      "local_checkpoint_exists": true,
+      "checkpoint_mtime": 1793241963.6478992,
+      "report_status": "running",
+      "completed_psfs": 1,
+      "invalid_samples": 0,
+      "active_samples": [
+        {
+          "wavelength_nm": 470.0,
+          "pixels_completed": 5601152,
+          "pixels_total": 6553600,
+          "elapsed_seconds": 3662.622280041687
+        }
+      ],
+      "recovered_artifact": "recovered/000-qfilm04-fine-02c-04-ef85mm_f1.8-20261028.json",
+      "local_receipt_state": "bridge_error",
+      "receipt_error": "RuntimeError(\"command failed (128): ['git', 'fetch', '--prune', '--tags', 'origin']\\nfatal: unable to access 'https://github.com/wangteng1111/cots-LAMCTS.git/': Recv failure: Connection reset by peer\\n\")"
+    },
+    {
+      "job_id": "000-qfilm04-fine-02c-05-rf16mm_f2.8-20261028",
+      "backend": "c",
+      "local_checkpoint_exists": false
+    },
+    {
+      "job_id": "000-qfilm04-fine-02c-06-rf24mm_f1.8-20261028",
+      "backend": "c",
+      "local_checkpoint_exists": false
+    },
+    {
+      "job_id": "000-qfilm04-fine-02c-07-rf35mm_f1.8-20261028",
+      "backend": "c",
+      "local_checkpoint_exists": false
+    },
+    {
+      "job_id": "000-qfilm04-fine-02c-08-rf50mm_f1.8-20261028",
+      "backend": "c",
+      "local_checkpoint_exists": true,
+      "checkpoint_mtime": 1793241965.7659485,
+      "report_status": "running",
+      "completed_psfs": 1,
+      "invalid_samples": 0,
+      "active_samples": [
+        {
+          "wavelength_nm": 470.0,
+          "pixels_completed": 1368192,
+          "pixels_total": 6553600,
+          "elapsed_seconds": 930.6157147670165
+        }
+      ],
+      "recovered_artifact": "recovered/000-qfilm04-fine-02c-08-rf50mm_f1.8-20261028.json",
+      "local_receipt_state": "bridge_error",
+      "receipt_error": "RuntimeError(\"command failed (128): ['git', 'fetch', '--prune', '--tags', 'origin']\\nfatal: unable to access 'https://github.com/wangteng1111/cots-LAMCTS.git/': SSL connection timeout\\n\")"
+    },
+    {
+      "job_id": "000-qfilm04-fine-02c-09-sigma70mm_f2.8-20261028",
+      "backend": "c",
+      "local_checkpoint_exists": false
+    },
+    {
+      "job_id": "000-qfilm04-fine-02c-10-yongnuo_50mm_f1.8-20261028",
+      "backend": "c",
+      "local_checkpoint_exists": false
+    }
+  ],
+  "known_optical_processes": [
+    {
+      "pid": 427271,
+      "argv": "/var/lib/cots-lamcts/venv/bin/python -u /var/lib/cots-lamcts/jobs/000-qfilm04-fine-02c-04-ef85mm_f1.8-20261028/src/validation/qfilm04_fine_11_cpu_gpu.py --backend c --names ef85mm_f1.8 --fields 3 --threads 8 "
+    },
+    {
+      "pid": 428788,
+      "argv": "/var/lib/cots-lamcts/venv/bin/python -u /var/lib/cots-lamcts/jobs/000-qfilm04-fine-02c-08-rf50mm_f1.8-20261028/src/validation/qfilm04_fine_11_cpu_gpu.py --backend c --names rf50mm_f1.8 --fields 3 --threads 8 "
+    },
+    {
+      "pid": 430552,
+      "argv": "/var/lib/cots-lamcts/venv/bin/python -u /var/lib/cots-lamcts/jobs/000-qfilm04-fine-02c-00-ef100mm_f2.8-20261028/src/validation/qfilm04_fine_11_cpu_gpu.py --backend c --names ef100mm_f2.8 --fields 3 --threads 8 "
+    }
+  ],
+  "bridge_processes": [
+    {
+      "pid": 383668
+    }
+  ],
+  "physics_certified": false,
+  "training_eligible": false,
+  "gpu_devices": [
+    {
+      "index": 0,
+      "name": "NVIDIA GeForce RTX 5090",
+      "total_memory_bytes": 33670758400
+    },
+    {
+      "index": 1,
+      "name": "NVIDIA GeForce RTX 5090",
+      "total_memory_bytes": 33670758400
+    }
+  ],
+  "arithmetic_tile_probe": {
+    "lens": "ef40mm_f2.8",
+    "source_sha256": "18d8506e0f3a9c77b3a9aa53161b98930d93464e45a419d9b2091293dfa51f79",
+    "wavelength_nm": 550.0,
+    "field_h": 0.0,
+    "pupil_n": 256,
+    "pixel_n": 16,
+    "pixel_pitch_um": 0.25,
+    "support_mm": 0.004,
+    "scope": "identical ray/phase/integration arithmetic on a small detector tile only",
+    "full_psf_mtf_validation": false,
+    "devices": {
+      "c": {
+        "status": "completed",
+        "seconds": 4.553686019964516,
+        "psf_sum": 1.0,
+        "valid_rays": 51314,
+        "device": "cpu"
+      },
+      "g": {
+        "status": "completed",
+        "seconds": 1.7299096705392003,
+        "psf_sum": 1.0,
+        "valid_rays": 51314,
+        "device": "cuda:0"
+      }
+    },
+    "max_abs_normalized_tile_psf_difference": 3.162053952010524e-14,
+    "arithmetic_parity_passed": true
+  },
+  "rf24_report_recovery": {
+    "status": "completed",
+    "quality": {
+      "valid": false,
+      "J_task": null,
+      "invalid_fields": [
+        1,
+        2
+      ]
+    },
+    "nonfinite_baseline_metric_fields": [
+      2
+    ],
+    "fine_psfs_recomputed": 0
+  }
+}
