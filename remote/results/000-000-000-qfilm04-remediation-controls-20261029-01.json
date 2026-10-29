@@ -11,13 +11,10 @@
   },
   "hostname": "aipss-Rack-Server",
   "job_id": "000-000-000-qfilm04-remediation-controls-20261029-01",
-  "log_tail": "",
   "memory_gb": 0,
-  "pid": 463889,
   "request_sha256": "3c3b45706f7d8223f4e5909725eb0712458f256fbb42543c66a838640b9a404a",
   "schema": 1,
   "started_at": 1793279691.2144253,
   "state": "running",
-  "timeout_sec": 7200,
-  "updated_at": 1793279751.2853858
+  "timeout_sec": 7200
 }
