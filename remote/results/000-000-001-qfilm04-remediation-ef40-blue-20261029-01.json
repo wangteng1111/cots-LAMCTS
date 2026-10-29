@@ -1,0 +1,32 @@
+{
+  "args": [
+    "validation/qfilm04_remediation_run.py",
+    "--mode",
+    "solve",
+    "--case",
+    "ef40-blue",
+    "--backends",
+    "g",
+    "c",
+    "--threads",
+    "4",
+    "--block",
+    "32",
+    "--save-full-psf"
+  ],
+  "code_commit": "bc73cb4cfee50eb242dd2f498efd91f27b4f2db2",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {
+    "MKL_NUM_THREADS": "4",
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "000-000-001-qfilm04-remediation-ef40-blue-20261029-01",
+  "memory_gb": 0,
+  "request_sha256": "51c2c3d49c39481ca17283be98cfb72a84ebd9699982674480c76c0486a76882",
+  "schema": 1,
+  "started_at": 1793288784.1068652,
+  "state": "running",
+  "timeout_sec": 172800
+}
