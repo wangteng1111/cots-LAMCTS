@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1793279631.0916228,
+  "code_commit": "bc73cb4cfee50eb242dd2f498efd91f27b4f2db2",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "000-000-000-qfilm04-remediation-controls-20261029-01",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/000-000-000-qfilm04-remediation-controls-20261029-01.json",
+  "request_sha256": "3c3b45706f7d8223f4e5909725eb0712458f256fbb42543c66a838640b9a404a",
+  "schema": 1,
+  "state": "claimed"
+}
