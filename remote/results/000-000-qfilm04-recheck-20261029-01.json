@@ -3,21 +3,106 @@
     "validation/qfilm04_workstation_recheck.py"
   ],
   "code_commit": "ff84cd1e308d64f83ba96c39c7e7b4ed3f78aadb",
+  "elapsed_sec": 44.24707531929016,
   "entrypoint": "scripts/cuda_venv_exec.py",
   "env": {
     "MKL_NUM_THREADS": "1",
     "OMP_NUM_THREADS": "1",
     "OPENBLAS_NUM_THREADS": "1"
   },
+  "finished_at": 1793242030.4030116,
   "hostname": "aipss-Rack-Server",
   "job_id": "000-000-qfilm04-recheck-20261029-01",
-  "log_tail": "",
+  "log_tail": "Surface dict lacks 'use_ai2'; assuming ai[0]=0 is the 2nd-order coefficient (legacy format).\n/var/lib/cots-lamcts/jobs/000-000-qfilm04-recheck-20261029-01/src/evaluator/qfilm03_physical_huygens.py:105: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)\n  psf=field.abs().square()\nSurface dict lacks 'use_ai2'; assuming ai[0]=0 is the 2nd-order coefficient (legacy format).\nWORKSTATION_RECHECK {\"cuda\": true, \"live_optical_processes\": 3, \"recovered_reports\": 14, \"tile_probe\": {\"lens\": \"ef40mm_f2.8\", \"source_sha256\": \"18d8506e0f3a9c77b3a9aa53161b98930d93464e45a419d9b2091293dfa51f79\", \"wavelength_nm\": 550.0, \"field_h\": 0.0, \"pupil_n\": 256, \"pixel_n\": 16, \"pixel_pitch_um\": 0.25, \"support_mm\": 0.004, \"scope\": \"identical ray/phase/integration arithmetic on a small detector tile only\", \"full_psf_mtf_validation\": false, \"devices\": {\"c\": {\"status\": \"completed\", \"seconds\": 4.553686019964516, \"psf_sum\": 1.0, \"valid_rays\": 51314, \"device\": \"cpu\"}, \"g\": {\"status\": \"completed\", \"seconds\": 1.7299096705392003, \"psf_sum\": 1.0, \"valid_rays\": 51314, \"device\": \"cuda:0\"}}, \"max_abs_normalized_tile_psf_difference\": 3.162053952010524e-14, \"arithmetic_parity_passed\": true}}",
   "memory_gb": 0,
   "pid": 432769,
   "request_sha256": "3fcd1207b6de18aeaec98f63bfb761e4c9160ac47e7eeef6c42f0bb31a5d49d3",
+  "returncode": 0,
   "schema": 1,
   "started_at": 1793241986.1559362,
-  "state": "running",
+  "state": "finished",
   "timeout_sec": 1200,
-  "updated_at": 1793241990.492096
+  "updated_at": 1793241990.492096,
+  "uploaded_artifacts": [
+    {
+      "path": "recovered/000-qfilm04-fine-01g-00-ef100mm_f2.8-20261028.json",
+      "size": 96065,
+      "uploaded": true
+    },
+    {
+      "path": "recovered/000-qfilm04-fine-01g-01-ef35mm_f2.0-20261028.json",
+      "size": 72597,
+      "uploaded": true
+    },
+    {
+      "path": "recovered/000-qfilm04-fine-01g-02-ef40mm_f2.8-20261028.json",
+      "size": 95811,
+      "uploaded": true
+    },
+    {
+      "path": "recovered/000-qfilm04-fine-01g-03-ef50mm_f1.8-20261028.json",
+      "size": 97344,
+      "uploaded": true
+    },
+    {
+      "path": "recovered/000-qfilm04-fine-01g-04-ef85mm_f1.8-20261028.json",
+      "size": 97007,
+      "uploaded": true
+    },
+    {
+      "path": "recovered/000-qfilm04-fine-01g-05-rf16mm_f2.8-20261028.json",
+      "size": 49341,
+      "uploaded": true
+    },
+    {
+      "path": "recovered/000-qfilm04-fine-01g-06-rf24mm_f1.8-20261028.json",
+      "size": 46309,
+      "uploaded": true
+    },
+    {
+      "path": "recovered/000-qfilm04-fine-01g-07-rf35mm_f1.8-20261028.json",
+      "size": 96258,
+      "uploaded": true
+    },
+    {
+      "path": "recovered/000-qfilm04-fine-01g-08-rf50mm_f1.8-20261028.json",
+      "size": 96515,
+      "uploaded": true
+    },
+    {
+      "path": "recovered/000-qfilm04-fine-01g-09-sigma70mm_f2.8-20261028.json",
+      "size": 95992,
+      "uploaded": true
+    },
+    {
+      "path": "recovered/000-qfilm04-fine-01g-10-yongnuo_50mm_f1.8-20261028.json",
+      "size": 97187,
+      "uploaded": true
+    },
+    {
+      "path": "recovered/000-qfilm04-fine-02c-00-ef100mm_f2.8-20261028.json",
+      "size": 2848,
+      "uploaded": true
+    },
+    {
+      "path": "recovered/000-qfilm04-fine-02c-04-ef85mm_f1.8-20261028.json",
+      "size": 7043,
+      "uploaded": true
+    },
+    {
+      "path": "recovered/000-qfilm04-fine-02c-08-rf50mm_f1.8-20261028.json",
+      "size": 6984,
+      "uploaded": true
+    },
+    {
+      "path": "rf24_gpu_report_recovered.json",
+      "size": 49361,
+      "uploaded": true
+    },
+    {
+      "path": "workstation_recheck.json",
+      "size": 12342,
+      "uploaded": true
+    }
+  ]
 }
