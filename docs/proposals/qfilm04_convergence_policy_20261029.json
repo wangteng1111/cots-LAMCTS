@@ -1,0 +1,54 @@
+{
+  "schema": "ProposedQfilm04ConvergencePolicy-v1",
+  "status": "proposal_not_implemented",
+  "backend_contract": {
+    "cpu_gpu_shared_physics": true,
+    "dtype": "float64",
+    "freeze_shared_resolved_sampling_plan": true,
+    "physics_hash_is_not_execution_identity": true
+  },
+  "phase_guard": {
+    "unwrapped_phase": true,
+    "target_max_neighbor_step_cycles": 0.25,
+    "alarm_neighbor_step_cycles": 0.5,
+    "detector_block_bound_and_adaptive_checks": true,
+    "pupil_midcell_checks": true,
+    "is_rigorous_MTF_error_bound": false
+  },
+  "pupil": {
+    "initial_candidates": [256, 512, 1024, 2048],
+    "allow_higher_levels_if_resources_permit": true,
+    "require_actual_complex_OTF_convergence": true,
+    "max_complex_OTF_change_target": 0.002,
+    "resource_limit_status": "PUPIL_UNCONVERGED"
+  },
+  "detector": {
+    "pitch_um": 0.25,
+    "representative_verification_pitch_um": 0.125,
+    "support_candidates_mm": [0.64, 0.96, 1.28],
+    "allow_larger_support": true,
+    "support_complex_OTF_change_target": 0.002,
+    "support_integral_relative_change_target": 0.005,
+    "pitch_complex_OTF_change_target": 0.001,
+    "boundary_energy_review_trigger": 0.01,
+    "boundary_energy_alone_certifies_convergence": false,
+    "fixed_mechanical_film": true,
+    "fixed_physical_reference_coordinates": true
+  },
+  "metrics": {
+    "request_frequency_complex_DFT": true,
+    "preserve_chromatic_translation_phase": true,
+    "joint_refinement_MTF_change_target": 0.005,
+    "independently_converged_reference_MTF_difference_target": 0.01,
+    "full_metric_cpu_gpu_complex_OTF_difference_target": 0.000001,
+    "thresholds_are_engineering_targets_not_achieved_error_bounds": true
+  },
+  "outputs": {
+    "raw_axis_projections": true,
+    "raw_intensity_integral_and_area_convention": true,
+    "resolved_plan_and_model_versions": true,
+    "save_full_2D_arrays_for_controls_outliers_and_finalists": true,
+    "separate_constraint_failure_from_numerical_failure": true
+  },
+  "training_eligible_now": false
+}
