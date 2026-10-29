@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "job_id": "000-000-000-000-qfilm04-reconnect-20261029-f9770334",
+  "code_commit": "34913438766198c7a087349746339af7de406806",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm04_reconnect_probe.py",
+    "--nonce",
+    "f97703343d2744acb2cfda47f354c48b"
+  ],
+  "env": {
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout_sec": 1800,
+  "memory_gb": 0
+}
