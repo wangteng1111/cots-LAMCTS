@@ -1,0 +1,53 @@
+/var/lib/cots-lamcts/jobs/000-qfilm04-fine-01g-07-rf35mm_f1.8-20261028/src/evaluator/qfilm02.py:199: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)
+  psf=field.abs().square();psf=psf/psf.sum((-1,-2),keepdim=True).clamp(min=1e-30)
+PSF_PROGRESS rf35mm_f1.8 0.0 430.0 4383936 6553600
+PSF_PROGRESS rf35mm_f1.8 0.0 430.0 6553600 6553600
+FINE_SAMPLE rf35mm_f1.8 0.0 430.0 completed 
+PSF_PROGRESS rf35mm_f1.8 0.0 470.0 4363264 6553600
+PSF_PROGRESS rf35mm_f1.8 0.0 470.0 6553600 6553600
+FINE_SAMPLE rf35mm_f1.8 0.0 470.0 completed 
+PSF_PROGRESS rf35mm_f1.8 0.0 510.0 4316032 6553600
+PSF_PROGRESS rf35mm_f1.8 0.0 510.0 6553600 6553600
+FINE_SAMPLE rf35mm_f1.8 0.0 510.0 completed 
+PSF_PROGRESS rf35mm_f1.8 0.0 550.0 4285248 6553600
+PSF_PROGRESS rf35mm_f1.8 0.0 550.0 6553600 6553600
+FINE_SAMPLE rf35mm_f1.8 0.0 550.0 completed 
+PSF_PROGRESS rf35mm_f1.8 0.0 590.0 4282624 6553600
+PSF_PROGRESS rf35mm_f1.8 0.0 590.0 6553600 6553600
+FINE_SAMPLE rf35mm_f1.8 0.0 590.0 completed 
+PSF_PROGRESS rf35mm_f1.8 0.0 630.0 4292736 6553600
+PSF_PROGRESS rf35mm_f1.8 0.0 630.0 6553600 6553600
+FINE_SAMPLE rf35mm_f1.8 0.0 630.0 completed 
+PSF_PROGRESS rf35mm_f1.8 0.0 670.0 4282624 6553600
+PSF_PROGRESS rf35mm_f1.8 0.0 670.0 6553600 6553600
+FINE_SAMPLE rf35mm_f1.8 0.0 670.0 completed 
+PSF_PROGRESS rf35mm_f1.8 0.5 430.0 6553600 6553600
+FINE_SAMPLE rf35mm_f1.8 0.5 430.0 completed 
+PSF_PROGRESS rf35mm_f1.8 0.5 470.0 6553600 6553600
+FINE_SAMPLE rf35mm_f1.8 0.5 470.0 completed 
+PSF_PROGRESS rf35mm_f1.8 0.5 510.0 6553600 6553600
+FINE_SAMPLE rf35mm_f1.8 0.5 510.0 completed 
+PSF_PROGRESS rf35mm_f1.8 0.5 550.0 6553600 6553600
+FINE_SAMPLE rf35mm_f1.8 0.5 550.0 completed 
+PSF_PROGRESS rf35mm_f1.8 0.5 590.0 6553600 6553600
+FINE_SAMPLE rf35mm_f1.8 0.5 590.0 completed 
+PSF_PROGRESS rf35mm_f1.8 0.5 630.0 6553600 6553600
+FINE_SAMPLE rf35mm_f1.8 0.5 630.0 completed 
+PSF_PROGRESS rf35mm_f1.8 0.5 670.0 6553600 6553600
+FINE_SAMPLE rf35mm_f1.8 0.5 670.0 completed 
+PSF_PROGRESS rf35mm_f1.8 1.0 430.0 6553600 6553600
+FINE_SAMPLE rf35mm_f1.8 1.0 430.0 completed 
+PSF_PROGRESS rf35mm_f1.8 1.0 470.0 6553600 6553600
+FINE_SAMPLE rf35mm_f1.8 1.0 470.0 completed 
+PSF_PROGRESS rf35mm_f1.8 1.0 510.0 6553600 6553600
+FINE_SAMPLE rf35mm_f1.8 1.0 510.0 completed 
+PSF_PROGRESS rf35mm_f1.8 1.0 550.0 6553600 6553600
+FINE_SAMPLE rf35mm_f1.8 1.0 550.0 completed 
+PSF_PROGRESS rf35mm_f1.8 1.0 590.0 6553600 6553600
+FINE_SAMPLE rf35mm_f1.8 1.0 590.0 completed 
+PSF_PROGRESS rf35mm_f1.8 1.0 630.0 6553600 6553600
+FINE_SAMPLE rf35mm_f1.8 1.0 630.0 completed 
+PSF_PROGRESS rf35mm_f1.8 1.0 670.0 6553600 6553600
+FINE_SAMPLE rf35mm_f1.8 1.0 670.0 completed 
+FINE_CASE rf35mm_f1.8 completed
+FINE_COMPLETE {"lenses": 1, "completed_psfs": 21, "valid_final_scores": 0}
