@@ -1,46 +1,21 @@
 {
   "args": [],
   "code_commit": "d22f69ba6ec69ae0921a24c125b701ad33714fc0",
-  "elapsed_sec": 45.478774309158325,
   "entrypoint": "scripts/deploy_bridge_v06.py",
   "env": {
     "MKL_NUM_THREADS": "2",
     "OMP_NUM_THREADS": "2",
     "OPENBLAS_NUM_THREADS": "1"
   },
-  "finished_at": 1793288118.7101822,
   "hostname": "aipss-Rack-Server",
   "job_id": "000-000-000-000-000-bridge-v06-stage-20261029-01",
   "log_tail": "{\"schema\": \"Bridge06Deployment-v1\", \"started_unix\": 1793288080.677202, \"status\": \"staged_requires_host_activation\", \"runtime\": \"/var/lib/cots-lamcts/runtime/bridge-v06-d22f69ba6ec6\", \"uid\": 997, \"code_commit\": \"d22f69ba6ec69ae0921a24c125b701ad33714fc0\", \"activation_requires_root\": true, \"existing_workers_terminated\": false, \"tests_returncode\": 0, \"systemd_before\": \"MainPID=383668\\nProtectSystem=strict\\nNoNewPrivileges=yes\\nKillMode=control-group\\nActiveState=active\\n\", \"checkpoints_backed_up\": 240, \"activation_command\": \"sudo /usr/bin/python3 /var/lib/cots-lamcts/runtime/bridge-v06-d22f69ba6ec6/scripts/deploy_bridge_v06.py --activate\", \"sudo_noninteractive\": false}",
   "memory_gb": 0,
   "pid": 475024,
   "request_sha256": "d2b3b42ac463f19d98169f67c9d6fee4f93b3dedbea6ae595865166bf300fb0b",
-  "returncode": 0,
   "schema": 1,
   "started_at": 1793288073.2314079,
-  "state": "finished",
+  "state": "running",
   "timeout_sec": 1800,
-  "updated_at": 1793288080.6263115,
-  "uploaded_artifacts": [
-    {
-      "path": "bridge-v06-deployment.json",
-      "size": 702,
-      "uploaded": true
-    },
-    {
-      "path": "bridge-v06-tests.log",
-      "size": 1593,
-      "uploaded": true
-    },
-    {
-      "path": "checkpoint-backup-manifest.json",
-      "size": 54433,
-      "uploaded": true
-    },
-    {
-      "path": "three-case-verification.json",
-      "size": 1469,
-      "uploaded": true
-    }
-  ]
+  "updated_at": 1793288080.6263115
 }
