@@ -1,0 +1,16 @@
+test_block_phase_bound_contains_random_points (__main__.RemediationTests.test_block_phase_bound_contains_random_points) ... ok
+test_complex_extractor_against_two_dimensional_sum (__main__.RemediationTests.test_complex_extractor_against_two_dimensional_sum) ... ok
+test_final_evaluator_never_returns_stale_fft_mtf (__main__.RemediationTests.test_final_evaluator_never_returns_stale_fft_mtf) ... ok
+test_immutable_terminal_and_nonfinite (__main__.RemediationTests.test_immutable_terminal_and_nonfinite) ... ok
+test_no_gpu_fallback (__main__.RemediationTests.test_no_gpu_fallback) ... ok
+test_plan_source_and_policy_tamper_rejected (__main__.RemediationTests.test_plan_source_and_policy_tamper_rejected) ... ok
+test_raw_projection_area_and_direct_kernel (__main__.RemediationTests.test_raw_projection_area_and_direct_kernel) ... ok
+test_resource_exhaustion_never_certifies (__main__.RemediationTests.test_resource_exhaustion_never_certifies) ... ok
+test_second_execution_replays_actual_first_device_grids (__main__.RemediationTests.test_second_execution_replays_actual_first_device_grids) ... ok
+test_signed_mapping_orientation_and_fold (__main__.RemediationTests.test_signed_mapping_orientation_and_fold) ... ok
+test_two_color_physical_translation (__main__.RemediationTests.test_two_color_physical_translation) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 2.469s
+
+OK

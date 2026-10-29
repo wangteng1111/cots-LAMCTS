@@ -1,0 +1,38 @@
+{
+  "schema": "Qfilm04FreshLocalTests-v1",
+  "scope": "local_runtime_not_workstation",
+  "started_unix": 1793271339.0599632,
+  "hostname": "3576f65f7c1b",
+  "torch_version": "2.15.0+cpu",
+  "cuda_available": false,
+  "training_eligible": false,
+  "tests": [
+    {
+      "name": "regression",
+      "returncode": 0,
+      "seconds": 4.890806063000127,
+      "log": "regression.log"
+    },
+    {
+      "name": "airy",
+      "returncode": 0,
+      "seconds": 5.755220901999564,
+      "log": "airy.log"
+    },
+    {
+      "name": "input_mapping",
+      "returncode": 0,
+      "seconds": 7.9929307980000885,
+      "log": "input_mapping.log"
+    }
+  ],
+  "code_files_sha256": {
+    "evaluator/qfilm04.py": "70d06d098a0b7102675eb687ab2e0db89abc454329611197ce89f280eb60820d",
+    "evaluator/qfilm04_evaluate.py": "6ccf4e40abafc56067b603c51eeba50966cf381f3b8efcbe956a979c9cbf11db",
+    "evaluator/qfilm04_io.py": "065ea3d181dc86dda5db83aa1214ad1c1296034564e5049fe20cf1bf28b241df",
+    "evaluator/qfilm04_sampling.py": "653cc6cbb7a66450bb55ff07bbbf452b40f511302f26ae7f15127738961a3c84",
+    "evaluator/qfilm04_wavefront.py": "0a453e159f9cfaed78fdf20b3286f530017df8148edf42677e0574dd2a450e04"
+  },
+  "finished_unix": 1793271357.7007382,
+  "passed": true
+}

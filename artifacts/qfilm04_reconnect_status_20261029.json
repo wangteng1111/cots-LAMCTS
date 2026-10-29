@@ -1,0 +1,62 @@
+{
+  "schema": "Qfilm04ReconnectStatus-v1",
+  "connection_status": "fresh_handshake_unconfirmed",
+  "request_job_id": "000-000-000-000-qfilm04-reconnect-20261029-f9770334",
+  "nonce": "f97703343d2744acb2cfda47f354c48b",
+  "code_commit": "34913438766198c7a087349746339af7de406806",
+  "queue_commit": "5d61342ff83a5716004f15a924d0b62f3b595f94",
+  "results_commit_observed": "7f5214791c92f1a7f6be45c6b248509c20e31510",
+  "results_commit_time": "2026-10-29T10:34:41Z",
+  "heartbeat_payload": {
+    "bridge_version": "0.5.0",
+    "control_branch": "main",
+    "cpu_count": 128,
+    "gpu": [
+      {
+        "memory_free_mb": "32110",
+        "memory_total_mb": "32607",
+        "name": "NVIDIA GeForce RTX 5090",
+        "temperature_c": "38",
+        "utilization_pct": "0"
+      },
+      {
+        "memory_free_mb": "32110",
+        "memory_total_mb": "32607",
+        "name": "NVIDIA GeForce RTX 5090",
+        "temperature_c": "41",
+        "utilization_pct": "0"
+      }
+    ],
+    "hostname": "aipss-Rack-Server",
+    "loadavg": [
+      0.05615234375,
+      0.0205078125,
+      0.11328125
+    ],
+    "python": "/usr/bin/python3",
+    "python_version": "3.12.3",
+    "repo": "wangteng1111/cots-LAMCTS",
+    "results_branch": "workstation-results",
+    "running_job": null,
+    "schema": 1,
+    "timestamp": 1793228940.4549758
+  },
+  "new_request_result_paths": [],
+  "workstation_current_processes_verified": false,
+  "workstation_new_gpu_tests_verified": false,
+  "local_tests_scope": "local_runtime_not_workstation",
+  "local_scientific_regression_tests_passed": 11,
+  "local_airy_controls_passed": 8,
+  "local_airy_max_abs_mtf_error": 0.0020891920338805825,
+  "local_fine_input_mapping_relative_error": 0.0034650789203938327,
+  "local_probe_protocol_test_passed": true,
+  "training_eligible": false,
+  "physics_certified": false,
+  "operational_limit": "Only GitHub outbound Bridge is configured; there is no independent SSH or remote restart channel available.",
+  "next_host_readonly_command": "systemctl status cots-lamcts-bridge.service --no-pager -l",
+  "notes": [
+    "A results commit timestamp is not an observation timestamp.",
+    "No workload was stopped and no service was restarted.",
+    "The first nonce artifact is emitted before scientific runtime imports."
+  ]
+}
