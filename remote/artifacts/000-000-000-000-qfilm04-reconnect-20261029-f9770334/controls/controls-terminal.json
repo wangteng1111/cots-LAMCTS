@@ -1,0 +1,118 @@
+{
+  "arithmetic_gpu_passed": true,
+  "completed_unix": 1793281151.9134178,
+  "controls": [
+    {
+      "active_nodes_equal": true,
+      "complex_otf_max_abs": 1.5409293477011237e-12,
+      "cpu_integral": 5.581065751601533,
+      "gpu_actual_device": "cuda:0",
+      "gpu_integral": 5.5810657515886195,
+      "name": "ef40mm_f2.8",
+      "passed": true,
+      "pupil_n": 256,
+      "purpose": "arithmetic_tile_only",
+      "raw_intensity_relative_max_abs": 5.0271985735857857e-11,
+      "source_sha256": "18d8506e0f3a9c77b3a9aa53161b98930d93464e45a419d9b2091293dfa51f79",
+      "support_mm": 0.008,
+      "wavelength_nm": 430.0
+    },
+    {
+      "active_nodes_equal": true,
+      "complex_otf_max_abs": 1.7110572522727572e-13,
+      "cpu_integral": 49.60906630144201,
+      "gpu_actual_device": "cuda:0",
+      "gpu_integral": 49.60906630139342,
+      "name": "ef40mm_f2.8",
+      "passed": true,
+      "pupil_n": 256,
+      "purpose": "arithmetic_tile_only",
+      "raw_intensity_relative_max_abs": 1.520550401219272e-12,
+      "source_sha256": "18d8506e0f3a9c77b3a9aa53161b98930d93464e45a419d9b2091293dfa51f79",
+      "support_mm": 0.008,
+      "wavelength_nm": 550.0
+    },
+    {
+      "active_nodes_equal": true,
+      "complex_otf_max_abs": 2.013477813684299e-13,
+      "cpu_integral": 152.62910900505597,
+      "gpu_actual_device": "cuda:0",
+      "gpu_integral": 152.62910900508894,
+      "name": "rf50mm_f1.8",
+      "passed": true,
+      "pupil_n": 256,
+      "purpose": "arithmetic_tile_only",
+      "raw_intensity_relative_max_abs": 1.7347843494006221e-12,
+      "source_sha256": "da4b28edb742b435a3f9fc45186205157653614816f8438f5bf2d074ac716fae",
+      "support_mm": 0.008,
+      "wavelength_nm": 670.0
+    }
+  ],
+  "cuda_available": true,
+  "edges": [
+    {
+      "active_nodes": 8224,
+      "bad_jacobian_fraction": 0.0,
+      "center_mm": [
+        21.144957564062857,
+        0.0
+      ],
+      "derivative_stencil_excluded_fraction": 0.04037339556592765,
+      "energy_transport_validated": false,
+      "exit_mapping_orientation": 1,
+      "geometric_pupil_fill": 0.16651123027900833,
+      "input_mapping_fold": false,
+      "input_plane_z_mm": -20.0,
+      "legacy_fill_constraint_passed": false,
+      "name": "rf35mm_f1.8",
+      "power_units": "unit stop-plane flux density times mm^2; active quadrature only",
+      "pupil_n": 256,
+      "reference_ray_blocked": false,
+      "signed_exit_mapping_fold": false,
+      "source_plane_type": "physical",
+      "state": "wavefront_prepared_not_integrated",
+      "transmitted_ray_tube_power": 51.001650000000026,
+      "transport_model": "uniform_stop_flux",
+      "valid_rays": 8570
+    },
+    {
+      "active_nodes": 2014,
+      "bad_jacobian_fraction": 0.0,
+      "center_mm": [
+        21.215381911308704,
+        3.1686528267617275e-17
+      ],
+      "derivative_stencil_excluded_fraction": 0.11355633802816902,
+      "energy_transport_validated": false,
+      "exit_mapping_orientation": 1,
+      "geometric_pupil_fill": 0.04414393409497163,
+      "input_mapping_fold": false,
+      "input_plane_z_mm": -20.0,
+      "legacy_fill_constraint_passed": false,
+      "name": "ef35mm_f2.0",
+      "power_units": "unit stop-plane flux density times mm^2; active quadrature only",
+      "pupil_n": 256,
+      "reference_ray_blocked": true,
+      "signed_exit_mapping_fold": false,
+      "source_plane_type": "physical",
+      "state": "wavefront_prepared_not_integrated",
+      "transmitted_ray_tube_power": 11.998016588348385,
+      "transport_model": "uniform_stop_flux",
+      "valid_rays": 2272
+    },
+    {
+      "error": "fewer than 32 transmitted rays",
+      "name": "rf16mm_f2.8",
+      "state": "NO_TRANSMITTED_WAVEFRONT"
+    },
+    {
+      "error": "fewer than 32 transmitted rays",
+      "name": "rf24mm_f1.8",
+      "state": "NO_TRANSMITTED_WAVEFRONT"
+    }
+  ],
+  "full_psf_validation": false,
+  "schema": "Qfilm04RemediationWorkstationControls-v1",
+  "status": "completed",
+  "training_eligible": false
+}
