@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.5.0",
+  "claimed_at": 1793260048.7144701,
+  "code_commit": "be3e65bdb305ddf9f03c7024d6897299ed34fd83",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "qfilm04-11-real-lens-pilot-20261028-01",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/qfilm04-11-real-lens-pilot-20261028-01.json",
+  "request_sha256": "085d69594af5acd6139cc42552c7239d40d66de85bd5a6cfbf1a820990aa57ea",
+  "schema": 1,
+  "state": "claimed"
+}
