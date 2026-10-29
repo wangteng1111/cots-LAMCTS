@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "job_id": "000-000-013-qfilm06-zz-real11-08-rf50mm_f1.8-20261030",
+  "code_commit": "be0ae361ed223704e8d652f5689060ab3cba0de6",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilm04_real11_supervised.py",
+    "--mode",
+    "complete",
+    "--name",
+    "rf50mm_f1.8"
+  ],
+  "env": {
+    "OMP_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout_sec": 172800,
+  "memory_gb": 0
+}
