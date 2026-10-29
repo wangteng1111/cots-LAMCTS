@@ -1,0 +1,12 @@
+name,published_gpu_completed_psfs,invalid_samples,all_three_fields_complete,program_valid,provisional_J,maximum_20um_border_energy_fraction,source_path
+ef35mm_f2.0,14,7,False,False,,0.7657691818153366,remote/artifacts/000-000-qfilm04-recheck-20261029-01/recovered/000-qfilm04-fine-01g-01-ef35mm_f2.0-20261028.json
+ef40mm_f2.8,21,0,True,True,0.6657720375941858,0.5900924581663105,remote/artifacts/000-qfilm04-fine-01g-02-ef40mm_f2.8-20261028/fine_11_g_solve.json
+ef50mm_f1.8,21,0,True,True,2.525159951853698,0.575903449325436,remote/artifacts/000-qfilm04-fine-01g-03-ef50mm_f1.8-20261028/fine_11_g_solve.json
+rf16mm_f2.8,7,14,False,False,,0.18652284033790278,remote/artifacts/000-qfilm04-fine-01g-05-rf16mm_f2.8-20261028/fine_11_g_solve.json
+rf24mm_f1.8,7,14,False,False,,0.7936809788323693,remote/artifacts/000-000-qfilm04-recheck-20261029-01/rf24_gpu_report_recovered.json
+rf35mm_f1.8,21,0,True,False,,0.832380589158391,remote/artifacts/000-qfilm04-fine-01g-07-rf35mm_f1.8-20261028/fine_11_g_solve.json
+rf50mm_f1.8,21,0,True,True,0.9552481278961769,0.8505179156035347,remote/artifacts/000-qfilm04-fine-01g-08-rf50mm_f1.8-20261028/fine_11_g_solve.json
+yongnuo_50mm_f1.8,21,0,True,True,0.9633449829162005,0.8214821710517681,remote/artifacts/000-000-qfilm04-recheck-20261029-01/recovered/000-qfilm04-fine-01g-10-yongnuo_50mm_f1.8-20261028.json
+ef100mm_f2.8,not_obtained,,,,,,
+ef85mm_f1.8,not_obtained,,,,,,
+sigma70mm_f2.8,not_obtained,,,,,,

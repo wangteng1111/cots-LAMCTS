@@ -1,0 +1,6 @@
+{
+  "strict_json_nan_recovery": "passed",
+  "invalid_score_guard": "passed",
+  "nonfinite_values_preserved_as_null": true,
+  "fake_optical_result_used": false
+}
