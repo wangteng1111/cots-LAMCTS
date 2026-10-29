@@ -22,6 +22,8 @@ The 11 new job IDs are `000-000-013-qfilm06-zz-real11-NN-NAME-20261030`, NN=00..
 
 Prepared priority requests sort before ordinary queue requests. The deployed supervisor also refuses another full task while any pre-upgrade remediation worker is still alive. This protects the active blue/green computations. It can delay the new matrix; queued is not started or completed.
 
+A final read-only collector, `000-000-013-qfilm06-zz-real11-99-usability-20261030`, runs after the11 per-lens jobs. It emits `usability-terminal.json`, `conditions.csv`, and `usability.md`; independently checks native convergence records and SHA256 of every accepted raw PSF array; and reports missing, failed and policy-infeasible conditions explicitly. It does not turn normal process exit into a pass.
+
 ## Acceptance stages
 
 1. Import and verify source bytes; prepare the corrected float64 wavefront at Npupil256. A failure is an explicit unsupported/error terminal for that sampled condition.
