@@ -1,0 +1,158 @@
+{
+  "schema": "Qfilm04Real11LocalCPUScreenSummary-v1",
+  "observed_unix": 1793291618.0065498,
+  "source_commit": "911bb9d334fce7e20a4407c4506ac683b52ff246",
+  "code_commit": "be0ae361ed223704e8d652f5689060ab3cba0de6",
+  "execution_environment": "local CPU, not workstation CUDA",
+  "names": [
+    "ef100mm_f2.8",
+    "ef35mm_f2.0",
+    "ef40mm_f2.8",
+    "ef50mm_f1.8",
+    "ef85mm_f1.8",
+    "rf16mm_f2.8",
+    "rf24mm_f1.8",
+    "rf35mm_f1.8",
+    "rf50mm_f1.8",
+    "sigma70mm_f2.8",
+    "yongnuo_50mm_f1.8"
+  ],
+  "conditions_completed": 231,
+  "state_counts": {
+    "POLICY_RESOURCE_INFEASIBLE": 217,
+    "NO_TRANSMITTED_WAVEFRONT": 14
+  },
+  "full_psf_conditions_computed": 0,
+  "full_psf_conditions_verified": 0,
+  "cpu_gpu_pairs_executed": 0,
+  "training_eligible": false,
+  "physics_certified": false,
+  "empirically_calibrated": false,
+  "cases": [
+    {
+      "name": "ef100mm_f2.8",
+      "source_sha256": "3e1b59d8ef13a3ac5f57c015cd2be4181282950d9752a5a6731ac1ab18155a5a",
+      "condition_count": 21,
+      "state_counts": {
+        "POLICY_RESOURCE_INFEASIBLE": 21
+      },
+      "full_psf_conditions_computed": 0,
+      "full_psf_conditions_verified": 0,
+      "cpu_gpu_pairs_executed": 0
+    },
+    {
+      "name": "ef35mm_f2.0",
+      "source_sha256": "ecd6ed4979821130d24d0d95cd69b29789b16459ca5d54e3acc3dce6ebce5ac3",
+      "condition_count": 21,
+      "state_counts": {
+        "POLICY_RESOURCE_INFEASIBLE": 21
+      },
+      "full_psf_conditions_computed": 0,
+      "full_psf_conditions_verified": 0,
+      "cpu_gpu_pairs_executed": 0
+    },
+    {
+      "name": "ef40mm_f2.8",
+      "source_sha256": "18d8506e0f3a9c77b3a9aa53161b98930d93464e45a419d9b2091293dfa51f79",
+      "condition_count": 21,
+      "state_counts": {
+        "POLICY_RESOURCE_INFEASIBLE": 21
+      },
+      "full_psf_conditions_computed": 0,
+      "full_psf_conditions_verified": 0,
+      "cpu_gpu_pairs_executed": 0
+    },
+    {
+      "name": "ef50mm_f1.8",
+      "source_sha256": "0862741f9dc22e79a8ffad899d528eb05b6655012b685170925d7fc71183eb9d",
+      "condition_count": 21,
+      "state_counts": {
+        "POLICY_RESOURCE_INFEASIBLE": 21
+      },
+      "full_psf_conditions_computed": 0,
+      "full_psf_conditions_verified": 0,
+      "cpu_gpu_pairs_executed": 0
+    },
+    {
+      "name": "ef85mm_f1.8",
+      "source_sha256": "cf8c09d79a9e2e758a58815fe3423d1574377e6ab079bce62deca4cdf6def9b9",
+      "condition_count": 21,
+      "state_counts": {
+        "POLICY_RESOURCE_INFEASIBLE": 21
+      },
+      "full_psf_conditions_computed": 0,
+      "full_psf_conditions_verified": 0,
+      "cpu_gpu_pairs_executed": 0
+    },
+    {
+      "name": "rf16mm_f2.8",
+      "source_sha256": "493474344dccf7bf53000b4eb1936e75e06cdf6461ea57c26d5770a7457fbaa9",
+      "condition_count": 21,
+      "state_counts": {
+        "POLICY_RESOURCE_INFEASIBLE": 14,
+        "NO_TRANSMITTED_WAVEFRONT": 7
+      },
+      "full_psf_conditions_computed": 0,
+      "full_psf_conditions_verified": 0,
+      "cpu_gpu_pairs_executed": 0
+    },
+    {
+      "name": "rf24mm_f1.8",
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "condition_count": 21,
+      "state_counts": {
+        "POLICY_RESOURCE_INFEASIBLE": 14,
+        "NO_TRANSMITTED_WAVEFRONT": 7
+      },
+      "full_psf_conditions_computed": 0,
+      "full_psf_conditions_verified": 0,
+      "cpu_gpu_pairs_executed": 0
+    },
+    {
+      "name": "rf35mm_f1.8",
+      "source_sha256": "64beb60c506a5a1cfe5d5db161429fc274f447edb3d83d92e8e8512612e2519c",
+      "condition_count": 21,
+      "state_counts": {
+        "POLICY_RESOURCE_INFEASIBLE": 21
+      },
+      "full_psf_conditions_computed": 0,
+      "full_psf_conditions_verified": 0,
+      "cpu_gpu_pairs_executed": 0
+    },
+    {
+      "name": "rf50mm_f1.8",
+      "source_sha256": "da4b28edb742b435a3f9fc45186205157653614816f8438f5bf2d074ac716fae",
+      "condition_count": 21,
+      "state_counts": {
+        "POLICY_RESOURCE_INFEASIBLE": 21
+      },
+      "full_psf_conditions_computed": 0,
+      "full_psf_conditions_verified": 0,
+      "cpu_gpu_pairs_executed": 0
+    },
+    {
+      "name": "sigma70mm_f2.8",
+      "source_sha256": "1fb88d4da358707420f4923e1e223df1823f883b2bb4789be5c51d048769e800",
+      "condition_count": 21,
+      "state_counts": {
+        "POLICY_RESOURCE_INFEASIBLE": 21
+      },
+      "full_psf_conditions_computed": 0,
+      "full_psf_conditions_verified": 0,
+      "cpu_gpu_pairs_executed": 0
+    },
+    {
+      "name": "yongnuo_50mm_f1.8",
+      "source_sha256": "4bf3c6a70801faad97c98bbc03aed6751fb16f2f25f5df0e025bb6f15fd6bd53",
+      "condition_count": 21,
+      "state_counts": {
+        "POLICY_RESOURCE_INFEASIBLE": 21
+      },
+      "full_psf_conditions_computed": 0,
+      "full_psf_conditions_verified": 0,
+      "cpu_gpu_pairs_executed": 0
+    }
+  ],
+  "workstation_requests": "11 per-lens complete-mode jobs + 1 independent collector queued, not yet claimed at last check",
+  "notification_automation": "creation rejected: 5 active tasks, plan limit5; not enabled"
+}

@@ -1,0 +1,2456 @@
+{
+  "schema": "Qfilm04Real11LocalCPUScreen-v1",
+  "source_commit": "911bb9d334fce7e20a4407c4506ac683b52ff246",
+  "code_commit": "be0ae361ed223704e8d652f5689060ab3cba0de6",
+  "local_execution_matches_pinned_code": true,
+  "execution_environment": "local CPU, not workstation CUDA",
+  "actual_device": "cpu",
+  "torch_version": "2.15.0+cpu",
+  "fields_h": [
+    0.0,
+    0.5,
+    1.0
+  ],
+  "wavelengths_nm": [
+    430.0,
+    470.0,
+    510.0,
+    550.0,
+    590.0,
+    630.0,
+    670.0
+  ],
+  "arithmetic_tile_pixel_n": 16,
+  "arithmetic_tile_pitch_um": 0.25,
+  "arithmetic_tile_support_mm": 0.004,
+  "full_psf_validation": false,
+  "training_eligible": false,
+  "physics_certified": false,
+  "name": "rf24mm_f1.8",
+  "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+  "condition_count": 21,
+  "state_counts": {
+    "POLICY_RESOURCE_INFEASIBLE": 14,
+    "NO_TRANSMITTED_WAVEFRONT": 7
+  },
+  "full_psf_conditions_computed": 0,
+  "full_psf_conditions_verified": 0,
+  "cpu_gpu_pairs_executed": 0,
+  "conditions": [
+    {
+      "J_task": null,
+      "admission": {
+        "admitted": false,
+        "budget": 150000000000000,
+        "budget_candidate_count": 2,
+        "candidate_checks": [
+          {
+            "failed_phase_grid": {
+              "pupil_n": 256,
+              "support_index": 0
+            },
+            "grids": [
+              [
+                256,
+                0,
+                0.25
+              ],
+              [
+                256,
+                1,
+                0.25
+              ],
+              [
+                512,
+                0,
+                0.25
+              ],
+              [
+                512,
+                1,
+                0.125
+              ],
+              [
+                512,
+                1,
+                0.25
+              ],
+              [
+                1024,
+                2,
+                0.125
+              ]
+            ],
+            "minimum_pair_evaluations": 132392366899200,
+            "prior_selected_n": 512,
+            "selected_n": 512,
+            "selected_support_index": 1
+          },
+          {
+            "failed_phase_grid": {
+              "pupil_n": 256,
+              "support_index": 1
+            },
+            "grids": [
+              [
+                256,
+                1,
+                0.25
+              ],
+              [
+                512,
+                0,
+                0.25
+              ],
+              [
+                512,
+                1,
+                0.125
+              ],
+              [
+                512,
+                1,
+                0.25
+              ],
+              [
+                1024,
+                0,
+                0.25
+              ],
+              [
+                1024,
+                2,
+                0.125
+              ]
+            ],
+            "minimum_pair_evaluations": 138834817843200,
+            "prior_selected_n": 1024,
+            "selected_n": 512,
+            "selected_support_index": 1
+          }
+        ],
+        "meaning": "necessary conditions only; rejected means no independently verifiable full result under declared policy",
+        "minimum_unconstrained_pair_evaluations": 132392366899200,
+        "phase_guards": [
+          {
+            "alarm": true,
+            "continuous_pupil_certified": false,
+            "detector_tiles_per_axis": 4,
+            "is_mtf_error_bound": false,
+            "max_neighbor_block_bound_cycles": 1.8484782297770124,
+            "max_sampled_half_step_cycles": 0.8345559697613879,
+            "midpoint_all_transmitted": true,
+            "midpoint_check_passed": false,
+            "midpoint_pairs_checked": 129,
+            "passed": false,
+            "pupil_n": 256,
+            "sampled_pair_count": 58300,
+            "support_index": 0
+          },
+          {
+            "alarm": true,
+            "continuous_pupil_certified": false,
+            "detector_tiles_per_axis": 4,
+            "is_mtf_error_bound": false,
+            "max_neighbor_block_bound_cycles": 2.7274365361104302,
+            "max_sampled_half_step_cycles": 1.2318724402099857,
+            "midpoint_all_transmitted": true,
+            "midpoint_check_passed": false,
+            "midpoint_pairs_checked": 129,
+            "passed": false,
+            "pupil_n": 256,
+            "sampled_pair_count": 58300,
+            "support_index": 1
+          }
+        ]
+      },
+      "arithmetic_tile": {
+        "cpu_device": "cpu",
+        "cpu_integral": 1.7981158303171214,
+        "full_psf_validation": false,
+        "passed": null,
+        "pitch_um": 0.25,
+        "pixel_n": 16,
+        "pupil_n": 256,
+        "state": "CPU_ONLY",
+        "support_mm": 0.004
+      },
+      "field_h": 0.0,
+      "finished_unix": 1793291084.5053754,
+      "full_condition_verified": false,
+      "id": "rf24mm_f1.8-h0-w430",
+      "name": "rf24mm_f1.8",
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "started_unix": 1793291051.7038743,
+      "state": "POLICY_RESOURCE_INFEASIBLE",
+      "wavefront": {
+        "active_nodes": 29344,
+        "bad_jacobian_fraction": 0.0,
+        "derivative_stencil_excluded_fraction": 0.01833266425799545,
+        "energy_transport_validated": false,
+        "exit_mapping_orientation": 1,
+        "geometric_pupil_fill": 0.5807880624854278,
+        "input_mapping_fold": false,
+        "input_plane_z_mm": -20.0,
+        "power_units": "unit stop-plane flux density times mm^2; active quadrature only",
+        "pupil_n": 256,
+        "reference_ray_blocked": false,
+        "signed_exit_mapping_fold": false,
+        "source_plane_type": "physical",
+        "transmitted_ray_tube_power": 135.56197265625,
+        "transport_model": "uniform_stop_flux",
+        "valid_rays": 29892
+      },
+      "wavelength_nm": 430.0
+    },
+    {
+      "J_task": null,
+      "admission": {
+        "admitted": false,
+        "budget": 150000000000000,
+        "budget_candidate_count": 2,
+        "candidate_checks": [
+          {
+            "failed_phase_grid": {
+              "pupil_n": 256,
+              "support_index": 0
+            },
+            "grids": [
+              [
+                256,
+                0,
+                0.25
+              ],
+              [
+                256,
+                1,
+                0.25
+              ],
+              [
+                512,
+                0,
+                0.25
+              ],
+              [
+                512,
+                1,
+                0.125
+              ],
+              [
+                512,
+                1,
+                0.25
+              ],
+              [
+                1024,
+                2,
+                0.125
+              ]
+            ],
+            "minimum_pair_evaluations": 132392366899200,
+            "prior_selected_n": 512,
+            "selected_n": 512,
+            "selected_support_index": 1
+          },
+          {
+            "failed_phase_grid": {
+              "pupil_n": 256,
+              "support_index": 1
+            },
+            "grids": [
+              [
+                256,
+                1,
+                0.25
+              ],
+              [
+                512,
+                0,
+                0.25
+              ],
+              [
+                512,
+                1,
+                0.125
+              ],
+              [
+                512,
+                1,
+                0.25
+              ],
+              [
+                1024,
+                0,
+                0.25
+              ],
+              [
+                1024,
+                2,
+                0.125
+              ]
+            ],
+            "minimum_pair_evaluations": 138834817843200,
+            "prior_selected_n": 1024,
+            "selected_n": 512,
+            "selected_support_index": 1
+          }
+        ],
+        "meaning": "necessary conditions only; rejected means no independently verifiable full result under declared policy",
+        "minimum_unconstrained_pair_evaluations": 132392366899200,
+        "phase_guards": [
+          {
+            "alarm": true,
+            "continuous_pupil_certified": false,
+            "detector_tiles_per_axis": 4,
+            "is_mtf_error_bound": false,
+            "max_neighbor_block_bound_cycles": 1.6590072875530826,
+            "max_sampled_half_step_cycles": 0.7490930466185256,
+            "midpoint_all_transmitted": true,
+            "midpoint_check_passed": false,
+            "midpoint_pairs_checked": 129,
+            "passed": false,
+            "pupil_n": 256,
+            "sampled_pair_count": 58696,
+            "support_index": 0
+          },
+          {
+            "alarm": true,
+            "continuous_pupil_certified": false,
+            "detector_tiles_per_axis": 4,
+            "is_mtf_error_bound": false,
+            "max_neighbor_block_bound_cycles": 2.4686241267861657,
+            "max_sampled_half_step_cycles": 1.1155843094502296,
+            "midpoint_all_transmitted": true,
+            "midpoint_check_passed": false,
+            "midpoint_pairs_checked": 129,
+            "passed": false,
+            "pupil_n": 256,
+            "sampled_pair_count": 58696,
+            "support_index": 1
+          }
+        ]
+      },
+      "arithmetic_tile": {
+        "cpu_device": "cpu",
+        "cpu_integral": 5.80766391519587,
+        "full_psf_validation": false,
+        "passed": null,
+        "pitch_um": 0.25,
+        "pixel_n": 16,
+        "pupil_n": 256,
+        "state": "CPU_ONLY",
+        "support_mm": 0.004
+      },
+      "field_h": 0.0,
+      "finished_unix": 1793291134.3741806,
+      "full_condition_verified": false,
+      "id": "rf24mm_f1.8-h0-w470",
+      "name": "rf24mm_f1.8",
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "started_unix": 1793291084.5148935,
+      "state": "POLICY_RESOURCE_INFEASIBLE",
+      "wavefront": {
+        "active_nodes": 29542,
+        "bad_jacobian_fraction": 0.0,
+        "derivative_stencil_excluded_fraction": 0.018342526749518178,
+        "energy_transport_validated": false,
+        "exit_mapping_orientation": 1,
+        "geometric_pupil_fill": 0.5847128312738012,
+        "input_mapping_fold": false,
+        "input_plane_z_mm": -20.0,
+        "power_units": "unit stop-plane flux density times mm^2; active quadrature only",
+        "pupil_n": 256,
+        "reference_ray_blocked": false,
+        "signed_exit_mapping_fold": false,
+        "source_plane_type": "physical",
+        "transmitted_ray_tube_power": 136.47668334960935,
+        "transport_model": "uniform_stop_flux",
+        "valid_rays": 30094
+      },
+      "wavelength_nm": 470.0
+    },
+    {
+      "J_task": null,
+      "admission": {
+        "admitted": false,
+        "budget": 150000000000000,
+        "budget_candidate_count": 2,
+        "candidate_checks": [
+          {
+            "failed_phase_grid": {
+              "pupil_n": 256,
+              "support_index": 0
+            },
+            "grids": [
+              [
+                256,
+                0,
+                0.25
+              ],
+              [
+                256,
+                1,
+                0.25
+              ],
+              [
+                512,
+                0,
+                0.25
+              ],
+              [
+                512,
+                1,
+                0.125
+              ],
+              [
+                512,
+                1,
+                0.25
+              ],
+              [
+                1024,
+                2,
+                0.125
+              ]
+            ],
+            "minimum_pair_evaluations": 132392366899200,
+            "prior_selected_n": 512,
+            "selected_n": 512,
+            "selected_support_index": 1
+          },
+          {
+            "failed_phase_grid": {
+              "pupil_n": 256,
+              "support_index": 1
+            },
+            "grids": [
+              [
+                256,
+                1,
+                0.25
+              ],
+              [
+                512,
+                0,
+                0.25
+              ],
+              [
+                512,
+                1,
+                0.125
+              ],
+              [
+                512,
+                1,
+                0.25
+              ],
+              [
+                1024,
+                0,
+                0.25
+              ],
+              [
+                1024,
+                2,
+                0.125
+              ]
+            ],
+            "minimum_pair_evaluations": 138834817843200,
+            "prior_selected_n": 1024,
+            "selected_n": 512,
+            "selected_support_index": 1
+          }
+        ],
+        "meaning": "necessary conditions only; rejected means no independently verifiable full result under declared policy",
+        "minimum_unconstrained_pair_evaluations": 132392366899200,
+        "phase_guards": [
+          {
+            "alarm": true,
+            "continuous_pupil_certified": false,
+            "detector_tiles_per_axis": 4,
+            "is_mtf_error_bound": false,
+            "max_neighbor_block_bound_cycles": 1.513361068946606,
+            "max_sampled_half_step_cycles": 0.6839244923772211,
+            "midpoint_all_transmitted": true,
+            "midpoint_check_passed": false,
+            "midpoint_pairs_checked": 129,
+            "passed": false,
+            "pupil_n": 256,
+            "sampled_pair_count": 58868,
+            "support_index": 0
+          },
+          {
+            "alarm": true,
+            "continuous_pupil_certified": false,
+            "detector_tiles_per_axis": 4,
+            "is_mtf_error_bound": false,
+            "max_neighbor_block_bound_cycles": 2.26196562911284,
+            "max_sampled_half_step_cycles": 1.0232195446491235,
+            "midpoint_all_transmitted": true,
+            "midpoint_check_passed": false,
+            "midpoint_pairs_checked": 129,
+            "passed": false,
+            "pupil_n": 256,
+            "sampled_pair_count": 58868,
+            "support_index": 1
+          }
+        ]
+      },
+      "arithmetic_tile": {
+        "cpu_device": "cpu",
+        "cpu_integral": 13.291740939911755,
+        "full_psf_validation": false,
+        "passed": null,
+        "pitch_um": 0.25,
+        "pixel_n": 16,
+        "pupil_n": 256,
+        "state": "CPU_ONLY",
+        "support_mm": 0.004
+      },
+      "field_h": 0.0,
+      "finished_unix": 1793291170.592923,
+      "full_condition_verified": false,
+      "id": "rf24mm_f1.8-h0-w510",
+      "name": "rf24mm_f1.8",
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "started_unix": 1793291134.473711,
+      "state": "POLICY_RESOURCE_INFEASIBLE",
+      "wavefront": {
+        "active_nodes": 29628,
+        "bad_jacobian_fraction": 0.0,
+        "derivative_stencil_excluded_fraction": 0.018290258449304174,
+        "energy_transport_validated": false,
+        "exit_mapping_orientation": 1,
+        "geometric_pupil_fill": 0.5863837724411285,
+        "input_mapping_fold": false,
+        "input_plane_z_mm": -20.0,
+        "power_units": "unit stop-plane flux density times mm^2; active quadrature only",
+        "pupil_n": 256,
+        "reference_ray_blocked": false,
+        "signed_exit_mapping_fold": false,
+        "source_plane_type": "physical",
+        "transmitted_ray_tube_power": 136.8739819335937,
+        "transport_model": "uniform_stop_flux",
+        "valid_rays": 30180
+      },
+      "wavelength_nm": 510.0
+    },
+    {
+      "J_task": null,
+      "admission": {
+        "admitted": false,
+        "budget": 150000000000000,
+        "budget_candidate_count": 2,
+        "candidate_checks": [
+          {
+            "failed_phase_grid": {
+              "pupil_n": 256,
+              "support_index": 0
+            },
+            "grids": [
+              [
+                256,
+                0,
+                0.25
+              ],
+              [
+                256,
+                1,
+                0.25
+              ],
+              [
+                512,
+                0,
+                0.25
+              ],
+              [
+                512,
+                1,
+                0.125
+              ],
+              [
+                512,
+                1,
+                0.25
+              ],
+              [
+                1024,
+                2,
+                0.125
+              ]
+            ],
+            "minimum_pair_evaluations": 132392366899200,
+            "prior_selected_n": 512,
+            "selected_n": 512,
+            "selected_support_index": 1
+          },
+          {
+            "failed_phase_grid": {
+              "pupil_n": 256,
+              "support_index": 1
+            },
+            "grids": [
+              [
+                256,
+                1,
+                0.25
+              ],
+              [
+                512,
+                0,
+                0.25
+              ],
+              [
+                512,
+                1,
+                0.125
+              ],
+              [
+                512,
+                1,
+                0.25
+              ],
+              [
+                1024,
+                0,
+                0.25
+              ],
+              [
+                1024,
+                2,
+                0.125
+              ]
+            ],
+            "minimum_pair_evaluations": 138834817843200,
+            "prior_selected_n": 1024,
+            "selected_n": 512,
+            "selected_support_index": 1
+          }
+        ],
+        "meaning": "necessary conditions only; rejected means no independently verifiable full result under declared policy",
+        "minimum_unconstrained_pair_evaluations": 132392366899200,
+        "phase_guards": [
+          {
+            "alarm": true,
+            "continuous_pupil_certified": false,
+            "detector_tiles_per_axis": 4,
+            "is_mtf_error_bound": false,
+            "max_neighbor_block_bound_cycles": 1.3957665785306517,
+            "max_sampled_half_step_cycles": 0.6316369820780211,
+            "midpoint_all_transmitted": true,
+            "midpoint_check_passed": false,
+            "midpoint_pairs_checked": 129,
+            "passed": false,
+            "pupil_n": 256,
+            "sampled_pair_count": 58956,
+            "support_index": 0
+          },
+          {
+            "alarm": true,
+            "continuous_pupil_certified": false,
+            "detector_tiles_per_axis": 4,
+            "is_mtf_error_bound": false,
+            "max_neighbor_block_bound_cycles": 2.091081933847422,
+            "max_sampled_half_step_cycles": 0.9471241074814948,
+            "midpoint_all_transmitted": true,
+            "midpoint_check_passed": false,
+            "midpoint_pairs_checked": 129,
+            "passed": false,
+            "pupil_n": 256,
+            "sampled_pair_count": 58956,
+            "support_index": 1
+          }
+        ]
+      },
+      "arithmetic_tile": {
+        "cpu_device": "cpu",
+        "cpu_integral": 78.17297504651442,
+        "full_psf_validation": false,
+        "passed": null,
+        "pitch_um": 0.25,
+        "pixel_n": 16,
+        "pupil_n": 256,
+        "state": "CPU_ONLY",
+        "support_mm": 0.004
+      },
+      "field_h": 0.0,
+      "finished_unix": 1793291212.3838084,
+      "full_condition_verified": false,
+      "id": "rf24mm_f1.8-h0-w550",
+      "name": "rf24mm_f1.8",
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "started_unix": 1793291170.600234,
+      "state": "POLICY_RESOURCE_INFEASIBLE",
+      "wavefront": {
+        "active_nodes": 29672,
+        "bad_jacobian_fraction": 0.0,
+        "derivative_stencil_excluded_fraction": 0.018263631551085232,
+        "energy_transport_validated": false,
+        "exit_mapping_orientation": 1,
+        "geometric_pupil_fill": 0.5872386725732494,
+        "input_mapping_fold": false,
+        "input_plane_z_mm": -20.0,
+        "power_units": "unit stop-plane flux density times mm^2; active quadrature only",
+        "pupil_n": 256,
+        "reference_ray_blocked": false,
+        "signed_exit_mapping_fold": false,
+        "source_plane_type": "physical",
+        "transmitted_ray_tube_power": 137.07725097656248,
+        "transport_model": "uniform_stop_flux",
+        "valid_rays": 30224
+      },
+      "wavelength_nm": 550.0
+    },
+    {
+      "J_task": null,
+      "admission": {
+        "admitted": false,
+        "budget": 150000000000000,
+        "budget_candidate_count": 2,
+        "candidate_checks": [
+          {
+            "failed_phase_grid": {
+              "pupil_n": 256,
+              "support_index": 0
+            },
+            "grids": [
+              [
+                256,
+                0,
+                0.25
+              ],
+              [
+                256,
+                1,
+                0.25
+              ],
+              [
+                512,
+                0,
+                0.25
+              ],
+              [
+                512,
+                1,
+                0.125
+              ],
+              [
+                512,
+                1,
+                0.25
+              ],
+              [
+                1024,
+                2,
+                0.125
+              ]
+            ],
+            "minimum_pair_evaluations": 132392366899200,
+            "prior_selected_n": 512,
+            "selected_n": 512,
+            "selected_support_index": 1
+          },
+          {
+            "failed_phase_grid": {
+              "pupil_n": 256,
+              "support_index": 1
+            },
+            "grids": [
+              [
+                256,
+                1,
+                0.25
+              ],
+              [
+                512,
+                0,
+                0.25
+              ],
+              [
+                512,
+                1,
+                0.125
+              ],
+              [
+                512,
+                1,
+                0.25
+              ],
+              [
+                1024,
+                0,
+                0.25
+              ],
+              [
+                1024,
+                2,
+                0.125
+              ]
+            ],
+            "minimum_pair_evaluations": 138834817843200,
+            "prior_selected_n": 1024,
+            "selected_n": 512,
+            "selected_support_index": 1
+          }
+        ],
+        "meaning": "necessary conditions only; rejected means no independently verifiable full result under declared policy",
+        "minimum_unconstrained_pair_evaluations": 132392366899200,
+        "phase_guards": [
+          {
+            "alarm": true,
+            "continuous_pupil_certified": false,
+            "detector_tiles_per_axis": 4,
+            "is_mtf_error_bound": false,
+            "max_neighbor_block_bound_cycles": 1.2987512480730448,
+            "max_sampled_half_step_cycles": 0.5883473479103695,
+            "midpoint_all_transmitted": true,
+            "midpoint_check_passed": false,
+            "midpoint_pairs_checked": 129,
+            "passed": false,
+            "pupil_n": 256,
+            "sampled_pair_count": 59060,
+            "support_index": 0
+          },
+          {
+            "alarm": true,
+            "continuous_pupil_certified": false,
+            "detector_tiles_per_axis": 4,
+            "is_mtf_error_bound": false,
+            "max_neighbor_block_bound_cycles": 1.9480861289534523,
+            "max_sampled_half_step_cycles": 0.8824416921054675,
+            "midpoint_all_transmitted": true,
+            "midpoint_check_passed": false,
+            "midpoint_pairs_checked": 129,
+            "passed": false,
+            "pupil_n": 256,
+            "sampled_pair_count": 59060,
+            "support_index": 1
+          }
+        ]
+      },
+      "arithmetic_tile": {
+        "cpu_device": "cpu",
+        "cpu_integral": 116.7800985027588,
+        "full_psf_validation": false,
+        "passed": null,
+        "pitch_um": 0.25,
+        "pixel_n": 16,
+        "pupil_n": 256,
+        "state": "CPU_ONLY",
+        "support_mm": 0.004
+      },
+      "field_h": 0.0,
+      "finished_unix": 1793291262.8926845,
+      "full_condition_verified": false,
+      "id": "rf24mm_f1.8-h0-w590",
+      "name": "rf24mm_f1.8",
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "started_unix": 1793291213.274658,
+      "state": "POLICY_RESOURCE_INFEASIBLE",
+      "wavefront": {
+        "active_nodes": 29724,
+        "bad_jacobian_fraction": 0.0,
+        "derivative_stencil_excluded_fraction": 0.01823226317875545,
+        "energy_transport_validated": false,
+        "exit_mapping_orientation": 1,
+        "geometric_pupil_fill": 0.5882490090930287,
+        "input_mapping_fold": false,
+        "input_plane_z_mm": -20.0,
+        "power_units": "unit stop-plane flux density times mm^2; active quadrature only",
+        "pupil_n": 256,
+        "reference_ray_blocked": false,
+        "signed_exit_mapping_fold": false,
+        "source_plane_type": "physical",
+        "transmitted_ray_tube_power": 137.31747802734372,
+        "transport_model": "uniform_stop_flux",
+        "valid_rays": 30276
+      },
+      "wavelength_nm": 590.0
+    },
+    {
+      "J_task": null,
+      "admission": {
+        "admitted": false,
+        "budget": 150000000000000,
+        "budget_candidate_count": 2,
+        "candidate_checks": [
+          {
+            "failed_phase_grid": {
+              "pupil_n": 256,
+              "support_index": 0
+            },
+            "grids": [
+              [
+                256,
+                0,
+                0.25
+              ],
+              [
+                256,
+                1,
+                0.25
+              ],
+              [
+                512,
+                0,
+                0.25
+              ],
+              [
+                512,
+                1,
+                0.125
+              ],
+              [
+                512,
+                1,
+                0.25
+              ],
+              [
+                1024,
+                2,
+                0.125
+              ]
+            ],
+            "minimum_pair_evaluations": 132392366899200,
+            "prior_selected_n": 512,
+            "selected_n": 512,
+            "selected_support_index": 1
+          },
+          {
+            "failed_phase_grid": {
+              "pupil_n": 256,
+              "support_index": 1
+            },
+            "grids": [
+              [
+                256,
+                1,
+                0.25
+              ],
+              [
+                512,
+                0,
+                0.25
+              ],
+              [
+                512,
+                1,
+                0.125
+              ],
+              [
+                512,
+                1,
+                0.25
+              ],
+              [
+                1024,
+                0,
+                0.25
+              ],
+              [
+                1024,
+                2,
+                0.125
+              ]
+            ],
+            "minimum_pair_evaluations": 138834817843200,
+            "prior_selected_n": 1024,
+            "selected_n": 512,
+            "selected_support_index": 1
+          }
+        ],
+        "meaning": "necessary conditions only; rejected means no independently verifiable full result under declared policy",
+        "minimum_unconstrained_pair_evaluations": 132392366899200,
+        "phase_guards": [
+          {
+            "alarm": true,
+            "continuous_pupil_certified": false,
+            "detector_tiles_per_axis": 4,
+            "is_mtf_error_bound": false,
+            "max_neighbor_block_bound_cycles": 1.2166807137786677,
+            "max_sampled_half_step_cycles": 0.550967386649137,
+            "midpoint_all_transmitted": true,
+            "midpoint_check_passed": false,
+            "midpoint_pairs_checked": 129,
+            "passed": false,
+            "pupil_n": 256,
+            "sampled_pair_count": 59108,
+            "support_index": 0
+          },
+          {
+            "alarm": true,
+            "continuous_pupil_certified": false,
+            "detector_tiles_per_axis": 4,
+            "is_mtf_error_bound": false,
+            "max_neighbor_block_bound_cycles": 1.8244860926546091,
+            "max_sampled_half_step_cycles": 0.8262898456772447,
+            "midpoint_all_transmitted": true,
+            "midpoint_check_passed": false,
+            "midpoint_pairs_checked": 129,
+            "passed": false,
+            "pupil_n": 256,
+            "sampled_pair_count": 59108,
+            "support_index": 1
+          }
+        ]
+      },
+      "arithmetic_tile": {
+        "cpu_device": "cpu",
+        "cpu_integral": 109.87142616233903,
+        "full_psf_validation": false,
+        "passed": null,
+        "pitch_um": 0.25,
+        "pixel_n": 16,
+        "pupil_n": 256,
+        "state": "CPU_ONLY",
+        "support_mm": 0.004
+      },
+      "field_h": 0.0,
+      "finished_unix": 1793291308.8955064,
+      "full_condition_verified": false,
+      "id": "rf24mm_f1.8-h0-w630",
+      "name": "rf24mm_f1.8",
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "started_unix": 1793291262.9027898,
+      "state": "POLICY_RESOURCE_INFEASIBLE",
+      "wavefront": {
+        "active_nodes": 29748,
+        "bad_jacobian_fraction": 0.0,
+        "derivative_stencil_excluded_fraction": 0.018217821782178217,
+        "energy_transport_validated": false,
+        "exit_mapping_orientation": 1,
+        "geometric_pupil_fill": 0.5887153182560038,
+        "input_mapping_fold": false,
+        "input_plane_z_mm": -20.0,
+        "power_units": "unit stop-plane flux density times mm^2; active quadrature only",
+        "pupil_n": 256,
+        "reference_ray_blocked": false,
+        "signed_exit_mapping_fold": false,
+        "source_plane_type": "physical",
+        "transmitted_ray_tube_power": 137.42835205078123,
+        "transport_model": "uniform_stop_flux",
+        "valid_rays": 30300
+      },
+      "wavelength_nm": 630.0
+    },
+    {
+      "J_task": null,
+      "admission": {
+        "admitted": false,
+        "budget": 150000000000000,
+        "budget_candidate_count": 2,
+        "candidate_checks": [
+          {
+            "failed_phase_grid": {
+              "pupil_n": 256,
+              "support_index": 0
+            },
+            "grids": [
+              [
+                256,
+                0,
+                0.25
+              ],
+              [
+                256,
+                1,
+                0.25
+              ],
+              [
+                512,
+                0,
+                0.25
+              ],
+              [
+                512,
+                1,
+                0.125
+              ],
+              [
+                512,
+                1,
+                0.25
+              ],
+              [
+                1024,
+                2,
+                0.125
+              ]
+            ],
+            "minimum_pair_evaluations": 132392366899200,
+            "prior_selected_n": 512,
+            "selected_n": 512,
+            "selected_support_index": 1
+          },
+          {
+            "failed_phase_grid": {
+              "pupil_n": 256,
+              "support_index": 1
+            },
+            "grids": [
+              [
+                256,
+                1,
+                0.25
+              ],
+              [
+                512,
+                0,
+                0.25
+              ],
+              [
+                512,
+                1,
+                0.125
+              ],
+              [
+                512,
+                1,
+                0.25
+              ],
+              [
+                1024,
+                0,
+                0.25
+              ],
+              [
+                1024,
+                2,
+                0.125
+              ]
+            ],
+            "minimum_pair_evaluations": 138834817843200,
+            "prior_selected_n": 1024,
+            "selected_n": 512,
+            "selected_support_index": 1
+          }
+        ],
+        "meaning": "necessary conditions only; rejected means no independently verifiable full result under declared policy",
+        "minimum_unconstrained_pair_evaluations": 132392366899200,
+        "phase_guards": [
+          {
+            "alarm": true,
+            "continuous_pupil_certified": false,
+            "detector_tiles_per_axis": 4,
+            "is_mtf_error_bound": false,
+            "max_neighbor_block_bound_cycles": 1.1458354244324,
+            "max_sampled_half_step_cycles": 0.5182963380058075,
+            "midpoint_all_transmitted": true,
+            "midpoint_check_passed": false,
+            "midpoint_pairs_checked": 129,
+            "passed": false,
+            "pupil_n": 256,
+            "sampled_pair_count": 59140,
+            "support_index": 0
+          },
+          {
+            "alarm": true,
+            "continuous_pupil_certified": false,
+            "detector_tiles_per_axis": 4,
+            "is_mtf_error_bound": false,
+            "max_neighbor_block_bound_cycles": 1.7158720768474658,
+            "max_sampled_half_step_cycles": 0.7769278119027733,
+            "midpoint_all_transmitted": true,
+            "midpoint_check_passed": false,
+            "midpoint_pairs_checked": 129,
+            "passed": false,
+            "pupil_n": 256,
+            "sampled_pair_count": 59140,
+            "support_index": 1
+          }
+        ]
+      },
+      "arithmetic_tile": {
+        "cpu_device": "cpu",
+        "cpu_integral": 86.14663846941686,
+        "full_psf_validation": false,
+        "passed": null,
+        "pitch_um": 0.25,
+        "pixel_n": 16,
+        "pupil_n": 256,
+        "state": "CPU_ONLY",
+        "support_mm": 0.004
+      },
+      "field_h": 0.0,
+      "finished_unix": 1793291334.7130144,
+      "full_condition_verified": false,
+      "id": "rf24mm_f1.8-h0-w670",
+      "name": "rf24mm_f1.8",
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "started_unix": 1793291308.9089994,
+      "state": "POLICY_RESOURCE_INFEASIBLE",
+      "wavefront": {
+        "active_nodes": 29764,
+        "bad_jacobian_fraction": 0.0,
+        "derivative_stencil_excluded_fraction": 0.018208206887452172,
+        "energy_transport_validated": false,
+        "exit_mapping_orientation": 1,
+        "geometric_pupil_fill": 0.5890261910313205,
+        "input_mapping_fold": false,
+        "input_plane_z_mm": -20.0,
+        "power_units": "unit stop-plane flux density times mm^2; active quadrature only",
+        "pupil_n": 256,
+        "reference_ray_blocked": false,
+        "signed_exit_mapping_fold": false,
+        "source_plane_type": "physical",
+        "transmitted_ray_tube_power": 137.50226806640626,
+        "transport_model": "uniform_stop_flux",
+        "valid_rays": 30316
+      },
+      "wavelength_nm": 670.0
+    },
+    {
+      "J_task": null,
+      "admission": {
+        "admitted": false,
+        "budget": 150000000000000,
+        "budget_candidate_count": 2,
+        "candidate_checks": [
+          {
+            "failed_phase_grid": {
+              "pupil_n": 256,
+              "support_index": 0
+            },
+            "grids": [
+              [
+                256,
+                0,
+                0.25
+              ],
+              [
+                256,
+                1,
+                0.25
+              ],
+              [
+                512,
+                0,
+                0.25
+              ],
+              [
+                512,
+                1,
+                0.125
+              ],
+              [
+                512,
+                1,
+                0.25
+              ],
+              [
+                1024,
+                2,
+                0.125
+              ]
+            ],
+            "minimum_pair_evaluations": 132392366899200,
+            "prior_selected_n": 512,
+            "selected_n": 512,
+            "selected_support_index": 1
+          },
+          {
+            "failed_phase_grid": {
+              "pupil_n": 256,
+              "support_index": 1
+            },
+            "grids": [
+              [
+                256,
+                1,
+                0.25
+              ],
+              [
+                512,
+                0,
+                0.25
+              ],
+              [
+                512,
+                1,
+                0.125
+              ],
+              [
+                512,
+                1,
+                0.25
+              ],
+              [
+                1024,
+                0,
+                0.25
+              ],
+              [
+                1024,
+                2,
+                0.125
+              ]
+            ],
+            "minimum_pair_evaluations": 138834817843200,
+            "prior_selected_n": 1024,
+            "selected_n": 512,
+            "selected_support_index": 1
+          }
+        ],
+        "meaning": "necessary conditions only; rejected means no independently verifiable full result under declared policy",
+        "minimum_unconstrained_pair_evaluations": 132392366899200,
+        "phase_guards": [
+          {
+            "alarm": true,
+            "continuous_pupil_certified": false,
+            "detector_tiles_per_axis": 4,
+            "is_mtf_error_bound": false,
+            "max_neighbor_block_bound_cycles": 1.7786122710512244,
+            "max_sampled_half_step_cycles": 0.809887075918987,
+            "midpoint_all_transmitted": true,
+            "midpoint_check_passed": false,
+            "midpoint_pairs_checked": 129,
+            "passed": false,
+            "pupil_n": 256,
+            "sampled_pair_count": 16518,
+            "support_index": 0
+          },
+          {
+            "alarm": true,
+            "continuous_pupil_certified": false,
+            "detector_tiles_per_axis": 4,
+            "is_mtf_error_bound": false,
+            "max_neighbor_block_bound_cycles": 2.64130350850915,
+            "max_sampled_half_step_cycles": 1.199168910960977,
+            "midpoint_all_transmitted": true,
+            "midpoint_check_passed": false,
+            "midpoint_pairs_checked": 129,
+            "passed": false,
+            "pupil_n": 256,
+            "sampled_pair_count": 16518,
+            "support_index": 1
+          }
+        ]
+      },
+      "arithmetic_tile": {
+        "cpu_device": "cpu",
+        "cpu_integral": 0.6068649702315132,
+        "full_psf_validation": false,
+        "passed": null,
+        "pitch_um": 0.25,
+        "pixel_n": 16,
+        "pupil_n": 256,
+        "state": "CPU_ONLY",
+        "support_mm": 0.004
+      },
+      "field_h": 0.5,
+      "finished_unix": 1793291363.5249035,
+      "full_condition_verified": false,
+      "id": "rf24mm_f1.8-h0.5-w430",
+      "name": "rf24mm_f1.8",
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "started_unix": 1793291334.7228613,
+      "state": "POLICY_RESOURCE_INFEASIBLE",
+      "wavefront": {
+        "active_nodes": 8377,
+        "bad_jacobian_fraction": 0.0,
+        "derivative_stencil_excluded_fraction": 0.03834232579497188,
+        "energy_transport_validated": false,
+        "exit_mapping_orientation": 1,
+        "geometric_pupil_fill": 0.16925079661148676,
+        "input_mapping_fold": false,
+        "input_plane_z_mm": -20.0,
+        "power_units": "unit stop-plane flux density times mm^2; active quadrature only",
+        "pupil_n": 256,
+        "reference_ray_blocked": true,
+        "signed_exit_mapping_fold": false,
+        "source_plane_type": "physical",
+        "transmitted_ray_tube_power": 38.699653930664056,
+        "transport_model": "uniform_stop_flux",
+        "valid_rays": 8711
+      },
+      "wavelength_nm": 430.0
+    },
+    {
+      "J_task": null,
+      "admission": {
+        "admitted": false,
+        "budget": 150000000000000,
+        "budget_candidate_count": 2,
+        "candidate_checks": [
+          {
+            "failed_phase_grid": {
+              "pupil_n": 256,
+              "support_index": 0
+            },
+            "grids": [
+              [
+                256,
+                0,
+                0.25
+              ],
+              [
+                256,
+                1,
+                0.25
+              ],
+              [
+                512,
+                0,
+                0.25
+              ],
+              [
+                512,
+                1,
+                0.125
+              ],
+              [
+                512,
+                1,
+                0.25
+              ],
+              [
+                1024,
+                2,
+                0.125
+              ]
+            ],
+            "minimum_pair_evaluations": 132392366899200,
+            "prior_selected_n": 512,
+            "selected_n": 512,
+            "selected_support_index": 1
+          },
+          {
+            "failed_phase_grid": {
+              "pupil_n": 256,
+              "support_index": 1
+            },
+            "grids": [
+              [
+                256,
+                1,
+                0.25
+              ],
+              [
+                512,
+                0,
+                0.25
+              ],
+              [
+                512,
+                1,
+                0.125
+              ],
+              [
+                512,
+                1,
+                0.25
+              ],
+              [
+                1024,
+                0,
+                0.25
+              ],
+              [
+                1024,
+                2,
+                0.125
+              ]
+            ],
+            "minimum_pair_evaluations": 138834817843200,
+            "prior_selected_n": 1024,
+            "selected_n": 512,
+            "selected_support_index": 1
+          }
+        ],
+        "meaning": "necessary conditions only; rejected means no independently verifiable full result under declared policy",
+        "minimum_unconstrained_pair_evaluations": 132392366899200,
+        "phase_guards": [
+          {
+            "alarm": true,
+            "continuous_pupil_certified": false,
+            "detector_tiles_per_axis": 4,
+            "is_mtf_error_bound": false,
+            "max_neighbor_block_bound_cycles": 1.609880090179253,
+            "max_sampled_half_step_cycles": 0.7288892533853065,
+            "midpoint_all_transmitted": true,
+            "midpoint_check_passed": false,
+            "midpoint_pairs_checked": 129,
+            "passed": false,
+            "pupil_n": 256,
+            "sampled_pair_count": 16578,
+            "support_index": 0
+          },
+          {
+            "alarm": true,
+            "continuous_pupil_certified": false,
+            "detector_tiles_per_axis": 4,
+            "is_mtf_error_bound": false,
+            "max_neighbor_block_bound_cycles": 2.400260766749304,
+            "max_sampled_half_step_cycles": 1.087594127661814,
+            "midpoint_all_transmitted": true,
+            "midpoint_check_passed": false,
+            "midpoint_pairs_checked": 129,
+            "passed": false,
+            "pupil_n": 256,
+            "sampled_pair_count": 16578,
+            "support_index": 1
+          }
+        ]
+      },
+      "arithmetic_tile": {
+        "cpu_device": "cpu",
+        "cpu_integral": 1.5971038060432095,
+        "full_psf_validation": false,
+        "passed": null,
+        "pitch_um": 0.25,
+        "pixel_n": 16,
+        "pupil_n": 256,
+        "state": "CPU_ONLY",
+        "support_mm": 0.004
+      },
+      "field_h": 0.5,
+      "finished_unix": 1793291405.5080907,
+      "full_condition_verified": false,
+      "id": "rf24mm_f1.8-h0.5-w470",
+      "name": "rf24mm_f1.8",
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "started_unix": 1793291376.0578265,
+      "state": "POLICY_RESOURCE_INFEASIBLE",
+      "wavefront": {
+        "active_nodes": 8407,
+        "bad_jacobian_fraction": 0.0,
+        "derivative_stencil_excluded_fraction": 0.038210731037638716,
+        "energy_transport_validated": false,
+        "exit_mapping_orientation": 1,
+        "geometric_pupil_fill": 0.16983368306520558,
+        "input_mapping_fold": false,
+        "input_plane_z_mm": -20.0,
+        "power_units": "unit stop-plane flux density times mm^2; active quadrature only",
+        "pupil_n": 256,
+        "reference_ray_blocked": true,
+        "signed_exit_mapping_fold": false,
+        "source_plane_type": "physical",
+        "transmitted_ray_tube_power": 38.83824645996093,
+        "transport_model": "uniform_stop_flux",
+        "valid_rays": 8741
+      },
+      "wavelength_nm": 470.0
+    },
+    {
+      "J_task": null,
+      "admission": {
+        "admitted": false,
+        "budget": 150000000000000,
+        "budget_candidate_count": 2,
+        "candidate_checks": [
+          {
+            "failed_phase_grid": {
+              "pupil_n": 256,
+              "support_index": 0
+            },
+            "grids": [
+              [
+                256,
+                0,
+                0.25
+              ],
+              [
+                256,
+                1,
+                0.25
+              ],
+              [
+                512,
+                0,
+                0.25
+              ],
+              [
+                512,
+                1,
+                0.125
+              ],
+              [
+                512,
+                1,
+                0.25
+              ],
+              [
+                1024,
+                2,
+                0.125
+              ]
+            ],
+            "minimum_pair_evaluations": 132392366899200,
+            "prior_selected_n": 512,
+            "selected_n": 512,
+            "selected_support_index": 1
+          },
+          {
+            "failed_phase_grid": {
+              "pupil_n": 256,
+              "support_index": 1
+            },
+            "grids": [
+              [
+                256,
+                1,
+                0.25
+              ],
+              [
+                512,
+                0,
+                0.25
+              ],
+              [
+                512,
+                1,
+                0.125
+              ],
+              [
+                512,
+                1,
+                0.25
+              ],
+              [
+                1024,
+                0,
+                0.25
+              ],
+              [
+                1024,
+                2,
+                0.125
+              ]
+            ],
+            "minimum_pair_evaluations": 138834817843200,
+            "prior_selected_n": 1024,
+            "selected_n": 512,
+            "selected_support_index": 1
+          }
+        ],
+        "meaning": "necessary conditions only; rejected means no independently verifiable full result under declared policy",
+        "minimum_unconstrained_pair_evaluations": 132392366899200,
+        "phase_guards": [
+          {
+            "alarm": true,
+            "continuous_pupil_certified": false,
+            "detector_tiles_per_axis": 4,
+            "is_mtf_error_bound": false,
+            "max_neighbor_block_bound_cycles": 1.4749023197634785,
+            "max_sampled_half_step_cycles": 0.6674543327759233,
+            "midpoint_all_transmitted": true,
+            "midpoint_check_passed": false,
+            "midpoint_pairs_checked": 129,
+            "passed": false,
+            "pupil_n": 256,
+            "sampled_pair_count": 16619,
+            "support_index": 0
+          },
+          {
+            "alarm": true,
+            "continuous_pupil_certified": false,
+            "detector_tiles_per_axis": 4,
+            "is_mtf_error_bound": false,
+            "max_neighbor_block_bound_cycles": 2.2036487849846824,
+            "max_sampled_half_step_cycles": 0.9980594199987537,
+            "midpoint_all_transmitted": true,
+            "midpoint_check_passed": false,
+            "midpoint_pairs_checked": 129,
+            "passed": false,
+            "pupil_n": 256,
+            "sampled_pair_count": 16619,
+            "support_index": 1
+          }
+        ]
+      },
+      "arithmetic_tile": {
+        "cpu_device": "cpu",
+        "cpu_integral": 3.5952435110594316,
+        "full_psf_validation": false,
+        "passed": null,
+        "pitch_um": 0.25,
+        "pixel_n": 16,
+        "pupil_n": 256,
+        "state": "CPU_ONLY",
+        "support_mm": 0.004
+      },
+      "field_h": 0.5,
+      "finished_unix": 1793291416.7947943,
+      "full_condition_verified": false,
+      "id": "rf24mm_f1.8-h0.5-w510",
+      "name": "rf24mm_f1.8",
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "started_unix": 1793291377.8665047,
+      "state": "POLICY_RESOURCE_INFEASIBLE",
+      "wavefront": {
+        "active_nodes": 8428,
+        "bad_jacobian_fraction": 0.0,
+        "derivative_stencil_excluded_fraction": 0.038338658146964855,
+        "energy_transport_validated": false,
+        "exit_mapping_orientation": 1,
+        "geometric_pupil_fill": 0.17028056267972333,
+        "input_mapping_fold": false,
+        "input_plane_z_mm": -20.0,
+        "power_units": "unit stop-plane flux density times mm^2; active quadrature only",
+        "pupil_n": 256,
+        "reference_ray_blocked": true,
+        "signed_exit_mapping_fold": false,
+        "source_plane_type": "physical",
+        "transmitted_ray_tube_power": 38.93526123046874,
+        "transport_model": "uniform_stop_flux",
+        "valid_rays": 8764
+      },
+      "wavelength_nm": 510.0
+    },
+    {
+      "J_task": null,
+      "admission": {
+        "admitted": false,
+        "budget": 150000000000000,
+        "budget_candidate_count": 2,
+        "candidate_checks": [
+          {
+            "failed_phase_grid": {
+              "pupil_n": 256,
+              "support_index": 0
+            },
+            "grids": [
+              [
+                256,
+                0,
+                0.25
+              ],
+              [
+                256,
+                1,
+                0.25
+              ],
+              [
+                512,
+                0,
+                0.25
+              ],
+              [
+                512,
+                1,
+                0.125
+              ],
+              [
+                512,
+                1,
+                0.25
+              ],
+              [
+                1024,
+                2,
+                0.125
+              ]
+            ],
+            "minimum_pair_evaluations": 132392366899200,
+            "prior_selected_n": 512,
+            "selected_n": 512,
+            "selected_support_index": 1
+          },
+          {
+            "failed_phase_grid": {
+              "pupil_n": 256,
+              "support_index": 1
+            },
+            "grids": [
+              [
+                256,
+                1,
+                0.25
+              ],
+              [
+                512,
+                0,
+                0.25
+              ],
+              [
+                512,
+                1,
+                0.125
+              ],
+              [
+                512,
+                1,
+                0.25
+              ],
+              [
+                1024,
+                0,
+                0.25
+              ],
+              [
+                1024,
+                2,
+                0.125
+              ]
+            ],
+            "minimum_pair_evaluations": 138834817843200,
+            "prior_selected_n": 1024,
+            "selected_n": 512,
+            "selected_support_index": 1
+          }
+        ],
+        "meaning": "necessary conditions only; rejected means no independently verifiable full result under declared policy",
+        "minimum_unconstrained_pair_evaluations": 132392366899200,
+        "phase_guards": [
+          {
+            "alarm": true,
+            "continuous_pupil_certified": false,
+            "detector_tiles_per_axis": 4,
+            "is_mtf_error_bound": false,
+            "max_neighbor_block_bound_cycles": 1.362918515812743,
+            "max_sampled_half_step_cycles": 0.6165774103614944,
+            "midpoint_all_transmitted": true,
+            "midpoint_check_passed": false,
+            "midpoint_pairs_checked": 129,
+            "passed": false,
+            "pupil_n": 256,
+            "sampled_pair_count": 16674,
+            "support_index": 0
+          },
+          {
+            "alarm": true,
+            "continuous_pupil_certified": false,
+            "detector_tiles_per_axis": 4,
+            "is_mtf_error_bound": false,
+            "max_neighbor_block_bound_cycles": 2.038681533813345,
+            "max_sampled_half_step_cycles": 0.9232493991685364,
+            "midpoint_all_transmitted": true,
+            "midpoint_check_passed": false,
+            "midpoint_pairs_checked": 129,
+            "passed": false,
+            "pupil_n": 256,
+            "sampled_pair_count": 16674,
+            "support_index": 1
+          }
+        ]
+      },
+      "arithmetic_tile": {
+        "cpu_device": "cpu",
+        "cpu_integral": 8.014512605502524,
+        "full_psf_validation": false,
+        "passed": null,
+        "pitch_um": 0.25,
+        "pixel_n": 16,
+        "pupil_n": 256,
+        "state": "CPU_ONLY",
+        "support_mm": 0.004
+      },
+      "field_h": 0.5,
+      "finished_unix": 1793291387.9883237,
+      "full_condition_verified": false,
+      "id": "rf24mm_f1.8-h0.5-w550",
+      "name": "rf24mm_f1.8",
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "started_unix": 1793291375.5628264,
+      "state": "POLICY_RESOURCE_INFEASIBLE",
+      "wavefront": {
+        "active_nodes": 8456,
+        "bad_jacobian_fraction": 0.0,
+        "derivative_stencil_excluded_fraction": 0.03821656050955414,
+        "energy_transport_validated": false,
+        "exit_mapping_orientation": 1,
+        "geometric_pupil_fill": 0.17082459003652756,
+        "input_mapping_fold": false,
+        "input_plane_z_mm": -20.0,
+        "power_units": "unit stop-plane flux density times mm^2; active quadrature only",
+        "pupil_n": 256,
+        "reference_ray_blocked": true,
+        "signed_exit_mapping_fold": false,
+        "source_plane_type": "physical",
+        "transmitted_ray_tube_power": 39.064614257812494,
+        "transport_model": "uniform_stop_flux",
+        "valid_rays": 8792
+      },
+      "wavelength_nm": 550.0
+    },
+    {
+      "J_task": null,
+      "admission": {
+        "admitted": false,
+        "budget": 150000000000000,
+        "budget_candidate_count": 2,
+        "candidate_checks": [
+          {
+            "failed_phase_grid": {
+              "pupil_n": 256,
+              "support_index": 0
+            },
+            "grids": [
+              [
+                256,
+                0,
+                0.25
+              ],
+              [
+                256,
+                1,
+                0.25
+              ],
+              [
+                512,
+                0,
+                0.25
+              ],
+              [
+                512,
+                1,
+                0.125
+              ],
+              [
+                512,
+                1,
+                0.25
+              ],
+              [
+                1024,
+                2,
+                0.125
+              ]
+            ],
+            "minimum_pair_evaluations": 132392366899200,
+            "prior_selected_n": 512,
+            "selected_n": 512,
+            "selected_support_index": 1
+          },
+          {
+            "failed_phase_grid": {
+              "pupil_n": 256,
+              "support_index": 1
+            },
+            "grids": [
+              [
+                256,
+                1,
+                0.25
+              ],
+              [
+                512,
+                0,
+                0.25
+              ],
+              [
+                512,
+                1,
+                0.125
+              ],
+              [
+                512,
+                1,
+                0.25
+              ],
+              [
+                1024,
+                0,
+                0.25
+              ],
+              [
+                1024,
+                2,
+                0.125
+              ]
+            ],
+            "minimum_pair_evaluations": 138834817843200,
+            "prior_selected_n": 1024,
+            "selected_n": 512,
+            "selected_support_index": 1
+          }
+        ],
+        "meaning": "necessary conditions only; rejected means no independently verifiable full result under declared policy",
+        "minimum_unconstrained_pair_evaluations": 132392366899200,
+        "phase_guards": [
+          {
+            "alarm": true,
+            "continuous_pupil_certified": false,
+            "detector_tiles_per_axis": 4,
+            "is_mtf_error_bound": false,
+            "max_neighbor_block_bound_cycles": 1.2676290151501082,
+            "max_sampled_half_step_cycles": 0.5734697325973978,
+            "midpoint_all_transmitted": true,
+            "midpoint_check_passed": false,
+            "midpoint_pairs_checked": 129,
+            "passed": false,
+            "pupil_n": 256,
+            "sampled_pair_count": 16702,
+            "support_index": 0
+          },
+          {
+            "alarm": true,
+            "continuous_pupil_certified": false,
+            "detector_tiles_per_axis": 4,
+            "is_mtf_error_bound": false,
+            "max_neighbor_block_bound_cycles": 1.8976863742788885,
+            "max_sampled_half_step_cycles": 0.8592784966127238,
+            "midpoint_all_transmitted": true,
+            "midpoint_check_passed": false,
+            "midpoint_pairs_checked": 129,
+            "passed": false,
+            "pupil_n": 256,
+            "sampled_pair_count": 16702,
+            "support_index": 1
+          }
+        ]
+      },
+      "arithmetic_tile": {
+        "cpu_device": "cpu",
+        "cpu_integral": 11.693264633200508,
+        "full_psf_validation": false,
+        "passed": null,
+        "pitch_um": 0.25,
+        "pixel_n": 16,
+        "pupil_n": 256,
+        "state": "CPU_ONLY",
+        "support_mm": 0.004
+      },
+      "field_h": 0.5,
+      "finished_unix": 1793291404.6537774,
+      "full_condition_verified": false,
+      "id": "rf24mm_f1.8-h0.5-w590",
+      "name": "rf24mm_f1.8",
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "started_unix": 1793291376.4672325,
+      "state": "POLICY_RESOURCE_INFEASIBLE",
+      "wavefront": {
+        "active_nodes": 8469,
+        "bad_jacobian_fraction": 0.0,
+        "derivative_stencil_excluded_fraction": 0.038160136286201025,
+        "energy_transport_validated": false,
+        "exit_mapping_orientation": 1,
+        "geometric_pupil_fill": 0.17107717416647236,
+        "input_mapping_fold": false,
+        "input_plane_z_mm": -20.0,
+        "power_units": "unit stop-plane flux density times mm^2; active quadrature only",
+        "pupil_n": 256,
+        "reference_ray_blocked": true,
+        "signed_exit_mapping_fold": false,
+        "source_plane_type": "physical",
+        "transmitted_ray_tube_power": 39.124671020507805,
+        "transport_model": "uniform_stop_flux",
+        "valid_rays": 8805
+      },
+      "wavelength_nm": 590.0
+    },
+    {
+      "J_task": null,
+      "admission": {
+        "admitted": false,
+        "budget": 150000000000000,
+        "budget_candidate_count": 2,
+        "candidate_checks": [
+          {
+            "failed_phase_grid": {
+              "pupil_n": 256,
+              "support_index": 0
+            },
+            "grids": [
+              [
+                256,
+                0,
+                0.25
+              ],
+              [
+                256,
+                1,
+                0.25
+              ],
+              [
+                512,
+                0,
+                0.25
+              ],
+              [
+                512,
+                1,
+                0.125
+              ],
+              [
+                512,
+                1,
+                0.25
+              ],
+              [
+                1024,
+                2,
+                0.125
+              ]
+            ],
+            "minimum_pair_evaluations": 132392366899200,
+            "prior_selected_n": 512,
+            "selected_n": 512,
+            "selected_support_index": 1
+          },
+          {
+            "failed_phase_grid": {
+              "pupil_n": 256,
+              "support_index": 1
+            },
+            "grids": [
+              [
+                256,
+                1,
+                0.25
+              ],
+              [
+                512,
+                0,
+                0.25
+              ],
+              [
+                512,
+                1,
+                0.125
+              ],
+              [
+                512,
+                1,
+                0.25
+              ],
+              [
+                1024,
+                0,
+                0.25
+              ],
+              [
+                1024,
+                2,
+                0.125
+              ]
+            ],
+            "minimum_pair_evaluations": 138834817843200,
+            "prior_selected_n": 1024,
+            "selected_n": 512,
+            "selected_support_index": 1
+          }
+        ],
+        "meaning": "necessary conditions only; rejected means no independently verifiable full result under declared policy",
+        "minimum_unconstrained_pair_evaluations": 132392366899200,
+        "phase_guards": [
+          {
+            "alarm": true,
+            "continuous_pupil_certified": false,
+            "detector_tiles_per_axis": 4,
+            "is_mtf_error_bound": false,
+            "max_neighbor_block_bound_cycles": 1.1917933510695724,
+            "max_sampled_half_step_cycles": 0.5360914554180292,
+            "midpoint_all_transmitted": true,
+            "midpoint_check_passed": false,
+            "midpoint_pairs_checked": 128,
+            "passed": false,
+            "pupil_n": 256,
+            "sampled_pair_count": 16750,
+            "support_index": 0
+          },
+          {
+            "alarm": true,
+            "continuous_pupil_certified": false,
+            "detector_tiles_per_axis": 4,
+            "is_mtf_error_bound": false,
+            "max_neighbor_block_bound_cycles": 1.77534553666927,
+            "max_sampled_half_step_cycles": 0.8038541464162203,
+            "midpoint_all_transmitted": true,
+            "midpoint_check_passed": false,
+            "midpoint_pairs_checked": 129,
+            "passed": false,
+            "pupil_n": 256,
+            "sampled_pair_count": 16750,
+            "support_index": 1
+          }
+        ]
+      },
+      "arithmetic_tile": {
+        "cpu_device": "cpu",
+        "cpu_integral": 14.190927416247785,
+        "full_psf_validation": false,
+        "passed": null,
+        "pitch_um": 0.25,
+        "pixel_n": 16,
+        "pupil_n": 256,
+        "state": "CPU_ONLY",
+        "support_mm": 0.004
+      },
+      "field_h": 0.5,
+      "finished_unix": 1793291406.602078,
+      "full_condition_verified": false,
+      "id": "rf24mm_f1.8-h0.5-w630",
+      "name": "rf24mm_f1.8",
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "started_unix": 1793291376.658665,
+      "state": "POLICY_RESOURCE_INFEASIBLE",
+      "wavefront": {
+        "active_nodes": 8494,
+        "bad_jacobian_fraction": 0.0,
+        "derivative_stencil_excluded_fraction": 0.03805209513023783,
+        "energy_transport_validated": false,
+        "exit_mapping_orientation": 1,
+        "geometric_pupil_fill": 0.1715629128779047,
+        "input_mapping_fold": false,
+        "input_plane_z_mm": -20.0,
+        "power_units": "unit stop-plane flux density times mm^2; active quadrature only",
+        "pupil_n": 256,
+        "reference_ray_blocked": true,
+        "signed_exit_mapping_fold": false,
+        "source_plane_type": "physical",
+        "transmitted_ray_tube_power": 39.24016479492187,
+        "transport_model": "uniform_stop_flux",
+        "valid_rays": 8830
+      },
+      "wavelength_nm": 630.0
+    },
+    {
+      "J_task": null,
+      "admission": {
+        "admitted": false,
+        "budget": 150000000000000,
+        "budget_candidate_count": 2,
+        "candidate_checks": [
+          {
+            "failed_phase_grid": {
+              "pupil_n": 256,
+              "support_index": 0
+            },
+            "grids": [
+              [
+                256,
+                0,
+                0.25
+              ],
+              [
+                256,
+                1,
+                0.25
+              ],
+              [
+                512,
+                0,
+                0.25
+              ],
+              [
+                512,
+                1,
+                0.125
+              ],
+              [
+                512,
+                1,
+                0.25
+              ],
+              [
+                1024,
+                2,
+                0.125
+              ]
+            ],
+            "minimum_pair_evaluations": 132392366899200,
+            "prior_selected_n": 512,
+            "selected_n": 512,
+            "selected_support_index": 1
+          },
+          {
+            "failed_phase_grid": {
+              "pupil_n": 256,
+              "support_index": 1
+            },
+            "grids": [
+              [
+                256,
+                1,
+                0.25
+              ],
+              [
+                512,
+                0,
+                0.25
+              ],
+              [
+                512,
+                1,
+                0.125
+              ],
+              [
+                512,
+                1,
+                0.25
+              ],
+              [
+                1024,
+                0,
+                0.25
+              ],
+              [
+                1024,
+                2,
+                0.125
+              ]
+            ],
+            "minimum_pair_evaluations": 138834817843200,
+            "prior_selected_n": 1024,
+            "selected_n": 512,
+            "selected_support_index": 1
+          }
+        ],
+        "meaning": "necessary conditions only; rejected means no independently verifiable full result under declared policy",
+        "minimum_unconstrained_pair_evaluations": 132392366899200,
+        "phase_guards": [
+          {
+            "alarm": true,
+            "continuous_pupil_certified": false,
+            "detector_tiles_per_axis": 4,
+            "is_mtf_error_bound": false,
+            "max_neighbor_block_bound_cycles": 1.1239229488902371,
+            "max_sampled_half_step_cycles": 0.5035094892746066,
+            "midpoint_all_transmitted": true,
+            "midpoint_check_passed": false,
+            "midpoint_pairs_checked": 129,
+            "passed": false,
+            "pupil_n": 256,
+            "sampled_pair_count": 16773,
+            "support_index": 0
+          },
+          {
+            "alarm": true,
+            "continuous_pupil_certified": false,
+            "detector_tiles_per_axis": 4,
+            "is_mtf_error_bound": false,
+            "max_neighbor_block_bound_cycles": 1.6680828891173776,
+            "max_sampled_half_step_cycles": 0.7552703384549831,
+            "midpoint_all_transmitted": true,
+            "midpoint_check_passed": false,
+            "midpoint_pairs_checked": 129,
+            "passed": false,
+            "pupil_n": 256,
+            "sampled_pair_count": 16773,
+            "support_index": 1
+          }
+        ]
+      },
+      "arithmetic_tile": {
+        "cpu_device": "cpu",
+        "cpu_integral": 15.571946766366816,
+        "full_psf_validation": false,
+        "passed": null,
+        "pitch_um": 0.25,
+        "pixel_n": 16,
+        "pupil_n": 256,
+        "state": "CPU_ONLY",
+        "support_mm": 0.004
+      },
+      "field_h": 0.5,
+      "finished_unix": 1793291409.5611339,
+      "full_condition_verified": false,
+      "id": "rf24mm_f1.8-h0.5-w670",
+      "name": "rf24mm_f1.8",
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "started_unix": 1793291390.3889215,
+      "state": "POLICY_RESOURCE_INFEASIBLE",
+      "wavefront": {
+        "active_nodes": 8506,
+        "bad_jacobian_fraction": 0.0,
+        "derivative_stencil_excluded_fraction": 0.03800045238633793,
+        "energy_transport_validated": false,
+        "exit_mapping_orientation": 1,
+        "geometric_pupil_fill": 0.17179606745939224,
+        "input_mapping_fold": false,
+        "input_plane_z_mm": -20.0,
+        "power_units": "unit stop-plane flux density times mm^2; active quadrature only",
+        "pupil_n": 256,
+        "reference_ray_blocked": true,
+        "signed_exit_mapping_fold": false,
+        "source_plane_type": "physical",
+        "transmitted_ray_tube_power": 39.29560180664062,
+        "transport_model": "uniform_stop_flux",
+        "valid_rays": 8842
+      },
+      "wavelength_nm": 670.0
+    },
+    {
+      "J_task": null,
+      "error": "fewer than 32 transmitted rays",
+      "field_h": 1.0,
+      "finished_unix": 1793291404.291728,
+      "full_condition_verified": false,
+      "id": "rf24mm_f1.8-h1-w430",
+      "name": "rf24mm_f1.8",
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "started_unix": 1793291394.7837827,
+      "state": "NO_TRANSMITTED_WAVEFRONT",
+      "wavelength_nm": 430.0
+    },
+    {
+      "J_task": null,
+      "error": "fewer than 32 transmitted rays",
+      "field_h": 1.0,
+      "finished_unix": 1793291416.8825972,
+      "full_condition_verified": false,
+      "id": "rf24mm_f1.8-h1-w470",
+      "name": "rf24mm_f1.8",
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "started_unix": 1793291406.6463246,
+      "state": "NO_TRANSMITTED_WAVEFRONT",
+      "wavelength_nm": 470.0
+    },
+    {
+      "J_task": null,
+      "error": "fewer than 32 transmitted rays",
+      "field_h": 1.0,
+      "finished_unix": 1793291417.7237563,
+      "full_condition_verified": false,
+      "id": "rf24mm_f1.8-h1-w510",
+      "name": "rf24mm_f1.8",
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "started_unix": 1793291406.9530888,
+      "state": "NO_TRANSMITTED_WAVEFRONT",
+      "wavelength_nm": 510.0
+    },
+    {
+      "J_task": null,
+      "error": "fewer than 32 transmitted rays",
+      "field_h": 1.0,
+      "finished_unix": 1793291419.8641543,
+      "full_condition_verified": false,
+      "id": "rf24mm_f1.8-h1-w550",
+      "name": "rf24mm_f1.8",
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "started_unix": 1793291410.0105722,
+      "state": "NO_TRANSMITTED_WAVEFRONT",
+      "wavelength_nm": 550.0
+    },
+    {
+      "J_task": null,
+      "error": "fewer than 32 transmitted rays",
+      "field_h": 1.0,
+      "finished_unix": 1793291419.467437,
+      "full_condition_verified": false,
+      "id": "rf24mm_f1.8-h1-w590",
+      "name": "rf24mm_f1.8",
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "started_unix": 1793291409.1425283,
+      "state": "NO_TRANSMITTED_WAVEFRONT",
+      "wavelength_nm": 590.0
+    },
+    {
+      "J_task": null,
+      "error": "fewer than 32 transmitted rays",
+      "field_h": 1.0,
+      "finished_unix": 1793291417.963038,
+      "full_condition_verified": false,
+      "id": "rf24mm_f1.8-h1-w630",
+      "name": "rf24mm_f1.8",
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "started_unix": 1793291410.8366807,
+      "state": "NO_TRANSMITTED_WAVEFRONT",
+      "wavelength_nm": 630.0
+    },
+    {
+      "J_task": null,
+      "error": "fewer than 32 transmitted rays",
+      "field_h": 1.0,
+      "finished_unix": 1793291427.4217834,
+      "full_condition_verified": false,
+      "id": "rf24mm_f1.8-h1-w670",
+      "name": "rf24mm_f1.8",
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "started_unix": 1793291414.867465,
+      "state": "NO_TRANSMITTED_WAVEFRONT",
+      "wavelength_nm": 670.0
+    }
+  ]
+}
