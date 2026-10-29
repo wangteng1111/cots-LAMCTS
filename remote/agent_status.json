@@ -1,5 +1,5 @@
 {
-  "bridge_version": "0.5.0",
+  "bridge_version": "0.6.0",
   "control_branch": "main",
   "cpu_count": 128,
   "gpu": [
@@ -20,15 +20,15 @@
   ],
   "hostname": "aipss-Rack-Server",
   "loadavg": [
-    36.57470703125,
-    35.94140625,
-    35.5537109375
+    35.8515625,
+    35.82763671875,
+    35.53369140625
   ],
   "python": "/usr/bin/python3",
   "python_version": "3.12.3",
   "repo": "wangteng1111/cots-LAMCTS",
   "results_branch": "workstation-results",
-  "running_job": "000-000-001-qfilm04-remediation-ef40-blue-20261029-01",
+  "running_job": null,
   "schema": 1,
-  "timestamp": 1793289721.3881655
+  "timestamp": 1793289768.7110848
 }
