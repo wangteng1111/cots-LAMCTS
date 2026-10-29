@@ -13,13 +13,10 @@
   },
   "hostname": "aipss-Rack-Server",
   "job_id": "000-000-000-000-qfilm04-reconnect-20261029-f9770334",
-  "log_tail": "FRESH_HANDSHAKE {\"schema\": \"Qfilm04FreshReconnect-v1\", \"nonce\": \"f97703343d2744acb2cfda47f354c48b\", \"started_unix\": 1793281091.9705207, \"hostname\": \"aipss-Rack-Server\", \"pid\": 465823, \"python\": \"/var/lib/cots-lamcts/venv/bin/python\", \"cpu_count\": 128, \"job_id\": \"000-000-000-000-qfilm04-reconnect-20261029-f9770334\", \"code_commit_env\": \"34913438766198c7a087349746339af7de406806\", \"state\": \"fresh_challenge_received\", \"training_eligible\": false, \"physics_certified\": false}",
   "memory_gb": 0,
-  "pid": 465823,
   "request_sha256": "ff3d3957f18499ffdc34369f6c1e310401aa7a6973239384383cd36f39208d2f",
   "schema": 1,
   "started_at": 1793281031.8148963,
   "state": "running",
-  "timeout_sec": 1800,
-  "updated_at": 1793281091.8868577
+  "timeout_sec": 1800
 }
