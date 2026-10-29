@@ -1,0 +1,1205 @@
+{
+  "files": [
+    {
+      "job_id": "000-qfilm04-fine-02c-04-ef85mm_f1.8-20261028",
+      "path": "fine_11_c_solve.json",
+      "sha256": "923eeaf6f9461f42b9883a6cf65fa102ef23e988dacd3e18dea91b8c0915eed0"
+    },
+    {
+      "job_id": "qfilm02-huygens-reference-20261026-01",
+      "path": "qfilm02_huygens_reference.json",
+      "sha256": "b7227344c6a57477d8c804a1096c83f1d17ede4c3272fbdd6a910cc2b3c350fb"
+    },
+    {
+      "job_id": "qfilm02-triton-bootstrap-20261026-01",
+      "path": "qfilm02_triton_compare.json",
+      "sha256": "ef6d16e286b4689402e0107c2b390e9938885fcc88a5a9ad9cc5bcb34746698a"
+    },
+    {
+      "job_id": "qfilm02-broyden-validate-20261026-02",
+      "path": "qfilm02_broyden_compare.json",
+      "sha256": "1fcd65045dfc78c6332be18d1eb7077beb71cbd8b3648afd446bade72ae731e4"
+    },
+    {
+      "job_id": "qfilm02-broyden-validate-20261026-02",
+      "path": "triton_kernel_cache/ED3QLELX6ZDP5KQYE33CMYUREWZL2VGBYOKBSZ7IXYE3UOI7BNXA/_fused_rays.json",
+      "sha256": "55b90615c89b25ca0f9252c998ce15ef6b47369e1ddf30b948f0b42deada3804"
+    },
+    {
+      "job_id": "qfilm02-broyden-validate-20261026-02",
+      "path": "triton_kernel_cache/ED3QLELX6ZDP5KQYE33CMYUREWZL2VGBYOKBSZ7IXYE3UOI7BNXA/__grp___fused_rays.json",
+      "sha256": "430f1aafb0cb3e058f5632bb5375644a9287bce350d0458972309ed4ca2c6be7"
+    },
+    {
+      "job_id": "qfilm02-broyden-validate-20261026-02",
+      "path": "triton_kernel_cache/PUN6KMUNINOXFGLWCN4QKMDODK3FEB55RUAXNHH464T3PX6HV4GA/_fused_rays.json",
+      "sha256": "f63647414ec50bda6afbfa6913691a10139af46b928561fc9536aec8ff7a90bd"
+    },
+    {
+      "job_id": "qfilm02-broyden-validate-20261026-02",
+      "path": "triton_kernel_cache/PUN6KMUNINOXFGLWCN4QKMDODK3FEB55RUAXNHH464T3PX6HV4GA/__grp___fused_rays.json",
+      "sha256": "a08c13563562571fca21a457a690f34762ace51cbad887d1d6d02977c4fcd412"
+    },
+    {
+      "job_id": "qfilm02-broyden-validate-20261026-02",
+      "path": "triton_kernel_cache/DJNBXZY6I2JB7RQZXLMQQKIY6QFTGJ2GRKWMTXX7GQ254LSLUS2A/_fused_rays.json",
+      "sha256": "0bd38df34ea62f3291d2e8754c85811c499ce3ef4badc0a37684abc976db599f"
+    },
+    {
+      "job_id": "qfilm02-broyden-validate-20261026-02",
+      "path": "triton_kernel_cache/DJNBXZY6I2JB7RQZXLMQQKIY6QFTGJ2GRKWMTXX7GQ254LSLUS2A/__grp___fused_rays.json",
+      "sha256": "95347532445bf31f75bb6ff180caa9fc340c57e162d83f06b645b2bae3480c02"
+    },
+    {
+      "job_id": "qfilm02-broyden-validate-20261026-02",
+      "path": "triton_kernel_cache/QZUK4473OLGPZJIUSNULXBZZU2T6UA7ATP3NAFJUH5CRAHHBRXBA/_fused_rays.json",
+      "sha256": "fde7d9d6dac96cca0b17d06549e692988f90b4b0edad389b64fbc9b6de81a671"
+    },
+    {
+      "job_id": "qfilm02-broyden-validate-20261026-02",
+      "path": "triton_kernel_cache/QZUK4473OLGPZJIUSNULXBZZU2T6UA7ATP3NAFJUH5CRAHHBRXBA/__grp___fused_rays.json",
+      "sha256": "bd25e5f0e66ce22690649699cbcf3ddf3f9617675dfcda7801283d14dcc1e67e"
+    },
+    {
+      "job_id": "qfilm03-physical-finalJ-20261028-01",
+      "path": "qfilm03_physical_mode_validation/fullframe_physical_finalJ_regression.json",
+      "sha256": "f13955a622f7bd6f1898dd7e0b323d27e5a1f5ee53c67a9681d42da403246727"
+    },
+    {
+      "job_id": "qfilm-deeplens-bootstrap-20261027-02",
+      "path": "deeplens_bootstrap.json",
+      "sha256": "85095089c4dde3a0397b34240fc93436c8dbaea68598af7d24f9af89dc3a363d"
+    },
+    {
+      "job_id": "qfilm02-triton-front-2step-20261026-01",
+      "path": "qfilm02_triton_compare.json",
+      "sha256": "06386d0b9b91139d0a3b821d071f0193c54440a046b79dcbcbdcbe9068ed40dc"
+    },
+    {
+      "job_id": "qfilm02-triton-front-2step-20261026-01",
+      "path": "triton_kernel_cache/H6DKHW5CT3WRSV57HRO3UYV7SD2DNHJCLAZAMRTKERMAX2563TFA/_fused_rays.json",
+      "sha256": "b037f5c0eb08a86c9650ed8fb0105e065176d0084065753173ff9688c212332f"
+    },
+    {
+      "job_id": "qfilm02-triton-front-2step-20261026-01",
+      "path": "triton_kernel_cache/H6DKHW5CT3WRSV57HRO3UYV7SD2DNHJCLAZAMRTKERMAX2563TFA/__grp___fused_rays.json",
+      "sha256": "5a214897839487408013602dd81ebaa2c427beb943751c4d3ea92b2e490d1401"
+    },
+    {
+      "job_id": "qfilm02-triton-front-2step-20261026-01",
+      "path": "triton_kernel_cache/5RN3S2CNBQU6EBHZ5XJ4GWLYUC4ZGU6FUNYF5KSO7TCT524WOLLQ/_fused_rays.json",
+      "sha256": "a3d50e4bb6d70a592d936c61c9cc3769d7abfe162e8c4320b162f47612354f82"
+    },
+    {
+      "job_id": "qfilm02-triton-front-2step-20261026-01",
+      "path": "triton_kernel_cache/5RN3S2CNBQU6EBHZ5XJ4GWLYUC4ZGU6FUNYF5KSO7TCT524WOLLQ/__grp___fused_rays.json",
+      "sha256": "7b6cee3b0828edac1b0fc1652f9c4d5c809352283c5e1a72010d72d881aced0c"
+    },
+    {
+      "job_id": "qfilm02-triton-front-2step-20261026-01",
+      "path": "triton_kernel_cache/GV6LOVURKDBLB43C7AMYH5OYGW6OWCHEPUMFHFJ65K5CH74JNJ2A/_fused_rays.json",
+      "sha256": "41a52a95fcf308c5016ae1de0ebc0dc2b038f170c35d6038d1828f2f9f9e0edc"
+    },
+    {
+      "job_id": "qfilm02-triton-front-2step-20261026-01",
+      "path": "triton_kernel_cache/GV6LOVURKDBLB43C7AMYH5OYGW6OWCHEPUMFHFJ65K5CH74JNJ2A/__grp___fused_rays.json",
+      "sha256": "2e40bcb3f018951c101b90302ee8e14600b7a72333e660a5aef7d848e26f1324"
+    },
+    {
+      "job_id": "qfilm02-triton-front-2step-20261026-01",
+      "path": "triton_kernel_cache/WKKSKMVDCJ7MNCUM5GXPATG7NCZDALQVGGGABU5V2DSQIAC575VQ/_fused_rays.json",
+      "sha256": "a915f82b862e4518f0a4230c74596051a244c45b613604b80f4441eeeaa35569"
+    },
+    {
+      "job_id": "qfilm02-triton-front-2step-20261026-01",
+      "path": "triton_kernel_cache/WKKSKMVDCJ7MNCUM5GXPATG7NCZDALQVGGGABU5V2DSQIAC575VQ/__grp___fused_rays.json",
+      "sha256": "e9d9ea5a15dd79f9ddeba9156ab03dd993ac8076bc5bc054920d095435f93771"
+    },
+    {
+      "job_id": "qfilm02-triton-front-2step-20261026-01",
+      "path": "triton_kernel_cache/6CV53NFSCCNHVQ2SQDRWBLDSWTVLEZB7VLHUUPFLNRPFVBJMSKDQ/_fused_rays.json",
+      "sha256": "1082d8af77ae479299a36aba543397fdbbb3b7be9ce551b11e5f30e0109b39f3"
+    },
+    {
+      "job_id": "qfilm02-triton-front-2step-20261026-01",
+      "path": "triton_kernel_cache/6CV53NFSCCNHVQ2SQDRWBLDSWTVLEZB7VLHUUPFLNRPFVBJMSKDQ/__grp___fused_rays.json",
+      "sha256": "d716d115574904f2aa59255415e46aa38571dfae0f7da4b23e65b92c69dfec72"
+    },
+    {
+      "job_id": "000-qfilm04-fine-01g-07-rf35mm_f1.8-20261028",
+      "path": "fine_11_g_solve.json",
+      "sha256": "27eea813c73a90f25ddc3973eab7e7d3ebd0dffa583e83f31e5d271187027693"
+    },
+    {
+      "job_id": "qfilm03-signed-otf-center-20261028-01",
+      "path": "qfilm03_signed_otf/internal_stop_asphere.json",
+      "sha256": "729be2169d6e2cec09c40aed6fd82d7a962977cb57b21dbc98801cd9ad012c47"
+    },
+    {
+      "job_id": "qfilm03-signed-otf-center-20261028-01",
+      "path": "qfilm03_signed_otf/signed_otf_center_ablation.json",
+      "sha256": "a1277bd8f56ab9519fd3b28b293f886315c53ccd53077a46580fb5cbb172d85b"
+    },
+    {
+      "job_id": "qfilm03-signed-otf-center-20261028-01",
+      "path": "qfilm03_signed_otf/singlet.json",
+      "sha256": "d52b8541f5b25def3af263c1dfdb923f060a5bffbfeb60bfcea8a2fe71298c02"
+    },
+    {
+      "job_id": "qfilm03-huygens-red-resolution-20261028-01",
+      "path": "qfilm03_huygens_resolution/red_resolution_convergence.json",
+      "sha256": "60e3c885367dbcc7a66f1eaa9c31010b461827d2fc8368e94c4df7e604e8266c"
+    },
+    {
+      "job_id": "qfilm03-huygens-red-resolution-20261028-01",
+      "path": "qfilm03_huygens_resolution/internal_stop_asphere.json",
+      "sha256": "729be2169d6e2cec09c40aed6fd82d7a962977cb57b21dbc98801cd9ad012c47"
+    },
+    {
+      "job_id": "qfilm03-huygens-red-resolution-20261028-01",
+      "path": "qfilm03_huygens_resolution/singlet.json",
+      "sha256": "d52b8541f5b25def3af263c1dfdb923f060a5bffbfeb60bfcea8a2fe71298c02"
+    },
+    {
+      "job_id": "qfilm03-full-speed-20261027-01",
+      "path": "qfilm03_full_speed.json",
+      "sha256": "7c4271fa299b33fd85eaf8c0441e65b35dcc8247b3e69b850207c7e6c0e25037"
+    },
+    {
+      "job_id": "qfilm-deeplens-huygens-million-20261027-01",
+      "path": "thin_deeplens_same_prescription.json",
+      "sha256": "d71e17288e581662448c853427d0e61adf4885171d708a3d8463eade4478bf60"
+    },
+    {
+      "job_id": "qfilm-deeplens-huygens-million-20261027-01",
+      "path": "deeplens_qfilm_comparison.json",
+      "sha256": "300b56ae2c438c3f9ea0ab1478da6868b124eca8eb83838d3b6cc278c38e3430"
+    },
+    {
+      "job_id": "qfilm03-fullframe-polychromatic-20261028-01",
+      "path": "qfilm03_poly_fullframe/internal_stop_asphere.json",
+      "sha256": "729be2169d6e2cec09c40aed6fd82d7a962977cb57b21dbc98801cd9ad012c47"
+    },
+    {
+      "job_id": "qfilm03-fullframe-polychromatic-20261028-01",
+      "path": "qfilm03_poly_fullframe/singlet.json",
+      "sha256": "d52b8541f5b25def3af263c1dfdb923f060a5bffbfeb60bfcea8a2fe71298c02"
+    },
+    {
+      "job_id": "qfilm03-fullframe-polychromatic-20261028-01",
+      "path": "qfilm03_poly_fullframe/polychromatic_huygens_36x24.json",
+      "sha256": "ddefe9a9aea56ee22aee38c8612b242d7a2770f404bd7c5c220192504dbeaf54"
+    },
+    {
+      "job_id": "qfilm02-triton-compare-20261026-01",
+      "path": "qfilm02_triton_compare.json",
+      "sha256": "e0671bde552d7ae1252bef72fe7bd27cd942e4e0e851952de2755899c3541a5f"
+    },
+    {
+      "job_id": "qfilm-deeplens-qfilm-same-lens-20261027-03",
+      "path": "thin_deeplens_same_prescription.json",
+      "sha256": "d71e17288e581662448c853427d0e61adf4885171d708a3d8463eade4478bf60"
+    },
+    {
+      "job_id": "qfilm-deeplens-qfilm-same-lens-20261027-03",
+      "path": "deeplens_qfilm_comparison.json",
+      "sha256": "859069e989137891ffc49743c28311945474085c742f8c9b344bf023d390bd54"
+    },
+    {
+      "job_id": "qfilm03-huygens-reference-convergence-20261028-01",
+      "path": "qfilm03_huygens_quality/singlet_focus_-0.01.json",
+      "sha256": "489c761cc13b8bb539bc1bafc4c67c09f19e42c22aa55702a0d742663605e018"
+    },
+    {
+      "job_id": "qfilm03-huygens-reference-convergence-20261028-01",
+      "path": "qfilm03_huygens_quality/singlet_focus_-0.05.json",
+      "sha256": "69c7194a9b202aa505304f823178e13a5ad5cec3fc87cef70dbdc8cf23aefa5f"
+    },
+    {
+      "job_id": "qfilm03-huygens-reference-convergence-20261028-01",
+      "path": "qfilm03_huygens_quality/singlet_focus_0.05.json",
+      "sha256": "1b37a0fd8422f39f8c0b310dd1c6798e2c4639dfde4c19f49704c301a1b66575"
+    },
+    {
+      "job_id": "qfilm03-huygens-reference-convergence-20261028-01",
+      "path": "qfilm03_huygens_quality/internal_stop_asphere.json",
+      "sha256": "d0a2f6e45e773e7c42e29d6219ac542f376ab14f8b1c3c11a211683c574b1cb9"
+    },
+    {
+      "job_id": "qfilm03-huygens-reference-convergence-20261028-01",
+      "path": "qfilm03_huygens_quality/reference_sampling_and_focus.json",
+      "sha256": "5a4cac7260242b7a799ba791d0d099b1f73fe566ee70437967200ec64856248e"
+    },
+    {
+      "job_id": "qfilm03-huygens-reference-convergence-20261028-01",
+      "path": "qfilm03_huygens_quality/singlet.json",
+      "sha256": "c1df0b25b2d307c772b3811c14b4a71738162de00b3afb6a3f9671c237ee019c"
+    },
+    {
+      "job_id": "qfilm03-huygens-reference-convergence-20261028-01",
+      "path": "qfilm03_huygens_quality/singlet_focus_0.0.json",
+      "sha256": "c1df0b25b2d307c772b3811c14b4a71738162de00b3afb6a3f9671c237ee019c"
+    },
+    {
+      "job_id": "qfilm03-huygens-reference-convergence-20261028-01",
+      "path": "qfilm03_huygens_quality/singlet_focus_0.01.json",
+      "sha256": "b1905484477db1faf262bedd6a89cc9866d8bd28842612230c9f44ecef7510be"
+    },
+    {
+      "job_id": "000-qfilm04-fine-02c-02-ef40mm_f2.8-20261028",
+      "path": "fine_11_c_solve.json",
+      "sha256": "0ace980a3d5df17b1ee604ed758b647f6b4d767974c3c3ed328d054904a2d669"
+    },
+    {
+      "job_id": "qfilm02-triton-compare-20261026-02",
+      "path": "qfilm02_triton_compare.json",
+      "sha256": "9a6f41264d557e3c48ac6afd987e7795b4ce617bf14860cbe23ff4687a55dea0"
+    },
+    {
+      "job_id": "qfilm03-material-parity-20261027-01",
+      "path": "qfilm03_materials.json",
+      "sha256": "6b03ee38904dae90a4257e60acb157439232dec023b8b0faf2745384193ce594"
+    },
+    {
+      "job_id": "qfilm03-fullframe-red-convergence-20261028-01",
+      "path": "chunk_parity_lens.json",
+      "sha256": "c1df0b25b2d307c772b3811c14b4a71738162de00b3afb6a3f9671c237ee019c"
+    },
+    {
+      "job_id": "qfilm03-fullframe-red-convergence-20261028-01",
+      "path": "qfilm03_fullframe_reference_convergence/red_reference_ray_window.json",
+      "sha256": "44185a86cfe453c20b60f98a41bfdf57cf84ff1d4a58927ae39f247f414761b9"
+    },
+    {
+      "job_id": "qfilm03-fullframe-red-convergence-20261028-01",
+      "path": "qfilm03_fullframe_reference_convergence/internal_stop_asphere.json",
+      "sha256": "e0de2e5d7baebc0a0315285779962fed2bb4da9a30a4b6fb94a0463bec1af2c5"
+    },
+    {
+      "job_id": "qfilm03-fullframe-red-convergence-20261028-01",
+      "path": "qfilm03_fullframe_reference_convergence/singlet.json",
+      "sha256": "8f72876d0d315baa391f4051cae70b4d7a37c7b9550bb9d17f9eb916110b9113"
+    },
+    {
+      "job_id": "qfilm-deeplens-coherent-grid6144-20261027-01",
+      "path": "thin_deeplens_same_prescription.json",
+      "sha256": "00b016e7341ec15bcf03e3eb855c9bc72033c8d13ca908085faf2225eb2451fe"
+    },
+    {
+      "job_id": "qfilm-deeplens-coherent-grid6144-20261027-01",
+      "path": "deeplens_qfilm_comparison.json",
+      "sha256": "c911cb00553b9936ef34c42a84318aef1f5f74313e6998c5af3adcf8e548eb51"
+    },
+    {
+      "job_id": "qfilm02-ultrafine-convergence-20261026-01",
+      "path": "qfilm02_ultrafine_convergence.json",
+      "sha256": "e6299893ea321f7eb01c7134a1ee2a827f175ccb65a93e0e6e61142a196e1993"
+    },
+    {
+      "job_id": "qfilm02-ray-diagnostic-20261026-01",
+      "path": "qfilm02_ray_diagnostic.json",
+      "sha256": "c5706c4ad07958bd06f87993a386c8c926e7b696a5a3c77ce723e14736f8f49d"
+    },
+    {
+      "job_id": "qfilm02-ray-diagnostic-20261026-01",
+      "path": "triton_kernel_cache/FVPHVYJPTRT7FZ6WGJOAEGFWIHELVL74MORQQVECA3ZWUUKYYLIQ/_fused_rays.json",
+      "sha256": "2a6aa09ea675e017a46c27bd701139cfc4216c08dbd6b491a5773e431bd826e7"
+    },
+    {
+      "job_id": "qfilm02-ray-diagnostic-20261026-01",
+      "path": "triton_kernel_cache/FVPHVYJPTRT7FZ6WGJOAEGFWIHELVL74MORQQVECA3ZWUUKYYLIQ/__grp___fused_rays.json",
+      "sha256": "2e63c2260a0282625fc5ee67becaf8302eab62a6c53dcdea6eddaa2edcb62a91"
+    },
+    {
+      "job_id": "qfilm02-ray-diagnostic-20261026-01",
+      "path": "triton_kernel_cache/UQYWQHV3IICTTFNLE7TAXRZR5UZ6QXATCVFXTBZQFBRQG5QCUFIA/_fused_rays.json",
+      "sha256": "555842aeb5a1522677eb87dedce1643e65163ec14cdcffe662be1817484824a6"
+    },
+    {
+      "job_id": "qfilm02-ray-diagnostic-20261026-01",
+      "path": "triton_kernel_cache/UQYWQHV3IICTTFNLE7TAXRZR5UZ6QXATCVFXTBZQFBRQG5QCUFIA/__grp___fused_rays.json",
+      "sha256": "64d6fd15775f6bf0ff5b62de1367052e1d825c4bd8a7e67ccc1e07282da4612b"
+    },
+    {
+      "job_id": "qfilm03-poly-fixedchief-20261028-01",
+      "path": "qfilm03_poly_fixed_chief/internal_stop_asphere.json",
+      "sha256": "729be2169d6e2cec09c40aed6fd82d7a962977cb57b21dbc98801cd9ad012c47"
+    },
+    {
+      "job_id": "qfilm03-poly-fixedchief-20261028-01",
+      "path": "qfilm03_poly_fixed_chief/singlet.json",
+      "sha256": "d52b8541f5b25def3af263c1dfdb923f060a5bffbfeb60bfcea8a2fe71298c02"
+    },
+    {
+      "job_id": "qfilm03-poly-fixedchief-20261028-01",
+      "path": "qfilm03_poly_fixed_chief/polychromatic_huygens_36x24_fixed_chief.json",
+      "sha256": "b8d72fee7655aef40b48e3b893de948029270655de7e9656951bfcfea8868045"
+    },
+    {
+      "job_id": "qfilm-deeplens-coherent-grid4096-20261027-01",
+      "path": "thin_deeplens_same_prescription.json",
+      "sha256": "43483a34e4a57bf46a92eb967be3d41c0e0e34b8eb0776c2f140d0e4ca3e6ac7"
+    },
+    {
+      "job_id": "qfilm-deeplens-coherent-grid4096-20261027-01",
+      "path": "deeplens_qfilm_comparison.json",
+      "sha256": "b641d1e2c5ce9524060eb8e8db53556eada681f91076313a194b0efbc2c76e08"
+    },
+    {
+      "job_id": "qfilm02-convergence-20261026-01",
+      "path": "qfilm02_convergence.json",
+      "sha256": "add2c20fb6a604b7c450aae3b27f770c2653d9692564036469d36c00ecf0a44c"
+    },
+    {
+      "job_id": "qfilm-deeplens-qfilm-same-lens-20261027-01",
+      "path": "deeplens_qfilm_comparison.json",
+      "sha256": "b048ff8c63620d0071c0781e2f7cd4d07008d50b02caf2854bb9779c40771e4f"
+    },
+    {
+      "job_id": "qfilm02-server-cpu-dualgpu-20261025-01",
+      "path": "qfilm02_cpu_full.json",
+      "sha256": "b0f7422d231908999ffbc78e2854deac5833a3735473ed9ceadd0b30b7ed5d90"
+    },
+    {
+      "job_id": "qfilm02-server-cpu-dualgpu-20261025-01",
+      "path": "qfilm02_cuda_1_full.json",
+      "sha256": "8a369cd4624b4e645d52c6b47b02edfb81ce8896abc965ee599397544d94f565"
+    },
+    {
+      "job_id": "qfilm02-server-cpu-dualgpu-20261025-01",
+      "path": "qfilm02_server_summary.json",
+      "sha256": "2718bd2ae39db1d705c3d647c96c6660d91fb5a124e8c15ed34dc4db97c977e6"
+    },
+    {
+      "job_id": "qfilm02-server-cpu-dualgpu-20261025-01",
+      "path": "qfilm02_cuda_0_full.json",
+      "sha256": "07d6f592a244ce35fa515e4e1502ee17bd73e66718cf76c927b6a5a7bfa00ad5"
+    },
+    {
+      "job_id": "000-qfilm04-fine-02c-00-ef100mm_f2.8-20261028",
+      "path": "fine_11_c_solve.json",
+      "sha256": "3f8bb493a338820862948b58068e885226fd8049225ff576d95796d52770f41b"
+    },
+    {
+      "job_id": "qfilm02-megagrid-convergence-20261026-01",
+      "path": "qfilm02_megagrid_convergence.json",
+      "sha256": "ced0dba826e8681c37427b100cb0abb97becc567723fa57126428a8b3ae8e29e"
+    },
+    {
+      "job_id": "qfilm-deeplens-coherent-repro-20261027-01",
+      "path": "thin_deeplens_same_prescription.json",
+      "sha256": "d71e17288e581662448c853427d0e61adf4885171d708a3d8463eade4478bf60"
+    },
+    {
+      "job_id": "qfilm-deeplens-coherent-repro-20261027-01",
+      "path": "deeplens_qfilm_comparison.json",
+      "sha256": "9f286bbd06a085d7165a1447848a008dd6f200823482af2935b13873260f1a34"
+    },
+    {
+      "job_id": "qfilm03-physical-finalJ-20261028-02",
+      "path": "qfilm03_physical_mode_validation/fullframe_physical_finalJ_regression.json",
+      "sha256": "82b66a7a33dfb33be57ba6838560bbb50f20ae6529992606ec821e9890558d7d"
+    },
+    {
+      "job_id": "qfilm02-exitfft-comparison-20261026-01",
+      "path": "qfilm02_exitfft_compare.json",
+      "sha256": "a80ef08a6a3f24311d85d7bca5f721bfb3aa2e0cbc1851ec172a606ca3f7a41f"
+    },
+    {
+      "job_id": "qfilm03-chief-geometry-20261028-01",
+      "path": "qfilm03_geometry/internal_stop_asphere.json",
+      "sha256": "22ad8a72c7122f9bbbaadbc54d9f06da468ab37364d3c606c82ee409b514c355"
+    },
+    {
+      "job_id": "qfilm03-chief-geometry-20261028-01",
+      "path": "qfilm03_geometry/singlet.json",
+      "sha256": "2f2963ecf1081c7a4960684d5a0a089bda6c4783f6e7db9c436da5726570616b"
+    },
+    {
+      "job_id": "qfilm03-chief-geometry-20261028-01",
+      "path": "qfilm03_geometry/chief_ray_distortion_chromatic.json",
+      "sha256": "4551d45f667275a8896a04f612352d50d510bf72f1d1f6e1cff250aa9ee19a0d"
+    },
+    {
+      "job_id": "000-qfilm04-fine-01g-02-ef40mm_f2.8-20261028",
+      "path": "fine_11_g_solve.json",
+      "sha256": "db0decb6c5fde13833676948c9e29d36e9f6142eb2c35fadc33e8dc4aa00c981"
+    },
+    {
+      "job_id": "qfilm02-triton-bootstrap-20261026-02",
+      "path": "qfilm02_triton_compare.json",
+      "sha256": "115cbca2ef1fa7d20280529d1aeab404169fbf20e3a4c80b575f11411c2642d5"
+    },
+    {
+      "job_id": "qfilm02-triton-bootstrap-20261026-02",
+      "path": "triton_kernel_cache/FPQ4LX7GAD3D66HUQ7XZLV26HTCQIGOWNWQTOLQBZXVFGS4LIPSQ/_fused_rays.json",
+      "sha256": "19be314c923e26705f5b57c538964a0073199a84b65bcd396957ce1174be81f8"
+    },
+    {
+      "job_id": "qfilm02-triton-bootstrap-20261026-02",
+      "path": "triton_kernel_cache/FPQ4LX7GAD3D66HUQ7XZLV26HTCQIGOWNWQTOLQBZXVFGS4LIPSQ/__grp___fused_rays.json",
+      "sha256": "16ba4009a8ac36c2a06aa259c4350dadd97e3405c21e709bb3f5eff142025bea"
+    },
+    {
+      "job_id": "qfilm02-triton-bootstrap-20261026-02",
+      "path": "triton_kernel_cache/3OOBEVKQIIPZPXKBNTJRR7UBPDUZ3GT5CCF4AMY6M2LKOIFW4EXA/_fused_rays.json",
+      "sha256": "29cbd27bee4d46126a25cb60fd4b5008f2156381f7caa6e9ec0819fbf494db57"
+    },
+    {
+      "job_id": "qfilm02-triton-bootstrap-20261026-02",
+      "path": "triton_kernel_cache/3OOBEVKQIIPZPXKBNTJRR7UBPDUZ3GT5CCF4AMY6M2LKOIFW4EXA/__grp___fused_rays.json",
+      "sha256": "d072dbce834711c565203430a193e00dcbef43719de6bc5391ac411eecf78fdf"
+    },
+    {
+      "job_id": "000-qfilm04-fine-01g-10-yongnuo_50mm_f1.8-20261028",
+      "path": "fine_11_g_solve.json",
+      "sha256": "47c94e956ca4547cc04a6429475c91f71517bb6e3ed5a17974f5c5df0bd2ced5"
+    },
+    {
+      "job_id": "qfilm03-propagation-rootcause-20261028-01",
+      "path": "qfilm03_propagation_root_cause/internal_stop_asphere.json",
+      "sha256": "729be2169d6e2cec09c40aed6fd82d7a962977cb57b21dbc98801cd9ad012c47"
+    },
+    {
+      "job_id": "qfilm03-propagation-rootcause-20261028-01",
+      "path": "qfilm03_propagation_root_cause/matched_physical_huygens_vs_fft.json",
+      "sha256": "da33d211ffced855d4af98934dead2c7abd46d1511384f8b8951d00648df0c5a"
+    },
+    {
+      "job_id": "qfilm03-propagation-rootcause-20261028-01",
+      "path": "qfilm03_propagation_root_cause/singlet.json",
+      "sha256": "d52b8541f5b25def3af263c1dfdb923f060a5bffbfeb60bfcea8a2fe71298c02"
+    },
+    {
+      "job_id": "qfilm-deeplens-coherent-4m-20261027-01",
+      "path": "thin_deeplens_same_prescription.json",
+      "sha256": "d71e17288e581662448c853427d0e61adf4885171d708a3d8463eade4478bf60"
+    },
+    {
+      "job_id": "qfilm-deeplens-coherent-4m-20261027-01",
+      "path": "deeplens_qfilm_comparison.json",
+      "sha256": "e6f5545cfc8d028b05b362c56d73fc9f1bd628fe3436f0f375c8072f76f08689"
+    },
+    {
+      "job_id": "qfilm03-fullframe-1024-20261028-01",
+      "path": "qfilm03_highres/fullframe_1024_convergence.json",
+      "sha256": "2a33ccd5a2914e0dc528841674b284a4096fbbfb8766ff52333d449d3e0a5237"
+    },
+    {
+      "job_id": "qfilm03-exit-pupil-plane-20261028-02",
+      "path": "singlet_exit.json",
+      "sha256": "d52b8541f5b25def3af263c1dfdb923f060a5bffbfeb60bfcea8a2fe71298c02"
+    },
+    {
+      "job_id": "000-qfilm04-fine-01g-03-ef50mm_f1.8-20261028",
+      "path": "fine_11_g_solve.json",
+      "sha256": "25e55ee3f85bc9fcd75c934091dd94191fdeda550e31ae6bc4385c72227bb6dd"
+    },
+    {
+      "job_id": "000-qfilm04-fine-01g-04-ef85mm_f1.8-20261028",
+      "path": "fine_11_g_solve.json",
+      "sha256": "2bb7bf7933077ffaabe55a827fae88a241eb9574ca46e3e96fcf7ffecb98578e"
+    },
+    {
+      "job_id": "qfilm-deeplens-internal-positive-million-20261027-01",
+      "path": "internal_positive_deeplens_same_prescription.json",
+      "sha256": "406e75a317c312386e7dc350121b459ec20b22fbee2bf74d805f6aae1cfd00d1"
+    },
+    {
+      "job_id": "qfilm-deeplens-internal-positive-million-20261027-01",
+      "path": "deeplens_qfilm_comparison.json",
+      "sha256": "0420453c6e2234dd1c6b1bee35e22ca3121c79e025ffb682aa29515214e3759e"
+    },
+    {
+      "job_id": "000-000-qfilm04-recheck-20261029-01",
+      "path": "workstation_recheck.json",
+      "sha256": "f74ed99d2ebb07c47bbfb5ced82399ae4df574a93a2f80866c493fa12ee9fb54"
+    },
+    {
+      "job_id": "000-000-qfilm04-recheck-20261029-01",
+      "path": "rf24_gpu_report_recovered.json",
+      "sha256": "c2fcd2f481975f8870701784667b59cbcadd82e4e91e2ee7b6d7da30914c91fc"
+    },
+    {
+      "job_id": "000-000-qfilm04-recheck-20261029-01",
+      "path": "recovered/000-qfilm04-fine-02c-08-rf50mm_f1.8-20261028.json",
+      "sha256": "a16d13f7b77708788443b9f432e4e7524a7d3d9259c7625eeff7520e034b03bd"
+    },
+    {
+      "job_id": "000-000-qfilm04-recheck-20261029-01",
+      "path": "recovered/000-qfilm04-fine-01g-05-rf16mm_f2.8-20261028.json",
+      "sha256": "f6afae3855b8a390b2509fe8d9aa33f94706c1da83543e433d8cd8d25523174d"
+    },
+    {
+      "job_id": "000-000-qfilm04-recheck-20261029-01",
+      "path": "recovered/000-qfilm04-fine-02c-04-ef85mm_f1.8-20261028.json",
+      "sha256": "6620c139519040636e3a4b4ad343b39168fd6253fcb3c28a8d4635717e846b9b"
+    },
+    {
+      "job_id": "000-000-qfilm04-recheck-20261029-01",
+      "path": "recovered/000-qfilm04-fine-01g-08-rf50mm_f1.8-20261028.json",
+      "sha256": "70e3e288f9e1c12813567d2fae3c16983a37a15ffb3fb88cfa451f9fd565c3f2"
+    },
+    {
+      "job_id": "000-000-qfilm04-recheck-20261029-01",
+      "path": "recovered/000-qfilm04-fine-01g-01-ef35mm_f2.0-20261028.json",
+      "sha256": "84ecba1e972905dd69501728265e14bba50f856f23fe91584dbefc2f2c5b05f2"
+    },
+    {
+      "job_id": "000-000-qfilm04-recheck-20261029-01",
+      "path": "recovered/000-qfilm04-fine-01g-09-sigma70mm_f2.8-20261028.json",
+      "sha256": "322bfdba20c1671998f4fd025497638384bc58ab78a6788fd778a4989e87aac9"
+    },
+    {
+      "job_id": "000-000-qfilm04-recheck-20261029-01",
+      "path": "recovered/000-qfilm04-fine-01g-07-rf35mm_f1.8-20261028.json",
+      "sha256": "27eea813c73a90f25ddc3973eab7e7d3ebd0dffa583e83f31e5d271187027693"
+    },
+    {
+      "job_id": "000-000-qfilm04-recheck-20261029-01",
+      "path": "recovered/000-qfilm04-fine-01g-04-ef85mm_f1.8-20261028.json",
+      "sha256": "2bb7bf7933077ffaabe55a827fae88a241eb9574ca46e3e96fcf7ffecb98578e"
+    },
+    {
+      "job_id": "000-000-qfilm04-recheck-20261029-01",
+      "path": "recovered/000-qfilm04-fine-01g-02-ef40mm_f2.8-20261028.json",
+      "sha256": "db0decb6c5fde13833676948c9e29d36e9f6142eb2c35fadc33e8dc4aa00c981"
+    },
+    {
+      "job_id": "000-000-qfilm04-recheck-20261029-01",
+      "path": "recovered/000-qfilm04-fine-01g-06-rf24mm_f1.8-20261028.json",
+      "sha256": "cb4a414e271c575eba7bb6c03b8bb9196ff81537f72bb8215dd01ab2cb9da332"
+    },
+    {
+      "job_id": "000-000-qfilm04-recheck-20261029-01",
+      "path": "recovered/000-qfilm04-fine-01g-00-ef100mm_f2.8-20261028.json",
+      "sha256": "c633b3d03478f0e82b3373d52221c31899b4231a6dc6b25251ded45f051b5739"
+    },
+    {
+      "job_id": "000-000-qfilm04-recheck-20261029-01",
+      "path": "recovered/000-qfilm04-fine-02c-00-ef100mm_f2.8-20261028.json",
+      "sha256": "d2d9c1b8ade7242c94bbb180897a47606454813f24221e888ed3ebd98d6327ea"
+    },
+    {
+      "job_id": "000-000-qfilm04-recheck-20261029-01",
+      "path": "recovered/000-qfilm04-fine-01g-03-ef50mm_f1.8-20261028.json",
+      "sha256": "25e55ee3f85bc9fcd75c934091dd94191fdeda550e31ae6bc4385c72227bb6dd"
+    },
+    {
+      "job_id": "000-000-qfilm04-recheck-20261029-01",
+      "path": "recovered/000-qfilm04-fine-01g-10-yongnuo_50mm_f1.8-20261028.json",
+      "sha256": "47c94e956ca4547cc04a6429475c91f71517bb6e3ed5a17974f5c5df0bd2ced5"
+    },
+    {
+      "job_id": "qfilm02-hybrid-regression-20261026-01",
+      "path": "qfilm02_triton_compare.json",
+      "sha256": "ac53570a38d923f540b515402d63dfe30fa6aa5926bcc2290c64f8e2771df84d"
+    },
+    {
+      "job_id": "000-000-000-000-qfilm04-reconnect-20261029-f9770334",
+      "path": "reconnect-terminal.json",
+      "sha256": "e59bab3d25580c6b776a617f9bd14235e11be990155684bb47cc1f04b7eb2f67"
+    },
+    {
+      "job_id": "000-000-000-000-qfilm04-reconnect-20261029-f9770334",
+      "path": "reconnect-checkpoint.json",
+      "sha256": "f8eb457cecdb4a6bf30922fe402226addf9e5bcba9d694713bdac36c1d14bab9"
+    },
+    {
+      "job_id": "000-000-000-000-qfilm04-reconnect-20261029-f9770334",
+      "path": "fresh-handshake.json",
+      "sha256": "90e32a157b7d73550cdd55581966128c0056c45ccffb18dc7535a38feb0045c1"
+    },
+    {
+      "job_id": "000-000-000-000-qfilm04-reconnect-20261029-f9770334",
+      "path": "controls/controls-checkpoint.json",
+      "sha256": "ab873a9c51c18ae62aed1058b75937a6ea095bdea8e39ae95810b9229334d609"
+    },
+    {
+      "job_id": "000-000-000-000-qfilm04-reconnect-20261029-f9770334",
+      "path": "controls/controls-terminal.json",
+      "sha256": "31230defae393464349f0193b4c2ce73a2e5a11e2a92f52b0be8437787176a23"
+    },
+    {
+      "job_id": "qfilm03-physical-finalJ-fixedchief-256-20261028-01",
+      "path": "qfilm03_physical_mode_fixedchief/fullframe_physical_finalJ_fixedchief_256.json",
+      "sha256": "32f147470c7a25595ed2d0c4019ea0358417c91bceedebfa7ef85bca77088581"
+    },
+    {
+      "job_id": "qfilm03-3way-gpu-20261027-01",
+      "path": "qfilm03_benchmark/three_way.json",
+      "sha256": "41b836f32d68baf66854bbdadcaf1413b5ecf5ffbfff747c4931e21fe7a852d8"
+    },
+    {
+      "job_id": "qfilm03-virtual-pupil-huygens-20261028-01",
+      "path": "qfilm03_virtual_pupil_diagnostic/virtual_vs_postglass_huygens.json",
+      "sha256": "2ebc890d5446750647cc932552672f8bafb87fa7d8d406891b82a50c8357c32b"
+    },
+    {
+      "job_id": "qfilm03-virtual-pupil-huygens-20261028-01",
+      "path": "qfilm03_virtual_pupil_diagnostic/internal_stop_asphere.json",
+      "sha256": "729be2169d6e2cec09c40aed6fd82d7a962977cb57b21dbc98801cd9ad012c47"
+    },
+    {
+      "job_id": "qfilm03-virtual-pupil-huygens-20261028-01",
+      "path": "qfilm03_virtual_pupil_diagnostic/singlet.json",
+      "sha256": "d52b8541f5b25def3af263c1dfdb923f060a5bffbfeb60bfcea8a2fe71298c02"
+    },
+    {
+      "job_id": "qfilm-deeplens-aptdeps-20261027-01",
+      "path": "deeplens_aptdeps.json",
+      "sha256": "f398b8a6a2669790e928a6f997597c35b7da4e1e221bdaca74e5073f6fd368c1"
+    },
+    {
+      "job_id": "000-qfilm04-fine-01g-05-rf16mm_f2.8-20261028",
+      "path": "fine_11_g_solve.json",
+      "sha256": "f6afae3855b8a390b2509fe8d9aa33f94706c1da83543e433d8cd8d25523174d"
+    },
+    {
+      "job_id": "qfilm04-seven-independent-patents-20261028-01",
+      "path": "qfilm04_independent_patents/7_independent_camera_patents_gpu_pilot.json",
+      "sha256": "4b0c37b91f9202d1c950fcef78680d7be2dc0d447154e22115989dd25667e268"
+    },
+    {
+      "job_id": "qfilm03-corrected-chief-reference-20261028-01",
+      "path": "qfilm03_fixed_chief_verify/corrected_reference_chief_and_mono_mtf.json",
+      "sha256": "df249524013dafae82f560ff51923e6046f55b27cad76712c5f3bd965db3a324"
+    },
+    {
+      "job_id": "qfilm02-chunk-benchmark-20261026-01",
+      "path": "qfilm02_chunk_benchmark.json",
+      "sha256": "abce8ad52645a27f43ae36a681d0ec9ea07f1e754bf336dd43efb79fd7489917"
+    },
+    {
+      "job_id": "qfilm02-chunk-benchmark-20261026-01",
+      "path": "triton_kernel_cache/YK4LYR3SEIDMY62GCB5IFQ4NTAKRWZLNFGWCWHPMYQM3DDSIXJCA/_fused_rays.json",
+      "sha256": "d3eaa473bec9c72e42e48dc61ceca57201cfe8e09781dc304e4bdf64c6532589"
+    },
+    {
+      "job_id": "qfilm02-chunk-benchmark-20261026-01",
+      "path": "triton_kernel_cache/YK4LYR3SEIDMY62GCB5IFQ4NTAKRWZLNFGWCWHPMYQM3DDSIXJCA/__grp___fused_rays.json",
+      "sha256": "64346433234bbcc070826ae6ea6a18ef47aec1a96ea5a7ca72106bec137e318d"
+    },
+    {
+      "job_id": "qfilm02-chunk-benchmark-20261026-01",
+      "path": "triton_kernel_cache/WMXULNMVJGKBHVK4IFTWDAFSRLNMMBWU25B4NLBSQALRRJSYZA2A/_fused_rays.json",
+      "sha256": "853c399d20eb67537cd261fe95d117451bc2a8632e05f20eeea641e993eae361"
+    },
+    {
+      "job_id": "qfilm02-chunk-benchmark-20261026-01",
+      "path": "triton_kernel_cache/WMXULNMVJGKBHVK4IFTWDAFSRLNMMBWU25B4NLBSQALRRJSYZA2A/__grp___fused_rays.json",
+      "sha256": "4818b5bc6ad9c38e8e9800008ba7844ee45417fe64839f83f2a19b39135cc7d5"
+    },
+    {
+      "job_id": "qfilm02-chunk-benchmark-20261026-01",
+      "path": "triton_kernel_cache/T66EIGS2II3Q7SNTQOTGXVJZ2BULGWFN756JFBKH5MS6MJMCZRWQ/_fused_rays.json",
+      "sha256": "1e10d80b0488701085e822705db988a9a5e9b9c90c3d403f8d124b68471ab5ae"
+    },
+    {
+      "job_id": "qfilm02-chunk-benchmark-20261026-01",
+      "path": "triton_kernel_cache/T66EIGS2II3Q7SNTQOTGXVJZ2BULGWFN756JFBKH5MS6MJMCZRWQ/__grp___fused_rays.json",
+      "sha256": "45ae0ef12da6e64b4e7f6d11bb9d620991d9dc967f7f0d162841fd665e8ac017"
+    },
+    {
+      "job_id": "qfilm02-chunk-benchmark-20261026-01",
+      "path": "triton_kernel_cache/TW3XMSJ4T2AVG45UGNJBWIDFEVJH4UMFZ6RTRELBS47G457SBAUA/_fused_rays.json",
+      "sha256": "8782bbf42ef1ea5bb6b716c2b927c055ac15e145396f32e3e0af9552db027e5e"
+    },
+    {
+      "job_id": "qfilm02-chunk-benchmark-20261026-01",
+      "path": "triton_kernel_cache/TW3XMSJ4T2AVG45UGNJBWIDFEVJH4UMFZ6RTRELBS47G457SBAUA/__grp___fused_rays.json",
+      "sha256": "11c70ca650f5e45d55c6f3983ee4ef4a3b05230a3378a52d271ef36bd7d8597f"
+    },
+    {
+      "job_id": "qfilm02-chunk-benchmark-20261026-01",
+      "path": "triton_kernel_cache/57Q5OUZ74ESDUPHXDLXAYNQ4DCROFI7BULRNPR6S3JWVYCFBP7EA/_fused_rays.json",
+      "sha256": "d6c49fd912a529d56bffef284cd628665252ec173825a273dfd64e616c9c8c76"
+    },
+    {
+      "job_id": "qfilm02-chunk-benchmark-20261026-01",
+      "path": "triton_kernel_cache/57Q5OUZ74ESDUPHXDLXAYNQ4DCROFI7BULRNPR6S3JWVYCFBP7EA/__grp___fused_rays.json",
+      "sha256": "6abaf7ed4984529d1f4d9011e0621988ff0df97a934fc369f75a66a4fb633679"
+    },
+    {
+      "job_id": "qfilm02-chunk-benchmark-20261026-01",
+      "path": "triton_kernel_cache/5TCDM4PKEFQAARU2YKQN6MD74OLAZ43HUVASGVETEVRXS5SSZJEQ/_fused_rays.json",
+      "sha256": "a962b170a8146ee0e1f49777801e5cdd039260ee60d172b343f9c94383d23889"
+    },
+    {
+      "job_id": "qfilm02-chunk-benchmark-20261026-01",
+      "path": "triton_kernel_cache/5TCDM4PKEFQAARU2YKQN6MD74OLAZ43HUVASGVETEVRXS5SSZJEQ/__grp___fused_rays.json",
+      "sha256": "069813173aab4ae3a20e1486199da28d4453028f6c6e9b52074424ed524da84c"
+    },
+    {
+      "job_id": "qfilm02-chunk-benchmark-20261026-01",
+      "path": "triton_kernel_cache/U5KY6HTASSHFD44PZB6NQWP3WSSOGRML7NBXUZ2CV26LP7TZMETA/_fused_rays.json",
+      "sha256": "7e92f1b740b06dc4d92bf0074d2beaa33e4775914c020c1104a149952a1c97f2"
+    },
+    {
+      "job_id": "qfilm02-chunk-benchmark-20261026-01",
+      "path": "triton_kernel_cache/U5KY6HTASSHFD44PZB6NQWP3WSSOGRML7NBXUZ2CV26LP7TZMETA/__grp___fused_rays.json",
+      "sha256": "9f6494138f1706e6df747b6e3ff643b3057cdba519c1efdbeaa55aba80f799a6"
+    },
+    {
+      "job_id": "qfilm02-chunk-benchmark-20261026-01",
+      "path": "triton_kernel_cache/3A5CQEFW35JFL3LKYIBIGVGNQITXNY4EZDFNXKTY2KEHG3JVR2VA/_fused_rays.json",
+      "sha256": "9361b4ae26cd0c3981a07c940baf9e8c70a5fc297230a2c7521a2a94ab4dca31"
+    },
+    {
+      "job_id": "qfilm02-chunk-benchmark-20261026-01",
+      "path": "triton_kernel_cache/3A5CQEFW35JFL3LKYIBIGVGNQITXNY4EZDFNXKTY2KEHG3JVR2VA/__grp___fused_rays.json",
+      "sha256": "20082de1a7a53b6585e1b5f4f12ecb6b291355b0fb70d760caf9109f35551905"
+    },
+    {
+      "job_id": "000-000-002-qfilm04-remediation-ef40-green-20261029-01",
+      "path": "progress.json",
+      "sha256": "45070f4f41b03527ca0a65ed4e213fd2ec9b98ad408d083b831dd4b17a46eb3f"
+    },
+    {
+      "job_id": "000-000-002-qfilm04-remediation-ef40-green-20261029-01",
+      "path": "ef40-green-g-checkpoint.json",
+      "sha256": "73adecded32387b8e7cbb21cf04fbe153ffbf03e0e5ddf8a814e6e99088487bd"
+    },
+    {
+      "job_id": "000-000-002-qfilm04-remediation-ef40-green-20261029-01",
+      "path": "ef40-green-plan.json",
+      "sha256": "6a67b0d9b91cdc1deb4a042dee472ab08ae3c0509d9753628779b2fcb3c528b0"
+    },
+    {
+      "job_id": "qfilm-deeplens-qfilm-same-lens-20261027-02",
+      "path": "deeplens_qfilm_comparison.json",
+      "sha256": "288abe260ecc47f196ac087eba5e9490bfdff4dc0b2c7e24f7b34b21e1436b8d"
+    },
+    {
+      "job_id": "qfilm03-huygens-safechunk-20261028-02",
+      "path": "chunk_parity_lens.json",
+      "sha256": "c1df0b25b2d307c772b3811c14b4a71738162de00b3afb6a3f9671c237ee019c"
+    },
+    {
+      "job_id": "qfilm03-huygens-safechunk-20261028-02",
+      "path": "huygens_safechunk_parity.json",
+      "sha256": "d4b364c7a8df369c2ea78634fb2376031cf7c3adc81dafa15d1b664b3754b169"
+    },
+    {
+      "job_id": "qfilm03-huygens-safechunk-20261028-02",
+      "path": "qfilm03_huygens_quality/internal_stop_asphere.json",
+      "sha256": "d0a2f6e45e773e7c42e29d6219ac542f376ab14f8b1c3c11a211683c574b1cb9"
+    },
+    {
+      "job_id": "qfilm03-huygens-safechunk-20261028-02",
+      "path": "qfilm03_huygens_quality/reference_sampling_and_focus.json",
+      "sha256": "b9ef05d948a6dff0ca10f36149795b3e6c3ede7c0b45c398067d6fe66395bc66"
+    },
+    {
+      "job_id": "qfilm03-huygens-safechunk-20261028-02",
+      "path": "qfilm03_huygens_quality/singlet.json",
+      "sha256": "c1df0b25b2d307c772b3811c14b4a71738162de00b3afb6a3f9671c237ee019c"
+    },
+    {
+      "job_id": "000-qfilm04-fine-01g-06-rf24mm_f1.8-20261028",
+      "path": "fine_11_g_solve.json",
+      "sha256": "cb4a414e271c575eba7bb6c03b8bb9196ff81537f72bb8215dd01ab2cb9da332"
+    },
+    {
+      "job_id": "qfilm03-huygens-11fields-7waves-20261028-01",
+      "path": "qfilm03_huygens/singlet_large_stop_native_deeplens.json",
+      "sha256": "30f9ccd4165c73797a040b7cd15e23be4120e9b06a7ede0ea17087546cc98d06"
+    },
+    {
+      "job_id": "qfilm03-huygens-11fields-7waves-20261028-01",
+      "path": "qfilm03_huygens/singlet_native_deeplens.json",
+      "sha256": "d71e17288e581662448c853427d0e61adf4885171d708a3d8463eade4478bf60"
+    },
+    {
+      "job_id": "qfilm03-huygens-11fields-7waves-20261028-01",
+      "path": "qfilm03_huygens/huygens_spectral_fields.json",
+      "sha256": "2af37e49655ebd83965358c5e0fc2c012b3a13a3fd6e9121098bef659097fc02"
+    },
+    {
+      "job_id": "qfilm03-huygens-11fields-7waves-20261028-01",
+      "path": "qfilm03_huygens/internal_stop_asphere_native_deeplens.json",
+      "sha256": "406e75a317c312386e7dc350121b459ec20b22fbee2bf74d805f6aae1cfd00d1"
+    },
+    {
+      "job_id": "000-qfilm04-fine-01g-09-sigma70mm_f2.8-20261028",
+      "path": "fine_11_g_solve.json",
+      "sha256": "322bfdba20c1671998f4fd025497638384bc58ab78a6788fd778a4989e87aac9"
+    },
+    {
+      "job_id": "qfilm02-numeric-gate-20261026-01",
+      "path": "qfilm02_gate_test.json",
+      "sha256": "5d1d819c00d40f2785b81f48f331b8dcdd245bfb06f235d0d266348bf1f0ae1b"
+    },
+    {
+      "job_id": "qfilm-deeplens-deps-20261027-01",
+      "path": "deeplens_deps.json",
+      "sha256": "de2fc40293802033426e89e89efa6a2f3bb8ca6fb49563c606e9c4e53b185beb"
+    },
+    {
+      "job_id": "qfilm02-fine-convergence-20261026-01",
+      "path": "qfilm02_fine_convergence.json",
+      "sha256": "86e4a9284cc1c811aaf415588eab3908acaba75b7fa5e6b1919fe905bc797aa9"
+    },
+    {
+      "job_id": "qfilm03-fullframe-11x7-20261028-02",
+      "path": "qfilm03_fullframe_spectral/fullframe_11field_7wave_huygens.json",
+      "sha256": "24caead81514558a88928250bfe4e2f50bd507c816c4f15a5dcd4eddfffcab31"
+    },
+    {
+      "job_id": "qfilm03-fullframe-11x7-20261028-02",
+      "path": "qfilm03_fullframe_spectral/internal_stop_asphere.json",
+      "sha256": "729be2169d6e2cec09c40aed6fd82d7a962977cb57b21dbc98801cd9ad012c47"
+    },
+    {
+      "job_id": "qfilm03-fullframe-11x7-20261028-02",
+      "path": "qfilm03_fullframe_spectral/singlet.json",
+      "sha256": "d52b8541f5b25def3af263c1dfdb923f060a5bffbfeb60bfcea8a2fe71298c02"
+    },
+    {
+      "job_id": "000-qfilm04-fine-01g-00-ef100mm_f2.8-20261028",
+      "path": "fine_11_g_solve.json",
+      "sha256": "c633b3d03478f0e82b3373d52221c31899b4231a6dc6b25251ded45f051b5739"
+    },
+    {
+      "job_id": "000-000-000-qfilm04-remediation-controls-20261029-01",
+      "path": "controls-checkpoint.json",
+      "sha256": "ab873a9c51c18ae62aed1058b75937a6ea095bdea8e39ae95810b9229334d609"
+    },
+    {
+      "job_id": "000-000-000-qfilm04-remediation-controls-20261029-01",
+      "path": "controls-terminal.json",
+      "sha256": "44e5358a6f60d3621b64a31a0d889d36fed595bc01236d2097c8db4a3cb3585a"
+    },
+    {
+      "job_id": "qfilm03-3way-gpu-20261027-02",
+      "path": "qfilm03_benchmark/three_way.json",
+      "sha256": "a735dda9de4ed0db12669e576e1cfd77703a043b4f73b99175f29930125e62bc"
+    },
+    {
+      "job_id": "qfilm02-triton-fused-verify-20261026-03",
+      "path": "qfilm02_triton_compare.json",
+      "sha256": "c30f9e60f5112fdfbcb8bcc4089d2b2b394905013229e1c89a4090d18e01133e"
+    },
+    {
+      "job_id": "qfilm02-triton-fused-verify-20261026-03",
+      "path": "triton_kernel_cache/OYEYPACCJTTE23CTGK5EAFQN7AIQY5EFJYRFJVX6Z5PMXDYJ2NWA/_fused_rays.json",
+      "sha256": "5b74d301c17420e2ac9fa148fd18c6df8058fe5fef78362fa326c9303751a3f4"
+    },
+    {
+      "job_id": "qfilm02-triton-fused-verify-20261026-03",
+      "path": "triton_kernel_cache/OYEYPACCJTTE23CTGK5EAFQN7AIQY5EFJYRFJVX6Z5PMXDYJ2NWA/__grp___fused_rays.json",
+      "sha256": "c04f1069cdd967ed138d208ab25583e9d1bc1a6ef99b13ac650746c16310c5f0"
+    },
+    {
+      "job_id": "qfilm02-triton-fused-verify-20261026-03",
+      "path": "triton_kernel_cache/H6ZNOKUGRUUT7IGI2NINGWE7B7G2QZWYUEDQ72BYSVRIPIZUJ7XA/_fused_rays.json",
+      "sha256": "443e19994bba66b3410bd27cf5d8c36dcc7a6a6d84ba28a93eefa80958ddbb76"
+    },
+    {
+      "job_id": "qfilm02-triton-fused-verify-20261026-03",
+      "path": "triton_kernel_cache/H6ZNOKUGRUUT7IGI2NINGWE7B7G2QZWYUEDQ72BYSVRIPIZUJ7XA/__grp___fused_rays.json",
+      "sha256": "c39f03b89b767a81a2d969a3cf40972ebfed646e6e74cbb2efc294bfb4525395"
+    },
+    {
+      "job_id": "qfilm02-triton-fused-verify-20261026-03",
+      "path": "triton_kernel_cache/FPQ4LX7GAD3D66HUQ7XZLV26HTCQIGOWNWQTOLQBZXVFGS4LIPSQ/_fused_rays.json",
+      "sha256": "19be314c923e26705f5b57c538964a0073199a84b65bcd396957ce1174be81f8"
+    },
+    {
+      "job_id": "qfilm02-triton-fused-verify-20261026-03",
+      "path": "triton_kernel_cache/FPQ4LX7GAD3D66HUQ7XZLV26HTCQIGOWNWQTOLQBZXVFGS4LIPSQ/__grp___fused_rays.json",
+      "sha256": "a3c5f16d60f8662463c042dc4cd56e5811bfb040952580052d3667ab9c2f9a73"
+    },
+    {
+      "job_id": "qfilm02-triton-fused-verify-20261026-03",
+      "path": "triton_kernel_cache/3OOBEVKQIIPZPXKBNTJRR7UBPDUZ3GT5CCF4AMY6M2LKOIFW4EXA/_fused_rays.json",
+      "sha256": "29cbd27bee4d46126a25cb60fd4b5008f2156381f7caa6e9ec0819fbf494db57"
+    },
+    {
+      "job_id": "qfilm02-triton-fused-verify-20261026-03",
+      "path": "triton_kernel_cache/3OOBEVKQIIPZPXKBNTJRR7UBPDUZ3GT5CCF4AMY6M2LKOIFW4EXA/__grp___fused_rays.json",
+      "sha256": "1b425b72d88495f8dea312e3c5369959f2be82b367386326c9cbe80832f850d0"
+    },
+    {
+      "job_id": "qfilm02-triton-fused-verify-20261026-03",
+      "path": "triton_kernel_cache/PBI6ATER34RBCC7OKB33MLIJFG7IIBVGULINUGAFDRYUKZOQ7OBA/_fused_rays.json",
+      "sha256": "3a276755ff6d6f26546654156b30f653b6f40f4efc702ea411886a1a8757ede8"
+    },
+    {
+      "job_id": "qfilm02-triton-fused-verify-20261026-03",
+      "path": "triton_kernel_cache/PBI6ATER34RBCC7OKB33MLIJFG7IIBVGULINUGAFDRYUKZOQ7OBA/__grp___fused_rays.json",
+      "sha256": "8ffd86cba8d148d5cd4db4cfab1c9e5ea41348501c5f05339718177d73b0dd10"
+    },
+    {
+      "job_id": "qfilm-deeplens-qfilm256-million-20261027-01",
+      "path": "internal_positive_deeplens_same_prescription.json",
+      "sha256": "406e75a317c312386e7dc350121b459ec20b22fbee2bf74d805f6aae1cfd00d1"
+    },
+    {
+      "job_id": "qfilm-deeplens-qfilm256-million-20261027-01",
+      "path": "thin_deeplens_same_prescription.json",
+      "sha256": "d71e17288e581662448c853427d0e61adf4885171d708a3d8463eade4478bf60"
+    },
+    {
+      "job_id": "qfilm-deeplens-qfilm256-million-20261027-01",
+      "path": "deeplens_qfilm_comparison.json",
+      "sha256": "f3c058d22a49c75f04946361ec3fa7f7885cc32207985c7f9d8f5caea5fa029a"
+    },
+    {
+      "job_id": "qfilm03-imageplane-numerical-20261028-02",
+      "path": "qfilm03_accuracy/numerical_100x7.json",
+      "sha256": "96d6696ff4dc0ec73eeed349e22cbf447c6387b2af192bf59a35c49ea5f86738"
+    },
+    {
+      "job_id": "qfilm04-11-real-lens-pilot-20261028-01",
+      "path": "qfilm04_real_catalog/11_product_prescriptions_gpu_pilot.json",
+      "sha256": "22ba22b376c2ad673459af81ad2191c7f05937e5da69ae8120b565e1392b25de"
+    },
+    {
+      "job_id": "qfilm-deeplens-bootstrap-20261027-01",
+      "path": "deeplens_bootstrap.json",
+      "sha256": "39d562e4e12c3bfb76054f54e395f529222e857f60de297c903b9b95b12be288"
+    },
+    {
+      "job_id": "qfilm-deeplens-internalstop-million-20261027-01",
+      "path": "complex_deeplens_same_prescription.json",
+      "sha256": "0d3022f954ed7d50bee2bfd67c7409d0a4cdef4212d0945e63b15790660e4e0b"
+    },
+    {
+      "job_id": "qfilm-deeplens-internalstop-million-20261027-01",
+      "path": "deeplens_qfilm_comparison.json",
+      "sha256": "ab7b84116ea295f07501fcea7af7474ecae703b2da581e5f79361bdcebb69bcd"
+    },
+    {
+      "job_id": "qfilm03-identical-rays-opl-jacobian-20261028-01",
+      "path": "qfilm03_common_ray/internal_stop_asphere.json",
+      "sha256": "e0de2e5d7baebc0a0315285779962fed2bb4da9a30a4b6fb94a0463bec1af2c5"
+    },
+    {
+      "job_id": "qfilm03-identical-rays-opl-jacobian-20261028-01",
+      "path": "qfilm03_common_ray/matched_incident_rays_opl_opd_exit_jacobian.json",
+      "sha256": "2c4ecad27e0280d9062e8558c2f31420c54889747d0fb21b8d3d214ad884e39a"
+    },
+    {
+      "job_id": "qfilm03-identical-rays-opl-jacobian-20261028-01",
+      "path": "qfilm03_common_ray/singlet.json",
+      "sha256": "8f72876d0d315baa391f4051cae70b4d7a37c7b9550bb9d17f9eb916110b9113"
+    },
+    {
+      "job_id": "000-qfilm04-fine-01g-01-ef35mm_f2.0-20261028",
+      "path": "fine_11_g_solve.json",
+      "sha256": "84ecba1e972905dd69501728265e14bba50f856f23fe91584dbefc2f2c5b05f2"
+    },
+    {
+      "job_id": "qfilm-deeplens-huygens-spp65536-20261027-01",
+      "path": "thin_deeplens_same_prescription.json",
+      "sha256": "d71e17288e581662448c853427d0e61adf4885171d708a3d8463eade4478bf60"
+    },
+    {
+      "job_id": "qfilm-deeplens-huygens-spp65536-20261027-01",
+      "path": "deeplens_qfilm_comparison.json",
+      "sha256": "b7ebfa3d420f8b19efc220f3fc93f567db78ec825e14c86fb95ccadcc1aa388b"
+    },
+    {
+      "job_id": "qfilm03-propagation-rootcause-20261028-02",
+      "path": "qfilm03_propagation_root_cause/internal_stop_asphere.json",
+      "sha256": "729be2169d6e2cec09c40aed6fd82d7a962977cb57b21dbc98801cd9ad012c47"
+    },
+    {
+      "job_id": "qfilm03-propagation-rootcause-20261028-02",
+      "path": "qfilm03_propagation_root_cause/matched_physical_huygens_vs_fft.json",
+      "sha256": "27acdb21593b624a850ca67811bda2da08142551c6f3b7b8124f6716c28fd4c5"
+    },
+    {
+      "job_id": "qfilm03-propagation-rootcause-20261028-02",
+      "path": "qfilm03_propagation_root_cause/singlet.json",
+      "sha256": "d52b8541f5b25def3af263c1dfdb923f060a5bffbfeb60bfcea8a2fe71298c02"
+    },
+    {
+      "job_id": "qfilm03-exit-pupil-plane-20261028-03",
+      "path": "singlet_exit.json",
+      "sha256": "d52b8541f5b25def3af263c1dfdb923f060a5bffbfeb60bfcea8a2fe71298c02"
+    },
+    {
+      "job_id": "qfilm03-exit-pupil-plane-20261028-03",
+      "path": "internal_stop_asphere_exit.json",
+      "sha256": "729be2169d6e2cec09c40aed6fd82d7a962977cb57b21dbc98801cd9ad012c47"
+    },
+    {
+      "job_id": "000-qfilm04-fine-02c-08-rf50mm_f1.8-20261028",
+      "path": "fine_11_c_solve.json",
+      "sha256": "83a822c447d7c4f9830413f4aca604cc342173674808a4213c123d05056554cb"
+    },
+    {
+      "job_id": "qfilm03-true-fullframe-20261028-01",
+      "path": "qfilm03_true_fullframe/fullframe_huygens.json",
+      "sha256": "657a0ea3f01c49e0f053674e1bab0a1b2813ca52dbdcd6c6109020b444f2b92d"
+    },
+    {
+      "job_id": "qfilm03-true-fullframe-20261028-01",
+      "path": "qfilm03_true_fullframe/internal_stop_asphere.json",
+      "sha256": "729be2169d6e2cec09c40aed6fd82d7a962977cb57b21dbc98801cd9ad012c47"
+    },
+    {
+      "job_id": "qfilm03-true-fullframe-20261028-01",
+      "path": "qfilm03_true_fullframe/singlet.json",
+      "sha256": "d52b8541f5b25def3af263c1dfdb923f060a5bffbfeb60bfcea8a2fe71298c02"
+    },
+    {
+      "job_id": "qfilm03-identical-huygens-kernel-20261028-01",
+      "path": "qfilm03_identical_huygens/identical_rays_two_propagators.json",
+      "sha256": "4164520813ccc9bcea2f052f135bdf06b0489dd488525ce6d29b947c89c667be"
+    },
+    {
+      "job_id": "qfilm03-identical-huygens-kernel-20261028-01",
+      "path": "qfilm03_identical_huygens/internal_stop_asphere.json",
+      "sha256": "729be2169d6e2cec09c40aed6fd82d7a962977cb57b21dbc98801cd9ad012c47"
+    },
+    {
+      "job_id": "qfilm03-identical-huygens-kernel-20261028-01",
+      "path": "qfilm03_identical_huygens/singlet.json",
+      "sha256": "d52b8541f5b25def3af263c1dfdb923f060a5bffbfeb60bfcea8a2fe71298c02"
+    },
+    {
+      "job_id": "000-qfilm04-fine-02c-01-ef35mm_f2.0-20261028",
+      "path": "fine_11_c_solve.json",
+      "sha256": "5cd4636dc85352588e93d780b6bc9fc8a74742e37c1ce5702b02bfd6294c7aa4"
+    },
+    {
+      "job_id": "000-qfilm04-fine-01g-08-rf50mm_f1.8-20261028",
+      "path": "fine_11_g_solve.json",
+      "sha256": "70e3e288f9e1c12813567d2fae3c16983a37a15ffb3fb88cfa451f9fd565c3f2"
+    },
+    {
+      "job_id": "qfilm03-chief-geometry-20261028-02",
+      "path": "qfilm03_geometry/internal_stop_asphere.json",
+      "sha256": "22ad8a72c7122f9bbbaadbc54d9f06da468ab37364d3c606c82ee409b514c355"
+    },
+    {
+      "job_id": "qfilm03-chief-geometry-20261028-02",
+      "path": "qfilm03_geometry/singlet.json",
+      "sha256": "2f2963ecf1081c7a4960684d5a0a089bda6c4783f6e7db9c436da5726570616b"
+    },
+    {
+      "job_id": "qfilm03-chief-geometry-20261028-02",
+      "path": "qfilm03_geometry/chief_ray_distortion_chromatic.json",
+      "sha256": "fc0c01a230196d9260680ab344a08903db06a3da7b7d01e40aca96b7cf516401"
+    },
+    {
+      "job_id": "qfilm02-huygens-convergence-20261026-01",
+      "path": "qfilm02_huygens_convergence.json",
+      "sha256": "9626ccd27683d7b31a801ab4ba0971476b44d0d6bac57468607b683756f8f02e"
+    },
+    {
+      "job_id": "qfilm03-3way-gpu-20261027-03",
+      "path": "qfilm03_benchmark/three_way.json",
+      "sha256": "766806e355fe2a00aab27d379026333f192833fcf4f874c35bc82ce54aafb80d"
+    },
+    {
+      "job_id": "qfilm-deeplens-qfilm512-million-20261027-01",
+      "path": "internal_positive_deeplens_same_prescription.json",
+      "sha256": "406e75a317c312386e7dc350121b459ec20b22fbee2bf74d805f6aae1cfd00d1"
+    },
+    {
+      "job_id": "qfilm-deeplens-qfilm512-million-20261027-01",
+      "path": "thin_deeplens_same_prescription.json",
+      "sha256": "d71e17288e581662448c853427d0e61adf4885171d708a3d8463eade4478bf60"
+    },
+    {
+      "job_id": "qfilm-deeplens-qfilm512-million-20261027-01",
+      "path": "deeplens_qfilm_comparison.json",
+      "sha256": "d649d63a53f30fcac2bf76a37fc76a000224ef8c59ad7981460b1b714ae47654"
+    },
+    {
+      "job_id": "qfilm02-triton-internalstop-opt-20261026-01",
+      "path": "qfilm02_triton_compare.json",
+      "sha256": "139df7863c514fa86db5eccfcd67268e99b90531060799794090dd5ed765e5a7"
+    },
+    {
+      "job_id": "qfilm02-triton-internalstop-opt-20261026-01",
+      "path": "triton_kernel_cache/PJV7LAJL3PASL7F5INVQQSOXXR3IMSRH3TAHXA3XTVMEJOIJHYGQ/_fused_rays.json",
+      "sha256": "a76e06ba985111f1b9a46a882f538c128b27b8896c8b6aec106185d2c54d3f6f"
+    },
+    {
+      "job_id": "qfilm02-triton-internalstop-opt-20261026-01",
+      "path": "triton_kernel_cache/PJV7LAJL3PASL7F5INVQQSOXXR3IMSRH3TAHXA3XTVMEJOIJHYGQ/__grp___fused_rays.json",
+      "sha256": "ddba480a6214e4c943d31c62fed1ad8eb9c4f0290ca58deedafac42f3254852a"
+    },
+    {
+      "job_id": "qfilm02-triton-internalstop-opt-20261026-01",
+      "path": "triton_kernel_cache/Z2KT6JR2GHI6TVAD7RFYMSEZIRGK5LIENALM52QVK63DWH56GFFA/_fused_rays.json",
+      "sha256": "a5eb3f28855fe25ad0e97c28668c6cea9b84c9d4d5d6ac29dbfab8e16cddc3fd"
+    },
+    {
+      "job_id": "qfilm02-triton-internalstop-opt-20261026-01",
+      "path": "triton_kernel_cache/Z2KT6JR2GHI6TVAD7RFYMSEZIRGK5LIENALM52QVK63DWH56GFFA/__grp___fused_rays.json",
+      "sha256": "76447fa11d0f8b5cb25b6354a8522f8b34088ae557821bbdaf1dadc1d9f9feb0"
+    },
+    {
+      "job_id": "qfilm02-triton-internalstop-opt-20261026-01",
+      "path": "triton_kernel_cache/EAJ4RUWHBHFKAX74CTPZS2FN5HJ5FLZDGL4PJED6OZ7YLEPNZOPA/_fused_rays.json",
+      "sha256": "919ae787ed12650c2c5ca4e8056b0b5ad6b3106b33ef1c7d8f8518a68a0ddae2"
+    },
+    {
+      "job_id": "qfilm02-triton-internalstop-opt-20261026-01",
+      "path": "triton_kernel_cache/EAJ4RUWHBHFKAX74CTPZS2FN5HJ5FLZDGL4PJED6OZ7YLEPNZOPA/__grp___fused_rays.json",
+      "sha256": "805f8557bc03b777f706701da3af80427274da4651863af8eba88bc64c49aa9e"
+    },
+    {
+      "job_id": "qfilm02-triton-internalstop-opt-20261026-01",
+      "path": "triton_kernel_cache/2UCHMYMEMX53HG3MNHDSPKBLCCOPH3HZK2RU2DM6FR3GMICWAIPA/_fused_rays.json",
+      "sha256": "2254244337a4f8d6e421f9ca63a4cfcbe6c0b2347d8d1ae2a622597419d8a066"
+    },
+    {
+      "job_id": "qfilm02-triton-internalstop-opt-20261026-01",
+      "path": "triton_kernel_cache/2UCHMYMEMX53HG3MNHDSPKBLCCOPH3HZK2RU2DM6FR3GMICWAIPA/__grp___fused_rays.json",
+      "sha256": "b78cac5e81c4c0f23111809a1e69651894f1559bdf19a5b64f9133fe63db62dc"
+    },
+    {
+      "job_id": "qfilm02-triton-internalstop-opt-20261026-01",
+      "path": "triton_kernel_cache/SBL4DRVDAFYTC7MC2ZLO44JPYIYZXND7TBBW55XJI67GMOQDNAEQ/_fused_rays.json",
+      "sha256": "cb0d044d885d556225f86c28901a6ac97cf3c9800254f6f376d4e60ce50de118"
+    },
+    {
+      "job_id": "qfilm02-triton-internalstop-opt-20261026-01",
+      "path": "triton_kernel_cache/SBL4DRVDAFYTC7MC2ZLO44JPYIYZXND7TBBW55XJI67GMOQDNAEQ/__grp___fused_rays.json",
+      "sha256": "85bc0783cb96107dde83e75545395322a9fde5c6f99264858d0403e03fc5c20b"
+    },
+    {
+      "job_id": "qfilm02-steady-benchmark-20261026-01",
+      "path": "qfilm02_steady_benchmark.json",
+      "sha256": "d384a89a08b4053bdffc398164dcfd9714bdb199b5bfb3275c4352c5fa3c9151"
+    },
+    {
+      "job_id": "qfilm02-physics-integrity-20261026-01",
+      "path": "qfilm02_physics_integrity.json",
+      "sha256": "deb605c337c9ad1fa23524d841949968bc0f4004ecc448cd05d87371d3a02370"
+    },
+    {
+      "job_id": "qfilm03-imageplane-numerical-20261028-01",
+      "path": "qfilm03_accuracy/numerical_100x7.json",
+      "sha256": "abf727fcf5b7135bf9852857919fcf2d5a51d4d5d1bad646d13dda24b1e39561"
+    },
+    {
+      "job_id": "qfilm03-3way-gpu-20261027-04",
+      "path": "qfilm03_benchmark/three_way.json",
+      "sha256": "43d58632f8946b7cde4bf18c3f81ae944f10dfcf17cab94bd20f0e503ab92f18"
+    },
+    {
+      "job_id": "qfilm03-source-centering-curvature-20261028-01",
+      "path": "qfilm03_source_wavefield/internal_stop_asphere.json",
+      "sha256": "729be2169d6e2cec09c40aed6fd82d7a962977cb57b21dbc98801cd9ad012c47"
+    },
+    {
+      "job_id": "qfilm03-source-centering-curvature-20261028-01",
+      "path": "qfilm03_source_wavefield/random_chief_and_source_curvature.json",
+      "sha256": "2cf28f56cf976eba9df7d1da9fd6ae800d1e6f24daf8acf9cbb72bb26174ee33"
+    },
+    {
+      "job_id": "qfilm03-source-centering-curvature-20261028-01",
+      "path": "qfilm03_source_wavefield/singlet.json",
+      "sha256": "d52b8541f5b25def3af263c1dfdb923f060a5bffbfeb60bfcea8a2fe71298c02"
+    }
+  ],
+  "originals_retained": true
+}
