@@ -6,10 +6,10 @@
       "progress": {
         "condition": "rf50mm_f1.8-h0.5-w550",
         "device": "cpu",
-        "elapsed_seconds": 5.428724825382233,
+        "elapsed_seconds": 39.11098840739578,
         "field_h": 0.5,
-        "stage": "trace_512",
-        "updated_unix": 1793383508.9185042,
+        "stage": "pupil_completed",
+        "updated_unix": 1793383542.6007679,
         "wavelength_nm": 550.0
       },
       "returncode": null
@@ -43,5 +43,5 @@
       "returncode": 0
     }
   ],
-  "updated_unix": 1793383512.7632055
+  "updated_unix": 1793383542.7692547
 }
