@@ -1,0 +1,6 @@
+{
+  "action": "stop",
+  "job_id": "qfilm02-triton-bootstrap-20261026-02",
+  "reason": "User requested termination of Qfilm 0.4 tasks and migration to QfilmRW",
+  "requested_unix": 1793364069.4362524
+}

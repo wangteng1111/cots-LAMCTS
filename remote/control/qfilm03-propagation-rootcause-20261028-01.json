@@ -1,4 +1,6 @@
 {
   "action": "stop",
-  "reason": "superseded by 384-pixel block accelerated physically identical Huygens integral benchmark"
+  "job_id": "qfilm03-propagation-rootcause-20261028-01",
+  "reason": "User requested termination of Qfilm 0.4 tasks and migration to QfilmRW",
+  "requested_unix": 1793364069.436691
 }

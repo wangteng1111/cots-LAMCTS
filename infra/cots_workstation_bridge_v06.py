@@ -12,7 +12,7 @@ import cots_workstation_bridge as v3
 import cots_workstation_bridge_v04 as v4
 import cots_workstation_bridge_v05 as v5
 
-VERSION='0.6.0'
+VERSION='0.6.1'
 OUTBOX=v3.STATE/'outbox_v06';OUTBOX.mkdir(parents=True,exist_ok=True)
 LOCK=threading.RLock();LAST_SYNC=0.;NETWORK_ERROR=None
 ORIGINAL_PUT=v4._ORIG_PUT_FILE
@@ -21,6 +21,32 @@ UPLOAD_MARKS={}
 MANAGED=set()
 ADOPT_LOCK=threading.RLock()
 ORIGINAL_VALIDATE=v3.validate_request
+STOP_SENT={}
+
+def stop_adopted(processes, now=None):
+    """Stop only explicitly cancelled jobs after rechecking PID identity.
+
+    Never signal a process group inherited from the service. A reused PID or
+    an unrelated Python process must not be signalled. Persist the reason
+    separately; an interrupted optical calculation is never convergence.
+    """
+    import signal
+    now=time.monotonic() if now is None else now
+    for rec in processes:
+        if not cached_stop(rec['job_id']):continue
+        proc=Path('/proc')/str(rec['pid'])
+        try:
+            if (proc/'stat').read_text().rsplit(')',1)[1].split()[19]!=rec['start_ticks']:continue
+            prefix=str(v3.JOBS/rec['job_id']/'src')+'/'
+            if not any(a.startswith(prefix) and a.endswith('.py') for a in
+                       (proc/'cmdline').read_bytes().decode(errors='replace').split('\0')):continue
+            key=(rec['pid'],rec['start_ticks'])
+            first=STOP_SENT.setdefault(key,now)
+            os.kill(rec['pid'],signal.SIGKILL if now-first>=20 else signal.SIGTERM)
+            atomic(v3.STATE/'cancelled_adopted_v06'/f"{rec['job_id']}.json",
+                {'job_id':rec['job_id'],'state':'stop_requested','observed_unix':time.time(),
+                 'pid':rec['pid'],'start_ticks':rec['start_ticks'],'reason':'explicit remote stop control'})
+        except (OSError,IndexError):continue
 
 def validate_request(obj,path):
     if path.startswith('remote/prepared/bridge-v06/'):
@@ -48,6 +74,7 @@ def freshness(data,fallback=0.):
 def enqueue(path,data,message):
     key=hashlib.sha256(path.encode()).hexdigest();target=OUTBOX/(key+'.json')
     now=time.time();rank=freshness(data,now)
+    first_queued=now
     with LOCK:
         watermark=v3.STATE/'publish_watermarks_v06.json'
         seen=json.loads(watermark.read_text()) if watermark.exists() else {}
@@ -55,8 +82,9 @@ def enqueue(path,data,message):
         if target.exists():
             old=json.loads(target.read_text())
             if tuple(old['freshness'])>rank:return
+            first_queued=old['queued_at']
         atomic(target,{'path':path,'message':message,'data_b64':base64.b64encode(data).decode(),
-            'freshness':rank,'sha256':hashlib.sha256(data).hexdigest(),'queued_at':now})
+            'freshness':rank,'sha256':hashlib.sha256(data).hexdigest(),'queued_at':first_queued})
 
 def migrate_pending():
     for file in sorted(v4.PENDING.glob('*.json')):
@@ -83,7 +111,7 @@ def publish_one():
             except (OSError,ValueError):pass
     if not records:return False
     # Terminal evidence first, then newest observations; bounded one item/tick.
-    records.sort(key=lambda x:(x[1]['freshness'][0],x[1]['queued_at']),reverse=True)
+    records.sort(key=lambda x:(-x[1]['freshness'][0],x[1]['queued_at']))
     file,rec=records[0];data=base64.b64decode(rec['data_b64'])
     remote=v3.gh_content(rec['path'])
     skip=False
@@ -174,6 +202,7 @@ def observe_adopted():
 
 def _observe_adopted():
     processes=discover_processes()
+    stop_adopted(processes)
     oldfile=v3.STATE/'adopted_processes_v06.json'
     previous=json.loads(oldfile.read_text()).get('processes',[]) if oldfile.exists() else []
     current_ids={p['job_id'] for p in processes}
@@ -193,12 +222,15 @@ def _observe_adopted():
                 exitdata=json.loads(exitfile.read_text());rc=exitdata.get('returncode')
                 value={'schema':1,'job_id':jid,'state':'finished' if rc==0 else 'failed',**exitdata,'bridge_version':VERSION}
             else:
-                value={'schema':1,'job_id':jid,'state':'recovered_unknown_exit','returncode':None,
+                cancelled=(v3.STATE/'cancelled_adopted_v06'/f'{jid}.json').exists()
+                value={'schema':1,'job_id':jid,'state':'stopped' if cancelled else 'recovered_unknown_exit','returncode':None,
                     'finished_at':time.time(),'bridge_version':VERSION,'note':'adopted process ended; original exit status unavailable; inspect native scientific terminal'}
             atomic(v3.STATE/'adopted_terminals_v06'/f'{jid}.json',value)
             v3.put_json(f'remote/results/{jid}.json',value,'adopted task terminal')
             v3.put_json(f'remote/finals/{jid}.json',value,'adopted task terminal')
     atomic(oldfile,{'observed_at':time.time(),'processes':processes})
+    v3.put_json('remote/health/adopted-processes.json',{'observed_unix':time.time(),
+        'bridge_version':VERSION,'processes':processes},'adopted process identities')
     return processes
 
 def adoption_loop():
@@ -219,7 +251,8 @@ def queue_paths():
     if time.time()-LAST_SYNC>300:return []
     out=v3.run(['git','ls-tree','-r','--name-only','origin/main','remote/queue','remote/prepared/bridge-v06'],cwd=v3.MIRROR,timeout=10)
     selected=os.environ.get('COTS_BRIDGE_QUEUE_INCLUDE',r'.*')
-    return sorted(p for p in out.splitlines() if p.endswith('.json') and re.search(selected,Path(p).stem))
+    return sorted(p for p in out.splitlines() if p.endswith('.json') and
+        re.search(selected,Path(p).stem) and not cached_stop(Path(p).stem))
 
 def run_job(req):
     jid=req['job_id'];job=v3.JOBS/jid;src=job/'src';art=job/'artifacts'

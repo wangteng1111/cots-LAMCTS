@@ -1,0 +1,6 @@
+{
+  "action": "stop",
+  "job_id": "000-000-013-qfilm06-zz-real11-10-yongnuo_50mm_f1.8-20261030",
+  "reason": "User requested termination of Qfilm 0.4 tasks and migration to QfilmRW",
+  "requested_unix": 1793364069.4401386
+}

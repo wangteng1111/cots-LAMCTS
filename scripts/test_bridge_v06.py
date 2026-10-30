@@ -11,6 +11,33 @@ import cots_workstation_bridge_v06 as b
 import qfilm_convergence_status as q
 
 class BridgeTests(unittest.TestCase):
+    def test_explicit_cancel_stops_real_adopted_child(self):
+        jid='cancel-adopted-test';script=b.v3.JOBS/jid/'src/validation/sleep.py'
+        script.parent.mkdir(parents=True,exist_ok=True)
+        script.write_text('import time;time.sleep(30)\n')
+        child=subprocess.Popen([sys.executable,str(script)])
+        try:
+            fake=Path(TEST_ROOT.name)/'proc-fixture';entry=fake/str(child.pid);entry.mkdir(parents=True,exist_ok=True)
+            (entry/'stat').write_text('1 (fixture) '+ ' '.join(['S']+['0']*18+['123']))
+            (entry/'cmdline').write_bytes((str(script)+'\0').encode())
+            rec={'pid':child.pid,'job_id':jid,'start_ticks':'123'}
+            with patch.object(b,'cached_stop',return_value=False),patch.object(b,'Path',side_effect=lambda p:fake if p=='/proc' else Path(p)):b.stop_adopted([rec])
+            self.assertIsNone(child.poll())
+            with patch.object(b,'cached_stop',return_value=True),patch.object(b,'Path',side_effect=lambda p:fake if p=='/proc' else Path(p)):b.stop_adopted([rec])
+            child.wait(timeout=5);self.assertEqual(child.returncode,-15)
+        finally:
+            if child.poll() is None:child.kill();child.wait()
+
+    def test_cancel_rejects_reused_pid(self):
+        rec={'pid':os.getpid(),'job_id':'unrelated','start_ticks':'wrong'}
+        with patch.object(b,'cached_stop',return_value=True),patch.object(b.os,'kill') as kill:
+            b.stop_adopted([rec]);kill.assert_not_called()
+
+    def test_pending_cancel_is_filtered_before_claim(self):
+        path='remote/queue/000-000-020-qfilmrw-test.json'
+        with patch.object(b,'observe_adopted',return_value=[]),patch.object(b,'LAST_SYNC',time.time()),patch.object(b.v3,'run',return_value=path),patch.dict(os.environ,{'COTS_BRIDGE_QUEUE_INCLUDE':'.*'}),patch.object(b,'cached_stop',return_value=True):
+            self.assertEqual(b.queue_paths(),[])
+
     def setUp(self):
         for p in b.OUTBOX.glob('*.json'):p.unlink()
         (b.v3.STATE/'publish_watermarks_v06.json').unlink(missing_ok=True)

@@ -1,0 +1,6 @@
+{
+  "action": "stop",
+  "job_id": "000-000-000-000-qfilm04-reconnect-20261029-f9770334",
+  "reason": "User requested termination of Qfilm 0.4 tasks and migration to QfilmRW",
+  "requested_unix": 1793364069.434776
+}

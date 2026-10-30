@@ -1,4 +1,6 @@
 {
   "action": "stop",
-  "reason": "superseded by validated 4096-ray chunk benchmarking; 1024-ray batch excessively slow"
+  "job_id": "qfilm03-huygens-safechunk-20261028-02",
+  "reason": "User requested termination of Qfilm 0.4 tasks and migration to QfilmRW",
+  "requested_unix": 1793364069.4353933
 }

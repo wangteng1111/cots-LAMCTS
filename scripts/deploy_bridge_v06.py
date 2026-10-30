@@ -27,7 +27,7 @@ def activate():
     if drop.exists():shutil.copy2(drop,backup/drop.name)
     content=('[Service]\nExecStart=\nExecStart=/usr/bin/python3 '+str(runtime/'infra/cots_workstation_bridge_v06.py')+
         '\nWorkingDirectory='+str(runtime/'infra')+'\nKillMode=process\n'+
-        'Environment="COTS_BRIDGE_QUEUE_INCLUDE=^000-000-01[123]-qfilm06-"\n')
+        'Environment="COTS_BRIDGE_QUEUE_INCLUDE=^000-000-020-qfilmrw-"\n')
     temp=drop.with_suffix('.tmp');temp.write_text(content);os.replace(temp,drop)
     run(['systemctl','daemon-reload'],check=True)
     settings=run(['systemctl','show','cots-lamcts-bridge.service','--property=KillMode,ExecStart'],check=True).stdout

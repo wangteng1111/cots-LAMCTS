@@ -1,0 +1,6 @@
+{
+  "action": "stop",
+  "job_id": "qfilm03-imageplane-numerical-20261028-01",
+  "reason": "User requested termination of Qfilm 0.4 tasks and migration to QfilmRW",
+  "requested_unix": 1793364069.4388113
+}
