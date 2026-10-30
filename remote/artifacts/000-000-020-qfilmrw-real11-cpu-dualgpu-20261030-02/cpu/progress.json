@@ -1,9 +1,9 @@
 {
-  "condition": "yongnuo_50mm_f1.8-h0.5-w470",
+  "condition": "yongnuo_50mm_f1.8-h0.5-w510",
   "device": "cpu",
-  "elapsed_seconds": 11.566350491717458,
+  "elapsed_seconds": 5.559312442317605,
   "field_h": 0.5,
-  "stage": "trace_1024",
-  "updated_unix": 1793392952.0665886,
-  "wavelength_nm": 470.0
+  "stage": "trace_512",
+  "updated_unix": 1793392982.533729,
+  "wavelength_nm": 510.0
 }
