@@ -1,9 +1,9 @@
 {
-  "condition": "rf35mm_f1.8-h0.5-w590",
+  "condition": "rf35mm_f1.8-h0.5-w670",
   "device": "cpu",
-  "elapsed_seconds": 40.257717846892774,
+  "elapsed_seconds": 11.980701793916523,
   "field_h": 0.5,
   "stage": "pupil_reconstruct",
-  "updated_unix": 1793379360.134799,
-  "wavelength_nm": 590.0
+  "updated_unix": 1793379390.8420851,
+  "wavelength_nm": 670.0
 }
