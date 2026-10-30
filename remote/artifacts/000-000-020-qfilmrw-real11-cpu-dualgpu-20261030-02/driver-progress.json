@@ -6,10 +6,10 @@
       "progress": {
         "condition": "ef100mm_f2.8-h0.5-w670",
         "device": "cpu",
-        "elapsed_seconds": 51.1828252421692,
+        "elapsed_seconds": 82.9107661191374,
         "field_h": 0.5,
-        "stage": "joint_trace",
-        "updated_unix": 1793368023.1743014,
+        "stage": "joint_reconstruct",
+        "updated_unix": 1793368054.902344,
         "wavelength_nm": 670.0
       },
       "returncode": null
@@ -20,10 +20,10 @@
       "progress": {
         "condition": "rf50mm_f1.8-h0.5-w670",
         "device": "cuda:0",
-        "elapsed_seconds": 17.94801754783839,
+        "elapsed_seconds": 32.99080513510853,
         "field_h": 0.5,
-        "stage": "support_reconstruct",
-        "updated_unix": 1793368028.0970674,
+        "stage": "joint_reconstruct",
+        "updated_unix": 1793368043.1398613,
         "wavelength_nm": 670.0
       },
       "returncode": null
@@ -43,5 +43,5 @@
       "returncode": 0
     }
   ],
-  "updated_unix": 1793368029.680368
+  "updated_unix": 1793368059.687145
 }
