@@ -1,7 +1,7 @@
 {
   "bridge_version": "0.6.1",
   "control_branch": "main",
-  "control_last_sync": 1793384958.3978407,
+  "control_last_sync": 1793384979.6549163,
   "cpu_count": 128,
   "gpu": [
     {
@@ -21,16 +21,16 @@
   ],
   "hostname": "aipss-Rack-Server",
   "loadavg": [
-    2.8935546875,
-    3.4755859375,
-    3.62548828125
+    2.939453125,
+    3.4306640625,
+    3.60693359375
   ],
-  "outbox_count": 3,
+  "outbox_count": 1,
   "python": "/usr/bin/python3",
   "python_version": "3.12.3",
   "repo": "wangteng1111/cots-LAMCTS",
   "results_branch": "workstation-results",
   "running_job": "000-000-020-qfilmrw-real11-cpu-dualgpu-20261030-02",
   "schema": 1,
-  "timestamp": 1793384966.0889118
+  "timestamp": 1793384996.2209828
 }
