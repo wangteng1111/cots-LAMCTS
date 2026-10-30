@@ -6,10 +6,10 @@
       "progress": {
         "condition": "ef35mm_f2.0-h0-w550",
         "device": "cpu",
-        "elapsed_seconds": 10.423474445007741,
+        "elapsed_seconds": 40.2399728493765,
         "field_h": 0.0,
-        "stage": "pupil_reconstruct",
-        "updated_unix": 1793369079.7890608,
+        "stage": "pupil_czt",
+        "updated_unix": 1793369109.605555,
         "wavelength_nm": 550.0
       },
       "returncode": null
@@ -43,5 +43,5 @@
       "returncode": 0
     }
   ],
-  "updated_unix": 1793369079.8932042
+  "updated_unix": 1793369109.8993592
 }
