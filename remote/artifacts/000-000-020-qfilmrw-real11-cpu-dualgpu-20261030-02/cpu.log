@@ -348,3 +348,16 @@ QFILMRW ef100mm_f2.8-h1-w510 pupil_reconstruct
 QFILMRW ef100mm_f2.8-h1-w510 pupil_czt
 QFILMRW ef100mm_f2.8-h1-w510 pupil_completed
 QFILMRW ef100mm_f2.8-h1-w510 trace_1024
+QFILMRW ef100mm_f2.8-h1-w510 pupil_reconstruct
+QFILMRW ef100mm_f2.8-h1-w510 pupil_czt
+QFILMRW ef100mm_f2.8-h1-w510 pupil_completed
+QFILMRW ef100mm_f2.8-h1-w510 angular_grid_reconstruct
+QFILMRW ef100mm_f2.8-h1-w510 angular_grid_czt
+QFILMRW ef100mm_f2.8-h1-w510 angular_grid_completed
+QFILMRW ef100mm_f2.8-h1-w510 support_reconstruct
+QFILMRW ef100mm_f2.8-h1-w510 support_czt
+QFILMRW ef100mm_f2.8-h1-w510 support_completed
+QFILMRW ef100mm_f2.8-h1-w510 pitch_reconstruct
+QFILMRW ef100mm_f2.8-h1-w510 pitch_czt
+QFILMRW ef100mm_f2.8-h1-w510 pitch_completed
+QFILMRW ef100mm_f2.8-h1-w510 joint_trace
