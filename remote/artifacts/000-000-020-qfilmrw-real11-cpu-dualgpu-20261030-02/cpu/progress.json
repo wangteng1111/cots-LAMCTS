@@ -1,9 +1,9 @@
 {
   "condition": "ef100mm_f2.8-h1-w550",
   "device": "cpu",
-  "elapsed_seconds": 7.369022350758314,
+  "elapsed_seconds": 15.143606962636113,
   "field_h": 1.0,
-  "stage": "trace_512",
-  "updated_unix": 1793368780.3129334,
+  "stage": "trace_1024",
+  "updated_unix": 1793368788.0875182,
   "wavelength_nm": 550.0
 }
