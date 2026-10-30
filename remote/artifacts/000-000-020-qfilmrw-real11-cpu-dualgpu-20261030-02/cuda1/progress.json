@@ -1,9 +1,9 @@
 {
-  "condition": "rf16mm_f2.8-h0-w510",
+  "condition": "sigma70mm_f2.8-h0-w470",
   "device": "cuda:1",
-  "elapsed_seconds": 7.3691392643377185,
+  "elapsed_seconds": 5.07257457729429,
   "field_h": 0.0,
-  "stage": "pupil_reconstruct",
-  "updated_unix": 1793366973.9794016,
-  "wavelength_nm": 510.0
+  "stage": "trace_1024",
+  "updated_unix": 1793367429.5369952,
+  "wavelength_nm": 470.0
 }
