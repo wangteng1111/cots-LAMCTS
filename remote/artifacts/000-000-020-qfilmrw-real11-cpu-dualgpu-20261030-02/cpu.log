@@ -3223,3 +3223,6 @@ QFILMRW rf50mm_f1.8-h0.5-w550 support_reconstruct
 QFILMRW rf50mm_f1.8-h0.5-w550 support_czt
 QFILMRW rf50mm_f1.8-h0.5-w550 support_completed
 QFILMRW rf50mm_f1.8-h0.5-w550 pitch_reconstruct
+QFILMRW rf50mm_f1.8-h0.5-w550 pitch_czt
+QFILMRW rf50mm_f1.8-h0.5-w550 pitch_completed
+QFILMRW rf50mm_f1.8-h0.5-w550 joint_trace
