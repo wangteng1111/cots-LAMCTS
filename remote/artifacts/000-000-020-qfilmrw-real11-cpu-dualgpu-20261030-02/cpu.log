@@ -2926,3 +2926,4 @@ QFILMRW rf35mm_f1.8-h1-w630 pitch_reconstruct
 QFILMRW rf35mm_f1.8-h1-w630 pitch_czt
 QFILMRW rf35mm_f1.8-h1-w630 pitch_completed
 QFILMRW rf35mm_f1.8-h1-w630 joint_trace
+QFILMRW rf35mm_f1.8-h1-w630 joint_reconstruct
