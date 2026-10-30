@@ -1,0 +1,32 @@
+test_block_phase_bound_contains_random_points (__main__.RemediationTests.test_block_phase_bound_contains_random_points) ... ok
+test_complex_extractor_against_two_dimensional_sum (__main__.RemediationTests.test_complex_extractor_against_two_dimensional_sum) ... ok
+test_final_evaluator_never_returns_stale_fft_mtf (__main__.RemediationTests.test_final_evaluator_never_returns_stale_fft_mtf) ... ok
+test_immutable_terminal_and_nonfinite (__main__.RemediationTests.test_immutable_terminal_and_nonfinite) ... ok
+test_no_gpu_fallback (__main__.RemediationTests.test_no_gpu_fallback) ... ok
+test_plan_source_and_policy_tamper_rejected (__main__.RemediationTests.test_plan_source_and_policy_tamper_rejected) ... ok
+test_raw_projection_area_and_direct_kernel (__main__.RemediationTests.test_raw_projection_area_and_direct_kernel) ... ok
+test_resource_exhaustion_never_certifies (__main__.RemediationTests.test_resource_exhaustion_never_certifies) ... ok
+test_second_execution_replays_actual_first_device_grids (__main__.RemediationTests.test_second_execution_replays_actual_first_device_grids) ... ok
+test_signed_mapping_orientation_and_fold (__main__.RemediationTests.test_signed_mapping_orientation_and_fold) ... ok
+test_two_color_physical_translation (__main__.RemediationTests.test_two_color_physical_translation) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 2.420s
+
+OK
+Surface dict lacks 'use_ai2'; assuming ai[0]=0 is the 2nd-order coefficient (legacy format).
+/var/lib/cots-lamcts/jobs/000-000-000-qfilm04-remediation-controls-20261029-01/src/evaluator/qfilm04_wavefront.py:228: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /mnt/data/cotslamcts/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)
+  intensity = E.abs().square()
+ARITHMETIC_CONTROL {'name': 'ef40mm_f2.8', 'wavelength_nm': 430.0, 'source_sha256': '18d8506e0f3a9c77b3a9aa53161b98930d93464e45a419d9b2091293dfa51f79', 'pupil_n': 256, 'support_mm': 0.008, 'purpose': 'arithmetic_tile_only', 'cpu_integral': 5.581065751601533, 'gpu_actual_device': 'cuda:0', 'gpu_integral': 5.5810657515886195, 'complex_otf_max_abs': 1.5409293477011237e-12, 'raw_intensity_relative_max_abs': 5.0271985735857857e-11, 'active_nodes_equal': True, 'passed': True}
+Surface dict lacks 'use_ai2'; assuming ai[0]=0 is the 2nd-order coefficient (legacy format).
+ARITHMETIC_CONTROL {'name': 'ef40mm_f2.8', 'wavelength_nm': 550.0, 'source_sha256': '18d8506e0f3a9c77b3a9aa53161b98930d93464e45a419d9b2091293dfa51f79', 'pupil_n': 256, 'support_mm': 0.008, 'purpose': 'arithmetic_tile_only', 'cpu_integral': 49.60906630144201, 'gpu_actual_device': 'cuda:0', 'gpu_integral': 49.60906630139342, 'complex_otf_max_abs': 1.7110572522727572e-13, 'raw_intensity_relative_max_abs': 1.520550401219272e-12, 'active_nodes_equal': True, 'passed': True}
+Surface dict lacks 'use_ai2'; assuming ai[0]=0 is the 2nd-order coefficient (legacy format).
+Surface dict lacks 'use_ai2'; assuming ai[0]=0 is the 2nd-order coefficient (legacy format).
+ARITHMETIC_CONTROL {'name': 'rf50mm_f1.8', 'wavelength_nm': 670.0, 'source_sha256': 'da4b28edb742b435a3f9fc45186205157653614816f8438f5bf2d074ac716fae', 'pupil_n': 256, 'support_mm': 0.008, 'purpose': 'arithmetic_tile_only', 'cpu_integral': 152.62910900505597, 'gpu_actual_device': 'cuda:0', 'gpu_integral': 152.62910900508894, 'complex_otf_max_abs': 2.013477813684299e-13, 'raw_intensity_relative_max_abs': 1.7347843494006221e-12, 'active_nodes_equal': True, 'passed': True}
+EDGE_CONTROL {'name': 'rf35mm_f1.8', 'state': 'wavefront_prepared_not_integrated', 'center_mm': (21.144957564062857, 0.0), 'legacy_fill_constraint_passed': False, 'valid_rays': 8570, 'active_nodes': 8224, 'geometric_pupil_fill': 0.16651123027900833, 'bad_jacobian_fraction': 0.0, 'derivative_stencil_excluded_fraction': 0.04037339556592765, 'reference_ray_blocked': False, 'transport_model': 'uniform_stop_flux', 'transmitted_ray_tube_power': 51.001650000000026, 'power_units': 'unit stop-plane flux density times mm^2; active quadrature only', 'energy_transport_validated': False, 'signed_exit_mapping_fold': False, 'exit_mapping_orientation': 1, 'input_mapping_fold': False, 'input_plane_z_mm': -20.0, 'source_plane_type': 'physical', 'pupil_n': 256}
+EDGE_CONTROL {'name': 'ef35mm_f2.0', 'state': 'wavefront_prepared_not_integrated', 'center_mm': (21.215381911308704, 3.1686528267617275e-17), 'legacy_fill_constraint_passed': False, 'valid_rays': 2272, 'active_nodes': 2014, 'geometric_pupil_fill': 0.04414393409497163, 'bad_jacobian_fraction': 0.0, 'derivative_stencil_excluded_fraction': 0.11355633802816902, 'reference_ray_blocked': True, 'transport_model': 'uniform_stop_flux', 'transmitted_ray_tube_power': 11.998016588348385, 'power_units': 'unit stop-plane flux density times mm^2; active quadrature only', 'energy_transport_validated': False, 'signed_exit_mapping_fold': False, 'exit_mapping_orientation': 1, 'input_mapping_fold': False, 'input_plane_z_mm': -20.0, 'source_plane_type': 'physical', 'pupil_n': 256}
+Surface dict lacks 'use_ai2'; assuming ai[0]=0 is the 2nd-order coefficient (legacy format).
+Surface dict lacks 'use_ai2'; assuming ai[0]=0 is the 2nd-order coefficient (legacy format).
+EDGE_CONTROL {'name': 'rf16mm_f2.8', 'state': 'NO_TRANSMITTED_WAVEFRONT', 'error': 'fewer than 32 transmitted rays'}
+Surface dict lacks 'use_ai2'; assuming ai[0]=0 is the 2nd-order coefficient (legacy format).
+EDGE_CONTROL {'name': 'rf24mm_f1.8', 'state': 'NO_TRANSMITTED_WAVEFRONT', 'error': 'fewer than 32 transmitted rays'}
