@@ -1,9 +1,9 @@
 {
   "condition": "rf16mm_f2.8-h0.5-w670",
   "device": "cpu",
-  "elapsed_seconds": 39.76698755659163,
+  "elapsed_seconds": 69.96863315999508,
   "field_h": 0.5,
-  "stage": "angular_grid_reconstruct",
-  "updated_unix": 1793375340.6056976,
+  "stage": "pitch_reconstruct",
+  "updated_unix": 1793375370.8073342,
   "wavelength_nm": 670.0
 }
