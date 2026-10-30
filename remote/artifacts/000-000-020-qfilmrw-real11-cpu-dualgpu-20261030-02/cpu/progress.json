@@ -1,9 +1,9 @@
 {
   "condition": "ef40mm_f2.8-h0.5-w510",
   "device": "cpu",
-  "elapsed_seconds": 58.66818790696561,
+  "elapsed_seconds": 74.70453486498445,
   "field_h": 0.5,
-  "stage": "pitch_reconstruct",
-  "updated_unix": 1793370639.7562115,
+  "stage": "joint_trace",
+  "updated_unix": 1793370655.7925594,
   "wavelength_nm": 510.0
 }
