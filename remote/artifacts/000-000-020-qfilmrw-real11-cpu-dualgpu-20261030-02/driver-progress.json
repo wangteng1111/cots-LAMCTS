@@ -6,10 +6,10 @@
       "progress": {
         "condition": "ef85mm_f1.8-h0.5-w590",
         "device": "cpu",
-        "elapsed_seconds": 89.24581190664321,
+        "elapsed_seconds": 108.61227309517562,
         "field_h": 0.5,
-        "stage": "pitch_reconstruct",
-        "updated_unix": 1793372992.7874448,
+        "stage": "joint_trace",
+        "updated_unix": 1793373012.1539085,
         "wavelength_nm": 590.0
       },
       "returncode": null
@@ -43,5 +43,5 @@
       "returncode": 0
     }
   ],
-  "updated_unix": 1793373000.645744
+  "updated_unix": 1793373030.6516693
 }
