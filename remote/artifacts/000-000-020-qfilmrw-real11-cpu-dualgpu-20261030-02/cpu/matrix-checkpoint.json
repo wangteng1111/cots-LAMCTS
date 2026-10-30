@@ -2610,6 +2610,182 @@
       "reference_relative_l2": 0.003787313371266662,
       "source_sha256": "493474344dccf7bf53000b4eb1936e75e06cdf6461ea57c26d5770a7457fbaa9",
       "state": "NUMERICALLY_CONVERGED_LOCAL_MODEL"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 8,
+      "elapsed_seconds": 567.2471456630155,
+      "flags": {
+        "angular_grid": true,
+        "joint": true,
+        "pitch": true,
+        "pupil": true,
+        "reference_spotcheck": true,
+        "support": true
+      },
+      "id": "rf16mm_f2.8-h0.5-w670",
+      "model_scope_validated": false,
+      "name": "rf16mm_f2.8",
+      "native_terminal": "rf16mm_f2.8-h0.5-w670/condition-terminal.json",
+      "numerically_verified": true,
+      "plan_hash": "e8d9a47e49594608027004a6f83aa8676c01dccd5c30d412feaa3a4f43019117",
+      "reference_relative_l2": 0.003654049876808945,
+      "source_sha256": "493474344dccf7bf53000b4eb1936e75e06cdf6461ea57c26d5770a7457fbaa9",
+      "state": "NUMERICALLY_CONVERGED_LOCAL_MODEL"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 0,
+      "elapsed_seconds": 0.9348617009818554,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "rf16mm_f2.8-h1-w430",
+      "model_scope_validated": false,
+      "name": "rf16mm_f2.8",
+      "native_terminal": "rf16mm_f2.8-h1-w430/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "e383c237fcfdf94cd876fa8157c67b5bdce8841d48d1de4d9eee9307d2c1e50e",
+      "reference_relative_l2": null,
+      "source_sha256": "493474344dccf7bf53000b4eb1936e75e06cdf6461ea57c26d5770a7457fbaa9",
+      "state": "RAY_AIMING_OR_OCCLUSION_UNRESOLVED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 0,
+      "elapsed_seconds": 0.9380659572780132,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "rf16mm_f2.8-h1-w470",
+      "model_scope_validated": false,
+      "name": "rf16mm_f2.8",
+      "native_terminal": "rf16mm_f2.8-h1-w470/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "ba3924c70bb1943e62d2e432eb49d65b6def1ad4df7321dd2da0d36a2394db23",
+      "reference_relative_l2": null,
+      "source_sha256": "493474344dccf7bf53000b4eb1936e75e06cdf6461ea57c26d5770a7457fbaa9",
+      "state": "RAY_AIMING_OR_OCCLUSION_UNRESOLVED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 0,
+      "elapsed_seconds": 0.9333587000146508,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "rf16mm_f2.8-h1-w510",
+      "model_scope_validated": false,
+      "name": "rf16mm_f2.8",
+      "native_terminal": "rf16mm_f2.8-h1-w510/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "d1c56a208d16a5534438b30befd7332e7632ad3bec09d3b3dd1d421929b50f56",
+      "reference_relative_l2": null,
+      "source_sha256": "493474344dccf7bf53000b4eb1936e75e06cdf6461ea57c26d5770a7457fbaa9",
+      "state": "RAY_AIMING_OR_OCCLUSION_UNRESOLVED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 0,
+      "elapsed_seconds": 0.9319079592823982,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "rf16mm_f2.8-h1-w550",
+      "model_scope_validated": false,
+      "name": "rf16mm_f2.8",
+      "native_terminal": "rf16mm_f2.8-h1-w550/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "7f476af25464f50b52cdae9797f9af6ce8c20fdb644444a0a5dbbf18d5fb06d8",
+      "reference_relative_l2": null,
+      "source_sha256": "493474344dccf7bf53000b4eb1936e75e06cdf6461ea57c26d5770a7457fbaa9",
+      "state": "RAY_AIMING_OR_OCCLUSION_UNRESOLVED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 0,
+      "elapsed_seconds": 0.9314665738493204,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "rf16mm_f2.8-h1-w590",
+      "model_scope_validated": false,
+      "name": "rf16mm_f2.8",
+      "native_terminal": "rf16mm_f2.8-h1-w590/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "70abd38d752adbef8843c945abda00fb3b0cc65881c57e5837aa9846cd0e373b",
+      "reference_relative_l2": null,
+      "source_sha256": "493474344dccf7bf53000b4eb1936e75e06cdf6461ea57c26d5770a7457fbaa9",
+      "state": "RAY_AIMING_OR_OCCLUSION_UNRESOLVED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 0,
+      "elapsed_seconds": 0.93090561311692,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "rf16mm_f2.8-h1-w630",
+      "model_scope_validated": false,
+      "name": "rf16mm_f2.8",
+      "native_terminal": "rf16mm_f2.8-h1-w630/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "aebbddf7c964739fb7f2dcaedc50a998d2af1fe010796604a745a6c8df6726f9",
+      "reference_relative_l2": null,
+      "source_sha256": "493474344dccf7bf53000b4eb1936e75e06cdf6461ea57c26d5770a7457fbaa9",
+      "state": "RAY_AIMING_OR_OCCLUSION_UNRESOLVED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 0,
+      "elapsed_seconds": 0.931635863147676,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "rf16mm_f2.8-h1-w670",
+      "model_scope_validated": false,
+      "name": "rf16mm_f2.8",
+      "native_terminal": "rf16mm_f2.8-h1-w670/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "86a3a40fadf89c92c4702cfd62da2108e0eb91be460edf7cf2442da52a9db91b",
+      "reference_relative_l2": null,
+      "source_sha256": "493474344dccf7bf53000b4eb1936e75e06cdf6461ea57c26d5770a7457fbaa9",
+      "state": "RAY_AIMING_OR_OCCLUSION_UNRESOLVED"
     }
   ],
   "fields_h": [
