@@ -1,0 +1,281 @@
+{
+  "J_task": null,
+  "actual_device": "cuda:0",
+  "code_commit": "785bd687cf1117adbc68312ce8ccbb3ff0479c96",
+  "code_sha256": {
+    "evaluator/qfilm02.py": "14e6e57c23c167fae19c8d7568c7e4a516ec3197af72df59735a5b692c8b7f0b",
+    "evaluator/qfilm04_wavefront.py": "0a453e159f9cfaed78fdf20b3286f530017df8148edf42677e0574dd2a450e04",
+    "evaluator/qfilmrw/__init__.py": "03517a63fc289e4fd5ed80b1e7ca5cbcb92a147b52bbbfa0f857ecd9fca85bf5",
+    "evaluator/qfilmrw/__main__.py": "5af4a59d763841f112f42662b88e8df17e5427c345bfcef97bf57d2d67ac360b",
+    "evaluator/qfilmrw/api.py": "0633515620a3f712a9f3b5c5ce982ea8b3cb621e52baf6b8f1045b8b3bc2869d",
+    "evaluator/qfilmrw/contracts.py": "012c0d4d2bf227e9665685490d92127269dd2300f67d45cfb2ce85887d188476",
+    "evaluator/qfilmrw/fourier.py": "0feee7030ac704f9e87f773265ec04b78f288da787e88d70858605a11e71e206",
+    "evaluator/qfilmrw/rays.py": "a92b63e86080b4d0365d21f9a3b160ffc24d61bd0695703318c8b7a4aa4dd3ae",
+    "evaluator/qfilmrw/solver.py": "39f86fdfc2401a9888721a33164b3f4633057a89f440f11047f2dc17227c8eee",
+    "validation/qfilmrw_real11.py": "6c468f211a8e8e76b74eff34bdc173ec6bd2f7aa97ca23026826ef1fcbdd4bb5"
+  },
+  "conditions": [
+    {
+      "actual_device": "cuda:0",
+      "completed_psf_grids": 4,
+      "elapsed_seconds": 8.179596466943622,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "ef100mm_f2.8-h0-w430",
+      "model_scope_validated": false,
+      "name": "ef100mm_f2.8",
+      "native_terminal": "ef100mm_f2.8-h0-w430/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "6f61aa4ee7b3b66519333067d4420dbce0e0d2b0ab5b727aab231f1bcc8ab7b2",
+      "reference_relative_l2": 0.009010078650677635,
+      "source_sha256": "3e1b59d8ef13a3ac5f57c015cd2be4181282950d9752a5a6731ac1ab18155a5a",
+      "state": "REFERENCE_REQUIRED"
+    },
+    {
+      "actual_device": "cuda:0",
+      "completed_psf_grids": 4,
+      "elapsed_seconds": 6.926718548871577,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": true,
+        "support": false
+      },
+      "id": "ef100mm_f2.8-h0-w470",
+      "model_scope_validated": false,
+      "name": "ef100mm_f2.8",
+      "native_terminal": "ef100mm_f2.8-h0-w470/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "4455d620e2d0023fc528019940a5cd5fc7ec9fd1961af69d70eb41fc4d787c98",
+      "reference_relative_l2": 0.004854874019994546,
+      "source_sha256": "3e1b59d8ef13a3ac5f57c015cd2be4181282950d9752a5a6731ac1ab18155a5a",
+      "state": "SOURCE_SAMPLING_UNCONVERGED"
+    },
+    {
+      "actual_device": "cuda:0",
+      "completed_psf_grids": 8,
+      "elapsed_seconds": 13.36525552533567,
+      "flags": {
+        "angular_grid": true,
+        "joint": true,
+        "pitch": true,
+        "pupil": true,
+        "reference_spotcheck": true,
+        "support": true
+      },
+      "id": "ef100mm_f2.8-h0-w510",
+      "model_scope_validated": false,
+      "name": "ef100mm_f2.8",
+      "native_terminal": "ef100mm_f2.8-h0-w510/condition-terminal.json",
+      "numerically_verified": true,
+      "plan_hash": "01601bef8c165ace2e6d8c0c8560b6e6b61cc96e3733db4eb99fcc62b2bc8c42",
+      "reference_relative_l2": 0.003352653667083062,
+      "source_sha256": "3e1b59d8ef13a3ac5f57c015cd2be4181282950d9752a5a6731ac1ab18155a5a",
+      "state": "NUMERICALLY_CONVERGED_LOCAL_MODEL"
+    },
+    {
+      "actual_device": "cuda:0",
+      "completed_psf_grids": 6,
+      "elapsed_seconds": 7.374024594202638,
+      "flags": {
+        "angular_grid": true,
+        "joint": true,
+        "pitch": true,
+        "pupil": true,
+        "reference_spotcheck": true,
+        "support": true
+      },
+      "id": "ef100mm_f2.8-h0-w550",
+      "model_scope_validated": false,
+      "name": "ef100mm_f2.8",
+      "native_terminal": "ef100mm_f2.8-h0-w550/condition-terminal.json",
+      "numerically_verified": true,
+      "plan_hash": "c137560f751882875d1317272ef68c403f9a04d1453fe51f8a6199dbfcd1f9e7",
+      "reference_relative_l2": 0.0039868800152059935,
+      "source_sha256": "3e1b59d8ef13a3ac5f57c015cd2be4181282950d9752a5a6731ac1ab18155a5a",
+      "state": "NUMERICALLY_CONVERGED_LOCAL_MODEL"
+    },
+    {
+      "actual_device": "cuda:0",
+      "completed_psf_grids": 6,
+      "elapsed_seconds": 7.464490447193384,
+      "flags": {
+        "angular_grid": true,
+        "joint": true,
+        "pitch": true,
+        "pupil": true,
+        "reference_spotcheck": true,
+        "support": true
+      },
+      "id": "ef100mm_f2.8-h0-w590",
+      "model_scope_validated": false,
+      "name": "ef100mm_f2.8",
+      "native_terminal": "ef100mm_f2.8-h0-w590/condition-terminal.json",
+      "numerically_verified": true,
+      "plan_hash": "0b36c0df4cc5ac91c0dba25f0e39ea32c314a039d32739bfd22f2844a575ef34",
+      "reference_relative_l2": 0.0011183804726054394,
+      "source_sha256": "3e1b59d8ef13a3ac5f57c015cd2be4181282950d9752a5a6731ac1ab18155a5a",
+      "state": "NUMERICALLY_CONVERGED_LOCAL_MODEL"
+    },
+    {
+      "actual_device": "cuda:0",
+      "completed_psf_grids": 6,
+      "elapsed_seconds": 7.380024991929531,
+      "flags": {
+        "angular_grid": true,
+        "joint": true,
+        "pitch": true,
+        "pupil": true,
+        "reference_spotcheck": true,
+        "support": true
+      },
+      "id": "ef100mm_f2.8-h0-w630",
+      "model_scope_validated": false,
+      "name": "ef100mm_f2.8",
+      "native_terminal": "ef100mm_f2.8-h0-w630/condition-terminal.json",
+      "numerically_verified": true,
+      "plan_hash": "0a7f555f709d9762418b4d7965118c4b08172a1bcb1a95283d88ddee3bf441c9",
+      "reference_relative_l2": 0.0016438952716327927,
+      "source_sha256": "3e1b59d8ef13a3ac5f57c015cd2be4181282950d9752a5a6731ac1ab18155a5a",
+      "state": "NUMERICALLY_CONVERGED_LOCAL_MODEL"
+    },
+    {
+      "actual_device": "cuda:0",
+      "completed_psf_grids": 6,
+      "elapsed_seconds": 7.42808195296675,
+      "flags": {
+        "angular_grid": true,
+        "joint": true,
+        "pitch": true,
+        "pupil": true,
+        "reference_spotcheck": true,
+        "support": true
+      },
+      "id": "ef100mm_f2.8-h0-w670",
+      "model_scope_validated": false,
+      "name": "ef100mm_f2.8",
+      "native_terminal": "ef100mm_f2.8-h0-w670/condition-terminal.json",
+      "numerically_verified": true,
+      "plan_hash": "80f7fd5909741bd74e300c4a29662d8f02e6047f02caa526d18b7d6a180eae56",
+      "reference_relative_l2": 0.0033221604923145405,
+      "source_sha256": "3e1b59d8ef13a3ac5f57c015cd2be4181282950d9752a5a6731ac1ab18155a5a",
+      "state": "NUMERICALLY_CONVERGED_LOCAL_MODEL"
+    },
+    {
+      "actual_device": "cuda:0",
+      "completed_psf_grids": 4,
+      "elapsed_seconds": 7.0514111667871475,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "ef100mm_f2.8-h0.5-w430",
+      "model_scope_validated": false,
+      "name": "ef100mm_f2.8",
+      "native_terminal": "ef100mm_f2.8-h0.5-w430/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "c5e32381eb3ffe52ac5f816fd4a05850bac09af9ee164720d1eaa88a7322e27e",
+      "reference_relative_l2": 0.01562376972994383,
+      "source_sha256": "3e1b59d8ef13a3ac5f57c015cd2be4181282950d9752a5a6731ac1ab18155a5a",
+      "state": "REFERENCE_REQUIRED"
+    },
+    {
+      "actual_device": "cuda:0",
+      "completed_psf_grids": 4,
+      "elapsed_seconds": 7.06664034165442,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "ef100mm_f2.8-h0.5-w470",
+      "model_scope_validated": false,
+      "name": "ef100mm_f2.8",
+      "native_terminal": "ef100mm_f2.8-h0.5-w470/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "9d2f23236a59b314d4b4a463a8e8f8649bd450b01fb76fcd16c04a8259d5fa6d",
+      "reference_relative_l2": 0.015833409294953353,
+      "source_sha256": "3e1b59d8ef13a3ac5f57c015cd2be4181282950d9752a5a6731ac1ab18155a5a",
+      "state": "REFERENCE_REQUIRED"
+    },
+    {
+      "actual_device": "cuda:0",
+      "completed_psf_grids": 4,
+      "elapsed_seconds": 7.086922427639365,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": true,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "ef100mm_f2.8-h0.5-w510",
+      "model_scope_validated": false,
+      "name": "ef100mm_f2.8",
+      "native_terminal": "ef100mm_f2.8-h0.5-w510/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "e20a8dc9e3cb408b58682d3cdaf5e96373577c656b94d3eedc3961ad40e2548c",
+      "reference_relative_l2": 0.010391541256443166,
+      "source_sha256": "3e1b59d8ef13a3ac5f57c015cd2be4181282950d9752a5a6731ac1ab18155a5a",
+      "state": "REFERENCE_REQUIRED"
+    }
+  ],
+  "fields_h": [
+    0.0,
+    0.5,
+    1.0
+  ],
+  "fixture_sha256": "09f589d4859070a036de73fca4a7c4287edf393abcd484d009e6534f81ac7954",
+  "mode": "verify",
+  "policy": {
+    "angular_grid_n": 1024,
+    "grid_otf_tolerance": 0.002,
+    "integral_relative_tolerance": 0.005,
+    "joint_otf_tolerance": 0.005,
+    "max_live_elements": 300000000,
+    "max_seconds": 7200.0,
+    "pitch_otf_tolerance": 0.001,
+    "pupil_otf_tolerance": 0.002,
+    "pupils": [
+      128,
+      256,
+      512,
+      1024
+    ],
+    "reference_relative_l2_tolerance": 0.005,
+    "residual_phase_target_cycles": 0.25,
+    "support_otf_tolerance": 0.002
+  },
+  "schema": "QfilmRWMatrix-v1",
+  "source_commit": "911bb9d334fce7e20a4407c4506ac683b52ff246",
+  "started_unix": 1793366590.7428365,
+  "status": "running",
+  "task_hash": "4619956f6edea952fdef03597691dd85acd75e14644c8a8384d7d45a6f644766",
+  "training_eligible": false,
+  "version": "QfilmRW-0.1.0",
+  "wavelengths_nm": [
+    430.0,
+    470.0,
+    510.0,
+    550.0,
+    590.0,
+    630.0,
+    670.0
+  ]
+}
