@@ -652,6 +652,72 @@
       "reference_relative_l2": 0.008819998124189876,
       "source_sha256": "ecd6ed4979821130d24d0d95cd69b29789b16459ca5d54e3acc3dce6ebce5ac3",
       "state": "REFERENCE_REQUIRED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 4,
+      "elapsed_seconds": 35.76780553441495,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "ef35mm_f2.0-h0.5-w470",
+      "model_scope_validated": false,
+      "name": "ef35mm_f2.0",
+      "native_terminal": "ef35mm_f2.0-h0.5-w470/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "66eae37eab93dc7263bab4053226642d24d7f827224374875f71056e976c737c",
+      "reference_relative_l2": 0.006652233492165588,
+      "source_sha256": "ecd6ed4979821130d24d0d95cd69b29789b16459ca5d54e3acc3dce6ebce5ac3",
+      "state": "REFERENCE_REQUIRED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 4,
+      "elapsed_seconds": 36.249172354117036,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "ef35mm_f2.0-h0.5-w510",
+      "model_scope_validated": false,
+      "name": "ef35mm_f2.0",
+      "native_terminal": "ef35mm_f2.0-h0.5-w510/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "80509b64387c7ebe3fb3933a6b493121d0db4c3bceb7c3e96a895979cb588982",
+      "reference_relative_l2": 0.007781105009746637,
+      "source_sha256": "ecd6ed4979821130d24d0d95cd69b29789b16459ca5d54e3acc3dce6ebce5ac3",
+      "state": "REFERENCE_REQUIRED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 4,
+      "elapsed_seconds": 36.22623654641211,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": true,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "ef35mm_f2.0-h0.5-w550",
+      "model_scope_validated": false,
+      "name": "ef35mm_f2.0",
+      "native_terminal": "ef35mm_f2.0-h0.5-w550/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "ad26851169c2628043024aa79b0aaa0d6fde9c9f7bd1804a3287005915103a05",
+      "reference_relative_l2": 0.00775844150413533,
+      "source_sha256": "ecd6ed4979821130d24d0d95cd69b29789b16459ca5d54e3acc3dce6ebce5ac3",
+      "state": "REFERENCE_REQUIRED"
     }
   ],
   "fields_h": [
