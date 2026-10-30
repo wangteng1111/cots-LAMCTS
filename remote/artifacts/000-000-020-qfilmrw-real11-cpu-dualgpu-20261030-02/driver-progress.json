@@ -4,13 +4,13 @@
       "lane": "cpu",
       "pid": 555767,
       "progress": {
-        "condition": "rf16mm_f2.8-h0-w550",
+        "condition": "rf16mm_f2.8-h0-w590",
         "device": "cpu",
-        "elapsed_seconds": 13.958597514778376,
+        "elapsed_seconds": 14.242305437102914,
         "field_h": 0.0,
         "stage": "trace_1024",
-        "updated_unix": 1793374836.8341844,
-        "wavelength_nm": 550.0
+        "updated_unix": 1793374882.477378,
+        "wavelength_nm": 590.0
       },
       "returncode": null
     },
@@ -43,5 +43,5 @@
       "returncode": 0
     }
   ],
-  "updated_unix": 1793374840.9951117
+  "updated_unix": 1793374901.0058415
 }
