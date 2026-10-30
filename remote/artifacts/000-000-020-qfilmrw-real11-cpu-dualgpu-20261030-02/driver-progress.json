@@ -6,10 +6,10 @@
       "progress": {
         "condition": "ef100mm_f2.8-h1-w550",
         "device": "cpu",
-        "elapsed_seconds": 6.1079613864421844,
+        "elapsed_seconds": 15.143606962636113,
         "field_h": 1.0,
-        "stage": "pupil_reconstruct",
-        "updated_unix": 1793368779.0518732,
+        "stage": "trace_1024",
+        "updated_unix": 1793368788.0875182,
         "wavelength_nm": 550.0
       },
       "returncode": null
@@ -43,5 +43,5 @@
       "returncode": 0
     }
   ],
-  "updated_unix": 1793368779.836469
+  "updated_unix": 1793368809.8413808
 }
