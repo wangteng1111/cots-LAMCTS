@@ -1,0 +1,111 @@
+{
+  "schema": "Qfilm05SolverProposalContract-v1",
+  "status": "proposal_not_implemented",
+  "date": "2026-10-30",
+  "baseline_objective": "retain existing J components and version window semantics explicitly",
+  "observables": [
+    "complex_otf",
+    "mtf",
+    "optional_psf",
+    "geometric_metrics",
+    "declared_power_metrics",
+    "J",
+    "error_summary"
+  ],
+  "condition_identity": [
+    "prescription_hash",
+    "glass_n_lambda_hash",
+    "object_state",
+    "field",
+    "wavelength_nm",
+    "physical_sensor_pose",
+    "illumination",
+    "polarization"
+  ],
+  "psf_sampling": {
+    "primary_pitch_um": 0.25,
+    "check_pitch_um": 0.125,
+    "window": "task_declared",
+    "pixel_area_integration": "separate from point sampling"
+  },
+  "otf_domain": {
+    "required": "full_plane_or_windowed_explicit",
+    "equivalence_rule": "|H_window-H_infinity| <=2*outside_energy_fraction when fraction is bounded",
+    "border_band_is_tail_bound": false
+  },
+  "candidate_backends": [
+    {
+      "name": "pupil_autocorrelation",
+      "role": "score",
+      "requires": "validated local Fourier imaging model and overlap-domain quadrature"
+    },
+    {
+      "name": "fft_mdft_czt",
+      "role": "fixed_sampling_psf",
+      "requires": "valid Fourier propagation, pupil/FOV sampling and phase conventions"
+    },
+    {
+      "name": "compensated_scaled_shifted_asm",
+      "role": "general_homogeneous_plane_propagation",
+      "requires": "valid boundary field, correct scaling direction, bandlimit/aliasing checks"
+    },
+    {
+      "name": "beamlet_or_direct_reference",
+      "role": "reference_or_difficult_conditions",
+      "requires": "method-specific scope and independent verification"
+    }
+  ],
+  "error_kinds": [
+    "deterministic_bound",
+    "convergence_estimate",
+    "reference_discrepancy"
+  ],
+  "validity_axes": [
+    "numerically_verified",
+    "model_scope_validated",
+    "empirically_calibrated"
+  ],
+  "failure_states": [
+    "design_constraint_failure",
+    "ray_aiming_failure",
+    "source_sampling_failure",
+    "unsupported",
+    "numerical_failure",
+    "resource_limit",
+    "reference_required"
+  ],
+  "precision_policy": "float64 geometric/OPL reference; mixed precision requires independent error validation",
+  "modes": [
+    "screen",
+    "score",
+    "verify"
+  ],
+  "devices": "independent GPU queues; CPU references do not block GPU slots",
+  "acceptance": "current engineering criteria retained for first migration comparison; revised gates require same-observable validation",
+  "label_eligibility": "validated simulated-J targets may train a simulator surrogate; measured-performance labels require separate empirical calibration",
+  "benchmark_matrix": {
+    "lenses": 11,
+    "radial_fields": [
+      0,
+      0.5,
+      1
+    ],
+    "wavelengths_nm": [
+      430,
+      470,
+      510,
+      550,
+      590,
+      630,
+      670
+    ],
+    "conditions": 231,
+    "devices": [
+      "cpu",
+      "cuda:0",
+      "cuda:1"
+    ],
+    "broader_tests": "large prescription changes, clipping, invalid configurations, denser target field grid"
+  },
+  "performance_claims": "none measured for proposed solver"
+}

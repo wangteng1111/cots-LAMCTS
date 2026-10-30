@@ -1,0 +1,14 @@
+{
+  "schema": "Qfilm05ScoreBoundSanityCheck-v1",
+  "tests": 10000,
+  "epsilon_mtf": 0.001,
+  "bound_abs_J": 0.002,
+  "max_observed_ratio": 0.13364392010561943,
+  "assumptions": [
+    "only the 20 MTF entries per field change",
+    "MTF values clipped to [0,1]",
+    "other geometric and radiometric terms and weights fixed",
+    "default MTF task coefficient equals1"
+  ],
+  "interpretation": "Numerical sanity check of a mathematical Lipschitz bound; not an optical accuracy validation or proof that propagation errors satisfy epsilon."
+}
