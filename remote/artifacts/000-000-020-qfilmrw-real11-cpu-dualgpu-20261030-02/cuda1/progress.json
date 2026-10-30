@@ -1,9 +1,9 @@
 {
-  "condition": "ef35mm_f2.0-h0.5-w550",
+  "condition": "rf16mm_f2.8-h0-w510",
   "device": "cuda:1",
-  "elapsed_seconds": 5.679485851898789,
-  "field_h": 0.5,
+  "elapsed_seconds": 7.3691392643377185,
+  "field_h": 0.0,
   "stage": "pupil_reconstruct",
-  "updated_unix": 1793366734.574202,
-  "wavelength_nm": 550.0
+  "updated_unix": 1793366973.9794016,
+  "wavelength_nm": 510.0
 }
