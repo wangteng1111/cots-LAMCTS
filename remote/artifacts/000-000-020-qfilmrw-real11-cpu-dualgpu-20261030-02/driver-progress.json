@@ -6,10 +6,10 @@
       "progress": {
         "condition": "ef35mm_f2.0-h0-w430",
         "device": "cpu",
-        "elapsed_seconds": 5.651969776488841,
+        "elapsed_seconds": 39.13878453709185,
         "field_h": 0.0,
-        "stage": "trace_512",
-        "updated_unix": 1793368956.309268,
+        "stage": "pupil_completed",
+        "updated_unix": 1793368989.7960796,
         "wavelength_nm": 430.0
       },
       "returncode": null
@@ -43,5 +43,5 @@
       "returncode": 0
     }
   ],
-  "updated_unix": 1793368959.8699746
+  "updated_unix": 1793368989.875779
 }
