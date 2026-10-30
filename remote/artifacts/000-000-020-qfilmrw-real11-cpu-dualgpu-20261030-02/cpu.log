@@ -4056,3 +4056,16 @@ QFILMRW yongnuo_50mm_f1.8-h0-w550 pitch_reconstruct
 QFILMRW yongnuo_50mm_f1.8-h0-w550 pitch_czt
 QFILMRW yongnuo_50mm_f1.8-h0-w550 pitch_completed
 QFILMRW yongnuo_50mm_f1.8-h0-w550 joint_trace
+QFILMRW yongnuo_50mm_f1.8-h0-w550 joint_reconstruct
+QFILMRW yongnuo_50mm_f1.8-h0-w550 joint_czt
+QFILMRW yongnuo_50mm_f1.8-h0-w550 joint_completed
+QFILMRW_TERMINAL yongnuo_50mm_f1.8-h0-w550 NUMERICALLY_CONVERGED_LOCAL_MODEL
+QFILMRW yongnuo_50mm_f1.8-h0-w590 trace_128
+QFILMRW yongnuo_50mm_f1.8-h0-w590 pupil_reconstruct
+QFILMRW yongnuo_50mm_f1.8-h0-w590 pupil_czt
+QFILMRW yongnuo_50mm_f1.8-h0-w590 pupil_completed
+QFILMRW yongnuo_50mm_f1.8-h0-w590 trace_256
+QFILMRW yongnuo_50mm_f1.8-h0-w590 pupil_reconstruct
+QFILMRW yongnuo_50mm_f1.8-h0-w590 pupil_czt
+QFILMRW yongnuo_50mm_f1.8-h0-w590 pupil_completed
+QFILMRW yongnuo_50mm_f1.8-h0-w590 trace_512
