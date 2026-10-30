@@ -1,0 +1,301 @@
+{
+  "center_mm": [
+    0.0,
+    0.0
+  ],
+  "exit_z_mm": 23.610000228881837,
+  "extractor_version": "physical-centers-axis-dtft-v1",
+  "field_h": 0.0,
+  "frame_mm": [
+    36.0,
+    24.0
+  ],
+  "frequencies_lpmm": [
+    5.0,
+    10.0,
+    15.0,
+    20.0,
+    30.0,
+    40.0,
+    50.0,
+    60.0,
+    70.0,
+    80.0
+  ],
+  "frozen": true,
+  "levels": [
+    {
+      "phase_guards": [
+        {
+          "alarm": true,
+          "continuous_pupil_certified": false,
+          "detector_tiles_per_axis": 4,
+          "is_mtf_error_bound": false,
+          "max_neighbor_block_bound_cycles": 1.227937402145931,
+          "max_sampled_half_step_cycles": 0.5550884099904557,
+          "midpoint_all_transmitted": true,
+          "midpoint_check_passed": false,
+          "midpoint_pairs_checked": 129,
+          "passed": false,
+          "sampled_pair_count": 100520
+        },
+        {
+          "alarm": true,
+          "continuous_pupil_certified": false,
+          "detector_tiles_per_axis": 4,
+          "is_mtf_error_bound": false,
+          "max_neighbor_block_bound_cycles": 1.8045653858714719,
+          "max_sampled_half_step_cycles": 0.8147938010082737,
+          "midpoint_all_transmitted": true,
+          "midpoint_check_passed": false,
+          "midpoint_pairs_checked": 129,
+          "passed": false,
+          "sampled_pair_count": 100520
+        },
+        {
+          "alarm": true,
+          "continuous_pupil_certified": false,
+          "detector_tiles_per_axis": 4,
+          "is_mtf_error_bound": false,
+          "max_neighbor_block_bound_cycles": 2.3820688688927656,
+          "max_sampled_half_step_cycles": 1.0753094654000697,
+          "midpoint_all_transmitted": true,
+          "midpoint_check_passed": false,
+          "midpoint_pairs_checked": 129,
+          "passed": false,
+          "sampled_pair_count": 100520
+        }
+      ],
+      "pupil_n": 256
+    },
+    {
+      "phase_guards": [
+        {
+          "alarm": true,
+          "continuous_pupil_certified": false,
+          "detector_tiles_per_axis": 4,
+          "is_mtf_error_bound": false,
+          "max_neighbor_block_bound_cycles": 0.6139718642724942,
+          "max_sampled_half_step_cycles": 0.2775997311339536,
+          "midpoint_all_transmitted": true,
+          "midpoint_check_passed": false,
+          "midpoint_pairs_checked": 129,
+          "passed": false,
+          "sampled_pair_count": 405976
+        },
+        {
+          "alarm": true,
+          "continuous_pupil_certified": false,
+          "detector_tiles_per_axis": 4,
+          "is_mtf_error_bound": false,
+          "max_neighbor_block_bound_cycles": 0.9022862411219255,
+          "max_sampled_half_step_cycles": 0.40741002932619735,
+          "midpoint_all_transmitted": true,
+          "midpoint_check_passed": false,
+          "midpoint_pairs_checked": 129,
+          "passed": false,
+          "sampled_pair_count": 405976
+        },
+        {
+          "alarm": true,
+          "continuous_pupil_certified": false,
+          "detector_tiles_per_axis": 4,
+          "is_mtf_error_bound": false,
+          "max_neighbor_block_bound_cycles": 1.1910384249770467,
+          "max_sampled_half_step_cycles": 0.5376497538031535,
+          "midpoint_all_transmitted": true,
+          "midpoint_check_passed": false,
+          "midpoint_pairs_checked": 129,
+          "passed": false,
+          "sampled_pair_count": 405976
+        }
+      ],
+      "pupil_n": 512
+    },
+    {
+      "phase_guards": [
+        {
+          "alarm": false,
+          "continuous_pupil_certified": false,
+          "detector_tiles_per_axis": 4,
+          "is_mtf_error_bound": false,
+          "max_neighbor_block_bound_cycles": 0.3069860920155234,
+          "max_sampled_half_step_cycles": 0.13876346600764114,
+          "midpoint_all_transmitted": true,
+          "midpoint_check_passed": true,
+          "midpoint_pairs_checked": 129,
+          "passed": false,
+          "sampled_pair_count": 1631892
+        },
+        {
+          "alarm": false,
+          "continuous_pupil_certified": false,
+          "detector_tiles_per_axis": 4,
+          "is_mtf_error_bound": false,
+          "max_neighbor_block_bound_cycles": 0.45114326696842166,
+          "max_sampled_half_step_cycles": 0.20363578941740787,
+          "midpoint_all_transmitted": true,
+          "midpoint_check_passed": true,
+          "midpoint_pairs_checked": 129,
+          "passed": false,
+          "sampled_pair_count": 1631892
+        },
+        {
+          "alarm": true,
+          "continuous_pupil_certified": false,
+          "detector_tiles_per_axis": 4,
+          "is_mtf_error_bound": false,
+          "max_neighbor_block_bound_cycles": 0.5955193585476533,
+          "max_sampled_half_step_cycles": 0.268783828393315,
+          "midpoint_all_transmitted": true,
+          "midpoint_check_passed": false,
+          "midpoint_pairs_checked": 129,
+          "passed": false,
+          "sampled_pair_count": 1631892
+        }
+      ],
+      "pupil_n": 1024
+    },
+    {
+      "phase_guards": [
+        {
+          "alarm": false,
+          "continuous_pupil_certified": false,
+          "detector_tiles_per_axis": 4,
+          "is_mtf_error_bound": false,
+          "max_neighbor_block_bound_cycles": 0.15349310373266584,
+          "max_sampled_half_step_cycles": 0.06937986694509185,
+          "midpoint_all_transmitted": true,
+          "midpoint_check_passed": true,
+          "midpoint_pairs_checked": 129,
+          "passed": true,
+          "sampled_pair_count": 6542912
+        },
+        {
+          "alarm": false,
+          "continuous_pupil_certified": false,
+          "detector_tiles_per_axis": 4,
+          "is_mtf_error_bound": false,
+          "max_neighbor_block_bound_cycles": 0.22557168576528824,
+          "max_sampled_half_step_cycles": 0.10183767292187969,
+          "midpoint_all_transmitted": true,
+          "midpoint_check_passed": true,
+          "midpoint_pairs_checked": 129,
+          "passed": true,
+          "sampled_pair_count": 6542912
+        },
+        {
+          "alarm": false,
+          "continuous_pupil_certified": false,
+          "detector_tiles_per_axis": 4,
+          "is_mtf_error_bound": false,
+          "max_neighbor_block_bound_cycles": 0.297759695352274,
+          "max_sampled_half_step_cycles": 0.13441348153991767,
+          "midpoint_all_transmitted": true,
+          "midpoint_check_passed": true,
+          "midpoint_pairs_checked": 129,
+          "passed": false,
+          "sampled_pair_count": 6542912
+        }
+      ],
+      "pupil_n": 2048
+    },
+    {
+      "phase_guards": [
+        {
+          "alarm": false,
+          "continuous_pupil_certified": false,
+          "detector_tiles_per_axis": 4,
+          "is_mtf_error_bound": false,
+          "max_neighbor_block_bound_cycles": 0.07674655388617986,
+          "max_sampled_half_step_cycles": 0.03469776101787618,
+          "midpoint_all_transmitted": true,
+          "midpoint_check_passed": true,
+          "midpoint_pairs_checked": 129,
+          "passed": true,
+          "sampled_pair_count": 26202738
+        },
+        {
+          "alarm": false,
+          "continuous_pupil_certified": false,
+          "detector_tiles_per_axis": 4,
+          "is_mtf_error_bound": false,
+          "max_neighbor_block_bound_cycles": 0.11278584533889716,
+          "max_sampled_half_step_cycles": 0.05092751246865572,
+          "midpoint_all_transmitted": true,
+          "midpoint_check_passed": true,
+          "midpoint_pairs_checked": 129,
+          "passed": true,
+          "sampled_pair_count": 26202738
+        },
+        {
+          "alarm": false,
+          "continuous_pupil_certified": false,
+          "detector_tiles_per_axis": 4,
+          "is_mtf_error_bound": false,
+          "max_neighbor_block_bound_cycles": 0.1488798530892728,
+          "max_sampled_half_step_cycles": 0.06720347195115146,
+          "midpoint_all_transmitted": true,
+          "midpoint_check_passed": true,
+          "midpoint_pairs_checked": 129,
+          "passed": true,
+          "sampled_pair_count": 26202738
+        }
+      ],
+      "pupil_n": 4096
+    }
+  ],
+  "model_version": "qfilm04-fixed-plane-scalar-v3",
+  "pilot_geometry": {
+    "active_nodes": 50514,
+    "bad_jacobian_fraction": 0.0,
+    "derivative_stencil_excluded_fraction": 0.014053167818245697,
+    "energy_transport_validated": false,
+    "exit_mapping_orientation": 1,
+    "geometric_pupil_fill": 0.9954534856609932,
+    "input_mapping_fold": false,
+    "input_plane_z_mm": -20.0,
+    "power_units": "unit stop-plane flux density times mm^2; active quadrature only",
+    "pupil_n": 256,
+    "reference_ray_blocked": false,
+    "signed_exit_mapping_fold": false,
+    "source_plane_type": "physical",
+    "transmitted_ray_tube_power": 127.07551450195317,
+    "transport_model": "uniform_stop_flux",
+    "valid_rays": 51234
+  },
+  "plan_hash": "c2a51e58a72fcb8be5c2de78d44150f0f413ad50c6e6844516fc7f164013b103",
+  "plan_stage": "phase_screened_candidates",
+  "planning_device": "cpu",
+  "policy": {
+    "integral_relative_tolerance": 0.005,
+    "joint_mtf_tolerance": 0.005,
+    "kernel": "legacy_deep_ray",
+    "max_bad_jacobian_fraction": 0.02,
+    "max_pair_evaluations": 150000000000000,
+    "midpoint_pairs": 128,
+    "phase_alarm_cycles": 0.5,
+    "phase_target_cycles": 0.25,
+    "phase_tiles_per_axis": 4,
+    "pitch_otf_tolerance": 0.001,
+    "pitch_um": 0.25,
+    "pupil_candidates": [
+      256,
+      512,
+      1024,
+      2048,
+      4096
+    ],
+    "pupil_otf_tolerance": 0.002,
+    "support_candidates_mm": [
+      0.64,
+      0.96,
+      1.28
+    ],
+    "support_otf_tolerance": 0.002,
+    "transport_model": "uniform_stop_flux"
+  },
+  "schema": "Qfilm04ResolvedSamplingPlan-v1",
+  "source_hash": "cff321313d2b692d2ea82f338b6b1236680059d75e067994912eb32bcd865ec7",
+  "wavelength_nm": 430.0
+}
