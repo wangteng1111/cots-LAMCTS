@@ -4,13 +4,13 @@
       "lane": "cpu",
       "pid": 555767,
       "progress": {
-        "condition": "ef100mm_f2.8-h0.5-w590",
+        "condition": "ef100mm_f2.8-h0.5-w670",
         "device": "cpu",
-        "elapsed_seconds": 31.295191356912255,
+        "elapsed_seconds": 51.1828252421692,
         "field_h": 0.5,
-        "stage": "pitch_reconstruct",
-        "updated_unix": 1793367840.2746596,
-        "wavelength_nm": 590.0
+        "stage": "joint_trace",
+        "updated_unix": 1793368023.1743014,
+        "wavelength_nm": 670.0
       },
       "returncode": null
     },
@@ -18,13 +18,13 @@
       "lane": "cuda0",
       "pid": 555768,
       "progress": {
-        "condition": "rf50mm_f1.8-h0.5-w550",
+        "condition": "rf50mm_f1.8-h0.5-w670",
         "device": "cuda:0",
-        "elapsed_seconds": 12.174899710342288,
+        "elapsed_seconds": 17.94801754783839,
         "field_h": 0.5,
-        "stage": "angular_grid_reconstruct",
-        "updated_unix": 1793367846.1762514,
-        "wavelength_nm": 550.0
+        "stage": "support_reconstruct",
+        "updated_unix": 1793368028.0970674,
+        "wavelength_nm": 670.0
       },
       "returncode": null
     },
@@ -43,5 +43,5 @@
       "returncode": 0
     }
   ],
-  "updated_unix": 1793367849.6413755
+  "updated_unix": 1793368029.680368
 }
