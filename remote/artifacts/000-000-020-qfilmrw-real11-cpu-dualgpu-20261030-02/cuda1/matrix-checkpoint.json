@@ -938,6 +938,50 @@
       "reference_relative_l2": 0.003000130074731137,
       "source_sha256": "0862741f9dc22e79a8ffad899d528eb05b6655012b685170925d7fc71183eb9d",
       "state": "SOURCE_SAMPLING_UNCONVERGED"
+    },
+    {
+      "actual_device": "cuda:1",
+      "completed_psf_grids": 4,
+      "elapsed_seconds": 14.744916529394686,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": true,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "rf16mm_f2.8-h0-w430",
+      "model_scope_validated": false,
+      "name": "rf16mm_f2.8",
+      "native_terminal": "rf16mm_f2.8-h0-w430/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "3b13384fb21c7730c73883931158fe900d7141c6efaf005ef15fcb6ac1bb14d5",
+      "reference_relative_l2": 0.055441253310325414,
+      "source_sha256": "493474344dccf7bf53000b4eb1936e75e06cdf6461ea57c26d5770a7457fbaa9",
+      "state": "REFERENCE_REQUIRED"
+    },
+    {
+      "actual_device": "cuda:1",
+      "completed_psf_grids": 4,
+      "elapsed_seconds": 14.815302069298923,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": true,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "rf16mm_f2.8-h0-w470",
+      "model_scope_validated": false,
+      "name": "rf16mm_f2.8",
+      "native_terminal": "rf16mm_f2.8-h0-w470/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "214f933c5fc2d9a37d82407e8987431db6392bc2b17dcb4fb1e361d1592a6353",
+      "reference_relative_l2": 0.04769249893216299,
+      "source_sha256": "493474344dccf7bf53000b4eb1936e75e06cdf6461ea57c26d5770a7457fbaa9",
+      "state": "REFERENCE_REQUIRED"
     }
   ],
   "fields_h": [
