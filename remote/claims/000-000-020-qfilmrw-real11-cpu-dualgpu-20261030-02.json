@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.6.1",
+  "claimed_at": 1793366584.908987,
+  "code_commit": "785bd687cf1117adbc68312ce8ccbb3ff0479c96",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "000-000-020-qfilmrw-real11-cpu-dualgpu-20261030-02",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/000-000-020-qfilmrw-real11-cpu-dualgpu-20261030-02.json",
+  "request_sha256": "31136e89e753ccfe8ad88e72be56f79da1ccf725410e9d6576f0a06a2745799f",
+  "schema": 1,
+  "state": "claimed"
+}
