@@ -3804,3 +3804,15 @@ QFILMRW sigma70mm_f2.8-h1-w430 joint_czt
 QFILMRW sigma70mm_f2.8-h1-w430 joint_completed
 QFILMRW_TERMINAL sigma70mm_f2.8-h1-w430 NUMERICALLY_CONVERGED_LOCAL_MODEL
 QFILMRW sigma70mm_f2.8-h1-w470 trace_128
+QFILMRW sigma70mm_f2.8-h1-w470 pupil_reconstruct
+QFILMRW sigma70mm_f2.8-h1-w470 pupil_czt
+QFILMRW sigma70mm_f2.8-h1-w470 pupil_completed
+QFILMRW sigma70mm_f2.8-h1-w470 trace_256
+QFILMRW sigma70mm_f2.8-h1-w470 pupil_reconstruct
+QFILMRW sigma70mm_f2.8-h1-w470 pupil_czt
+QFILMRW sigma70mm_f2.8-h1-w470 pupil_completed
+QFILMRW sigma70mm_f2.8-h1-w470 trace_512
+QFILMRW sigma70mm_f2.8-h1-w470 pupil_reconstruct
+QFILMRW sigma70mm_f2.8-h1-w470 pupil_czt
+QFILMRW sigma70mm_f2.8-h1-w470 pupil_completed
+QFILMRW sigma70mm_f2.8-h1-w470 trace_1024
