@@ -361,3 +361,4 @@ QFILMRW ef100mm_f2.8-h1-w510 pitch_reconstruct
 QFILMRW ef100mm_f2.8-h1-w510 pitch_czt
 QFILMRW ef100mm_f2.8-h1-w510 pitch_completed
 QFILMRW ef100mm_f2.8-h1-w510 joint_trace
+QFILMRW ef100mm_f2.8-h1-w510 joint_reconstruct
