@@ -1,0 +1,108 @@
+{
+  "J_task": null,
+  "actual_device": "cpu",
+  "code_commit": "785bd687cf1117adbc68312ce8ccbb3ff0479c96",
+  "comparisons": [],
+  "elapsed_seconds": 1.083465718664229,
+  "empirically_calibrated": false,
+  "error": "zero traced rays; requires independent ray-aiming/occlusion diagnosis",
+  "error_ledger": [
+    {
+      "kind": "convergence_estimate",
+      "source": "ray/OPD and field reconstruction",
+      "verified": false
+    },
+    {
+      "global_bound": false,
+      "kind": "reference_discrepancy",
+      "source": "local first-order Fourier model vs exact-distance RS1",
+      "spotcheck_passed": false
+    },
+    {
+      "kind": "convergence_estimate",
+      "source": "window, pitch, joint",
+      "verified": false
+    },
+    {
+      "border_band_is_tail_bound": false,
+      "kind": "deterministic_bound",
+      "outside_energy_fraction_bound": null,
+      "source": "full-plane/window equivalence",
+      "value": null
+    },
+    {
+      "source": "scalar z-flux transport, polarization/coatings, empirical calibration",
+      "validated": false
+    }
+  ],
+  "finished_unix": 1793378751.3897128,
+  "flags": {
+    "angular_grid": false,
+    "joint": false,
+    "pitch": false,
+    "pupil": false,
+    "reference_spotcheck": false,
+    "support": false
+  },
+  "id": "rf24mm_f1.8-h1-w510",
+  "model_scope_validated": false,
+  "name": "rf24mm_f1.8",
+  "numerically_verified": false,
+  "plan": {
+    "field_h": 1.0,
+    "implementation_signature": "06f9a8db08d660d0d06a56c190ba05dadc760439f09ffa625b65de813be8cf8e",
+    "mode": "verify",
+    "policy": {
+      "angular_grid_n": 1024,
+      "grid_otf_tolerance": 0.002,
+      "integral_relative_tolerance": 0.005,
+      "joint_otf_tolerance": 0.005,
+      "max_live_elements": 300000000,
+      "max_seconds": 7200.0,
+      "pitch_otf_tolerance": 0.001,
+      "pupil_otf_tolerance": 0.002,
+      "pupils": [
+        128,
+        256,
+        512,
+        1024
+      ],
+      "reference_relative_l2_tolerance": 0.005,
+      "residual_phase_target_cycles": 0.25,
+      "support_otf_tolerance": 0.002
+    },
+    "prescription_hash": "33af8af2522a4187f45ba29ec07f9d7b29eea593eae8807659fd0c7ce7dc9536",
+    "task": {
+      "frame_mm": [
+        36.0,
+        24.0
+      ],
+      "frequencies": [
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        30.0,
+        40.0,
+        50.0,
+        60.0,
+        70.0,
+        80.0
+      ],
+      "kernel": "rs1",
+      "otf_domain": "windowed",
+      "pitch_um": 0.25,
+      "support_mm": 0.64
+    },
+    "version": "QfilmRW-0.1.0",
+    "wavelength_nm": 510.0
+  },
+  "plan_hash": "cb5600785e35ba29ad15a8a88de5561cab27857c8fc4adc5f0d3ff9683d29eb8",
+  "psf_sampling": "point samples; no detector pixel-area convolution",
+  "runs": [],
+  "schema": "QfilmRWCondition-v1",
+  "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+  "state": "RAY_AIMING_OR_OCCLUSION_UNRESOLVED",
+  "training_eligible": false,
+  "version": "QfilmRW-0.1.0"
+}
