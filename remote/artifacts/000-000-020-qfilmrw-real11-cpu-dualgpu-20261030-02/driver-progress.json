@@ -6,10 +6,10 @@
       "progress": {
         "condition": "rf24mm_f1.8-h0.5-w470",
         "device": "cpu",
-        "elapsed_seconds": 83.53962879348546,
+        "elapsed_seconds": 548.3000093819574,
         "field_h": 0.5,
-        "stage": "joint_trace",
-        "updated_unix": 1793376779.8555417,
+        "stage": "joint_reconstruct",
+        "updated_unix": 1793377244.615982,
         "wavelength_nm": 470.0
       },
       "returncode": null
@@ -43,5 +43,5 @@
       "returncode": 0
     }
   ],
-  "updated_unix": 1793377221.521148
+  "updated_unix": 1793377251.5268142
 }
