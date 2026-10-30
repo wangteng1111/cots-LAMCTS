@@ -497,3 +497,16 @@ QFILMRW ef35mm_f2.0-h0-w550 pupil_reconstruct
 QFILMRW ef35mm_f2.0-h0-w550 pupil_czt
 QFILMRW ef35mm_f2.0-h0-w550 pupil_completed
 QFILMRW ef35mm_f2.0-h0-w550 trace_1024
+QFILMRW ef35mm_f2.0-h0-w550 pupil_reconstruct
+QFILMRW ef35mm_f2.0-h0-w550 pupil_czt
+QFILMRW ef35mm_f2.0-h0-w550 pupil_completed
+QFILMRW_TERMINAL ef35mm_f2.0-h0-w550 REFERENCE_REQUIRED
+QFILMRW ef35mm_f2.0-h0-w590 trace_128
+QFILMRW ef35mm_f2.0-h0-w590 pupil_reconstruct
+QFILMRW ef35mm_f2.0-h0-w590 pupil_czt
+QFILMRW ef35mm_f2.0-h0-w590 pupil_completed
+QFILMRW ef35mm_f2.0-h0-w590 trace_256
+QFILMRW ef35mm_f2.0-h0-w590 pupil_reconstruct
+QFILMRW ef35mm_f2.0-h0-w590 pupil_czt
+QFILMRW ef35mm_f2.0-h0-w590 pupil_completed
+QFILMRW ef35mm_f2.0-h0-w590 trace_512
