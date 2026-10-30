@@ -6,10 +6,10 @@
       "progress": {
         "condition": "ef40mm_f2.8-h0.5-w510",
         "device": "cpu",
-        "elapsed_seconds": 30.412027432583272,
+        "elapsed_seconds": 58.66818790696561,
         "field_h": 0.5,
-        "stage": "angular_grid_reconstruct",
-        "updated_unix": 1793370611.5000556,
+        "stage": "pitch_reconstruct",
+        "updated_unix": 1793370639.7562115,
         "wavelength_nm": 510.0
       },
       "returncode": null
@@ -43,5 +43,5 @@
       "returncode": 0
     }
   ],
-  "updated_unix": 1793370620.179019
+  "updated_unix": 1793370650.185525
 }
