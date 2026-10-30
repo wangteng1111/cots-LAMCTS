@@ -1,9 +1,9 @@
 {
   "condition": "sigma70mm_f2.8-h1-w430",
   "device": "cpu",
-  "elapsed_seconds": 15.35844440665096,
+  "elapsed_seconds": 47.32265657465905,
   "field_h": 1.0,
-  "stage": "trace_1024",
-  "updated_unix": 1793387856.8161728,
+  "stage": "angular_grid_reconstruct",
+  "updated_unix": 1793387888.7803886,
   "wavelength_nm": 430.0
 }
