@@ -1,9 +1,9 @@
 {
-  "condition": "ef100mm_f2.8-h0.5-w670",
+  "condition": "ef85mm_f1.8-h0-w430",
   "device": "cuda:0",
-  "elapsed_seconds": 8.126290490850806,
-  "field_h": 0.5,
-  "stage": "joint_czt",
-  "updated_unix": 1793366705.3784497,
-  "wavelength_nm": 670.0
+  "elapsed_seconds": 3.419596504420042,
+  "field_h": 0.0,
+  "stage": "trace_512",
+  "updated_unix": 1793366915.9671822,
+  "wavelength_nm": 430.0
 }
