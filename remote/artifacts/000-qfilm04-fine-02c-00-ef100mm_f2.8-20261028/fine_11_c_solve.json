@@ -1968,9 +1968,9 @@
             {
               "wavelength_nm": 670.0,
               "state": "running",
-              "pixels_completed": 4145152,
+              "pixels_completed": 5281600,
               "pixels_total": 6553600,
-              "elapsed_seconds": 3512.8770687542856
+              "elapsed_seconds": 4473.888735374436
             }
           ]
         }
@@ -2011,5 +2011,5 @@
       ]
     }
   ],
-  "updated_unix": 1793320658.2003803
+  "updated_unix": 1793321619.2120469
 }
