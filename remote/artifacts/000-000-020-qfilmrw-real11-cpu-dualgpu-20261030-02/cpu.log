@@ -1549,3 +1549,16 @@ QFILMRW ef50mm_f1.8-h1-w550 pupil_reconstruct
 QFILMRW ef50mm_f1.8-h1-w550 pupil_czt
 QFILMRW ef50mm_f1.8-h1-w550 pupil_completed
 QFILMRW ef50mm_f1.8-h1-w550 trace_512
+QFILMRW ef50mm_f1.8-h1-w550 pupil_reconstruct
+QFILMRW ef50mm_f1.8-h1-w550 pupil_czt
+QFILMRW ef50mm_f1.8-h1-w550 pupil_completed
+QFILMRW ef50mm_f1.8-h1-w550 trace_1024
+QFILMRW ef50mm_f1.8-h1-w550 pupil_reconstruct
+QFILMRW ef50mm_f1.8-h1-w550 pupil_czt
+QFILMRW ef50mm_f1.8-h1-w550 pupil_completed
+QFILMRW_TERMINAL ef50mm_f1.8-h1-w550 REFERENCE_REQUIRED
+QFILMRW ef50mm_f1.8-h1-w590 trace_128
+QFILMRW ef50mm_f1.8-h1-w590 pupil_reconstruct
+QFILMRW ef50mm_f1.8-h1-w590 pupil_czt
+QFILMRW ef50mm_f1.8-h1-w590 pupil_completed
+QFILMRW ef50mm_f1.8-h1-w590 trace_256
