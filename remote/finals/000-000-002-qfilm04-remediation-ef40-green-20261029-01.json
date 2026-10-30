@@ -1,0 +1,9 @@
+{
+  "bridge_version": "0.6.1",
+  "finished_at": 1793366572.8910947,
+  "job_id": "000-000-002-qfilm04-remediation-ef40-green-20261029-01",
+  "note": "adopted process ended; original exit status unavailable; inspect native scientific terminal",
+  "returncode": null,
+  "schema": 1,
+  "state": "stopped"
+}
