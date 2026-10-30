@@ -1620,6 +1620,28 @@
       "reference_relative_l2": 0.005981523281183036,
       "source_sha256": "0862741f9dc22e79a8ffad899d528eb05b6655012b685170925d7fc71183eb9d",
       "state": "REFERENCE_REQUIRED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 4,
+      "elapsed_seconds": 35.70477670524269,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "ef50mm_f1.8-h0.5-w550",
+      "model_scope_validated": false,
+      "name": "ef50mm_f1.8",
+      "native_terminal": "ef50mm_f1.8-h0.5-w550/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "824ca0f6a8d2783edb05cc3b5f91a07da211390db82703a3bfdffdd8d00d70ea",
+      "reference_relative_l2": 0.006182686642249415,
+      "source_sha256": "0862741f9dc22e79a8ffad899d528eb05b6655012b685170925d7fc71183eb9d",
+      "state": "REFERENCE_REQUIRED"
     }
   ],
   "fields_h": [
