@@ -1,0 +1,5 @@
+{
+  "action": "stop",
+  "job_id": "000-000-020-qfilmrw-real11-cpu-dualgpu-20261030-01",
+  "reason": "Superseded by -02: singular-line fold regression guard and implementation-hash-bound validation plans"
+}
