@@ -1,9 +1,9 @@
 {
   "condition": "yongnuo_50mm_f1.8-h0-w550",
   "device": "cpu",
-  "elapsed_seconds": 11.709546596743166,
+  "elapsed_seconds": 61.134541620500386,
   "field_h": 0.0,
-  "stage": "trace_1024",
-  "updated_unix": 1793391787.8370059,
+  "stage": "pitch_reconstruct",
+  "updated_unix": 1793391837.2619922,
   "wavelength_nm": 550.0
 }
