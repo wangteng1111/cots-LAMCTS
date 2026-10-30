@@ -4103,3 +4103,9 @@ QFILMRW yongnuo_50mm_f1.8-h0-w630 pupil_reconstruct
 QFILMRW yongnuo_50mm_f1.8-h0-w630 pupil_czt
 QFILMRW yongnuo_50mm_f1.8-h0-w630 pupil_completed
 QFILMRW yongnuo_50mm_f1.8-h0-w630 angular_grid_reconstruct
+QFILMRW yongnuo_50mm_f1.8-h0-w630 angular_grid_czt
+QFILMRW yongnuo_50mm_f1.8-h0-w630 angular_grid_completed
+QFILMRW yongnuo_50mm_f1.8-h0-w630 support_reconstruct
+QFILMRW yongnuo_50mm_f1.8-h0-w630 support_czt
+QFILMRW yongnuo_50mm_f1.8-h0-w630 support_completed
+QFILMRW yongnuo_50mm_f1.8-h0-w630 pitch_reconstruct
