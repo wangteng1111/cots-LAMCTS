@@ -4,12 +4,12 @@
       "lane": "cpu",
       "pid": 555767,
       "progress": {
-        "condition": "ef100mm_f2.8-h0-w590",
+        "condition": "ef100mm_f2.8-h0.5-w590",
         "device": "cpu",
-        "elapsed_seconds": 30.585898591205478,
-        "field_h": 0.0,
+        "elapsed_seconds": 31.295191356912255,
+        "field_h": 0.5,
         "stage": "pitch_reconstruct",
-        "updated_unix": 1793367397.8386204,
+        "updated_unix": 1793367840.2746596,
         "wavelength_nm": 590.0
       },
       "returncode": null
@@ -18,13 +18,13 @@
       "lane": "cuda0",
       "pid": 555768,
       "progress": {
-        "condition": "rf24mm_f1.8-h0.5-w630",
+        "condition": "rf50mm_f1.8-h0.5-w550",
         "device": "cuda:0",
-        "elapsed_seconds": 3.2039945581927896,
+        "elapsed_seconds": 12.174899710342288,
         "field_h": 0.5,
-        "stage": "trace_512",
-        "updated_unix": 1793367399.1280332,
-        "wavelength_nm": 630.0
+        "stage": "angular_grid_reconstruct",
+        "updated_unix": 1793367846.1762514,
+        "wavelength_nm": 550.0
       },
       "returncode": null
     },
@@ -32,16 +32,16 @@
       "lane": "cuda1",
       "pid": 555769,
       "progress": {
-        "condition": "rf35mm_f1.8-h1-w670",
+        "condition": "sigma70mm_f2.8-h1-w670",
         "device": "cuda:1",
-        "elapsed_seconds": 4.942119278945029,
+        "elapsed_seconds": 8.74986957386136,
         "field_h": 1.0,
-        "stage": "trace_1024",
-        "updated_unix": 1793367399.1140764,
+        "stage": "joint_completed",
+        "updated_unix": 1793367624.8375747,
         "wavelength_nm": 670.0
       },
-      "returncode": null
+      "returncode": 0
     }
   ],
-  "updated_unix": 1793367399.548652
+  "updated_unix": 1793367849.6413755
 }
