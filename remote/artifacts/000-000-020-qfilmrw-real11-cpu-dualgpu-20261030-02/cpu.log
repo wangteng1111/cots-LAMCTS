@@ -2433,3 +2433,7 @@ QFILMRW rf24mm_f1.8-h0.5-w510 pupil_reconstruct
 QFILMRW rf24mm_f1.8-h0.5-w510 pupil_czt
 QFILMRW rf24mm_f1.8-h0.5-w510 pupil_completed
 QFILMRW rf24mm_f1.8-h0.5-w510 trace_1024
+QFILMRW rf24mm_f1.8-h0.5-w510 pupil_reconstruct
+QFILMRW rf24mm_f1.8-h0.5-w510 pupil_czt
+QFILMRW rf24mm_f1.8-h0.5-w510 pupil_completed
+QFILMRW rf24mm_f1.8-h0.5-w510 angular_grid_reconstruct
