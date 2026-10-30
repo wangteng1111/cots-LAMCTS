@@ -1,9 +1,9 @@
 {
-  "condition": "rf50mm_f1.8-h0-w670",
+  "condition": "rf50mm_f1.8-h0.5-w430",
   "device": "cpu",
-  "elapsed_seconds": 356.1310887495056,
-  "field_h": 0.0,
-  "stage": "joint_reconstruct",
-  "updated_unix": 1793382975.5401516,
-  "wavelength_nm": 670.0
+  "elapsed_seconds": 9.41416387539357,
+  "field_h": 0.5,
+  "stage": "pupil_reconstruct",
+  "updated_unix": 1793383037.0093727,
+  "wavelength_nm": 430.0
 }
