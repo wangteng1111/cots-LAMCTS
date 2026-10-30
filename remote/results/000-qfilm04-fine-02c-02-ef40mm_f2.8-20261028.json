@@ -1,28 +1,9 @@
 {
-  "args": [
-    "validation/qfilm04_fine_11_cpu_gpu.py",
-    "--backend",
-    "c",
-    "--names",
-    "ef40mm_f2.8",
-    "--fields",
-    "3",
-    "--threads",
-    "8"
-  ],
-  "code_commit": "9a36a7011f379a153e4fab7f8c95b180cece49a1",
-  "entrypoint": "scripts/cuda_venv_exec.py",
-  "env": {
-    "MKL_NUM_THREADS": "8",
-    "OMP_NUM_THREADS": "8",
-    "OPENBLAS_NUM_THREADS": "8"
-  },
-  "hostname": "aipss-Rack-Server",
+  "bridge_version": "0.6.0",
+  "finished_at": 1793339990.4352405,
   "job_id": "000-qfilm04-fine-02c-02-ef40mm_f2.8-20261028",
-  "memory_gb": 0,
-  "request_sha256": "641c09f3fa1d5c3d82a5221e39ac5fff07922e2ac6695abe2a7fb20ccc081f97",
+  "note": "adopted process ended; original exit status unavailable; inspect native scientific terminal",
+  "returncode": null,
   "schema": 1,
-  "started_at": 1793255986.3563974,
-  "state": "running",
-  "timeout_sec": 172800
+  "state": "recovered_unknown_exit"
 }
