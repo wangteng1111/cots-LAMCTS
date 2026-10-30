@@ -3609,3 +3609,11 @@ QFILMRW sigma70mm_f2.8-h0.5-w430 pupil_reconstruct
 QFILMRW sigma70mm_f2.8-h0.5-w430 pupil_czt
 QFILMRW sigma70mm_f2.8-h0.5-w430 pupil_completed
 QFILMRW sigma70mm_f2.8-h0.5-w430 trace_256
+QFILMRW sigma70mm_f2.8-h0.5-w430 pupil_reconstruct
+QFILMRW sigma70mm_f2.8-h0.5-w430 pupil_czt
+QFILMRW sigma70mm_f2.8-h0.5-w430 pupil_completed
+QFILMRW sigma70mm_f2.8-h0.5-w430 trace_512
+QFILMRW sigma70mm_f2.8-h0.5-w430 pupil_reconstruct
+QFILMRW sigma70mm_f2.8-h0.5-w430 pupil_czt
+QFILMRW sigma70mm_f2.8-h0.5-w430 pupil_completed
+QFILMRW sigma70mm_f2.8-h0.5-w430 trace_1024
