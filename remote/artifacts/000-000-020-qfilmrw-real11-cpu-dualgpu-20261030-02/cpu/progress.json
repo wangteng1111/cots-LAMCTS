@@ -1,9 +1,9 @@
 {
-  "condition": "ef85mm_f1.8-h0-w470",
+  "condition": "ef85mm_f1.8-h0-w510",
   "device": "cpu",
-  "elapsed_seconds": 16.070487966760993,
+  "elapsed_seconds": 15.830486912280321,
   "field_h": 0.0,
   "stage": "trace_1024",
-  "updated_unix": 1793372463.3248498,
-  "wavelength_nm": 470.0
+  "updated_unix": 1793372519.567019,
+  "wavelength_nm": 510.0
 }
