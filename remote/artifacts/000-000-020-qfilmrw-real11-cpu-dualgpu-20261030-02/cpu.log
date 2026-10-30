@@ -3799,3 +3799,8 @@ QFILMRW sigma70mm_f2.8-h1-w430 pitch_reconstruct
 QFILMRW sigma70mm_f2.8-h1-w430 pitch_czt
 QFILMRW sigma70mm_f2.8-h1-w430 pitch_completed
 QFILMRW sigma70mm_f2.8-h1-w430 joint_trace
+QFILMRW sigma70mm_f2.8-h1-w430 joint_reconstruct
+QFILMRW sigma70mm_f2.8-h1-w430 joint_czt
+QFILMRW sigma70mm_f2.8-h1-w430 joint_completed
+QFILMRW_TERMINAL sigma70mm_f2.8-h1-w430 NUMERICALLY_CONVERGED_LOCAL_MODEL
+QFILMRW sigma70mm_f2.8-h1-w470 trace_128
