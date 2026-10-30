@@ -1,0 +1,105 @@
+{
+  "J_task": null,
+  "actual_device": "cpu",
+  "code_commit": "785bd687cf1117adbc68312ce8ccbb3ff0479c96",
+  "code_sha256": {
+    "evaluator/qfilm02.py": "14e6e57c23c167fae19c8d7568c7e4a516ec3197af72df59735a5b692c8b7f0b",
+    "evaluator/qfilm04_wavefront.py": "0a453e159f9cfaed78fdf20b3286f530017df8148edf42677e0574dd2a450e04",
+    "evaluator/qfilmrw/__init__.py": "03517a63fc289e4fd5ed80b1e7ca5cbcb92a147b52bbbfa0f857ecd9fca85bf5",
+    "evaluator/qfilmrw/__main__.py": "5af4a59d763841f112f42662b88e8df17e5427c345bfcef97bf57d2d67ac360b",
+    "evaluator/qfilmrw/api.py": "0633515620a3f712a9f3b5c5ce982ea8b3cb621e52baf6b8f1045b8b3bc2869d",
+    "evaluator/qfilmrw/contracts.py": "012c0d4d2bf227e9665685490d92127269dd2300f67d45cfb2ce85887d188476",
+    "evaluator/qfilmrw/fourier.py": "0feee7030ac704f9e87f773265ec04b78f288da787e88d70858605a11e71e206",
+    "evaluator/qfilmrw/rays.py": "a92b63e86080b4d0365d21f9a3b160ffc24d61bd0695703318c8b7a4aa4dd3ae",
+    "evaluator/qfilmrw/solver.py": "39f86fdfc2401a9888721a33164b3f4633057a89f440f11047f2dc17227c8eee",
+    "validation/qfilmrw_real11.py": "6c468f211a8e8e76b74eff34bdc173ec6bd2f7aa97ca23026826ef1fcbdd4bb5"
+  },
+  "conditions": [
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 4,
+      "elapsed_seconds": 52.380993058905005,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "ef100mm_f2.8-h0-w430",
+      "model_scope_validated": false,
+      "name": "ef100mm_f2.8",
+      "native_terminal": "ef100mm_f2.8-h0-w430/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "6f61aa4ee7b3b66519333067d4420dbce0e0d2b0ab5b727aab231f1bcc8ab7b2",
+      "reference_relative_l2": 0.009010078650308458,
+      "source_sha256": "3e1b59d8ef13a3ac5f57c015cd2be4181282950d9752a5a6731ac1ab18155a5a",
+      "state": "REFERENCE_REQUIRED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 4,
+      "elapsed_seconds": 48.73493249434978,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": true,
+        "support": false
+      },
+      "id": "ef100mm_f2.8-h0-w470",
+      "model_scope_validated": false,
+      "name": "ef100mm_f2.8",
+      "native_terminal": "ef100mm_f2.8-h0-w470/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "4455d620e2d0023fc528019940a5cd5fc7ec9fd1961af69d70eb41fc4d787c98",
+      "reference_relative_l2": 0.004854874018010048,
+      "source_sha256": "3e1b59d8ef13a3ac5f57c015cd2be4181282950d9752a5a6731ac1ab18155a5a",
+      "state": "SOURCE_SAMPLING_UNCONVERGED"
+    }
+  ],
+  "fields_h": [
+    0.0,
+    0.5,
+    1.0
+  ],
+  "fixture_sha256": "09f589d4859070a036de73fca4a7c4287edf393abcd484d009e6534f81ac7954",
+  "mode": "verify",
+  "policy": {
+    "angular_grid_n": 1024,
+    "grid_otf_tolerance": 0.002,
+    "integral_relative_tolerance": 0.005,
+    "joint_otf_tolerance": 0.005,
+    "max_live_elements": 300000000,
+    "max_seconds": 7200.0,
+    "pitch_otf_tolerance": 0.001,
+    "pupil_otf_tolerance": 0.002,
+    "pupils": [
+      128,
+      256,
+      512,
+      1024
+    ],
+    "reference_relative_l2_tolerance": 0.005,
+    "residual_phase_target_cycles": 0.25,
+    "support_otf_tolerance": 0.002
+  },
+  "schema": "QfilmRWMatrix-v1",
+  "source_commit": "911bb9d334fce7e20a4407c4506ac683b52ff246",
+  "started_unix": 1793366590.7646363,
+  "status": "running",
+  "task_hash": "4619956f6edea952fdef03597691dd85acd75e14644c8a8384d7d45a6f644766",
+  "training_eligible": false,
+  "version": "QfilmRW-0.1.0",
+  "wavelengths_nm": [
+    430.0,
+    470.0,
+    510.0,
+    550.0,
+    590.0,
+    630.0,
+    670.0
+  ]
+}
