@@ -1,0 +1,20 @@
+test_actual_gpu_czt_parity (__main__.RWTests.test_actual_gpu_czt_parity) ... ok
+test_airy_fixed_quarter_micron (__main__.RWTests.test_airy_fixed_quarter_micron) ... ok
+test_autocorrelation_dc_and_outside_cutoff (__main__.RWTests.test_autocorrelation_dc_and_outside_cutoff) ... ok
+test_autocorrelation_retains_signed_phase (__main__.RWTests.test_autocorrelation_retains_signed_phase) ... ok
+test_bluestein_matches_explicit_nontrivial_origins (__main__.RWTests.test_bluestein_matches_explicit_nontrivial_origins) ... ok
+test_inverse_map_preserves_constant_angular_density (__main__.RWTests.test_inverse_map_preserves_constant_angular_density) ... ok
+test_missing_workstation_results_never_pass (__main__.RWTests.test_missing_workstation_results_never_pass) ... ok
+test_polychromatic_sensor_centers_are_not_erased (__main__.RWTests.test_polychromatic_sensor_centers_are_not_erased) ... ok
+test_same_eleven_source_identities (__main__.RWTests.test_same_eleven_source_identities) ... ok
+test_singular_line_cannot_hide_mapping_fold (__main__.RWTests.test_singular_line_cannot_hide_mapping_fold) ... ok
+test_task_rejects_ambiguous_normalization (__main__.RWTests.test_task_rejects_ambiguous_normalization) ... ok
+test_two_axis_mft_centered_coordinates (__main__.RWTests.test_two_axis_mft_centered_coordinates) ... ok
+test_unvalidated_output_cannot_make_training_J (__main__.RWTests.test_unvalidated_output_cannot_make_training_J) ... ok
+test_verifier_rejects_tampered_projection (__main__.RWTests.test_verifier_rejects_tampered_projection) ... ok
+test_working_set_limit_precedes_transform (__main__.RWTests.test_working_set_limit_precedes_transform) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.874s
+
+OK
