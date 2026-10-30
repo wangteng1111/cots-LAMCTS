@@ -1116,3 +1116,8 @@ QFILMRW ef40mm_f2.8-h0.5-w670 support_reconstruct
 QFILMRW ef40mm_f2.8-h0.5-w670 support_czt
 QFILMRW ef40mm_f2.8-h0.5-w670 support_completed
 QFILMRW ef40mm_f2.8-h0.5-w670 pitch_reconstruct
+QFILMRW ef40mm_f2.8-h0.5-w670 pitch_czt
+QFILMRW ef40mm_f2.8-h0.5-w670 pitch_completed
+QFILMRW ef40mm_f2.8-h0.5-w670 joint_trace
+QFILMRW ef40mm_f2.8-h0.5-w670 joint_reconstruct
+QFILMRW ef40mm_f2.8-h0.5-w670 joint_czt
