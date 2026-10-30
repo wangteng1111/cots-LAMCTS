@@ -168,6 +168,116 @@
       "reference_relative_l2": 0.0033221604962084695,
       "source_sha256": "3e1b59d8ef13a3ac5f57c015cd2be4181282950d9752a5a6731ac1ab18155a5a",
       "state": "NUMERICALLY_CONVERGED_LOCAL_MODEL"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 4,
+      "elapsed_seconds": 50.96920345444232,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "ef100mm_f2.8-h0.5-w430",
+      "model_scope_validated": false,
+      "name": "ef100mm_f2.8",
+      "native_terminal": "ef100mm_f2.8-h0.5-w430/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "c5e32381eb3ffe52ac5f816fd4a05850bac09af9ee164720d1eaa88a7322e27e",
+      "reference_relative_l2": 0.015623769723740919,
+      "source_sha256": "3e1b59d8ef13a3ac5f57c015cd2be4181282950d9752a5a6731ac1ab18155a5a",
+      "state": "REFERENCE_REQUIRED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 4,
+      "elapsed_seconds": 47.044033472426236,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "ef100mm_f2.8-h0.5-w470",
+      "model_scope_validated": false,
+      "name": "ef100mm_f2.8",
+      "native_terminal": "ef100mm_f2.8-h0.5-w470/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "9d2f23236a59b314d4b4a463a8e8f8649bd450b01fb76fcd16c04a8259d5fa6d",
+      "reference_relative_l2": 0.015833409293755242,
+      "source_sha256": "3e1b59d8ef13a3ac5f57c015cd2be4181282950d9752a5a6731ac1ab18155a5a",
+      "state": "REFERENCE_REQUIRED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 4,
+      "elapsed_seconds": 46.31068692822009,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": true,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "ef100mm_f2.8-h0.5-w510",
+      "model_scope_validated": false,
+      "name": "ef100mm_f2.8",
+      "native_terminal": "ef100mm_f2.8-h0.5-w510/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "e20a8dc9e3cb408b58682d3cdaf5e96373577c656b94d3eedc3961ad40e2548c",
+      "reference_relative_l2": 0.010391541256713027,
+      "source_sha256": "3e1b59d8ef13a3ac5f57c015cd2be4181282950d9752a5a6731ac1ab18155a5a",
+      "state": "REFERENCE_REQUIRED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 7,
+      "elapsed_seconds": 99.87453781068325,
+      "flags": {
+        "angular_grid": true,
+        "joint": true,
+        "pitch": true,
+        "pupil": true,
+        "reference_spotcheck": true,
+        "support": true
+      },
+      "id": "ef100mm_f2.8-h0.5-w550",
+      "model_scope_validated": false,
+      "name": "ef100mm_f2.8",
+      "native_terminal": "ef100mm_f2.8-h0.5-w550/condition-terminal.json",
+      "numerically_verified": true,
+      "plan_hash": "7f51f85a4babc65956021d7f52ba1c32a8ed3ed942164c8807be30641a40cb83",
+      "reference_relative_l2": 0.004395202755239236,
+      "source_sha256": "3e1b59d8ef13a3ac5f57c015cd2be4181282950d9752a5a6731ac1ab18155a5a",
+      "state": "NUMERICALLY_CONVERGED_LOCAL_MODEL"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 6,
+      "elapsed_seconds": 64.3293312927708,
+      "flags": {
+        "angular_grid": true,
+        "joint": true,
+        "pitch": true,
+        "pupil": true,
+        "reference_spotcheck": true,
+        "support": true
+      },
+      "id": "ef100mm_f2.8-h0.5-w590",
+      "model_scope_validated": false,
+      "name": "ef100mm_f2.8",
+      "native_terminal": "ef100mm_f2.8-h0.5-w590/condition-terminal.json",
+      "numerically_verified": true,
+      "plan_hash": "0fe43d48265552d191b839ff62ced712c113b363e9bf58334503944bdc59f709",
+      "reference_relative_l2": 0.00251310720256255,
+      "source_sha256": "3e1b59d8ef13a3ac5f57c015cd2be4181282950d9752a5a6731ac1ab18155a5a",
+      "state": "NUMERICALLY_CONVERGED_LOCAL_MODEL"
     }
   ],
   "fields_h": [
