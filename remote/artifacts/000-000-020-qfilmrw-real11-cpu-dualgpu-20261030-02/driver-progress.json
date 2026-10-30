@@ -6,10 +6,10 @@
       "progress": {
         "condition": "sigma70mm_f2.8-h0.5-w550",
         "device": "cpu",
-        "elapsed_seconds": 14.778964250348508,
+        "elapsed_seconds": 39.599571503698826,
         "field_h": 0.5,
-        "stage": "angular_grid_reconstruct",
-        "updated_unix": 1793387519.5301075,
+        "stage": "pitch_reconstruct",
+        "updated_unix": 1793387544.3507113,
         "wavelength_nm": 550.0
       },
       "returncode": null
@@ -43,5 +43,5 @@
       "returncode": 0
     }
   ],
-  "updated_unix": 1793387523.5501623
+  "updated_unix": 1793387553.5558174
 }
