@@ -1,0 +1,27 @@
+{
+  "args": [
+    "validation/qfilmrw_real11.py",
+    "--orchestrate",
+    "--threads",
+    "4"
+  ],
+  "bridge_version": "0.6.1",
+  "code_commit": "785bd687cf1117adbc68312ce8ccbb3ff0479c96",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {
+    "MKL_NUM_THREADS": "4",
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "000-000-020-qfilmrw-real11-cpu-dualgpu-20261030-02",
+  "log_tail": "",
+  "memory_gb": 0,
+  "request_sha256": "31136e89e753ccfe8ad88e72be56f79da1ccf725410e9d6576f0a06a2745799f",
+  "schema": 1,
+  "started_at": 1793366584.957524,
+  "state": "running",
+  "supervisor_pid": 555723,
+  "timeout_sec": 172800,
+  "updated_at": 1793366675.3441021
+}
