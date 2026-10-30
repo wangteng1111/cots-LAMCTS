@@ -2940,6 +2940,28 @@
       "reference_relative_l2": 0.01844885877685367,
       "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
       "state": "REFERENCE_REQUIRED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 8,
+      "elapsed_seconds": 585.3635975057259,
+      "flags": {
+        "angular_grid": true,
+        "joint": true,
+        "pitch": true,
+        "pupil": true,
+        "reference_spotcheck": false,
+        "support": true
+      },
+      "id": "rf24mm_f1.8-h0.5-w430",
+      "model_scope_validated": false,
+      "name": "rf24mm_f1.8",
+      "native_terminal": "rf24mm_f1.8-h0.5-w430/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "47d7b4112a4c91460511983c7fe14ea4e88a730089f80c11427acb9a560880fd",
+      "reference_relative_l2": 0.0021705060778111347,
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "state": "NUMERICAL_OR_MODEL_GATE_NOT_PASSED"
     }
   ],
   "fields_h": [
