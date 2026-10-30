@@ -57,7 +57,7 @@
   "torch_version": "2.14.0+cu130",
   "threads": 8,
   "block": 64,
-  "status": "running",
+  "status": "finished",
   "training_eligible": false,
   "physics_certified": false,
   "sampling_converged": false,
@@ -1683,15 +1683,533 @@
             },
             {
               "wavelength_nm": 590.0,
-              "state": "running",
-              "pixels_completed": 4585344,
+              "state": "completed",
+              "pixels_completed": 6553600,
               "pixels_total": 6553600,
-              "elapsed_seconds": 1320.4069157047197
+              "elapsed_seconds": 1958.581446353346,
+              "otf_real": [
+                [
+                  0.027859710974766666,
+                  0.036571167147803244
+                ],
+                [
+                  0.3629435599491996,
+                  0.31931075467943715
+                ],
+                [
+                  0.21771539908773482,
+                  0.1096952837584059
+                ],
+                [
+                  0.09285323686629515,
+                  0.18141490355633877
+                ],
+                [
+                  0.11927121879259898,
+                  -0.06797576029213592
+                ],
+                [
+                  0.032698620062686756,
+                  -0.04628061260492153
+                ],
+                [
+                  -0.03299981217388195,
+                  -0.028843256136194102
+                ],
+                [
+                  0.008068973368768391,
+                  0.04058460254219585
+                ],
+                [
+                  0.012860166437233273,
+                  0.034187887869239195
+                ],
+                [
+                  0.020605395759430857,
+                  0.01509694518556858
+                ]
+              ],
+              "otf_imag": [
+                [
+                  0.03420021712259316,
+                  0.00029560481140089866
+                ],
+                [
+                  0.06370557546388868,
+                  0.0024474227606529203
+                ],
+                [
+                  0.07871266912898044,
+                  0.0011987197765325162
+                ],
+                [
+                  -0.046258393119318286,
+                  0.0029195367343332803
+                ],
+                [
+                  -0.11366625191143231,
+                  -0.0015752991345872951
+                ],
+                [
+                  -0.0030366198180458576,
+                  -0.0014464333582513073
+                ],
+                [
+                  -0.015012814907921694,
+                  -0.0011332546201271467
+                ],
+                [
+                  0.004871345054780603,
+                  0.0018908791319433857
+                ],
+                [
+                  0.011826955319259362,
+                  0.0018848518463751827
+                ],
+                [
+                  -0.01459916595226544,
+                  0.0009431291046790128
+                ]
+              ],
+              "mtf": [
+                [
+                  0.044111431022242395,
+                  0.036572361815407635
+                ],
+                [
+                  0.3684921003953591,
+                  0.3193201339285092
+                ],
+                [
+                  0.2315074065366808,
+                  0.10970183320227533
+                ],
+                [
+                  0.10373795125473466,
+                  0.1814383943025809
+                ],
+                [
+                  0.1647593410276492,
+                  0.06799401116758265
+                ],
+                [
+                  0.032839318109901275,
+                  0.04630321017539371
+                ],
+                [
+                  0.036254271678948444,
+                  0.028865510398607856
+                ],
+                [
+                  0.009425408949675813,
+                  0.040628627682948254
+                ],
+                [
+                  0.017471712935974493,
+                  0.03423980641654471
+                ],
+                [
+                  0.025253078642109315,
+                  0.015126375852931691
+                ]
+              ],
+              "chief_xy_mm": [
+                10.743641074451283,
+                0.0
+              ],
+              "valid_rays": 29610,
+              "bad_jacobian_fraction": 0.0,
+              "exit_z_mm": 47.499980565470864,
+              "border_20um_flux_fraction": 0.606366589111893,
+              "normalized_psf_sum": 1.0000000000000004
+            },
+            {
+              "wavelength_nm": 630.0,
+              "state": "completed",
+              "pixels_completed": 6553600,
+              "pixels_total": 6553600,
+              "elapsed_seconds": 1640.7706225402653,
+              "otf_real": [
+                [
+                  0.6293644974785713,
+                  0.16248643328614287
+                ],
+                [
+                  0.5778160768877696,
+                  0.37987790871594135
+                ],
+                [
+                  0.4655408274960103,
+                  0.24501068774113732
+                ],
+                [
+                  0.3280260926954897,
+                  0.0067323527330025446
+                ],
+                [
+                  0.1892152679587943,
+                  -0.07658678130578261
+                ],
+                [
+                  0.15705253660425578,
+                  -0.10870063825417438
+                ],
+                [
+                  0.13661873573100214,
+                  -0.11900311839750947
+                ],
+                [
+                  0.07194037352541222,
+                  0.034460780369650945
+                ],
+                [
+                  0.028767751918831998,
+                  0.053236913809623344
+                ],
+                [
+                  0.023432515698555555,
+                  -0.010501481940995806
+                ]
+              ],
+              "otf_imag": [
+                [
+                  0.07238254917947004,
+                  0.0007775369063460737
+                ],
+                [
+                  0.11291544789564122,
+                  0.0027909576587836537
+                ],
+                [
+                  0.11798161112397278,
+                  0.0030234122712100887
+                ],
+                [
+                  0.10281523374362456,
+                  2.9768931237248233e-05
+                ],
+                [
+                  0.02337640600297508,
+                  -0.0018022049519300037
+                ],
+                [
+                  -0.02546876219213546,
+                  -0.0034601458386477693
+                ],
+                [
+                  -0.025898020752304046,
+                  -0.004675645256324187
+                ],
+                [
+                  0.009926042637820064,
+                  0.0016593480068551275
+                ],
+                [
+                  0.031735770341869925,
+                  0.002927780697346712
+                ],
+                [
+                  0.032589744895431635,
+                  -0.0006425878739902057
+                ]
+              ],
+              "mtf": [
+                [
+                  0.6335131443878437,
+                  0.16248829362662678
+                ],
+                [
+                  0.588745545276944,
+                  0.3798881611409471
+                ],
+                [
+                  0.48025818330256315,
+                  0.24502934136373708
+                ],
+                [
+                  0.3437616758436376,
+                  0.006732418548399515
+                ],
+                [
+                  0.19065380664003082,
+                  0.07660798270068554
+                ],
+                [
+                  0.15910423344911553,
+                  0.10875569578688553
+                ],
+                [
+                  0.13905174012440177,
+                  0.11909493627730208
+                ],
+                [
+                  0.07262192276044234,
+                  0.0345007075216317
+                ],
+                [
+                  0.042833896269839536,
+                  0.053317360135185066
+                ],
+                [
+                  0.04013943527645057,
+                  0.010521123615510858
+                ]
+              ],
+              "chief_xy_mm": [
+                10.745701936651649,
+                0.0
+              ],
+              "valid_rays": 29646,
+              "bad_jacobian_fraction": 0.0,
+              "exit_z_mm": 47.49998016984386,
+              "border_20um_flux_fraction": 0.4279918331310581,
+              "normalized_psf_sum": 1.0000000000000009
+            },
+            {
+              "wavelength_nm": 670.0,
+              "state": "completed",
+              "pixels_completed": 6553600,
+              "pixels_total": 6553600,
+              "elapsed_seconds": 1769.4962037177756,
+              "otf_real": [
+                [
+                  0.5915640151289331,
+                  0.623741862498457
+                ],
+                [
+                  0.5056282884745459,
+                  0.5132004565126449
+                ],
+                [
+                  0.40068260103673886,
+                  0.3529876928187924
+                ],
+                [
+                  0.3053055573010074,
+                  0.18174913354517255
+                ],
+                [
+                  0.19301670193916987,
+                  -0.09340771450525732
+                ],
+                [
+                  0.14712629982916017,
+                  -0.17186998663171046
+                ],
+                [
+                  0.10003280642901442,
+                  -0.07466069270530035
+                ],
+                [
+                  0.049508326459189775,
+                  0.06150714856160971
+                ],
+                [
+                  0.017211284484409277,
+                  0.11879873256471307
+                ],
+                [
+                  0.003935704121195541,
+                  0.07011002129029754
+                ]
+              ],
+              "otf_imag": [
+                [
+                  0.08790307763575293,
+                  0.0025758166076868157
+                ],
+                [
+                  0.14535033678959489,
+                  0.004067355678067545
+                ],
+                [
+                  0.15959613751333995,
+                  0.0042004668883056035
+                ],
+                [
+                  0.1349617283649179,
+                  0.0029202723684140673
+                ],
+                [
+                  0.05057884485478663,
+                  -0.002213593151313573
+                ],
+                [
+                  0.016101580402340845,
+                  -0.005371010870637151
+                ],
+                [
+                  0.026219821867603747,
+                  -0.002877685800297175
+                ],
+                [
+                  0.033222018969040215,
+                  0.002999838516084578
+                ],
+                [
+                  0.027976389794547446,
+                  0.006626400738385845
+                ],
+                [
+                  0.025514438709584874,
+                  0.004450172089114962
+                ]
+              ],
+              "mtf": [
+                [
+                  0.5980593073043021,
+                  0.6237471810471295
+                ],
+                [
+                  0.5261052047932497,
+                  0.5132165741156447
+                ],
+                [
+                  0.43129743087890443,
+                  0.3530126841964944
+                ],
+                [
+                  0.3338055593337603,
+                  0.1817725929152321
+                ],
+                [
+                  0.19953362316742237,
+                  0.09343393989196433
+                ],
+                [
+                  0.1480047600345103,
+                  0.1719538893498976
+                ],
+                [
+                  0.10341199843748085,
+                  0.07471613019154913
+                ],
+                [
+                  0.05962195009532126,
+                  0.061580259461149665
+                ],
+                [
+                  0.03284671520167163,
+                  0.11898339399146378
+                ],
+                [
+                  0.02581620323740032,
+                  0.07025111470253488
+                ]
+              ],
+              "chief_xy_mm": [
+                10.747403102487308,
+                0.0
+              ],
+              "valid_rays": 29674,
+              "bad_jacobian_fraction": 0.0,
+              "exit_z_mm": 47.49997981842613,
+              "border_20um_flux_fraction": 0.05674104586669689,
+              "normalized_psf_sum": 1.0000000000000004
             }
+          ],
+          "complete": true,
+          "polychromatic_mtf_ts": [
+            [
+              0.24663757153892796,
+              0.2415098578030211
+            ],
+            [
+              0.2760069719952946,
+              0.21930794064454737
+            ],
+            [
+              0.18364227916270703,
+              0.1314318400551901
+            ],
+            [
+              0.13034229710241818,
+              0.03514074870791713
+            ],
+            [
+              0.052256799540227626,
+              0.037683978088722724
+            ],
+            [
+              0.03211730593586227,
+              0.031416565076069464
+            ],
+            [
+              0.03266798614006505,
+              0.007249235187603213
+            ],
+            [
+              0.008432637035339021,
+              0.020575012281004872
+            ],
+            [
+              0.015064694847946722,
+              0.017331166115710017
+            ],
+            [
+              0.01307284476559277,
+              0.009214561144590008
+            ]
           ]
+        },
+        {
+          "index": 2,
+          "field_h": 1.0,
+          "samples": [
+            {
+              "wavelength_nm": 430.0,
+              "state": "invalid",
+              "error": "ValueError('invalid physical chief ray at field=1.0,lambda=430.0')",
+              "elapsed_seconds": 1.741488535888493,
+              "traceback": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/000-qfilm04-fine-02c-01-ef35mm_f2.0-20261028/src/validation/qfilm04_fine_11_cpu_gpu.py\", line 105, in solve_case\n    r=eval_fixed_film(p,w,float(h),setup,device=device,progress_callback=progress)\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/lib/cots-lamcts/jobs/000-qfilm04-fine-02c-01-ef35mm_f2.0-20261028/src/evaluator/qfilm03_physical_huygens.py\", line 51, in eval_fixed_film\n    raise ValueError(f\"invalid physical chief ray at field={field_h},lambda={wave_nm}\")\nValueError: invalid physical chief ray at field=1.0,lambda=430.0\n"
+            },
+            {
+              "wavelength_nm": 470.0,
+              "state": "invalid",
+              "error": "ValueError('invalid physical chief ray at field=1.0,lambda=470.0')",
+              "elapsed_seconds": 1.734792630188167,
+              "traceback": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/000-qfilm04-fine-02c-01-ef35mm_f2.0-20261028/src/validation/qfilm04_fine_11_cpu_gpu.py\", line 105, in solve_case\n    r=eval_fixed_film(p,w,float(h),setup,device=device,progress_callback=progress)\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/lib/cots-lamcts/jobs/000-qfilm04-fine-02c-01-ef35mm_f2.0-20261028/src/evaluator/qfilm03_physical_huygens.py\", line 51, in eval_fixed_film\n    raise ValueError(f\"invalid physical chief ray at field={field_h},lambda={wave_nm}\")\nValueError: invalid physical chief ray at field=1.0,lambda=470.0\n"
+            },
+            {
+              "wavelength_nm": 510.0,
+              "state": "invalid",
+              "error": "ValueError('invalid physical chief ray at field=1.0,lambda=510.0')",
+              "elapsed_seconds": 1.7331863483414054,
+              "traceback": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/000-qfilm04-fine-02c-01-ef35mm_f2.0-20261028/src/validation/qfilm04_fine_11_cpu_gpu.py\", line 105, in solve_case\n    r=eval_fixed_film(p,w,float(h),setup,device=device,progress_callback=progress)\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/lib/cots-lamcts/jobs/000-qfilm04-fine-02c-01-ef35mm_f2.0-20261028/src/evaluator/qfilm03_physical_huygens.py\", line 51, in eval_fixed_film\n    raise ValueError(f\"invalid physical chief ray at field={field_h},lambda={wave_nm}\")\nValueError: invalid physical chief ray at field=1.0,lambda=510.0\n"
+            },
+            {
+              "wavelength_nm": 550.0,
+              "state": "invalid",
+              "error": "ValueError('invalid physical chief ray at field=1.0,lambda=550.0')",
+              "elapsed_seconds": 1.7346739638596773,
+              "traceback": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/000-qfilm04-fine-02c-01-ef35mm_f2.0-20261028/src/validation/qfilm04_fine_11_cpu_gpu.py\", line 105, in solve_case\n    r=eval_fixed_film(p,w,float(h),setup,device=device,progress_callback=progress)\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/lib/cots-lamcts/jobs/000-qfilm04-fine-02c-01-ef35mm_f2.0-20261028/src/evaluator/qfilm03_physical_huygens.py\", line 51, in eval_fixed_film\n    raise ValueError(f\"invalid physical chief ray at field={field_h},lambda={wave_nm}\")\nValueError: invalid physical chief ray at field=1.0,lambda=550.0\n"
+            },
+            {
+              "wavelength_nm": 590.0,
+              "state": "invalid",
+              "error": "ValueError('invalid physical chief ray at field=1.0,lambda=590.0')",
+              "elapsed_seconds": 1.7331687388941646,
+              "traceback": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/000-qfilm04-fine-02c-01-ef35mm_f2.0-20261028/src/validation/qfilm04_fine_11_cpu_gpu.py\", line 105, in solve_case\n    r=eval_fixed_film(p,w,float(h),setup,device=device,progress_callback=progress)\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/lib/cots-lamcts/jobs/000-qfilm04-fine-02c-01-ef35mm_f2.0-20261028/src/evaluator/qfilm03_physical_huygens.py\", line 51, in eval_fixed_film\n    raise ValueError(f\"invalid physical chief ray at field={field_h},lambda={wave_nm}\")\nValueError: invalid physical chief ray at field=1.0,lambda=590.0\n"
+            },
+            {
+              "wavelength_nm": 630.0,
+              "state": "invalid",
+              "error": "ValueError('invalid physical chief ray at field=1.0,lambda=630.0')",
+              "elapsed_seconds": 1.7337781824171543,
+              "traceback": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/000-qfilm04-fine-02c-01-ef35mm_f2.0-20261028/src/validation/qfilm04_fine_11_cpu_gpu.py\", line 105, in solve_case\n    r=eval_fixed_film(p,w,float(h),setup,device=device,progress_callback=progress)\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/lib/cots-lamcts/jobs/000-qfilm04-fine-02c-01-ef35mm_f2.0-20261028/src/evaluator/qfilm03_physical_huygens.py\", line 51, in eval_fixed_film\n    raise ValueError(f\"invalid physical chief ray at field={field_h},lambda={wave_nm}\")\nValueError: invalid physical chief ray at field=1.0,lambda=630.0\n"
+            },
+            {
+              "wavelength_nm": 670.0,
+              "state": "invalid",
+              "error": "ValueError('invalid physical chief ray at field=1.0,lambda=670.0')",
+              "elapsed_seconds": 1.733512744307518,
+              "traceback": "Traceback (most recent call last):\n  File \"/var/lib/cots-lamcts/jobs/000-qfilm04-fine-02c-01-ef35mm_f2.0-20261028/src/validation/qfilm04_fine_11_cpu_gpu.py\", line 105, in solve_case\n    r=eval_fixed_film(p,w,float(h),setup,device=device,progress_callback=progress)\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/var/lib/cots-lamcts/jobs/000-qfilm04-fine-02c-01-ef35mm_f2.0-20261028/src/evaluator/qfilm03_physical_huygens.py\", line 51, in eval_fixed_film\n    raise ValueError(f\"invalid physical chief ray at field={field_h},lambda={wave_nm}\")\nValueError: invalid physical chief ray at field=1.0,lambda=670.0\n"
+            }
+          ],
+          "complete": false
         }
       ],
-      "state": "running",
+      "state": "completed_with_invalid_samples",
       "source_sha256": "ecd6ed4979821130d24d0d95cd69b29789b16459ca5d54e3acc3dce6ebce5ac3",
       "provenance": {
         "identifier": "ef35mm_f2.0",
@@ -1719,8 +2237,126 @@
         0.188995361328125,
         0.506439208984375,
         0.3045654296875
-      ]
+      ],
+      "propagation_complete": false,
+      "all_conditions_attempted": true,
+      "Q_image": [
+        [
+          0.0,
+          0.9085756198025958,
+          0.9085756198025958,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          17.447182522761377,
+          19.7354455506461,
+          0.00530697675737729,
+          0.26406639092601997,
+          0.23941978193760052,
+          0.16716800158075143,
+          0.0590667920428912,
+          0.028759380055942092,
+          0.06237632717418753,
+          0.0001977368558578264,
+          0.041805627149988984,
+          0.035580142149678216,
+          0.030165120561783432,
+          0.26406639092601797,
+          0.23941978193759664,
+          0.16716800158075032,
+          0.05906679204288916,
+          0.02875938005593972,
+          0.062376327174186945,
+          0.00019773685585564737,
+          0.04180562714999318,
+          0.03558014214967996,
+          0.030165120561784,
+          1.0,
+          0.0
+        ],
+        [
+          0.5,
+          0.48110417630771535,
+          0.5746804810756199,
+          -0.6983908838328294,
+          6.291800354615518,
+          -12.330072110925627,
+          18.621872465541145,
+          17.102532652994796,
+          20.141688709162366,
+          0.012316516165579949,
+          0.24663757153892796,
+          0.2760069719952946,
+          0.18364227916270703,
+          0.13034229710241818,
+          0.052256799540227626,
+          0.03211730593586227,
+          0.03266798614006505,
+          0.008432637035339021,
+          0.015064694847946722,
+          0.01307284476559277,
+          0.2415098578030211,
+          0.21930794064454737,
+          0.1314318400551901,
+          0.03514074870791713,
+          0.037683978088722724,
+          0.031416565076069464,
+          0.007249235187603213,
+          0.020575012281004872,
+          0.017331166115710017,
+          0.009214561144590008,
+          1.0,
+          10.741111302132692
+        ],
+        [
+          1.0,
+          0.02347197224074233,
+          0.044166083780212945,
+          114.68369318967301,
+          -61326.74732302851,
+          -3350.956028627209,
+          61326.74732302851,
+          110.91949731330911,
+          124.52054908912365,
+          0.022491314952070192,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          46.44318382808072
+        ]
+      ],
+      "quality": {
+        "valid": false,
+        "J_task": null,
+        "invalid_fields": [
+          2
+        ]
+      }
     }
   ],
-  "updated_unix": 1793297567.8837998
+  "updated_unix": 1793301628.508303,
+  "summary": {
+    "lenses": 1,
+    "completed_psfs": 14,
+    "valid_final_scores": 0
+  }
 }
