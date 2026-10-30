@@ -3754,6 +3754,28 @@
       "reference_relative_l2": 0.004947820583523078,
       "source_sha256": "da4b28edb742b435a3f9fc45186205157653614816f8438f5bf2d074ac716fae",
       "state": "SOURCE_SAMPLING_UNCONVERGED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 8,
+      "elapsed_seconds": 500.0893955081701,
+      "flags": {
+        "angular_grid": true,
+        "joint": true,
+        "pitch": true,
+        "pupil": true,
+        "reference_spotcheck": false,
+        "support": true
+      },
+      "id": "rf50mm_f1.8-h0-w510",
+      "model_scope_validated": false,
+      "name": "rf50mm_f1.8",
+      "native_terminal": "rf50mm_f1.8-h0-w510/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "e02960761e4f695d536aa731bc4e7bc7d7cf3532bcf1f2c18df79679f5ba1601",
+      "reference_relative_l2": 0.004821298934753325,
+      "source_sha256": "da4b28edb742b435a3f9fc45186205157653614816f8438f5bf2d074ac716fae",
+      "state": "NUMERICAL_OR_MODEL_GATE_NOT_PASSED"
     }
   ],
   "fields_h": [
