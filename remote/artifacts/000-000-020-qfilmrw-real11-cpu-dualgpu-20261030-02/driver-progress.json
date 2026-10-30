@@ -4,13 +4,13 @@
       "lane": "cpu",
       "pid": 555767,
       "progress": {
-        "condition": "ef100mm_f2.8-h1-w430",
+        "condition": "ef100mm_f2.8-h1-w510",
         "device": "cpu",
-        "elapsed_seconds": 15.105100336484611,
+        "elapsed_seconds": 13.61159695405513,
         "field_h": 1.0,
         "stage": "trace_1024",
-        "updated_unix": 1793368086.3822982,
-        "wavelength_nm": 430.0
+        "updated_unix": 1793368180.8612034,
+        "wavelength_nm": 510.0
       },
       "returncode": null
     },
@@ -18,13 +18,13 @@
       "lane": "cuda0",
       "pid": 555768,
       "progress": {
-        "condition": "rf50mm_f1.8-h1-w510",
+        "condition": "yongnuo_50mm_f1.8-h1-w430",
         "device": "cuda:0",
-        "elapsed_seconds": 5.002387734130025,
+        "elapsed_seconds": 0.00019570626318454742,
         "field_h": 1.0,
-        "stage": "pupil_reconstruct",
-        "updated_unix": 1793368088.4189105,
-        "wavelength_nm": 510.0
+        "stage": "trace_128",
+        "updated_unix": 1793368208.9365838,
+        "wavelength_nm": 430.0
       },
       "returncode": null
     },
@@ -43,5 +43,5 @@
       "returncode": 0
     }
   ],
-  "updated_unix": 1793368089.693302
+  "updated_unix": 1793368209.7182832
 }
