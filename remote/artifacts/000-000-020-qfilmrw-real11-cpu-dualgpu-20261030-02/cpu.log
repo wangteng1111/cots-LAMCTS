@@ -2953,3 +2953,6 @@ QFILMRW rf35mm_f1.8-h1-w670 support_reconstruct
 QFILMRW rf35mm_f1.8-h1-w670 support_czt
 QFILMRW rf35mm_f1.8-h1-w670 support_completed
 QFILMRW rf35mm_f1.8-h1-w670 pitch_reconstruct
+QFILMRW rf35mm_f1.8-h1-w670 pitch_czt
+QFILMRW rf35mm_f1.8-h1-w670 pitch_completed
+QFILMRW rf35mm_f1.8-h1-w670 joint_trace
