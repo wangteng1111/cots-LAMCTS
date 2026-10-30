@@ -1,9 +1,9 @@
 {
   "condition": "rf16mm_f2.8-h0.5-w470",
   "device": "cpu",
-  "elapsed_seconds": 6.02087059430778,
+  "elapsed_seconds": 12.672641353681684,
   "field_h": 0.5,
-  "stage": "pupil_completed",
-  "updated_unix": 1793375052.6344848,
+  "stage": "trace_1024",
+  "updated_unix": 1793375059.2862585,
   "wavelength_nm": 470.0
 }
