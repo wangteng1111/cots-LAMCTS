@@ -2897,3 +2897,15 @@ QFILMRW rf35mm_f1.8-h1-w590 pitch_czt
 QFILMRW rf35mm_f1.8-h1-w590 pitch_completed
 QFILMRW rf35mm_f1.8-h1-w590 joint_trace
 QFILMRW rf35mm_f1.8-h1-w590 joint_reconstruct
+QFILMRW rf35mm_f1.8-h1-w590 joint_czt
+QFILMRW rf35mm_f1.8-h1-w590 joint_completed
+QFILMRW_TERMINAL rf35mm_f1.8-h1-w590 NUMERICALLY_CONVERGED_LOCAL_MODEL
+QFILMRW rf35mm_f1.8-h1-w630 trace_128
+QFILMRW rf35mm_f1.8-h1-w630 pupil_reconstruct
+QFILMRW rf35mm_f1.8-h1-w630 pupil_czt
+QFILMRW rf35mm_f1.8-h1-w630 pupil_completed
+QFILMRW rf35mm_f1.8-h1-w630 trace_256
+QFILMRW rf35mm_f1.8-h1-w630 pupil_reconstruct
+QFILMRW rf35mm_f1.8-h1-w630 pupil_czt
+QFILMRW rf35mm_f1.8-h1-w630 pupil_completed
+QFILMRW rf35mm_f1.8-h1-w630 trace_512
