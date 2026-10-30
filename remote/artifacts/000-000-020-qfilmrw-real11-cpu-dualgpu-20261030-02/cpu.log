@@ -2909,3 +2909,7 @@ QFILMRW rf35mm_f1.8-h1-w630 pupil_reconstruct
 QFILMRW rf35mm_f1.8-h1-w630 pupil_czt
 QFILMRW rf35mm_f1.8-h1-w630 pupil_completed
 QFILMRW rf35mm_f1.8-h1-w630 trace_512
+QFILMRW rf35mm_f1.8-h1-w630 pupil_reconstruct
+QFILMRW rf35mm_f1.8-h1-w630 pupil_czt
+QFILMRW rf35mm_f1.8-h1-w630 pupil_completed
+QFILMRW rf35mm_f1.8-h1-w630 trace_1024
