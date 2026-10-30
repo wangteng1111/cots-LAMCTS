@@ -2502,3 +2502,5 @@ QFILMRW rf24mm_f1.8-h0.5-w590 pitch_reconstruct
 QFILMRW rf24mm_f1.8-h0.5-w590 pitch_czt
 QFILMRW rf24mm_f1.8-h0.5-w590 pitch_completed
 QFILMRW rf24mm_f1.8-h0.5-w590 joint_trace
+QFILMRW rf24mm_f1.8-h0.5-w590 joint_reconstruct
+QFILMRW rf24mm_f1.8-h0.5-w590 joint_czt
