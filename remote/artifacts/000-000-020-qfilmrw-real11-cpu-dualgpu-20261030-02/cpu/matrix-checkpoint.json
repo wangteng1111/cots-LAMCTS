@@ -3644,6 +3644,28 @@
       "reference_relative_l2": 0.005404424371889306,
       "source_sha256": "64beb60c506a5a1cfe5d5db161429fc274f447edb3d83d92e8e8512612e2519c",
       "state": "REFERENCE_REQUIRED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 8,
+      "elapsed_seconds": 597.5959521522745,
+      "flags": {
+        "angular_grid": true,
+        "joint": true,
+        "pitch": true,
+        "pupil": true,
+        "reference_spotcheck": true,
+        "support": true
+      },
+      "id": "rf35mm_f1.8-h1-w590",
+      "model_scope_validated": false,
+      "name": "rf35mm_f1.8",
+      "native_terminal": "rf35mm_f1.8-h1-w590/condition-terminal.json",
+      "numerically_verified": true,
+      "plan_hash": "6f25487a8807f58ce146bcbff63fa41935081191a53e9d0bfff29cbf430ba0bf",
+      "reference_relative_l2": 0.003546007586391465,
+      "source_sha256": "64beb60c506a5a1cfe5d5db161429fc274f447edb3d83d92e8e8512612e2519c",
+      "state": "NUMERICALLY_CONVERGED_LOCAL_MODEL"
     }
   ],
   "fields_h": [
