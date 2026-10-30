@@ -2082,6 +2082,28 @@
       "reference_relative_l2": 0.014449724469384364,
       "source_sha256": "cf8c09d79a9e2e758a58815fe3423d1574377e6ab079bce62deca4cdf6def9b9",
       "state": "REFERENCE_REQUIRED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 4,
+      "elapsed_seconds": 52.48132101353258,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "ef85mm_f1.8-h0.5-w550",
+      "model_scope_validated": false,
+      "name": "ef85mm_f1.8",
+      "native_terminal": "ef85mm_f1.8-h0.5-w550/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "8e4105c5afd0da7bd92bb6d19bf011d1783b219621523afbbe7b62bdc832f1f8",
+      "reference_relative_l2": 0.006633694866076698,
+      "source_sha256": "cf8c09d79a9e2e758a58815fe3423d1574377e6ab079bce62deca4cdf6def9b9",
+      "state": "REFERENCE_REQUIRED"
     }
   ],
   "fields_h": [
