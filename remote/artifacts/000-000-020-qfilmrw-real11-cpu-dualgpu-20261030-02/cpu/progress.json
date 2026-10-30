@@ -1,9 +1,9 @@
 {
   "condition": "ef50mm_f1.8-h0-w590",
   "device": "cpu",
-  "elapsed_seconds": 52.46290773805231,
+  "elapsed_seconds": 88.47388327680528,
   "field_h": 0.0,
-  "stage": "joint_trace",
-  "updated_unix": 1793371760.356371,
+  "stage": "joint_czt",
+  "updated_unix": 1793371796.3673675,
   "wavelength_nm": 590.0
 }
