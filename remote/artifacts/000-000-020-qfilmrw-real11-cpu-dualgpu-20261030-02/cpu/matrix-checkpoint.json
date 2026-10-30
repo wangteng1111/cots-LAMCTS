@@ -938,6 +938,72 @@
       "reference_relative_l2": 0.009652519494832578,
       "source_sha256": "ecd6ed4979821130d24d0d95cd69b29789b16459ca5d54e3acc3dce6ebce5ac3",
       "state": "REFERENCE_REQUIRED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 4,
+      "elapsed_seconds": 29.706951409578323,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "ef40mm_f2.8-h0-w430",
+      "model_scope_validated": false,
+      "name": "ef40mm_f2.8",
+      "native_terminal": "ef40mm_f2.8-h0-w430/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "757e389e36bc72fb89de4677c85a43d1a116739616b3a3898bc560ced11a6d5b",
+      "reference_relative_l2": 0.011687917538869608,
+      "source_sha256": "18d8506e0f3a9c77b3a9aa53161b98930d93464e45a419d9b2091293dfa51f79",
+      "state": "REFERENCE_REQUIRED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 4,
+      "elapsed_seconds": 29.447204302065074,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": true,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "ef40mm_f2.8-h0-w470",
+      "model_scope_validated": false,
+      "name": "ef40mm_f2.8",
+      "native_terminal": "ef40mm_f2.8-h0-w470/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "ea824e5be501732cf1ec43898c4cfbcfd28007cbf81d0d015c42a31df9c14afe",
+      "reference_relative_l2": 0.006275048339859174,
+      "source_sha256": "18d8506e0f3a9c77b3a9aa53161b98930d93464e45a419d9b2091293dfa51f79",
+      "state": "REFERENCE_REQUIRED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 7,
+      "elapsed_seconds": 80.14019564911723,
+      "flags": {
+        "angular_grid": true,
+        "joint": true,
+        "pitch": true,
+        "pupil": true,
+        "reference_spotcheck": true,
+        "support": true
+      },
+      "id": "ef40mm_f2.8-h0-w510",
+      "model_scope_validated": false,
+      "name": "ef40mm_f2.8",
+      "native_terminal": "ef40mm_f2.8-h0-w510/condition-terminal.json",
+      "numerically_verified": true,
+      "plan_hash": "9807c3603a6ef6f65e26d81799672b7da5d54887ef2e6c9b08f12e89b3033853",
+      "reference_relative_l2": 0.0011256759064565052,
+      "source_sha256": "18d8506e0f3a9c77b3a9aa53161b98930d93464e45a419d9b2091293dfa51f79",
+      "state": "NUMERICALLY_CONVERGED_LOCAL_MODEL"
     }
   ],
   "fields_h": [
