@@ -3129,3 +3129,6 @@ QFILMRW rf50mm_f1.8-h0-w670 support_reconstruct
 QFILMRW rf50mm_f1.8-h0-w670 support_czt
 QFILMRW rf50mm_f1.8-h0-w670 support_completed
 QFILMRW rf50mm_f1.8-h0-w670 pitch_reconstruct
+QFILMRW rf50mm_f1.8-h0-w670 pitch_czt
+QFILMRW rf50mm_f1.8-h0-w670 pitch_completed
+QFILMRW rf50mm_f1.8-h0-w670 joint_trace
