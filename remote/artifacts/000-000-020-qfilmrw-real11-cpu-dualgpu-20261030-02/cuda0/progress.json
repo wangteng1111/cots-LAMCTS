@@ -1,9 +1,9 @@
 {
-  "condition": "rf24mm_f1.8-h0.5-w510",
+  "condition": "rf50mm_f1.8-h0-w670",
   "device": "cuda:0",
-  "elapsed_seconds": 6.413678562268615,
-  "field_h": 0.5,
-  "stage": "angular_grid_czt",
-  "updated_unix": 1793367369.166695,
-  "wavelength_nm": 510.0
+  "elapsed_seconds": 44.01157185807824,
+  "field_h": 0.0,
+  "stage": "joint_reconstruct",
+  "updated_unix": 1793367714.9052346,
+  "wavelength_nm": 670.0
 }
