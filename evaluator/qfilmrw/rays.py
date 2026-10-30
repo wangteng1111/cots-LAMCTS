@@ -30,8 +30,11 @@ def mapping_derivatives(x,y,valid,spacing):
     folded=False
     if bool((jac[good]>0).any()) and bool((jac[good]<0).any()):
         from scipy.ndimage import label
-        labels,count=label(good.cpu().numpy());values=jac.cpu().numpy()
-        folded=any(np.any(values[labels==i]>0) and np.any(values[labels==i]<0) for i in range(1,count+1))
+        # Keep singular nodes when identifying connected transmitted patches;
+        # otherwise a caustic line splits one folded patch into two apparently
+        # harmless components of opposite orientation.
+        labels,count=label(valid.cpu().numpy());values=jac.cpu().numpy();usable=good.cpu().numpy()
+        folded=any(np.any(values[(labels==i)&usable]>0) and np.any(values[(labels==i)&usable]<0) for i in range(1,count+1))
     return (xu,xv,yu,yv),jac,good,folded
 
 @dataclass

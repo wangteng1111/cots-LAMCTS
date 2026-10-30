@@ -1,11 +1,17 @@
 """Observable-driven QfilmRW solve and evidence ledger; no legacy-score fallback."""
 from dataclasses import asdict,replace
-import math,time
+import math,time,hashlib
+from pathlib import Path
 import numpy as np
 import torch
 from .contracts import Task,Policy,VERSION,digest
 from .rays import trace_lens,RWError
 from .fourier import reconstruct_pupil,fixed_sampling_field,windowed_observables,pupil_autocorrelation,reference_probe
+
+_PACKAGE=Path(__file__).parent
+IMPLEMENTATION_SIGNATURE=hashlib.sha256(b''.join(file.read_bytes() for file in
+    [*(_PACKAGE/name for name in ('contracts.py','rays.py','fourier.py','solver.py')),
+     *(_PACKAGE.parent/name for name in ('qfilm02.py','qfilm04_wavefront.py','optical_primitives.py'))])).hexdigest()
 
 
 def discrepancy(a,b):
@@ -19,7 +25,7 @@ def solve_condition(p,wavelength_nm,field_h,task=Task(),policy=Policy(),device='
     if mode not in ('survey','verify'):raise ValueError('invalid solve mode')
     start=time.monotonic();center=None;last=None;state=None;pupil=None;field=None
     plan={'version':VERSION,'task':asdict(task),'policy':asdict(policy),'wavelength_nm':wavelength_nm,
-          'field_h':field_h,'mode':mode,'prescription_hash':digest(p)}
+          'field_h':field_h,'mode':mode,'prescription_hash':digest(p),'implementation_signature':IMPLEMENTATION_SIGNATURE}
     report={'schema':'QfilmRWCondition-v1','version':VERSION,'plan':plan,'plan_hash':digest(plan),
         'actual_device':str(torch.device(device)),'state':'running','runs':[],'comparisons':[],
         'J_task':None,'numerically_verified':False,'model_scope_validated':False,'empirically_calibrated':False,

@@ -13,6 +13,7 @@ import numpy as np
 import torch
 from evaluator.qfilmrw import VERSION,Task,Policy,solve_condition
 from evaluator.qfilmrw.contracts import WAVES,digest
+from evaluator.qfilmrw.solver import IMPLEMENTATION_SIGNATURE
 from evaluator.qfilm04_io import atomic_json
 from validation.qfilm04_real_prescription_import import CAMERA_SAMPLES
 
@@ -151,7 +152,7 @@ def collect(root):
                     c=json.loads(cf.read_text());g=json.loads(gf.read_text());check_condition(c);check_condition(g)
                     row.update(cpu_state=c['state'],gpu_state=g['state'],gpu_device=g['actual_device'])
                     if c['plan_hash']!=g['plan_hash'] or c['source_sha256']!=g['source_sha256'] or c['source_sha256']!=case['source_sha256']:raise ValueError('condition identity mismatch')
-                    expected={'version':VERSION,'task':Task().__dict__,'policy':Policy().__dict__,'wavelength_nm':w,'field_h':h,'mode':'verify','prescription_hash':digest(case['prescription'])}
+                    expected={'version':VERSION,'task':Task().__dict__,'policy':Policy().__dict__,'wavelength_nm':w,'field_h':h,'mode':'verify','prescription_hash':digest(case['prescription']),'implementation_signature':IMPLEMENTATION_SIGNATURE}
                     if digest(expected)!=c['plan_hash']:raise ValueError('unexpected task or relaxed numerical policy')
                     if c.get('code_commit')!=g.get('code_commit'):raise ValueError('CPU/GPU code commit mismatch')
                     if c['actual_device']!='cpu' or not g['actual_device'].startswith('cuda:'):raise ValueError('device mismatch')

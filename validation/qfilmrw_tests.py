@@ -11,7 +11,7 @@ from evaluator.qfilmrw import Task,Policy,assemble_score
 from evaluator.qfilmrw.fourier import czt_axis,fixed_sampling_field,windowed_observables,pupil_autocorrelation
 from evaluator.qfilmrw.solver import polychromatic_otf
 from validation.qfilmrw_real11 import cases,collect,check_condition
-from evaluator.qfilmrw.rays import RayState
+from evaluator.qfilmrw.rays import RayState,mapping_derivatives
 from evaluator.qfilmrw.fourier import reconstruct_pupil
 from evaluator.qfilmrw.contracts import digest
 from evaluator.qfilmrw import solve_condition
@@ -19,6 +19,11 @@ from evaluator.qfilmrw import solve_condition
 torch.set_num_threads(2)
 
 class RWTests(unittest.TestCase):
+    def test_singular_line_cannot_hide_mapping_fold(self):
+        u=torch.linspace(-1,1,65,dtype=torch.float64);v,u=torch.meshgrid(u,u,indexing='ij')
+        _,_,_,fold=mapping_derivatives(u*u,v,torch.ones_like(u,dtype=torch.bool),2/64)
+        self.assertTrue(fold)
+
     def test_inverse_map_preserves_constant_angular_density(self):
         n=64;du=2/n;u=(torch.arange(n,dtype=torch.float64)+.5)*du-1
         v,u=torch.meshgrid(u,u,indexing='ij');qx=10*u+v;qy=2*u+9*v
