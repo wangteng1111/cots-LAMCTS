@@ -1840,6 +1840,50 @@
       "reference_relative_l2": 0.0024569336380830774,
       "source_sha256": "64beb60c506a5a1cfe5d5db161429fc274f447edb3d83d92e8e8512612e2519c",
       "state": "NUMERICALLY_CONVERGED_LOCAL_MODEL"
+    },
+    {
+      "actual_device": "cuda:1",
+      "completed_psf_grids": 8,
+      "elapsed_seconds": 23.337406651116908,
+      "flags": {
+        "angular_grid": true,
+        "joint": true,
+        "pitch": true,
+        "pupil": true,
+        "reference_spotcheck": true,
+        "support": true
+      },
+      "id": "rf35mm_f1.8-h1-w670",
+      "model_scope_validated": false,
+      "name": "rf35mm_f1.8",
+      "native_terminal": "rf35mm_f1.8-h1-w670/condition-terminal.json",
+      "numerically_verified": true,
+      "plan_hash": "59708b1810f47b5e87576cde14cf1c9d4a5303986e8d0685118d0857524fe3e9",
+      "reference_relative_l2": 0.0025837434469642507,
+      "source_sha256": "64beb60c506a5a1cfe5d5db161429fc274f447edb3d83d92e8e8512612e2519c",
+      "state": "NUMERICALLY_CONVERGED_LOCAL_MODEL"
+    },
+    {
+      "actual_device": "cuda:1",
+      "completed_psf_grids": 4,
+      "elapsed_seconds": 6.781380048021674,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": true,
+        "support": false
+      },
+      "id": "sigma70mm_f2.8-h0-w430",
+      "model_scope_validated": false,
+      "name": "sigma70mm_f2.8",
+      "native_terminal": "sigma70mm_f2.8-h0-w430/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "a6dc31182f359d1d1f1f2a2ff5fd124a35fcd8226e5b947efc12911a94979b7a",
+      "reference_relative_l2": 0.003933432265755632,
+      "source_sha256": "1fb88d4da358707420f4923e1e223df1823f883b2bb4789be5c51d048769e800",
+      "state": "SOURCE_SAMPLING_UNCONVERGED"
     }
   ],
   "fields_h": [
