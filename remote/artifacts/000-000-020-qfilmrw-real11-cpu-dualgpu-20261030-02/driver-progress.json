@@ -4,13 +4,13 @@
       "lane": "cpu",
       "pid": 555767,
       "progress": {
-        "condition": "ef85mm_f1.8-h1-w630",
+        "condition": "ef85mm_f1.8-h1-w670",
         "device": "cpu",
-        "elapsed_seconds": 14.3410006435588,
+        "elapsed_seconds": 14.262640532106161,
         "field_h": 1.0,
         "stage": "trace_1024",
-        "updated_unix": 1793374588.3002553,
-        "wavelength_nm": 630.0
+        "updated_unix": 1793374639.4086666,
+        "wavelength_nm": 670.0
       },
       "returncode": null
     },
@@ -43,5 +43,5 @@
       "returncode": 0
     }
   ],
-  "updated_unix": 1793374620.950523
+  "updated_unix": 1793374650.9561725
 }
