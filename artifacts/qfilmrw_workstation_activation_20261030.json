@@ -1,0 +1,245 @@
+{
+  "schema": "QfilmRWWorkstationActivationStatus-v1",
+  "results_commit": "19d1424e5bb470eedf4b6ea35cd3493cb8bfba2d",
+  "bridge_start": {
+    "bridge_version": "0.6.1",
+    "hostname": "aipss-Rack-Server",
+    "pid": 555041,
+    "preserve_existing_workers": true,
+    "timestamp": 1793366182.2367494
+  },
+  "adopted_processes": {
+    "bridge_version": "0.6.1",
+    "observed_unix": 1793366662.9860952,
+    "processes": []
+  },
+  "old_terminals": [
+    {
+      "bridge_version": "0.6.1",
+      "finished_at": 1793366572.8891835,
+      "job_id": "000-000-001-qfilm04-remediation-ef40-blue-20261029-01",
+      "note": "adopted process ended; original exit status unavailable; inspect native scientific terminal",
+      "returncode": null,
+      "schema": 1,
+      "state": "stopped"
+    },
+    {
+      "bridge_version": "0.6.1",
+      "finished_at": 1793366572.8910947,
+      "job_id": "000-000-002-qfilm04-remediation-ef40-green-20261029-01",
+      "note": "adopted process ended; original exit status unavailable; inspect native scientific terminal",
+      "returncode": null,
+      "schema": 1,
+      "state": "stopped"
+    }
+  ],
+  "claim": {
+    "bridge_version": "0.6.1",
+    "claimed_at": 1793366584.908987,
+    "code_commit": "785bd687cf1117adbc68312ce8ccbb3ff0479c96",
+    "entrypoint": "scripts/cuda_venv_exec.py",
+    "hostname": "aipss-Rack-Server",
+    "job_id": "000-000-020-qfilmrw-real11-cpu-dualgpu-20261030-02",
+    "policy": "job_id_once; retry_requires_new_job_id",
+    "queue_path": "remote/queue/000-000-020-qfilmrw-real11-cpu-dualgpu-20261030-02.json",
+    "request_sha256": "31136e89e753ccfe8ad88e72be56f79da1ccf725410e9d6576f0a06a2745799f",
+    "schema": 1,
+    "state": "claimed"
+  },
+  "agent": {
+    "bridge_version": "0.6.1",
+    "control_branch": "main",
+    "control_last_sync": 1793366744.0083177,
+    "cpu_count": 128,
+    "gpu": [
+      {
+        "memory_free_mb": "21868",
+        "memory_total_mb": "32607",
+        "name": "NVIDIA GeForce RTX 5090",
+        "temperature_c": "46",
+        "utilization_pct": "28"
+      },
+      {
+        "memory_free_mb": "21180",
+        "memory_total_mb": "32607",
+        "name": "NVIDIA GeForce RTX 5090",
+        "temperature_c": "49",
+        "utilization_pct": "13"
+      }
+    ],
+    "hostname": "aipss-Rack-Server",
+    "loadavg": [
+      6.18505859375,
+      6.828125,
+      7.53125
+    ],
+    "outbox_count": 36,
+    "python": "/usr/bin/python3",
+    "python_version": "3.12.3",
+    "repo": "wangteng1111/cots-LAMCTS",
+    "results_branch": "workstation-results",
+    "running_job": "000-000-020-qfilmrw-real11-cpu-dualgpu-20261030-02",
+    "schema": 1,
+    "timestamp": 1793366765.8436716
+  },
+  "preflight": {
+    "cuda_devices": [
+      "NVIDIA GeForce RTX 5090",
+      "NVIDIA GeForce RTX 5090"
+    ],
+    "observed_unix": 1793366589.259344,
+    "returncode": 0,
+    "status": "completed",
+    "torch_version": "2.14.0+cu130"
+  },
+  "returned_checkpoints": [
+    {
+      "lane": "cpu",
+      "returned_conditions": 2,
+      "numerical_local_model_conditions": 0,
+      "states": {
+        "REFERENCE_REQUIRED": 1,
+        "SOURCE_SAMPLING_UNCONVERGED": 1
+      }
+    },
+    {
+      "lane": "cuda0",
+      "returned_conditions": 42,
+      "numerical_local_model_conditions": 21,
+      "states": {
+        "REFERENCE_REQUIRED": 7,
+        "SOURCE_SAMPLING_UNCONVERGED": 14,
+        "NUMERICALLY_CONVERGED_LOCAL_MODEL": 21
+      }
+    },
+    {
+      "lane": "cuda1",
+      "returned_conditions": 10,
+      "numerical_local_model_conditions": 0,
+      "states": {
+        "REFERENCE_REQUIRED": 10
+      }
+    }
+  ],
+  "first_cpu_gpu_pair": {
+    "schema": "QfilmRWFirstWorkstationNativePair-v1",
+    "source_results_commit": "117f1631ed94bd2b91372d5978a0a38aa1c9540d",
+    "case": "ef100mm_f2.8-h0-w430",
+    "same_plan": true,
+    "same_source": true,
+    "code_commit": "785bd687cf1117adbc68312ce8ccbb3ff0479c96",
+    "actual_devices": [
+      "cpu",
+      "cuda:0"
+    ],
+    "cpu_state": "REFERENCE_REQUIRED",
+    "gpu_state": "REFERENCE_REQUIRED",
+    "comparison": [
+      {
+        "n": 128,
+        "otf_max_abs": 4.608235867073189e-12,
+        "projection_max_relative": 6.542535511523358e-11,
+        "integral_relative": 4.171639305947173e-13,
+        "cpu_recomputed": {
+          "otf_recomputed_max_abs": 1.8873792335463783e-15,
+          "integral_recomputed_relative": 2.85207792111247e-15
+        },
+        "gpu_recomputed": {
+          "otf_recomputed_max_abs": 2.342647216111331e-15,
+          "integral_recomputed_relative": 1.90138528074244e-15
+        }
+      },
+      {
+        "n": 256,
+        "otf_max_abs": 2.469334243308092e-12,
+        "projection_max_relative": 2.9101248845690225e-11,
+        "integral_relative": 3.67814109446373e-13,
+        "cpu_recomputed": {
+          "otf_recomputed_max_abs": 1.2212454406768487e-15,
+          "integral_recomputed_relative": 1.9057725878050412e-15
+        },
+        "gpu_recomputed": {
+          "otf_recomputed_max_abs": 1.5551684161511033e-15,
+          "integral_recomputed_relative": 1.4659789136956463e-16
+        }
+      },
+      {
+        "n": 512,
+        "otf_max_abs": 1.7965839272729888e-12,
+        "projection_max_relative": 1.3219390896797946e-11,
+        "integral_relative": 6.359326539722775e-15,
+        "cpu_recomputed": {
+          "otf_recomputed_max_abs": 1.3327386719365126e-15,
+          "integral_recomputed_relative": 2.0295722999115237e-15
+        },
+        "gpu_recomputed": {
+          "otf_recomputed_max_abs": 1.9048111211214593e-15,
+          "integral_recomputed_relative": 5.412192799764029e-16
+        }
+      },
+      {
+        "n": 1024,
+        "otf_max_abs": 8.355807747834815e-13,
+        "projection_max_relative": 1.018662753954197e-11,
+        "integral_relative": 1.6681165913777594e-14,
+        "cpu_recomputed": {
+          "otf_recomputed_max_abs": 8.888750413814842e-16,
+          "integral_recomputed_relative": 1.1915118509841138e-15
+        },
+        "gpu_recomputed": {
+          "otf_recomputed_max_abs": 7.772584608170837e-16,
+          "integral_recomputed_relative": 9.267314396542952e-16
+        }
+      }
+    ],
+    "arithmetic_pair_passed": true,
+    "full_condition_accepted": false,
+    "model_scope_validated": false
+  },
+  "example_converged_gpu": {
+    "case": "ef100mm_f2.8-h0-w550",
+    "device": "cuda:0",
+    "comparisons": [
+      {
+        "axis": "pupil",
+        "otf_delta": 0.0014535070551151552,
+        "integral_delta": 0.004654615613231475,
+        "passes": true,
+        "reported_delta_consistent": true
+      },
+      {
+        "axis": "angular_grid",
+        "otf_delta": 0.00008253358193566207,
+        "integral_delta": 0.000010761519555460794,
+        "passes": true,
+        "reported_delta_consistent": true
+      },
+      {
+        "axis": "support",
+        "otf_delta": 0.0003129484044664954,
+        "integral_delta": 0.0003400505591012806,
+        "passes": true,
+        "reported_delta_consistent": true
+      },
+      {
+        "axis": "pitch",
+        "otf_delta": 2.932310616548117e-9,
+        "integral_delta": 1.0163869348563489e-9,
+        "passes": true,
+        "reported_delta_consistent": true
+      },
+      {
+        "axis": "joint",
+        "otf_delta": 0.0010246412462565635,
+        "integral_delta": 0.002212866297673685,
+        "passes": true,
+        "reported_delta_consistent": true
+      }
+    ],
+    "reference_relative_l2": 0.0039868800152059935,
+    "joint_reference_relative_l2": 0.0014098555439560115,
+    "raw_2d_checks_pending": true,
+    "model_scope_validated": false
+  },
+  "caution": "Returned checkpoints have different publication ages; counts are lower bounds, not a synchronized live progress fraction. Numerical local-model convergence is not model validation or full CPU/GPU/raw-array acceptance."
+}
