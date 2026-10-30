@@ -2443,3 +2443,6 @@ QFILMRW rf24mm_f1.8-h0.5-w510 support_reconstruct
 QFILMRW rf24mm_f1.8-h0.5-w510 support_czt
 QFILMRW rf24mm_f1.8-h0.5-w510 support_completed
 QFILMRW rf24mm_f1.8-h0.5-w510 pitch_reconstruct
+QFILMRW rf24mm_f1.8-h0.5-w510 pitch_czt
+QFILMRW rf24mm_f1.8-h0.5-w510 pitch_completed
+QFILMRW rf24mm_f1.8-h0.5-w510 joint_trace
