@@ -1,9 +1,9 @@
 {
-  "condition": "rf16mm_f2.8-h0.5-w590",
+  "condition": "rf16mm_f2.8-h0.5-w630",
   "device": "cpu",
-  "elapsed_seconds": 13.232135575264692,
+  "elapsed_seconds": 25.32562983967364,
   "field_h": 0.5,
-  "stage": "trace_1024",
-  "updated_unix": 1793375179.9212048,
-  "wavelength_nm": 590.0
+  "stage": "support_reconstruct",
+  "updated_unix": 1793375232.860604,
+  "wavelength_nm": 630.0
 }
