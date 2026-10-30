@@ -6,10 +6,10 @@
       "progress": {
         "condition": "sigma70mm_f2.8-h1-w630",
         "device": "cpu",
-        "elapsed_seconds": 57.6389033831656,
+        "elapsed_seconds": 85.84411177784204,
         "field_h": 1.0,
-        "stage": "support_reconstruct",
-        "updated_unix": 1793391004.313895,
+        "stage": "joint_trace",
+        "updated_unix": 1793391032.5191107,
         "wavelength_nm": 630.0
       },
       "returncode": null
@@ -43,5 +43,5 @@
       "returncode": 0
     }
   ],
-  "updated_unix": 1793391014.2169952
+  "updated_unix": 1793391044.2225952
 }
