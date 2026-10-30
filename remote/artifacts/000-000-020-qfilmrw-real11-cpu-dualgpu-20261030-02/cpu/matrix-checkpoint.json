@@ -1488,6 +1488,50 @@
       "reference_relative_l2": 0.005878829153516797,
       "source_sha256": "0862741f9dc22e79a8ffad899d528eb05b6655012b685170925d7fc71183eb9d",
       "state": "REFERENCE_REQUIRED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 7,
+      "elapsed_seconds": 93.73802844807506,
+      "flags": {
+        "angular_grid": true,
+        "joint": true,
+        "pitch": true,
+        "pupil": true,
+        "reference_spotcheck": true,
+        "support": true
+      },
+      "id": "ef50mm_f1.8-h0-w590",
+      "model_scope_validated": false,
+      "name": "ef50mm_f1.8",
+      "native_terminal": "ef50mm_f1.8-h0-w590/condition-terminal.json",
+      "numerically_verified": true,
+      "plan_hash": "55e3ee024f72691d6942e199078ad851b0b6b7ebde7b4d314c23d90511934911",
+      "reference_relative_l2": 0.0016805684924943354,
+      "source_sha256": "0862741f9dc22e79a8ffad899d528eb05b6655012b685170925d7fc71183eb9d",
+      "state": "NUMERICALLY_CONVERGED_LOCAL_MODEL"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 4,
+      "elapsed_seconds": 36.921273595653474,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": true,
+        "support": false
+      },
+      "id": "ef50mm_f1.8-h0-w630",
+      "model_scope_validated": false,
+      "name": "ef50mm_f1.8",
+      "native_terminal": "ef50mm_f1.8-h0-w630/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "d9facffa509c10dc68cbbf04cf5a19c987cc80adb174f837e21ca1f872735f96",
+      "reference_relative_l2": 0.0030368719282019615,
+      "source_sha256": "0862741f9dc22e79a8ffad899d528eb05b6655012b685170925d7fc71183eb9d",
+      "state": "SOURCE_SAMPLING_UNCONVERGED"
     }
   ],
   "fields_h": [
