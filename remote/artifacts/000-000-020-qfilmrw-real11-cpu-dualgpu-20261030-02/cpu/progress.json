@@ -1,9 +1,9 @@
 {
-  "condition": "sigma70mm_f2.8-h0.5-w510",
+  "condition": "sigma70mm_f2.8-h0.5-w550",
   "device": "cpu",
-  "elapsed_seconds": 85.4830547645688,
+  "elapsed_seconds": 14.778964250348508,
   "field_h": 0.5,
-  "stage": "joint_reconstruct",
-  "updated_unix": 1793387487.4303744,
-  "wavelength_nm": 510.0
+  "stage": "angular_grid_reconstruct",
+  "updated_unix": 1793387519.5301075,
+  "wavelength_nm": 550.0
 }
