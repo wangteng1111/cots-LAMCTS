@@ -1,7 +1,7 @@
 {
   "bridge_version": "0.6.1",
   "control_branch": "main",
-  "control_last_sync": 1793390228.5682688,
+  "control_last_sync": 1793390249.5353754,
   "cpu_count": 128,
   "gpu": [
     {
@@ -32,5 +32,5 @@
   "results_branch": "workstation-results",
   "running_job": "000-000-020-qfilmrw-real11-cpu-dualgpu-20261030-02",
   "schema": 1,
-  "timestamp": 1793390239.9266548
+  "timestamp": 1793390270.0635784
 }
