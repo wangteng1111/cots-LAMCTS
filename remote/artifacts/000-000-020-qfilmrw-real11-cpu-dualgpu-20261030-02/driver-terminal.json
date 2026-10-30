@@ -1,0 +1,20 @@
+{
+  "arithmetic_pairs_verified": 194,
+  "children": [
+    {
+      "lane": "cpu",
+      "returncode": 0
+    },
+    {
+      "lane": "cuda0",
+      "returncode": 0
+    },
+    {
+      "lane": "cuda1",
+      "returncode": 0
+    }
+  ],
+  "finished_unix": 1793393693.989494,
+  "full_conditions_accepted": 0,
+  "status": "completed"
+}
