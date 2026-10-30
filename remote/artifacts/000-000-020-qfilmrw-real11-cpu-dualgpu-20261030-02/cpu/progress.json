@@ -1,9 +1,9 @@
 {
-  "condition": "ef40mm_f2.8-h0-w430",
+  "condition": "ef40mm_f2.8-h0-w550",
   "device": "cpu",
-  "elapsed_seconds": 10.267162804491818,
+  "elapsed_seconds": 4.949378558434546,
   "field_h": 0.0,
-  "stage": "trace_1024",
-  "updated_unix": 1793369704.423838,
-  "wavelength_nm": 430.0
+  "stage": "trace_512",
+  "updated_unix": 1793369838.7016993,
+  "wavelength_nm": 550.0
 }
