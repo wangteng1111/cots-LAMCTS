@@ -1,0 +1,10 @@
+{
+  "cuda_devices": [
+    "NVIDIA GeForce RTX 5090",
+    "NVIDIA GeForce RTX 5090"
+  ],
+  "observed_unix": 1793366589.259344,
+  "returncode": 0,
+  "status": "completed",
+  "torch_version": "2.14.0+cu130"
+}
