@@ -3763,3 +3763,10 @@ QFILMRW sigma70mm_f2.8-h0.5-w670 angular_grid_reconstruct
 QFILMRW sigma70mm_f2.8-h0.5-w670 angular_grid_czt
 QFILMRW sigma70mm_f2.8-h0.5-w670 angular_grid_completed
 QFILMRW sigma70mm_f2.8-h0.5-w670 support_reconstruct
+QFILMRW sigma70mm_f2.8-h0.5-w670 support_czt
+QFILMRW sigma70mm_f2.8-h0.5-w670 support_completed
+QFILMRW sigma70mm_f2.8-h0.5-w670 pitch_reconstruct
+QFILMRW sigma70mm_f2.8-h0.5-w670 pitch_czt
+QFILMRW sigma70mm_f2.8-h0.5-w670 pitch_completed
+QFILMRW sigma70mm_f2.8-h0.5-w670 joint_trace
+QFILMRW sigma70mm_f2.8-h0.5-w670 joint_reconstruct
