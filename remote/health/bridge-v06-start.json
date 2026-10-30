@@ -1,7 +1,7 @@
 {
-  "bridge_version": "0.6.0",
+  "bridge_version": "0.6.1",
   "hostname": "aipss-Rack-Server",
-  "pid": 477557,
+  "pid": 555041,
   "preserve_existing_workers": true,
-  "timestamp": 1793289768.6299977
+  "timestamp": 1793366182.2367494
 }
