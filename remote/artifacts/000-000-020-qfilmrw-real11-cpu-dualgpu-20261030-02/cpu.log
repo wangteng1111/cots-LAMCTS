@@ -4109,3 +4109,7 @@ QFILMRW yongnuo_50mm_f1.8-h0-w630 support_reconstruct
 QFILMRW yongnuo_50mm_f1.8-h0-w630 support_czt
 QFILMRW yongnuo_50mm_f1.8-h0-w630 support_completed
 QFILMRW yongnuo_50mm_f1.8-h0-w630 pitch_reconstruct
+QFILMRW yongnuo_50mm_f1.8-h0-w630 pitch_czt
+QFILMRW yongnuo_50mm_f1.8-h0-w630 pitch_completed
+QFILMRW yongnuo_50mm_f1.8-h0-w630 joint_trace
+QFILMRW yongnuo_50mm_f1.8-h0-w630 joint_reconstruct
