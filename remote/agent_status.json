@@ -1,7 +1,7 @@
 {
   "bridge_version": "0.6.1",
   "control_branch": "main",
-  "control_last_sync": 1793376645.2706647,
+  "control_last_sync": 1793376666.3236725,
   "cpu_count": 128,
   "gpu": [
     {
@@ -15,15 +15,15 @@
       "memory_free_mb": "32107",
       "memory_total_mb": "32607",
       "name": "NVIDIA GeForce RTX 5090",
-      "temperature_c": "40",
+      "temperature_c": "39",
       "utilization_pct": "0"
     }
   ],
   "hostname": "aipss-Rack-Server",
   "loadavg": [
-    3.9248046875,
-    3.94287109375,
-    3.90478515625
+    3.95556640625,
+    3.94873046875,
+    3.91015625
   ],
   "outbox_count": 1,
   "python": "/usr/bin/python3",
@@ -32,5 +32,5 @@
   "results_branch": "workstation-results",
   "running_job": "000-000-020-qfilmrw-real11-cpu-dualgpu-20261030-02",
   "schema": 1,
-  "timestamp": 1793376649.3506804
+  "timestamp": 1793376679.4738002
 }
