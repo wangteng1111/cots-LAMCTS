@@ -1806,3 +1806,6 @@ QFILMRW ef85mm_f1.8-h0.5-w590 support_reconstruct
 QFILMRW ef85mm_f1.8-h0.5-w590 support_czt
 QFILMRW ef85mm_f1.8-h0.5-w590 support_completed
 QFILMRW ef85mm_f1.8-h0.5-w590 pitch_reconstruct
+QFILMRW ef85mm_f1.8-h0.5-w590 pitch_czt
+QFILMRW ef85mm_f1.8-h0.5-w590 pitch_completed
+QFILMRW ef85mm_f1.8-h0.5-w590 joint_trace
