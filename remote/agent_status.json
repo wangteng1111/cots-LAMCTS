@@ -1,7 +1,7 @@
 {
   "bridge_version": "0.6.1",
   "control_branch": "main",
-  "control_last_sync": 1793381101.7826004,
+  "control_last_sync": 1793381122.7908738,
   "cpu_count": 128,
   "gpu": [
     {
@@ -21,9 +21,9 @@
   ],
   "hostname": "aipss-Rack-Server",
   "loadavg": [
-    4.130859375,
-    4.03759765625,
-    4.0078125
+    3.61669921875,
+    3.93310546875,
+    3.97314453125
   ],
   "outbox_count": 3,
   "python": "/usr/bin/python3",
@@ -32,5 +32,5 @@
   "results_branch": "workstation-results",
   "running_job": "000-000-020-qfilmrw-real11-cpu-dualgpu-20261030-02",
   "schema": 1,
-  "timestamp": 1793381108.970906
+  "timestamp": 1793381139.1003184
 }
