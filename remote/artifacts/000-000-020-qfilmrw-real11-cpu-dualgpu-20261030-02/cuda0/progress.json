@@ -1,9 +1,9 @@
 {
-  "condition": "yongnuo_50mm_f1.8-h1-w430",
+  "condition": "yongnuo_50mm_f1.8-h1-w670",
   "device": "cuda:0",
-  "elapsed_seconds": 3.91437129676342,
+  "elapsed_seconds": 8.028325500898063,
   "field_h": 1.0,
-  "stage": "trace_1024",
-  "updated_unix": 1793368212.850765,
-  "wavelength_nm": 430.0
+  "stage": "pupil_completed",
+  "updated_unix": 1793368264.825921,
+  "wavelength_nm": 670.0
 }
