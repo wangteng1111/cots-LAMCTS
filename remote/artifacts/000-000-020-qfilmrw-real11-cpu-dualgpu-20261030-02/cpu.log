@@ -1604,3 +1604,16 @@ QFILMRW ef50mm_f1.8-h1-w670 pupil_reconstruct
 QFILMRW ef50mm_f1.8-h1-w670 pupil_czt
 QFILMRW ef50mm_f1.8-h1-w670 pupil_completed
 QFILMRW ef50mm_f1.8-h1-w670 trace_1024
+QFILMRW ef50mm_f1.8-h1-w670 pupil_reconstruct
+QFILMRW ef50mm_f1.8-h1-w670 pupil_czt
+QFILMRW ef50mm_f1.8-h1-w670 pupil_completed
+QFILMRW_TERMINAL ef50mm_f1.8-h1-w670 SOURCE_SAMPLING_UNCONVERGED
+QFILMRW ef85mm_f1.8-h0-w430 trace_128
+QFILMRW ef85mm_f1.8-h0-w430 pupil_reconstruct
+QFILMRW ef85mm_f1.8-h0-w430 pupil_czt
+QFILMRW ef85mm_f1.8-h0-w430 pupil_completed
+QFILMRW ef85mm_f1.8-h0-w430 trace_256
+QFILMRW ef85mm_f1.8-h0-w430 pupil_reconstruct
+QFILMRW ef85mm_f1.8-h0-w430 pupil_czt
+QFILMRW ef85mm_f1.8-h0-w430 pupil_completed
+QFILMRW ef85mm_f1.8-h0-w430 trace_512
