@@ -4810,6 +4810,28 @@
       "reference_relative_l2": 0.01555398579083483,
       "source_sha256": "4bf3c6a70801faad97c98bbc03aed6751fb16f2f25f5df0e025bb6f15fd6bd53",
       "state": "REFERENCE_REQUIRED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 4,
+      "elapsed_seconds": 36.39696023054421,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "yongnuo_50mm_f1.8-h0.5-w470",
+      "model_scope_validated": false,
+      "name": "yongnuo_50mm_f1.8",
+      "native_terminal": "yongnuo_50mm_f1.8-h0.5-w470/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "ca60e5f665e5606b10ce617084d61b15fedafd98393239a66835df562aec0cd0",
+      "reference_relative_l2": 0.011670389815089756,
+      "source_sha256": "4bf3c6a70801faad97c98bbc03aed6751fb16f2f25f5df0e025bb6f15fd6bd53",
+      "state": "REFERENCE_REQUIRED"
     }
   ],
   "fields_h": [
