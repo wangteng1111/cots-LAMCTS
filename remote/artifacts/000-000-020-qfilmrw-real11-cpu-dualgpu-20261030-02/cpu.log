@@ -1803,3 +1803,6 @@ QFILMRW ef85mm_f1.8-h0.5-w590 angular_grid_reconstruct
 QFILMRW ef85mm_f1.8-h0.5-w590 angular_grid_czt
 QFILMRW ef85mm_f1.8-h0.5-w590 angular_grid_completed
 QFILMRW ef85mm_f1.8-h0.5-w590 support_reconstruct
+QFILMRW ef85mm_f1.8-h0.5-w590 support_czt
+QFILMRW ef85mm_f1.8-h0.5-w590 support_completed
+QFILMRW ef85mm_f1.8-h0.5-w590 pitch_reconstruct
