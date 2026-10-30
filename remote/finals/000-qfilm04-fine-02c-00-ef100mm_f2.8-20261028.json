@@ -1,0 +1,9 @@
+{
+  "bridge_version": "0.6.0",
+  "finished_at": 1793345666.830623,
+  "job_id": "000-qfilm04-fine-02c-00-ef100mm_f2.8-20261028",
+  "note": "adopted process ended; original exit status unavailable; inspect native scientific terminal",
+  "returncode": null,
+  "schema": 1,
+  "state": "recovered_unknown_exit"
+}
