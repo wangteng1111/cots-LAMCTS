@@ -409,3 +409,7 @@ QFILMRW ef100mm_f2.8-h1-w630 pupil_czt
 QFILMRW ef100mm_f2.8-h1-w630 pupil_completed
 QFILMRW ef100mm_f2.8-h1-w630 trace_512
 QFILMRW ef100mm_f2.8-h1-w630 pupil_reconstruct
+QFILMRW ef100mm_f2.8-h1-w630 pupil_czt
+QFILMRW ef100mm_f2.8-h1-w630 pupil_completed
+QFILMRW ef100mm_f2.8-h1-w630 trace_1024
+QFILMRW ef100mm_f2.8-h1-w630 pupil_reconstruct
