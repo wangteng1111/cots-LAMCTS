@@ -2496,3 +2496,9 @@ QFILMRW rf24mm_f1.8-h0.5-w590 angular_grid_reconstruct
 QFILMRW rf24mm_f1.8-h0.5-w590 angular_grid_czt
 QFILMRW rf24mm_f1.8-h0.5-w590 angular_grid_completed
 QFILMRW rf24mm_f1.8-h0.5-w590 support_reconstruct
+QFILMRW rf24mm_f1.8-h0.5-w590 support_czt
+QFILMRW rf24mm_f1.8-h0.5-w590 support_completed
+QFILMRW rf24mm_f1.8-h0.5-w590 pitch_reconstruct
+QFILMRW rf24mm_f1.8-h0.5-w590 pitch_czt
+QFILMRW rf24mm_f1.8-h0.5-w590 pitch_completed
+QFILMRW rf24mm_f1.8-h0.5-w590 joint_trace
