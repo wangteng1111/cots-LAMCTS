@@ -1,0 +1,73 @@
+{
+  "schema": "QfilmRWCompactEvidenceArchives-v1",
+  "files": [
+    {
+      "file": "ef100mm_f2.8.json.gz.b64",
+      "encoding": "base64(gzip(UTF-8 JSON))",
+      "sha256_encoded": "98a95b67a749b581fe7999c45e549634f9b85b3209430789181036cd29027b8a",
+      "sha256_decoded": "59b1c91d74704c4b3551559de1b90af97cb84b4727b102792843096d2dd71cf3"
+    },
+    {
+      "file": "ef35mm_f2.0.json.gz.b64",
+      "encoding": "base64(gzip(UTF-8 JSON))",
+      "sha256_encoded": "22503cb0387b9a5066b53544054570dc08b06608b29c829335880980e3cb4619",
+      "sha256_decoded": "a51632c1d1a23028344b47470b214fc11245ecb4cd0a91a36c1b9cdf46b29767"
+    },
+    {
+      "file": "ef40mm_f2.8.json.gz.b64",
+      "encoding": "base64(gzip(UTF-8 JSON))",
+      "sha256_encoded": "ab1a2eedcca5a1150cddc14b15cd75124c7261eca1f16c41265d3e31b2191564",
+      "sha256_decoded": "18acbf0d198a81485242bfdf1636ecc4c061b7bcbc50e71d570a9764cd608950"
+    },
+    {
+      "file": "ef50mm_f1.8.json.gz.b64",
+      "encoding": "base64(gzip(UTF-8 JSON))",
+      "sha256_encoded": "a08fb025610098c9367b0a6c98e4821904042009e5aa26ac561b55a46863eaf1",
+      "sha256_decoded": "e599676f87564017dd0c39acad48f6463f4a3cc200c58f6d8a3fb032d81409db"
+    },
+    {
+      "file": "ef85mm_f1.8.json.gz.b64",
+      "encoding": "base64(gzip(UTF-8 JSON))",
+      "sha256_encoded": "00a21b0690e72fc0c37a5b6f81a5458d1c61a58754983261712111d885f2c168",
+      "sha256_decoded": "4f009cd11b2da5f5fe15d881e9825511c3dd29f521b0d84c26703043ec0a5f23"
+    },
+    {
+      "file": "rf16mm_f2.8.json.gz.b64",
+      "encoding": "base64(gzip(UTF-8 JSON))",
+      "sha256_encoded": "58dd3fc119a519b84bf732cf59937a5a28b42513eba904c6105cd3b6d18f04e4",
+      "sha256_decoded": "96373f8901c1c4dc13f0d33f765663e232c24482ea8b799d9f59f3668c41944c"
+    },
+    {
+      "file": "rf24mm_f1.8.json.gz.b64",
+      "encoding": "base64(gzip(UTF-8 JSON))",
+      "sha256_encoded": "6f0bdd1e90455c03a26e8d083fdf510661aafcafbd60daab68e6c98a3709e291",
+      "sha256_decoded": "11c7232acfe672fac52942657606adbae93f1e8ab83777351edb0e2d44c61948"
+    },
+    {
+      "file": "rf35mm_f1.8.json.gz.b64",
+      "encoding": "base64(gzip(UTF-8 JSON))",
+      "sha256_encoded": "0dff5fcd8837002fbd9b0753326d2bdc04882c73b3c7bbe4f7a1985d16c6fdd5",
+      "sha256_decoded": "a420943ef4688980258b538461b7b4743094e2f63889f2dd08b40472a35395b0"
+    },
+    {
+      "file": "rf50mm_f1.8.json.gz.b64",
+      "encoding": "base64(gzip(UTF-8 JSON))",
+      "sha256_encoded": "7ba34430eefe7e30a93805539e29c6ad11c533b89e9f1619cb5f3cd801c01946",
+      "sha256_decoded": "fc0a10d013d55b70d668958cf8e5390ab8867f46b1f678757e638a9ab2fce972"
+    },
+    {
+      "file": "sigma70mm_f2.8.json.gz.b64",
+      "encoding": "base64(gzip(UTF-8 JSON))",
+      "sha256_encoded": "a17b22ce37a943923014899b2ed7ed337727778e177f8e2b4f19c093311d5cbe",
+      "sha256_decoded": "49d470a07d623485e3889b953c239ab22afc15525fddd73843dbc08fd1bf2fee"
+    },
+    {
+      "file": "yongnuo_50mm_f1.8.json.gz.b64",
+      "encoding": "base64(gzip(UTF-8 JSON))",
+      "sha256_encoded": "68f335472059afbc475ea16e9c51082aa3b9035ec3d828748672a23a512cf20a",
+      "sha256_decoded": "9039593a64a58885a5c74faa3ac12b4f43bb3158f50f32ca79c2f172f1b1c208"
+    }
+  ],
+  "native_projections_included": false,
+  "meaning": "all compact per-condition records, including every completed-grid complex OTF and integral, refinement and reference probes; raw projection arrays omitted with native checksums retained"
+}

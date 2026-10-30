@@ -1,0 +1,1116 @@
+{
+  "J_task": null,
+  "actual_device": "cpu",
+  "code_commit": null,
+  "comparisons": [
+    {
+      "axis": "pupil",
+      "complex_otf_max_abs": 0.004594681300493162,
+      "integral_relative": 0.009295086755680911,
+      "integral_tolerance": 0.005,
+      "kind": "convergence_estimate",
+      "otf_tolerance": 0.002,
+      "passed": false
+    },
+    {
+      "axis": "pupil",
+      "complex_otf_max_abs": 0.0007126893822070148,
+      "integral_relative": 0.00174370523091846,
+      "integral_tolerance": 0.005,
+      "kind": "convergence_estimate",
+      "otf_tolerance": 0.002,
+      "passed": true
+    },
+    {
+      "axis": "angular_grid",
+      "complex_otf_max_abs": 0.00035430568281400566,
+      "integral_relative": 0.00029659266516843073,
+      "integral_tolerance": 0.005,
+      "kind": "convergence_estimate",
+      "otf_tolerance": 0.002,
+      "passed": true
+    },
+    {
+      "axis": "support",
+      "complex_otf_max_abs": 0.0003451755876266617,
+      "integral_relative": 0.00033896248917181747,
+      "integral_tolerance": 0.005,
+      "kind": "convergence_estimate",
+      "otf_tolerance": 0.002,
+      "passed": true
+    }
+  ],
+  "elapsed_seconds": 135.14928600700023,
+  "empirically_calibrated": false,
+  "error": "declared transform working-set element cap exceeded",
+  "error_ledger": [
+    {
+      "kind": "convergence_estimate",
+      "source": "ray/OPD and field reconstruction",
+      "verified": true
+    },
+    {
+      "global_bound": false,
+      "kind": "reference_discrepancy",
+      "source": "local first-order Fourier model vs exact-distance RS1",
+      "spotcheck_passed": true
+    },
+    {
+      "kind": "convergence_estimate",
+      "source": "window, pitch, joint",
+      "verified": false
+    },
+    {
+      "border_band_is_tail_bound": false,
+      "kind": "deterministic_bound",
+      "outside_energy_fraction_bound": null,
+      "source": "full-plane/window equivalence",
+      "value": null
+    },
+    {
+      "source": "scalar z-flux transport, polarization/coatings, empirical calibration",
+      "validated": false
+    }
+  ],
+  "finished_unix": 1793365884.662996,
+  "flags": {
+    "angular_grid": true,
+    "joint": false,
+    "pitch": false,
+    "pupil": true,
+    "reference_spotcheck": true,
+    "support": true
+  },
+  "id": "ef40mm_f2.8-h0-w550",
+  "model_scope_validated": false,
+  "name": "ef40mm_f2.8",
+  "numerically_verified": false,
+  "plan": {
+    "field_h": 0.0,
+    "mode": "verify",
+    "policy": {
+      "angular_grid_n": 1024,
+      "grid_otf_tolerance": 0.002,
+      "integral_relative_tolerance": 0.005,
+      "joint_otf_tolerance": 0.005,
+      "max_live_elements": 100000000,
+      "max_seconds": 7200.0,
+      "pitch_otf_tolerance": 0.001,
+      "pupil_otf_tolerance": 0.002,
+      "pupils": [
+        128,
+        256,
+        512,
+        1024
+      ],
+      "reference_relative_l2_tolerance": 0.005,
+      "residual_phase_target_cycles": 0.25,
+      "support_otf_tolerance": 0.002
+    },
+    "prescription_hash": "b57e435a884e95c7a3accd893513eb64589f88622dd23309b3e306aedc9fe3ed",
+    "task": {
+      "frame_mm": [
+        36.0,
+        24.0
+      ],
+      "frequencies": [
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        30.0,
+        40.0,
+        50.0,
+        60.0,
+        70.0,
+        80.0
+      ],
+      "kernel": "rs1",
+      "otf_domain": "windowed",
+      "pitch_um": 0.25,
+      "support_mm": 0.64
+    },
+    "version": "QfilmRW-0.1.0",
+    "wavelength_nm": 550.0
+  },
+  "plan_hash": "d1527f90ae3a70c6d5441d9e6c595e1be306c2f2d1617699e3a5df5960277f5d",
+  "psf_sampling": "point samples; no detector pixel-area convolution",
+  "reference_probe": {
+    "approx_imag": [
+      -0.8174156565158153,
+      -0.8002749368177408,
+      0.5868011966253863,
+      -5.817257905183578,
+      945.1630362854828,
+      2767.9656743422065,
+      0.5868011967581841,
+      -5.817257904955322,
+      945.1630362856446,
+      2767.965674342235,
+      2880.279455347064,
+      2556.8246082089245,
+      682.6815103656805,
+      -7.426045080298644,
+      1.217031975123587,
+      2556.8246082088904,
+      682.6815103655982,
+      -7.4260450804414795,
+      1.2170319749996479,
+      -0.8002749368156259,
+      -0.7831374943253786
+    ],
+    "approx_real": [
+      0.15662129859580037,
+      0.22073296233586331,
+      1.1132463337038985,
+      -14.652123922193784,
+      -336.01552168085686,
+      86.41516009571485,
+      1.1132463336888725,
+      -14.652123922165826,
+      -336.0155216808718,
+      86.41516009571968,
+      113.92300864140412,
+      34.6668921860484,
+      -379.8930647146003,
+      -10.118258237304563,
+      1.5691788026046072,
+      34.66689218606483,
+      -379.8930647145782,
+      -10.118258237361646,
+      1.5691788026811102,
+      0.22073296234957776,
+      0.2848327420549768
+    ],
+    "exact_imag": [
+      -0.9304970683629354,
+      -0.9750009048953892,
+      0.3523999531588614,
+      -5.558292122337956,
+      945.2198335761086,
+      2767.932963997245,
+      0.3523999532169277,
+      -5.5582921223441515,
+      945.2198335760261,
+      2767.932963997197,
+      2880.297282944482,
+      2556.889829769648,
+      682.6449023499457,
+      -7.243427162027645,
+      0.9561604530190054,
+      2556.889829769579,
+      682.6449023501318,
+      -7.24342716198422,
+      0.9561604530140722,
+      -0.9750009048727806,
+      -1.0195047416952376
+    ],
+    "exact_real": [
+      -0.9345784327226054,
+      -0.861478420292431,
+      1.343442590282474,
+      -14.358274435075888,
+      -337.17653637311423,
+      88.50027324277495,
+      1.343442590326789,
+      -14.358274435083173,
+      -337.1765363730803,
+      88.50027324284235,
+      116.31652152922256,
+      36.19337400893156,
+      -380.97042790719956,
+      -9.749532227131892,
+      1.7543562510539592,
+      36.19337400887923,
+      -380.9704279071354,
+      -9.749532227128936,
+      1.754356251007688,
+      -0.8614784202879651,
+      -0.7883784091900468
+    ],
+    "global_bound": false,
+    "kind": "reference_discrepancy",
+    "operator": "exact-distance scalar RS1 on same ray bundle",
+    "pixel_yx": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        2559
+      ],
+      [
+        640,
+        1280
+      ],
+      [
+        1120,
+        1280
+      ],
+      [
+        1272,
+        1280
+      ],
+      [
+        1278,
+        1280
+      ],
+      [
+        1280,
+        640
+      ],
+      [
+        1280,
+        1120
+      ],
+      [
+        1280,
+        1272
+      ],
+      [
+        1280,
+        1278
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        1280,
+        1282
+      ],
+      [
+        1280,
+        1288
+      ],
+      [
+        1280,
+        1440
+      ],
+      [
+        1280,
+        1920
+      ],
+      [
+        1282,
+        1280
+      ],
+      [
+        1288,
+        1280
+      ],
+      [
+        1440,
+        1280
+      ],
+      [
+        1920,
+        1280
+      ],
+      [
+        2559,
+        0
+      ],
+      [
+        2559,
+        2559
+      ]
+    ],
+    "relative_complex_field_l2": 0.0008664579053324655,
+    "sample_count": 21
+  },
+  "runs": [
+    {
+      "active_angular_cells": 800392,
+      "angular_grid_n": 1024,
+      "axis": "pupil",
+      "border_20um_fraction": 7.31945159615689e-05,
+      "center_film_mm": [
+        0.0,
+        0.0
+      ],
+      "dq": [
+        0.6411230909443162,
+        0.6411230909443162
+      ],
+      "excluded_boundary_angular_area": 3.2883105419359513,
+      "exit_z_mm": 23.610000228881837,
+      "inverse_map_failed_cells": 72,
+      "inverse_map_failed_interior_cells": 64,
+      "otf": [
+        [
+          {
+            "imag": -5.248581905363553e-07,
+            "real": 0.9746876004374562
+          },
+          {
+            "imag": -5.248581722555605e-07,
+            "real": 0.974687600437452
+          }
+        ],
+        [
+          {
+            "imag": -1.447329525091642e-06,
+            "real": 0.9201713936517791
+          },
+          {
+            "imag": -1.4473295053835184e-06,
+            "real": 0.9201713936517708
+          }
+        ],
+        [
+          {
+            "imag": -2.111846038110037e-06,
+            "real": 0.8442556242385783
+          },
+          {
+            "imag": -2.111846024099788e-06,
+            "real": 0.8442556242385625
+          }
+        ],
+        [
+          {
+            "imag": -2.459693425374887e-06,
+            "real": 0.7552235120215557
+          },
+          {
+            "imag": -2.459693416809678e-06,
+            "real": 0.7552235120215167
+          }
+        ],
+        [
+          {
+            "imag": -2.199779458827309e-06,
+            "real": 0.5688748318404602
+          },
+          {
+            "imag": -2.1997794555665623e-06,
+            "real": 0.5688748318403536
+          }
+        ],
+        [
+          {
+            "imag": -9.703197008570842e-07,
+            "real": 0.41177753910619475
+          },
+          {
+            "imag": -9.703197114676152e-07,
+            "real": 0.4117775391061623
+          }
+        ],
+        [
+          {
+            "imag": 6.169906764851355e-07,
+            "real": 0.3081306927802237
+          },
+          {
+            "imag": 6.169906663892429e-07,
+            "real": 0.3081306927802978
+          }
+        ],
+        [
+          {
+            "imag": 1.9090114049260392e-06,
+            "real": 0.2565154557893638
+          },
+          {
+            "imag": 1.909011406342373e-06,
+            "real": 0.2565154557894978
+          }
+        ],
+        [
+          {
+            "imag": 2.4924419702757957e-06,
+            "real": 0.24102600476244346
+          },
+          {
+            "imag": 2.4924419826348564e-06,
+            "real": 0.2410260047626143
+          }
+        ],
+        [
+          {
+            "imag": 2.3067262445083047e-06,
+            "real": 0.24363606337177685
+          },
+          {
+            "imag": 2.306726257901988e-06,
+            "real": 0.2436360633719539
+          }
+        ]
+      ],
+      "otf_domain": "windowed",
+      "peak_yx": [
+        1280,
+        1280
+      ],
+      "pitch_um": 0.25,
+      "pixel_n": 2560,
+      "profile": {
+        "reconstruction_seconds": 5.627867330000299,
+        "trace_seconds": 1.3730955379996885,
+        "transform_extract_seconds": 0.9334603699999207
+      },
+      "pupil_n": 128,
+      "q0": [
+        -327.9344610180177,
+        -327.9344610180177
+      ],
+      "raw_integral": 127.33988518266365,
+      "residual_phase_neighbor_cycles": 0.07487143808372243,
+      "support_mm": 0.64,
+      "tail_bound": null,
+      "trace_metadata": {
+        "active_nodes": 12836,
+        "actual_device": "cpu",
+        "excluded_stencil_fraction": 0.0,
+        "geometric_fill": 0.9956562209121936,
+        "mapping_orientation": 1,
+        "pupil_n": 128,
+        "reference_ray_blocked": false,
+        "singular_stencil_count": 0,
+        "transport": "uniform stop-plane scalar z-flux; no Fresnel/coating/polarization",
+        "transport_validated": false,
+        "valid_rays": 12836
+      },
+      "unsupported_source_patch_queries": 0
+    },
+    {
+      "active_angular_cells": 807628,
+      "angular_grid_n": 1024,
+      "axis": "pupil",
+      "border_20um_fraction": 7.612245666364441e-05,
+      "center_film_mm": [
+        0.0,
+        0.0
+      ],
+      "dq": [
+        0.6385405799543571,
+        0.6385405799543571
+      ],
+      "excluded_boundary_angular_area": 0.0,
+      "exit_z_mm": 23.610000228881837,
+      "inverse_map_failed_cells": 0,
+      "inverse_map_failed_interior_cells": 0,
+      "otf": [
+        [
+          {
+            "imag": -4.697701747956554e-05,
+            "real": 0.9741708349777456
+          },
+          {
+            "imag": -4.697701747957935e-05,
+            "real": 0.974170834977747
+          }
+        ],
+        [
+          {
+            "imag": -8.370930948064801e-05,
+            "real": 0.9188392291781122
+          },
+          {
+            "imag": -8.370930948064239e-05,
+            "real": 0.918839229178115
+          }
+        ],
+        [
+          {
+            "imag": -0.00010759373480134818,
+            "real": 0.8420131116900027
+          },
+          {
+            "imag": -0.00010759373480146011,
+            "real": 0.842013111690006
+          }
+        ],
+        [
+          {
+            "imag": -0.00011780736923417132,
+            "real": 0.7521526411944658
+          },
+          {
+            "imag": -0.00011780736923406066,
+            "real": 0.7521526411944675
+          }
+        ],
+        [
+          {
+            "imag": -0.00010150954058053461,
+            "real": 0.5645886337386633
+          },
+          {
+            "imag": -0.0001015095405817137,
+            "real": 0.5645886337386516
+          }
+        ],
+        [
+          {
+            "imag": -5.2020056880435807e-05,
+            "real": 0.4071831414114544
+          },
+          {
+            "imag": -5.20200568846905e-05,
+            "real": 0.4071831414114317
+          }
+        ],
+        [
+          {
+            "imag": 3.650748271630807e-06,
+            "real": 0.3040851864933456
+          },
+          {
+            "imag": 3.65074826826576e-06,
+            "real": 0.30408518649331906
+          }
+        ],
+        [
+          {
+            "imag": 4.239479200310976e-05,
+            "real": 0.25342872448369264
+          },
+          {
+            "imag": 4.239479199627613e-05,
+            "real": 0.25342872448367076
+          }
+        ],
+        [
+          {
+            "imag": 5.3951179176474905e-05,
+            "real": 0.2388389998214126
+          },
+          {
+            "imag": 5.3951179175295944e-05,
+            "real": 0.23883899982139373
+          }
+        ],
+        [
+          {
+            "imag": 4.056150809107232e-05,
+            "real": 0.24191769307939637
+          },
+          {
+            "imag": 4.056150809071837e-05,
+            "real": 0.2419176930793945
+          }
+        ]
+      ],
+      "otf_domain": "windowed",
+      "peak_yx": [
+        1280,
+        1280
+      ],
+      "pitch_um": 0.25,
+      "pixel_n": 2560,
+      "profile": {
+        "reconstruction_seconds": 3.413763404999372,
+        "trace_seconds": 4.652593542999966,
+        "transform_extract_seconds": 2.2480506780002543
+      },
+      "pupil_n": 256,
+      "q0": [
+        -326.61350664665366,
+        -326.61350664665366
+      ],
+      "raw_integral": 128.53462567946323,
+      "residual_phase_neighbor_cycles": 0.03855193785863197,
+      "support_mm": 0.64,
+      "tail_bound": null,
+      "trace_metadata": {
+        "active_nodes": 51314,
+        "actual_device": "cpu",
+        "excluded_stencil_fraction": 0.0,
+        "geometric_fill": 0.9970078495375767,
+        "mapping_orientation": 1,
+        "pupil_n": 256,
+        "reference_ray_blocked": false,
+        "singular_stencil_count": 0,
+        "transport": "uniform stop-plane scalar z-flux; no Fresnel/coating/polarization",
+        "transport_validated": false,
+        "valid_rays": 51314
+      },
+      "unsupported_source_patch_queries": 0
+    },
+    {
+      "active_angular_cells": 810620,
+      "angular_grid_n": 1024,
+      "axis": "pupil",
+      "border_20um_fraction": 7.42868086653849e-05,
+      "center_film_mm": [
+        0.0,
+        0.0
+      ],
+      "dq": [
+        0.6372488509867237,
+        0.6372488509867237
+      ],
+      "excluded_boundary_angular_area": 0.0,
+      "exit_z_mm": 23.610000228881837,
+      "inverse_map_failed_cells": 0,
+      "inverse_map_failed_interior_cells": 0,
+      "otf": [
+        [
+          {
+            "imag": -1.3816054239110529e-05,
+            "real": 0.9741483673153993
+          },
+          {
+            "imag": -1.3816054240545679e-05,
+            "real": 0.9741483673154012
+          }
+        ],
+        [
+          {
+            "imag": -2.378701272263371e-05,
+            "real": 0.9186036634681128
+          },
+          {
+            "imag": -2.378701272385329e-05,
+            "real": 0.9186036634681174
+          }
+        ],
+        [
+          {
+            "imag": -2.9186947528048507e-05,
+            "real": 0.8416036996992209
+          },
+          {
+            "imag": -2.9186947528586495e-05,
+            "real": 0.8416036996992268
+          }
+        ],
+        [
+          {
+            "imag": -2.9818681368691234e-05,
+            "real": 0.7516014218500457
+          },
+          {
+            "imag": -2.9818681368958795e-05,
+            "real": 0.7516014218500523
+          }
+        ],
+        [
+          {
+            "imag": -1.8720351340390954e-05,
+            "real": 0.5638807692702404
+          },
+          {
+            "imag": -1.8720351340022353e-05,
+            "real": 0.5638807692702458
+          }
+        ],
+        [
+          {
+            "imag": 1.7057554746911324e-06,
+            "real": 0.40651819972975584
+          },
+          {
+            "imag": 1.7057554756356847e-06,
+            "real": 0.406518199729745
+          }
+        ],
+        [
+          {
+            "imag": 2.0589827353021856e-05,
+            "real": 0.30357082293041726
+          },
+          {
+            "imag": 2.0589827355414856e-05,
+            "real": 0.3035708229304061
+          }
+        ],
+        [
+          {
+            "imag": 2.9544876284027e-05,
+            "real": 0.2530711201455435
+          },
+          {
+            "imag": 2.954487628504645e-05,
+            "real": 0.2530711201455501
+          }
+        ],
+        [
+          {
+            "imag": 2.6468454843689962e-05,
+            "real": 0.2386063673260415
+          },
+          {
+            "imag": 2.646845484280409e-05,
+            "real": 0.23860636732604343
+          }
+        ],
+        [
+          {
+            "imag": 1.4918497260715211e-05,
+            "real": 0.24172952859677843
+          },
+          {
+            "imag": 1.4918497259776844e-05,
+            "real": 0.24172952859676447
+          }
+        ]
+      ],
+      "otf_domain": "windowed",
+      "peak_yx": [
+        1280,
+        1280
+      ],
+      "pitch_um": 0.25,
+      "pixel_n": 2560,
+      "profile": {
+        "reconstruction_seconds": 2.713760500000717,
+        "trace_seconds": 15.600821913999425,
+        "transform_extract_seconds": 1.0674589499994909
+      },
+      "pupil_n": 512,
+      "q0": [
+        -325.9527872797091,
+        -325.9527872797091
+      ],
+      "raw_integral": 128.75914367181235,
+      "residual_phase_neighbor_cycles": 0.01953389577445044,
+      "support_mm": 0.64,
+      "tail_bound": null,
+      "trace_metadata": {
+        "active_nodes": 205140,
+        "actual_device": "cpu",
+        "excluded_stencil_fraction": 0.0,
+        "geometric_fill": 0.9963475997124707,
+        "mapping_orientation": 1,
+        "pupil_n": 512,
+        "reference_ray_blocked": false,
+        "singular_stencil_count": 0,
+        "transport": "uniform stop-plane scalar z-flux; no Fresnel/coating/polarization",
+        "transport_validated": false,
+        "valid_rays": 205140
+      },
+      "unsupported_source_patch_queries": 0
+    },
+    {
+      "active_angular_cells": 3256376,
+      "angular_grid_n": 2048,
+      "axis": "angular_grid",
+      "border_20um_fraction": 6.582987358942187e-05,
+      "center_film_mm": [
+        0.0,
+        0.0
+      ],
+      "dq": [
+        0.31800089432801276,
+        0.31800089432801276
+      ],
+      "excluded_boundary_angular_area": 0.0,
+      "exit_z_mm": 23.610000228881837,
+      "inverse_map_failed_cells": 0,
+      "inverse_map_failed_interior_cells": 0,
+      "otf": [
+        [
+          {
+            "imag": -1.3774791242614962e-05,
+            "real": 0.9742029264754137
+          },
+          {
+            "imag": -1.3774791243956925e-05,
+            "real": 0.9742029264754128
+          }
+        ],
+        [
+          {
+            "imag": -2.3695035971216683e-05,
+            "real": 0.9186226205343165
+          },
+          {
+            "imag": -2.369503597205158e-05,
+            "real": 0.9186226205343206
+          }
+        ],
+        [
+          {
+            "imag": -2.9070489448666422e-05,
+            "real": 0.8415781174484489
+          },
+          {
+            "imag": -2.9070489449230092e-05,
+            "real": 0.8415781174484546
+          }
+        ],
+        [
+          {
+            "imag": -2.9699863012673357e-05,
+            "real": 0.7515116731595344
+          },
+          {
+            "imag": -2.9699863013021118e-05,
+            "real": 0.7515116731595408
+          }
+        ],
+        [
+          {
+            "imag": -1.863418086679946e-05,
+            "real": 0.5636709805613503
+          },
+          {
+            "imag": -1.86341808664774e-05,
+            "real": 0.5636709805613539
+          }
+        ],
+        [
+          {
+            "imag": 1.7143864320035283e-06,
+            "real": 0.40621150586448823
+          },
+          {
+            "imag": 1.7143864328540226e-06,
+            "real": 0.4062115058644786
+          }
+        ],
+        [
+          {
+            "imag": 2.0518291212004247e-05,
+            "real": 0.303216517254825
+          },
+          {
+            "imag": 2.0518291214077303e-05,
+            "real": 0.30321651725481585
+          }
+        ],
+        [
+          {
+            "imag": 2.9430987770556e-05,
+            "real": 0.25272465446070036
+          },
+          {
+            "imag": 2.9430987771545298e-05,
+            "real": 0.25272465446070763
+          }
+        ],
+        [
+          {
+            "imag": 2.6352980774285945e-05,
+            "real": 0.23831030253861707
+          },
+          {
+            "imag": 2.6352980773531218e-05,
+            "real": 0.23831030253861976
+          }
+        ],
+        [
+          {
+            "imag": 1.4839698985470637e-05,
+            "real": 0.24150665226793674
+          },
+          {
+            "imag": 1.4839698984595283e-05,
+            "real": 0.2415066522679232
+          }
+        ]
+      ],
+      "otf_domain": "windowed",
+      "peak_yx": [
+        1280,
+        1280
+      ],
+      "pitch_um": 0.25,
+      "pixel_n": 2560,
+      "profile": {
+        "reconstruction_seconds": 43.20864550500028,
+        "transform_extract_seconds": 2.4916613449995566
+      },
+      "pupil_n": 512,
+      "q0": [
+        -325.4739153447211,
+        -325.4739153447211
+      ],
+      "raw_integral": 128.79734401934166,
+      "residual_phase_neighbor_cycles": 0.01953389577445044,
+      "support_mm": 0.64,
+      "tail_bound": null,
+      "trace_metadata": {
+        "active_nodes": 205140,
+        "actual_device": "cpu",
+        "excluded_stencil_fraction": 0.0,
+        "geometric_fill": 0.9963475997124707,
+        "mapping_orientation": 1,
+        "pupil_n": 512,
+        "reference_ray_blocked": false,
+        "singular_stencil_count": 0,
+        "transport": "uniform stop-plane scalar z-flux; no Fresnel/coating/polarization",
+        "transport_validated": false,
+        "valid_rays": 205140
+      },
+      "unsupported_source_patch_queries": 0
+    },
+    {
+      "active_angular_cells": 3256376,
+      "angular_grid_n": 2048,
+      "axis": "support",
+      "border_20um_fraction": 3.0543434050048544e-05,
+      "center_film_mm": [
+        0.0,
+        0.0
+      ],
+      "dq": [
+        0.31800089432801276,
+        0.31800089432801276
+      ],
+      "excluded_boundary_angular_area": 0.0,
+      "exit_z_mm": 23.610000228881837,
+      "inverse_map_failed_cells": 0,
+      "inverse_map_failed_interior_cells": 0,
+      "otf": [
+        [
+          {
+            "imag": -1.3767578899248974e-05,
+            "real": 0.9739104931990211
+          },
+          {
+            "imag": -1.3767578900618505e-05,
+            "real": 0.9739104931990236
+          }
+        ],
+        [
+          {
+            "imag": -2.36895153047027e-05,
+            "real": 0.9182774449467352
+          },
+          {
+            "imag": -2.368951530564315e-05,
+            "real": 0.9182774449467381
+          }
+        ],
+        [
+          {
+            "imag": -2.9061877164452718e-05,
+            "real": 0.841317669955013
+          },
+          {
+            "imag": -2.906187716488244e-05,
+            "real": 0.8413176699550211
+          }
+        ],
+        [
+          {
+            "imag": -2.9689293552237582e-05,
+            "real": 0.7512474211630586
+          },
+          {
+            "imag": -2.968929355250225e-05,
+            "real": 0.7512474211630643
+          }
+        ],
+        [
+          {
+            "imag": -1.8627240935193362e-05,
+            "real": 0.5634917191644409
+          },
+          {
+            "imag": -1.8627240934777232e-05,
+            "real": 0.5634917191644443
+          }
+        ],
+        [
+          {
+            "imag": 1.7132785866286596e-06,
+            "real": 0.4060856767425717
+          },
+          {
+            "imag": 1.7132785875448276e-06,
+            "real": 0.40608567674256135
+          }
+        ],
+        [
+          {
+            "imag": 2.0510417550274255e-05,
+            "real": 0.3031107843702515
+          },
+          {
+            "imag": 2.0510417552458486e-05,
+            "real": 0.30311078437024264
+          }
+        ],
+        [
+          {
+            "imag": 2.9420591907310044e-05,
+            "real": 0.2526312059270239
+          },
+          {
+            "imag": 2.9420591908360297e-05,
+            "real": 0.25263120592703087
+          }
+        ],
+        [
+          {
+            "imag": 2.6344252045054587e-05,
+            "real": 0.2382329760037581
+          },
+          {
+            "imag": 2.634425204448059e-05,
+            "real": 0.23823297600376042
+          }
+        ],
+        [
+          {
+            "imag": 1.4835263362979155e-05,
+            "real": 0.24142169968420815
+          },
+          {
+            "imag": 1.483526336208775e-05,
+            "real": 0.24142169968419422
+          }
+        ]
+      ],
+      "otf_domain": "windowed",
+      "peak_yx": [
+        1920,
+        1920
+      ],
+      "pitch_um": 0.25,
+      "pixel_n": 3840,
+      "profile": {
+        "reconstruction_seconds": 47.492792494999776,
+        "transform_extract_seconds": 3.675335283000095
+      },
+      "pupil_n": 512,
+      "q0": [
+        -325.4739153447211,
+        -325.4739153447211
+      ],
+      "raw_integral": 128.84101629093107,
+      "residual_phase_neighbor_cycles": 0.01953389577445044,
+      "support_mm": 0.96,
+      "tail_bound": null,
+      "trace_metadata": {
+        "active_nodes": 205140,
+        "actual_device": "cpu",
+        "excluded_stencil_fraction": 0.0,
+        "geometric_fill": 0.9963475997124707,
+        "mapping_orientation": 1,
+        "pupil_n": 512,
+        "reference_ray_blocked": false,
+        "singular_stencil_count": 0,
+        "transport": "uniform stop-plane scalar z-flux; no Fresnel/coating/polarization",
+        "transport_validated": false,
+        "valid_rays": 205140
+      },
+      "unsupported_source_patch_queries": 0
+    }
+  ],
+  "schema": "QfilmRWCondition-v1",
+  "source_sha256": "18d8506e0f3a9c77b3a9aa53161b98930d93464e45a419d9b2091293dfa51f79",
+  "state": "RESOURCE_LIMIT",
+  "training_eligible": false,
+  "version": "QfilmRW-0.1.0",
+  "export_note": "Compact native local CPU verification record: raw projections remain in native files; lower 100M-element local cap; not full workstation policy or acceptance.",
+  "native_code_sha256": {
+    "evaluator/qfilm02.py": "14e6e57c23c167fae19c8d7568c7e4a516ec3197af72df59735a5b692c8b7f0b",
+    "evaluator/qfilm04_wavefront.py": "0a453e159f9cfaed78fdf20b3286f530017df8148edf42677e0574dd2a450e04",
+    "evaluator/qfilmrw/__init__.py": "03517a63fc289e4fd5ed80b1e7ca5cbcb92a147b52bbbfa0f857ecd9fca85bf5",
+    "evaluator/qfilmrw/__main__.py": "5af4a59d763841f112f42662b88e8df17e5427c345bfcef97bf57d2d67ac360b",
+    "evaluator/qfilmrw/api.py": "0633515620a3f712a9f3b5c5ce982ea8b3cb621e52baf6b8f1045b8b3bc2869d",
+    "evaluator/qfilmrw/contracts.py": "012c0d4d2bf227e9665685490d92127269dd2300f67d45cfb2ce85887d188476",
+    "evaluator/qfilmrw/fourier.py": "0feee7030ac704f9e87f773265ec04b78f288da787e88d70858605a11e71e206",
+    "evaluator/qfilmrw/rays.py": "7a048920a39a397fd235f545a3524f486085a93e0eaf9bdffbf70bd17892424c",
+    "evaluator/qfilmrw/solver.py": "41e049ec54f4eeaaf22b8d942cca1c711f30bee6b3655261d1a41925421ea1dd",
+    "validation/qfilmrw_real11.py": "24fad1c2d9b6064d19ee84575a8176777a0b68f9e830ef36f1704005166e25ad"
+  }
+}
