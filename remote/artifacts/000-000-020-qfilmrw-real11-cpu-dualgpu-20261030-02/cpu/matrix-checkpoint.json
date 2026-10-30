@@ -3006,6 +3006,28 @@
       "reference_relative_l2": 0.0020062434999673995,
       "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
       "state": "NUMERICALLY_CONVERGED_LOCAL_MODEL"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 8,
+      "elapsed_seconds": 595.8642672244459,
+      "flags": {
+        "angular_grid": true,
+        "joint": true,
+        "pitch": true,
+        "pupil": true,
+        "reference_spotcheck": true,
+        "support": true
+      },
+      "id": "rf24mm_f1.8-h0.5-w550",
+      "model_scope_validated": false,
+      "name": "rf24mm_f1.8",
+      "native_terminal": "rf24mm_f1.8-h0.5-w550/condition-terminal.json",
+      "numerically_verified": true,
+      "plan_hash": "9f87274f927b31d5fb91ddabd9bf5b85005551f9aa0989cc8424bc2798012ba8",
+      "reference_relative_l2": 0.0013649430005158983,
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "state": "NUMERICALLY_CONVERGED_LOCAL_MODEL"
     }
   ],
   "fields_h": [
