@@ -2714,3 +2714,10 @@ QFILMRW rf35mm_f1.8-h0.5-w470 pupil_czt
 QFILMRW rf35mm_f1.8-h0.5-w470 pupil_completed
 QFILMRW rf35mm_f1.8-h0.5-w470 trace_256
 QFILMRW rf35mm_f1.8-h0.5-w470 pupil_reconstruct
+QFILMRW rf35mm_f1.8-h0.5-w470 pupil_czt
+QFILMRW rf35mm_f1.8-h0.5-w470 pupil_completed
+QFILMRW rf35mm_f1.8-h0.5-w470 trace_512
+QFILMRW rf35mm_f1.8-h0.5-w470 pupil_reconstruct
+QFILMRW rf35mm_f1.8-h0.5-w470 pupil_czt
+QFILMRW rf35mm_f1.8-h0.5-w470 pupil_completed
+QFILMRW rf35mm_f1.8-h0.5-w470 trace_1024
