@@ -6,10 +6,10 @@
       "progress": {
         "condition": "rf35mm_f1.8-h0-w590",
         "device": "cpu",
-        "elapsed_seconds": 14.774712138809264,
+        "elapsed_seconds": 42.898815363645554,
         "field_h": 0.0,
-        "stage": "trace_1024",
-        "updated_unix": 1793378985.6784725,
+        "stage": "pupil_reconstruct",
+        "updated_unix": 1793379013.8025784,
         "wavelength_nm": 590.0
       },
       "returncode": null
@@ -43,5 +43,5 @@
       "returncode": 0
     }
   ],
-  "updated_unix": 1793378991.8713307
+  "updated_unix": 1793379021.8775363
 }
