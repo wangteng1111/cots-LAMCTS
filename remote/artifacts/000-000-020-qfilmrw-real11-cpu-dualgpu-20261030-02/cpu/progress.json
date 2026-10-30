@@ -1,9 +1,9 @@
 {
   "condition": "rf24mm_f1.8-h0.5-w630",
   "device": "cpu",
-  "elapsed_seconds": 26.632691249251366,
+  "elapsed_seconds": 52.58192190807313,
   "field_h": 0.5,
-  "stage": "support_reconstruct",
-  "updated_unix": 1793378575.246047,
+  "stage": "joint_trace",
+  "updated_unix": 1793378601.1952858,
   "wavelength_nm": 630.0
 }
