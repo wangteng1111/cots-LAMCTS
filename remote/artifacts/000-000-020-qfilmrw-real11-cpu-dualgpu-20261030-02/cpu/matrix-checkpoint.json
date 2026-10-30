@@ -3072,6 +3072,182 @@
       "reference_relative_l2": 0.0017489478023372809,
       "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
       "state": "NUMERICALLY_CONVERGED_LOCAL_MODEL"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 7,
+      "elapsed_seconds": 99.5642290590331,
+      "flags": {
+        "angular_grid": true,
+        "joint": true,
+        "pitch": true,
+        "pupil": true,
+        "reference_spotcheck": true,
+        "support": true
+      },
+      "id": "rf24mm_f1.8-h0.5-w670",
+      "model_scope_validated": false,
+      "name": "rf24mm_f1.8",
+      "native_terminal": "rf24mm_f1.8-h0.5-w670/condition-terminal.json",
+      "numerically_verified": true,
+      "plan_hash": "609b1173a7b90eea60d516defa4dd7139320afcba4594f7296eb8496c0b4d2a8",
+      "reference_relative_l2": 0.0017226944277436184,
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "state": "NUMERICALLY_CONVERGED_LOCAL_MODEL"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 0,
+      "elapsed_seconds": 1.092691975645721,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "rf24mm_f1.8-h1-w430",
+      "model_scope_validated": false,
+      "name": "rf24mm_f1.8",
+      "native_terminal": "rf24mm_f1.8-h1-w430/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "efa238bc82bcde658c409f96173c5b2b79d2beab0018ff9043354aad23ddd07d",
+      "reference_relative_l2": null,
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "state": "RAY_AIMING_OR_OCCLUSION_UNRESOLVED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 0,
+      "elapsed_seconds": 1.082595239393413,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "rf24mm_f1.8-h1-w470",
+      "model_scope_validated": false,
+      "name": "rf24mm_f1.8",
+      "native_terminal": "rf24mm_f1.8-h1-w470/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "f2f63c9fcd93bdc2fb4464b507fcf2e86916c7c3859f83326445012561376b4d",
+      "reference_relative_l2": null,
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "state": "RAY_AIMING_OR_OCCLUSION_UNRESOLVED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 0,
+      "elapsed_seconds": 1.083465718664229,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "rf24mm_f1.8-h1-w510",
+      "model_scope_validated": false,
+      "name": "rf24mm_f1.8",
+      "native_terminal": "rf24mm_f1.8-h1-w510/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "cb5600785e35ba29ad15a8a88de5561cab27857c8fc4adc5f0d3ff9683d29eb8",
+      "reference_relative_l2": null,
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "state": "RAY_AIMING_OR_OCCLUSION_UNRESOLVED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 0,
+      "elapsed_seconds": 1.084166874177754,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "rf24mm_f1.8-h1-w550",
+      "model_scope_validated": false,
+      "name": "rf24mm_f1.8",
+      "native_terminal": "rf24mm_f1.8-h1-w550/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "18b7b74835683726527926b1a5430c185dbb7ca70e77682f76754fcf82cb9084",
+      "reference_relative_l2": null,
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "state": "RAY_AIMING_OR_OCCLUSION_UNRESOLVED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 0,
+      "elapsed_seconds": 1.0835860185325146,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "rf24mm_f1.8-h1-w590",
+      "model_scope_validated": false,
+      "name": "rf24mm_f1.8",
+      "native_terminal": "rf24mm_f1.8-h1-w590/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "dfb45ee3a94632ed17437df6e869ab6b80adfba3787db0ce512a9725624dadad",
+      "reference_relative_l2": null,
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "state": "RAY_AIMING_OR_OCCLUSION_UNRESOLVED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 0,
+      "elapsed_seconds": 1.0836084047332406,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "rf24mm_f1.8-h1-w630",
+      "model_scope_validated": false,
+      "name": "rf24mm_f1.8",
+      "native_terminal": "rf24mm_f1.8-h1-w630/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "76c9bc15bf2e95dce9b4c55736e867040f1f13f226c3b2f3732b74e5e565d7d7",
+      "reference_relative_l2": null,
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "state": "RAY_AIMING_OR_OCCLUSION_UNRESOLVED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 0,
+      "elapsed_seconds": 1.0838459804654121,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "rf24mm_f1.8-h1-w670",
+      "model_scope_validated": false,
+      "name": "rf24mm_f1.8",
+      "native_terminal": "rf24mm_f1.8-h1-w670/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "3d0747c934cca0927de2a34714e82f4f0103285ca0707f9a16d0854f419d08d8",
+      "reference_relative_l2": null,
+      "source_sha256": "b9514ef76edaf48112d235c9df41c637a6ff79ab7c969ab90f5fe0baee5bf59e",
+      "state": "RAY_AIMING_OR_OCCLUSION_UNRESOLVED"
     }
   ],
   "fields_h": [
