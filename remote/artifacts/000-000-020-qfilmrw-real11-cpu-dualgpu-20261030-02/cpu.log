@@ -3790,3 +3790,9 @@ QFILMRW sigma70mm_f2.8-h1-w430 pupil_reconstruct
 QFILMRW sigma70mm_f2.8-h1-w430 pupil_czt
 QFILMRW sigma70mm_f2.8-h1-w430 pupil_completed
 QFILMRW sigma70mm_f2.8-h1-w430 angular_grid_reconstruct
+QFILMRW sigma70mm_f2.8-h1-w430 angular_grid_czt
+QFILMRW sigma70mm_f2.8-h1-w430 angular_grid_completed
+QFILMRW sigma70mm_f2.8-h1-w430 support_reconstruct
+QFILMRW sigma70mm_f2.8-h1-w430 support_czt
+QFILMRW sigma70mm_f2.8-h1-w430 support_completed
+QFILMRW sigma70mm_f2.8-h1-w430 pitch_reconstruct
