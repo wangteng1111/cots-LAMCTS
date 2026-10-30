@@ -1972,6 +1972,50 @@
       "reference_relative_l2": 0.010678300199243266,
       "source_sha256": "cf8c09d79a9e2e758a58815fe3423d1574377e6ab079bce62deca4cdf6def9b9",
       "state": "REFERENCE_REQUIRED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 3,
+      "elapsed_seconds": 16.078933401033282,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": true,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "ef85mm_f1.8-h0-w630",
+      "model_scope_validated": false,
+      "name": "ef85mm_f1.8",
+      "native_terminal": "ef85mm_f1.8-h0-w630/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "1b7dc0d2f430d37d70c05ef83525bc524dcf9c48d5956da065d6169a4b7744c9",
+      "reference_relative_l2": 0.008490275686419592,
+      "source_sha256": "cf8c09d79a9e2e758a58815fe3423d1574377e6ab079bce62deca4cdf6def9b9",
+      "state": "REFERENCE_REQUIRED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 2,
+      "elapsed_seconds": 6.9747590478509665,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": true,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "ef85mm_f1.8-h0-w670",
+      "model_scope_validated": false,
+      "name": "ef85mm_f1.8",
+      "native_terminal": "ef85mm_f1.8-h0-w670/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "6914ec08545353469cbfe6b2e0c6e0720584fca25e883c440f28da53f4b046aa",
+      "reference_relative_l2": 0.011814651972788612,
+      "source_sha256": "cf8c09d79a9e2e758a58815fe3423d1574377e6ab079bce62deca4cdf6def9b9",
+      "state": "REFERENCE_REQUIRED"
     }
   ],
   "fields_h": [
