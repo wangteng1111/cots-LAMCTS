@@ -1,9 +1,9 @@
 {
   "condition": "rf35mm_f1.8-h1-w670",
   "device": "cpu",
-  "elapsed_seconds": 71.72874637786299,
+  "elapsed_seconds": 86.15268827416003,
   "field_h": 1.0,
-  "stage": "pitch_reconstruct",
-  "updated_unix": 1793380828.4495373,
+  "stage": "joint_trace",
+  "updated_unix": 1793380842.8734794,
   "wavelength_nm": 670.0
 }
