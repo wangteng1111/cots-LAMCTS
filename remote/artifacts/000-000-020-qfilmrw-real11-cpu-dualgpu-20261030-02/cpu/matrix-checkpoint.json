@@ -4326,6 +4326,28 @@
       "reference_relative_l2": 0.002811485809197904,
       "source_sha256": "1fb88d4da358707420f4923e1e223df1823f883b2bb4789be5c51d048769e800",
       "state": "NUMERICALLY_CONVERGED_LOCAL_MODEL"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 4,
+      "elapsed_seconds": 47.04340187367052,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": true,
+        "support": false
+      },
+      "id": "sigma70mm_f2.8-h0.5-w430",
+      "model_scope_validated": false,
+      "name": "sigma70mm_f2.8",
+      "native_terminal": "sigma70mm_f2.8-h0.5-w430/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "01959cfdcacf4c88793ba69a52288042c205f749d73186b94fa8fbaa767dcfdb",
+      "reference_relative_l2": 0.004224414120440966,
+      "source_sha256": "1fb88d4da358707420f4923e1e223df1823f883b2bb4789be5c51d048769e800",
+      "state": "SOURCE_SAMPLING_UNCONVERGED"
     }
   ],
   "fields_h": [
