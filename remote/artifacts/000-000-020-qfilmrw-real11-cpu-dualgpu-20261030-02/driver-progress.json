@@ -6,10 +6,10 @@
       "progress": {
         "condition": "yongnuo_50mm_f1.8-h0-w590",
         "device": "cpu",
-        "elapsed_seconds": 5.6132050435990095,
+        "elapsed_seconds": 35.4282930791378,
         "field_h": 0.0,
-        "stage": "trace_512",
-        "updated_unix": 1793392254.4310384,
+        "stage": "pupil_czt",
+        "updated_unix": 1793392284.246136,
         "wavelength_nm": 590.0
       },
       "returncode": null
@@ -43,5 +43,5 @@
       "returncode": 0
     }
   ],
-  "updated_unix": 1793392254.469584
+  "updated_unix": 1793392284.4750679
 }
