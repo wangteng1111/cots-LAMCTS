@@ -1,9 +1,9 @@
 {
   "condition": "ef100mm_f2.8-h0.5-w670",
   "device": "cpu",
-  "elapsed_seconds": 0.00031724199652671814,
+  "elapsed_seconds": 51.1828252421692,
   "field_h": 0.5,
-  "stage": "trace_128",
-  "updated_unix": 1793367971.9917865,
+  "stage": "joint_trace",
+  "updated_unix": 1793368023.1743014,
   "wavelength_nm": 670.0
 }
