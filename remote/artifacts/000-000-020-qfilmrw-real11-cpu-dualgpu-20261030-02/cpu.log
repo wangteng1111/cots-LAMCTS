@@ -1918,3 +1918,9 @@ QFILMRW ef85mm_f1.8-h1-w550 pupil_completed
 QFILMRW ef85mm_f1.8-h1-w550 trace_256
 QFILMRW ef85mm_f1.8-h1-w550 pupil_reconstruct
 QFILMRW ef85mm_f1.8-h1-w550 pupil_czt
+QFILMRW ef85mm_f1.8-h1-w550 pupil_completed
+QFILMRW ef85mm_f1.8-h1-w550 trace_512
+QFILMRW ef85mm_f1.8-h1-w550 pupil_reconstruct
+QFILMRW ef85mm_f1.8-h1-w550 pupil_czt
+QFILMRW ef85mm_f1.8-h1-w550 pupil_completed
+QFILMRW ef85mm_f1.8-h1-w550 trace_1024
