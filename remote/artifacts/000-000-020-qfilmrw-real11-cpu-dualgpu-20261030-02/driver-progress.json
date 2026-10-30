@@ -4,13 +4,13 @@
       "lane": "cpu",
       "pid": 555767,
       "progress": {
-        "condition": "yongnuo_50mm_f1.8-h0.5-w630",
+        "condition": "yongnuo_50mm_f1.8-h0.5-w670",
         "device": "cpu",
-        "elapsed_seconds": 5.56131184194237,
+        "elapsed_seconds": 0.00022271554917097092,
         "field_h": 0.5,
-        "stage": "trace_512",
-        "updated_unix": 1793393092.9978573,
-        "wavelength_nm": 630.0
+        "stage": "trace_128",
+        "updated_unix": 1793393123.9375126,
+        "wavelength_nm": 670.0
       },
       "returncode": null
     },
@@ -43,5 +43,5 @@
       "returncode": 0
     }
   ],
-  "updated_unix": 1793393094.6353128
+  "updated_unix": 1793393124.6419592
 }
