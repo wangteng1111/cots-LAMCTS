@@ -1,9 +1,9 @@
 {
-  "condition": "rf50mm_f1.8-h0-w670",
+  "condition": "rf50mm_f1.8-h0.5-w630",
   "device": "cuda:0",
-  "elapsed_seconds": 44.01157185807824,
-  "field_h": 0.0,
-  "stage": "joint_reconstruct",
-  "updated_unix": 1793367714.9052346,
-  "wavelength_nm": 670.0
+  "elapsed_seconds": 18.13756763935089,
+  "field_h": 0.5,
+  "stage": "support_reconstruct",
+  "updated_unix": 1793367969.3605359,
+  "wavelength_nm": 630.0
 }
