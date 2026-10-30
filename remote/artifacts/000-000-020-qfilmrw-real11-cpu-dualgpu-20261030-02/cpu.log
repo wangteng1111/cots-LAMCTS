@@ -1792,3 +1792,7 @@ QFILMRW ef85mm_f1.8-h0.5-w590 pupil_reconstruct
 QFILMRW ef85mm_f1.8-h0.5-w590 pupil_czt
 QFILMRW ef85mm_f1.8-h0.5-w590 pupil_completed
 QFILMRW ef85mm_f1.8-h0.5-w590 trace_512
+QFILMRW ef85mm_f1.8-h0.5-w590 pupil_reconstruct
+QFILMRW ef85mm_f1.8-h0.5-w590 pupil_czt
+QFILMRW ef85mm_f1.8-h0.5-w590 pupil_completed
+QFILMRW ef85mm_f1.8-h0.5-w590 trace_1024
