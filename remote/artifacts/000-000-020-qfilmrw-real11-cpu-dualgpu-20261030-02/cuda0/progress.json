@@ -1,9 +1,9 @@
 {
-  "condition": "ef85mm_f1.8-h0-w430",
+  "condition": "rf24mm_f1.8-h0.5-w510",
   "device": "cuda:0",
-  "elapsed_seconds": 3.419596504420042,
-  "field_h": 0.0,
-  "stage": "trace_512",
-  "updated_unix": 1793366915.9671822,
-  "wavelength_nm": 430.0
+  "elapsed_seconds": 6.413678562268615,
+  "field_h": 0.5,
+  "stage": "angular_grid_czt",
+  "updated_unix": 1793367369.166695,
+  "wavelength_nm": 510.0
 }
