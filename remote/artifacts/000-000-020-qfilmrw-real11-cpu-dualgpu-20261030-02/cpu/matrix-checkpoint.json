@@ -366,6 +366,28 @@
       "reference_relative_l2": 0.008306006908693821,
       "source_sha256": "3e1b59d8ef13a3ac5f57c015cd2be4181282950d9752a5a6731ac1ab18155a5a",
       "state": "REFERENCE_REQUIRED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 8,
+      "elapsed_seconds": 605.4603451443836,
+      "flags": {
+        "angular_grid": true,
+        "joint": true,
+        "pitch": true,
+        "pupil": true,
+        "reference_spotcheck": true,
+        "support": true
+      },
+      "id": "ef100mm_f2.8-h1-w510",
+      "model_scope_validated": false,
+      "name": "ef100mm_f2.8",
+      "native_terminal": "ef100mm_f2.8-h1-w510/condition-terminal.json",
+      "numerically_verified": true,
+      "plan_hash": "5342911e15de62dc57247e6cb987d2ce531742cbd9facd92194f601611877fd8",
+      "reference_relative_l2": 0.0024968858486490303,
+      "source_sha256": "3e1b59d8ef13a3ac5f57c015cd2be4181282950d9752a5a6731ac1ab18155a5a",
+      "state": "NUMERICALLY_CONVERGED_LOCAL_MODEL"
     }
   ],
   "fields_h": [
