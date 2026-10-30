@@ -1326,3 +1326,9 @@ QFILMRW ef50mm_f1.8-h0-w590 angular_grid_reconstruct
 QFILMRW ef50mm_f1.8-h0-w590 angular_grid_czt
 QFILMRW ef50mm_f1.8-h0-w590 angular_grid_completed
 QFILMRW ef50mm_f1.8-h0-w590 support_reconstruct
+QFILMRW ef50mm_f1.8-h0-w590 support_czt
+QFILMRW ef50mm_f1.8-h0-w590 support_completed
+QFILMRW ef50mm_f1.8-h0-w590 pitch_reconstruct
+QFILMRW ef50mm_f1.8-h0-w590 pitch_czt
+QFILMRW ef50mm_f1.8-h0-w590 pitch_completed
+QFILMRW ef50mm_f1.8-h0-w590 joint_trace
