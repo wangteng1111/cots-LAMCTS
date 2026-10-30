@@ -2990,3 +2990,17 @@ QFILMRW rf50mm_f1.8-h0-w470 pupil_reconstruct
 QFILMRW rf50mm_f1.8-h0-w470 pupil_czt
 QFILMRW rf50mm_f1.8-h0-w470 pupil_completed
 QFILMRW rf50mm_f1.8-h0-w470 trace_1024
+QFILMRW rf50mm_f1.8-h0-w470 pupil_reconstruct
+QFILMRW rf50mm_f1.8-h0-w470 pupil_czt
+QFILMRW rf50mm_f1.8-h0-w470 pupil_completed
+QFILMRW_TERMINAL rf50mm_f1.8-h0-w470 SOURCE_SAMPLING_UNCONVERGED
+QFILMRW rf50mm_f1.8-h0-w510 trace_128
+QFILMRW rf50mm_f1.8-h0-w510 pupil_reconstruct
+QFILMRW rf50mm_f1.8-h0-w510 pupil_czt
+QFILMRW rf50mm_f1.8-h0-w510 pupil_completed
+QFILMRW rf50mm_f1.8-h0-w510 trace_256
+QFILMRW rf50mm_f1.8-h0-w510 pupil_reconstruct
+QFILMRW rf50mm_f1.8-h0-w510 pupil_czt
+QFILMRW rf50mm_f1.8-h0-w510 pupil_completed
+QFILMRW rf50mm_f1.8-h0-w510 trace_512
+QFILMRW rf50mm_f1.8-h0-w510 pupil_reconstruct
