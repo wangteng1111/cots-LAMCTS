@@ -2126,6 +2126,28 @@
       "reference_relative_l2": 0.004781049445400683,
       "source_sha256": "cf8c09d79a9e2e758a58815fe3423d1574377e6ab079bce62deca4cdf6def9b9",
       "state": "NUMERICALLY_CONVERGED_LOCAL_MODEL"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 8,
+      "elapsed_seconds": 661.2728650327772,
+      "flags": {
+        "angular_grid": true,
+        "joint": true,
+        "pitch": true,
+        "pupil": true,
+        "reference_spotcheck": true,
+        "support": true
+      },
+      "id": "ef85mm_f1.8-h0.5-w630",
+      "model_scope_validated": false,
+      "name": "ef85mm_f1.8",
+      "native_terminal": "ef85mm_f1.8-h0.5-w630/condition-terminal.json",
+      "numerically_verified": true,
+      "plan_hash": "3f3483ff5c8fc21ecf8224db73603081ee7d8a4c11f0c1f4994fb56df7540d6f",
+      "reference_relative_l2": 0.001856044086289439,
+      "source_sha256": "cf8c09d79a9e2e758a58815fe3423d1574377e6ab079bce62deca4cdf6def9b9",
+      "state": "NUMERICALLY_CONVERGED_LOCAL_MODEL"
     }
   ],
   "fields_h": [
