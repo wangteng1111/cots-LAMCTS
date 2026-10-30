@@ -1,9 +1,9 @@
 {
-  "condition": "sigma70mm_f2.8-h0-w470",
+  "condition": "sigma70mm_f2.8-h1-w670",
   "device": "cuda:1",
-  "elapsed_seconds": 5.07257457729429,
-  "field_h": 0.0,
-  "stage": "trace_1024",
-  "updated_unix": 1793367429.5369952,
-  "wavelength_nm": 470.0
+  "elapsed_seconds": 8.74986957386136,
+  "field_h": 1.0,
+  "stage": "joint_completed",
+  "updated_unix": 1793367624.8375747,
+  "wavelength_nm": 670.0
 }
