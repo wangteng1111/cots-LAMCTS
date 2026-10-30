@@ -2390,6 +2390,28 @@
       "reference_relative_l2": 0.029369283146471435,
       "source_sha256": "493474344dccf7bf53000b4eb1936e75e06cdf6461ea57c26d5770a7457fbaa9",
       "state": "REFERENCE_REQUIRED"
+    },
+    {
+      "actual_device": "cpu",
+      "completed_psf_grids": 4,
+      "elapsed_seconds": 45.293702160939574,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "rf16mm_f2.8-h0-w550",
+      "model_scope_validated": false,
+      "name": "rf16mm_f2.8",
+      "native_terminal": "rf16mm_f2.8-h0-w550/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "0ccc649a592c69ff58b5488481dd00a5f1efd1e417fcad0a1620d6d22238b7f7",
+      "reference_relative_l2": 0.019299775311643074,
+      "source_sha256": "493474344dccf7bf53000b4eb1936e75e06cdf6461ea57c26d5770a7457fbaa9",
+      "state": "REFERENCE_REQUIRED"
     }
   ],
   "fields_h": [
