@@ -3532,3 +3532,5 @@ QFILMRW sigma70mm_f2.8-h0-w550 support_czt
 QFILMRW sigma70mm_f2.8-h0-w550 support_completed
 QFILMRW sigma70mm_f2.8-h0-w550 pitch_reconstruct
 QFILMRW sigma70mm_f2.8-h0-w550 pitch_czt
+QFILMRW sigma70mm_f2.8-h0-w550 pitch_completed
+QFILMRW sigma70mm_f2.8-h0-w550 joint_trace
