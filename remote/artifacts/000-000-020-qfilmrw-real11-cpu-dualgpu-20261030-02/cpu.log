@@ -3037,3 +3037,10 @@ QFILMRW rf50mm_f1.8-h0-w550 pupil_reconstruct
 QFILMRW rf50mm_f1.8-h0-w550 pupil_czt
 QFILMRW rf50mm_f1.8-h0-w550 pupil_completed
 QFILMRW rf50mm_f1.8-h0-w550 angular_grid_reconstruct
+QFILMRW rf50mm_f1.8-h0-w550 angular_grid_czt
+QFILMRW rf50mm_f1.8-h0-w550 angular_grid_completed
+QFILMRW rf50mm_f1.8-h0-w550 support_reconstruct
+QFILMRW rf50mm_f1.8-h0-w550 support_czt
+QFILMRW rf50mm_f1.8-h0-w550 support_completed
+QFILMRW rf50mm_f1.8-h0-w550 pitch_reconstruct
+QFILMRW rf50mm_f1.8-h0-w550 pitch_czt
