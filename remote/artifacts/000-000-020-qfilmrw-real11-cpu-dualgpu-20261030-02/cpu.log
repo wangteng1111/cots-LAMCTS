@@ -3859,3 +3859,5 @@ QFILMRW sigma70mm_f2.8-h1-w510 pitch_reconstruct
 QFILMRW sigma70mm_f2.8-h1-w510 pitch_czt
 QFILMRW sigma70mm_f2.8-h1-w510 pitch_completed
 QFILMRW sigma70mm_f2.8-h1-w510 joint_trace
+QFILMRW sigma70mm_f2.8-h1-w510 joint_reconstruct
+QFILMRW sigma70mm_f2.8-h1-w510 joint_czt
