@@ -2487,3 +2487,12 @@ QFILMRW rf24mm_f1.8-h0.5-w590 pupil_completed
 QFILMRW rf24mm_f1.8-h0.5-w590 trace_256
 QFILMRW rf24mm_f1.8-h0.5-w590 pupil_reconstruct
 QFILMRW rf24mm_f1.8-h0.5-w590 pupil_czt
+QFILMRW rf24mm_f1.8-h0.5-w590 pupil_completed
+QFILMRW rf24mm_f1.8-h0.5-w590 trace_512
+QFILMRW rf24mm_f1.8-h0.5-w590 pupil_reconstruct
+QFILMRW rf24mm_f1.8-h0.5-w590 pupil_czt
+QFILMRW rf24mm_f1.8-h0.5-w590 pupil_completed
+QFILMRW rf24mm_f1.8-h0.5-w590 angular_grid_reconstruct
+QFILMRW rf24mm_f1.8-h0.5-w590 angular_grid_czt
+QFILMRW rf24mm_f1.8-h0.5-w590 angular_grid_completed
+QFILMRW rf24mm_f1.8-h0.5-w590 support_reconstruct
