@@ -2387,3 +2387,17 @@ QFILMRW rf24mm_f1.8-h0.5-w430 pitch_czt
 QFILMRW rf24mm_f1.8-h0.5-w430 pitch_completed
 QFILMRW rf24mm_f1.8-h0.5-w430 joint_trace
 QFILMRW rf24mm_f1.8-h0.5-w430 joint_reconstruct
+QFILMRW rf24mm_f1.8-h0.5-w430 joint_czt
+QFILMRW rf24mm_f1.8-h0.5-w430 joint_completed
+QFILMRW_TERMINAL rf24mm_f1.8-h0.5-w430 NUMERICAL_OR_MODEL_GATE_NOT_PASSED
+QFILMRW rf24mm_f1.8-h0.5-w470 trace_128
+QFILMRW rf24mm_f1.8-h0.5-w470 pupil_reconstruct
+QFILMRW rf24mm_f1.8-h0.5-w470 pupil_czt
+QFILMRW rf24mm_f1.8-h0.5-w470 pupil_completed
+QFILMRW rf24mm_f1.8-h0.5-w470 trace_256
+QFILMRW rf24mm_f1.8-h0.5-w470 pupil_reconstruct
+QFILMRW rf24mm_f1.8-h0.5-w470 pupil_czt
+QFILMRW rf24mm_f1.8-h0.5-w470 pupil_completed
+QFILMRW rf24mm_f1.8-h0.5-w470 trace_512
+QFILMRW rf24mm_f1.8-h0.5-w470 pupil_reconstruct
+QFILMRW rf24mm_f1.8-h0.5-w470 pupil_czt
