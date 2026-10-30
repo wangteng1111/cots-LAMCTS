@@ -1,9 +1,9 @@
 {
-  "condition": "rf24mm_f1.8-h0.5-w550",
+  "condition": "rf24mm_f1.8-h0.5-w590",
   "device": "cpu",
-  "elapsed_seconds": 84.05575359798968,
+  "elapsed_seconds": 5.906053317710757,
   "field_h": 0.5,
-  "stage": "joint_trace",
-  "updated_unix": 1793377939.1720145,
-  "wavelength_nm": 550.0
+  "stage": "pupil_czt",
+  "updated_unix": 1793378457.0681136,
+  "wavelength_nm": 590.0
 }
