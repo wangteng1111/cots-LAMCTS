@@ -1,9 +1,9 @@
 {
   "condition": "rf35mm_f1.8-h0.5-w550",
   "device": "cpu",
-  "elapsed_seconds": 0.00026239827275276184,
+  "elapsed_seconds": 14.013241068460047,
   "field_h": 0.5,
-  "stage": "trace_128",
-  "updated_unix": 1793379270.7728214,
+  "stage": "trace_1024",
+  "updated_unix": 1793379284.7858174,
   "wavelength_nm": 550.0
 }
