@@ -6,10 +6,10 @@
       "progress": {
         "condition": "rf16mm_f2.8-h0-w670",
         "device": "cpu",
-        "elapsed_seconds": 0.000273287296295166,
+        "elapsed_seconds": 14.065425520762801,
         "field_h": 0.0,
-        "stage": "trace_128",
-        "updated_unix": 1793374960.261172,
+        "stage": "trace_1024",
+        "updated_unix": 1793374974.3263395,
         "wavelength_nm": 670.0
       },
       "returncode": null
@@ -43,5 +43,5 @@
       "returncode": 0
     }
   ],
-  "updated_unix": 1793374961.0176017
+  "updated_unix": 1793374991.0223148
 }
