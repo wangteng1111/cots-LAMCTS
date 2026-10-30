@@ -2111,3 +2111,16 @@ QFILMRW rf16mm_f2.8-h0.5-w430 pupil_reconstruct
 QFILMRW rf16mm_f2.8-h0.5-w430 pupil_czt
 QFILMRW rf16mm_f2.8-h0.5-w430 pupil_completed
 QFILMRW rf16mm_f2.8-h0.5-w430 trace_1024
+QFILMRW rf16mm_f2.8-h0.5-w430 pupil_reconstruct
+QFILMRW rf16mm_f2.8-h0.5-w430 pupil_czt
+QFILMRW rf16mm_f2.8-h0.5-w430 pupil_completed
+QFILMRW_TERMINAL rf16mm_f2.8-h0.5-w430 REFERENCE_REQUIRED
+QFILMRW rf16mm_f2.8-h0.5-w470 trace_128
+QFILMRW rf16mm_f2.8-h0.5-w470 pupil_reconstruct
+QFILMRW rf16mm_f2.8-h0.5-w470 pupil_czt
+QFILMRW rf16mm_f2.8-h0.5-w470 pupil_completed
+QFILMRW rf16mm_f2.8-h0.5-w470 trace_256
+QFILMRW rf16mm_f2.8-h0.5-w470 pupil_reconstruct
+QFILMRW rf16mm_f2.8-h0.5-w470 pupil_czt
+QFILMRW rf16mm_f2.8-h0.5-w470 pupil_completed
+QFILMRW rf16mm_f2.8-h0.5-w470 trace_512
