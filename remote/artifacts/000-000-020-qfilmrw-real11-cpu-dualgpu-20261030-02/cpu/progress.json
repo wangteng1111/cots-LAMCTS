@@ -1,9 +1,9 @@
 {
-  "condition": "ef35mm_f2.0-h1-w550",
+  "condition": "ef40mm_f2.8-h0-w430",
   "device": "cpu",
-  "elapsed_seconds": 10.132382525131106,
-  "field_h": 1.0,
+  "elapsed_seconds": 10.267162804491818,
+  "field_h": 0.0,
   "stage": "trace_1024",
-  "updated_unix": 1793369583.443456,
-  "wavelength_nm": 550.0
+  "updated_unix": 1793369704.423838,
+  "wavelength_nm": 430.0
 }
