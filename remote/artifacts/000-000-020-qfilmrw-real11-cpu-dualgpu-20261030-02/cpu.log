@@ -2965,3 +2965,12 @@ QFILMRW rf50mm_f1.8-h0-w430 pupil_reconstruct
 QFILMRW rf50mm_f1.8-h0-w430 pupil_czt
 QFILMRW rf50mm_f1.8-h0-w430 pupil_completed
 QFILMRW rf50mm_f1.8-h0-w430 trace_256
+QFILMRW rf50mm_f1.8-h0-w430 pupil_reconstruct
+QFILMRW rf50mm_f1.8-h0-w430 pupil_czt
+QFILMRW rf50mm_f1.8-h0-w430 pupil_completed
+QFILMRW rf50mm_f1.8-h0-w430 trace_512
+QFILMRW rf50mm_f1.8-h0-w430 pupil_reconstruct
+QFILMRW rf50mm_f1.8-h0-w430 pupil_czt
+QFILMRW rf50mm_f1.8-h0-w430 pupil_completed
+QFILMRW rf50mm_f1.8-h0-w430 trace_1024
+QFILMRW rf50mm_f1.8-h0-w430 pupil_reconstruct
