@@ -2545,3 +2545,9 @@ QFILMRW rf24mm_f1.8-h0.5-w670 pupil_reconstruct
 QFILMRW rf24mm_f1.8-h0.5-w670 pupil_czt
 QFILMRW rf24mm_f1.8-h0.5-w670 pupil_completed
 QFILMRW rf24mm_f1.8-h0.5-w670 angular_grid_reconstruct
+QFILMRW rf24mm_f1.8-h0.5-w670 angular_grid_czt
+QFILMRW rf24mm_f1.8-h0.5-w670 angular_grid_completed
+QFILMRW rf24mm_f1.8-h0.5-w670 support_reconstruct
+QFILMRW rf24mm_f1.8-h0.5-w670 support_czt
+QFILMRW rf24mm_f1.8-h0.5-w670 support_completed
+QFILMRW rf24mm_f1.8-h0.5-w670 pitch_reconstruct
