@@ -234,6 +234,72 @@
       "reference_relative_l2": 0.010391541256443166,
       "source_sha256": "3e1b59d8ef13a3ac5f57c015cd2be4181282950d9752a5a6731ac1ab18155a5a",
       "state": "REFERENCE_REQUIRED"
+    },
+    {
+      "actual_device": "cuda:0",
+      "completed_psf_grids": 7,
+      "elapsed_seconds": 9.326734572649002,
+      "flags": {
+        "angular_grid": true,
+        "joint": true,
+        "pitch": true,
+        "pupil": true,
+        "reference_spotcheck": true,
+        "support": true
+      },
+      "id": "ef100mm_f2.8-h0.5-w550",
+      "model_scope_validated": false,
+      "name": "ef100mm_f2.8",
+      "native_terminal": "ef100mm_f2.8-h0.5-w550/condition-terminal.json",
+      "numerically_verified": true,
+      "plan_hash": "7f51f85a4babc65956021d7f52ba1c32a8ed3ed942164c8807be30641a40cb83",
+      "reference_relative_l2": 0.004395202755581515,
+      "source_sha256": "3e1b59d8ef13a3ac5f57c015cd2be4181282950d9752a5a6731ac1ab18155a5a",
+      "state": "NUMERICALLY_CONVERGED_LOCAL_MODEL"
+    },
+    {
+      "actual_device": "cuda:0",
+      "completed_psf_grids": 6,
+      "elapsed_seconds": 7.520594614557922,
+      "flags": {
+        "angular_grid": true,
+        "joint": true,
+        "pitch": true,
+        "pupil": true,
+        "reference_spotcheck": true,
+        "support": true
+      },
+      "id": "ef100mm_f2.8-h0.5-w590",
+      "model_scope_validated": false,
+      "name": "ef100mm_f2.8",
+      "native_terminal": "ef100mm_f2.8-h0.5-w590/condition-terminal.json",
+      "numerically_verified": true,
+      "plan_hash": "0fe43d48265552d191b839ff62ced712c113b363e9bf58334503944bdc59f709",
+      "reference_relative_l2": 0.0025131072034012894,
+      "source_sha256": "3e1b59d8ef13a3ac5f57c015cd2be4181282950d9752a5a6731ac1ab18155a5a",
+      "state": "NUMERICALLY_CONVERGED_LOCAL_MODEL"
+    },
+    {
+      "actual_device": "cuda:0",
+      "completed_psf_grids": 7,
+      "elapsed_seconds": 9.253361392766237,
+      "flags": {
+        "angular_grid": true,
+        "joint": true,
+        "pitch": true,
+        "pupil": true,
+        "reference_spotcheck": true,
+        "support": true
+      },
+      "id": "ef100mm_f2.8-h0.5-w630",
+      "model_scope_validated": false,
+      "name": "ef100mm_f2.8",
+      "native_terminal": "ef100mm_f2.8-h0.5-w630/condition-terminal.json",
+      "numerically_verified": true,
+      "plan_hash": "abc08d94f1158567331f4d95858afec22c0bd1f0981328c2a80a679da1cfbb47",
+      "reference_relative_l2": 0.0011910053153251989,
+      "source_sha256": "3e1b59d8ef13a3ac5f57c015cd2be4181282950d9752a5a6731ac1ab18155a5a",
+      "state": "NUMERICALLY_CONVERGED_LOCAL_MODEL"
     }
   ],
   "fields_h": [
