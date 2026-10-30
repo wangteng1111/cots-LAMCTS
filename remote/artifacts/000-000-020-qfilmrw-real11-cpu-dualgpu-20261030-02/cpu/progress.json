@@ -1,9 +1,9 @@
 {
   "condition": "sigma70mm_f2.8-h0-w670",
   "device": "cpu",
-  "elapsed_seconds": 6.477408584207296,
+  "elapsed_seconds": 30.19080067705363,
   "field_h": 0.0,
-  "stage": "pupil_czt",
-  "updated_unix": 1793386653.4886866,
+  "stage": "pitch_reconstruct",
+  "updated_unix": 1793386677.2020679,
   "wavelength_nm": 670.0
 }
