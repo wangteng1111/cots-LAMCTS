@@ -2148,6 +2148,94 @@
       "reference_relative_l2": 0.003120123578059876,
       "source_sha256": "da4b28edb742b435a3f9fc45186205157653614816f8438f5bf2d074ac716fae",
       "state": "NUMERICALLY_CONVERGED_LOCAL_MODEL"
+    },
+    {
+      "actual_device": "cuda:0",
+      "completed_psf_grids": 8,
+      "elapsed_seconds": 58.88771203998476,
+      "flags": {
+        "angular_grid": true,
+        "joint": true,
+        "pitch": true,
+        "pupil": true,
+        "reference_spotcheck": true,
+        "support": true
+      },
+      "id": "rf50mm_f1.8-h0.5-w670",
+      "model_scope_validated": false,
+      "name": "rf50mm_f1.8",
+      "native_terminal": "rf50mm_f1.8-h0.5-w670/condition-terminal.json",
+      "numerically_verified": true,
+      "plan_hash": "3431f70a338efae38787e01c87e59e79650fe5485d32bb8687a8d244f2c46e89",
+      "reference_relative_l2": 0.0034437733152088835,
+      "source_sha256": "da4b28edb742b435a3f9fc45186205157653614816f8438f5bf2d074ac716fae",
+      "state": "NUMERICALLY_CONVERGED_LOCAL_MODEL"
+    },
+    {
+      "actual_device": "cuda:0",
+      "completed_psf_grids": 4,
+      "elapsed_seconds": 7.059099525213242,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "rf50mm_f1.8-h1-w430",
+      "model_scope_validated": false,
+      "name": "rf50mm_f1.8",
+      "native_terminal": "rf50mm_f1.8-h1-w430/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "381a05207c56ea08646369dfd508de3fbf62665a48153a8fcc5dd658e0f43fd2",
+      "reference_relative_l2": 0.006550218935406494,
+      "source_sha256": "da4b28edb742b435a3f9fc45186205157653614816f8438f5bf2d074ac716fae",
+      "state": "REFERENCE_REQUIRED"
+    },
+    {
+      "actual_device": "cuda:0",
+      "completed_psf_grids": 4,
+      "elapsed_seconds": 7.094552865251899,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "rf50mm_f1.8-h1-w470",
+      "model_scope_validated": false,
+      "name": "rf50mm_f1.8",
+      "native_terminal": "rf50mm_f1.8-h1-w470/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "8ceed9203caf8a5d13ace6c53a518e24f803cc23005c5273b8bcd4d2d33e78ff",
+      "reference_relative_l2": 0.006021224814125195,
+      "source_sha256": "da4b28edb742b435a3f9fc45186205157653614816f8438f5bf2d074ac716fae",
+      "state": "REFERENCE_REQUIRED"
+    },
+    {
+      "actual_device": "cuda:0",
+      "completed_psf_grids": 4,
+      "elapsed_seconds": 7.3127649910748005,
+      "flags": {
+        "angular_grid": false,
+        "joint": false,
+        "pitch": false,
+        "pupil": false,
+        "reference_spotcheck": false,
+        "support": false
+      },
+      "id": "rf50mm_f1.8-h1-w510",
+      "model_scope_validated": false,
+      "name": "rf50mm_f1.8",
+      "native_terminal": "rf50mm_f1.8-h1-w510/condition-terminal.json",
+      "numerically_verified": false,
+      "plan_hash": "7631bfd8ce8a8a75fe4d3795e110653efada62c8060aa9ded081f51b62ea4617",
+      "reference_relative_l2": 0.007936713554273911,
+      "source_sha256": "da4b28edb742b435a3f9fc45186205157653614816f8438f5bf2d074ac716fae",
+      "state": "REFERENCE_REQUIRED"
     }
   ],
   "fields_h": [
