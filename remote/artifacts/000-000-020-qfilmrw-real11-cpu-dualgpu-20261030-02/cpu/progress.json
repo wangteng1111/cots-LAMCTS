@@ -1,9 +1,9 @@
 {
   "condition": "ef85mm_f1.8-h0.5-w630",
   "device": "cpu",
-  "elapsed_seconds": 620.0112142870203,
+  "elapsed_seconds": 656.0707791307941,
   "field_h": 0.5,
-  "stage": "joint_reconstruct",
-  "updated_unix": 1793374230.1969814,
+  "stage": "joint_czt",
+  "updated_unix": 1793374266.2565742,
   "wavelength_nm": 630.0
 }
