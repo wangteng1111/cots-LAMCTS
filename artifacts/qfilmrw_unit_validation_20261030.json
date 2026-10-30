@@ -1,0 +1,13 @@
+{
+  "schema": "QfilmRWLocalUnitValidation-v1",
+  "observed_unix": 1793365579.5685108,
+  "torch_version": "2.15.0+cpu",
+  "cuda_available": false,
+  "tests_run": 14,
+  "passed": 13,
+  "failed": 0,
+  "skipped": [
+    "local CUDA unavailable; requires workstation"
+  ],
+  "successful": true
+}
