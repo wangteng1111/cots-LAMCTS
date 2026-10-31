@@ -55,7 +55,7 @@ The input is the canonical sequential prescription JSON used by the project:
 - image_z_mm: sum of sequential surface thicknesses.
 - design_spec: positive efl_target_mm and stop_diameter_mm.
 
-The stop must lie in an explicitly represented air gap. Missing clear apertures or missing glass-index data at requested wavelengths are rejected rather than guessed.
+For legacy prescriptions with stop_z_mm inside an air interval, the parser splits that interval and inserts a zero-power aperture-stop element. The two adjacent air gaps are then independent optimization variables, matching the Lens Factory element sequence (where an element may be a lens or the stop). The stop moves with its sequence position rather than retaining an arbitrary fractional coordinate inside one gap. Missing clear apertures or missing glass-index data at requested wavelengths are rejected rather than guessed.
 
 ## Usage
 
