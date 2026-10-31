@@ -7,8 +7,8 @@
     },
     {
       "device": "cuda:1",
-      "returncode": null
+      "returncode": 0
     }
   ],
-  "updated_unix": 1793418894.1205351
+  "updated_unix": 1793418954.1321237
 }
