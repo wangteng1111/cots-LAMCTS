@@ -1,8 +1,6 @@
 {
-  "angles_completed": 16,
-  "angles_total": 36,
   "device": "cuda:1",
   "name": "sigma70mm_f2.8",
-  "stage": "angular_sweep",
-  "updated_unix": 1793418775.073741
+  "stage": "batch_chief_calibration",
+  "updated_unix": 1793418793.3509576
 }
