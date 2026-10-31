@@ -1,0 +1,31 @@
+{
+  "row": {
+    "actual_device": "cuda:0",
+    "calibration_state": "calibrated",
+    "device": "cuda:0",
+    "field_h": 0.5,
+    "name": "ef100mm_f2.8",
+    "object_angle_rad": 0.10741901508196747,
+    "phase_neighbor_cycles": 0.11916939988829904,
+    "state": "CUDA_BOUNDARY_FIELD_OK",
+    "target_image_height_mm": 10.8,
+    "wavefront": {
+      "active_nodes": 3042,
+      "actual_device": "cuda:0",
+      "aim_converged_samples": 3228,
+      "excluded_stencil_fraction": 0.0,
+      "field_mapping": "explicit_audited_object_angle",
+      "geometric_fill": 0.9423791821561338,
+      "mapping_orientation": 1,
+      "object_angle_rad": 0.10741901508196747,
+      "pupil_n": 64,
+      "ray_aiming_model": "aperture_free_iterations_final_aperture_validation",
+      "reference_ray_blocked": false,
+      "singular_stencil_count": 0,
+      "transport": "uniform stop-plane scalar z-flux; no Fresnel/coating/polarization",
+      "transport_validated": false,
+      "valid_rays": 3042
+    }
+  },
+  "updated_unix": 1793419224.4341087
+}
