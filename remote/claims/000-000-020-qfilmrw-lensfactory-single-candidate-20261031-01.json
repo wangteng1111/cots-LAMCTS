@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.6.1",
+  "claimed_at": 1793419355.948687,
+  "code_commit": "8c1bf2df27e957724b20eb6d66bb5b1028cdb342",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "000-000-020-qfilmrw-lensfactory-single-candidate-20261031-01",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/000-000-020-qfilmrw-lensfactory-single-candidate-20261031-01.json",
+  "request_sha256": "193341fe82206e0a16351af05afec338ae61d93a1b0e9d3168ae161ac7107113",
+  "schema": 1,
+  "state": "claimed"
+}
