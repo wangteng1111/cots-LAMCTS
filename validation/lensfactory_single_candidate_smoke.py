@@ -2,6 +2,7 @@
 import argparse
 import json
 import math
+import os
 from pathlib import Path
 
 from evaluator.lensfactory import LensFactoryConfig, evaluate, inspect_prescription
@@ -13,7 +14,8 @@ def main():
     ap.add_argument("--backend", choices=("c", "g"), default="c")
     ap.add_argument("--gpu-index", type=int, default=0)
     ap.add_argument("--fixture", type=Path, default=Path("validation/fixtures/qfilmrw_real11.json"))
-    ap.add_argument("--output", type=Path, default=Path("artifacts/lensfactory_single_candidate_smoke.json"))
+    default_output = Path(os.environ.get("COTS_JOB_ARTIFACT_DIR", "artifacts")) / "lensfactory_single_candidate_smoke.json"
+    ap.add_argument("--output", type=Path, default=default_output)
     a = ap.parse_args()
 
     data = json.loads(a.fixture.read_text(encoding="utf-8"))
