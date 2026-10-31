@@ -25,8 +25,11 @@ def main():
     assert len(info["gap_indices"]) >= 1
     assert info["stop_element_inserted"] is True
     stop_i = info["stop_surface_index"]
-    assert p["surfaces"][stop_i]["surface_role"] == "aperture_stop"
+    expanded = info["prescription"]
+    assert expanded["surfaces"][stop_i]["surface_role"] == "aperture_stop"
     assert stop_i - 1 in info["gap_indices"] and stop_i in info["gap_indices"]
+    assert abs(sum(s["thickness"] for s in expanded["surfaces"]) - p["image_z_mm"]) < 1e-8
+    assert abs(expanded["stop_z_mm"] - sum(s["thickness"] for s in expanded["surfaces"][:stop_i])) < 1e-8
 
     config = LensFactoryConfig(
         fields=(0.0,), wavelengths_nm=(550.0,), spectral_weights=(1.0,),
