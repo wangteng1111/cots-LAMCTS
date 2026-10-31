@@ -23,7 +23,10 @@ def main():
     p = case["prescription"]
     info = inspect_prescription(p)
     assert len(info["gap_indices"]) >= 1
-    assert 0.0 <= info["stop_fraction"] <= 1.0
+    assert info["stop_element_inserted"] is True
+    stop_i = info["stop_surface_index"]
+    assert p["surfaces"][stop_i]["surface_role"] == "aperture_stop"
+    assert stop_i - 1 in info["gap_indices"] and stop_i in info["gap_indices"]
 
     config = LensFactoryConfig(
         fields=(0.0,), wavelengths_nm=(550.0,), spectral_weights=(1.0,),
