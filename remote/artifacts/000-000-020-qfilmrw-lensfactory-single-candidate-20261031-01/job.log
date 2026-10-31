@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/var/lib/cots-lamcts/jobs/000-000-020-qfilmrw-lensfactory-single-candidate-20261031-01/src/validation/lensfactory_single_candidate_smoke.py", line 8, in <module>
+    from evaluator.lensfactory import LensFactoryConfig, evaluate, inspect_prescription
+ModuleNotFoundError: No module named 'evaluator'
