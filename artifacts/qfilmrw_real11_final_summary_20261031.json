@@ -1,0 +1,1128 @@
+{
+  "schema": "QfilmRWReal11FinalAuditSummary-v1",
+  "source_results_commit": "9bccfe80a40c2d81c5451fe46b781c92e2134008",
+  "source_code_commit": "785bd687cf1117adbc68312ce8ccbb3ff0479c96",
+  "bridge": {
+    "bridge_version": "0.6.1",
+    "control_branch": "main",
+    "cpu_count": 128,
+    "gpu": [
+      {
+        "memory_free_mb": "32110",
+        "memory_total_mb": "32607",
+        "name": "NVIDIA GeForce RTX 5090",
+        "temperature_c": "37",
+        "utilization_pct": "0"
+      },
+      {
+        "memory_free_mb": "32110",
+        "memory_total_mb": "32607",
+        "name": "NVIDIA GeForce RTX 5090",
+        "temperature_c": "40",
+        "utilization_pct": "0"
+      }
+    ],
+    "hostname": "aipss-Rack-Server",
+    "loadavg": [
+      0.03271484375,
+      0.080078125,
+      0.04248046875
+    ],
+    "python": "/usr/bin/python3",
+    "python_version": "3.12.3",
+    "repo": "wangteng1111/cots-LAMCTS",
+    "results_branch": "workstation-results",
+    "running_job": null,
+    "schema": 1,
+    "timestamp": 1793413615.7119234
+  },
+  "adopted": {
+    "bridge_version": "0.6.1",
+    "observed_unix": 1793413632.7292778,
+    "processes": []
+  },
+  "task_terminal": {
+    "args": [
+      "validation/qfilmrw_real11.py",
+      "--orchestrate",
+      "--threads",
+      "4"
+    ],
+    "bridge_version": "0.6.1",
+    "code_commit": "785bd687cf1117adbc68312ce8ccbb3ff0479c96",
+    "entrypoint": "scripts/cuda_venv_exec.py",
+    "env": {
+      "MKL_NUM_THREADS": "4",
+      "OMP_NUM_THREADS": "4",
+      "OPENBLAS_NUM_THREADS": "1"
+    },
+    "finished_at": 1793393694.9423728,
+    "hostname": "aipss-Rack-Server",
+    "immutable_job_id": true,
+    "job_id": "000-000-020-qfilmrw-real11-cpu-dualgpu-20261030-02",
+    "log_tail": "",
+    "memory_gb": 0,
+    "request_sha256": "31136e89e753ccfe8ad88e72be56f79da1ccf725410e9d6576f0a06a2745799f",
+    "retry_policy": "new_job_id_required",
+    "returncode": 0,
+    "schema": 1,
+    "started_at": 1793366584.957524,
+    "state": "finished",
+    "stopped": false,
+    "supervisor_pid": 555723,
+    "timed_out": false,
+    "timeout_sec": 172800,
+    "updated_at": 1793393675.815293
+  },
+  "driver_terminal": {
+    "arithmetic_pairs_verified": 194,
+    "children": [
+      {
+        "lane": "cpu",
+        "returncode": 0
+      },
+      {
+        "lane": "cuda0",
+        "returncode": 0
+      },
+      {
+        "lane": "cuda1",
+        "returncode": 0
+      }
+    ],
+    "finished_unix": 1793393693.989494,
+    "full_conditions_accepted": 0,
+    "status": "completed"
+  },
+  "matrix": {
+    "conditions": 231,
+    "device_condition_executions": 462,
+    "cpu_completed": 231,
+    "gpu_completed": 231,
+    "cpu_psf_grids": 1086,
+    "gpu_psf_grids": 1086,
+    "cpu_numerical": 67,
+    "gpu_numerical": 67,
+    "both_numerical_and_all_grid_parity": 65,
+    "arithmetic_pairs_verified": 194,
+    "arithmetic_pairs_failed": 23,
+    "no_psf_on_either_device": 14,
+    "full_conditions_accepted": 0,
+    "training_eligible": false,
+    "J_task": null
+  },
+  "cpu_states": {
+    "REFERENCE_REQUIRED": 118,
+    "SOURCE_SAMPLING_UNCONVERGED": 30,
+    "NUMERICALLY_CONVERGED_LOCAL_MODEL": 67,
+    "RAY_AIMING_OR_OCCLUSION_UNRESOLVED": 14,
+    "NUMERICAL_OR_MODEL_GATE_NOT_PASSED": 2
+  },
+  "gpu_states": {
+    "REFERENCE_REQUIRED": 119,
+    "SOURCE_SAMPLING_UNCONVERGED": 29,
+    "NUMERICALLY_CONVERGED_LOCAL_MODEL": 67,
+    "NUMERICAL_OR_MODEL_GATE_NOT_PASSED": 2,
+    "RAY_AIMING_OR_OCCLUSION_UNRESOLVED": 14
+  },
+  "per_lens": [
+    {
+      "name": "ef100mm_f2.8",
+      "conditions": 21,
+      "cpuNumerical": 10,
+      "gpuNumerical": 10,
+      "bothNumerical": 10,
+      "arithmeticPassed": 21,
+      "bothNumericalAndArithmetic": 10,
+      "noPSF": 0,
+      "states": {
+        "REFERENCE_REQUIRED": 5,
+        "SOURCE_SAMPLING_UNCONVERGED": 6,
+        "NUMERICALLY_CONVERGED_LOCAL_MODEL": 10
+      },
+      "secondsCPU": 2357.4411265347153,
+      "secondsGPU": 196.68672614265233
+    },
+    {
+      "name": "ef35mm_f2.0",
+      "conditions": 21,
+      "cpuNumerical": 0,
+      "gpuNumerical": 0,
+      "bothNumerical": 0,
+      "arithmeticPassed": 13,
+      "bothNumericalAndArithmetic": 0,
+      "noPSF": 0,
+      "states": {
+        "REFERENCE_REQUIRED": 21
+      },
+      "secondsCPU": 742.1587400278077,
+      "secondsGPU": 214.60341160278767
+    },
+    {
+      "name": "ef40mm_f2.8",
+      "conditions": 21,
+      "cpuNumerical": 11,
+      "gpuNumerical": 11,
+      "bothNumerical": 11,
+      "arithmeticPassed": 14,
+      "bothNumericalAndArithmetic": 11,
+      "noPSF": 0,
+      "states": {
+        "REFERENCE_REQUIRED": 2,
+        "NUMERICALLY_CONVERGED_LOCAL_MODEL": 11,
+        "SOURCE_SAMPLING_UNCONVERGED": 8
+      },
+      "secondsCPU": 1870.302421009168,
+      "secondsGPU": 121.743736484088
+    },
+    {
+      "name": "ef50mm_f1.8",
+      "conditions": 21,
+      "cpuNumerical": 1,
+      "gpuNumerical": 1,
+      "bothNumerical": 1,
+      "arithmeticPassed": 21,
+      "bothNumericalAndArithmetic": 1,
+      "noPSF": 0,
+      "states": {
+        "REFERENCE_REQUIRED": 13,
+        "NUMERICALLY_CONVERGED_LOCAL_MODEL": 1,
+        "SOURCE_SAMPLING_UNCONVERGED": 7
+      },
+      "secondsCPU": 823.8656851770356,
+      "secondsGPU": 129.2261798819527
+    },
+    {
+      "name": "ef85mm_f1.8",
+      "conditions": 21,
+      "cpuNumerical": 2,
+      "gpuNumerical": 2,
+      "bothNumerical": 2,
+      "arithmeticPassed": 21,
+      "bothNumericalAndArithmetic": 2,
+      "noPSF": 0,
+      "states": {
+        "REFERENCE_REQUIRED": 17,
+        "NUMERICALLY_CONVERGED_LOCAL_MODEL": 2,
+        "SOURCE_SAMPLING_UNCONVERGED": 2
+      },
+      "secondsCPU": 2281.8388626882806,
+      "secondsGPU": 355.0341561604291
+    },
+    {
+      "name": "rf16mm_f2.8",
+      "conditions": 21,
+      "cpuNumerical": 2,
+      "gpuNumerical": 2,
+      "bothNumerical": 2,
+      "arithmeticPassed": 7,
+      "bothNumericalAndArithmetic": 0,
+      "noPSF": 7,
+      "states": {
+        "REFERENCE_REQUIRED": 12,
+        "NUMERICALLY_CONVERGED_LOCAL_MODEL": 2,
+        "RAY_AIMING_OR_OCCLUSION_UNRESOLVED": 7
+      },
+      "secondsCPU": 1198.0304940696806,
+      "secondsGPU": 194.38739350438118
+    },
+    {
+      "name": "rf24mm_f1.8",
+      "conditions": 21,
+      "cpuNumerical": 6,
+      "gpuNumerical": 6,
+      "bothNumerical": 6,
+      "arithmeticPassed": 13,
+      "bothNumericalAndArithmetic": 6,
+      "noPSF": 7,
+      "states": {
+        "REFERENCE_REQUIRED": 7,
+        "NUMERICAL_OR_MODEL_GATE_NOT_PASSED": 1,
+        "NUMERICALLY_CONVERGED_LOCAL_MODEL": 6,
+        "RAY_AIMING_OR_OCCLUSION_UNRESOLVED": 7
+      },
+      "secondsCPU": 2879.2066735280678,
+      "secondsGPU": 148.13288362976164
+    },
+    {
+      "name": "rf35mm_f1.8",
+      "conditions": 21,
+      "cpuNumerical": 3,
+      "gpuNumerical": 3,
+      "bothNumerical": 3,
+      "arithmeticPassed": 21,
+      "bothNumericalAndArithmetic": 3,
+      "noPSF": 0,
+      "states": {
+        "REFERENCE_REQUIRED": 18,
+        "NUMERICALLY_CONVERGED_LOCAL_MODEL": 3
+      },
+      "secondsCPU": 2589.903448724188,
+      "secondsGPU": 284.17206124961376
+    },
+    {
+      "name": "rf50mm_f1.8",
+      "conditions": 21,
+      "cpuNumerical": 9,
+      "gpuNumerical": 9,
+      "bothNumerical": 9,
+      "arithmeticPassed": 21,
+      "bothNumericalAndArithmetic": 9,
+      "noPSF": 0,
+      "states": {
+        "REFERENCE_REQUIRED": 10,
+        "SOURCE_SAMPLING_UNCONVERGED": 1,
+        "NUMERICAL_OR_MODEL_GATE_NOT_PASSED": 1,
+        "NUMERICALLY_CONVERGED_LOCAL_MODEL": 9
+      },
+      "secondsCPU": 4285.01661368832,
+      "secondsGPU": 700.3869285201654
+    },
+    {
+      "name": "sigma70mm_f2.8",
+      "conditions": 21,
+      "cpuNumerical": 19,
+      "gpuNumerical": 19,
+      "bothNumerical": 19,
+      "arithmeticPassed": 21,
+      "bothNumericalAndArithmetic": 19,
+      "noPSF": 0,
+      "states": {
+        "SOURCE_SAMPLING_UNCONVERGED": 2,
+        "NUMERICALLY_CONVERGED_LOCAL_MODEL": 19
+      },
+      "secondsCPU": 6029.149479077198,
+      "secondsGPU": 204.99949451629072
+    },
+    {
+      "name": "yongnuo_50mm_f1.8",
+      "conditions": 21,
+      "cpuNumerical": 4,
+      "gpuNumerical": 4,
+      "bothNumerical": 4,
+      "arithmeticPassed": 21,
+      "bothNumericalAndArithmetic": 4,
+      "noPSF": 0,
+      "states": {
+        "SOURCE_SAMPLING_UNCONVERGED": 4,
+        "NUMERICALLY_CONVERGED_LOCAL_MODEL": 4,
+        "REFERENCE_REQUIRED": 13
+      },
+      "secondsCPU": 1761.3341826628894,
+      "secondsGPU": 143.23710950557142
+    }
+  ],
+  "timing": [
+    {
+      "device": "cpu",
+      "start_unix": 1793366590.7646363,
+      "finish_unix": 1793393431.0920665,
+      "duration_seconds": 26840.32743024826
+    },
+    {
+      "device": "cuda:0",
+      "start_unix": 1793366590.7428365,
+      "finish_unix": 1793368264.8885336,
+      "duration_seconds": 1674.1456971168518
+    },
+    {
+      "device": "cuda:1",
+      "start_unix": 1793366590.8422241,
+      "finish_unix": 1793367624.9780006,
+      "duration_seconds": 1034.1357765197754
+    }
+  ],
+  "reference_required_detail": {
+    "count": 118,
+    "pupil_gate_passed": 37,
+    "pupil_gate_not_passed": 81
+  },
+  "failed_arithmetic": [
+    {
+      "id": "ef35mm_f2.0-h0.5-w590",
+      "cpu_state": "REFERENCE_REQUIRED",
+      "gpu_state": "REFERENCE_REQUIRED",
+      "grid_deltas": [
+        {
+          "complex_otf_max_abs": 0.000002517644043671239,
+          "integral_relative": 4.1117900864478446e-7,
+          "passed": false,
+          "projection_relative_max_abs": 0.000017062400650854307
+        },
+        {
+          "complex_otf_max_abs": 1.77288110698405e-12,
+          "integral_relative": 2.4501087823936932e-15,
+          "passed": true,
+          "projection_relative_max_abs": 8.064026922317044e-12
+        },
+        {
+          "complex_otf_max_abs": 1.216243330966339e-12,
+          "integral_relative": 7.589350215459272e-15,
+          "passed": true,
+          "projection_relative_max_abs": 5.50701091787233e-12
+        },
+        {
+          "complex_otf_max_abs": 5.153942140979271e-13,
+          "integral_relative": 3.704668166098143e-15,
+          "passed": true,
+          "projection_relative_max_abs": 2.0442484616876196e-12
+        }
+      ]
+    },
+    {
+      "id": "ef35mm_f2.0-h1-w430",
+      "cpu_state": "REFERENCE_REQUIRED",
+      "gpu_state": "REFERENCE_REQUIRED",
+      "grid_deltas": [
+        {
+          "complex_otf_max_abs": 0.000004435626745791597,
+          "integral_relative": 0.0000033122520968691167,
+          "passed": false,
+          "projection_relative_max_abs": 0.000011119450671814013
+        },
+        {
+          "complex_otf_max_abs": 0.000021069681140357805,
+          "integral_relative": 0.000009901143651768861,
+          "passed": false,
+          "projection_relative_max_abs": 0.000057454653796663146
+        },
+        {
+          "complex_otf_max_abs": 0.000022417885856912197,
+          "integral_relative": 0.000013304305573288034,
+          "passed": false,
+          "projection_relative_max_abs": 0.00005269225811764169
+        },
+        {
+          "complex_otf_max_abs": 0.00002491133763211647,
+          "integral_relative": 0.000003578749392297688,
+          "passed": false,
+          "projection_relative_max_abs": 0.00018213999065111068
+        }
+      ]
+    },
+    {
+      "id": "ef35mm_f2.0-h1-w470",
+      "cpu_state": "REFERENCE_REQUIRED",
+      "gpu_state": "REFERENCE_REQUIRED",
+      "grid_deltas": [
+        {
+          "complex_otf_max_abs": 1.0101043116028478e-11,
+          "integral_relative": 6.228292563278092e-13,
+          "passed": true,
+          "projection_relative_max_abs": 8.66018490901096e-11
+        },
+        {
+          "complex_otf_max_abs": 0.0000342161954450954,
+          "integral_relative": 0.000029483221393999747,
+          "passed": false,
+          "projection_relative_max_abs": 0.00007248871415293025
+        },
+        {
+          "complex_otf_max_abs": 0.00003185405789511092,
+          "integral_relative": 0.0000218771245945687,
+          "passed": false,
+          "projection_relative_max_abs": 0.00011047687222604739
+        },
+        {
+          "complex_otf_max_abs": 0.000039689655373305794,
+          "integral_relative": 0.00002439718984643724,
+          "passed": false,
+          "projection_relative_max_abs": 0.00012682840802517333
+        }
+      ]
+    },
+    {
+      "id": "ef35mm_f2.0-h1-w510",
+      "cpu_state": "REFERENCE_REQUIRED",
+      "gpu_state": "REFERENCE_REQUIRED",
+      "grid_deltas": [
+        {
+          "complex_otf_max_abs": 1.1312926071989135e-11,
+          "integral_relative": 1.7001024794665904e-14,
+          "passed": true,
+          "projection_relative_max_abs": 5.851188522980332e-11
+        },
+        {
+          "complex_otf_max_abs": 5.221204597319813e-12,
+          "integral_relative": 3.2060329618463705e-13,
+          "passed": true,
+          "projection_relative_max_abs": 3.2610787612036887e-11
+        },
+        {
+          "complex_otf_max_abs": 0.000023645328758033304,
+          "integral_relative": 0.0000028480605937043604,
+          "passed": false,
+          "projection_relative_max_abs": 0.00011262898300395709
+        },
+        {
+          "complex_otf_max_abs": 0.00003049734421892552,
+          "integral_relative": 0.000004565575523669343,
+          "passed": false,
+          "projection_relative_max_abs": 0.00021898254207220678
+        }
+      ]
+    },
+    {
+      "id": "ef35mm_f2.0-h1-w550",
+      "cpu_state": "REFERENCE_REQUIRED",
+      "gpu_state": "REFERENCE_REQUIRED",
+      "grid_deltas": [
+        {
+          "complex_otf_max_abs": 0.0000017372391462102547,
+          "integral_relative": 0.0000017260336502788415,
+          "passed": false,
+          "projection_relative_max_abs": 0.0000074684845853339495
+        },
+        {
+          "complex_otf_max_abs": 0.000004604895230720873,
+          "integral_relative": 0.00000592776218891621,
+          "passed": false,
+          "projection_relative_max_abs": 0.00003193836971136008
+        },
+        {
+          "complex_otf_max_abs": 0.000016572939249669783,
+          "integral_relative": 0.00000771646018962655,
+          "passed": false,
+          "projection_relative_max_abs": 0.0001199376057597578
+        },
+        {
+          "complex_otf_max_abs": 0.000026298247894740452,
+          "integral_relative": 0.000012820171784705243,
+          "passed": false,
+          "projection_relative_max_abs": 0.00023408978765041555
+        }
+      ]
+    },
+    {
+      "id": "ef35mm_f2.0-h1-w590",
+      "cpu_state": "REFERENCE_REQUIRED",
+      "gpu_state": "REFERENCE_REQUIRED",
+      "grid_deltas": [
+        {
+          "complex_otf_max_abs": 8.038967214078495e-12,
+          "integral_relative": 4.0159744893936767e-13,
+          "passed": true,
+          "projection_relative_max_abs": 2.974237616179026e-11
+        },
+        {
+          "complex_otf_max_abs": 0.000008933614290995737,
+          "integral_relative": 0.000008941671057031437,
+          "passed": false,
+          "projection_relative_max_abs": 0.000013431903960958713
+        },
+        {
+          "complex_otf_max_abs": 0.000014386744076228894,
+          "integral_relative": 0.000011669251238936947,
+          "passed": false,
+          "projection_relative_max_abs": 0.00006876301609067752
+        },
+        {
+          "complex_otf_max_abs": 0.00001752105493496743,
+          "integral_relative": 8.923690766972886e-7,
+          "passed": false,
+          "projection_relative_max_abs": 0.00010927763073926849
+        }
+      ]
+    },
+    {
+      "id": "ef35mm_f2.0-h1-w630",
+      "cpu_state": "REFERENCE_REQUIRED",
+      "gpu_state": "REFERENCE_REQUIRED",
+      "grid_deltas": [
+        {
+          "complex_otf_max_abs": 0.0000030406621144285787,
+          "integral_relative": 0.0000022252800502741307,
+          "passed": false,
+          "projection_relative_max_abs": 0.000010754094475323175
+        },
+        {
+          "complex_otf_max_abs": 0.00005126853069609453,
+          "integral_relative": 0.00004189760658905771,
+          "passed": false,
+          "projection_relative_max_abs": 0.00008603556937968446
+        },
+        {
+          "complex_otf_max_abs": 0.00002143816828426828,
+          "integral_relative": 0.00001544555677118406,
+          "passed": false,
+          "projection_relative_max_abs": 0.00005039830564303407
+        },
+        {
+          "complex_otf_max_abs": 0.000039386767224666745,
+          "integral_relative": 0.000023364899605304463,
+          "passed": false,
+          "projection_relative_max_abs": 0.00007946038006717233
+        }
+      ]
+    },
+    {
+      "id": "ef35mm_f2.0-h1-w670",
+      "cpu_state": "REFERENCE_REQUIRED",
+      "gpu_state": "REFERENCE_REQUIRED",
+      "grid_deltas": [
+        {
+          "complex_otf_max_abs": 1.0016415187376825e-11,
+          "integral_relative": 7.799391106849574e-13,
+          "passed": true,
+          "projection_relative_max_abs": 4.1241846934170354e-11
+        },
+        {
+          "complex_otf_max_abs": 0.000008735561859984921,
+          "integral_relative": 0.000007119133566852678,
+          "passed": false,
+          "projection_relative_max_abs": 0.00002732377719147805
+        },
+        {
+          "complex_otf_max_abs": 0.000015583580769528704,
+          "integral_relative": 0.0000029223889127781943,
+          "passed": false,
+          "projection_relative_max_abs": 0.00004750671151128263
+        },
+        {
+          "complex_otf_max_abs": 0.00002317151298592219,
+          "integral_relative": 0.00000112978653804697,
+          "passed": false,
+          "projection_relative_max_abs": 0.00009811673538239111
+        }
+      ]
+    },
+    {
+      "id": "ef40mm_f2.8-h1-w430",
+      "cpu_state": "SOURCE_SAMPLING_UNCONVERGED",
+      "gpu_state": "SOURCE_SAMPLING_UNCONVERGED",
+      "grid_deltas": [
+        {
+          "complex_otf_max_abs": 0.0000040508937797984455,
+          "integral_relative": 0.000002013954522507505,
+          "passed": false,
+          "projection_relative_max_abs": 0.000009181234558857532
+        },
+        {
+          "complex_otf_max_abs": 0.000003185702218274929,
+          "integral_relative": 0.000001054156095166539,
+          "passed": false,
+          "projection_relative_max_abs": 0.000007326124129406046
+        },
+        {
+          "complex_otf_max_abs": 0.000009386082985155368,
+          "integral_relative": 0.000002700100265465856,
+          "passed": false,
+          "projection_relative_max_abs": 0.000022136517722766807
+        },
+        {
+          "complex_otf_max_abs": 0.0000059062467731570395,
+          "integral_relative": 5.498743377808083e-7,
+          "passed": false,
+          "projection_relative_max_abs": 0.000018979918428467077
+        }
+      ]
+    },
+    {
+      "id": "ef40mm_f2.8-h1-w470",
+      "cpu_state": "SOURCE_SAMPLING_UNCONVERGED",
+      "gpu_state": "SOURCE_SAMPLING_UNCONVERGED",
+      "grid_deltas": [
+        {
+          "complex_otf_max_abs": 0.000004184629698578014,
+          "integral_relative": 0.0000020686989157348855,
+          "passed": false,
+          "projection_relative_max_abs": 0.000007574776479500082
+        },
+        {
+          "complex_otf_max_abs": 0.000008148349603950502,
+          "integral_relative": 0.000002551751956297114,
+          "passed": false,
+          "projection_relative_max_abs": 0.000009536575177332347
+        },
+        {
+          "complex_otf_max_abs": 0.000004325597047504683,
+          "integral_relative": 3.081221153978764e-7,
+          "passed": false,
+          "projection_relative_max_abs": 0.000010688677095725977
+        },
+        {
+          "complex_otf_max_abs": 0.000002750113961182936,
+          "integral_relative": 2.85603655107167e-7,
+          "passed": false,
+          "projection_relative_max_abs": 0.00001132030134309817
+        }
+      ]
+    },
+    {
+      "id": "ef40mm_f2.8-h1-w510",
+      "cpu_state": "SOURCE_SAMPLING_UNCONVERGED",
+      "gpu_state": "SOURCE_SAMPLING_UNCONVERGED",
+      "grid_deltas": [
+        {
+          "complex_otf_max_abs": 0.000003108348737110061,
+          "integral_relative": 8.833908408459691e-7,
+          "passed": false,
+          "projection_relative_max_abs": 0.000007002686843371866
+        },
+        {
+          "complex_otf_max_abs": 0.000008043926720790386,
+          "integral_relative": 0.0000046800223686025935,
+          "passed": false,
+          "projection_relative_max_abs": 0.000012764723382465951
+        },
+        {
+          "complex_otf_max_abs": 0.00000458627217051423,
+          "integral_relative": 0.0000023626502628580334,
+          "passed": false,
+          "projection_relative_max_abs": 0.000006296271268634939
+        },
+        {
+          "complex_otf_max_abs": 0.0000068781446085279415,
+          "integral_relative": 0.0000034510836807940353,
+          "passed": false,
+          "projection_relative_max_abs": 0.000012070685676652478
+        }
+      ]
+    },
+    {
+      "id": "ef40mm_f2.8-h1-w550",
+      "cpu_state": "SOURCE_SAMPLING_UNCONVERGED",
+      "gpu_state": "SOURCE_SAMPLING_UNCONVERGED",
+      "grid_deltas": [
+        {
+          "complex_otf_max_abs": 0.000002623291718573557,
+          "integral_relative": 0.000001304628330151946,
+          "passed": false,
+          "projection_relative_max_abs": 0.000014033990904536729
+        },
+        {
+          "complex_otf_max_abs": 0.000005528794108484019,
+          "integral_relative": 0.000003526163676090569,
+          "passed": false,
+          "projection_relative_max_abs": 0.000028373276612472874
+        },
+        {
+          "complex_otf_max_abs": 0.000003939903198441887,
+          "integral_relative": 3.331765001055358e-7,
+          "passed": false,
+          "projection_relative_max_abs": 0.000004849247727814141
+        },
+        {
+          "complex_otf_max_abs": 0.0000059865800919636206,
+          "integral_relative": 0.0000028171884094863613,
+          "passed": false,
+          "projection_relative_max_abs": 0.000009323219545941804
+        }
+      ]
+    },
+    {
+      "id": "ef40mm_f2.8-h1-w590",
+      "cpu_state": "SOURCE_SAMPLING_UNCONVERGED",
+      "gpu_state": "SOURCE_SAMPLING_UNCONVERGED",
+      "grid_deltas": [
+        {
+          "complex_otf_max_abs": 0.000002449627356177265,
+          "integral_relative": 0.0000011994356444109984,
+          "passed": false,
+          "projection_relative_max_abs": 0.00000295259055225192
+        },
+        {
+          "complex_otf_max_abs": 0.000005315422671634993,
+          "integral_relative": 0.0000020737628746706643,
+          "passed": false,
+          "projection_relative_max_abs": 0.000010298306541293699
+        },
+        {
+          "complex_otf_max_abs": 0.0000030847772255319455,
+          "integral_relative": 2.5533717550990365e-7,
+          "passed": false,
+          "projection_relative_max_abs": 0.000005804232227121776
+        },
+        {
+          "complex_otf_max_abs": 0.0000035979360852431605,
+          "integral_relative": 3.5987600632450986e-9,
+          "passed": false,
+          "projection_relative_max_abs": 0.000009027631662309769
+        }
+      ]
+    },
+    {
+      "id": "ef40mm_f2.8-h1-w630",
+      "cpu_state": "SOURCE_SAMPLING_UNCONVERGED",
+      "gpu_state": "SOURCE_SAMPLING_UNCONVERGED",
+      "grid_deltas": [
+        {
+          "complex_otf_max_abs": 0.0000027300511299873736,
+          "integral_relative": 9.686064205059803e-7,
+          "passed": false,
+          "projection_relative_max_abs": 0.000005536600309555101
+        },
+        {
+          "complex_otf_max_abs": 0.000003785394793713372,
+          "integral_relative": 7.149675622785352e-9,
+          "passed": false,
+          "projection_relative_max_abs": 0.000010509086857298232
+        },
+        {
+          "complex_otf_max_abs": 0.0000037835390266690097,
+          "integral_relative": 5.19637436028042e-7,
+          "passed": false,
+          "projection_relative_max_abs": 0.000008289115218786351
+        },
+        {
+          "complex_otf_max_abs": 0.0000018723114267995114,
+          "integral_relative": 7.729228516820802e-7,
+          "passed": false,
+          "projection_relative_max_abs": 0.000006141505705897665
+        }
+      ]
+    },
+    {
+      "id": "ef40mm_f2.8-h1-w670",
+      "cpu_state": "SOURCE_SAMPLING_UNCONVERGED",
+      "gpu_state": "SOURCE_SAMPLING_UNCONVERGED",
+      "grid_deltas": [
+        {
+          "complex_otf_max_abs": 0.0000044264800507324355,
+          "integral_relative": 9.648694113407152e-8,
+          "passed": false,
+          "projection_relative_max_abs": 0.000009979870468053419
+        },
+        {
+          "complex_otf_max_abs": 0.000009068950489491659,
+          "integral_relative": 0.000002369562580118835,
+          "passed": false,
+          "projection_relative_max_abs": 0.000022219998560183402
+        },
+        {
+          "complex_otf_max_abs": 0.0000053272648897223715,
+          "integral_relative": 0.000004047543122398861,
+          "passed": false,
+          "projection_relative_max_abs": 0.000009839248781201332
+        },
+        {
+          "complex_otf_max_abs": 0.000007961348540617722,
+          "integral_relative": 0.000004142713484463806,
+          "passed": false,
+          "projection_relative_max_abs": 0.00000884233121242588
+        }
+      ]
+    },
+    {
+      "id": "rf16mm_f2.8-h0.5-w430",
+      "cpu_state": "REFERENCE_REQUIRED",
+      "gpu_state": "REFERENCE_REQUIRED",
+      "grid_deltas": [
+        {
+          "complex_otf_max_abs": 0.00000841026697881027,
+          "integral_relative": 2.970829908297142e-7,
+          "passed": false,
+          "projection_relative_max_abs": 0.00001114943364379034
+        },
+        {
+          "complex_otf_max_abs": 0.000005247135258027305,
+          "integral_relative": 4.336900695747603e-7,
+          "passed": false,
+          "projection_relative_max_abs": 0.00002558013538359587
+        },
+        {
+          "complex_otf_max_abs": 0.0000013973409304831344,
+          "integral_relative": 8.497471212531415e-8,
+          "passed": false,
+          "projection_relative_max_abs": 0.0000030941427477732817
+        },
+        {
+          "complex_otf_max_abs": 9.818788252255079e-13,
+          "integral_relative": 6.8598053344468024e-15,
+          "passed": true,
+          "projection_relative_max_abs": 1.6034625167939268e-12
+        }
+      ]
+    },
+    {
+      "id": "rf16mm_f2.8-h0.5-w470",
+      "cpu_state": "REFERENCE_REQUIRED",
+      "gpu_state": "REFERENCE_REQUIRED",
+      "grid_deltas": [
+        {
+          "complex_otf_max_abs": 0.000014046073882444412,
+          "integral_relative": 8.959917751224904e-7,
+          "passed": false,
+          "projection_relative_max_abs": 0.000028756442980467616
+        },
+        {
+          "complex_otf_max_abs": 0.000007793442554220612,
+          "integral_relative": 0.000001217410672621926,
+          "passed": false,
+          "projection_relative_max_abs": 0.000025250439913895524
+        },
+        {
+          "complex_otf_max_abs": 0.0000022914480092740666,
+          "integral_relative": 1.190412410895771e-7,
+          "passed": false,
+          "projection_relative_max_abs": 0.000008589599255285444
+        },
+        {
+          "complex_otf_max_abs": 0.000001379772419427567,
+          "integral_relative": 6.475215531074203e-8,
+          "passed": false,
+          "projection_relative_max_abs": 0.000004229650469107282
+        }
+      ]
+    },
+    {
+      "id": "rf16mm_f2.8-h0.5-w510",
+      "cpu_state": "REFERENCE_REQUIRED",
+      "gpu_state": "REFERENCE_REQUIRED",
+      "grid_deltas": [
+        {
+          "complex_otf_max_abs": 0.0000061773636762759475,
+          "integral_relative": 0.0000018276903257089698,
+          "passed": false,
+          "projection_relative_max_abs": 0.000011234878104924786
+        },
+        {
+          "complex_otf_max_abs": 0.000010437150147249867,
+          "integral_relative": 9.462462520775818e-7,
+          "passed": false,
+          "projection_relative_max_abs": 0.00002528861286673573
+        },
+        {
+          "complex_otf_max_abs": 0.000001141954380828536,
+          "integral_relative": 1.7163808246236905e-10,
+          "passed": false,
+          "projection_relative_max_abs": 0.000005283476972345102
+        },
+        {
+          "complex_otf_max_abs": 5.801747434824584e-13,
+          "integral_relative": 9.54930726450079e-15,
+          "passed": true,
+          "projection_relative_max_abs": 1.1804238173598825e-12
+        }
+      ]
+    },
+    {
+      "id": "rf16mm_f2.8-h0.5-w550",
+      "cpu_state": "REFERENCE_REQUIRED",
+      "gpu_state": "REFERENCE_REQUIRED",
+      "grid_deltas": [
+        {
+          "complex_otf_max_abs": 0.0000027449350221518683,
+          "integral_relative": 8.97729915447392e-8,
+          "passed": false,
+          "projection_relative_max_abs": 0.000011294397990347756
+        },
+        {
+          "complex_otf_max_abs": 1.0063159393029544e-12,
+          "integral_relative": 9.330130512617944e-15,
+          "passed": true,
+          "projection_relative_max_abs": 5.25691171779308e-12
+        },
+        {
+          "complex_otf_max_abs": 0.0000014859030541243174,
+          "integral_relative": 5.617241681763456e-8,
+          "passed": false,
+          "projection_relative_max_abs": 0.000004676791793052712
+        },
+        {
+          "complex_otf_max_abs": 7.851438771320222e-13,
+          "integral_relative": 7.745233373146334e-15,
+          "passed": true,
+          "projection_relative_max_abs": 1.16420049677988e-12
+        }
+      ]
+    },
+    {
+      "id": "rf16mm_f2.8-h0.5-w590",
+      "cpu_state": "REFERENCE_REQUIRED",
+      "gpu_state": "REFERENCE_REQUIRED",
+      "grid_deltas": [
+        {
+          "complex_otf_max_abs": 2.5746946729215905e-12,
+          "integral_relative": 3.933047337351921e-14,
+          "passed": true,
+          "projection_relative_max_abs": 1.0529039426080991e-11
+        },
+        {
+          "complex_otf_max_abs": 0.000004135554230838996,
+          "integral_relative": 7.812283450384402e-8,
+          "passed": false,
+          "projection_relative_max_abs": 0.000013583618639934414
+        },
+        {
+          "complex_otf_max_abs": 0.0000013869381278996876,
+          "integral_relative": 4.983303108531435e-8,
+          "passed": false,
+          "projection_relative_max_abs": 0.0000043555027775815104
+        },
+        {
+          "complex_otf_max_abs": 0.0000013749640132655914,
+          "integral_relative": 4.697540850703453e-8,
+          "passed": false,
+          "projection_relative_max_abs": 0.000004338212466950431
+        }
+      ]
+    },
+    {
+      "id": "rf16mm_f2.8-h0.5-w630",
+      "cpu_state": "NUMERICALLY_CONVERGED_LOCAL_MODEL",
+      "gpu_state": "NUMERICALLY_CONVERGED_LOCAL_MODEL",
+      "grid_deltas": [
+        {
+          "complex_otf_max_abs": 0.000011684553023645627,
+          "integral_relative": 9.268505074400926e-7,
+          "passed": false,
+          "projection_relative_max_abs": 0.000040074208046756536
+        },
+        {
+          "complex_otf_max_abs": 0.000005106080546368454,
+          "integral_relative": 1.069161014459917e-7,
+          "passed": false,
+          "projection_relative_max_abs": 0.000013628597723112222
+        },
+        {
+          "complex_otf_max_abs": 7.623595385576725e-7,
+          "integral_relative": 3.147365869892435e-10,
+          "passed": false,
+          "projection_relative_max_abs": 0.000002149593001548632
+        },
+        {
+          "complex_otf_max_abs": 0.0000027251446313086658,
+          "integral_relative": 0.0000011817643454421438,
+          "passed": false,
+          "projection_relative_max_abs": 0.000004129698384808962
+        },
+        {
+          "complex_otf_max_abs": 0.000002800135121098695,
+          "integral_relative": 0.0000013066426839460183,
+          "passed": false,
+          "projection_relative_max_abs": 0.0000041280101555729185
+        },
+        {
+          "complex_otf_max_abs": 0.00000272514153927542,
+          "integral_relative": 0.0000011817706260907975,
+          "passed": false,
+          "projection_relative_max_abs": 0.0000041240385959940645
+        },
+        {
+          "complex_otf_max_abs": 3.661959533048702e-7,
+          "integral_relative": 1.7934841214978796e-9,
+          "passed": false,
+          "projection_relative_max_abs": 0.0000012261897737986077
+        }
+      ]
+    },
+    {
+      "id": "rf16mm_f2.8-h0.5-w670",
+      "cpu_state": "NUMERICALLY_CONVERGED_LOCAL_MODEL",
+      "gpu_state": "NUMERICALLY_CONVERGED_LOCAL_MODEL",
+      "grid_deltas": [
+        {
+          "complex_otf_max_abs": 0.0000055842540957768665,
+          "integral_relative": 1.600512768293443e-7,
+          "passed": false,
+          "projection_relative_max_abs": 0.000013906593568356574
+        },
+        {
+          "complex_otf_max_abs": 0.000005335939421205475,
+          "integral_relative": 1.525186960019715e-7,
+          "passed": false,
+          "projection_relative_max_abs": 0.000013509225496942542
+        },
+        {
+          "complex_otf_max_abs": 0.000004162932308545067,
+          "integral_relative": 1.0554887956966485e-7,
+          "passed": false,
+          "projection_relative_max_abs": 0.000013952911153674577
+        },
+        {
+          "complex_otf_max_abs": 4.023750447059216e-13,
+          "integral_relative": 1.0589001461757949e-14,
+          "passed": true,
+          "projection_relative_max_abs": 9.287254314093028e-13
+        },
+        {
+          "complex_otf_max_abs": 6.458898630112407e-7,
+          "integral_relative": 8.348957203233666e-9,
+          "passed": false,
+          "projection_relative_max_abs": 0.000002637748477734065
+        },
+        {
+          "complex_otf_max_abs": 6.691965448205932e-7,
+          "integral_relative": 9.574165900676889e-9,
+          "passed": false,
+          "projection_relative_max_abs": 0.000002641205793594567
+        },
+        {
+          "complex_otf_max_abs": 6.458898432691478e-7,
+          "integral_relative": 8.348539581926345e-9,
+          "passed": false,
+          "projection_relative_max_abs": 0.000002651191509219341
+        },
+        {
+          "complex_otf_max_abs": 3.4184288618227104e-7,
+          "integral_relative": 5.8900543604687524e-9,
+          "passed": false,
+          "projection_relative_max_abs": 0.0000013625718363724442
+        }
+      ]
+    },
+    {
+      "id": "rf24mm_f1.8-h0.5-w430",
+      "cpu_state": "NUMERICAL_OR_MODEL_GATE_NOT_PASSED",
+      "gpu_state": "NUMERICAL_OR_MODEL_GATE_NOT_PASSED",
+      "grid_deltas": [
+        {
+          "complex_otf_max_abs": 1.4767012732607913e-7,
+          "integral_relative": 1.4578805797749109e-7,
+          "passed": false,
+          "projection_relative_max_abs": 0.000009200215153800487
+        },
+        {
+          "complex_otf_max_abs": 1.479676003349223e-7,
+          "integral_relative": 1.460595052273637e-7,
+          "passed": false,
+          "projection_relative_max_abs": 0.000008704906070478686
+        },
+        {
+          "complex_otf_max_abs": 2.080441185834569e-12,
+          "integral_relative": 3.55329666128821e-16,
+          "passed": true,
+          "projection_relative_max_abs": 9.462798466046228e-12
+        },
+        {
+          "complex_otf_max_abs": 1.380574284269983e-12,
+          "integral_relative": 2.4293169429951055e-14,
+          "passed": true,
+          "projection_relative_max_abs": 7.947171652505735e-12
+        },
+        {
+          "complex_otf_max_abs": 1.326621656936999e-12,
+          "integral_relative": 2.4117680939754787e-14,
+          "passed": true,
+          "projection_relative_max_abs": 7.627770091043115e-12
+        },
+        {
+          "complex_otf_max_abs": 1.3133935964726801e-12,
+          "integral_relative": 2.5523590301729844e-14,
+          "passed": true,
+          "projection_relative_max_abs": 7.646060121143179e-12
+        },
+        {
+          "complex_otf_max_abs": 1.3263524286836747e-12,
+          "integral_relative": 2.4295016846537867e-14,
+          "passed": true,
+          "projection_relative_max_abs": 7.894384912444377e-12
+        },
+        {
+          "complex_otf_max_abs": 8.409066888532905e-13,
+          "integral_relative": 1.7725833624954128e-16,
+          "passed": true,
+          "projection_relative_max_abs": 3.693427969503142e-12
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Arithmetic agreement does not establish optical correctness.",
+    "Model-scope validation remains false by design until independently demonstrated; full_conditions_accepted=0 is not evidence that all simulated outputs are wrong.",
+    "The 23 failed pairs exceed the predeclared 1e-6 all-grid arithmetic threshold; no threshold was relaxed.",
+    "Ray aiming vs physical occlusion remains unresolved for RF16/RF24 at h=1.",
+    "Per-condition native files, raw-array SHA256 and complete on-host collector evidence are on workstation-results / workstation disk."
+  ]
+}
