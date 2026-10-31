@@ -133,9 +133,86 @@ def _export_prescription(p):
     return out
 
 
+def _insert_stop_element(p):
+    """Represent the aperture stop as a zero-power element in the sequence.
+
+    Lens Factory defines each c_i as either a catalog lens or the stop, with
+    independent air gaps between adjacent elements. A legacy prescription
+    stores stop_z inside one air thickness; split that thickness into the
+    pre-stop and post-stop gaps and insert an optically inert stop plane.
+    """
+    p = copy.deepcopy(p)
+    surfaces = p["surfaces"]
+    stop_z = float(p["stop_z_mm"])
+    stop_index = p.get("stop_surface_index")
+    inserted = False
+
+    if stop_index is None:
+        role_indices = [i for i, surf in enumerate(surfaces)
+                        if surf.get("surface_role") == "aperture_stop"]
+        if len(role_indices) > 1:
+            raise ValueError("only one aperture-stop element is supported")
+        if role_indices:
+            stop_index = role_indices[0]
+        else:
+            positions = []
+            z = 0.0
+            for surf in surfaces:
+                positions.append(z)
+                z += float(surf["thickness"])
+            candidates = []
+            for i, surf in enumerate(surfaces[:-1]):
+                begin = positions[i]
+                finish = begin + float(surf["thickness"])
+                if (begin - 1e-8 <= stop_z <= finish + 1e-8
+                    and abs(float(surf["n_after"]) - 1.0) <= 1e-5
+                    and float(surf["thickness"]) > 1e-8):
+                    candidates.append((i, begin, finish))
+            if not candidates:
+                raise ValueError("stop must lie in an internal air gap between lens elements")
+            i, begin, finish = min(
+                candidates, key=lambda item: abs(stop_z - 0.5*(item[1]+item[2]))
+            )
+            left_gap = max(0.0, stop_z - begin)
+            right_gap = max(0.0, finish - stop_z)
+            surfaces[i]["thickness"] = left_gap
+            stop_surface = {
+                "radius": math.inf, "thickness": right_gap, "n_after": 1.0,
+                "v_after": 0.0, "conic": 0.0, "asphere": [],
+                "clear_aperture": float(p["design_spec"]["stop_diameter_mm"]),
+                "surface_role": "aperture_stop", "surface_source_index": None,
+            }
+            surfaces.insert(i+1, stop_surface)
+            stop_index = i+1
+            p["stop_z_mm"] = begin + left_gap
+            inserted = True
+
+    stop_index = int(stop_index)
+    if stop_index <= 0 or stop_index >= len(surfaces)-1:
+        raise ValueError("v0.1 requires the aperture stop between lens elements")
+    positions = []
+    z = 0.0
+    for surf in surfaces:
+        positions.append(z)
+        z += float(surf["thickness"])
+    if abs(positions[stop_index] - float(p["stop_z_mm"])) > 1e-6:
+        raise ValueError("explicit stop element position disagrees with stop_z_mm")
+    stop_surface = surfaces[stop_index]
+    if (not math.isinf(float(stop_surface["radius"]))
+        or abs(float(stop_surface["n_after"]) - 1.0) > 1e-5):
+        raise ValueError("aperture-stop element must be a zero-power plane in air")
+    stop_surface["surface_role"] = "aperture_stop"
+    stop_surface["clear_aperture"] = float(p["design_spec"]["stop_diameter_mm"])
+    p["stop_surface_index"] = stop_index
+    p["stop_z_mm"] = positions[stop_index]
+    return p, {"stop_surface_index": stop_index, "stop_element_inserted": inserted}
+
+
 def inspect_prescription(source):
-    """Validate a prescription and report which air gaps may be optimized."""
-    p = _prescription_dict(source)
+    """Validate a prescription and expand its aperture stop into an element."""
+    original = _prescription_dict(source)
+    source_hash = _digest(original)
+    p, stop_info = _insert_stop_element(original)
     surfaces = p["surfaces"]
     positions = []
     z = 0.0
@@ -143,28 +220,15 @@ def inspect_prescription(source):
         positions.append(z)
         z += float(surface["thickness"])
 
-    stop = p["stop_z_mm"]
-    stop_candidates = []
-    for i, surface in enumerate(surfaces):
-        end = positions[i] + float(surface["thickness"])
-        if (positions[i] - 1e-8) <= stop <= (end + 1e-8):
-            if abs(float(surface["n_after"]) - 1.0) <= 1e-5 and surface["thickness"] > 1e-8:
-                stop_candidates.append(i)
-    if not stop_candidates:
-        raise ValueError("the aperture stop must lie in an explicitly represented air gap")
-    stop_gap_index = min(
-        stop_candidates,
-        key=lambda i: abs(stop - (positions[i] + 0.5 * surfaces[i]["thickness"])),
-    )
-    stop_fraction = (stop - positions[stop_gap_index]) / surfaces[stop_gap_index]["thickness"]
-    stop_fraction = min(1.0, max(0.0, stop_fraction))
-
+    # Each air interval between adjacent elements is an independent variable.
+    # The final interval is the BFL and is optimized separately.
     gap_indices = [
         i for i, surface in enumerate(surfaces[:-1])
-        if abs(float(surface["n_after"]) - 1.0) <= 1e-5 and float(surface["thickness"]) > 1e-5
+        if abs(float(surface["n_after"]) - 1.0) <= 1e-5
+        and float(surface["thickness"]) > 1e-5
     ]
-    if stop_gap_index < len(surfaces) - 1 and stop_gap_index not in gap_indices:
-        raise ValueError("stop gap is not an optimizable internal air gap")
+    if not gap_indices:
+        raise ValueError("no positive internal air gaps are available to optimize")
     bfl0 = float(surfaces[-1]["thickness"])
     if bfl0 <= 0:
         raise ValueError("positive initial BFL is required")
@@ -172,9 +236,10 @@ def inspect_prescription(source):
         "prescription": p, "surface_positions_mm": positions,
         "gap_indices": gap_indices,
         "initial_gaps_mm": [float(surfaces[i]["thickness"]) for i in gap_indices],
-        "stop_gap_index": stop_gap_index, "stop_fraction": stop_fraction,
-        "initial_bfl_mm": bfl0, "last_surface_vertex_z_mm": positions[-1],
-        "input_hash": _digest(p),
+        **stop_info,
+        "initial_bfl_mm": bfl0,
+        "last_surface_vertex_z_mm": positions[-1],
+        "input_hash": source_hash, "expanded_prescription_hash": _digest(p),
     }
 
 
@@ -194,11 +259,11 @@ def _apply_variables(info, gaps, bfl):
     z = 0.0
     stop_z = None
     for i, surface in enumerate(p["surfaces"]):
-        if i == info["stop_gap_index"]:
-            stop_z = z + info["stop_fraction"] * float(surface["thickness"])
+        if i == info["stop_surface_index"]:
+            stop_z = z
         z += float(surface["thickness"])
     if stop_z is None:
-        raise ValueError("failed to preserve stop location")
+        raise ValueError("failed to locate explicit stop element")
     p["stop_z_mm"] = stop_z
     p["image_z_mm"] = z
     return p
