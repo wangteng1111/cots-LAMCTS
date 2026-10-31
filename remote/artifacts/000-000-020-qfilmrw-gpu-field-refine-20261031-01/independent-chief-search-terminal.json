@@ -1,0 +1,2746 @@
+{
+  "details": [
+    {
+      "device": "cuda:0",
+      "name": "rf16mm_f2.8",
+      "refinements": [
+        {
+          "angle_rad": 0.9240601553148641,
+          "residual_mm": 7.817497575501875e-05,
+          "target_image_height_mm": 18.2
+        }
+      ],
+      "scan": [
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": 0.0,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.0,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 0.0
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 0.07187717705199932,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.004363323129985824,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.2712657738653266e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 0.14375568271914096,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.008726646259971648,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.2894759537918077e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 0.2156368462954894,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.013089969389957472,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.2304785820815844e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 0.2875219971241448,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.017453292519943295,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.4900870815015566e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 0.3594124641472727,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.02181661564992912,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 7.227834886158746e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 0.4313095769367061,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.026179938779914945,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 5.36134279471856e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 0.5032146654237304,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.030543261909900768,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.6196432972570562e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 0.5751290600016115,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.03490658503988659,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 6.682160012816407e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 0.647054091585761,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.039269908169872414,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.2045090203027797e-09
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 0.7189910913752096,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.04363323129985824,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 4.2624841656291323e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 0.7909413912556674,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.04799655442984406,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 4.601320452435331e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 0.8629063241979009,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.05235987755982989,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 6.912955868854098e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 0.9348872237120325,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.05672320068981571,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 7.438376276036607e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 1.0068854243418761,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.061086523819801536,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.4589833063904933e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 1.0789022615291184,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.06544984694978735,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 5.811332734473318e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 1.150939071761103,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.06981317007977318,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 3.3151106693107835e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 1.2229971930483436,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.07417649320975901,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 2.3579706215359764e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 1.2950779644421673,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.07853981633974483,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.0011629320016979e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 1.3671827270051293,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.08290313946973066,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 7.3969147473818e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 1.4393128228853682,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.08726646259971647,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 3.039954438177617e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 1.5114695959244038,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.0916297857297023,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.3204176646519628e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 1.583654392739706,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.09599310885968812,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 6.528188417620484e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 1.6558685604624868,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.10035643198967395,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 4.9849661842849e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 1.7281134500545985,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.10471975511965978,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 8.286772268384368e-09
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 1.8003904137648417,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.1090830782496456,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 8.137884255354777e-09
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 1.872700807087057,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.11344640137963143,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 9.641061265996953e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 1.9450459875758446,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.11780972450961724,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 8.997976241875705e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 2.0174273163489405,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.12217304763960307,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.2812607697032519e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 2.0898461571484646,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.1265363707695889,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 5.951385112501484e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 2.1623038777621253,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.1308996938995747,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.354887655957704e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 2.234801848450074,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.13526301702956053,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 7.3438387038216035e-09
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 2.3073414444452283,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.13962634015954636,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 7.181593364435912e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 2.379924044551137,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.1439896632895322,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 2.1110712344896143e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 2.452551031224044,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.14835298641951802,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.2799218596093453e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 2.5252237929483865,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.15271630954950383,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.0475128253695232e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 2.597943720722205,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.15707963267948966,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 5.002392933217692e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 2.6707122126178695,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.16144295580947549,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 9.410049017777311e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 2.743530670681271,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.16580627893946132,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.6922932832841298e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 2.816400503405872,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.17016960206944712,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.265849217668702e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 2.889323125423011,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.17453292519943295,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 2.6664155994282623e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 2.9622999562084353,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.17889624832941878,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.2498440837838132e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 3.035332421916901,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.1832595714594046,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 2.6476979608780482e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 3.1084219571468283,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.18762289458939044,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 7.862841977512858e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 3.1815700010089616,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.19198621771937624,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.0845335640663478e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 3.254778003004718,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.19634954084936207,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 7.680735958359719e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 3.328047417382346,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.2007128639793479,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.2328057741317622e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 3.4013797073209853,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.20507618710933373,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.0131021721537792e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 3.4747763460297634,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.20943951023931956,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.1061590110550412e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 3.5482388135350766,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.21380283336930536,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.2342741728676998e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 3.6217685999114244,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.2181661564992912,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.4306366979965901e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 3.695367203469562,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.22252947962927702,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 5.795951718567949e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 3.769036133277253,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.22689280275926285,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.307962718133382e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 3.8427769071828966,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.23125612588924865,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 7.357782072503483e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 3.9165910559897834,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.23561944901923448,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 2.0239743658834186e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 3.9904801190152686,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.2399827721492203,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 7.529393564187359e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 4.064445646231414,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.24434609527920614,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.3105626595066866e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 4.138489202151487,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.24870941840919197,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 2.4818301413986887e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 4.212612360226087,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.2530727415391778,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 9.873278972172272e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 4.286816705968313,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.25743606466916363,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 7.365712428875071e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 4.361103840756819,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.2617993877991494,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.256300592444859e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 4.43547537404317,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.26616271092913524,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 5.7681451837154896e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 4.509932933132449,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.27052603405912107,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 4.426179300853761e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 4.584478155911089,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.2748893571891069,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.3285721067735068e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 4.659112695978775,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.2792526803190927,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.3490421191253432e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 4.73383822099616,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.28361600344907856,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 5.0103495463638126e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 4.808656411831544,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.2879793265790644,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.2031337381923635e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 4.8835689652732714,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.2923426497090502,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.3854832614512702e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 4.958577594276875,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.29670597283903605,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.35757884933696e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 5.03368402839207,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.3010692959690218,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 6.010349551388572e-09
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 5.108890009891561,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.30543261909900765,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 9.967722203185758e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 5.184197301359526,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.3097959422289935,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.512164549133388e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 5.25960767908233,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.3141592653589793,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 9.303491510515016e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 5.335122938871847,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.31852258848896514,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.0274770989582294e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 5.410744893793083,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.32288591161895097,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.075723936594386e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 5.4864753717390755,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.3272492347489368,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 4.42561300939559e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 5.562316223067154,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.33161255787892263,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.2167452489997288e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 5.6382693158068555,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.33597588100890846,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 8.172125065541991e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 5.714336533179828,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.34033920413889424,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 9.956923019416308e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 5.790519782979102,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.34470252726888007,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 9.511066645373489e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 5.866820990216146,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.3490658503988659,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 9.8437117124206e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 5.943242097168135,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.3534291735288517,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.2590643616583463e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 6.019785072812691,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.35779249665883756,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 6.950317255061123e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 6.096451899455074,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.3621558197888234,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.3340284055196605e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 6.173244587162131,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.3665191429188092,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 4.461572933323055e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 6.250165162875787,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.37088246604879505,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 2.0886213869530934e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 6.327215675842202,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.3752457891787809,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.1955143341957353e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 6.404398199932393,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.37960911230876665,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 9.741515571981552e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 6.4817148291656554,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.3839724354387525,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 4.934574238113498e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 6.5591676803886765,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.3883357585687383,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.0835242925111288e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 6.636758895434801,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.39269908169872414,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 2.477459259964121e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 6.714490637823808,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.39706240482870997,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 4.602918823870539e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 6.79236509536418,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.4014257279586958,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 2.0293132729776175e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 6.870384480882272,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.40578905108868163,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 4.582693713395258e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 6.948551033054664,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.41015237421866746,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.3018492706073914e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 7.026867011757922,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.4145156973486533,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 2.361033146769387e-09
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 7.105334707372967,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.4188790204786391,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 4.9208517038934474e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 7.183956432295792,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.4232423436086249,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 8.349497115922588e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 7.262734529272611,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.4276056667386107,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 5.140782688428658e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 7.341671363356495,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.43196898986859655,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 4.909508377615168e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 7.420769331857132,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.4363323129985824,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.0789937698874041e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 7.500030855276048,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.4406956361285682,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 5.626989207918598e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 7.579458385225783,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.44505895925855404,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.1409229205838756e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 7.659054403193569,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.4494222823885399,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.2125933568363223e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 7.7388214192140605,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.4537856055185257,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.304931704915191e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 7.818761968980733,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.45814892864851153,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.3602304904658524e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 7.898878626737384,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.4625122517784973,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.0360424007593849e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 7.979173992090444,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.46687557490848314,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.2701212170895815e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 8.059650699482912,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.47123889803846897,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 3.695806305437088e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 8.140311412716123,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.4756022211684548,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 9.641749842970171e-09
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 8.22115883121528,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.4799655442984406,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.0177620546336641e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 8.30219568961346,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.48432886742842646,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 6.637513227936154e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 8.38342475325283,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.4886921905584123,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.0812583650654517e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 8.464848825197766,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.4930555136883981,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 7.445467198330391e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 8.546470745247955,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.49741883681838395,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.1830927770795086e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 8.628293388349357,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.5017821599483697,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 2.564081946765384e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 8.710319668952774,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.5061454830783556,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.0859411925245865e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 8.792552540648135,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.5105088062083414,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.299759655459809e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 8.874994995652223,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.5148721293383273,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.0245342729753304e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 8.957650067740222,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.519235452468313,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 6.461010215730312e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 9.040520830056863,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.5235987755982988,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.0219618040707701e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 9.123610401452828,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.5279620987282847,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 8.217335456528474e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 9.20692194518897,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.5323254218582705,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 5.509240508239088e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 9.290458666255983,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.5366887449882564,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 6.611753589069735e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 9.374223818530474,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.5410520681182421,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 8.227237890956474e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 9.458220702079373,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.545415391248228,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 7.312122241032171e-09
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 9.54245266796582,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.5497787143782138,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 8.818764807294599e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 9.626923114470644,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.5541420375081997,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.3331610571043484e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 9.711635491995654,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.5585053606381855,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.2710464680765199e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 9.796593305305187,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.5628686837681712,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.2819431627342226e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 9.881800114444253,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.5672320068981571,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.0539804806697362e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 9.967259531448384,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.5715953300281429,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 4.480205140211524e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 10.052975227518449,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.5759586531581288,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.0123720706189943e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 10.138950935128866,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.5803219762881145,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.2314002795221768e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 10.22519044570554,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.5846852994181004,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 2.344274907528643e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 10.311697611281158,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.5890486225480862,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.0562154528770407e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 10.398476351596992,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.5934119456780721,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 7.565911763762756e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 10.485530650229489,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.5977752688080579,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 2.9422428937664336e-09
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 10.572864557479614,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.6021385919380436,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.0324384636106743e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 10.660482197380471,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.6065019150680295,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 3.1928350630039404e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 10.74838776020701,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.6108652381980153,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 3.007819771028153e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 10.836585514339523,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.6152285613280012,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 3.738654275053932e-09
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 10.925079800157363,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.619591884457987,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.3616112326531038e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 11.013875041080516,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.6239552075879728,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.2872220978010773e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 11.102975731469826,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.6283185307179586,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 3.202805709534573e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 11.192386455035813,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.6326818538479445,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.8852758909559952e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 11.282111876989294,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.6370451769779303,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.572376584491053e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 11.372156748265638,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.6414085001079161,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.325606384661171e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 11.462525906248043,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.6457718232379019,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 7.925847977929834e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 11.553224281089715,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.6501351463678877,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 3.702952477979693e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 11.644256897053152,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.6544984694978736,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.1132095067978298e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 11.735628867937422,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.6588617926278594,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.1039839886706204e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 11.8273454068139,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.6632251157578453,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.0694081575834957e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 11.919411830313358,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.667588438887831,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.1299530200403751e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 12.01183354959006,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.6719517620178169,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 7.751782771237004e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 12.10461608182801,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.6763150851478027,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 7.425474901623375e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 12.197765049768307,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.6806784082777885,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.1000439226194203e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 12.291286185498482,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.6850417314077744,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 3.938785742008122e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 12.385185326431166,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.6894050545377601,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.3523140252047483e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 12.479468428875263,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.693768377667746,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 6.012932907140112e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 12.574141553797267,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.6981317007977318,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 4.2755406326477896e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 12.669210882572662,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.7024950239277177,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.196822818627652e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 12.764682715961609,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.7068583470577035,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 9.493463482002085e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 12.860563469580686,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.7112216701876893,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 8.735388012937051e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 12.95685968235783,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.7155849933176751,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 3.935478920524815e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 13.053578011058276,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.7199483164476609,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.267629219370292e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 13.150725244485999,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.7243116395776468,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 6.181728373633177e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 13.248308287425681,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.7286749627076325,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.2935554449811093e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 13.346334173645115,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.7330382858376184,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 3.6510090950514495e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 13.444810069044413,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.7374016089676042,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 6.469140867437773e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 13.543743260884206,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.7417649320975901,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 9.93376478852781e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 13.643141167152661,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.7461282552275759,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 3.4322627850968956e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 13.743011339702992,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.7504915783575618,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 9.758490948641452e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 13.843361452200329,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.7548549014875475,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 7.261196888208588e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 13.944199317117246,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.7592182246175333,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 6.9454344497899e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 14.045532873567264,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.7635815477475192,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.133406968278905e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 14.147370186410225,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.767944870877505,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 9.798644340364149e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 14.249719460770748,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.7723081940074908,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 6.494654725131e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 14.35258902569447,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.7766715171374766,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 9.58349106738865e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 14.455987337176643,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.7810348402674625,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 7.141498281626468e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 14.559922989505843,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.7853981633974483,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 9.558407887411136e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 14.664404696331603,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.7897614865274342,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.221947423246661e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 14.769441303430726,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.7941248096574199,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 4.792610530657271e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 14.875041784729051,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.7984881327874057,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 2.5059806230132153e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 14.981215239918884,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.8028514559173916,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.0935161931513449e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 15.087970891427242,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.8072147790473774,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 4.182568380528551e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 15.195318092383403,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.8115781021773633,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.048174258500012e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 15.303266318655439,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.815941425307349,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 3.7987569534436716e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 15.41182516998619,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.8203047484373349,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 7.303948246217828e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 15.521004370485407,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.8246680715673207,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 4.9702860493994194e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 15.630813771720057,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.8290313946973066,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 6.653884909724184e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 15.741263353369519,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.8333947178272924,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 7.777385313545437e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 15.85236322258628,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.8377580409572782,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 5.120795920632304e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 15.964123615363086,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.842121364087264,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 2.1673833838775636e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 16.076554907395312,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.8464846872172498,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.2439852836720888e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 16.189667608549996,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.8508480103472357,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 9.511933418693275e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 16.303472383621383,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.8552113334772214,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 2.5612626686211115e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 16.41798004334609,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.8595746566072073,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 9.579245663360325e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 16.533201564902413,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.8639379797371931,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 4.5996807251924565e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 16.649148102369054,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.868301302867179,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 7.444666527689492e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 16.76583100268557,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.8726646259971648,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 7.224211540091119e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 16.883261813568705,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.8770279491271507,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 8.752050861815519e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 17.001452321403406,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.8813912722571364,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 9.618309793069102e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 17.120414554649887,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.8857545953871222,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.3129325537875047e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 17.240160835964087,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.8901179185171081,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 7.680441838076035e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 17.360703795770892,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.8944812416470939,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 5.94681806020958e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 17.48205642254452,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.8988445647770797,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 5.880528597401735e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 17.604232106237845,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.9032078879070655,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 4.767771466518411e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 17.727244687013545,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.9075712110370514,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 9.94121553965499e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 17.85110851911304,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.9119345341670372,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 1.1975116187556978e-07
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 17.975838535424398,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.9162978572970231,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 9.512301613057161e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 18.101450335205257,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.9206611804270088,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 6.431276755591853e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 18.2279602524711,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.9250245035569946,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 6.195490964699957e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 18.355385479132874,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.9293878266869805,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 2.6389863627684917e-09
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 18.48374416052567,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.9337511498169663,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 6.407858332835303e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 18.613055528573614,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.9381144729469522,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 5.828391946849365e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 18.74334005151715,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.9424777960769379,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 3.9958701680831155e-08
+        },
+        {
+          "bracket_count": 1,
+          "geometric_chief_height_mm": 18.874619580062202,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.9468411192069238,
+          "physical_chief_valid": true,
+          "stop_residual_mm": 5.250432266734606e-08
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.9512044423369096,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.130530875734296
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.9555677654668955,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.1366525382975
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.9599310885968813,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.142792783095533
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.964294411726867,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.148951637720154
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.9686577348568529,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.15512912806567
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.9730210579868387,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.16132527828234
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.9773843811168246,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.167540110729005
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.9817477042468103,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.173773645924827
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.9861110273767962,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.180025902500258
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.990474350506782,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.186296897147146
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.9948376736367679,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.192586644567882
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 0.9992009967667537,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.198895157423893
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.0035643198967394,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.205222446283088
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.0079276430267252,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.21156851956648
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.0122909661567112,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.217933383493955
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.016654289286697,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.224317042029101
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.0210176124166828,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.230719496823188
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.0253809355466685,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.237140747158207
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.0297442586766545,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.243580789889023
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.0341075818066403,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.25003961938458
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.038470904936626,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.256517227468219
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.0428342280666119,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.26301360335705
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.0471975511965976,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.2695287336004
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.0515608743265836,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.27606260201733
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.0559241974565694,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.282615189633162
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.0602875205865552,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.289186474615178
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.064650843716541,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.295776432207209
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.069014166846527,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.302385034663443
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.0733774899765127,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.309012251181159
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.0777408131064985,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.315658047832539
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.0821041362364843,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.32232238749557
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.08646745936647,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.329005229783924
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.090830782496456,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.335706530975957
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.0951941056264418,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.34242624394264
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.0995574287564276,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.349164318074665
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.1039207518864134,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.355920699208566
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.1082840750163994,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.362695329551748
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.1126473981463851,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.369488147606813
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.117010721276371,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.37629908809475
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.1213740444063567,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.383128081877278
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.1257373675363425,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.389975055878217
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.1301006906663285,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.396839933003989
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.1344640137963142,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.403722632063046
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.1388273369263,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.410623067684735
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.1431906600562858,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.417541150236778
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.1475539831862718,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.424476785742282
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.1519173063162575,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.431429875795619
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.1562806294462433,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.438400317477587
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.160643952576229,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.445388003269587
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.1650072757062149,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.452392820967061
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.1693705988362009,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.459414653592063
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.1737339219661866,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.466453379305047
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.1780972450961724,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.473508871315806
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.1824605682261582,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.480580997793675
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.1868238913561442,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.48766962177707
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.19118721448613,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.494774601082126
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.1955505376161157,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.501895788210712
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.1999138607461015,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.509033030257916
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.2042771838760873,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.516186168818516
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.2086405070060733,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.523355039893193
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.213003830136059,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.530539473793924
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.2173671532660448,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.5377392950489
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.2217304763960306,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.544954322306806
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.2260937995260166,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.552184368240802
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.2304571226560024,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.55942923945178
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.2348204457859882,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.566688736371324
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.239183768915974,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.573962653164365
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.2435470920459597,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.228205095056074
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.2479104151759457,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.074633209621211
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.2522737383059315,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 10.962400825443172
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.2566370614359172,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 10.87040344028084
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.261000384565903,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 10.790978613788749
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.265363707695889,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 10.72031650393161
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.2697270308258748,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 10.656198078393707
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.2740903539558606,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 10.59719810896258
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.2784536770858463,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 10.542337770276015
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.2828170002158321,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 10.49091107391017
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.2871803233458181,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 10.442389391029094
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.2915436464758039,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 10.396365010259567
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.2959069696057897,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 10.352515846953162
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.3002702927357754,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 10.310582361597746
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.3046336158657614,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 10.27035189487772
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.3089969389957472,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 10.231647702117824
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.313360262125733,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 10.194321072810318
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.3177235852557188,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 10.158245537631242
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.3220869083857045,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 10.12331252530413
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.3264502315156905,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 10.089428049654313
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.3308135546456763,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 10.056510143505738
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.335176877775662,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 10.024486843736126
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.3395402009056478,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 9.993294589606293
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.3439035240356338,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 9.962876935442432
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.3482668471656196,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 9.933183505543374
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.3526301702956054,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 9.904169137943304
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.3569934934255912,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 9.875793177008708
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.361356816555577,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 9.848018884489086
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.365720139685563,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 9.820812945700062
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.3700834628155487,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 9.794145052749359
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.3744467859455345,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 9.767987550641145
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.3788101090755203,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 9.742315135067678
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.3831734322055063,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 9.71710459297455
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.387536755335492,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 9.69233457874438
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.3919000784654778,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 9.66798542021467
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.3962634015954636,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 9.644038949821862
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.4006267247254494,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 9.620478357015843
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.4049900478554354,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 9.597288058768065
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.4093533709854211,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 9.574453585541407
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.413716694115407,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 9.55196148052991
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.4180800172453927,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 428.42647009778824
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.4224433403753787,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 13.215515566887404
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.4268066635053644,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 0.0032996231137474297
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.4311699866353502,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 921.6990673118655
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.435533309765336,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 0.0002530842015602275
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.4398966328953218,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 19.11531788289869
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.4442599560253078,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 1059.0385392443093
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.4486232791552935,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 14.089320367242792
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.4529866022852793,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 33.08414118666074
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.457349925415265,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 5.540217152960523
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.461713248545251,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 54.77481004776806
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.4660765716752369,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 1674.3687636405773
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.4704398948052226,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 139.5007258650034
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.4748032179352084,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 24.02304310577935
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.4791665410651942,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 23.474426910261926
+        },
+        {
+          "bracket_count": 0,
+          "geometric_chief_height_mm": null,
+          "method": "first_surface_257_node_bracket_19_bisections_cuda",
+          "object_angle_rad": 1.4835298641951802,
+          "physical_chief_valid": false,
+          "stop_residual_mm": 11.154810435096422
+        }
+      ]
+    }
+  ],
+  "status": "completed"
+}
