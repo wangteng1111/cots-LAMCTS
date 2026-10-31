@@ -17,15 +17,17 @@ from evaluator.qfilmrw.contracts import digest
 from evaluator.qfilmrw import solve_condition
 
 torch.set_num_threads(2)
+DEV="cuda:0"
 
+@unittest.skipUnless(torch.cuda.is_available(),"CUDA required for optical tests; no CPU solver fallback")
 class RWTests(unittest.TestCase):
     def test_singular_line_cannot_hide_mapping_fold(self):
-        u=torch.linspace(-1,1,65,dtype=torch.float64);v,u=torch.meshgrid(u,u,indexing='ij')
+        u=torch.linspace(-1,1,65,dtype=torch.float64,device=DEV);v,u=torch.meshgrid(u,u,indexing='ij')
         _,_,_,fold=mapping_derivatives(u*u,v,torch.ones_like(u,dtype=torch.bool),2/64)
         self.assertTrue(fold)
 
     def test_inverse_map_preserves_constant_angular_density(self):
-        n=64;du=2/n;u=(torch.arange(n,dtype=torch.float64)+.5)*du-1
+        n=64;du=2/n;u=(torch.arange(n,dtype=torch.float64,device=DEV)+.5)*du-1
         v,u=torch.meshgrid(u,u,indexing='ij');qx=10*u+v;qy=2*u+9*v
         lam=.00055;L=10.;r=L/torch.sqrt(1-lam**2*(qx*qx+qy*qy))
         x=lam*qx*r;y=lam*qy*r
@@ -42,23 +44,23 @@ class RWTests(unittest.TestCase):
         self.assertEqual(result['state'],'RESOURCE_LIMIT');transform.assert_not_called()
 
     def test_bluestein_matches_explicit_nontrivial_origins(self):
-        torch.manual_seed(9);x=torch.randn(3,17,dtype=torch.complex128)
+        torch.manual_seed(9);x=torch.randn(3,17,dtype=torch.complex128,device=DEV)
         q0,dq,x0,dx,m=-3.7,.17,-.23,.011,23
-        q=q0+torch.arange(17,dtype=torch.float64)*dq;t=x0+torch.arange(m,dtype=torch.float64)*dx
+        q=q0+torch.arange(17,dtype=torch.float64,device=DEV)*dq;t=x0+torch.arange(m,dtype=torch.float64,device=DEV)*dx
         direct=x@torch.exp(-2j*torch.pi*q[:,None]*t[None,:])
         self.assertLess(float((czt_axis(x,m,q0,dq,x0,dx)-direct).abs().max()),1e-12)
 
     def test_two_axis_mft_centered_coordinates(self):
-        torch.manual_seed(2);g=torch.randn(13,13,dtype=torch.complex128);q0=(-.8,-.6);dq=(.12,.14);m=16;pitch=.25
-        x=(torch.arange(m,dtype=torch.float64)-(m-1)/2)*pitch*.001
-        qx=q0[0]+torch.arange(13,dtype=torch.float64)*dq[0];qy=q0[1]+torch.arange(13,dtype=torch.float64)*dq[1]
+        torch.manual_seed(2);g=torch.randn(13,13,dtype=torch.complex128,device=DEV);q0=(-.8,-.6);dq=(.12,.14);m=16;pitch=.25
+        x=(torch.arange(m,dtype=torch.float64,device=DEV)-(m-1)/2)*pitch*.001
+        qx=q0[0]+torch.arange(13,dtype=torch.float64,device=DEV)*dq[0];qy=q0[1]+torch.arange(13,dtype=torch.float64,device=DEV)*dq[1]
         direct=torch.exp(-2j*torch.pi*x[:,None]*qy)@g@torch.exp(-2j*torch.pi*qx[:,None]*x)
         got=fixed_sampling_field(g,q0,dq,m,pitch)
         self.assertLess(float((got-direct).abs().max()),1e-11)
 
     def test_airy_fixed_quarter_micron(self):
         n=384;dq=1.1;q0=-(n-1)*dq/2
-        q=q0+torch.arange(n,dtype=torch.float64)*dq;yy,xx=torch.meshgrid(q,q,indexing='ij')
+        q=q0+torch.arange(n,dtype=torch.float64,device=DEV)*dq;yy,xx=torch.meshgrid(q,q,indexing='ij')
         lam=.00055;fno=5.;cutoff=1/(lam*fno)
         pupil=((xx*xx+yy*yy)<(cutoff/2)**2).to(torch.complex128)*dq*dq
         field=fixed_sampling_field(pupil,(q0,q0),(dq,dq),2560,.25)
@@ -70,12 +72,12 @@ class RWTests(unittest.TestCase):
         self.assertAlmostEqual(obs['support_mm'],.64)
 
     def test_autocorrelation_dc_and_outside_cutoff(self):
-        g=torch.ones((32,32),dtype=torch.complex128)
+        g=torch.ones((32,32),dtype=torch.complex128,device=DEV)
         out=pupil_autocorrelation({'grid':g,'dq':(2.,2.)},(0.,16.,80.))
         np.testing.assert_allclose(out,[[1,1],[.75,.75],[0,0]],atol=1e-12)
 
     def test_autocorrelation_retains_signed_phase(self):
-        q=torch.arange(32,dtype=torch.float64)*2.;shift=.003
+        q=torch.arange(32,dtype=torch.float64,device=DEV)*2.;shift=.003
         g=torch.exp(2j*torch.pi*q[None,:]*shift).expand(32,-1)
         out=pupil_autocorrelation({'grid':g,'dq':(2.,2.)},(16.,))
         self.assertLess(abs(out[0,0]-.75*np.exp(-2j*np.pi*16*shift)),1e-12)
@@ -101,11 +103,11 @@ class RWTests(unittest.TestCase):
             result=collect(Path(directory))
         self.assertEqual(result['condition_count'],231)
         self.assertEqual(result['full_conditions_accepted'],0)
-        self.assertEqual(result['arithmetic_pairs_verified'],0)
+        self.assertEqual(result['numerical_conditions_verified'],0)
 
     def test_verifier_rejects_tampered_projection(self):
         task=Task(support_mm=.004);p={'task':task.__dict__,'policy':Policy().__dict__}
-        obs=windowed_observables(torch.ones((16,16),dtype=torch.complex128),.25,task.frequencies)
+        obs=windowed_observables(torch.ones((16,16),dtype=torch.complex128,device=DEV),.25,task.frequencies)
         obs['axis']='pupil'
         from evaluator.qfilm04_io import json_safe
         record=json_safe({'plan':p,'plan_hash':digest(p),'runs':[obs],'comparisons':[],'training_eligible':False,'J_task':None})
@@ -114,11 +116,27 @@ class RWTests(unittest.TestCase):
         with self.assertRaises(ValueError):check_condition(record)
 
     @unittest.skipUnless(torch.cuda.is_available(),'local CUDA unavailable; requires workstation')
-    def test_actual_gpu_czt_parity(self):
-        torch.manual_seed(8);g=torch.randn(31,31,dtype=torch.complex128)
-        cpu=fixed_sampling_field(g,(-20.,-19.),(.7,.8),48,.25)
+    def test_actual_cross_gpu_czt_parity(self):
+        torch.manual_seed(8);g=torch.randn(31,31,dtype=torch.complex128,device=DEV)
+        reference=fixed_sampling_field(g,(-20.,-19.),(.7,.8),48,.25)
         for i in range(torch.cuda.device_count()):
-            gpu=fixed_sampling_field(g.to(f'cuda:{i}'),(-20.,-19.),(.7,.8),48,.25).cpu()
-            self.assertLess(float((cpu-gpu).abs().max())/float(cpu.abs().max()),1e-11)
+            gpu=fixed_sampling_field(g.to(f'cuda:{i}'),(-20.,-19.),(.7,.8),48,.25).to(DEV)
+            self.assertLess(float((reference-gpu).abs().max())/float(reference.abs().max()),1e-11)
+
+class GPUOnlyPolicyTests(unittest.TestCase):
+    def test_cpu_solver_rejected_before_any_trace(self):
+        with patch('evaluator.qfilmrw.solver.trace_lens') as trace:
+            with self.assertRaises(ValueError):solve_condition({},550.,0.,device='cpu')
+            trace.assert_not_called()
+
+    def test_cpu_public_backend_retired(self):
+        from evaluator.qfilmrw import evaluate
+        with self.assertRaises(ValueError):evaluate({},backend='c')
+
+    def test_domain_metadata_covers_same_11_sources(self):
+        d=json.loads((ROOT/'validation/fixtures/qfilmrw_field_domains.json').read_text())
+        self.assertEqual({x['name']:x['source_sha256'] for x in d['sources']},{x['name']:x['source_sha256'] for x in cases()})
+        rf16=next(x for x in d['sources'] if x['name']=='rf16mm_f2.8')
+        self.assertLess(rf16['source_r_sensor_mm'],math.hypot(36,24)/2)
 
 if __name__=='__main__':unittest.main(verbosity=2)

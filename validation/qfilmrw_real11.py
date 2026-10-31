@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """11 pinned product-named prescriptions, 3 fields x 7 wavelengths.
 
-A driver runs a CPU reference lane and two independent GPU lanes. Network
+The active driver runs two independent GPU lanes; the CPU solver is retired. Network
 publication is handled by Bridge, never inside the solver. Per-condition
 terminals and immutable summaries distinguish execution from acceptance.
 """
@@ -91,13 +91,17 @@ def check_condition(value):
 
 def worker(a):
     torch.set_num_threads(a.threads)
-    if a.device.startswith('cuda') and not torch.cuda.is_available():raise RuntimeError('requested GPU unavailable')
+    from evaluator.qfilmrw.field_audit import cuda_device
+    cuda_device(a.device)
     selected=[c for c in cases() if c['name'] in a.names]
     out=a.output_dir;out.mkdir(parents=True,exist_ok=True)
     pupils=tuple(a.pupils) if a.pupils else ((64,128) if a.mode=='survey' else (128,256,512,1024))
     policy=Policy(pupils=pupils,angular_grid_n=a.grid_n,max_seconds=a.condition_seconds,max_live_elements=a.max_live_elements)
     task=Task();task.validate();policy.validate()
-    report={'schema':'QfilmRWMatrix-v1','version':VERSION,'status':'running','actual_device':a.device,
+    audit=json.loads(a.field_contract.read_text()) if a.field_contract else None
+    if any(h!=0 for h in a.fields) and audit is None:raise RuntimeError('GPU off-axis verification requires an audited field contract')
+    domains={c['name']:c for c in audit['cases']} if audit else {}
+    report={'schema':'QfilmRWGPUOnlyMatrix-v2','version':VERSION,'status':'running','actual_device':a.device,'execution_policy':'GPU_ONLY_NO_CPU_REFERENCE',
         'code_commit':os.environ.get('COTS_GIT_COMMIT'),'fixture_sha256':FIXTURE_SHA,'source_commit':'911bb9d334fce7e20a4407c4506ac683b52ff246',
         'fields_h':a.fields,'wavelengths_nm':a.waves,'task_hash':task.signature,'policy':policy.__dict__,
         'mode':a.mode,'started_unix':time.time(),'conditions':[],'J_task':None,'training_eligible':False}
@@ -119,10 +123,21 @@ def worker(a):
                     with file.open('rb') as stream:
                         for chunk in iter(lambda:stream.read(1024*1024),b''):sha.update(chunk)
                     return {'file':file.name,'sha256':sha.hexdigest(),'shape':list(image.shape),'dtype':str(image.dtype),**metadata}
-                value=solve_condition(case['prescription'],w,h,task,policy,a.device,progress,save_raw if a.save_raw else None,a.mode)
+                domain=domains.get(case['name'])
+                calibrated=next((f for f in domain['native_fields'] if f['field_h']==h),None) if domain else None
+                if domain and domain['source_sha256']!=case['source_sha256']:raise RuntimeError('audited field contract source mismatch')
+                if h!=0 and (calibrated is None or calibrated['state']!='calibrated'):
+                    value={'schema':'QfilmRWCondition-v2','state':'FIELD_CALIBRATION_UNRESOLVED','runs':[],'J_task':None,
+                      'numerically_verified':False,'model_scope_validated':False,'training_eligible':False,
+                      'actual_device':a.device,'plan_hash':None,'elapsed_seconds':0.,'flags':{k:False for k in ('pupil','angular_grid','support','pitch','joint','reference_spotcheck')}}
+                else:
+                    theta=calibrated['object_angle_rad'] if calibrated else 0.
+                    contract=None if calibrated is None else {'scope':'native_prescription_image_circle','target_image_height_mm':calibrated['target_image_height_mm'],
+                        'source_r_sensor_mm':domain['metadata']['source_r_sensor_mm'],'calibration_angle_rad':theta,'source_sha256':case['source_sha256']}
+                    value=solve_condition(case['prescription'],w,h,task,policy,a.device,progress,save_raw if a.save_raw else None,a.mode,object_angle_rad=theta,field_contract=contract)
                 value.update(id=ident,name=case['name'],source_sha256=case['source_sha256'],code_commit=os.environ.get('COTS_GIT_COMMIT'),finished_unix=time.time())
                 atomic_json(folder/'condition-terminal.json',value,immutable=True)
-                check_condition(json.loads((folder/'condition-terminal.json').read_text()))
+                if value['runs']:check_condition(json.loads((folder/'condition-terminal.json').read_text()))
                 row={k:value[k] for k in ('id','name','state','actual_device','source_sha256','plan_hash','elapsed_seconds','numerically_verified','model_scope_validated')}
                 row.update(completed_psf_grids=len(value['runs']),native_terminal=f'{ident}/condition-terminal.json',flags=value['flags'],
                     reference_relative_l2=value.get('reference_probe',{}).get('relative_complex_field_l2'))
@@ -137,7 +152,7 @@ def worker(a):
     atomic_json(out/'matrix-terminal.json',report,immutable=True)
     return 0 if report['status']=='completed' else 2
 
-def collect(root):
+def collect_legacy_cpu_gpu(root):
     """Compare actual CPU/GPU executions, retaining missing/error states."""
     rows=[];cpu_root=root/'cpu';gpu_roots=[root/'cuda0',root/'cuda1']
     for case in cases():
@@ -184,10 +199,56 @@ def collect(root):
         'training_eligible':False,'J_task':None,'all_11_usable':False}
     atomic_json(root/'usability-terminal.json',d,immutable=True);return d
 
+def collect(root):
+    from evaluator.qfilmrw.field_audit import cuda_device
+    rows=[]
+    for case in cases():
+        for h in (0.,.5,1.):
+            for wave in WAVES:
+                ident=f"{case['name']}-h{h:g}-w{wave:g}"
+                paths=[p/ident/'condition-terminal.json' for p in (root/'cuda0',root/'cuda1')]
+                found=[p for p in paths if p.exists()]
+                row={'id':ident,'state':'MISSING','numerical_verified':False,'full_condition_accepted':False};rows.append(row)
+                if not found:continue
+                try:
+                    if len(found)!=1:raise ValueError('duplicate primary GPU result')
+                    file=found[0];d=json.loads(file.read_text())
+                    if not d['actual_device'].startswith('cuda:'):raise ValueError('CPU record rejected by GPU-only collector')
+                    if d['source_sha256']!=case['source_sha256']:raise ValueError('source mismatch')
+                    if d['runs']:
+                        check_condition(d)
+                        plan=d['plan']
+                        if plan['version']!=VERSION or plan['implementation_signature']!=IMPLEMENTATION_SIGNATURE:raise ValueError('GPU kernel identity mismatch')
+                        if digest(plan['task'])!=digest(Task().__dict__) or digest(plan['policy'])!=digest(Policy().__dict__):raise ValueError('unexpected or relaxed GPU numerical policy')
+                        if plan['prescription_hash']!=digest(case['prescription']) or plan['wavelength_nm']!=wave or plan['field_h']!=h:raise ValueError('GPU optical condition mismatch')
+                        if plan.get('object_angle_rad') is None:raise ValueError('missing audited field angle')
+                        if h and (not plan.get('field_contract') or plan['field_contract']['source_sha256']!=case['source_sha256']):raise ValueError('missing source-bound field contract')
+                    for run in d['runs']:
+                        if 'raw_artifact' not in run:continue
+                        record=run['raw_artifact'];path=file.parent/record['file'];sha=hashlib.sha256()
+                        with path.open('rb') as stream:
+                            for chunk in iter(lambda:stream.read(1024*1024),b''):sha.update(chunk)
+                        if sha.hexdigest()!=record['sha256']:raise ValueError('raw PSF checksum mismatch')
+                        image=np.load(path,mmap_mode='r',allow_pickle=False)
+                        tensor=torch.as_tensor(np.array(image,copy=True),device=cuda_device(d['actual_device']))
+                        for axis,key in ((0,'raw_projection_x'),(1,'raw_projection_y')):
+                            expected=torch.as_tensor(run[key],device=tensor.device,dtype=torch.float64)
+                            if not bool(torch.allclose(tensor.sum(axis),expected,rtol=1e-10,atol=1e-14)):raise ValueError('GPU raw PSF projection mismatch')
+                        del tensor
+                    row.update(state=d['state'],device=d['actual_device'],numerical_verified=d['numerically_verified'],
+                        full_condition_accepted=bool(d['numerically_verified'] and d['model_scope_validated']))
+                except Exception as exc:row.update(state='VERIFICATION_FAILED',error=repr(exc))
+    data={'schema':'QfilmRWGPUOnlyVerification-v2','status':'completed','observed_unix':time.time(),'execution_policy':'GPU_ONLY_NO_CPU_REFERENCE',
+        'condition_count':len(rows),'numerical_conditions_verified':sum(r['numerical_verified'] for r in rows),
+        'full_conditions_accepted':sum(r['full_condition_accepted'] for r in rows),'conditions':rows,'J_task':None,'training_eligible':False,
+        'cpu_gpu_parity_required':False,'cross_gpu_repeatability':'not part of this primary matrix'}
+    atomic_json(root/'usability-terminal.json',data,immutable=True);return data
+
 def orchestrate(a):
     require_handover()
     if torch.cuda.device_count()<2:raise RuntimeError('two actual CUDA devices required for this benchmark')
-    lanes=[('cpu','cpu',list(CAMERA_SAMPLES)),('cuda0','cuda:0',list(CAMERA_SAMPLES[::2])),('cuda1','cuda:1',list(CAMERA_SAMPLES[1::2]))]
+    if a.field_contract is None:raise RuntimeError('audited field contract required; run qfilmrw_field_audit_gpu first')
+    lanes=[('cuda0','cuda:0',list(CAMERA_SAMPLES[::2])),('cuda1','cuda:1',list(CAMERA_SAMPLES[1::2]))]
     a.output_dir.mkdir(parents=True,exist_ok=True);children=[]
     tests=subprocess.run([sys.executable,str(ROOT/'validation/qfilmrw_tests.py')],capture_output=True,text=True,timeout=300)
     (a.output_dir/'qfilmrw-tests.log').write_text(tests.stdout+tests.stderr)
@@ -197,7 +258,7 @@ def orchestrate(a):
     try:
         for label,device,names in lanes:
             folder=a.output_dir/label;folder.mkdir(exist_ok=True)
-            cmd=[sys.executable,'-u',str(Path(__file__).resolve()),'--device',device,'--mode','verify','--output-dir',str(folder),'--names',*names,'--grid-n',str(a.grid_n),'--threads',str(a.threads),'--condition-seconds',str(a.condition_seconds),'--save-raw']
+            cmd=[sys.executable,'-u',str(Path(__file__).resolve()),'--device',device,'--mode','verify','--output-dir',str(folder),'--names',*names,'--grid-n',str(a.grid_n),'--threads',str(a.threads),'--condition-seconds',str(a.condition_seconds),'--save-raw','--field-contract',str(a.field_contract)]
             log=(a.output_dir/(label+'.log')).open('w');p=subprocess.Popen(cmd,stdout=log,stderr=subprocess.STDOUT)
             children.append((label,p,log))
         while any(p.poll() is None for _,p,_ in children):
@@ -207,7 +268,7 @@ def orchestrate(a):
         d=collect(a.output_dir)
         atomic_json(a.output_dir/'driver-terminal.json',{'status':'completed' if all(p.returncode==0 for _,p,_ in children) else 'completed_with_errors',
             'finished_unix':time.time(),'children':[{'lane':label,'returncode':p.returncode} for label,p,_ in children],
-            'arithmetic_pairs_verified':d['arithmetic_pairs_verified'],'full_conditions_accepted':d['full_conditions_accepted']},immutable=True)
+            'execution_policy':'GPU_ONLY_NO_CPU_REFERENCE','numerical_conditions_verified':d['numerical_conditions_verified'],'full_conditions_accepted':d['full_conditions_accepted']},immutable=True)
         return 0 if all(p.returncode==0 for _,p,_ in children) else 2
     finally:
         for _,p,log in children:
@@ -220,11 +281,12 @@ def orchestrate(a):
 def main():
     ap=argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--orchestrate',action='store_true');ap.add_argument('--collect',action='store_true')
-    ap.add_argument('--device',default='cpu');ap.add_argument('--names',choices=CAMERA_SAMPLES,nargs='+',default=list(CAMERA_SAMPLES))
+    ap.add_argument('--device',choices=('cuda:0','cuda:1'),default='cuda:0');ap.add_argument('--names',choices=CAMERA_SAMPLES,nargs='+',default=list(CAMERA_SAMPLES))
     ap.add_argument('--mode',choices=('survey','verify'),default='verify')
     ap.add_argument('--output-dir',type=Path,default=Path(os.environ.get('COTS_JOB_ARTIFACT_DIR','artifacts/qfilmrw_local')))
     ap.add_argument('--fields',nargs='+',type=float,default=[0.,.5,1.]);ap.add_argument('--waves',nargs='+',type=float,default=list(WAVES))
     ap.add_argument('--pupils',nargs='+',type=int);ap.add_argument('--grid-n',type=int,default=1024);ap.add_argument('--threads',type=int,default=4)
+    ap.add_argument('--field-contract',type=Path,help='completed GPU field-audit JSON or its exported native field contract')
     ap.add_argument('--condition-seconds',type=float,default=7200.);ap.add_argument('--save-raw',action='store_true')
     ap.add_argument('--max-live-elements',type=int,default=300_000_000)
     a=ap.parse_args()

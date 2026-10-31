@@ -2,7 +2,7 @@
 from dataclasses import dataclass, asdict
 import hashlib,json,math
 
-VERSION='QfilmRW-0.1.0'
+VERSION='QfilmRW-0.2.0-gpu-only'
 FREQS=(5.,10.,15.,20.,30.,40.,50.,60.,70.,80.)
 WAVES=(430.,470.,510.,550.,590.,630.,670.)
 WEIGHTS=(.075,.125,.16,.28,.16,.125,.075)

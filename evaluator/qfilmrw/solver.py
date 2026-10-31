@@ -10,7 +10,7 @@ from .fourier import reconstruct_pupil,fixed_sampling_field,windowed_observables
 
 _PACKAGE=Path(__file__).parent
 IMPLEMENTATION_SIGNATURE=hashlib.sha256(b''.join(file.read_bytes() for file in
-    [*(_PACKAGE/name for name in ('contracts.py','rays.py','fourier.py','solver.py')),
+    [*(_PACKAGE/name for name in ('contracts.py','rays.py','fourier.py','solver.py','field_audit.py')),
      *(_PACKAGE.parent/name for name in ('qfilm02.py','qfilm04_wavefront.py','optical_primitives.py'))])).hexdigest()
 
 
@@ -20,12 +20,14 @@ def discrepancy(a,b):
             'kind':'convergence_estimate'}
 
 @torch.inference_mode()
-def solve_condition(p,wavelength_nm,field_h,task=Task(),policy=Policy(),device='cpu',progress=None,save_raw=None,mode='verify'):
+def solve_condition(p,wavelength_nm,field_h,task=Task(),policy=Policy(),device='cuda:0',progress=None,save_raw=None,mode='verify',object_angle_rad=None,field_contract=None):
+    from .field_audit import cuda_device
+    device=str(cuda_device(device))
     task.validate();policy.validate()
     if mode not in ('survey','verify'):raise ValueError('invalid solve mode')
     start=time.monotonic();center=None;last=None;state=None;pupil=None;field=None
     plan={'version':VERSION,'task':asdict(task),'policy':asdict(policy),'wavelength_nm':wavelength_nm,
-          'field_h':field_h,'mode':mode,'prescription_hash':digest(p),'implementation_signature':IMPLEMENTATION_SIGNATURE}
+          'field_h':field_h,'mode':mode,'prescription_hash':digest(p),'implementation_signature':IMPLEMENTATION_SIGNATURE,'object_angle_rad':object_angle_rad,'field_contract':field_contract}
     report={'schema':'QfilmRWCondition-v1','version':VERSION,'plan':plan,'plan_hash':digest(plan),
         'actual_device':str(torch.device(device)),'state':'running','runs':[],'comparisons':[],
         'J_task':None,'numerically_verified':False,'model_scope_validated':False,'empirically_calibrated':False,
@@ -62,7 +64,7 @@ def solve_condition(p,wavelength_nm,field_h,task=Task(),policy=Policy(),device='
         report['comparisons'].append(d);return d['passed']
     try:
         for n in policy.pupils:
-            emit('trace_'+str(n));t0=time.monotonic();state=trace_lens(p,wavelength_nm,field_h,n,device,center,task.frame_mm)
+            emit('trace_'+str(n));t0=time.monotonic();state=trace_lens(p,wavelength_nm,field_h,n,device,center,task.frame_mm,object_angle_rad)
             center=state.center_mm;row=run(state,policy.angular_grid_n,task,'pupil')
             row['profile']['trace_seconds']=time.monotonic()-t0-sum(row['profile'].values())
             if last is not None:
@@ -91,7 +93,7 @@ def solve_condition(p,wavelength_nm,field_h,task=Task(),policy=Policy(),device='
             pitch=run(state,policy.angular_grid_n*2,pitch_task,'pitch')
             report['flags']['pitch']=compare(refined,pitch,'pitch',policy.pitch_otf_tolerance)
             next_n=state.x.shape[0]*2
-            emit('joint_trace');joint_state=trace_lens(p,wavelength_nm,field_h,next_n,device,center,task.frame_mm)
+            emit('joint_trace');joint_state=trace_lens(p,wavelength_nm,field_h,next_n,device,center,task.frame_mm,object_angle_rad)
             joint_task=replace(expanded,pitch_um=task.pitch_um/2)
             joint=run(joint_state,policy.angular_grid_n*2,joint_task,'joint')
             report['flags']['joint']=compare(refined,joint,'joint',policy.joint_otf_tolerance) and joint['residual_phase_neighbor_cycles']<=policy.residual_phase_target_cycles

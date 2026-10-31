@@ -56,17 +56,21 @@ class RayState:
     def amplitude_area(self):return self.field_amplitude*self.area
 
 @torch.inference_mode()
-def trace_lens(p,wavelength_nm,field_h,pupil_n,device='cpu',center_mm=None,frame_mm=(36.,24.)):
+def trace_lens(p,wavelength_nm,field_h,pupil_n,device='cuda:0',center_mm=None,frame_mm=(36.,24.),object_angle_rad=None):
     if not (0<=field_h<=1) or pupil_n<16:raise ValueError('invalid condition')
-    device=torch.device(device)
+    from .field_audit import cuda_device,aim,propagate
+    device=cuda_device(device)
     surfs=_surfaces_at(p['surfaces'],wavelength_nm)
     exit_z=fixed_exit_plane(p,wavelength_nm)
     film_z=float(p['image_z_mm']);stop_z=float(p['stop_z_mm'])
     rs=float(p['design_spec']['stop_diameter_mm'])/2
-    alpha=math.atan(field_h*math.hypot(*frame_mm)/2/float(p['design_spec']['efl_target_mm']))
+    alpha=math.atan(field_h*math.hypot(*frame_mm)/2/float(p['design_spec']['efl_target_mm'])) if object_angle_rad is None else float(object_angle_rad)
+    if not math.isfinite(alpha) or not 0<=alpha<math.pi/2:raise ValueError('invalid explicit object field angle')
     angle=torch.tensor([[alpha]],dtype=torch.float64,device=device)
     uv,inside=pupil_grid(pupil_n,device)
-    tr=trace_pupil(surfs,angle,uv,stop_z,rs,film_z)
+    zstart=min(stop_z,surfs[0].z)-20.
+    xstart,ystart,aim_valid,aim_residual=aim(surfs,angle,uv,stop_z,rs,zstart)
+    tr,stage_losses=propagate(surfs,angle,xstart,ystart,zstart,stop_z,rs,film_z,aim_valid&inside[None,:])
     z,x,y,opl,xf,yf,valid=[v.reshape(pupil_n,pupil_n) for v in tr]
     mask=valid & inside.reshape(pupil_n,pupil_n)
     count=int(mask.sum())
@@ -87,14 +91,17 @@ def trace_lens(p,wavelength_nm,field_h,pupil_n,device='cpu',center_mm=None,frame
     area=torch.where(active,jac.abs()*du**2,0.)
     power=torch.where(active,torch.full_like(area,du**2),0.)
     amplitude=torch.where(active,torch.sqrt(power/area.clamp_min(1e-300)),0.)
-    chief=trace_pupil(surfs,angle,torch.zeros((1,2),device=device,dtype=torch.float64),stop_z,rs,film_z)
+    chief_uv=torch.zeros((1,2),device=device,dtype=torch.float64)
+    chx,chy,chvalid,_=aim(surfs,angle,chief_uv,stop_z,rs,zstart)
+    chief,_=propagate(surfs,angle,chx,chy,zstart,stop_z,rs,film_z,chvalid)
     if center_mm is None:
         if bool(chief[6].all()):center_mm=(float(chief[4].item()),float(chief[5].item()))
         else:
             center_mm=tuple(float((v[active]*power[active]).sum()/power[active].sum()) for v in (xf,yf))
     return RayState(xe,ye,oe,area,amplitude,power,active,exit_z,film_z,float(wavelength_nm),float(field_h),tuple(center_mm),
         {'pupil_n':pupil_n,'valid_rays':count,'active_nodes':int(active.sum()),'reference_ray_blocked':not bool(chief[6].all()),
+         'ray_aiming_model':'aperture_free_iterations_final_aperture_validation','aim_converged_samples':int((aim_valid&inside[None,:]).sum()),
          'geometric_fill':count/int(inside.sum()),'excluded_stencil_fraction':float((mask & ~active).sum())/count,
          'singular_stencil_count':int(bad.sum()),'transport':'uniform stop-plane scalar z-flux; no Fresnel/coating/polarization',
          'transport_validated':False,'mapping_orientation':int(torch.sign(jac[active].median())),
-         'actual_device':str(device)})
+         'actual_device':str(device),'object_angle_rad':alpha,'field_mapping':'explicit_audited_object_angle' if object_angle_rad is not None else 'legacy_paraxial_height'})
