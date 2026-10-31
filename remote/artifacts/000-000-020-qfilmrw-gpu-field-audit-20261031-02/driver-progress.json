@@ -1,0 +1,14 @@
+{
+  "gpu_only_optics": true,
+  "lanes": [
+    {
+      "device": "cuda:0",
+      "returncode": null
+    },
+    {
+      "device": "cuda:1",
+      "returncode": null
+    }
+  ],
+  "updated_unix": 1793418624.07213
+}
