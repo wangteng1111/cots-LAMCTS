@@ -11,15 +11,19 @@
     "OMP_NUM_THREADS": "2",
     "OPENBLAS_NUM_THREADS": "1"
   },
+  "finished_at": 1793418597.4968622,
   "hostname": "aipss-Rack-Server",
   "job_id": "000-000-020-qfilmrw-gpu-field-audit-20261031-01",
   "log_tail": "",
   "memory_gb": 0,
   "request_sha256": "667c888d9a3d7c2095b274ab3079917fff329735593794487912876d86700191",
+  "returncode": -15,
   "schema": 1,
   "started_at": 1793417724.8679576,
-  "state": "running",
+  "state": "stopped",
+  "stopped": true,
   "supervisor_pid": 627740,
+  "timed_out": false,
   "timeout_sec": 7200,
   "updated_at": 1793418596.4175773
 }
