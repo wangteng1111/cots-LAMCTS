@@ -1,6 +1,6 @@
 {
   "device": "cuda:0",
-  "name": "rf50mm_f1.8",
+  "name": "yongnuo_50mm_f1.8",
   "stage": "batch_chief_calibration",
-  "updated_unix": 1793418937.2443798
+  "updated_unix": 1793419047.3575435
 }
