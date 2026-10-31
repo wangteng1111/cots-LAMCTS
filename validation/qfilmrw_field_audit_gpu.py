@@ -44,6 +44,47 @@ def calibrate(p,sweep,target,device):
         'coordinate_definition':'aperture-free geometric chief at 550nm; physical visibility independently audited'}
 
 
+def calibrate_many(p,sweep,targets,device):
+    """Batch a dense virtual-chief curve, then validate every inverse target.
+
+    Interpolation is only a root proposal; the original 1um coordinate residual
+    requirement remains. Unresolved proposals receive bounded bisection.
+    """
+    hi=math.radians(max(x['object_half_angle_deg'] for x in sweep))
+    theta=[hi*i/1024 for i in range(1025)];height=geometric_chief(p,theta,device)
+    branch=[];last=None
+    for angle,y in zip(theta,height):
+        if y is None or (last is not None and y<last-1e-5):break
+        branch.append((angle,y));last=y
+    answers=[];pending=[]
+    for target in targets:
+        if target==0:
+            answers.append({'state':'calibrated','target_image_height_mm':0.,'object_angle_rad':0.,'geometric_chief_height_mm':0.,'residual_mm':0.});continue
+        pair=next(((a,b) for a,b in zip(branch,branch[1:]) if a[1]<=target<=b[1]),None)
+        row={'state':'TARGET_NOT_REACHED_ON_CALIBRATED_BRANCH','target_image_height_mm':target,
+             'largest_sampled_chief_height_mm':max((y for _,y in branch),default=None)}
+        answers.append(row)
+        if pair:
+            (lo,ylo),(high,yhi)=pair;proposal=lo+(high-lo)*(target-ylo)/max(yhi-ylo,1e-14)
+            pending.append([len(answers)-1,lo,high,proposal])
+    for _ in range(18):
+        if not pending:break
+        values=geometric_chief(p,[q[3] for q in pending],device);remaining=[]
+        for q,y in zip(pending,values):
+            idx,lo,hi,proposal=q;row=answers[idx];target=row['target_image_height_mm']
+            if y is not None and abs(y-target)<=.001:
+                row.update(state='calibrated',object_angle_rad=proposal,geometric_chief_height_mm=y,residual_mm=abs(y-target),
+                    coordinate_definition='aperture-free geometric chief at 550nm; physical visibility independently audited')
+            elif y is None:row['state']='GEOMETRIC_CHIEF_ROOT_FAILED'
+            else:
+                if y<target:lo=proposal
+                else:hi=proposal
+                remaining.append([idx,lo,hi,(lo+hi)/2])
+        pending=remaining
+    for idx,_,_,_ in pending:answers[idx]['state']='FIELD_CALIBRATION_UNRESOLVED'
+    return answers
+
+
 def preflight(device):
     p={'surfaces':[{'radius':'inf','thickness':5.,'n_after':1.,'v_after':50.,'clear_aperture':5.},{'radius':'inf','thickness':15.,'n_after':1.,'v_after':50.,'clear_aperture':5.}],
         'stop_z_mm':2.,'image_z_mm':20.,'design_spec':{'stop_diameter_mm':2.,'efl_target_mm':50.}}
@@ -61,7 +102,18 @@ def worker(a):
         'started_unix':time.time(),'preflight':preflight(a.device),'cases':[]}
     for case in cases():
         if case['name'] not in a.names:continue
-        name=case['name'];p=case['prescription'];m=sources[name];rs=float(m['source_r_sensor_mm']);frame=math.hypot(36,24)/2;ef=efl_gpu(p,550.,a.device)
+        name=case['name'];p=case['prescription'];m=sources[name]
+        if a.reuse_job:
+            oldroot=Path('/var/lib/cots-lamcts/jobs')/a.reuse_job/'artifacts'
+            old=next((oldroot/f'gpu{i}'/(name+'-field-terminal.json') for i in (0,1) if (oldroot/f'gpu{i}'/(name+'-field-terminal.json')).exists()),None)
+            if old:
+                import hashlib
+                cached=json.loads(old.read_text())
+                if cached['source_sha256']==case['source_sha256'] and cached['metadata']==m:
+                    cached['reused_from']={'job':a.reuse_job,'native_sha256':hashlib.sha256(old.read_bytes()).hexdigest()}
+                    report['cases'].append(cached);atomic_json(a.output_dir/(name+'-field-terminal.json'),cached,immutable=True)
+                    atomic_json(a.output_dir/'audit-checkpoint.json',report);print('FIELD_AUDIT_REUSED',name,flush=True);continue
+        rs=float(m['source_r_sensor_mm']);frame=math.hypot(36,24)/2;ef=efl_gpu(p,550.,a.device)
         t=time.monotonic();old=[math.atan(h*frame/p['design_spec']['efl_target_mm']) for h in (0.,.5,1.)]
         hi=min(math.radians(85),max(math.atan(rs/ef)*1.8,old[-1]*1.3))
         angles=sorted(set([i*hi/32 for i in range(33)]+old+[math.atan(rs/ef)]))
@@ -75,13 +127,15 @@ def worker(a):
             atomic_json(a.output_dir/'progress.json',{'updated_unix':time.time(),'name':name,'stage':'angular_sweep','angles_completed':len(row['sweep']),'angles_total':len(angles),'device':a.device})
             print('FIELD_AUDIT',name,'sweep',len(row['sweep']),len(angles),flush=True)
         row['legacy_fields_550']=[min(row['sweep'],key=lambda r:abs(r['object_half_angle_deg']-math.degrees(th))) for th in old]
-        for h in (0.,.5,1.):
-            f={'field_h':h,**calibrate(p,row['sweep'],h*rs,a.device)}
+        atomic_json(a.output_dir/'progress.json',{'updated_unix':time.time(),'name':name,'stage':'batch_chief_calibration','device':a.device})
+        calibrated=calibrate_many(p,row['sweep'],[0.,.5*rs,rs,frame],a.device)
+        for fi,h in enumerate((0.,.5,1.)):
+            f={'field_h':h,**calibrated[fi]}
             row['native_fields'].append(f)
             if f['state']=='calibrated':
                 f['wavelength_visibility']=[bundle(p,w,[f['object_angle_rad']],128,a.device)[0] for w in (430.,470.,510.,550.,590.,630.,670.)]
                 f['all_waves_have_transmitted_samples']=all(v['physical_transmitted']>0 for v in f['wavelength_visibility'])
-        row['fullframe_chief_calibration']=calibrate(p,row['sweep'],frame,a.device)
+        row['fullframe_chief_calibration']=calibrated[3]
         full=row['fullframe_chief_calibration']
         if full['state']=='calibrated':full['visibility_550']=bundle(p,550.,[full['object_angle_rad']],256,a.device)[0]
         # Explicitly retain all requested endpoints. Failed edge calibration is
@@ -102,7 +156,7 @@ def orchestrate(a):
     try:
         for i in (0,1):
             folder=a.output_dir/f'gpu{i}';log=(a.output_dir/f'gpu{i}.log').open('w')
-            p=subprocess.Popen([sys.executable,'-u',str(Path(__file__).resolve()),'--device',f'cuda:{i}','--output-dir',str(folder),'--names',*names[i::2]],stdout=log,stderr=subprocess.STDOUT)
+            p=subprocess.Popen([sys.executable,'-u',str(Path(__file__).resolve()),'--device',f'cuda:{i}','--output-dir',str(folder),'--names',*names[i::2],*(['--reuse-job',a.reuse_job] if a.reuse_job else [])],stdout=log,stderr=subprocess.STDOUT)
             children.append((i,p,log))
         while any(p.poll() is None for _,p,_ in children):
             atomic_json(a.output_dir/'driver-progress.json',{'updated_unix':time.time(),'gpu_only_optics':True,'lanes':[{'device':f'cuda:{i}','returncode':p.poll()} for i,p,_ in children]});time.sleep(5)
@@ -118,6 +172,6 @@ def orchestrate(a):
 
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--orchestrate',action='store_true');ap.add_argument('--device',default='cuda:0');ap.add_argument('--names',nargs='+',default=[c['name'] for c in cases()]);ap.add_argument('--output-dir',type=Path,default=Path(os.environ.get('COTS_JOB_ARTIFACT_DIR','artifacts/field-audit')))
+    ap=argparse.ArgumentParser();ap.add_argument('--orchestrate',action='store_true');ap.add_argument('--reuse-job');ap.add_argument('--device',default='cuda:0');ap.add_argument('--names',nargs='+',default=[c['name'] for c in cases()]);ap.add_argument('--output-dir',type=Path,default=Path(os.environ.get('COTS_JOB_ARTIFACT_DIR','artifacts/field-audit')))
     a=ap.parse_args();return orchestrate(a) if a.orchestrate else worker(a)
 if __name__=='__main__':raise SystemExit(main())

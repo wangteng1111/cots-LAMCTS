@@ -17,7 +17,7 @@ def main():
         'execution_policy':'GPU_ONLY_NO_CPU_REFERENCE','code_commit':os.environ.get('COTS_GIT_COMMIT'),'cases':[]}
     if result.returncode:
         report.update(status='failed',finished_unix=time.time());atomic_json(art/'gpu-only-policy-terminal.json',report,immutable=True);return 2
-    job='000-000-020-qfilmrw-gpu-field-audit-20261031-01'
+    job='000-000-020-qfilmrw-gpu-field-audit-20261031-02'
     audit=Path('/var/lib/cots-lamcts/jobs')/job/'artifacts/field-audit-terminal.json'
     data=json.loads(audit.read_text());domains={x['name']:x for x in data['cases']}
     for i,case in enumerate(cases()):
