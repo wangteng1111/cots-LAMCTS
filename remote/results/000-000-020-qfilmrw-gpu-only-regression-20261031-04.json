@@ -10,15 +10,19 @@
     "OMP_NUM_THREADS": "2",
     "OPENBLAS_NUM_THREADS": "1"
   },
+  "finished_at": 1793419603.120439,
   "hostname": "aipss-Rack-Server",
   "job_id": "000-000-020-qfilmrw-gpu-only-regression-20261031-04",
   "log_tail": "",
   "memory_gb": 0,
   "request_sha256": "c175351ddbc14045f4c0e2bb7f90149b5b0c935a04aa36c73540a353393ae8b0",
+  "returncode": 0,
   "schema": 1,
   "started_at": 1793419437.7887673,
-  "state": "running",
+  "state": "finished",
+  "stopped": false,
   "supervisor_pid": 630001,
+  "timed_out": false,
   "timeout_sec": 1800,
   "updated_at": 1793419588.0734916
 }
