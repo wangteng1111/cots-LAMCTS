@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.6.1",
+  "claimed_at": 1793419156.044274,
+  "code_commit": "3db4b787acf3607b3db0943e1bfd206da01a20e7",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "000-000-020-qfilmrw-gpu-field-refine-20261031-01",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/000-000-020-qfilmrw-gpu-field-refine-20261031-01.json",
+  "request_sha256": "d497dbb37e5396323f6b6d37b5c2533517c3fb3e6de01c35894920b8eb66de1f",
+  "schema": 1,
+  "state": "claimed"
+}
