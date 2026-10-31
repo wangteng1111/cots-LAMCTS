@@ -1,0 +1,25 @@
+{
+  "args": [
+    "validation/qfilmrw_field_audit_gpu.py",
+    "--orchestrate"
+  ],
+  "bridge_version": "0.6.1",
+  "code_commit": "9dd35f42f87aeeca0ff55a8a0bbaf8f4e5fa42e9",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {
+    "MKL_NUM_THREADS": "2",
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "000-000-020-qfilmrw-gpu-field-audit-20261031-01",
+  "log_tail": "",
+  "memory_gb": 0,
+  "request_sha256": "667c888d9a3d7c2095b274ab3079917fff329735593794487912876d86700191",
+  "schema": 1,
+  "started_at": 1793417724.8679576,
+  "state": "running",
+  "supervisor_pid": 627740,
+  "timeout_sec": 7200,
+  "updated_at": 1793417724.8742733
+}
