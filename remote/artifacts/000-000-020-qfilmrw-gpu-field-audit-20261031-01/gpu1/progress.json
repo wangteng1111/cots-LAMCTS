@@ -1,8 +1,8 @@
 {
-  "angles_completed": 36,
+  "angles_completed": 24,
   "angles_total": 36,
   "device": "cuda:1",
-  "name": "rf16mm_f2.8",
+  "name": "rf35mm_f1.8",
   "stage": "angular_sweep",
-  "updated_unix": 1793418235.090354
+  "updated_unix": 1793418378.8368602
 }
