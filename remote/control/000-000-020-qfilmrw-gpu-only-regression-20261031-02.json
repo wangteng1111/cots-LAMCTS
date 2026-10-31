@@ -1,0 +1,5 @@
+{
+  "action": "stop",
+  "job_id": "000-000-020-qfilmrw-gpu-only-regression-20261031-02",
+  "reason": "Replaced by regression 03 after independent field-coordinate refinement and explicit-angle guards"
+}
