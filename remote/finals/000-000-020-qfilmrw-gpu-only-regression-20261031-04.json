@@ -1,0 +1,30 @@
+{
+  "args": [
+    "validation/qfilmrw_gpu_only_probe.py"
+  ],
+  "bridge_version": "0.6.1",
+  "code_commit": "491e621ab9cedceda5fe9c18a2081a446562e4bb",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {
+    "MKL_NUM_THREADS": "2",
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "finished_at": 1793419603.120439,
+  "hostname": "aipss-Rack-Server",
+  "immutable_job_id": true,
+  "job_id": "000-000-020-qfilmrw-gpu-only-regression-20261031-04",
+  "log_tail": "",
+  "memory_gb": 0,
+  "request_sha256": "c175351ddbc14045f4c0e2bb7f90149b5b0c935a04aa36c73540a353393ae8b0",
+  "retry_policy": "new_job_id_required",
+  "returncode": 0,
+  "schema": 1,
+  "started_at": 1793419437.7887673,
+  "state": "finished",
+  "stopped": false,
+  "supervisor_pid": 630001,
+  "timed_out": false,
+  "timeout_sec": 1800,
+  "updated_at": 1793419588.0734916
+}
