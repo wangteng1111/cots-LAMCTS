@@ -21,6 +21,22 @@ DEV="cuda:0"
 
 @unittest.skipUnless(torch.cuda.is_available(),"CUDA required for optical tests; no CPU solver fallback")
 class RWTests(unittest.TestCase):
+    def test_independent_entry_raster_disproves_rf16_legacy_dark_field(self):
+        from evaluator.qfilmrw.field_audit import bundle
+        case=next(c for c in cases() if c['name']=='rf16mm_f2.8')
+        p=case['prescription'];angle=math.atan(math.hypot(36,24)/2/p['design_spec']['efl_target_mm'])
+        row=bundle(p,550.,[angle],64,DEV)[0]
+        self.assertEqual(row['legacy_transmitted'],0)
+        self.assertGreater(row['physical_transmitted'],0)
+        self.assertGreater(row['entry_raster_transmitted'],0)
+
+    def test_geometric_aiming_retains_ef35_axis_pupil(self):
+        from evaluator.qfilmrw.field_audit import bundle
+        p=next(c for c in cases() if c['name']=='ef35mm_f2.0')['prescription']
+        row=bundle(p,550.,[0.],64,DEV)[0]
+        self.assertGreater(row['physical_transmitted'],row['legacy_transmitted'])
+        self.assertEqual(row['physical_transmitted'],row['geometric_aim_converged'])
+
     def test_singular_line_cannot_hide_mapping_fold(self):
         u=torch.linspace(-1,1,65,dtype=torch.float64,device=DEV);v,u=torch.meshgrid(u,u,indexing='ij')
         _,_,_,fold=mapping_derivatives(u*u,v,torch.ones_like(u,dtype=torch.bool),2/64)

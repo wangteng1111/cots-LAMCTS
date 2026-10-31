@@ -64,7 +64,8 @@ def trace_lens(p,wavelength_nm,field_h,pupil_n,device='cuda:0',center_mm=None,fr
     exit_z=fixed_exit_plane(p,wavelength_nm)
     film_z=float(p['image_z_mm']);stop_z=float(p['stop_z_mm'])
     rs=float(p['design_spec']['stop_diameter_mm'])/2
-    alpha=math.atan(field_h*math.hypot(*frame_mm)/2/float(p['design_spec']['efl_target_mm'])) if object_angle_rad is None else float(object_angle_rad)
+    if field_h!=0 and object_angle_rad is None:raise ValueError('off-axis tracing requires an explicit audited object angle')
+    alpha=0. if object_angle_rad is None else float(object_angle_rad)
     if not math.isfinite(alpha) or not 0<=alpha<math.pi/2:raise ValueError('invalid explicit object field angle')
     angle=torch.tensor([[alpha]],dtype=torch.float64,device=device)
     uv,inside=pupil_grid(pupil_n,device)
@@ -74,8 +75,7 @@ def trace_lens(p,wavelength_nm,field_h,pupil_n,device='cuda:0',center_mm=None,fr
     z,x,y,opl,xf,yf,valid=[v.reshape(pupil_n,pupil_n) for v in tr]
     mask=valid & inside.reshape(pupil_n,pupil_n)
     count=int(mask.sum())
-    # Aiming/intersection failures and physical occlusion are not distinguishable
-    # in the shared legacy trace. Do not turn zero rays into a lens-failure label.
+    # A failed finite aiming/sampling attempt does not prove physical blockage.
     if count==0:raise RWError('RAY_AIMING_OR_OCCLUSION_UNRESOLVED','zero traced rays; requires independent ray-aiming/occlusion diagnosis')
     if count<32:raise RWError('SOURCE_SAMPLING_FAILURE','too few transmitted samples; not proof of physical blockage')
     tf=film_z-z

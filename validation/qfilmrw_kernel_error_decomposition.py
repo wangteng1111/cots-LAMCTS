@@ -32,13 +32,13 @@ def relative(a,b):
 
 @torch.inference_mode()
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--input',type=Path,required=True);ap.add_argument('--output',type=Path,required=True);ap.add_argument('--threads',type=int,default=2);a=ap.parse_args()
+    ap=argparse.ArgumentParser();ap.add_argument('--input',type=Path,required=True);ap.add_argument('--output',type=Path,required=True);ap.add_argument('--threads',type=int,default=2);ap.add_argument('--device',choices=('cuda:0','cuda:1'),default='cuda:0');a=ap.parse_args()
     torch.set_num_threads(a.threads);cfg=json.loads(a.input.read_text());t0=time.monotonic()
     fixture=json.loads((ROOT/'validation/fixtures/qfilmrw_real11.json').read_text());case=next(c for c in fixture['cases'] if c['name']==cfg['name'])
     print('DECOMPOSE trace',cfg['id'],flush=True)
-    state=trace_lens(case['prescription'],cfg['wavelength_nm'],cfg['field_h'],cfg['pupil_n'],'cpu',cfg['center_mm'])
+    state=trace_lens(case['prescription'],cfg['wavelength_nm'],cfg['field_h'],cfg['pupil_n'],a.device,cfg['center_mm'],object_angle_rad=cfg.get('object_angle_rad'))
     n=cfg['pixel_n'];pitch=cfg['pitch_um']*.001
-    xy=torch.tensor([((ix-(n-1)/2)*pitch,(iy-(n-1)/2)*pitch) for iy,ix in cfg['pixel_yx']],dtype=torch.float64)
+    xy=torch.tensor([((ix-(n-1)/2)*pitch,(iy-(n-1)/2)*pitch) for iy,ix in cfg['pixel_yx']],dtype=torch.float64,device=a.device)
     qx,qy,coeff,piston,guard=reference_source(state)
     print('DECOMPOSE exact_RS1',flush=True)
     exact=direct_rs1(state,xy,piston)
@@ -53,7 +53,7 @@ def main():
     direct_local*=restore
     print('DECOMPOSE reconstruct',flush=True)
     pupil=reconstruct_pupil(state,cfg['angular_grid_n']);grid=pupil['grid'];ng=grid.shape[0]
-    gx=pupil['q0'][0]+torch.arange(ng,dtype=torch.float64)*pupil['dq'][0]
+    gx=pupil['q0'][0]+torch.arange(ng,dtype=torch.float64,device=a.device)*pupil['dq'][0]
     gy=pupil['q0'][1]+torch.arange(ng,dtype=torch.float64)*pupil['dq'][1]
     qgy,qgx=torch.meshgrid(gy,gx,indexing='ij')
     print('DECOMPOSE angular_grid_MFT',flush=True)
@@ -63,14 +63,14 @@ def main():
     # that sum to 100 percent.
     den=torch.linalg.vector_norm(exact).clamp_min(1e-300)
     pstats={k:v for k,v in pupil.items() if k not in ('grid',)}
-    out={'schema':'QfilmRWKernelErrorDecomposition-v1','input':cfg,'device':'cpu','torch_version':str(torch.__version__),
+    out={'schema':'QfilmRWKernelErrorDecomposition-v1','input':cfg,'device':a.device,'torch_version':str(torch.__version__),
       'source_sha256':case['source_sha256'],'active_nodes':int(active.sum()),'phase_neighbor_cycles':guard,
       'A_vs_B_kernel_field_relative_L2':float(torch.linalg.vector_norm(exact-direct_local)/den),
       'B_vs_C_reconstruction_quadrature_field_relative_L2_on_A_norm':float(torch.linalg.vector_norm(direct_local-gridded)/den),
       'A_vs_C_total_field_relative_L2':float(torch.linalg.vector_norm(exact-gridded)/den),
       'A_vs_B_sampled_intensity_relative_L2':relative(exact.abs().square(),direct_local.abs().square()),
       'A_vs_C_sampled_intensity_relative_L2':relative(gridded.abs().square(),exact.abs().square()),
-      'coordinates_offset_mm':xy.numpy(),'A_exact_field':exact.numpy(),'B_local_source_field':direct_local.numpy(),'C_local_grid_field':gridded.numpy(),
+      'coordinates_offset_mm':xy.cpu().numpy(),'A_exact_field':exact.cpu().numpy(),'B_local_source_field':direct_local.cpu().numpy(),'C_local_grid_field':gridded.cpu().numpy(),
       'pupil':pstats,'elapsed_seconds':time.monotonic()-t0,
       'scope':'same scalar boundary state and finite source/grid quadrature; sampled probes only; not global MTF or measured-lens validation',
       'code_sha256':{str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in [Path(__file__),*sorted((ROOT/'evaluator/qfilmrw').glob('*.py'))]}}
@@ -79,3 +79,4 @@ def main():
     atomic_json(a.output,out,immutable=True)
     print(json.dumps({k:v for k,v in out.items() if k.endswith('L2') or k.endswith('A_norm') or k=='elapsed_seconds'}),flush=True)
 if __name__=='__main__':main()
+

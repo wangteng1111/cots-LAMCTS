@@ -9,10 +9,10 @@ def main():
     ap.add_argument('-g',action='store_true',help='GPU is the only supported optical solver')
     ap.add_argument('--prescription',type=Path,required=True);ap.add_argument('--output',type=Path,required=True)
     ap.add_argument('--field-angles-deg',type=float,nargs='+',required=True,help='audited object-space half angles, fixed across wavelength')
-    ap.add_argument('--fields',type=int,default=3);ap.add_argument('--gpu-index',type=int,default=0)
+    ap.add_argument('--gpu-index',type=int,default=0)
     ap.add_argument('--survey',action='store_true');ap.add_argument('--max-pupil',type=int,default=1024);ap.add_argument('--grid-n',type=int,default=1024)
     a=ap.parse_args()
-    if a.fields<2 or a.max_pupil<256:ap.error('at least 2 fields and max-pupil >=256 required')
+    if not a.field_angles_deg or a.max_pupil<256:ap.error('field angles and max-pupil >=256 required')
     levels=[];n=128
     while n<=a.max_pupil:levels.append(n);n*=2
     p=json.loads(a.prescription.read_text())
