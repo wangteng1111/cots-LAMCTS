@@ -1,14 +1,12 @@
 {
   "schema": 1,
   "job_id": "000-000-020-qfilmrw-lensfactory-single-candidate-20261031-01",
-  "code_commit": "8662c3e1b97efc5edde95d7fa0b1f1a4c31e5bed",
+  "code_commit": "c58c9da65954a70b797fd2ac59016da1665928c3",
   "entrypoint": "scripts/cuda_venv_exec.py",
   "args": [
     "validation/lensfactory_single_candidate_smoke.py",
     "--backend",
-    "c",
-    "--output",
-    "artifacts/lensfactory_single_candidate_smoke_cpu.json"
+    "c"
   ],
   "env": {
     "OMP_NUM_THREADS": "2",
