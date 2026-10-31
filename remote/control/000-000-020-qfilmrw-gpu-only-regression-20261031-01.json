@@ -1,0 +1,5 @@
+{
+  "action": "stop",
+  "job_id": "000-000-020-qfilmrw-gpu-only-regression-20261031-01",
+  "reason": "Superseded by GPU-batched field inversion; completed source-verified case records are preserved and reused"
+}

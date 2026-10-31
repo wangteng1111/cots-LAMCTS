@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "job_id": "000-000-020-qfilmrw-gpu-field-audit-20261031-02",
+  "code_commit": "cf785fd24cc7415f85f67a1ad9daa02666358ecb",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilmrw_field_audit_gpu.py",
+    "--orchestrate",
+    "--reuse-job",
+    "000-000-020-qfilmrw-gpu-field-audit-20261031-01"
+  ],
+  "env": {
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout_sec": 7200,
+  "memory_gb": 0
+}
