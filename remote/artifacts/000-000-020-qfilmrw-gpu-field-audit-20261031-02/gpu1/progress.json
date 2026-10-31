@@ -1,0 +1,6 @@
+{
+  "device": "cuda:1",
+  "name": "rf35mm_f1.8",
+  "stage": "batch_chief_calibration",
+  "updated_unix": 1793418630.7905457
+}
