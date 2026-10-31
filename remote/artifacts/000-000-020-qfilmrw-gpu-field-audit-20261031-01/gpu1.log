@@ -9,3 +9,9 @@ FIELD_AUDIT ef50mm_f1.8 sweep 16 36
 FIELD_AUDIT ef50mm_f1.8 sweep 24 36
 FIELD_AUDIT ef50mm_f1.8 sweep 32 36
 FIELD_AUDIT ef50mm_f1.8 sweep 36 36
+FIELD_AUDIT_CASE_TERMINAL ef50mm_f1.8
+FIELD_AUDIT rf16mm_f2.8 sweep 8 36
+FIELD_AUDIT rf16mm_f2.8 sweep 16 36
+FIELD_AUDIT rf16mm_f2.8 sweep 24 36
+FIELD_AUDIT rf16mm_f2.8 sweep 32 36
+FIELD_AUDIT rf16mm_f2.8 sweep 36 36
