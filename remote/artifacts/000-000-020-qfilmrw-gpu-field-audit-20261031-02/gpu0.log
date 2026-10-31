@@ -11,3 +11,9 @@ FIELD_AUDIT rf24mm_f1.8 sweep 16 36
 FIELD_AUDIT rf24mm_f1.8 sweep 24 36
 FIELD_AUDIT rf24mm_f1.8 sweep 32 36
 FIELD_AUDIT rf24mm_f1.8 sweep 36 36
+FIELD_AUDIT_CASE_TERMINAL rf24mm_f1.8
+FIELD_AUDIT rf50mm_f1.8 sweep 8 36
+FIELD_AUDIT rf50mm_f1.8 sweep 16 36
+FIELD_AUDIT rf50mm_f1.8 sweep 24 36
+FIELD_AUDIT rf50mm_f1.8 sweep 32 36
+FIELD_AUDIT rf50mm_f1.8 sweep 36 36
