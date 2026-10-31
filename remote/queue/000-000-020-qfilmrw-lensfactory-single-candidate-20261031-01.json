@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "job_id": "000-000-020-qfilmrw-lensfactory-single-candidate-20261031-01",
-  "code_commit": "0d4a907e09ca082ffe5212bcb7c77a7b3b83a049",
+  "code_commit": "8c1bf2df27e957724b20eb6d66bb5b1028cdb342",
   "entrypoint": "scripts/cuda_venv_exec.py",
   "args": [
     "validation/lensfactory_single_candidate_smoke.py",
