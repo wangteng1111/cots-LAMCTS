@@ -1,0 +1,30 @@
+{
+  "args": [
+    "validation/lensfactory_single_candidate_smoke.py",
+    "--backend",
+    "c"
+  ],
+  "bridge_version": "0.6.1",
+  "code_commit": "8c1bf2df27e957724b20eb6d66bb5b1028cdb342",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {
+    "MKL_NUM_THREADS": "2",
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "finished_at": 1793419357.0544114,
+  "hostname": "aipss-Rack-Server",
+  "job_id": "000-000-020-qfilmrw-lensfactory-single-candidate-20261031-01",
+  "log_tail": "",
+  "memory_gb": 0,
+  "request_sha256": "193341fe82206e0a16351af05afec338ae61d93a1b0e9d3168ae161ac7107113",
+  "returncode": 1,
+  "schema": 1,
+  "started_at": 1793419356.008825,
+  "state": "failed",
+  "stopped": false,
+  "supervisor_pid": 629822,
+  "timed_out": false,
+  "timeout_sec": 1800,
+  "updated_at": 1793419356.0136955
+}
