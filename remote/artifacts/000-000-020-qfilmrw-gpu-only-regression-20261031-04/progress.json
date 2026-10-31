@@ -4,9 +4,9 @@
     "calibration_state": "calibrated",
     "device": "cuda:1",
     "field_h": 0,
-    "name": "ef50mm_f1.8",
+    "name": "rf16mm_f2.8",
     "object_angle_rad": 0,
-    "phase_neighbor_cycles": 0.6012549977960838,
+    "phase_neighbor_cycles": 0.1701292085892254,
     "state": "CUDA_BOUNDARY_FIELD_OK",
     "target_image_height_mm": 0,
     "wavefront": {
@@ -29,5 +29,5 @@
       "valid_rays": 3228
     }
   },
-  "updated_unix": 1793419496.0025904
+  "updated_unix": 1793419525.3649356
 }
