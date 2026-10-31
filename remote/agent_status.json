@@ -1,7 +1,7 @@
 {
   "bridge_version": "0.6.1",
   "control_branch": "main",
-  "control_last_sync": 1793419304.61826,
+  "control_last_sync": 1793419346.714705,
   "cpu_count": 128,
   "gpu": [
     {
@@ -21,9 +21,9 @@
   ],
   "hostname": "aipss-Rack-Server",
   "loadavg": [
-    1.13427734375,
-    1.353515625,
-    1.3798828125
+    1.080078125,
+    1.31787109375,
+    1.365234375
   ],
   "outbox_count": 1,
   "python": "/usr/bin/python3",
@@ -32,5 +32,5 @@
   "results_branch": "workstation-results",
   "running_job": "000-000-020-qfilmrw-gpu-only-regression-20261031-03",
   "schema": 1,
-  "timestamp": 1793419318.7236352
+  "timestamp": 1793419348.7741513
 }
