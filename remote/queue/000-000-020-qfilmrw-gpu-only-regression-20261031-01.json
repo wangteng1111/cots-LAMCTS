@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "job_id": "000-000-020-qfilmrw-gpu-only-regression-20261031-01",
+  "code_commit": "13e7b01459fb98a37b5fad9ba34228582bad19b7",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "args": [
+    "validation/qfilmrw_gpu_only_probe.py"
+  ],
+  "env": {
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timeout_sec": 3600,
+  "memory_gb": 0
+}
