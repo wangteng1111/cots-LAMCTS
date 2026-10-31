@@ -19,7 +19,11 @@ def main():
         report.update(status='failed',finished_unix=time.time());atomic_json(art/'gpu-only-policy-terminal.json',report,immutable=True);return 2
     job='000-000-020-qfilmrw-gpu-field-refine-20261031-01'
     audit=Path('/var/lib/cots-lamcts/jobs')/job/'artifacts/field-audit-refined-terminal.json'
-    data=json.loads(audit.read_text());domains={x['name']:x for x in data['cases']}
+    native=json.loads(audit.read_text());data=json.loads((ROOT/'validation/fixtures/qfilmrw_audited_fields_20261031.json').read_text())
+    signature=lambda d:sorted((c['name'],c['source_sha256'],f['field_h'],f['state'],f.get('object_angle_rad')) for c in d['cases'] for f in c['native_fields'])
+    if signature(native)!=signature(data):raise RuntimeError('exported field contract differs from actual CUDA audit')
+    report['field_contract_matches_native_gpu_audit']=True
+    domains={x['name']:x for x in data['cases']}
     for i,case in enumerate(cases()):
         device=f'cuda:{i%2}';domain=domains[case['name']]
         for field in domain['native_fields']:

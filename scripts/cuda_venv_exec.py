@@ -9,4 +9,8 @@ if len(sys.argv)<2:raise SystemExit("usage: cuda_venv_exec.py <repo-relative.py>
 target=(ROOT/sys.argv[1]).resolve()
 if ROOT not in target.parents or target.suffix!=".py" or not target.is_file():raise SystemExit("invalid repo-local Python target")
 if not (str(target.relative_to(ROOT)).startswith("validation/") or str(target.relative_to(ROOT)).startswith("scripts/")):raise SystemExit("target must be under validation/ or scripts/")
+if os.environ.get('COTS_JOB_DIR'):
+    cache=Path(os.environ['COTS_JOB_DIR'])/'cache'/'torch-kernels'
+    cache.mkdir(parents=True,exist_ok=True)
+    os.environ['PYTORCH_KERNEL_CACHE_PATH']=str(cache)
 os.execv(str(PY),[str(PY),"-u",str(target),*sys.argv[2:]])

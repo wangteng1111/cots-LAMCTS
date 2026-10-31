@@ -99,7 +99,9 @@ def trace_lens(p,wavelength_nm,field_h,pupil_n,device='cuda:0',center_mm=None,fr
         else:
             center_mm=tuple(float((v[active]*power[active]).sum()/power[active].sum()) for v in (xf,yf))
     return RayState(xe,ye,oe,area,amplitude,power,active,exit_z,film_z,float(wavelength_nm),float(field_h),tuple(center_mm),
-        {'pupil_n':pupil_n,'valid_rays':count,'active_nodes':int(active.sum()),'reference_ray_blocked':not bool(chief[6].all()),
+        {'pupil_n':pupil_n,'valid_rays':count,'active_nodes':int(active.sum()),'reference_ray_valid':bool(chief[6].all()),
+         'reference_ray_unresolved':not bool(chief[6].all()),
+         'center_definition':'physical_stop_chief' if bool(chief[6].all()) else 'transmitted_stop_flux_centroid_due_to_unresolved_chief',
          'ray_aiming_model':'aperture_free_iterations_final_aperture_validation','aim_converged_samples':int((aim_valid&inside[None,:]).sum()),
          'geometric_fill':count/int(inside.sum()),'excluded_stencil_fraction':float((mask & ~active).sum())/count,
          'singular_stencil_count':int(bad.sum()),'transport':'uniform stop-plane scalar z-flux; no Fresnel/coating/polarization',

@@ -6,7 +6,7 @@ publication is handled by Bridge, never inside the solver. Per-condition
 terminals and immutable summaries distinguish execution from acceptance.
 """
 from __future__ import annotations
-import argparse,hashlib,json,os,subprocess,sys,time,traceback
+import argparse,hashlib,json,math,os,subprocess,sys,time,traceback
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
 import numpy as np
@@ -100,7 +100,9 @@ def worker(a):
     task=Task();task.validate();policy.validate()
     audit=json.loads(a.field_contract.read_text()) if a.field_contract else None
     if any(h!=0 for h in a.fields) and audit is None:raise RuntimeError('GPU off-axis verification requires an audited field contract')
+    if audit and (audit.get('status')!='completed' or audit.get('gpu_only_optics') is not True):raise RuntimeError('completed GPU field audit required')
     domains={c['name']:c for c in audit['cases']} if audit else {}
+    expected_domains={c['name']:c for c in json.loads((ROOT/'validation/fixtures/qfilmrw_field_domains.json').read_text())['sources']}
     report={'schema':'QfilmRWGPUOnlyMatrix-v2','version':VERSION,'status':'running','actual_device':a.device,'execution_policy':'GPU_ONLY_NO_CPU_REFERENCE',
         'code_commit':os.environ.get('COTS_GIT_COMMIT'),'fixture_sha256':FIXTURE_SHA,'source_commit':'911bb9d334fce7e20a4407c4506ac683b52ff246',
         'fields_h':a.fields,'wavelengths_nm':a.waves,'task_hash':task.signature,'policy':policy.__dict__,
@@ -126,6 +128,10 @@ def worker(a):
                 domain=domains.get(case['name'])
                 calibrated=next((f for f in domain['native_fields'] if f['field_h']==h),None) if domain else None
                 if domain and domain['source_sha256']!=case['source_sha256']:raise RuntimeError('audited field contract source mismatch')
+                if domain and domain['metadata']!=expected_domains[case['name']]:raise RuntimeError('audited field domain metadata mismatch')
+                if calibrated and calibrated['state']=='calibrated':
+                    if not math.isfinite(calibrated['object_angle_rad']) or calibrated['residual_mm']>.001:raise RuntimeError('field coordinate calibration failed')
+                    if abs(calibrated['target_image_height_mm']-h*domain['metadata']['source_r_sensor_mm'])>1e-8:raise RuntimeError('field target is not the declared native image height')
                 if h!=0 and (calibrated is None or calibrated['state']!='calibrated'):
                     value={'schema':'QfilmRWCondition-v2','state':'FIELD_CALIBRATION_UNRESOLVED','runs':[],'J_task':None,
                       'numerically_verified':False,'model_scope_validated':False,'training_eligible':False,
@@ -286,7 +292,7 @@ def main():
     ap.add_argument('--output-dir',type=Path,default=Path(os.environ.get('COTS_JOB_ARTIFACT_DIR','artifacts/qfilmrw_local')))
     ap.add_argument('--fields',nargs='+',type=float,default=[0.,.5,1.]);ap.add_argument('--waves',nargs='+',type=float,default=list(WAVES))
     ap.add_argument('--pupils',nargs='+',type=int);ap.add_argument('--grid-n',type=int,default=1024);ap.add_argument('--threads',type=int,default=4)
-    ap.add_argument('--field-contract',type=Path,help='completed GPU field-audit JSON or its exported native field contract')
+    ap.add_argument('--field-contract',type=Path,default=ROOT/'validation/fixtures/qfilmrw_audited_fields_20261031.json',help='completed GPU field-audit JSON or its exported native field contract')
     ap.add_argument('--condition-seconds',type=float,default=7200.);ap.add_argument('--save-raw',action='store_true')
     ap.add_argument('--max-live-elements',type=int,default=300_000_000)
     a=ap.parse_args()
