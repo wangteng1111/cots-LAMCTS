@@ -1,8 +1,8 @@
 {
-  "angles_completed": 36,
+  "angles_completed": 32,
   "angles_total": 36,
   "device": "cuda:0",
-  "name": "ef40mm_f2.8",
+  "name": "ef85mm_f1.8",
   "stage": "angular_sweep",
-  "updated_unix": 1793418097.6203127
+  "updated_unix": 1793418322.3074856
 }
