@@ -1,6 +1,6 @@
 {
   "device": "cuda:0",
-  "name": "rf24mm_f1.8",
+  "name": "rf50mm_f1.8",
   "stage": "batch_chief_calibration",
-  "updated_unix": 1793418797.398428
+  "updated_unix": 1793418937.2443798
 }
