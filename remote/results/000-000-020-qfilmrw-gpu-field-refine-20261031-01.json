@@ -1,0 +1,24 @@
+{
+  "args": [
+    "validation/qfilmrw_field_refine_gpu.py"
+  ],
+  "bridge_version": "0.6.1",
+  "code_commit": "3db4b787acf3607b3db0943e1bfd206da01a20e7",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "env": {
+    "MKL_NUM_THREADS": "2",
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "hostname": "aipss-Rack-Server",
+  "job_id": "000-000-020-qfilmrw-gpu-field-refine-20261031-01",
+  "log_tail": "",
+  "memory_gb": 0,
+  "request_sha256": "d497dbb37e5396323f6b6d37b5c2533517c3fb3e6de01c35894920b8eb66de1f",
+  "schema": 1,
+  "started_at": 1793419156.1025012,
+  "state": "running",
+  "supervisor_pid": 629505,
+  "timeout_sec": 7200,
+  "updated_at": 1793419186.1899085
+}
