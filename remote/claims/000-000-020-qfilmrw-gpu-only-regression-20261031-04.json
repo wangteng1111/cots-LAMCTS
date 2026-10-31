@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.6.1",
+  "claimed_at": 1793419437.724193,
+  "code_commit": "491e621ab9cedceda5fe9c18a2081a446562e4bb",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "000-000-020-qfilmrw-gpu-only-regression-20261031-04",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/000-000-020-qfilmrw-gpu-only-regression-20261031-04.json",
+  "request_sha256": "c175351ddbc14045f4c0e2bb7f90149b5b0c935a04aa36c73540a353393ae8b0",
+  "schema": 1,
+  "state": "claimed"
+}
