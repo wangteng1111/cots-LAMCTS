@@ -1,0 +1,6501 @@
+{
+  "efl_import_relative_difference": 2.1575735697971156e-16,
+  "efl_independent_gpu_mm": 16.466245826021012,
+  "elapsed_seconds": 148.5937111293897,
+  "fullframe_chief_calibration": {
+    "largest_sampled_chief_height_mm": 15.79145876435941,
+    "state": "TARGET_NOT_REACHED_ON_CALIBRATED_BRANCH",
+    "target_image_height_mm": 21.633307652783937
+  },
+  "fullframe_half_diagonal_mm": 21.633307652783937,
+  "legacy_fields_550": [
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": [
+        2.271692403237038e-17,
+        2.277066391700411e-17
+      ],
+      "diagnosis": "TRANSMITTED",
+      "entry_raster_transmitted": 208,
+      "geometric_aim_converged": 3228,
+      "geometric_chief_mm": [
+        0.0,
+        0.0
+      ],
+      "legacy_transmitted": 2756,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 0.0,
+      "physical_chief_valid": true,
+      "physical_transmitted": 3228,
+      "pupil_n": 64,
+      "stop_grid_fill": 1.0,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": [
+        10.160757339583387,
+        8.523400786390213e-18
+      ],
+      "diagnosis": "TRANSMITTED",
+      "entry_raster_transmitted": 208,
+      "geometric_aim_converged": 3228,
+      "geometric_chief_mm": [
+        10.156472495636294,
+        0.0
+      ],
+      "legacy_transmitted": 968,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 110,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 33.300855627569646,
+      "physical_chief_valid": true,
+      "physical_transmitted": 3118,
+      "pupil_n": 64,
+      "stop_grid_fill": 0.9659231722428748,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": [
+        18.07580201771952,
+        8.252031196479314e-18
+      ],
+      "diagnosis": "LEGACY_AIMING_FALSE_DARK",
+      "entry_raster_transmitted": 96,
+      "geometric_aim_converged": 936,
+      "geometric_chief_mm": null,
+      "legacy_transmitted": 0,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 16,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 392,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 26,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 52.723333022565384,
+      "physical_chief_valid": false,
+      "physical_transmitted": 502,
+      "pupil_n": 64,
+      "stop_grid_fill": 0.15551425030978935,
+      "wavelength_nm": 550.0
+    }
+  ],
+  "metadata": {
+    "imported_efl_550_mm": 16.46624582602101,
+    "name": "rf16mm_f2.8",
+    "source_fnumber_metadata": 2.3126179178264614,
+    "source_focal_metadata_mm": 13.053262435784244,
+    "source_info": "JP 2022-085382 Example 3 (Canon RF16mm F2.8 STM). The original patent can not cover full-frame sensor.",
+    "source_r_sensor_mm": 18.2,
+    "source_sensor_size_metadata": [
+      30.547012947258853,
+      30.547012947258853
+    ],
+    "source_sha256": "493474344dccf7bf53000b4eb1936e75e06cdf6461ea57c26d5770a7457fbaa9"
+  },
+  "name": "rf16mm_f2.8",
+  "native_fields": [
+    {
+      "all_waves_have_transmitted_samples": true,
+      "field_h": 0.0,
+      "geometric_chief_height_mm": 0.0,
+      "object_angle_rad": 0.0,
+      "residual_mm": 0.0,
+      "state": "calibrated",
+      "target_image_height_mm": 0.0,
+      "wavelength_visibility": [
+        {
+          "actual_device": "cuda:1",
+          "centroid_mm": [
+            4.959274622292988e-18,
+            4.950662901655188e-18
+          ],
+          "diagnosis": "TRANSMITTED",
+          "entry_raster_transmitted": 788,
+          "geometric_aim_converged": 12892,
+          "geometric_chief_mm": [
+            0.0,
+            0.0
+          ],
+          "legacy_transmitted": 10954,
+          "losses": [
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 0,
+              "stage": "surface_0"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 1,
+              "stage": "surface_1"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 2,
+              "stage": "surface_2"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 3,
+              "stage": "surface_3"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 4,
+              "stage": "surface_4"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 5,
+              "stage": "surface_5"
+            },
+            {
+              "lost": 0,
+              "stage": "stop"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 6,
+              "stage": "surface_6"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 7,
+              "stage": "surface_7"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 8,
+              "stage": "surface_8"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 9,
+              "stage": "surface_9"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 10,
+              "stage": "surface_10"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 11,
+              "stage": "surface_11"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 12,
+              "stage": "surface_12"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 13,
+              "stage": "surface_13"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 14,
+              "stage": "surface_14"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 15,
+              "stage": "surface_15"
+            }
+          ],
+          "object_half_angle_deg": 0.0,
+          "physical_chief_valid": true,
+          "physical_transmitted": 12892,
+          "pupil_n": 128,
+          "stop_grid_fill": 1.0,
+          "wavelength_nm": 430.0
+        },
+        {
+          "actual_device": "cuda:1",
+          "centroid_mm": [
+            6.52876070853201e-18,
+            6.581507497438534e-18
+          ],
+          "diagnosis": "TRANSMITTED",
+          "entry_raster_transmitted": 788,
+          "geometric_aim_converged": 12892,
+          "geometric_chief_mm": [
+            0.0,
+            0.0
+          ],
+          "legacy_transmitted": 10992,
+          "losses": [
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 0,
+              "stage": "surface_0"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 1,
+              "stage": "surface_1"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 2,
+              "stage": "surface_2"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 3,
+              "stage": "surface_3"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 4,
+              "stage": "surface_4"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 5,
+              "stage": "surface_5"
+            },
+            {
+              "lost": 0,
+              "stage": "stop"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 6,
+              "stage": "surface_6"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 7,
+              "stage": "surface_7"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 8,
+              "stage": "surface_8"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 9,
+              "stage": "surface_9"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 10,
+              "stage": "surface_10"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 11,
+              "stage": "surface_11"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 12,
+              "stage": "surface_12"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 13,
+              "stage": "surface_13"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 14,
+              "stage": "surface_14"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 15,
+              "stage": "surface_15"
+            }
+          ],
+          "object_half_angle_deg": 0.0,
+          "physical_chief_valid": true,
+          "physical_transmitted": 12892,
+          "pupil_n": 128,
+          "stop_grid_fill": 1.0,
+          "wavelength_nm": 470.0
+        },
+        {
+          "actual_device": "cuda:1",
+          "centroid_mm": [
+            4.3478424570091986e-18,
+            4.442571384024997e-18
+          ],
+          "diagnosis": "TRANSMITTED",
+          "entry_raster_transmitted": 804,
+          "geometric_aim_converged": 12892,
+          "geometric_chief_mm": [
+            0.0,
+            0.0
+          ],
+          "legacy_transmitted": 11032,
+          "losses": [
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 0,
+              "stage": "surface_0"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 1,
+              "stage": "surface_1"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 2,
+              "stage": "surface_2"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 3,
+              "stage": "surface_3"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 4,
+              "stage": "surface_4"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 5,
+              "stage": "surface_5"
+            },
+            {
+              "lost": 0,
+              "stage": "stop"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 6,
+              "stage": "surface_6"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 7,
+              "stage": "surface_7"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 8,
+              "stage": "surface_8"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 9,
+              "stage": "surface_9"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 10,
+              "stage": "surface_10"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 11,
+              "stage": "surface_11"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 12,
+              "stage": "surface_12"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 13,
+              "stage": "surface_13"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 14,
+              "stage": "surface_14"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 15,
+              "stage": "surface_15"
+            }
+          ],
+          "object_half_angle_deg": 0.0,
+          "physical_chief_valid": true,
+          "physical_transmitted": 12892,
+          "pupil_n": 128,
+          "stop_grid_fill": 1.0,
+          "wavelength_nm": 510.0
+        },
+        {
+          "actual_device": "cuda:1",
+          "centroid_mm": [
+            -2.1787653213633615e-18,
+            -2.1340920205547748e-18
+          ],
+          "diagnosis": "TRANSMITTED",
+          "entry_raster_transmitted": 804,
+          "geometric_aim_converged": 12892,
+          "geometric_chief_mm": [
+            0.0,
+            0.0
+          ],
+          "legacy_transmitted": 11064,
+          "losses": [
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 0,
+              "stage": "surface_0"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 1,
+              "stage": "surface_1"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 2,
+              "stage": "surface_2"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 3,
+              "stage": "surface_3"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 4,
+              "stage": "surface_4"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 5,
+              "stage": "surface_5"
+            },
+            {
+              "lost": 0,
+              "stage": "stop"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 6,
+              "stage": "surface_6"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 7,
+              "stage": "surface_7"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 8,
+              "stage": "surface_8"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 9,
+              "stage": "surface_9"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 10,
+              "stage": "surface_10"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 11,
+              "stage": "surface_11"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 12,
+              "stage": "surface_12"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 13,
+              "stage": "surface_13"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 14,
+              "stage": "surface_14"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 15,
+              "stage": "surface_15"
+            }
+          ],
+          "object_half_angle_deg": 0.0,
+          "physical_chief_valid": true,
+          "physical_transmitted": 12892,
+          "pupil_n": 128,
+          "stop_grid_fill": 1.0,
+          "wavelength_nm": 550.0
+        },
+        {
+          "actual_device": "cuda:1",
+          "centroid_mm": [
+            -3.647063690108236e-18,
+            -3.6204211793850425e-18
+          ],
+          "diagnosis": "TRANSMITTED",
+          "entry_raster_transmitted": 804,
+          "geometric_aim_converged": 12892,
+          "geometric_chief_mm": [
+            0.0,
+            0.0
+          ],
+          "legacy_transmitted": 11096,
+          "losses": [
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 0,
+              "stage": "surface_0"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 1,
+              "stage": "surface_1"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 2,
+              "stage": "surface_2"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 3,
+              "stage": "surface_3"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 4,
+              "stage": "surface_4"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 5,
+              "stage": "surface_5"
+            },
+            {
+              "lost": 0,
+              "stage": "stop"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 6,
+              "stage": "surface_6"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 7,
+              "stage": "surface_7"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 8,
+              "stage": "surface_8"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 9,
+              "stage": "surface_9"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 10,
+              "stage": "surface_10"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 11,
+              "stage": "surface_11"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 12,
+              "stage": "surface_12"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 13,
+              "stage": "surface_13"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 14,
+              "stage": "surface_14"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 15,
+              "stage": "surface_15"
+            }
+          ],
+          "object_half_angle_deg": 0.0,
+          "physical_chief_valid": true,
+          "physical_transmitted": 12892,
+          "pupil_n": 128,
+          "stop_grid_fill": 1.0,
+          "wavelength_nm": 590.0
+        },
+        {
+          "actual_device": "cuda:1",
+          "centroid_mm": [
+            7.104669526184875e-19,
+            7.236536498451185e-19
+          ],
+          "diagnosis": "TRANSMITTED",
+          "entry_raster_transmitted": 804,
+          "geometric_aim_converged": 12892,
+          "geometric_chief_mm": [
+            0.0,
+            0.0
+          ],
+          "legacy_transmitted": 11144,
+          "losses": [
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 0,
+              "stage": "surface_0"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 1,
+              "stage": "surface_1"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 2,
+              "stage": "surface_2"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 3,
+              "stage": "surface_3"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 4,
+              "stage": "surface_4"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 5,
+              "stage": "surface_5"
+            },
+            {
+              "lost": 0,
+              "stage": "stop"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 6,
+              "stage": "surface_6"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 7,
+              "stage": "surface_7"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 8,
+              "stage": "surface_8"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 9,
+              "stage": "surface_9"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 10,
+              "stage": "surface_10"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 11,
+              "stage": "surface_11"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 12,
+              "stage": "surface_12"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 13,
+              "stage": "surface_13"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 14,
+              "stage": "surface_14"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 15,
+              "stage": "surface_15"
+            }
+          ],
+          "object_half_angle_deg": 0.0,
+          "physical_chief_valid": true,
+          "physical_transmitted": 12892,
+          "pupil_n": 128,
+          "stop_grid_fill": 1.0,
+          "wavelength_nm": 630.0
+        },
+        {
+          "actual_device": "cuda:1",
+          "centroid_mm": [
+            9.9626843128547e-18,
+            9.925277151334256e-18
+          ],
+          "diagnosis": "TRANSMITTED",
+          "entry_raster_transmitted": 812,
+          "geometric_aim_converged": 12892,
+          "geometric_chief_mm": [
+            0.0,
+            0.0
+          ],
+          "legacy_transmitted": 11160,
+          "losses": [
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 0,
+              "stage": "surface_0"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 1,
+              "stage": "surface_1"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 2,
+              "stage": "surface_2"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 3,
+              "stage": "surface_3"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 4,
+              "stage": "surface_4"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 5,
+              "stage": "surface_5"
+            },
+            {
+              "lost": 0,
+              "stage": "stop"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 6,
+              "stage": "surface_6"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 7,
+              "stage": "surface_7"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 8,
+              "stage": "surface_8"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 9,
+              "stage": "surface_9"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 10,
+              "stage": "surface_10"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 11,
+              "stage": "surface_11"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 12,
+              "stage": "surface_12"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 13,
+              "stage": "surface_13"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 14,
+              "stage": "surface_14"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 15,
+              "stage": "surface_15"
+            }
+          ],
+          "object_half_angle_deg": 0.0,
+          "physical_chief_valid": true,
+          "physical_transmitted": 12892,
+          "pupil_n": 128,
+          "stop_grid_fill": 1.0,
+          "wavelength_nm": 670.0
+        }
+      ]
+    },
+    {
+      "all_waves_have_transmitted_samples": true,
+      "coordinate_definition": "aperture-free geometric chief at 550nm; physical visibility independently audited",
+      "field_h": 0.5,
+      "geometric_chief_height_mm": 9.099998627456104,
+      "object_angle_rad": 0.5267233397502074,
+      "residual_mm": 1.37254389542818e-06,
+      "state": "calibrated",
+      "target_image_height_mm": 9.1,
+      "wavelength_visibility": [
+        {
+          "actual_device": "cuda:1",
+          "centroid_mm": [
+            9.082998489638019,
+            1.2707953725643793e-17
+          ],
+          "diagnosis": "TRANSMITTED",
+          "entry_raster_transmitted": 816,
+          "geometric_aim_converged": 12892,
+          "geometric_chief_mm": [
+            9.075185506004692,
+            0.0
+          ],
+          "legacy_transmitted": 4861,
+          "losses": [
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 0,
+              "stage": "surface_0"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 1,
+              "stage": "surface_1"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 2,
+              "stage": "surface_2"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 3,
+              "stage": "surface_3"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 4,
+              "stage": "surface_4"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 5,
+              "stage": "surface_5"
+            },
+            {
+              "lost": 0,
+              "stage": "stop"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 6,
+              "stage": "surface_6"
+            },
+            {
+              "aperture_lost": 246,
+              "geometry_lost": 0,
+              "source_surface_index": 7,
+              "stage": "surface_7"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 8,
+              "stage": "surface_8"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 9,
+              "stage": "surface_9"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 10,
+              "stage": "surface_10"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 11,
+              "stage": "surface_11"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 12,
+              "stage": "surface_12"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 13,
+              "stage": "surface_13"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 14,
+              "stage": "surface_14"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 15,
+              "stage": "surface_15"
+            }
+          ],
+          "object_half_angle_deg": 30.17902433872223,
+          "physical_chief_valid": true,
+          "physical_transmitted": 12646,
+          "pupil_n": 128,
+          "stop_grid_fill": 0.9809183990071362,
+          "wavelength_nm": 430.0
+        },
+        {
+          "actual_device": "cuda:1",
+          "centroid_mm": [
+            9.091499690696157,
+            6.029810968395332e-18
+          ],
+          "diagnosis": "TRANSMITTED",
+          "entry_raster_transmitted": 820,
+          "geometric_aim_converged": 12892,
+          "geometric_chief_mm": [
+            9.085754177680284,
+            0.0
+          ],
+          "legacy_transmitted": 4886,
+          "losses": [
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 0,
+              "stage": "surface_0"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 1,
+              "stage": "surface_1"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 2,
+              "stage": "surface_2"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 3,
+              "stage": "surface_3"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 4,
+              "stage": "surface_4"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 5,
+              "stage": "surface_5"
+            },
+            {
+              "lost": 0,
+              "stage": "stop"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 6,
+              "stage": "surface_6"
+            },
+            {
+              "aperture_lost": 252,
+              "geometry_lost": 0,
+              "source_surface_index": 7,
+              "stage": "surface_7"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 8,
+              "stage": "surface_8"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 9,
+              "stage": "surface_9"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 10,
+              "stage": "surface_10"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 11,
+              "stage": "surface_11"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 12,
+              "stage": "surface_12"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 13,
+              "stage": "surface_13"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 14,
+              "stage": "surface_14"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 15,
+              "stage": "surface_15"
+            }
+          ],
+          "object_half_angle_deg": 30.17902433872223,
+          "physical_chief_valid": true,
+          "physical_transmitted": 12640,
+          "pupil_n": 128,
+          "stop_grid_fill": 0.9804529941048712,
+          "wavelength_nm": 470.0
+        },
+        {
+          "actual_device": "cuda:1",
+          "centroid_mm": [
+            9.097903597103038,
+            -5.934435711292213e-18
+          ],
+          "diagnosis": "TRANSMITTED",
+          "entry_raster_transmitted": 828,
+          "geometric_aim_converged": 12892,
+          "geometric_chief_mm": [
+            9.09377051263617,
+            0.0
+          ],
+          "legacy_transmitted": 4908,
+          "losses": [
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 0,
+              "stage": "surface_0"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 1,
+              "stage": "surface_1"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 2,
+              "stage": "surface_2"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 3,
+              "stage": "surface_3"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 4,
+              "stage": "surface_4"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 5,
+              "stage": "surface_5"
+            },
+            {
+              "lost": 0,
+              "stage": "stop"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 6,
+              "stage": "surface_6"
+            },
+            {
+              "aperture_lost": 264,
+              "geometry_lost": 0,
+              "source_surface_index": 7,
+              "stage": "surface_7"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 8,
+              "stage": "surface_8"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 9,
+              "stage": "surface_9"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 10,
+              "stage": "surface_10"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 11,
+              "stage": "surface_11"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 12,
+              "stage": "surface_12"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 13,
+              "stage": "surface_13"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 14,
+              "stage": "surface_14"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 15,
+              "stage": "surface_15"
+            }
+          ],
+          "object_half_angle_deg": 30.17902433872223,
+          "physical_chief_valid": true,
+          "physical_transmitted": 12628,
+          "pupil_n": 128,
+          "stop_grid_fill": 0.9795221843003413,
+          "wavelength_nm": 510.0
+        },
+        {
+          "actual_device": "cuda:1",
+          "centroid_mm": [
+            9.102860774561924,
+            -1.233568925765101e-17
+          ],
+          "diagnosis": "TRANSMITTED",
+          "entry_raster_transmitted": 832,
+          "geometric_aim_converged": 12892,
+          "geometric_chief_mm": [
+            9.099998627456104,
+            0.0
+          ],
+          "legacy_transmitted": 4920,
+          "losses": [
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 0,
+              "stage": "surface_0"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 1,
+              "stage": "surface_1"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 2,
+              "stage": "surface_2"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 3,
+              "stage": "surface_3"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 4,
+              "stage": "surface_4"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 5,
+              "stage": "surface_5"
+            },
+            {
+              "lost": 0,
+              "stage": "stop"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 6,
+              "stage": "surface_6"
+            },
+            {
+              "aperture_lost": 266,
+              "geometry_lost": 0,
+              "source_surface_index": 7,
+              "stage": "surface_7"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 8,
+              "stage": "surface_8"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 9,
+              "stage": "surface_9"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 10,
+              "stage": "surface_10"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 11,
+              "stage": "surface_11"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 12,
+              "stage": "surface_12"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 13,
+              "stage": "surface_13"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 14,
+              "stage": "surface_14"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 15,
+              "stage": "surface_15"
+            }
+          ],
+          "object_half_angle_deg": 30.17902433872223,
+          "physical_chief_valid": true,
+          "physical_transmitted": 12626,
+          "pupil_n": 128,
+          "stop_grid_fill": 0.9793670493329196,
+          "wavelength_nm": 550.0
+        },
+        {
+          "actual_device": "cuda:1",
+          "centroid_mm": [
+            9.106775264023927,
+            -6.0847239794243516e-18
+          ],
+          "diagnosis": "TRANSMITTED",
+          "entry_raster_transmitted": 830,
+          "geometric_aim_converged": 12892,
+          "geometric_chief_mm": [
+            9.104936895662215,
+            0.0
+          ],
+          "legacy_transmitted": 4940,
+          "losses": [
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 0,
+              "stage": "surface_0"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 1,
+              "stage": "surface_1"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 2,
+              "stage": "surface_2"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 3,
+              "stage": "surface_3"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 4,
+              "stage": "surface_4"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 5,
+              "stage": "surface_5"
+            },
+            {
+              "lost": 0,
+              "stage": "stop"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 6,
+              "stage": "surface_6"
+            },
+            {
+              "aperture_lost": 268,
+              "geometry_lost": 0,
+              "source_surface_index": 7,
+              "stage": "surface_7"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 8,
+              "stage": "surface_8"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 9,
+              "stage": "surface_9"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 10,
+              "stage": "surface_10"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 11,
+              "stage": "surface_11"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 12,
+              "stage": "surface_12"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 13,
+              "stage": "surface_13"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 14,
+              "stage": "surface_14"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 15,
+              "stage": "surface_15"
+            }
+          ],
+          "object_half_angle_deg": 30.17902433872223,
+          "physical_chief_valid": true,
+          "physical_transmitted": 12624,
+          "pupil_n": 128,
+          "stop_grid_fill": 0.979211914365498,
+          "wavelength_nm": 590.0
+        },
+        {
+          "actual_device": "cuda:1",
+          "centroid_mm": [
+            9.109922672030363,
+            -8.35746333909587e-19
+          ],
+          "diagnosis": "TRANSMITTED",
+          "entry_raster_transmitted": 828,
+          "geometric_aim_converged": 12892,
+          "geometric_chief_mm": [
+            9.108921201327673,
+            0.0
+          ],
+          "legacy_transmitted": 4941,
+          "losses": [
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 0,
+              "stage": "surface_0"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 1,
+              "stage": "surface_1"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 2,
+              "stage": "surface_2"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 3,
+              "stage": "surface_3"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 4,
+              "stage": "surface_4"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 5,
+              "stage": "surface_5"
+            },
+            {
+              "lost": 0,
+              "stage": "stop"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 6,
+              "stage": "surface_6"
+            },
+            {
+              "aperture_lost": 272,
+              "geometry_lost": 0,
+              "source_surface_index": 7,
+              "stage": "surface_7"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 8,
+              "stage": "surface_8"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 9,
+              "stage": "surface_9"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 10,
+              "stage": "surface_10"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 11,
+              "stage": "surface_11"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 12,
+              "stage": "surface_12"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 13,
+              "stage": "surface_13"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 14,
+              "stage": "surface_14"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 15,
+              "stage": "surface_15"
+            }
+          ],
+          "object_half_angle_deg": 30.17902433872223,
+          "physical_chief_valid": true,
+          "physical_transmitted": 12620,
+          "pupil_n": 128,
+          "stop_grid_fill": 0.9789016444306546,
+          "wavelength_nm": 630.0
+        },
+        {
+          "actual_device": "cuda:1",
+          "centroid_mm": [
+            9.112490922046849,
+            9.105236374699184e-18
+          ],
+          "diagnosis": "TRANSMITTED",
+          "entry_raster_transmitted": 828,
+          "geometric_aim_converged": 12892,
+          "geometric_chief_mm": [
+            9.112180742410706,
+            0.0
+          ],
+          "legacy_transmitted": 4948,
+          "losses": [
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 0,
+              "stage": "surface_0"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 1,
+              "stage": "surface_1"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 2,
+              "stage": "surface_2"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 3,
+              "stage": "surface_3"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 4,
+              "stage": "surface_4"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 5,
+              "stage": "surface_5"
+            },
+            {
+              "lost": 0,
+              "stage": "stop"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 6,
+              "stage": "surface_6"
+            },
+            {
+              "aperture_lost": 272,
+              "geometry_lost": 0,
+              "source_surface_index": 7,
+              "stage": "surface_7"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 8,
+              "stage": "surface_8"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 9,
+              "stage": "surface_9"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 10,
+              "stage": "surface_10"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 11,
+              "stage": "surface_11"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 12,
+              "stage": "surface_12"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 13,
+              "stage": "surface_13"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 14,
+              "stage": "surface_14"
+            },
+            {
+              "aperture_lost": 0,
+              "geometry_lost": 0,
+              "source_surface_index": 15,
+              "stage": "surface_15"
+            }
+          ],
+          "object_half_angle_deg": 30.17902433872223,
+          "physical_chief_valid": true,
+          "physical_transmitted": 12620,
+          "pupil_n": 128,
+          "stop_grid_fill": 0.9789016444306546,
+          "wavelength_nm": 670.0
+        }
+      ]
+    },
+    {
+      "field_h": 1.0,
+      "largest_sampled_chief_height_mm": 15.79145876435941,
+      "state": "TARGET_NOT_REACHED_ON_CALIBRATED_BRANCH",
+      "target_image_height_mm": 18.2
+    }
+  ],
+  "radius_scope": "SOURCE_RADIUS_SMALLER_THAN_FULLFRAME",
+  "reused_from": {
+    "job": "000-000-020-qfilmrw-gpu-field-audit-20261031-01",
+    "native_sha256": "3486a79a350e7c96898c5a0e830775afd4218168289fed06c16f3c856e26d0fe"
+  },
+  "source_sha256": "493474344dccf7bf53000b4eb1936e75e06cdf6461ea57c26d5770a7457fbaa9",
+  "sweep": [
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": [
+        2.271692403237038e-17,
+        2.277066391700411e-17
+      ],
+      "diagnosis": "TRANSMITTED",
+      "entry_raster_transmitted": 208,
+      "geometric_aim_converged": 3228,
+      "geometric_chief_mm": [
+        0.0,
+        0.0
+      ],
+      "legacy_transmitted": 2756,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 0.0,
+      "physical_chief_valid": true,
+      "physical_transmitted": 3228,
+      "pupil_n": 64,
+      "stop_grid_fill": 1.0,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": [
+        0.7636066624545174,
+        2.6644234801403375e-17
+      ],
+      "diagnosis": "TRANSMITTED",
+      "entry_raster_transmitted": 200,
+      "geometric_aim_converged": 3228,
+      "geometric_chief_mm": [
+        0.7639583856127167,
+        0.0
+      ],
+      "legacy_transmitted": 2772,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 2.65625,
+      "physical_chief_valid": true,
+      "physical_transmitted": 3228,
+      "pupil_n": 64,
+      "stop_grid_fill": 1.0,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": [
+        1.5288410261117784,
+        3.4415022119440748e-18
+      ],
+      "diagnosis": "TRANSMITTED",
+      "entry_raster_transmitted": 196,
+      "geometric_aim_converged": 3228,
+      "geometric_chief_mm": [
+        1.529513115438173,
+        0.0
+      ],
+      "legacy_transmitted": 2688,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 5.3125,
+      "physical_chief_valid": true,
+      "physical_transmitted": 3228,
+      "pupil_n": 64,
+      "stop_grid_fill": 1.0,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": [
+        2.2973464679014755,
+        -2.2441775823045683e-17
+      ],
+      "diagnosis": "TRANSMITTED",
+      "entry_raster_transmitted": 198,
+      "geometric_aim_converged": 3228,
+      "geometric_chief_mm": [
+        2.298271671605722,
+        0.0
+      ],
+      "legacy_transmitted": 2570,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 7.968750000000001,
+      "physical_chief_valid": true,
+      "physical_transmitted": 3228,
+      "pupil_n": 64,
+      "stop_grid_fill": 1.0,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": [
+        3.0707996395071855,
+        -4.1401207121825655e-18
+      ],
+      "diagnosis": "TRANSMITTED",
+      "entry_raster_transmitted": 208,
+      "geometric_aim_converged": 3228,
+      "geometric_chief_mm": [
+        3.071869965994506,
+        0.0
+      ],
+      "legacy_transmitted": 2428,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 10.625,
+      "physical_chief_valid": true,
+      "physical_transmitted": 3228,
+      "pupil_n": 64,
+      "stop_grid_fill": 1.0,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": [
+        3.85093206141721,
+        -1.410564491866147e-17
+      ],
+      "diagnosis": "TRANSMITTED",
+      "entry_raster_transmitted": 202,
+      "geometric_aim_converged": 3228,
+      "geometric_chief_mm": [
+        3.8519996318643193,
+        0.0
+      ],
+      "legacy_transmitted": 2290,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 13.28125,
+      "physical_chief_valid": true,
+      "physical_transmitted": 3228,
+      "pupil_n": 64,
+      "stop_grid_fill": 1.0,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": [
+        4.639558005683097,
+        -5.202020832545072e-19
+      ],
+      "diagnosis": "TRANSMITTED",
+      "entry_raster_transmitted": 198,
+      "geometric_aim_converged": 3228,
+      "geometric_chief_mm": [
+        4.640445597056179,
+        0.0
+      ],
+      "legacy_transmitted": 2158,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 15.937500000000002,
+      "physical_chief_valid": true,
+      "physical_transmitted": 3228,
+      "pupil_n": 64,
+      "stop_grid_fill": 1.0,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": [
+        5.438611102970881,
+        7.330120264040783e-19
+      ],
+      "diagnosis": "TRANSMITTED",
+      "entry_raster_transmitted": 204,
+      "geometric_aim_converged": 3228,
+      "geometric_chief_mm": [
+        5.439131006208757,
+        0.0
+      ],
+      "legacy_transmitted": 2004,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 18.59375,
+      "physical_chief_valid": true,
+      "physical_transmitted": 3228,
+      "pupil_n": 64,
+      "stop_grid_fill": 1.0,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": [
+        6.250191941933467,
+        6.089803726694293e-18
+      ],
+      "diagnosis": "TRANSMITTED",
+      "entry_raster_transmitted": 208,
+      "geometric_aim_converged": 3228,
+      "geometric_chief_mm": [
+        6.250165162780345,
+        0.0
+      ],
+      "legacy_transmitted": 1862,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 21.25,
+      "physical_chief_valid": true,
+      "physical_transmitted": 3228,
+      "pupil_n": 64,
+      "stop_grid_fill": 1.0,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": [
+        7.076619157234724,
+        -1.1143174030156608e-17
+      ],
+      "diagnosis": "TRANSMITTED",
+      "entry_raster_transmitted": 206,
+      "geometric_aim_converged": 3228,
+      "geometric_chief_mm": [
+        7.0758913958183705,
+        0.0
+      ],
+      "legacy_transmitted": 1694,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 8,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 23.90625,
+      "physical_chief_valid": true,
+      "physical_transmitted": 3220,
+      "pupil_n": 64,
+      "stop_grid_fill": 0.9975216852540273,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": [
+        7.920486893348383,
+        -1.1542416328280681e-17
+      ],
+      "diagnosis": "TRANSMITTED",
+      "entry_raster_transmitted": 204,
+      "geometric_aim_converged": 3228,
+      "geometric_chief_mm": [
+        7.9189356124511985,
+        0.0
+      ],
+      "legacy_transmitted": 1507,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 28,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 26.5625,
+      "physical_chief_valid": true,
+      "physical_transmitted": 3200,
+      "pupil_n": 64,
+      "stop_grid_fill": 0.9913258983890955,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": [
+        8.78475342929409,
+        4.69601910668469e-18
+      ],
+      "diagnosis": "TRANSMITTED",
+      "entry_raster_transmitted": 208,
+      "geometric_aim_converged": 3228,
+      "geometric_chief_mm": [
+        8.782262032538947,
+        0.0
+      ],
+      "legacy_transmitted": 1304,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 60,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 29.218750000000004,
+      "physical_chief_valid": true,
+      "physical_transmitted": 3168,
+      "pupil_n": 64,
+      "stop_grid_fill": 0.9814126394052045,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": [
+        9.672854446337853,
+        2.607060520301664e-18
+      ],
+      "diagnosis": "TRANSMITTED",
+      "entry_raster_transmitted": 210,
+      "geometric_aim_converged": 3228,
+      "geometric_chief_mm": [
+        9.66924884359033,
+        0.0
+      ],
+      "legacy_transmitted": 1092,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 90,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 31.875000000000004,
+      "physical_chief_valid": true,
+      "physical_transmitted": 3138,
+      "pupil_n": 64,
+      "stop_grid_fill": 0.9721189591078067,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": [
+        10.160757339583387,
+        8.523400786390213e-18
+      ],
+      "diagnosis": "TRANSMITTED",
+      "entry_raster_transmitted": 208,
+      "geometric_aim_converged": 3228,
+      "geometric_chief_mm": [
+        10.156472495636294,
+        0.0
+      ],
+      "legacy_transmitted": 968,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 110,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 33.300855627569646,
+      "physical_chief_valid": true,
+      "physical_transmitted": 3118,
+      "pupil_n": 64,
+      "stop_grid_fill": 0.9659231722428748,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": [
+        10.588778144491446,
+        5.908100018503646e-18
+      ],
+      "diagnosis": "TRANSMITTED",
+      "entry_raster_transmitted": 204,
+      "geometric_aim_converged": 3228,
+      "geometric_chief_mm": [
+        10.58380116116033,
+        0.0
+      ],
+      "legacy_transmitted": 862,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 118,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 34.53125,
+      "physical_chief_valid": true,
+      "physical_transmitted": 3110,
+      "pupil_n": 64,
+      "stop_grid_fill": 0.9634448574969021,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": [
+        11.53708576897702,
+        -2.5644919898121884e-17
+      ],
+      "diagnosis": "TRANSMITTED",
+      "entry_raster_transmitted": 208,
+      "geometric_aim_converged": 3228,
+      "geometric_chief_mm": [
+        11.530518550276579,
+        0.0
+      ],
+      "legacy_transmitted": 602,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 164,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 37.1875,
+      "physical_chief_valid": true,
+      "physical_transmitted": 3064,
+      "pupil_n": 64,
+      "stop_grid_fill": 0.9491945477075588,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": [
+        12.522254712953222,
+        6.375900483711916e-17
+      ],
+      "diagnosis": "TRANSMITTED",
+      "entry_raster_transmitted": 202,
+      "geometric_aim_converged": 3160,
+      "geometric_chief_mm": [
+        12.51492481491801,
+        0.0
+      ],
+      "legacy_transmitted": 282,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 202,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 39.84375,
+      "physical_chief_valid": true,
+      "physical_transmitted": 2958,
+      "pupil_n": 64,
+      "stop_grid_fill": 0.9163568773234201,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": [
+        13.550545136313662,
+        1.9684221282300626e-17
+      ],
+      "diagnosis": "TRANSMITTED",
+      "entry_raster_transmitted": 188,
+      "geometric_aim_converged": 2938,
+      "geometric_chief_mm": [
+        13.543743260076521,
+        0.0
+      ],
+      "legacy_transmitted": 12,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 242,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 42.5,
+      "physical_chief_valid": true,
+      "physical_transmitted": 2696,
+      "pupil_n": 64,
+      "stop_grid_fill": 0.8351920693928129,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": [
+        14.631192231044405,
+        2.5742030382001618e-17
+      ],
+      "diagnosis": "LEGACY_AIMING_FALSE_DARK",
+      "entry_raster_transmitted": 164,
+      "geometric_aim_converged": 2592,
+      "geometric_chief_mm": [
+        14.62515950577459,
+        0.0
+      ],
+      "legacy_transmitted": 0,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 288,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 2,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 45.15625,
+      "physical_chief_valid": true,
+      "physical_transmitted": 2302,
+      "pupil_n": 64,
+      "stop_grid_fill": 0.7131350681536555,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": [
+        15.773013655139934,
+        7.097910222538435e-17
+      ],
+      "diagnosis": "LEGACY_AIMING_FALSE_DARK",
+      "entry_raster_transmitted": 146,
+      "geometric_aim_converged": 2076,
+      "geometric_chief_mm": [
+        15.768976959008217,
+        0.0
+      ],
+      "legacy_transmitted": 0,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 334,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 14,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 47.8125,
+      "physical_chief_valid": true,
+      "physical_transmitted": 1728,
+      "pupil_n": 64,
+      "stop_grid_fill": 0.5353159851301115,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": [
+        15.795440452405051,
+        -1.9366703299904052e-17
+      ],
+      "diagnosis": "LEGACY_AIMING_FALSE_DARK",
+      "entry_raster_transmitted": 146,
+      "geometric_aim_converged": 2066,
+      "geometric_chief_mm": [
+        15.79145876435941,
+        0.0
+      ],
+      "legacy_transmitted": 0,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 336,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 12,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 47.863133740510655,
+      "physical_chief_valid": true,
+      "physical_transmitted": 1718,
+      "pupil_n": 64,
+      "stop_grid_fill": 0.5322180916976456,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": [
+        16.984205834261648,
+        3.7917026988017403e-17
+      ],
+      "diagnosis": "LEGACY_AIMING_FALSE_DARK",
+      "entry_raster_transmitted": 118,
+      "geometric_aim_converged": 1470,
+      "geometric_chief_mm": null,
+      "legacy_transmitted": 0,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 2,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 384,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 16,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 50.46875,
+      "physical_chief_valid": false,
+      "physical_transmitted": 1068,
+      "pupil_n": 64,
+      "stop_grid_fill": 0.3308550185873606,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": [
+        18.07580201771952,
+        8.252031196479314e-18
+      ],
+      "diagnosis": "LEGACY_AIMING_FALSE_DARK",
+      "entry_raster_transmitted": 96,
+      "geometric_aim_converged": 936,
+      "geometric_chief_mm": null,
+      "legacy_transmitted": 0,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 16,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 392,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 26,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 52.723333022565384,
+      "physical_chief_valid": false,
+      "physical_transmitted": 502,
+      "pupil_n": 64,
+      "stop_grid_fill": 0.15551425030978935,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": [
+        18.279387649842448,
+        1.1726063496266303e-16
+      ],
+      "diagnosis": "LEGACY_AIMING_FALSE_DARK",
+      "entry_raster_transmitted": 92,
+      "geometric_aim_converged": 842,
+      "geometric_chief_mm": null,
+      "legacy_transmitted": 0,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 16,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 386,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 24,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 53.125,
+      "physical_chief_valid": false,
+      "physical_transmitted": 416,
+      "pupil_n": 64,
+      "stop_grid_fill": 0.1288723667905824,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": null,
+      "diagnosis": "STOP_AIMING_UNRESOLVED",
+      "entry_raster_transmitted": 62,
+      "geometric_aim_converged": 250,
+      "geometric_chief_mm": null,
+      "legacy_transmitted": 0,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 36,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 214,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 55.78125,
+      "physical_chief_valid": false,
+      "physical_transmitted": 0,
+      "pupil_n": 64,
+      "stop_grid_fill": 0.0,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": null,
+      "diagnosis": "STOP_AIMING_UNRESOLVED",
+      "entry_raster_transmitted": 24,
+      "geometric_aim_converged": 0,
+      "geometric_chief_mm": null,
+      "legacy_transmitted": 0,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 58.43750000000001,
+      "physical_chief_valid": false,
+      "physical_transmitted": 0,
+      "pupil_n": 64,
+      "stop_grid_fill": 0.0,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": null,
+      "diagnosis": "NO_TRANSMISSION_IN_SAMPLED_RAYS",
+      "entry_raster_transmitted": 0,
+      "geometric_aim_converged": 0,
+      "geometric_chief_mm": null,
+      "legacy_transmitted": 0,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 61.09375000000001,
+      "physical_chief_valid": false,
+      "physical_transmitted": 0,
+      "pupil_n": 64,
+      "stop_grid_fill": 0.0,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": null,
+      "diagnosis": "NO_TRANSMISSION_IN_SAMPLED_RAYS",
+      "entry_raster_transmitted": 0,
+      "geometric_aim_converged": 0,
+      "geometric_chief_mm": null,
+      "legacy_transmitted": 0,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 63.75000000000001,
+      "physical_chief_valid": false,
+      "physical_transmitted": 0,
+      "pupil_n": 64,
+      "stop_grid_fill": 0.0,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": null,
+      "diagnosis": "NO_TRANSMISSION_IN_SAMPLED_RAYS",
+      "entry_raster_transmitted": 0,
+      "geometric_aim_converged": 0,
+      "geometric_chief_mm": null,
+      "legacy_transmitted": 0,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 66.40625,
+      "physical_chief_valid": false,
+      "physical_transmitted": 0,
+      "pupil_n": 64,
+      "stop_grid_fill": 0.0,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": null,
+      "diagnosis": "NO_TRANSMISSION_IN_SAMPLED_RAYS",
+      "entry_raster_transmitted": 0,
+      "geometric_aim_converged": 0,
+      "geometric_chief_mm": null,
+      "legacy_transmitted": 0,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 69.0625,
+      "physical_chief_valid": false,
+      "physical_transmitted": 0,
+      "pupil_n": 64,
+      "stop_grid_fill": 0.0,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": null,
+      "diagnosis": "NO_TRANSMISSION_IN_SAMPLED_RAYS",
+      "entry_raster_transmitted": 0,
+      "geometric_aim_converged": 0,
+      "geometric_chief_mm": null,
+      "legacy_transmitted": 0,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 71.71875000000001,
+      "physical_chief_valid": false,
+      "physical_transmitted": 0,
+      "pupil_n": 64,
+      "stop_grid_fill": 0.0,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": null,
+      "diagnosis": "NO_TRANSMISSION_IN_SAMPLED_RAYS",
+      "entry_raster_transmitted": 0,
+      "geometric_aim_converged": 0,
+      "geometric_chief_mm": null,
+      "legacy_transmitted": 0,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 74.375,
+      "physical_chief_valid": false,
+      "physical_transmitted": 0,
+      "pupil_n": 64,
+      "stop_grid_fill": 0.0,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": null,
+      "diagnosis": "NO_TRANSMISSION_IN_SAMPLED_RAYS",
+      "entry_raster_transmitted": 0,
+      "geometric_aim_converged": 0,
+      "geometric_chief_mm": null,
+      "legacy_transmitted": 0,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 77.03125,
+      "physical_chief_valid": false,
+      "physical_transmitted": 0,
+      "pupil_n": 64,
+      "stop_grid_fill": 0.0,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": null,
+      "diagnosis": "NO_TRANSMISSION_IN_SAMPLED_RAYS",
+      "entry_raster_transmitted": 0,
+      "geometric_aim_converged": 0,
+      "geometric_chief_mm": null,
+      "legacy_transmitted": 0,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 79.6875,
+      "physical_chief_valid": false,
+      "physical_transmitted": 0,
+      "pupil_n": 64,
+      "stop_grid_fill": 0.0,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": null,
+      "diagnosis": "NO_TRANSMISSION_IN_SAMPLED_RAYS",
+      "entry_raster_transmitted": 0,
+      "geometric_aim_converged": 0,
+      "geometric_chief_mm": null,
+      "legacy_transmitted": 0,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 82.34375000000001,
+      "physical_chief_valid": false,
+      "physical_transmitted": 0,
+      "pupil_n": 64,
+      "stop_grid_fill": 0.0,
+      "wavelength_nm": 550.0
+    },
+    {
+      "actual_device": "cuda:1",
+      "centroid_mm": null,
+      "diagnosis": "NO_TRANSMISSION_IN_SAMPLED_RAYS",
+      "entry_raster_transmitted": 0,
+      "geometric_aim_converged": 0,
+      "geometric_chief_mm": null,
+      "legacy_transmitted": 0,
+      "losses": [
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 0,
+          "stage": "surface_0"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 1,
+          "stage": "surface_1"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 2,
+          "stage": "surface_2"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 3,
+          "stage": "surface_3"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 4,
+          "stage": "surface_4"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 5,
+          "stage": "surface_5"
+        },
+        {
+          "lost": 0,
+          "stage": "stop"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 6,
+          "stage": "surface_6"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 7,
+          "stage": "surface_7"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 8,
+          "stage": "surface_8"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 9,
+          "stage": "surface_9"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 10,
+          "stage": "surface_10"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 11,
+          "stage": "surface_11"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 12,
+          "stage": "surface_12"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 13,
+          "stage": "surface_13"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 14,
+          "stage": "surface_14"
+        },
+        {
+          "aperture_lost": 0,
+          "geometry_lost": 0,
+          "source_surface_index": 15,
+          "stage": "surface_15"
+        }
+      ],
+      "object_half_angle_deg": 85.0,
+      "physical_chief_valid": false,
+      "physical_transmitted": 0,
+      "pupil_n": 64,
+      "stop_grid_fill": 0.0,
+      "wavelength_nm": 550.0
+    }
+  ]
+}
