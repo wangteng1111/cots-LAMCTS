@@ -1,0 +1,13 @@
+{
+  "bridge_version": "0.6.1",
+  "claimed_at": 1793417724.8070238,
+  "code_commit": "9dd35f42f87aeeca0ff55a8a0bbaf8f4e5fa42e9",
+  "entrypoint": "scripts/cuda_venv_exec.py",
+  "hostname": "aipss-Rack-Server",
+  "job_id": "000-000-020-qfilmrw-gpu-field-audit-20261031-01",
+  "policy": "job_id_once; retry_requires_new_job_id",
+  "queue_path": "remote/queue/000-000-020-qfilmrw-gpu-field-audit-20261031-01.json",
+  "request_sha256": "667c888d9a3d7c2095b274ab3079917fff329735593794487912876d86700191",
+  "schema": 1,
+  "state": "claimed"
+}
