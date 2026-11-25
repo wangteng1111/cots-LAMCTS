@@ -7,7 +7,7 @@
       "memory_free_mb": "32110",
       "memory_total_mb": "32607",
       "name": "NVIDIA GeForce RTX 5090",
-      "temperature_c": "34",
+      "temperature_c": "33",
       "utilization_pct": "0"
     },
     {
@@ -20,9 +20,9 @@
   ],
   "hostname": "aipss-Rack-Server",
   "loadavg": [
-    0.080078125,
-    0.224609375,
-    0.46875
+    0.13671875,
+    0.22607421875,
+    0.462890625
   ],
   "python": "/usr/bin/python3",
   "python_version": "3.12.3",
@@ -30,5 +30,5 @@
   "results_branch": "workstation-results",
   "running_job": null,
   "schema": 1,
-  "timestamp": 1795640362.6634276
+  "timestamp": 1795640382.8628602
 }
